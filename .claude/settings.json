@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo '=== __TRACKED_VAR__ ===')",
+      "Bash(grep -c -iE 'duy nhất|không ai|tuyệt đối|/10|9\\\\.[0-9]|∀|∇|≡|formula|chính xác|hoàn hảo' C:/Stable_Diffusion/MACH_RE/__TRACKED_VAR__)",
+      "Bash(git -C \"c:\\\\Stable_Diffusion\\\\MACH_RE\" status)",
+      "Bash(git -C \"c:\\\\Stable_Diffusion\\\\MACH_RE\" diff --stat HEAD)",
+      "Bash(git -C \"c:\\\\Stable_Diffusion\\\\MACH_RE\" add axiom_4.html how.html mach_re_homologous.html upgrade.html what.html when.html who.html why.html CHANGELOG.md CLAUDE.md plan/)",
+      "Bash(git -C 'c:\\\\Stable_Diffusion\\\\MACH_RE' commit -m ' *)",
+      "Bash(git -C \"c:\\\\Stable_Diffusion\\\\MACH_RE\" add .claude/)",
+      "Bash(git -C \"c:\\\\Stable_Diffusion\\\\MACH_RE\" status --short)"
+    ]
+  }
+}
