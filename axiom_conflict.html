@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xung Đột Lõi — Core Conflict (Khi người Việt bất đồng về người Việt là ai) | Mạch Rễ</title>
+  <meta name="description" content="Module Xung Đột Lõi (Core Conflict) — hệ quả thứ 5 của Tiên Đề VIII: cơ chế xử lý bất đồng nội bộ về lõi bản sắc. Ảnh trực giao trục-H của Tự phê bình, dùng nhận thức luận Phật giáo (Śūnyatā, Nhị đế, Tứ cú, Pramāṇa) làm la bàn." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #5a4fa0;
+      --accent-light: #7c6fc9;
+      --accent-pale:  #ede8f7;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #ddd8ef;
+      --green:        #2d6a4f;
+      --green-pale:   #d8f3dc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav { background: var(--green); display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #2a1e5a 0%, #5a4fa0 55%, #7c6fc9 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 12px; }
+    .hero p { color: #d4cfef; font-size: 1rem; max-width: 660px; margin: 0 auto; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-pale);
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── DEFINITION BOX ── */
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent-light);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+
+    /* ── ASCII ── */
+    .ascii-box {
+      background: var(--accent-pale);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: .85rem;
+      white-space: pre;
+      overflow-x: auto;
+      color: var(--accent);
+      margin: 16px 0;
+    }
+
+    /* ── TABLE ── */
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
+    .styled-table th { background: var(--accent); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
+    .styled-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .styled-table tr:nth-child(even) td { background: #f7f5ff; }
+    .styled-table td strong { color: var(--text-dark); }
+
+    /* ── CONCEPT PILLS ── */
+    .concept-list { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .concept-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 16px;
+    }
+    .concept-item .pill {
+      background: var(--accent-pale); color: var(--accent);
+      border-radius: 8px; padding: 6px 14px; font-weight: 700; font-size: .85rem;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .concept-item p { margin: 0; font-size: .88rem; }
+
+    /* ── TOOL PILLS ── */
+    .tool-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .tool-pill { background: var(--accent-pale); color: var(--accent); border-radius: 20px; padding: 4px 14px; font-size: .82rem; font-weight: 600; }
+
+    /* ── LIMIT BOX ── */
+    .limit-box {
+      background: #fef9ec; border: 1px solid #f0d080;
+      border-radius: 8px; padding: 12px 16px; margin: 12px 0;
+      font-size: .92rem; line-height: 1.7; color: var(--text-muted);
+    }
+    .limit-box .lbl { font-weight: 700; color: #a07830; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: 4px; }
+
+    /* ── RESULT BOX ── */
+    .result-box { background: #2a1e5a; color: #fff; border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-size: .95rem; line-height: 1.8; }
+    .result-box strong { color: #f0c96a; }
+    .result-box em { color: #d4cfef; font-style: italic; }
+
+    /* ── COMPARISON CARD ── */
+    .compare-card {
+      background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--accent-light);
+      border-radius: 0 14px 14px 0; padding: 20px 24px; margin: 20px 0;
+    }
+    .compare-card h3 { margin-top: 0; color: var(--accent); }
+    .compare-card .domain-tag {
+      display: inline-block; background: var(--accent-pale); color: var(--accent);
+      border-radius: 6px; padding: 2px 10px; font-size: .75rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 8px;
+    }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav { max-width: 820px; margin: 0 auto; padding: 0 24px 60px; display: flex; justify-content: space-between; gap: 12px; }
+    .bottom-nav a {
+      background: var(--green); color: #fff; text-decoration: none;
+      padding: 12px 24px; border-radius: 10px; font-size: .9rem; font-weight: 600; transition: background .2s;
+    }
+    .bottom-nav a:hover { background: #1a3a2a; }
+    .bottom-nav a.secondary { background: transparent; border: 2px solid var(--green); color: var(--green); }
+
+    footer { background: #1a3a2a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #b7e4c7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <a href="upgrade.html">UPGRADE</a>
+  <span class="sep">/</span>
+  <span class="current">Xung Đột Lõi</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">MODULE 5 · HỆ QUẢ TIÊN ĐỀ VIII</div>
+  <h1>Xung Đột Lõi<br/><span style="font-size:.6em;font-weight:400;opacity:.85">Core Conflict</span></h1>
+  <p>Khi người Việt bất đồng về <em>người Việt là ai</em> — cơ chế xử lý bất đồng nội bộ về lõi bản sắc. Ảnh trực giao trục-H của Tự phê bình (Self-Criticism).</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION 0: LỖ HỔNG -->
+  <section>
+    <h2>🕳️ Lỗ hổng: framework giả định cộng đồng đồng thuận về lõi</h2>
+    <p>Mạch Rễ đặt câu hỏi trung tâm: <em>"Làm sao giữ được <strong>mình</strong>?"</em> và định nghĩa bản sắc là một <strong>khuôn mẫu bất biến (invariant pattern)</strong> duy nhất (Tiên Đề II). Cả hai đều mặc định chữ "mình" / chữ "lõi" ở số ít — như thể cộng đồng đã thống nhất lõi là gì, chỉ việc giữ.</p>
+    <p>Thực tế không như vậy. Người Việt <strong>bất đồng về chính việc "người Việt là ai"</strong>: trong nước với hải ngoại, thế hệ nhất với thế hệ ba, người nói tiếng Việt với người không nói, người theo dòng truyền thống này với dòng truyền thống khác. Tình huống "khi người Việt bất đồng về người Việt là ai" là điểm <strong>thú vị nhất</strong> của framework — và cho tới module này nó vẫn bị bỏ trống.</p>
+
+    <div class="def-box">
+      <div class="label">Đường nối có sẵn (extend, không overwrite)</div>
+      <blockquote>Thực hành "Nhận Dạng Lõi" (<a href="how.html" style="color:var(--accent);font-weight:600">how.html</a>) đã nói: <em>"Lõi không phải danh sách — lõi là mối quan hệ sống động với câu hỏi đó"</em>, hỏi liên tục qua từng thế hệ. Nhưng nó vẫn hình dung <strong>một cộng đồng cùng hỏi</strong>. Module Xung Đột Lõi nối tiếp đúng chỗ đó: chuyện gì xảy ra khi <strong>cộng đồng chia rẽ về câu trả lời</strong>?</blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 1: PHÁT BIỂU CHÍNH THỨC -->
+  <section>
+    <h2>📜 Phát biểu chính thức (Formal Statement)</h2>
+
+    <h3>Tiếng Việt</h3>
+    <div class="def-box">
+      <div class="label">Module 5 — Xung Đột Lõi (Hệ quả thứ 5 của Tiên Đề VIII)</div>
+      <blockquote>
+        <strong>Lõi không phải một đáp án có sẵn để tìm ra, mà là một câu hỏi mà cộng đồng liên tục thương lượng. Bất đồng về "người Việt là ai" không phải dấu hiệu rễ hỏng — nó chính là rễ đang sống. Rễ chết là rễ chỉ còn một đáp án duy nhất mà không ai được phép hỏi lại.</strong>
+      </blockquote>
+    </div>
+
+    <h3>English</h3>
+    <div class="def-box" style="border-left-color:#2d6a4f">
+      <div class="label" style="color:#2d6a4f">Module 5 — Core Conflict (Fifth consequence of Axiom VIII)</div>
+      <blockquote>
+        <strong>The core is not a ready-made answer to be discovered, but a question the community continuously negotiates. Disagreement over "who is Vietnamese" is not a sign of broken roots — it is roots that are alive. Dead roots are roots reduced to a single answer no one is permitted to question.</strong>
+      </blockquote>
+    </div>
+
+    <div class="result-box">
+      <strong>Phân tầng quan trọng (để không mâu thuẫn với Tiên Đề II):</strong> Cái <em>bất biến</em> là <strong>kiểu quan hệ</strong> (pattern: hấp thụ có định hướng, quan hệ dọc với tổ tiên–hậu thế). Cái <strong>thương lượng được</strong> là <em>nội dung và biên giới thành viên</em> — "ai được tính là người Việt", "lõi gồm những gì". Đây đúng tinh thần Tiên Đề II: <em>invariant dưới content transformation</em>. Bất đồng nằm ở tầng nội dung, không phá tầng pattern.
+    </div>
+  </section>
+
+  <!-- SECTION 2: RCA — TẠI SAO LỖ HỔNG TỒN TẠI -->
+  <section>
+    <h2>🔍 RCA — Tại sao lỗ hổng này tồn tại (3-round × 5-Why)</h2>
+    <p>Theo RULE ZERO của Mạch Rễ, một module chỉ được thêm sau khi truy được gốc rễ qua ba vòng đào sâu và vượt cổng chấm điểm. Đây là chuỗi truy vết — chính nó là bằng chứng framework tự áp dụng cơ chế của mình.</p>
+
+    <div class="def-box">
+      <div class="label">Round 1 — Triệu chứng (bề mặt)</div>
+      <blockquote><strong>Why 1:</strong> Vì sao "bất đồng nội bộ" bị bỏ trống? → Vì mọi tài liệu nói về "lõi" ở số ít, mặc định đã thống nhất.<br/>
+      <strong>Why 2:</strong> Vì sao mặc định thống nhất? → Vì Tiên Đề II định nghĩa bản sắc là <em>một</em> invariant pattern duy nhất.</blockquote>
+    </div>
+
+    <div class="def-box">
+      <div class="label">Round 2 — Cơ chế (vì sao hại riêng ở đây)</div>
+      <blockquote><strong>Why 3:</strong> Vì sao lỗ hổng này phản tác dụng riêng với Mạch Rễ? → Vì Mạch Rễ tự quảng bá là framework <strong>cho toàn dân tộc</strong> — "già trẻ, trong nước–hải ngoại, không phân biệt chính kiến". Một framework tuyên bố bao trùm mọi người Việt mà không có cơ chế cho lúc người Việt bất đồng <em>về chính định nghĩa người Việt</em> → tự mâu thuẫn với phạm vi nó tuyên bố.</blockquote>
+    </div>
+
+    <div class="def-box" style="border-left-color:#2d6a4f">
+      <div class="label" style="color:#2d6a4f">Round 3 — Gốc rễ (Root Cause)</div>
+      <blockquote><strong>Why 4:</strong> Chuẩn nội tại nào bị vi phạm? → Tiên Đề VIII đã áp <em>Śūnyatā</em> (không có gì là mãi mãi; Mạch Rễ "không có tự tính") cho <em>toàn bộ</em> Mạch Rễ — nhưng chưa áp cho chính khái niệm "lõi / ai-là-người-Việt", đúng chỗ nhạy cảm nhất.<br/><br/>
+      <strong>Why 5 — gốc (một câu):</strong> Framework gán <strong>tự tính cố định</strong> cho "lõi", nên không có chỗ cho bất đồng — trong khi chuẩn <em>Śūnyatā</em> của chính nó nói lõi cũng trống tự tính, vậy bất đồng là điều <strong>phải-có</strong> chứ không phải bệnh lý.</blockquote>
+    </div>
+
+    <h3>Cổng chấm điểm (≥ 4/5 mới làm)</h3>
+    <table class="styled-table">
+      <thead><tr><th>Tiêu chí</th><th>Điểm</th><th>Lý do</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Đúng</strong> — có thật là lỗ hổng?</td><td>5</td><td>Suy trực tiếp từ Tiên Đề II + phạm vi tự tuyên bố</td></tr>
+        <tr><td><strong>Sâu</strong> — chạm gốc?</td><td>5</td><td>Áp Śūnyatā lên "lõi" — sửa nhất quán nội tại, không đổi giọng</td></tr>
+        <tr><td><strong>Khả thi</strong></td><td>4</td><td>Theo khuôn module sẵn có; không phá cấu trúc 7+1 tiên đề</td></tr>
+        <tr><td><strong>Rủi ro mâu thuẫn thấp</strong></td><td>4</td><td>Cần đồng bộ đa trang; phân tầng pattern/nội dung kiểm soát rủi ro</td></tr>
+        <tr><td><strong>Bảo tồn ý lõi</strong></td><td>5</td><td>Giữ "hấp thụ có định hướng"; chỉ bổ sung, không ghi đè</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px"><strong>Trung bình = 4.6/5 → vượt ngưỡng → thêm module.</strong> <em>Tiêu chí, trọng số và điểm số đều do tác giả tự đặt — đánh giá chủ quan, không phải đo lường khách quan.</em></p>
+  </section>
+
+  <!-- SECTION 3: ĐỊNH VỊ V⊥H -->
+  <section>
+    <h2>🧭 Định vị: ảnh trực giao trục-H của Tự phê bình</h2>
+    <p>Vị trí của Xung Đột Lõi cũng được <strong>cổng RCA quyết định</strong> (không chọn tay), với nhận thức luận Phật giáo làm la bàn. Kết quả: Core Conflict là <strong>hệ quả thứ 5 của Tiên Đề VIII</strong>, không phải một Tiên Đề IX mới — vì gán địa vị tiên đề cho một thứ phái sinh chính là vật-hóa (gán tự tính) cho nó, đúng cái lỗi module này ra đời để sửa.</p>
+
+    <p>Điểm đắt nhất: Core Conflict tái dùng đúng bộ xương <strong>trực giao V ⊥ H</strong> của Tiên Đề IV. Tự phê bình và Xung Đột Lõi là <strong>một cặp trực giao</strong>:</p>
+
+    <div class="ascii-box">             TRỤC V (thời gian) — TỰ PHÊ BÌNH
+                          ↑
+            "Việc tổ tiên làm X có còn đúng
+             với bối cảnh của TÔI không?"
+            (nghi ngờ theo chiều thế hệ)
+                          ↕
+  ←── cộng đồng ──── HIỆN TẠI ──── cộng đồng ──→   TRỤC H (đồng thời)
+      (phe A)                        (phe B)        XUNG ĐỘT LÕI
+                          ↕          "Chúng ta — những người Việt
+                          ↓           đang sống — bất đồng về
+                                      lõi là gì NGAY LÚC NÀY."
+                                     (nghi ngờ theo chiều cộng đồng)
+
+  V ⊥ H : hai chiều nghi ngờ độc lập, không rút gọn về nhau.
+    Tự phê bình  = doubt across TIME (một chủ thể, nhiều thời điểm)
+    Xung Đột Lõi = doubt across COMMUNITY (nhiều chủ thể, cùng thời điểm)</div>
+
+    <table class="styled-table">
+      <thead><tr><th>Chiều</th><th>Tự phê bình (Self-Criticism)</th><th>Xung Đột Lõi (Core Conflict)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Trục</strong></td><td>V — thời gian (dọc)</td><td>H — cộng đồng đồng thời (ngang)</td></tr>
+        <tr><td><strong>Câu hỏi</strong></td><td>"X có còn đúng với bối cảnh của tôi?"</td><td>"Chúng ta bất đồng về lõi — ai đúng?"</td></tr>
+        <tr><td><strong>Chủ thể</strong></td><td>Một chủ thể, qua nhiều thế hệ</td><td>Nhiều phe, cùng một thời điểm</td></tr>
+        <tr><td><strong>Công cụ gốc</strong></td><td>Śūnyatā + Pramāṇa (Upgrade II)</td><td>Śūnyatā (áp lên lõi) + Nhị đế + Tứ cú + Pramāṇa</td></tr>
+        <tr><td><strong>Vai trò</strong></td><td>Hệ quả 2 của Tiên Đề VIII</td><td>Hệ quả 5 của Tiên Đề VIII</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 4: CÔNG CỤ PHẬT HỌC -->
+  <section>
+    <h2>🪷 La bàn Phật học — bốn công cụ mở khóa module</h2>
+    <p>Giữ nguyên tắc nâng cấp của Mạch Rễ: <strong>không mượn tư tưởng phương Tây</strong> (chủ nghĩa đa nguyên), mà dùng nhận thức luận Phật giáo để framework tự thấy giới hạn. (Lưu ý nguồn: <em>không</em> dùng <em>Anekāntavāda</em> — đó là Kỳ-na giáo / Jain, không phải Phật giáo.)</p>
+
+    <div class="tool-row">
+      <span class="tool-pill">Śūnyatā (Nāgārjuna)</span>
+      <span class="tool-pill">Nhị đế — Two Truths</span>
+      <span class="tool-pill">Tứ cú — Catuṣkoṭi (Nāgārjuna)</span>
+      <span class="tool-pill">Pramāṇa (Dharmakīrti)</span>
+    </div>
+
+    <div class="concept-list">
+      <div class="concept-item">
+        <span class="pill">Śūnyatā</span>
+        <p><strong>Lõi trống tự tính.</strong> "Người Việt" không có một bản chất cố định (svabhāva) nằm sẵn chờ tìm ra. Vì không phe nào sở hữu "lõi thật", không phe nào được độc quyền loại phe kia ra khỏi định nghĩa.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Nhị đế</span>
+        <p><strong>Hai tầng sự thật.</strong> Ở tầng tối hậu (paramārtha), "người Việt là ai" không có đáp án cố định. Ở tầng quy ước (saṃvṛti), nhiều định nghĩa làm việc cùng tồn tại và được dùng tùy bối cảnh — không định nghĩa nào có địa vị tối hậu để phủ nhận các định nghĩa khác.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Tứ cú</span>
+        <p><strong>Vượt nhị phân.</strong> Catuṣkoṭi cho phép "X vừa là / vừa không là người Việt theo các nghĩa khác nhau" — thay vì ép câu trả lời thành đúng/sai. Người Việt thế hệ ba không nói tiếng Việt có thể vừa-là (theo phản xạ giá trị) vừa-không-là (theo ngôn ngữ) — và cả hai đều thật.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Pramāṇa</span>
+        <p><strong>Phân xử bằng hiệu quả, không bằng quyền uy.</strong> Khi các định nghĩa va nhau, tiêu chí không phải "ai có quyền nói" mà "định nghĩa nào dẫn đến hành động giúp cộng đồng sống sót và phát triển" (biết để làm đúng). Bất đồng được xử lý, không bị dập.</p>
+      </div>
+    </div>
+
+    <h3>Ba định dạng phát biểu (Three Formats)</h3>
+
+    <div class="def-box">
+      <div class="label">Định dạng 1 — Cho người dân thường</div>
+      <blockquote>Một nhà có thể cãi nhau về "thế nào mới là con cháu đúng nghĩa của nhà này" — mà vẫn là một nhà. Cãi nhau về điều đó không phải vì nhà sắp tan; ngược lại, chỉ nhà còn sống mới còn cãi. Nhà thật sự chết là khi chỉ còn một người được nói, còn ai hỏi lại thì bị đuổi ra. Người Việt bất đồng về "người Việt là ai" cũng vậy — đó là rễ đang thở.</blockquote>
+    </div>
+
+    <div class="def-box">
+      <div class="label">Định dạng 2 — Học thuật (Tiếng Việt)</div>
+      <blockquote>Lõi bản sắc trống tự tính (<em>Śūnyatā</em>): nó không phải một thực thể cố định mà cộng đồng phát hiện, mà là một câu hỏi cộng đồng thương lượng. Theo Nhị đế, ở tầng quy ước nhiều định nghĩa thành viên cùng vận hành; không định nghĩa nào có địa vị tối hậu. Bất đồng nội bộ vì thế là trạng thái <strong>kỳ vọng được</strong> của một hệ thống bản sắc sống, không phải lỗi cần loại bỏ. Tiêu chí phân xử là <em>Pramāṇa</em> — hiệu quả sinh tồn của cộng đồng — chứ không phải quyền lực định nghĩa.</blockquote>
+    </div>
+
+    <div class="def-box" style="border-left-color:#2d6a4f">
+      <div class="label" style="color:#2d6a4f">Định dạng 3 — Academic English</div>
+      <blockquote>The identity core is empty of inherent existence (<em>Śūnyatā</em>): not a fixed entity the community discovers, but a question the community negotiates. Under the Two Truths, multiple membership definitions operate at the conventional level (<em>saṃvṛti</em>); none holds ultimate status. Internal disagreement is therefore an <strong>expected state</strong> of a living identity system, not a defect to be eliminated. Adjudication proceeds by <em>Pramāṇa</em> — the community's survival effectiveness — rather than by definitional authority.</blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 5: VÍ DỤ CỤ THỂ -->
+  <section>
+    <h2>🧩 Ví dụ — Khi người Việt bất đồng về người Việt là ai</h2>
+    <p>Module không phán xử ai thuộc / không thuộc — nó là cơ chế nhận thức luận để cộng đồng <em>xử lý</em> bất đồng mà không vỡ. (Bám tuyên bố phi chính trị của Mạch Rễ: đây là công cụ tư duy, không phải bài toán sắc tộc hay chính trị.)</p>
+
+    <div class="compare-card">
+      <span class="domain-tag">TRONG NƯỚC ↔ HẢI NGOẠI</span>
+      <h3>"Người Việt 'thật' là người sống ở Việt Nam?"</h3>
+      <p>Tầng quy ước: cả hai định nghĩa (cư trú vs di sản văn hóa) đều làm việc trong bối cảnh riêng. Tầng tối hậu: không định nghĩa nào sở hữu lõi. Pramāṇa hỏi: định nghĩa nào giúp cộng đồng — gồm cả thế hệ hải ngoại — tiếp tục sống còn và kết nối? → Định nghĩa loại trừ hải ngoại làm <em>teo</em> mạng tương thuộc, nên kém hiệu quả sinh tồn.</p>
+    </div>
+
+    <div class="compare-card">
+      <span class="domain-tag">NGÔN NGỮ</span>
+      <h3>"Không nói được tiếng Việt thì còn là người Việt?"</h3>
+      <p>Tứ cú: vừa-là (giữ phản xạ giá trị, quan hệ dọc với tổ tiên) vừa-không-là (mất giao diện ngôn ngữ) — cả hai cùng thật, không mâu thuẫn. Lõi (kiểu quan hệ) có thể còn dù nội dung (ngôn ngữ) đã đổi — đúng Tiên Đề II.</p>
+    </div>
+
+    <div class="compare-card">
+      <span class="domain-tag">NGƯỜI LAI · ĐA BẢN SẮC</span>
+      <h3>"Một nửa dòng máu thì tính thế nào?"</h3>
+      <p>Câu hỏi giả định lõi là chất đong đếm được (svabhāva). Śūnyatā gỡ giả định đó: bản sắc là tham gia vào kiểu quan hệ, không phải tỉ lệ huyết thống. "Bao nhiêu phần trăm" là câu hỏi sai tầng.</p>
+    </div>
+
+    <div class="def-box" style="margin-top:8px; border-left-color:#a07830; background:#fef9ec">
+      <div class="label" style="color:#a07830">Lằn ranh rễ sống / rễ chết</div>
+      <blockquote>Bất đồng <strong>được phép hỏi lại</strong> = rễ sống. Bất đồng <strong>bị cấm hỏi lại</strong>, chỉ còn một đáp án do quyền lực áp đặt = rễ chết (dù bề ngoài có vẻ "thống nhất"). Đây là chỉ báo chẩn đoán, không phải lời kêu gọi tranh cãi vô tận.</blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 6: QUAN HỆ VỚI KIẾN TRÚC -->
+  <section>
+    <h2>🏛️ Quan hệ với kiến trúc Mạch Rễ Upgraded</h2>
+    <div class="ascii-box">TIÊN ĐỀ VIII — Nhận Thức Phản Tư (Meta-Axiom)
+    ↓ tạo ra các hệ quả:
+
+  Hệ quả 1: Civic Trust            (Pratītyasamutpāda + Karuṇā)
+  Hệ quả 2: Self-Criticism         (Śūnyatā + Pramāṇa)   ── trục V
+  Hệ quả 3: Institutional Building (Upāya + Prajñā)
+  Hệ quả 4: Public Goods Thinking  (Bodhicitta + Kṣaṇika)
+  Hệ quả 5: CORE CONFLICT          (Śūnyatā↦lõi + Nhị đế  ── trục H
+                                    + Tứ cú + Pramāṇa)   ⟂ Hệ quả 2
+
+  Hệ quả 2 (V) ⊥ Hệ quả 5 (H): cặp trực giao của nghi ngờ —
+    theo thời gian và theo cộng đồng. Cùng gốc Śūnyatā,
+    khác trục áp dụng. Không thay thế nhau.</div>
+    <p>Xung Đột Lõi không phải module gắn từ bên ngoài — nó là Mạch Rễ tự thấy thêm một giới hạn (giả định đồng thuận) bằng chính <em>Śūnyatā</em> của Tiên Đề VIII. Đúng nguyên tắc: <strong>không thêm vào từ ngoài, mà khai mở từ bên trong.</strong></p>
+  </section>
+
+</div>
+
+<!-- BILINGUAL GLOSSARY -->
+<div style="max-width:820px;margin:0 auto;padding:0 24px 60px">
+  <h2 style="font-size:1.3rem;font-weight:600;color:#5a4fa0;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #ddd8ef">📖 Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary</h2>
+  <p style="color:#5a5a5a;font-size:.9rem;margin-bottom:14px">Các thuật ngữ chuyên ngành được dùng trong tài liệu này, kèm bản dịch song ngữ Việt–Anh.</p>
+  <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+      <thead><tr style="background:#5a4fa0;color:#fff"><th style="padding:10px 14px;text-align:left">Tiếng Anh (EN)</th><th style="padding:10px 14px;text-align:left">Tiếng Việt (VI)</th><th style="padding:10px 14px;text-align:left">Ghi chú</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #ddd8ef"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Core Conflict</td><td style="padding:9px 14px;font-weight:600">Xung Đột Lõi</td><td style="padding:9px 14px;color:#5a5a5a">Cơ chế xử lý bất đồng nội bộ về lõi bản sắc — hệ quả thứ 5 của Tiên Đề VIII</td></tr>
+        <tr style="border-bottom:1px solid #ddd8ef;background:#f7f5ff"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Śūnyatā</td><td style="padding:9px 14px;font-weight:600">Không có tự tính</td><td style="padding:9px 14px;color:#5a5a5a">Mọi thứ — kể cả "lõi" — không có bản chất cố định; tồn tại trong điều kiện</td></tr>
+        <tr style="border-bottom:1px solid #ddd8ef"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Two Truths</td><td style="padding:9px 14px;font-weight:600">Nhị đế</td><td style="padding:9px 14px;color:#5a5a5a">Tầng quy ước (saṃvṛti) và tầng tối hậu (paramārtha) — hai mức của sự thật</td></tr>
+        <tr style="border-bottom:1px solid #ddd8ef;background:#f7f5ff"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Catuṣkoṭi</td><td style="padding:9px 14px;font-weight:600">Tứ cú</td><td style="padding:9px 14px;color:#5a5a5a">Bốn lựa chọn logic (là / không là / cả hai / không cả hai) — vượt nhị phân đúng-sai</td></tr>
+        <tr style="border-bottom:1px solid #ddd8ef"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Pramāṇa</td><td style="padding:9px 14px;font-weight:600">Biết để làm đúng</td><td style="padding:9px 14px;color:#5a5a5a">Nhận thức đúng đắn dẫn đến hành động hiệu quả — tiêu chí phân xử bất đồng</td></tr>
+        <tr style="border-bottom:1px solid #ddd8ef"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Svabhāva</td><td style="padding:9px 14px;font-weight:600">Tự tính</td><td style="padding:9px 14px;color:#5a5a5a">Bản chất cố định, tồn tại độc lập — thứ mà Śūnyatā phủ nhận</td></tr>
+        <tr style="border-bottom:1px solid #ddd8ef"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Invariant pattern</td><td style="padding:9px 14px;font-weight:600">Khuôn mẫu bất biến</td><td style="padding:9px 14px;color:#5a5a5a">Kiểu quan hệ giữ nguyên dưới biến đổi nội dung (Tiên Đề II) — tầng KHÔNG thương lượng</td></tr>
+        <tr style="background:#f7f5ff"><td style="padding:9px 14px;font-weight:600;color:#5a4fa0">Self-Criticism</td><td style="padding:9px 14px;font-weight:600">Tự phê bình</td><td style="padding:9px 14px;color:#5a5a5a">Nghi ngờ theo trục thời gian (Hệ quả 2) — cặp trực giao với Xung Đột Lõi</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <a href="upgrade.html" class="secondary">← Mạch Rễ Upgraded</a>
+  <a href="who.html">WHO — Cho Ai? →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="what.html">Là gì</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a> · <a href="upgrade.html">Nâng cấp</a> · <a href="axiom_4.html">Tiên Đề IV</a></p>
+</footer>
+
+</body>
+</html>

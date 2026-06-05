@@ -1,5 +1,38 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-05 — Thêm Module 5: Xung Đột Lõi (Core Conflict) — cơ chế xử lý bất đồng nội bộ
+
+**Quyết định bằng cổng RCA (theo yêu cầu người dùng: 3-round RCA × 5-Why × threshold 4/5, la bàn = nhận thức luận Phật giáo).**
+
+**RCA — có nên thêm module (3-round × 5-Why):**
+- R1 Triệu chứng: mọi tài liệu nói về "lõi" ở số ít; Tiên Đề II định nghĩa bản sắc là *một* invariant pattern → framework mặc định cộng đồng đồng thuận về lõi.
+- R2 Cơ chế: Mạch Rễ tự tuyên bố "cho toàn dân tộc, không phân biệt chính kiến" — nhưng không có cơ chế cho lúc người Việt bất đồng *về chính định nghĩa người Việt* → tự mâu thuẫn với phạm vi tuyên bố.
+- R3 Gốc (một câu): framework gán **tự tính cố định** cho "lõi", nên không có chỗ cho bất đồng — trong khi chuẩn *Śūnyatā* của Tiên Đề VIII nói lõi cũng trống tự tính, vậy bất đồng là điều phải-có, không phải bệnh lý.
+
+**Scoring (thêm module):** Đúng 5 / Sâu 5 / Khả thi 4 / Rủi-ro-thấp 4 / Bảo tồn 5 → **TB 4.6/5 → PROCEED**
+
+**RCA — định vị cấu trúc (cổng quyết định, không chọn tay):**
+- La bàn Śūnyatā: gán địa vị "Tiên Đề IX" cho một thứ phái sinh = vật-hóa nó = đúng cái lỗi module ra đời để sửa → loại.
+- La bàn Upāya: Tiên Đề VIII vốn là "Mạch Rễ tự thấy giới hạn" → Core Conflict thuộc về VIII tự nhiên.
+- **Kết quả:** A+B (hệ quả thứ 5 của Tiên Đề VIII, đóng khung ảnh trực giao trục-H của Self-Criticism) = **4.8/5**; phương án Tiên Đề IX = 2.4/5 → **loại**.
+
+**Sửa gì (extend, không overwrite):**
+- `axiom_conflict.html` (MỚI): trang deep-dive song song `axiom_4.html` — lỗ hổng, phát biểu song ngữ, RCA 3-round, định vị V⊥H (Self-Criticism trục-V ⊥ Core Conflict trục-H), 4 công cụ Phật học (Śūnyatā↦lõi, Nhị đế, Tứ cú Catuṣkoṭi, Pramāṇa), 3 định dạng, 3 ví dụ (trong nước↔hải ngoại, ngôn ngữ, người lai), glossary.
+- `upgrade.html`: thêm Hệ quả 5 vào cons-grid; cập nhật ASCII kiến trúc 4→5 + ghi chú V⊥H; thêm card "MODULE 5 — Xung Đột Lõi" + link; "Bốn hệ quả"→"Năm hệ quả"; +glossary row.
+- `what.html`: thêm "Giới hạn V" (giả định đồng thuận); "Bốn giới hạn"→"Năm giới hạn" + link; thêm qualifier phân tầng pattern/nội dung cho Tiên Đề II.
+- `how.html`: Thực hành "Nhận Dạng Lõi" thêm đoạn "Khi cộng đồng bất đồng về lõi" + link.
+- `who.html`: ghi chú dưới bảng VN×Ubuntu×Yoruba ("Tự phê bình ❌ Yếu" → đã nâng cấp) + link.
+- `why.html`: "Bốn hạn chế"→"Năm hạn chế" + card hạn chế #5 (Core Conflict Gap); "Bốn Mô-đun"→"Năm Mô-đun" + hàng bảng Module 5 (nguồn Nāgārjuna/Dharmakīrti, không mượn đa nguyên phương Tây) + link; "bốn mô-đun"→"năm mô-đun" trong quote-box.
+- `index.html`: thẻ UPGRADE nhắc Module 5; thẻ WHY "bốn hạn chế/bốn Mô-đun"→"năm".
+
+**Phân tầng chống mâu thuẫn "lõi bất biến":** cái *bất biến* = kiểu quan hệ (pattern); cái *thương lượng được* = nội dung / biên giới thành viên. Bất đồng ở tầng nội dung, không phá Tiên Đề II (invariant dưới content transformation).
+
+**Lưu ý nguồn:** KHÔNG dùng *Anekāntavāda* (Kỳ-na/Jain) — chỉ Nāgārjuna/Dharmakīrti, giữ nhất quán nguồn Phật giáo.
+
+**Không đụng:** `raw/`, `archives/` (P4); ý lõi "hấp thụ có định hướng"; các tiên đề I–VII và Tiên Đề VIII gốc.
+
+---
+
 ## 2026-06-05 — what.html: Cập nhật Tiên Đề IV → Thời Gian Cội Nguồn (6 vị trí)
 
 **RCA 3-round:**
