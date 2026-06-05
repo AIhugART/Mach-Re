@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RCA: Mạch Rễ so với Ubuntu &amp; Yoruba — Khác Biệt Tận Gốc Rễ (Homologous Analysis) | Mạch Rễ</title>
+  <meta name="description" content="Phân tích nguyên nhân gốc rễ (RCA) 5 điểm phân kỳ giữa Mạch Rễ Việt Nam, Ubuntu Bantu, và Yoruba Nigeria — Entity ontology vs Relational ontology của tổ tiên." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #b05040;
+      --accent-light: #e07a5f;
+      --accent-pale:  #fdf0ed;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #e8d8d5;
+      --green:        #2d6a4f;
+      --green-pale:   #d8f3dc;
+      --purple:       #6c5ce7;
+      --purple-pale:  #ede9fc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav { background: var(--green); display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #2d1b69 0%, #6c5ce7 60%, #a29bfe 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+    .hero p { color: #d4c8ff; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.45rem;
+      color: var(--purple);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--purple-pale);
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── DEFINITION BOX ── */
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent-light);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+
+    /* ── ASCII ── */
+    .ascii-box {
+      background: var(--purple-pale);
+      border: 1px solid #d0c8f0;
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: .82rem;
+      white-space: pre;
+      overflow-x: auto;
+      color: var(--purple);
+      margin: 16px 0;
+    }
+
+    /* ── TABLE ── */
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .86rem; margin-top: 16px; }
+    .styled-table th {
+      background: var(--purple);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .styled-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+    .styled-table tr:nth-child(even) td { background: #f5f2fd; }
+    .styled-table td strong { color: var(--text-dark); }
+
+    /* ── DIVERGENCE CARD ── */
+    .divergence-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--purple);
+      border-radius: 0 14px 14px 0;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .divergence-card h3 { margin-top: 0; color: var(--purple); }
+    .divergence-card .num {
+      display: inline-block;
+      background: var(--purple);
+      color: #fff;
+      border-radius: 8px;
+      padding: 2px 12px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+
+    /* ── WHY CHAIN ── */
+    .why-chain { margin: 16px 0; }
+    .why-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .why-item:last-child { border-bottom: none; }
+    .why-badge {
+      background: var(--purple-pale);
+      color: var(--purple);
+      border-radius: 8px;
+      padding: 4px 12px;
+      font-weight: 700;
+      font-size: .8rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .why-badge.root { background: var(--green); color: #fff; }
+    .why-item p { margin: 0; font-size: .88rem; }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .bottom-nav a {
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: background .2s;
+    }
+    .bottom-nav a:hover { background: #1a3a2a; }
+    .bottom-nav a.secondary {
+      background: transparent;
+      border: 2px solid var(--green);
+      color: var(--green);
+    }
+
+    footer { background: #1a3a2a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #b7e4c7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <a href="what.html">WHAT</a>
+  <span class="sep">/</span>
+  <a href="axiom_4.html">Tiên Đề IV</a>
+  <span class="sep">/</span>
+  <span class="current">Homologous</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">RCA · HOMOLOGOUS ANALYSIS</div>
+  <h1>Mạch Rễ 🇻🇳 vs Ubuntu 🇿🇦 vs Yoruba 🇳🇬<br/><span style="font-size:.55em;font-weight:400;opacity:.85">Khác biệt tận gốc rễ — 5 Điểm Phân Kỳ (Root Divergence Points)</span></h1>
+  <p>Tại sao ba nền văn hóa cùng có Tiên Đề IV (Vertical Temporality) lại đến những hình thức khác nhau đến vậy? — RCA tìm nguyên nhân gốc rễ, không phải mô tả bề mặt.</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION: PHƯƠNG PHÁP -->
+  <section>
+    <h2>🔬 Thiết lập phương pháp RCA (Method)</h2>
+
+    <div class="def-box" style="border-left-color:#6c5ce7">
+      <div class="label" style="color:#6c5ce7">Mệnh đề nền tảng (Foundation Statement)</div>
+      <blockquote><strong>Tiên Đề IV không phải của Mạch Rễ. Tiên Đề IV là nguyên lý (principle) mà Mạch Rễ, Ubuntu, và Yoruba đều là những bằng chứng độc lập (independent evidence).</strong> Mạch Rễ đóng góp là đặt tên (naming) cho nguyên lý đó bằng ngôn ngữ đủ chính xác để đối thoại (dialogue) với triết học thế giới.</blockquote>
+    </div>
+
+    <div class="ascii-box">Không hỏi: "Việt Nam khác Ubuntu ở điểm nào?"
+Mà hỏi:   "Tại sao ba nền văn hóa cùng có
+            Tiên Đề IV lại đến những hình thức
+            khác nhau đến vậy?"
+
+Câu hỏi đúng = tìm NGUYÊN NHÂN GỐC RỄ
+của sự phân kỳ — không phải mô tả sự khác biệt.
+
+5 Whys áp dụng cho từng điểm phân kỳ.</div>
+
+    <h3>Bề mặt (Surface) vs Gốc rễ (Root)</h3>
+    <div class="ascii-box">BỀ MẶT (không phải gốc rễ):
+  V: bàn thờ trong nhà
+  U: mộ tổ tiên ngoài trời
+  Y: Egungun masquerade
+
+ĐÂY CHỈ LÀ BIỂU HIỆN (manifestation).
+
+CÂU HỎI THẬT:
+  Tại sao cùng một Tiên Đề IV
+  lại được implement
+  theo ba cách khác nhau đến vậy?
+
+  Phải có một ĐIỂM PHÂN KỲ GỐC (root divergence)
+  từ đó mọi khác biệt khác nảy sinh.</div>
+  </section>
+
+
+  <!-- PHÂN KỲ 1 -->
+  <section>
+    <h2>🔀 Điểm Phân Kỳ 1 — Bản Thể Học Tổ Tiên (Ancestor Ontology)</h2>
+
+    <h3>Ba câu trả lời cho "Tổ tiên là gì sau khi chết?"</h3>
+    <div class="ascii-box">UBUNTU trả lời:
+  Amadlozi — tổ tiên trở thành
+  THỰC THỂ CÓ NĂNG LỰC ĐỘC LẬP (independent entity)
+  — Có thể giận dữ (anger)
+  — Có thể trừng phạt (punish)
+  — Có thể bảo vệ (protect)
+  — Can thiệp chủ động vào đời sống
+  → Tổ tiên = AGENT bên ngoài
+    tác động vào người sống
+
+YORUBA trả lời:
+  Egungun — tổ tiên trở thành
+  THỰC THỂ CÓ THỂ NHẬP XÁC (embodied entity)
+  — Trở về vật lý trong masquerade
+  — Nói chuyện trực tiếp
+  — Phán xét và ban phước
+  → Tổ tiên = HIỆN DIỆN VẬT LÝ (physical presence)
+    trong không gian người sống
+
+VIỆT NAM trả lời:
+  Ông bà tổ tiên — người đã khuất
+  trở thành PHẦN CỦA DÒNG CHẢY GIA ĐÌNH (family flow)
+  — Không phải thực thể độc lập
+  — Không phải có thể nhập xác
+  — Mà là: TIẾP TỤC HIỆN DIỆN
+    trong chính cấu trúc gia đình
+  → Tổ tiên = THÀNH PHẦN CỦA HỆ THỐNG (system component)
+    không phải thực thể bên ngoài</div>
+
+    <h3>RCA 5 Whys — Tại Sao Khác Nhau?</h3>
+    <div class="why-chain">
+      <div class="why-item"><span class="why-badge">Why 1</span><p>Tại sao Ubuntu và Yoruba hình dung tổ tiên (ancestors) như <strong>thực thể độc lập (independent entity)</strong> trong khi Việt Nam hình dung như <strong>dòng chảy liên tục (continuous flow)</strong>?</p></div>
+      <div class="why-item"><span class="why-badge">Why 2</span><p>Ubuntu và Yoruba có cấu trúc xã hội <strong>dòng họ phụ hệ (patrilineal clan) rõ ràng</strong> — amadlozi và Egungun thuộc về dòng họ cụ thể (specific lineage), không phải gia đình hạt nhân (nuclear family). Tổ tiên = đại diện của dòng họ → cần có cá tính riêng, quyền năng riêng. Việt Nam có cả phụ hệ lẫn mẫu hệ (bilateral) ở tầng sâu hơn — tổ tiên không đại diện cho một dòng mà cho <strong>sợi chỉ kết nối (connecting thread)</strong>.</p></div>
+      <div class="why-item"><span class="why-badge">Why 3</span><p>Ubuntu và Yoruba sống trong <strong>cộng đồng lớn, thưa dân, không gian rộng</strong> — cần tổ tiên như "lực lượng bảo vệ" (protective force) có quyền năng rõ ràng để duy trì trật tự (order) trong không gian lớn. Việt Nam sống trong <strong>làng xã dày đặc, đất chật người đông (dense villages)</strong> — tổ tiên không cần quyền năng rõ ràng vì cộng đồng hiện tại đã đủ dày để tự duy trì.</p></div>
+      <div class="why-item"><span class="why-badge">Why 4</span><p>Ubuntu và Yoruba cần <strong>specialist (isangoma, babalawo)</strong> vì tổ tiên là thực thể độc lập — cần người trung gian (mediator). Việt Nam không cần specialist vì tổ tiên là <strong>phần của hệ thống</strong> — mọi thành viên (member) đều có thể giao tiếp trực tiếp (direct communication).</p></div>
+      <div class="why-item"><span class="why-badge root">Gốc rễ</span><p><strong>Điểm phân kỳ gốc rễ thứ nhất:</strong> Ubuntu và Yoruba có bản thể học <strong>tổ tiên như thực thể (entity ontology)</strong>. Việt Nam có bản thể học <strong>tổ tiên như quan hệ (relational ontology)</strong>. Đây là hai câu trả lời khác nhau cho câu hỏi "tổ tiên là gì" — và từ đó <strong>mọi khác biệt khác nảy sinh</strong>.</p></div>
+    </div>
+
+    <div class="ascii-box">ENTITY ONTOLOGY (Ubuntu, Yoruba):
+  Tổ tiên = X tồn tại độc lập
+  → Cần specialist để tiếp cận X
+  → Cần không gian thiêng để X ngụ
+  → X có thể giận, phạt, thưởng
+  → Quan hệ với X = quan hệ với
+    thực thể bên ngoài (external entity)
+
+RELATIONAL ONTOLOGY (Việt Nam):
+  Tổ tiên = pattern quan hệ
+  được duy trì trong hệ thống gia đình
+  → Mọi người đều có thể duy trì
+  → Không cần không gian thiêng riêng
+  → Không giận hay phạt —
+    chỉ "có mặt" hoặc "vắng mặt"
+  → Quan hệ với tổ tiên = duy trì
+    pattern quan hệ của hệ thống</div>
+  </section>
+
+
+  <!-- PHÂN KỲ 2 -->
+  <section>
+    <h2>🔀 Điểm Phân Kỳ 2 — Hướng Của Thời Gian Dọc (Direction of Vertical Time)</h2>
+
+    <div class="ascii-box">CÂU HỎI: Thời gian dọc chảy theo hướng nào?
+
+UBUNTU:
+  TỔ TIÊN → NGƯỜI SỐNG
+  Chiều chính: TỪ TRÊN XUỐNG (top-down)
+
+  Amadlozi ban phát hoặc trừng phạt
+  Người sống phải xin phép, báo cáo
+  Quan hệ = BẤT ĐỐI XỨNG (asymmetric)
+  Tổ tiên > người sống
+
+  Ẩn dụ: Tổ tiên là CHA MẸ (parents)
+          người sống là CON CÁI (children)
+
+YORUBA:
+  TỔ TIÊN ↔ NGƯỜI SỐNG (semi-symmetric)
+  nhưng vẫn: TỔ TIÊN CÓ QUYỀN NĂNG HƠN
+
+  Egungun đến phán xét và ban phước
+  Nhưng: người sống có thể
+  ảnh hưởng đến tổ tiên qua Ifa
+  Quan hệ = BÁN ĐỐI XỨNG (semi-asymmetric)
+
+VIỆT NAM:
+  NGƯỜI SỐNG ↔ TỔ TIÊN (symmetric)
+  Chiều chính: HAI CHIỀU NGANG BẰNG (mutual)
+
+  Người sống báo cáo với tổ tiên
+  Tổ tiên phù hộ người sống
+  Nhưng: người sống CHĂM SÓC tổ tiên
+  (hương khói, đồ cúng, giỗ chạp)
+  Tổ tiên CẦN người sống
+  chăm sóc không kém người sống cần tổ tiên
+
+  Quan hệ = ĐỐI XỨNG — MUTUAL CARE</div>
+
+    <h3>RCA 5 Whys — Tại Sao Chiều Khác Nhau?</h3>
+    <div class="why-chain">
+      <div class="why-item"><span class="why-badge">Why 1</span><p>Tại sao Ubuntu và Yoruba có quan hệ <strong>bất đối xứng (asymmetric)</strong> (tổ tiên > người sống) trong khi Việt Nam có quan hệ <strong>đối xứng (symmetric)</strong>?</p></div>
+      <div class="why-item"><span class="why-badge">Why 2</span><p>Ubuntu và Yoruba phát triển trong bối cảnh <strong>quyền lực của người lớn tuổi (elderhood)</strong> cực kỳ mạnh. Người già = gần tổ tiên hơn → có quyền lực hơn. Khi chết → trở thành amadlozi = quyền lực tuyệt đối (absolute power). Hệ thống quyền lực <strong>tiếp tục vào cõi chết (extends into death)</strong>.</p></div>
+      <div class="why-item"><span class="why-badge">Why 3</span><p>Việt Nam có <strong>tín ngưỡng Mẫu (Mother Goddess worship)</strong> ở tầng sâu nhất — Đất Mẹ, Nước Mẹ. Mẫu = quan hệ chăm sóc hai chiều (mutual care). Đất nuôi người, người chăm sóc đất. Cấu trúc này thấm vào quan hệ với tổ tiên: người sống chăm sóc tổ tiên (hương khói) = tổ tiên chăm sóc người sống (phù hộ).</p></div>
+      <div class="why-item"><span class="why-badge">Why 4</span><p>Ubuntu và Yoruba không có <strong>tín ngưỡng Mẫu (Mother worship)</strong> tương đương ở tầng nền. Quan hệ với đất/tự nhiên (earth/nature) không được nhân cách hóa (personified) theo cách tạo ra mutual care structure.</p></div>
+      <div class="why-item"><span class="why-badge root">Gốc rễ</span><p><strong>Điểm phân kỳ gốc rễ thứ hai:</strong> Việt Nam có <strong>tín ngưỡng Mẫu như nền tảng bản thể học (Mother Goddess as ontological foundation)</strong> — tạo ra cấu trúc mutual care trong quan hệ với thế giới. Ubuntu và Yoruba không có cấu trúc này. Kết quả: quan hệ thời gian dọc (vertical time relation) của Việt Nam là đối xứng, của Ubuntu và Yoruba là bất đối xứng.</p></div>
+    </div>
+  </section>
+
+
+  <!-- PHÂN KỲ 3 -->
+  <section>
+    <h2>🔀 Điểm Phân Kỳ 3 — Đơn Vị Mang Tiên Đề IV (Carrier Unit)</h2>
+
+    <div class="ascii-box">CÂU HỎI: Ai là đơn vị thực hành Tiên Đề IV?
+
+UBUNTU:
+  Đơn vị = DÒNG HỌ (clan/lineage)
+  — Amadlozi thuộc về dòng họ
+  — Không phải gia đình hạt nhân
+  → Tiên Đề IV hoạt động ở tầng DÒNG HỌ
+
+  Hệ quả:
+  — Dòng họ tan vỡ → Tiên Đề IV suy yếu
+  — Urbanization phân tán dòng họ
+    → NGUY CƠ LỚN NHẤT
+
+YORUBA:
+  Đơn vị = DÒNG HỌ + XÃ HỘI EGUNGUN (hai tầng)
+  — Egungun society = thiết chế liên dòng họ
+  → Tiên Đề IV hoạt động ở
+    tầng DÒNG HỌ + THIẾT CHẾ
+
+  Hệ quả:
+  — Phức tạp hơn Ubuntu
+  — Nhưng: có thể tái tạo ở diaspora
+
+VIỆT NAM:
+  Đơn vị = GIA ĐÌNH HẠT NHÂN (nuclear family)
+  (nhỏ nhất có thể)
+  — Bàn thờ trong mỗi nhà
+  — Một cặp vợ chồng đã có thể
+    duy trì Tiên Đề IV
+  — Không cần dòng họ, không cần thiết chế
+  → Tiên Đề IV hoạt động ở
+    tầng GIA ĐÌNH HẠT NHÂN
+
+  Hệ quả:
+  — Resilient nhất: không có
+    single point of failure
+  — Di động nhất (most portable):
+    một gia đình đi đến đâu
+    Tiên Đề IV đi theo đến đó</div>
+
+    <h3>RCA 5 Whys — Tại Sao Đơn Vị Khác Nhau?</h3>
+    <div class="why-chain">
+      <div class="why-item"><span class="why-badge">Why 1</span><p>Tại sao đơn vị mang (carrier unit) Tiên Đề IV lại khác nhau giữa ba nền văn hóa?</p></div>
+      <div class="why-item"><span class="why-badge">Why 2</span><p>Ubuntu và Yoruba có <strong>land-based economy</strong> — đất đai thuộc về dòng họ (clan land), không phải cá nhân. Amadlozi gắn với đất dòng họ. Khi đất = dòng họ, tổ tiên = dòng họ. Việt Nam có <strong>ruộng cấy lúa (rice paddies)</strong> — mỗi gia đình có mảnh ruộng riêng. Tổ tiên gắn với <strong>hộ gia đình (household)</strong>.</p></div>
+      <div class="why-item"><span class="why-badge">Why 3</span><p>Lúa nước (wet rice) đòi hỏi <strong>lao động gia đình hạt nhân (nuclear family labor)</strong> trong từng mảnh ruộng nhỏ — không phải lao động dòng họ lớn (large clan labor). Kết quả: gia đình hạt nhân là đơn vị kinh tế cơ bản (basic economic unit) → trở thành đơn vị mang Tiên Đề IV.</p></div>
+      <div class="why-item"><span class="why-badge">Why 4</span><p>Ubuntu và Yoruba có <strong>chăn nuôi và săn bắt (herding & hunting)</strong> đòi hỏi nhóm lớn hơn → dòng họ là đơn vị kinh tế (economic unit) → dòng họ là đơn vị mang Tiên Đề IV.</p></div>
+      <div class="why-item"><span class="why-badge root">Gốc rễ</span><p><strong>Điểm phân kỳ gốc rễ thứ ba:</strong> <strong>Nền kinh tế lúa nước (wet rice economy)</strong> của Việt Nam tạo ra đơn vị kinh tế là gia đình hạt nhân → Tiên Đề IV được thu nhỏ đến đơn vị tối giản (minimal unit). <strong>Nền kinh tế chăn nuôi/săn bắt (pastoral/hunting economy)</strong> của Ubuntu và Yoruba tạo ra đơn vị kinh tế là dòng họ → Tiên Đề IV cần đơn vị lớn hơn. Đây không phải khác biệt triết học ban đầu — mà là khác biệt <strong>sinh thái-kinh tế (eco-economic)</strong> tạo ra khác biệt triết học.</p></div>
+    </div>
+  </section>
+
+
+  <!-- PHÂN KỲ 4 -->
+  <section>
+    <h2>🔀 Điểm Phân Kỳ 4 — Quan Hệ Với Kẻ Thù Sau Xung Đột (Post-Conflict Reconciliation)</h2>
+
+    <div class="ascii-box">CÂU HỎI: Tiên Đề IV xử lý kẻ thù cũ như thế nào?
+
+UBUNTU:
+  Truth and Reconciliation Commission (TRC, 1996-2003)
+  — Cần THIẾT CHẾ (institution) để thực hiện
+  — Công khai, có hồ sơ, có quy trình
+  — Tổ tiên (amadlozi) của nạn nhân
+    cần được "xoa dịu" qua nghi lễ
+  → Hòa giải = QUÁ TRÌNH CÓ TỔ CHỨC
+
+YORUBA:
+  Ẹ̀jọ́ — hệ thống tư pháp Yoruba
+  Ofo — lời nguyền tổ tiên có thể được "tháo gỡ"
+  — Cần babalawo để tháo gỡ nghiệp
+  — Phức tạp, nhiều tầng nghi lễ
+  → Hòa giải = NGHI LỄ PHỨC TẠP với specialist
+
+VIỆT NAM:
+  Không có TRC. Không có babalawo.
+  Không có nghi lễ hòa giải có tổ chức.
+  — Người cựu thù gặp nhau
+  — Nhìn thấy nhau là CON NGƯỜI (human)
+    không phải vai trò lịch sử (historical role)
+  — "Cựu chiến binh Việt gặp cựu chiến binh
+     Mỹ với nụ cười"
+  — Không phải vì quên
+  — Không phải vì thiết chế yêu cầu
+  — Mà vì: cả hai đều là con người
+    có tổ tiên, có gia đình
+  → Hòa giải = NHẬN RA NHÂN TÍNH CHUNG
+    qua cùng một Tiên Đề IV</div>
+
+    <h3>RCA 5 Whys — Tại Sao Hòa Giải Khác Nhau?</h3>
+    <div class="why-chain">
+      <div class="why-item"><span class="why-badge">Why 1</span><p>Tại sao Việt Nam hòa giải phi thiết chế (non-institutional reconciliation) trong khi Ubuntu cần TRC và Yoruba cần babalawo?</p></div>
+      <div class="why-item"><span class="why-badge">Why 2</span><p>Ubuntu amadlozi của người chết trong xung đột <strong>cần được xoa dịu (pacified)</strong> — họ là thực thể bị tổn thương (wounded entity) có quyền năng. Nếu không xoa dịu → tiếp tục trừng phạt. Cần thiết chế để thực hiện nghi lễ xoa dịu đúng cách.</p></div>
+      <div class="why-item"><span class="why-badge">Why 3</span><p>Việt Nam: tổ tiên của người chết không phải thực thể bị tổn thương cần xoa dịu — mà là <strong>tiếp tục hiện diện (continue to be present) trong gia đình</strong>. Gia đình thực hiện giỗ chạp → tổ tiên được chăm sóc → oán thù (grudge) không được "ủy thác" (delegated) cho tổ tiên.</p></div>
+      <div class="why-item"><span class="why-badge">Why 4</span><p>Vì tổ tiên Việt Nam là <strong>relational ontology</strong> (phần của hệ thống) không phải <strong>entity ontology</strong> (thực thể độc lập), nên họ không mang oán thù độc lập. Người sống mang oán thù — và người sống có thể chọn buông bỏ (release).</p></div>
+      <div class="why-item"><span class="why-badge root">Gốc rễ</span><p><strong>Điểm phân kỳ gốc rễ thứ tư:</strong> Vì tổ tiên Việt Nam là <strong>relational pattern</strong> không phải <strong>independent entity</strong>, nên oán thù (grudge) không được "lưu trữ" (stored) ở cấp độ tổ tiên. Oán thù là <strong>trạng thái của người sống (state of the living)</strong> — và có thể được người sống giải quyết trực tiếp mà không cần thiết chế hay specialist. Đây là lý do tại sao hòa giải Việt-Mỹ xảy ra <strong>từ dưới lên (bottom-up)</strong>, không phải từ trên xuống (top-down).</p></div>
+    </div>
+  </section>
+
+
+  <!-- PHÂN KỲ 5 -->
+  <section>
+    <h2>🔀 Điểm Phân Kỳ 5 — Phản Ứng Với Hiện Đại Hóa (Modernization Response)</h2>
+
+    <div class="ascii-box">UBUNTU → ĐÔ THỊ HÓA = KHỦNG HOẢNG (crisis)
+  Vì gắn với: đất + dòng họ + specialist
+  Khi vào thành phố:
+  — Mất đất → mất mộ → mất kết nối
+  — Dòng họ phân tán → amadlozi mờ nhạt
+  → Tiên Đề IV suy yếu mạnh
+
+YORUBA → ĐÔ THỊ HÓA = THÍCH NGHI TRUNG BÌNH
+  — Egungun society có thể tái tạo ở đô thị
+  — Ifa divination có thể thực hành trong căn hộ
+  — Nhưng: vẫn cần Egungun grove
+    (không gian thiêng / sacred space)
+  → Thích nghi được nhưng mất chiều sâu
+
+VIỆT NAM → ĐÔ THỊ HÓA = THÍCH NGHI TỐT NHẤT
+  — Chỉ cần: một bàn thờ nhỏ (small altar)
+  — Không cần đất cụ thể
+  — Không cần dòng họ lớn
+  — Không cần specialist
+  Căn hộ 30m² ở Hà Nội:
+  vẫn có thể có bàn thờ
+  → Tiên Đề IV vẫn hoạt động
+
+  NHƯNG: nguy cơ mới (new risk):
+  — Thế hệ Z không biết TẠI SAO phải thờ cúng
+  — Mất NGÔN NGỮ (language) để giải thích
+    không phải mất THỰC HÀNH (practice)
+  → Nguy cơ không phải vật chất
+    mà là SEMANTIC — mất ý nghĩa (loss of meaning)</div>
+
+    <h3>RCA 5 Whys — Tại Sao Phản Ứng Khác Nhau?</h3>
+    <div class="why-chain">
+      <div class="why-item"><span class="why-badge">Why 1</span><p>Tại sao Việt Nam thích nghi với đô thị hóa (urbanization) tốt hơn Ubuntu và Yoruba?</p></div>
+      <div class="why-item"><span class="why-badge">Why 2</span><p>Vì đơn vị mang (carrier unit) Tiên Đề IV của Việt Nam là <strong>gia đình hạt nhân (nuclear family)</strong> — đơn vị duy nhất không bị phá vỡ (disrupted) bởi đô thị hóa.</p></div>
+      <div class="why-item"><span class="why-badge">Why 3</span><p>Vì Tiên Đề IV của Việt Nam <strong>không cần không gian cố định (fixed space)</strong> (bàn thờ di động / portable altar), không cần dòng họ (clan), không cần specialist. Ba thứ đó đều <strong>portable</strong> — có thể đi theo người vào đô thị.</p></div>
+      <div class="why-item"><span class="why-badge">Why 4</span><p>Tại sao Ubuntu và Yoruba phát triển Tiên Đề IV gắn với những thứ <strong>không portable</strong>? Vì trong bối cảnh nông thôn châu Phi (rural Africa) truyền thống, không ai cần Tiên Đề IV portable — di dân quy mô lớn (mass migration) là hiện tượng do thuộc địa hóa (colonization) gây ra.</p></div>
+      <div class="why-item"><span class="why-badge root">Gốc rễ</span><p><strong>Điểm phân kỳ gốc rễ thứ năm:</strong> Việt Nam có <strong>lịch sử di dân nội địa liên tục (continuous internal migration)</strong> — Nam tiến (Southern Advance) 1000 năm từ Bắc vào Nam. Tiên Đề IV phải <strong>portable</strong> để survive quá trình đó. Kết quả: bàn thờ gia đình hạt nhân phi địa lý (non-geographic nuclear family altar) là <strong>sản phẩm của áp lực di dân liên tục (product of continuous migration pressure)</strong>. Ubuntu và Yoruba không có lịch sử di dân nội địa quy mô tương tự → không có áp lực tiến hóa (evolutionary pressure) để làm Tiên Đề IV portable.</p></div>
+    </div>
+  </section>
+
+
+  <!-- TỔNG HỢP -->
+  <section>
+    <h2>📊 Ma Trận Phân Kỳ Gốc Rễ (Root Divergence Matrix)</h2>
+    <div style="overflow-x:auto">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Chiều kích (Dimension)</th>
+            <th>Ubuntu (Bantu)</th>
+            <th>Yoruba (Nigeria)</th>
+            <th>🇻🇳 Việt Nam</th>
+            <th>Nguồn gốc phân kỳ (Root Cause)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Bản thể học tổ tiên (Ancestor ontology)</strong></td><td>Entity</td><td>Entity + Cosmic</td><td><strong>Relational</strong></td><td>Tín ngưỡng Mẫu (Mother Goddess)</td></tr>
+          <tr><td><strong>Hướng thời gian dọc (Vertical time direction)</strong></td><td>Xuống (top-down)</td><td>Xuống-ngang (semi)</td><td><strong>Đối xứng (symmetric)</strong></td><td>Mutual care structure</td></tr>
+          <tr><td><strong>Đơn vị mang (Carrier unit)</strong></td><td>Dòng họ (clan)</td><td>Dòng họ + Society</td><td><strong>Gia đình hạt nhân (nuclear)</strong></td><td>Kinh tế lúa nước (wet rice)</td></tr>
+          <tr><td><strong>Xử lý xung đột (Conflict resolution)</strong></td><td>Thiết chế TRC</td><td>Nghi lễ specialist</td><td><strong>Phi thiết chế trực tiếp (non-institutional)</strong></td><td>Entity vs Relational ontology</td></tr>
+          <tr><td><strong>Phản ứng hiện đại (Modernization)</strong></td><td>Dễ tổn thương (vulnerable)</td><td>Trung bình</td><td><strong>Bền vững nhất (most resilient)</strong></td><td>Lịch sử Nam tiến (Southern Advance)</td></tr>
+          <tr><td><strong>Specialist cần (Specialist needed)</strong></td><td>Isangoma</td><td>Babalawo</td><td><strong>Không cần (none)</strong></td><td>Đơn vị + ontology</td></tr>
+          <tr><td><strong>Gắn với đất (Land-bound)</strong></td><td>Rất cao (very high)</td><td>Cao (high)</td><td><strong>Thấp (low) — portable</strong></td><td>Nam tiến → portable</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- KẾT LUẬN -->
+  <section>
+    <h2>💡 Một Câu Kết Luận RCA (Root Cause Conclusion)</h2>
+    <div class="def-box" style="border-left-color:#6c5ce7">
+      <div class="label" style="color:#6c5ce7">Kết luận — Khác biệt gốc rễ duy nhất (The Single Root Difference)</div>
+      <blockquote><strong>Khác biệt gốc rễ duy nhất giữa Mạch Rễ Việt Nam và Ubuntu/Yoruba là: Việt Nam có bản thể học quan hệ (relational ontology) về tổ tiên — tổ tiên = pattern, không phải entity — được tạo ra bởi tín ngưỡng Mẫu (Mother Goddess worship). Trong khi Ubuntu và Yoruba có bản thể học thực thể (entity ontology) về tổ tiên — tổ tiên = entity độc lập.</strong><br/><br/>
+      Từ một điểm phân kỳ gốc rễ đó — toàn bộ những khác biệt còn lại đều có thể được suy ra (derivable).</blockquote>
+    </div>
+
+    <div class="def-box" style="border-left-color:#2d6a4f">
+      <div class="label" style="color:#2d6a4f">Hệ quả cho Mạch Rễ (Implication for Root Flow)</div>
+      <blockquote>Mạch Rễ — Đạo Rễ (Root Way) — là phiên bản <strong>portable, phi thiết chế (non-institutional), đối xứng (symmetric)</strong> nhất của Tiên Đề IV trên thế giới. Điều này không phải ngẫu nhiên (not accidental) — mà là sản phẩm của <strong>1000 năm bị đô hộ + 1000 năm Nam tiến + tín ngưỡng Mẫu ở tầng sâu nhất</strong>.</blockquote>
+    </div>
+  </section>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <a href="axiom_4.html" class="secondary">← Tiên Đề IV</a>
+  <a href="what.html" class="secondary">← WHAT — Là Gì?</a>
+  <a href="upgrade.html">Nâng cấp (Upgrade) →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="what.html">Là gì</a> · <a href="axiom_4.html">Tiên Đề IV</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a> · <a href="upgrade.html">Nâng cấp</a></p>
+</footer>
+
+</body>
+</html>
