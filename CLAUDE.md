@@ -104,6 +104,22 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Khi mô tả thực hành văn hóa / sơ đồ trực quan / so sánh đa văn hóa → dùng **Vertical Temporality** (biểu hiện)
 - Hai thuật ngữ **không** thay thế nhau: chúng khác tầng (essence ≠ manifestation), không phải đồng nghĩa
 
+### Tên thuần Việt các Tiên Đề (RCA finding 2026-06-05)
+
+> Điểm RCA: 8/8 tiên đề đạt ≥ 4/5. Bảng canonical (nguồn chân lý duy nhất) tại `plan/dictionary_rule.md §9`.
+> Format đầy đủ: `Tiên Đề [số] — [Biểu hiện thuần Việt] — [Bản chất thuần Việt] ("EN")`.
+
+| # | Biểu hiện | Bản chất |
+|---|---|---|
+| I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình |
+| II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình |
+| III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần |
+| IV | Thời Gian Dọc | Thời Gian Cội Nguồn |
+| V | Ranh Giới Mềm | Đóng Mở Có Chọn |
+| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành |
+| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới |
+| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ |
+
 ### Document contract rules
 
 - Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.

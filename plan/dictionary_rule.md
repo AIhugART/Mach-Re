@@ -114,6 +114,30 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 
 ---
 
+## 9. Bảng Tên Canonical — Tên Thuần Việt Các Tiên Đề
+
+> **Nguồn chân lý duy nhất.** Mọi file HTML/MD khi hiển thị tên định danh tiên đề tra bảng này.
+> Ngày chốt: 2026-06-05 · Cổng quyết định: 3-round RCA × 5-Why × ≥ 4/5.
+> **Quy tắc dùng:** format đầy đủ = `Tiên Đề [số] — [Biểu hiện] — [Bản chất] ("EN")`.
+> Khi không gian hạn chế (menu, breadcrumb) → chỉ dùng `Tiên Đề [số] — [Biểu hiện]`.
+
+| # | Biểu hiện (thuần Việt) | Bản chất (thuần Việt) | Thuật ngữ kỹ thuật (EN) | Điểm |
+|---|---|---|---|---|
+| I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | Relational Ontology | 4.8 |
+| II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | 4.8 |
+| III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 |
+| IV | Thời Gian Dọc | Thời Gian Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 |
+| V | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | 5.0 |
+| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 |
+| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 |
+| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 |
+
+**Neo quan trọng (IV):** "Cội Nguồn" = tên thuần Việt cho bản chất *cảm xúc-bản sắc* của Tiên Đề IV.
+KHÔNG đồng nghĩa với "Orthogonal/trực giao" (thuật ngữ cấu trúc). Hai tầng khác nhau: essence ≠ manifestation.
+Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
+
+---
+
 ## 7. Điều KHÔNG đụng (bảo tồn — đừng "hạ giọng" nhầm)
 
 - Ý lõi: **bản sắc bền nhờ hấp thụ có định hướng, không nhờ dựng tường.**

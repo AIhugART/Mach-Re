@@ -1,5 +1,41 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-05 — Bổ sung tên thuần Việt cho 8 Tiên Đề (Phase 2–4 hoàn tất)
+
+**Quyết định bằng cổng RCA (3-round × 5-Why × threshold 4/5). La bàn: Nhận thức luận Phật giáo (Upāya).**
+
+**RCA gốc rễ:** thiếu tên thuần Việt = vi phạm nguyên lý Upāya mà Tiên Đề VIII tự dựng lên ("triết lý chỉ sống khi được nói trong ngôn ngữ mà người ta nghĩ"). Sửa = làm framework tuân theo chuẩn của chính nó. Điểm 5/5.
+
+**Kết quả chấm điểm (8/8 đạt ≥ 4/5):**
+
+| # | Biểu hiện | Bản chất | Điểm |
+|---|---|---|---|
+| I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | 4.8 |
+| II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | 4.8 |
+| III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | 5.0 |
+| IV | Thời Gian Dọc | Thời Gian Cội Nguồn | 4.8 |
+| V | Ranh Giới Mềm | Đóng Mở Có Chọn | 5.0 |
+| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | 4.8 |
+| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | 5.0 |
+| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | 5.0 |
+
+**Neo Tiên Đề IV (Conflict-risk 4):** "Cội Nguồn" = tên bản chất *cảm xúc-bản sắc*, KHÔNG đồng nghĩa "Orthogonal/trực giao" (thuật ngữ cấu trúc). Hai tầng essence ≠ manifestation vẫn giữ nguyên.
+
+**Files đã sửa:**
+- `plan/dictionary_rule.md`: thêm §9 — bảng tên canonical (nguồn chân lý duy nhất)
+- `CLAUDE.md`: thêm `### Tên thuần Việt các Tiên Đề` vào Core Principles
+- `what.html`: 7 h3 heading (I–III, V–VII) + summary table + hierarchy ASCII block
+- `upgrade.html`: h2 + display block title + ASCII kiến trúc cho VIII
+- `index.html`: nav card description cho VIII
+- `who.html`: first-mention VIII trong body
+- `axiom_conflict.html`: label div Module 5 (first-mention VIII)
+- `mach_re_homologous.html`: hero section intro (first-mention IV)
+- `axiom_4.html`: `<title>`, `<meta description>`, kết luận label
+
+**Không đụng:** `raw/`, `archives/` (P4); nội dung lập luận inline (chỉ sửa naming-definition points); thuật ngữ EN (extend-only).
+
+---
+
 ## 2026-06-05 — Thêm Module 5: Xung Đột Lõi (Core Conflict) — cơ chế xử lý bất đồng nội bộ
 
 **Quyết định bằng cổng RCA (theo yêu cầu người dùng: 3-round RCA × 5-Why × threshold 4/5, la bàn = nhận thức luận Phật giáo).**
