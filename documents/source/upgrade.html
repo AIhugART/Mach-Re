@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mạch Rễ Upgraded — Tiên Đề VIII & Bốn Mở Rộng</title>
+  <meta name="description" content="Mạch Rễ Upgraded: Tiên Đề VIII (Nhận Thức Phản Tư), bốn tiên đề mở rộng qua Nhận thức luận Phật giáo, và kiến trúc hệ thống sau upgrade." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-deep:  #1a3a2a;
+      --green-mid:   #2d6a4f;
+      --green-light: #52b788;
+      --green-pale:  #b7e4c7;
+      --gold:        #d4a843;
+      --gold-light:  #f0c96a;
+      --cream:       #faf7f0;
+      --text-dark:   #1c1c1c;
+      --text-muted:  #5a5a5a;
+      --border:      #d8e8d8;
+      --purple:      #7c6fc9;
+      --purple-pale: #ede8f7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* HEADER */
+    .page-header {
+      background: linear-gradient(135deg, var(--purple) 0%, #5a4fa0 50%, var(--green-deep) 100%);
+      color: #fff;
+      padding: 56px 24px 40px;
+      text-align: center;
+    }
+    .page-header .breadcrumb { font-size: .82rem; opacity: .7; margin-bottom: 12px; }
+    .page-header .breadcrumb a { color: var(--green-pale); text-decoration: none; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem,5vw,3rem); margin-bottom: 8px; }
+    .page-header .sub { font-size: 1rem; opacity: .8; font-weight: 300; }
+
+    /* MAIN CONTENT */
+    .content { max-width: 860px; margin: 0 auto; padding: 40px 24px 60px; }
+    section { margin-bottom: 52px; }
+    h2 {
+      font-size: 1.4rem; font-weight: 700; color: var(--green-deep);
+      border-left: 4px solid var(--green-light); padding-left: 14px;
+      margin-bottom: 20px; margin-top: 36px;
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--green-mid); margin: 20px 0 10px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* UPGRADE CARD */
+    .upgrade-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #fff;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .upgrade-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    }
+    .upgrade-card.u1::before { background: #52b788; }
+    .upgrade-card.u2::before { background: #d4a843; }
+    .upgrade-card.u3::before { background: #e07a5f; }
+    .upgrade-card.u4::before { background: #7c6fc9; }
+
+    .upgrade-tag {
+      font-size: .72rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
+      display: inline-block; margin-bottom: 10px;
+    }
+    .u1 .upgrade-tag { background: #e8f5ee; color: #2d6a4f; }
+    .u2 .upgrade-tag { background: #fdf3dc; color: #a07830; }
+    .u3 .upgrade-tag { background: #fdecea; color: #b05040; }
+    .u4 .upgrade-tag { background: #ede8f7; color: #5a4fa0; }
+
+    .upgrade-card h3 { margin-top: 0; }
+    .limit-box {
+      background: #fef9ec; border: 1px solid #f0d080;
+      border-radius: 8px; padding: 12px 16px; margin: 12px 0;
+      font-size: .9rem; line-height: 1.7;
+    }
+    .limit-box .lbl { font-weight: 700; color: #a07830; font-size: .75rem;
+      text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: 4px; }
+
+    /* DEF BOX */
+    .def-box {
+      border-left: 4px solid var(--green-light);
+      background: #f0faf5; border-radius: 0 12px 12px 0;
+      padding: 16px 20px; margin: 16px 0;
+    }
+    .def-box .label {
+      font-size: .72rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--green-mid); margin-bottom: 8px;
+    }
+    .def-box blockquote { color: var(--text-dark); line-height: 1.8; font-size: .96rem; }
+
+    /* AXIOM VIII HERO */
+    .axiom-viii {
+      background: linear-gradient(135deg, var(--green-deep), #2d3a6a);
+      color: #fff; border-radius: 20px; padding: 36px;
+      margin-bottom: 32px; text-align: center;
+    }
+    .axiom-viii .viii-label {
+      font-size: .8rem; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--gold-light); margin-bottom: 12px;
+    }
+    .axiom-viii .viii-title {
+      font-family: 'Playfair Display', serif; font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+    .axiom-viii .viii-sub { font-size: .9rem; opacity: .75; margin-bottom: 20px; }
+    .axiom-viii blockquote {
+      background: rgba(255,255,255,.1); border-radius: 12px;
+      padding: 20px 24px; text-align: left; line-height: 1.8;
+      border-left: 3px solid var(--gold); font-size: .95rem;
+    }
+
+    /* TOOL PILLS */
+    .tool-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .tool-pill {
+      background: var(--purple-pale); color: var(--purple);
+      border-radius: 20px; padding: 4px 14px; font-size: .82rem; font-weight: 600;
+    }
+
+    /* ASCII BOX */
+    .ascii-box {
+      background: #1a2a1e; color: #74c48a;
+      font-family: 'Courier New', monospace; font-size: .82rem;
+      border-radius: 10px; padding: 18px 20px;
+      line-height: 1.7; white-space: pre; overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    /* RESULT BOX */
+    .result-box {
+      background: var(--green-deep); color: #fff;
+      border-radius: 12px; padding: 20px 24px;
+      margin: 16px 0; font-size: .95rem; line-height: 1.8;
+    }
+    .result-box strong { color: var(--gold-light); }
+
+    /* CONSEQUENCES GRID */
+    .cons-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 14px; margin: 16px 0; }
+    .cons-item {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px;
+    }
+    .cons-item .cn { font-size: .72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--purple); margin-bottom: 6px; }
+    .cons-item p { font-size: .86rem; margin: 0; }
+
+    /* CONDITIONS */
+    .condition-list { counter-reset: cond; }
+    .condition-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 12px; padding: 18px; margin-bottom: 12px;
+    }
+    .condition-item::before {
+      counter-increment: cond;
+      content: counter(cond);
+      min-width: 32px; height: 32px; border-radius: 50%;
+      background: var(--green-mid); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: .9rem; flex-shrink: 0;
+    }
+    .condition-item .ci-body h4 { font-size: .95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 4px; }
+    .condition-item .ci-body p { font-size: .88rem; margin: 0; }
+
+    /* NAV */
+    .bottom-nav {
+      display: flex; justify-content: space-between;
+      max-width: 860px; margin: 0 auto; padding: 20px 24px 40px;
+      gap: 12px; flex-wrap: wrap;
+    }
+    .bottom-nav a {
+      background: var(--green-mid); color: #fff;
+      padding: 10px 24px; border-radius: 10px;
+      text-decoration: none; font-weight: 600; font-size: .9rem;
+    }
+    .bottom-nav a.secondary {
+      background: transparent; color: var(--green-mid);
+      border: 1px solid var(--green-mid);
+    }
+    footer {
+      background: var(--green-deep); color: rgba(255,255,255,.6);
+      text-align: center; padding: 24px; font-size: .82rem;
+    }
+    footer a { color: var(--green-pale); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="page-header">
+  <p class="breadcrumb"><a href="index.html">← Tổng quan</a></p>
+  <div style="font-size:2.5rem;margin-bottom:12px">🔄</div>
+  <h1>Mạch Rễ Upgraded</h1>
+  <p class="sub">Tiên Đề VIII &amp; Bốn Tiên Đề Mở Rộng qua Nhận Thức Luận Phật Giáo</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION 1: BỐI CẢNH -->
+  <section>
+    <h2>⚙️ Tại Sao Cần Upgrade?</h2>
+    <p>7 Tiên Đề gốc của Mạch Rễ mô tả chính xác cơ chế sinh tồn lịch sử của dân tộc Việt. Nhưng chúng có <strong>bốn giới hạn cấu trúc</strong> khi đối mặt với thế giới hiện đại — và bốn giới hạn đó có thể được mở rộng chính xác bằng công cụ Nhận thức luận Phật giáo (không phải bằng tư tưởng phương Tây).</p>
+
+    <div class="ascii-box">TIÊN ĐỀ I (Quan Hệ Bản Thể):
+  GIỚI HẠN: "Quan hệ" chỉ trong known network (gia đình, làng, tổ tiên)
+  CÔNG CỤ:  Pratītyasamutpāda đầy đủ (Nāgārjuna) + Karuṇā
+
+TIÊN ĐỀ II (Bất Biến Cấu Trúc):
+  GIỚI HẠN: Không có cơ chế tự kiểm chứng invariant còn đúng không
+  CÔNG CỤ:  Śūnyatā + Pramāṇa epistemology (Dharmakīrti)
+
+TIÊN ĐỀ III (Phân Tán Bản Thể):
+  GIỚI HẠN: Chống lại mọi tập trung — kể cả thiết chế tốt
+  CÔNG CỤ:  Prajñā — thấy bản chất thật của thiết chế
+
+TIÊN ĐỀ IV (Thời Gian Dọc):
+  GIỚI HẠN: Chỉ đối thoại với quá khứ — không có trách nhiệm tương lai
+  CÔNG CỤ:  Bodhicitta + Kṣaṇika (Sát Na Luận)</div>
+
+    <p>Nguyên tắc upgrade: <strong>Không thêm từ bên ngoài vào Mạch Rễ — mà dùng Prajñā để Mạch Rễ tự nhìn thấy giới hạn của mình.</strong></p>
+  </section>
+
+  <!-- SECTION 2: 4 UPGRADES -->
+  <section>
+    <h2>🔁 Bốn Tiên Đề Mở Rộng</h2>
+
+    <!-- UPGRADE I -->
+    <div class="upgrade-card u1">
+      <span class="upgrade-tag">UPGRADE I — Tiên Đề I</span>
+      <h3>Từ Known Network đến Universal Network</h3>
+      <p><strong>Tiên Đề I hiện tại:</strong> "Tồn tại là tồn tại-trong-quan-hệ với known network."</p>
+      <div class="limit-box">
+        <span class="lbl">Vấn đề</span>
+        "Known network" = gia đình + làng + tổ tiên → người lạ không nằm trong network → không có civic obligation với người lạ.
+      </div>
+      <p><strong>Công cụ Phật giáo:</strong></p>
+      <div class="tool-row">
+        <span class="tool-pill">Pratītyasamutpāda (Nāgārjuna)</span>
+        <span class="tool-pill">Karuṇā (Dharmakīrti)</span>
+      </div>
+      <p>Nếu mọi thứ tương thuộc — thì người lạ trên đường cũng đang chia sẻ không khí tôi thở, đường tôi đi, hệ thống tôi dùng. Khổ đau của người lạ là THẬT như khổ đau của tôi — vì cả hai đều là cùng loại trải nghiệm có ý thức.</p>
+      <div class="result-box">
+        <strong>Tiên Đề I Upgraded:</strong> "Tồn tại là tồn tại-trong-quan-hệ. Quan hệ không bị giới hạn bởi những ai tôi đã biết — mà mở rộng đến tất cả những ai đang chia sẻ cùng hệ thống tương thuộc với tôi. Nhận ra điều đó là Prajñā. Hành động theo điều đó là Karuṇā."
+      </div>
+      <p><strong>Module được mở khóa: Civic Trust</strong> — Không phải tin người lạ vì họ là người tốt — mà tin vì chúng ta đang trong cùng mạng tương thuộc và sự tan vỡ của mạng đó gây hại cho cả hai. Đây là civic trust có cơ sở bản thể học — không phải đạo đức áp đặt.</p>
+    </div>
+
+    <!-- UPGRADE II -->
+    <div class="upgrade-card u2">
+      <span class="upgrade-tag">UPGRADE II — Tiên Đề II</span>
+      <h3>Từ Bất Biến Cứng đến Bất Biến Tự Kiểm</h3>
+      <p><strong>Tiên Đề II hiện tại:</strong> "Bản sắc là invariant pattern dưới content transformation."</p>
+      <div class="limit-box">
+        <span class="lbl">Vấn đề</span>
+        Không có cơ chế hỏi "invariant pattern có còn đúng không?" → không có self-criticism → firmware không được cập nhật.
+      </div>
+      <div class="tool-row">
+        <span class="tool-pill">Śūnyatā (Nāgārjuna)</span>
+        <span class="tool-pill">Pramāṇa (Dharmakīrti)</span>
+      </div>
+      <p>Nếu không có gì có svabhāva — thì invariant pattern của Mạch Rễ cũng không có svabhāva. Nó tồn tại trong điều kiện nhất định, và <strong>có thể cần thay đổi khi điều kiện thay đổi</strong>. Pattern của Mạch Rễ là "hợp lệ" khi nó dẫn đến hành động hiệu quả trong bối cảnh hiện tại.</p>
+      <div class="result-box">
+        <strong>Tiên Đề II Upgraded:</strong> "Bản sắc là invariant pattern — nhưng bản thân pattern đó là Śūnya (trống rỗng tự tính). Nó không phải chân lý vĩnh cửu mà là công cụ hiệu quả trong điều kiện nhất định. Prajñā đòi hỏi liên tục hỏi: Pattern này còn dẫn đến hành động hiệu quả không? Nếu không — pattern cần được xem lại mà không mất bản sắc."
+      </div>
+      <p><strong>Module được mở khóa: Self-Criticism Mechanism</strong></p>
+      <div class="def-box">
+        <div class="label">Câu hỏi nền tảng</div>
+        <blockquote>"Tổ tiên làm X là đúng trong bối cảnh của tổ tiên. Tôi làm X có còn đúng trong bối cảnh của tôi không?"<br/><br/>
+        Câu hỏi này không phá hủy kết nối với tổ tiên — ngược lại: tổ tiên luôn hỏi câu hỏi đó trong bối cảnh của họ. Hỏi câu hỏi đó = <strong>TRUNG THÀNH với tinh thần của tổ tiên, không phải với hình thức của họ.</strong></blockquote>
+      </div>
+    </div>
+
+    <!-- UPGRADE III -->
+    <div class="upgrade-card u3">
+      <span class="upgrade-tag">UPGRADE III — Tiên Đề III</span>
+      <h3>Từ Chống Tập Trung đến Phân Biệt Tập Trung</h3>
+      <p><strong>Tiên Đề III hiện tại:</strong> "Invariant phân tán phi tập trung — mọi tập trung đều fragile."</p>
+      <div class="limit-box">
+        <span class="lbl">Vấn đề</span>
+        Không phân biệt được tập trung xấu (chuyên quyền áp bức) và tập trung tốt (thiết chế phục vụ cộng đồng) → chống cả thiết chế tốt → không build institutions.
+      </div>
+      <div class="tool-row">
+        <span class="tool-pill">Prajñā</span>
+        <span class="tool-pill">Upāya (Phương Tiện Thiện Xảo)</span>
+      </div>
+      <p>Thiết chế KHÔNG tốt hay xấu vì bản chất của nó. Thiết chế tốt hay xấu vì <strong>kết quả nó tạo ra</strong>. Thiết chế = Upāya: không phải kẻ thù cần phá hủy, không phải idol cần tôn thờ — mà là công cụ cần được đánh giá bằng hiệu quả.</p>
+      <div class="result-box">
+        <strong>Tiên Đề III Upgraded:</strong> "Invariant phân tán phi tập trung — đây là sức mạnh khi thiết chế là công cụ áp bức. Prajñā đòi hỏi phân biệt: thiết chế phục vụ cộng đồng (Upāya tốt) cần được xây dựng và bảo vệ bởi chính sự phân tán đó. Sức mạnh của phi tập trung không phải là phá hủy mọi tập trung — mà là bảo đảm tập trung luôn phục vụ phân tán."
+      </div>
+      <p><strong>Module được mở khóa: Institutional Building</strong> — Dùng distributed power để BUILD và PROTECT thiết chế tốt — không phải để phá hủy chúng. Ví dụ: Cộng đồng dân cư tự tổ chức quy tắc giao thông hẻm — không chờ nhà nước, không phá quy tắc nhà nước.</p>
+    </div>
+
+    <!-- UPGRADE IV -->
+    <div class="upgrade-card u4">
+      <span class="upgrade-tag">UPGRADE IV — Tiên Đề IV</span>
+      <h3>Từ Thời Gian Dọc Một Chiều đến Thời Gian Dọc Đầy Đủ</h3>
+      <p><strong>Tiên Đề IV hiện tại:</strong> "Hệ thống duy trì bản sắc qua giao diện với tổ tiên — những người đã qua."</p>
+      <div class="limit-box">
+        <span class="lbl">Vấn đề</span>
+        Chỉ nhìn về quá khứ → không có trách nhiệm với tương lai → không có public goods thinking (public goods = tài sản cho người chưa sinh).
+      </div>
+      <div class="tool-row">
+        <span class="tool-pill">Bodhicitta (Tâm Bồ Đề)</span>
+        <span class="tool-pill">Kṣaṇika (Sát Na Luận)</span>
+      </div>
+      <p>Không phải chỉ trách nhiệm với những người tôi biết — mà với TẤT CẢ CHÚNG SINH trong quá khứ, hiện tại, tương lai. Mỗi khoảnh khắc carry forward kết quả của khoảnh khắc trước: hành động hôm nay của tôi sẽ là "tổ tiên" mà con cháu đối thoại với.</p>
+      <div class="result-box">
+        <strong>Tiên Đề IV Upgraded:</strong> "Hệ thống tồn tại trên trục thời gian dọc — đối thoại với tổ tiên (đã qua) và với hậu thế (chưa đến). Bodhicitta mở rộng trách nhiệm: không chỉ nhận từ tổ tiên mà còn trả cho hậu thế. Mọi hành động hiện tại là quà tặng hoặc gánh nặng cho những người chưa sinh — và Prajñā đòi hỏi nhận ra điều đó."
+      </div>
+      <p><strong>Module được mở khóa: Public Goods Thinking</strong> — "Con cháu sẽ đối thoại với những gì tôi để lại. Tôi muốn để lại gì?" Câu hỏi đó = public goods thinking có cơ sở trong chính Mạch Rễ — không phải đạo đức áp đặt từ ngoài.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TIÊN ĐỀ VIII -->
+  <section>
+    <h2>🏛️ Tiên Đề VIII — Meta-Axiom Nhận Thức Phản Tư</h2>
+    <p>Bốn upgrades trên được tóm tắt thành <strong>một Tiên Đề Bổ Sung</strong> — Tiên Đề VIII. Đây không phải thêm module từ bên ngoài — mà là Mạch Rễ tự nhìn chính mình bằng Prajñā.</p>
+
+    <div class="axiom-viii">
+      <div class="viii-label">TIÊN ĐỀ VIII</div>
+      <div class="viii-title">Nhận Thức Phản Tư</div>
+      <div class="viii-sub">Reflexive Cognition Axiom · Từ Nhận Thức Luận Phật Giáo</div>
+      <blockquote>
+        "Mạch Rễ tự nhận ra giới hạn của mình. Prajñā là khả năng nhìn thấy thực tại vượt qua giới hạn của known network và inherited pattern. Śūnyatā là nhận ra rằng chính Mạch Rễ cũng không có tự tính — nó là công cụ, không phải chân lý. Karuṇā mở rộng quan hệ bản thể học đến tất cả chúng sinh đang chia sẻ cùng mạng tương thuộc. Bodhicitta mở rộng thời gian dọc đến trách nhiệm với tất cả những người chưa sinh."
+      </blockquote>
+    </div>
+
+    <p><strong>Bốn hệ quả của Tiên Đề VIII:</strong></p>
+    <div class="cons-grid">
+      <div class="cons-item">
+        <div class="cn">Hệ quả 1</div>
+        <p><strong>Civic Trust</strong> — Pratītyasamutpāda → người lạ nằm trong cùng mạng tương thuộc → civic obligation tự nhiên</p>
+      </div>
+      <div class="cons-item">
+        <div class="cn">Hệ quả 2</div>
+        <p><strong>Self-Criticism</strong> — Śūnyatā → pattern có thể sai → Pramāṇa → kiểm chứng bằng kết quả thực tế</p>
+      </div>
+      <div class="cons-item">
+        <div class="cn">Hệ quả 3</div>
+        <p><strong>Institutional Building</strong> — Upāya → thiết chế là công cụ → Prajñā phân biệt tốt/xấu → distributed power bảo vệ thiết chế tốt</p>
+      </div>
+      <div class="cons-item">
+        <div class="cn">Hệ quả 4</div>
+        <p><strong>Public Goods</strong> — Bodhicitta → trách nhiệm với người chưa sinh = tự nhiên từ Tiên Đề IV Upgraded</p>
+      </div>
+    </div>
+
+    <div class="ascii-box">KIẾN TRÚC SAU UPGRADE:
+
+7 TIÊN ĐỀ GỐC (giữ nguyên)
+    +
+TIÊN ĐỀ VIII — Nhận Thức Phản Tư
+(bổ sung từ Nhận thức luận Phật giáo)
+    ↓
+Tạo ra 4 hệ quả mới:
+
+  I Upgraded:   Civic Trust
+  II Upgraded:  Self-Criticism
+  III Upgraded: Institutional Building
+  IV Upgraded:  Public Goods Thinking
+
+QUAN HỆ:
+  Tiên Đề VIII không thay thế I-VII
+  Tiên Đề VIII là META-AXIOM —
+  Mạch Rễ tự nhìn chính mình bằng Prajñā
+  Như một hệ thống có khả năng self-reflection —
+  nhìn thấy giới hạn của mình mà không phá hủy chính mình</div>
+  </section>
+
+  <!-- SECTION 3B: RCA — TẠI SAO CẦN TIẾNG VIỆT THUẦN -->
+  <section>
+    <h2>🔍 RCA — Tại Sao Tiên Đề VIII Cần Tiếng Việt Thuần?</h2>
+    <p>Nếu Tiên Đề VIII chỉ đọc được bởi người biết tiếng Pali — nó đã thất bại trước khi bắt đầu.</p>
+
+    <div class="condition-list">
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Why 1 — Tại sao tiếng Pali là vấn đề?</h4>
+          <p>Vì Mạch Rễ tuyên bố là triết lý của <strong>toàn dân tộc</strong> — từ bà nội ở làng đến kỹ sư ở Hà Nội. Nếu Tiên Đề VIII dùng Prajñā, Śūnyatā, Bodhicitta — bà nội không đọc được. Một tiên đề không thể sống trong dân tộc nếu dân tộc không đọc được nó.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Why 2 — Tại sao không dùng tiếng Việt Phật giáo thông thường?</h4>
+          <p>Tiếng Việt Phật giáo thông thường ("Bát Nhã", "Tính Không", "Bồ Đề Tâm") vẫn mang mùi tôn giáo — vi phạm tính trung lập tôn giáo của Mạch Rễ.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Why 3 — Tại sao cần tiếng Anh song song?</h4>
+          <p>Vì Mạch Rễ tuyên bố muốn <strong>đối thoại với thế giới</strong>. Không có tiếng Anh — không có đối thoại. Và tiếng Anh cần đủ chính xác để học giả quốc tế hiểu — không phải dịch thô.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Why 4 — Tại sao cần hai phiên bản song song, không phải dịch thuật?</h4>
+          <p>Vì dịch thuật thường mất ý nghĩa. Hai phiên bản song song — mỗi phiên bản được viết trong ngôn ngữ của nó — giữ được chiều sâu của cả hai.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Why 5 — Gốc rễ</h4>
+          <p>Một triết lý chỉ sống được khi nó <strong>được nói trong ngôn ngữ mà người ta nghĩ</strong> — không phải ngôn ngữ mà người ta học để nói triết lý. Tiên Đề VIII cần sống trong tiếng Việt như người Việt nghĩ — không phải tiếng Pali được dịch sang tiếng Việt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3C: BẢNG DỊCH THUẬT NGỮ -->
+  <section>
+    <h2>📖 Dịch Từng Khái Niệm Pali Sang Tiếng Việt Thuần</h2>
+
+    <div class="ascii-box">Prajñā
+  Nghĩa gốc: seeing reality as it is
+  Tiếng Việt Phật giáo: Bát Nhã
+  → Tiếng Việt thuần: THẤY RÕ
+
+Śūnyatā
+  Nghĩa gốc: no inherent existence —
+             mọi thứ tồn tại trong
+             điều kiện, có thể thay đổi
+  Tiếng Việt Phật giáo: Tính Không
+  → Tiếng Việt thuần: KHÔNG CÓ GÌ LÀ MÃI MÃI
+
+Pratītyasamutpāda
+  Nghĩa gốc: dependent origination —
+             mọi thứ tồn tại trong
+             mạng quan hệ tương thuộc
+  Tiếng Việt Phật giáo: Duyên Khởi
+  → Tiếng Việt thuần: NƯƠNG TỰA VÀO NHAU
+
+Karuṇā
+  Nghĩa gốc: recognizing that the
+             suffering of others is
+             as real as one's own
+  Tiếng Việt Phật giáo: Bi
+  → Tiếng Việt thuần: NHẬN RA NỖI ĐAU NGƯỜI KHÁC
+                       LÀ THẬT NHƯ NỖI ĐAU CỦA MÌNH
+
+Bodhicitta
+  Nghĩa gốc: awakening mind —
+             responsibility toward
+             all sentient beings
+             past, present, future
+  Tiếng Việt Phật giáo: Bồ Đề Tâm
+  → Tiếng Việt thuần: TRÁCH NHIỆM VỚI TẤT CẢ
+                       QUA MỌI THỜI GIAN
+
+Pramāṇa
+  Nghĩa gốc: valid cognition —
+             knowledge that leads
+             to effective action
+  → Tiếng Việt thuần: BIẾT ĐỂ LÀM ĐÚNG</div>
+  </section>
+
+  <!-- SECTION 3D: BA PHIÊN BẢN TIÊN ĐỀ VIII -->
+  <section>
+    <h2>📝 Tiên Đề VIII — Ba Định Dạng Cho Ba Đối Tượng</h2>
+
+    <!-- Định dạng 1: Dân thường -->
+    <div class="upgrade-card u1">
+      <span class="upgrade-tag">Định Dạng 1 — Cho Người Dân Thường</span>
+      <h3>Tiên Đề VIII — Tự Nhìn Thấy Mình</h3>
+      <div class="result-box">
+        <p style="color:#fff; margin:0">Mạch Rễ biết mình có giới hạn.</p>
+        <p style="color:rgba(255,255,255,.85); margin:8px 0 0"><strong>Thấy rõ</strong> thực tại — kể cả thấy rõ chính mình — là sức mạnh, không phải yếu đuối. <strong>Không có gì là mãi mãi</strong>, kể cả cách chúng ta đang làm hôm nay. Người lạ trên cùng con đường cũng đang <strong>nương tựa</strong> vào cùng hệ thống với mình. <strong>Nỗi đau của họ cũng thật.</strong> Và những người chưa sinh ra — con cháu của con cháu chúng ta — sẽ sống với thứ chúng ta để lại hôm nay.</p>
+      </div>
+    </div>
+
+    <!-- Định dạng 2: Học thuật VN -->
+    <div class="upgrade-card u2">
+      <span class="upgrade-tag">Định Dạng 2 — Cho Học Thuật (Tiếng Việt)</span>
+      <h3>Tiên Đề VIII — Tiên Đề Nhận Thức Phản Tư</h3>
+      <div class="result-box">
+        <p style="color:#fff; margin:0">Mạch Rễ tự nhìn thấy giới hạn của mình. <em>Thấy Rõ</em> là khả năng nhận thức vượt qua ranh giới của known network và inherited pattern. <em>Không Có Gì Là Mãi Mãi</em> — kể cả chính Mạch Rễ: nó là công cụ phục vụ sự sống, không phải chân lý bất biến có tự tính. <em>Nương Tựa Vào Nhau</em> mở rộng mạng quan hệ bản thể học của Tiên Đề I đến tất cả những ai đang chia sẻ cùng hệ thống tương thuộc — dù chưa biết tên nhau. <em>Nhận Ra Nỗi Đau Của Người Khác Là Thật Như Của Mình</em> là nền tảng bản thể học cho civic trust. <em>Trách Nhiệm Với Tất Cả Qua Mọi Thời Gian</em> mở rộng Tiên Đề IV theo cả hai chiều — không chỉ nhận từ tổ tiên mà còn trả cho những người chưa sinh.</p>
+      </div>
+    </div>
+
+    <!-- Định dạng 3: Học thuật EN -->
+    <div class="upgrade-card u4">
+      <span class="upgrade-tag">Định Dạng 3 — Academic English</span>
+      <h3>Axiom VIII — The Reflexive Cognition Axiom</h3>
+      <div class="result-box">
+        <p style="color:#fff; margin:0">Mach Re recognizes its own limits. <em>Clear Seeing</em> is the capacity to perceive reality beyond the boundaries of known networks and inherited patterns. <em>Nothing is Permanent</em> — including Mach Re itself: it is a living tool, not an eternal truth with inherent existence. <em>Mutual Dependence</em> extends the relational ontology of Axiom I to all who share the same system of interdependence — even strangers. <em>Recognizing that the suffering of others is as real as one's own</em> provides the ontological basis for civic trust. <em>Responsibility Across All Time</em> expands Axiom IV bidirectionally — not only receiving from ancestors but leaving something worthy for those not yet born.</p>
+      </div>
+    </div>
+
+    <!-- Bảng song ngữ -->
+    <h3>Bảng Song Ngữ Đầy Đủ</h3>
+    <div style="overflow-x:auto; margin:16px 0">
+      <table style="width:100%; border-collapse:collapse; font-size:.9rem">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding:10px 12px; background:var(--green-deep); color:#fff; border-radius:8px 0 0 0">Tiếng Pali</th>
+            <th style="text-align:left; padding:10px 12px; background:var(--green-deep); color:#fff">Tiếng Việt Thuần</th>
+            <th style="text-align:left; padding:10px 12px; background:var(--green-deep); color:#fff; border-radius:0 8px 0 0">Tiếng Anh</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#f0faf5">
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Prajñā</td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)"><strong>Thấy Rõ</strong></td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Clear Seeing</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Śūnyatā</td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)"><strong>Không Có Gì Là Mãi Mãi</strong></td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Nothing is Permanent</td>
+          </tr>
+          <tr style="background:#f0faf5">
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Pratītyasamutpāda</td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)"><strong>Nương Tựa Vào Nhau</strong></td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Mutual Dependence</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Karuṇā</td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)"><strong>Nhận Ra Nỗi Đau Người Khác Là Thật Như Của Mình</strong></td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Recognizing Others' Suffering as Real as One's Own</td>
+          </tr>
+          <tr style="background:#f0faf5">
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Bodhicitta</td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)"><strong>Trách Nhiệm Với Tất Cả Qua Mọi Thời Gian</strong></td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Responsibility Across All Time</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Pramāṇa</td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)"><strong>Biết Để Làm Đúng</strong></td>
+            <td style="padding:10px 12px; border-bottom:1px solid var(--border)">Valid Cognition Leading to Effective Action</td>
+          </tr>
+          <tr style="background:#f0faf5">
+            <td style="padding:10px 12px">Upāya</td>
+            <td style="padding:10px 12px"><strong>Phương Tiện Phù Hợp</strong></td>
+            <td style="padding:10px 12px">Skillful Means</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Kết luận RCA -->
+    <div class="def-box" style="border-left-color: var(--gold); background: #fef9ec">
+      <div class="label" style="color: var(--gold)">Kết Luận RCA</div>
+      <blockquote>
+        Tiếng Pali: Đúng về nguồn gốc — Sai về địa chỉ.<br/>
+        Tiếng Việt thuần: Đúng về địa chỉ — Đúng về nguồn gốc tinh thần.<br/>
+        Tiếng Anh: Đúng về đối thoại quốc tế.<br/><br/>
+        <strong>Ba phiên bản — một Tiên Đề.</strong> Không có phiên bản nào là "dịch" của phiên bản kia — cả ba là biểu hiện của cùng một mệnh đề triết học trong ba ngôn ngữ khác nhau.<br/><br/>
+        Đó là cách Mạch Rễ nói chuyện với tất cả mọi người — già trẻ lớn bé, học giả và người dân thường, người Việt và người nước ngoài.
+      </blockquote>
+    </div>
+
+    <div style="margin-top:20px; background:linear-gradient(135deg, var(--green-deep), #2d3a6a); color:#fff; border-radius:12px; padding:20px 24px; text-align:center">
+      <p style="color:rgba(255,255,255,.9); margin:0; font-size:1rem; line-height:1.8"><strong style="color:var(--gold-light)">Tiên Đề VIII không cần tiếng Pali để sống.</strong> Nó cần tiếng của từng người — tiếng của bà nội, tiếng của sinh viên, tiếng của học giả quốc tế. Và khi nó được nói trong tiếng của từng người, nó không còn là triết học của ai đó — nó trở thành triết học của tất cả mọi người.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: ĐIỀU KIỆN TRIỂN KHAI -->
+  <section>
+    <h2>📋 Bốn Điều Kiện Để Upgrade Thành Công</h2>
+    <div class="condition-list">
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Không top-down</h4>
+          <p>Không có "Chương trình quốc gia về Mạch Rễ Upgraded" do nhà nước phát động — đó sẽ là contradiction: dùng tập trung để phổ biến phi tập trung. Thay vào đó: tạo ra ngôn ngữ chung và để nó lan từ bàn thờ, từ bữa cơm, từ câu chuyện.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Thực hành trước lý thuyết</h4>
+          <p>Người Việt học qua làm — không học qua đọc Tiên Đề. Mọi upgrade cần có THỰC HÀNH CỤ THỂ trước khi có tên gọi.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Người lớn tuổi là người triển khai</h4>
+          <p>Không phải chính phủ, không phải trí thức — mà là ông bà, cha mẹ, giáo viên già. Họ giữ Mạch Rễ gốc. Khi được trao ngôn ngữ cho Mạch Rễ Upgraded, họ là người triển khai hiệu quả nhất.</p>
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="ci-body">
+          <h4>Traceability</h4>
+          <p>Mọi claim phải có thể truy xuất về nguồn gốc. Không có "Mạch Rễ vì lãnh đạo nói vậy" — mà là "Mạch Rễ vì đây là cách dân tộc này đã survive và thrive trong 4.000 năm, và đây là bằng chứng cụ thể."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: KẾT LUẬN -->
+  <section>
+    <h2>💬 Kết Luận</h2>
+    <div class="def-box" style="border-left-color: var(--purple)">
+      <div class="label">Nguyên tắc nền</div>
+      <blockquote>Upgrade không phải thêm module từ bên ngoài vào Mạch Rễ — mà là dùng Prajñā (trí tuệ nhìn thấy thực tại vượt qua ảo tưởng) để Mạch Rễ tự nhìn thấy giới hạn của mình.<br/><br/>
+      Khi Mạch Rễ nhận ra qua Śūnyatā rằng chính nó không có tự tính vĩnh cửu, qua Pratītyasamutpāda rằng người lạ cũng nằm trong mạng quan hệ của nó, và qua Bodhicitta rằng thời gian dọc mở rộng đến trách nhiệm với người chưa sinh — bốn module còn thiếu sẽ nổi lên tự nhiên như hệ quả, không phải như áp đặt.<br/><br/>
+      <strong>Đây là cách duy nhất để upgrade mà không phá hủy: không thêm vào từ ngoài, mà khai mở từ bên trong.</strong></blockquote>
+    </div>
+
+    <div style="margin-top:24px; background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px; display:flex; align-items:flex-start; gap:14px;">
+      <div style="font-size:1.8rem">⚠️</div>
+      <div>
+        <p style="margin:0; font-size:.9rem"><strong>Upgrade này không nói:</strong> "Bỏ Mạch Rễ, theo phương Tây."</p>
+        <p style="margin:6px 0 0; font-size:.9rem"><strong>Upgrade này nói:</strong> "Mạch Rễ đủ sâu để tự nhìn thấy giới hạn của mình — và Nhận thức luận Phật giáo cho Mạch Rễ ngôn ngữ để làm điều đó."</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottom-nav">
+  <a href="index.html" class="secondary">← Tổng quan</a>
+  <a href="how.html">← Áp Dụng Ra Sao?</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="what.html">Là Gì</a> · <a href="why.html">Tại Sao</a> · <a href="who.html">Cho Ai</a> · <a href="when.html">Khi Nào</a> · <a href="how.html">Áp Dụng</a> · <a href="upgrade.html">Upgrade</a></p>
+</footer>
+
+</body>
+</html>
