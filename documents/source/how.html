@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOW — Áp Dụng Mạch Rễ Ra Sao?</title>
+  <meta name="description" content="Ba thực hành cốt lõi, Diagnosis Rubric, ba Core Axioms và bốn câu hỏi đối thoại với thế giới" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #1a7070;
+      --accent-light: #2d9596;
+      --accent-pale:  #e0f4f4;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #c8e8e8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    .topnav { background: #0e4040; display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    .hero {
+      background: linear-gradient(135deg, #0a2a2a 0%, #1a7070 60%, #2d9596 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag { display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); border-radius: 24px; padding: 4px 16px; font-size: .8rem; font-weight: 700; letter-spacing: .14em; margin-bottom: 16px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 12px; }
+    .hero p { color: #b0e0e0; font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale); }
+    h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── THREE PRACTICES ── */
+    .practice-list { display: flex; flex-direction: column; gap: 24px; margin-top: 20px; }
+    .practice {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .practice .p-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--accent-pale);
+      border-bottom: 1px solid var(--border);
+    }
+    .practice .p-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .practice .p-title { font-weight: 700; color: var(--accent); font-size: 1.05rem; }
+    .practice .p-sub { font-size: .8rem; color: var(--text-muted); }
+    .practice .p-body { padding: 20px; }
+    .practice .p-body p { margin-bottom: 10px; font-size: .9rem; }
+    .practice .question-box {
+      background: var(--accent-pale);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: .88rem;
+    }
+    .practice .question-box .q { font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+    .practice .question-box ul { list-style: none; display: flex; flex-direction: column; gap: 4px; padding-left: 16px; }
+    .practice .question-box li::before { content: '→ '; color: var(--accent-light); font-weight: 700; }
+
+    /* ── MEMORY TABLE ── */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .compare-col {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .compare-col h4 { font-size: .85rem; font-weight: 700; margin-bottom: 10px; }
+    .compare-col.dead h4 { color: #a03030; }
+    .compare-col.live h4 { color: var(--accent); }
+    .compare-col ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .compare-col li { font-size: .85rem; color: var(--text-muted); padding-left: 14px; position: relative; }
+    .compare-col li::before { position: absolute; left: 0; }
+    .compare-col.dead li::before { content: '✗'; color: #e05050; }
+    .compare-col.live li::before { content: '✓'; color: var(--accent-light); }
+
+    /* ── DIAGNOSIS RUBRIC ── */
+    .rubric-table { width: 100%; border-collapse: collapse; font-size: .82rem; margin-top: 16px; }
+    .rubric-table th { background: var(--accent); color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+    .rubric-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .rubric-table tr:nth-child(even) td { background: #f2fbfb; }
+    .rubric-table td:first-child { font-weight: 600; color: var(--text-dark); }
+
+    /* ── SCORE BANDS ── */
+    .score-bands { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 16px; }
+    .score-band {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .score-band .range { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+    .score-band .status { font-size: .82rem; font-weight: 700; margin: 4px 0; }
+    .score-band .action { font-size: .78rem; color: var(--text-muted); }
+    .score-band.s0 .status { color: #c03030; }
+    .score-band.s1 .status { color: #c06020; }
+    .score-band.s2 .status { color: #8a7030; }
+    .score-band.s3 .status { color: var(--accent); }
+
+    /* ── CORE AXIOMS ── */
+    .axiom-list { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
+    .axiom {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 14px 14px 0;
+      padding: 20px 24px;
+    }
+    .axiom .axiom-num { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-light); margin-bottom: 8px; }
+    .axiom .axiom-name { font-size: 1.1rem; font-weight: 700; color: var(--accent); margin-bottom: 10px; }
+    .axiom blockquote { font-style: italic; font-size: .92rem; line-height: 1.75; color: var(--text-muted); border-left: 2px solid var(--border); padding-left: 14px; margin-bottom: 12px; }
+    .axiom .systems { display: flex; gap: 8px; flex-wrap: wrap; }
+    .axiom .sys-tag {
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+    .axiom .novel { background: #fff3d0; color: #a06000; }
+
+    /* ── CENTRAL SENTENCE ── */
+    .central-sentence {
+      background: linear-gradient(135deg, #0a2a2a, #1a7070);
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .central-sentence .label { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #80c8c8; margin-bottom: 12px; }
+    .central-sentence blockquote { font-style: italic; font-size: 1.1rem; line-height: 1.7; color: #e0f4f4; }
+    .central-sentence .proof { margin-top: 14px; font-size: .82rem; color: rgba(255,255,255,.6); font-family: 'Courier New', monospace; }
+
+    /* ── SELF-ASSESSMENT ── */
+    .selftest { display: flex; flex-direction: column; gap: 0; margin-top: 20px; }
+    .selftest-group { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 16px; }
+    .selftest-group .st-header { background: var(--accent-pale); padding: 12px 18px; font-weight: 700; color: var(--accent); font-size: .9rem; }
+    .selftest-group table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    .selftest-group table th { padding: 8px 14px; text-align: left; background: #f0fafa; color: var(--text-muted); font-weight: 600; border-bottom: 1px solid var(--border); }
+    .selftest-group table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+    .selftest-group table td:first-child { color: var(--text-dark); }
+
+    .bottom-nav { max-width: 820px; margin: 0 auto; padding: 0 24px 60px; display: flex; justify-content: space-between; gap: 12px; }
+    .bottom-nav a { background: var(--accent); color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: .9rem; font-weight: 600; transition: background .2s; }
+    .bottom-nav a:hover { background: #0e4040; }
+    .bottom-nav a.secondary { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
+
+    footer { background: #0a2a2a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #b0e0e0; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <span class="current">HOW — Áp Dụng Ra Sao?</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">HOW</div>
+  <h1>Áp Dụng Ra Sao?</h1>
+  <p>Ba thực hành cốt lõi · Diagnosis Rubric · Ba Core Axioms · Tự đánh giá</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION 1: BA THỰC HÀNH -->
+  <section>
+    <h2>🛠️ Ba thực hành cốt lõi</h2>
+    <p>Diagnosis chỉ ra vấn đề. Intervention là hành động cụ thể. Thiếu thực hành, Mạch Rễ chỉ là triết lý — hay, nhưng không thay đổi được gì.</p>
+
+    <div class="practice-list">
+
+      <div class="practice">
+        <div class="p-header">
+          <div class="p-num">1</div>
+          <div>
+            <div class="p-title">Nhận Dạng Lõi</div>
+            <div class="p-sub">Định nghĩa thứ bất biến của chúng ta</div>
+          </div>
+        </div>
+        <div class="p-body">
+          <p>Quá trình cộng đồng đặt và trả lời câu hỏi: <em>"Cái gì là thứ nếu mất thì chúng ta không còn là chúng ta nữa?"</em></p>
+          <p><strong>Quan trọng:</strong> Đây không phải câu hỏi một lần với câu trả lời cố định. Đây là quá trình hỏi liên tục và cập nhật câu trả lời qua từng thế hệ. Lõi không phải danh sách — lõi là mối quan hệ sống động với câu hỏi đó.</p>
+          <div class="question-box">
+            <div class="q">Áp dụng thực tế:</div>
+            <ul>
+              <li>Gia đình: mỗi năm Tết hỏi nhau — "Điều gì làm gia đình này là gia đình này?"</li>
+              <li>Tổ chức: khi ra quyết định lớn hỏi — "Điều này có phù hợp với thứ chúng ta không thể từ bỏ không?"</li>
+              <li>Cộng đồng hải ngoại: "Truyền thống nào đang nuôi rễ, truyền thống nào chỉ là hình thức?"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice">
+        <div class="p-header">
+          <div class="p-num">2</div>
+          <div>
+            <div class="p-title">Định Hướng Hấp Thụ</div>
+            <div class="p-sub">Chủ động với cái mới — không thụ động</div>
+          </div>
+        </div>
+        <div class="p-body">
+          <p>Khi tiếp xúc với cái mới, chủ động đặt ba câu hỏi thay vì để quá trình xảy ra thụ động:</p>
+          <div class="question-box">
+            <div class="q">Ba câu hỏi bắt buộc:</div>
+            <ul>
+              <li>Chúng ta muốn <strong>giữ lại</strong> gì từ cái này?</li>
+              <li>Chúng ta muốn <strong>biến đổi</strong> cái này thành gì?</li>
+              <li>Chúng ta muốn <strong>từ chối</strong> gì?</li>
+            </ul>
+          </div>
+          <p style="margin-top:12px"><strong>Sự khác biệt quan trọng:</strong> Không phải "giữ hay bỏ" — mà là "giữ cái gì, biến đổi cái gì, từ chối cái gì." Ba câu hỏi thay vì một.</p>
+          <div class="question-box">
+            <div class="q">Ví dụ áp dụng:</div>
+            <ul>
+              <li>Giáo dục: khi dạy về văn hóa nước ngoài, hỏi "Điều này nói gì với truyền thống của chúng ta?"</li>
+              <li>Doanh nghiệp: khi học mô hình quản lý ngoại, hỏi "Phần nào phù hợp với cách người Việt làm việc cùng nhau?"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice">
+        <div class="p-header">
+          <div class="p-num">3</div>
+          <div>
+            <div class="p-title">Nuôi Dưỡng Trí Nhớ Sống</div>
+            <div class="p-sub">Giữ quá khứ đủ sống để nó đặt câu hỏi cho hiện tại</div>
+          </div>
+        </div>
+        <div class="p-body">
+          <p>Khác biệt cốt lõi giữa trí nhớ sống và trí nhớ chết:</p>
+          <div class="compare-grid">
+            <div class="compare-col dead">
+              <h4>❌ Trí nhớ chết</h4>
+              <ul>
+                <li>Trưng bày trong bảo tàng</li>
+                <li>"Tổ tiên ta đã làm vậy" (kết thúc câu chuyện)</li>
+                <li>Nghi lễ không ai hiểu ý nghĩa</li>
+                <li>Lịch sử như tự hào</li>
+              </ul>
+            </div>
+            <div class="compare-col live">
+              <h4>✓ Trí nhớ sống</h4>
+              <ul>
+                <li>Thay đổi cách chúng ta hành động hôm nay</li>
+                <li>"...điều đó nói gì với chúng ta hôm nay?" (mở đầu câu hỏi)</li>
+                <li>Nghi lễ vẫn đặt câu hỏi về hiện tại</li>
+                <li>Lịch sử như đối thoại</li>
+              </ul>
+            </div>
+          </div>
+          <div class="question-box" style="margin-top:14px">
+            <div class="q">Thực hành hằng ngày:</div>
+            <ul>
+              <li>Thay vì kể chuyện tổ tiên như anh hùng, hỏi "Ông bà đã đối mặt với điều này như thế nào?"</li>
+              <li>Tết không chỉ là nghỉ lễ — là thời điểm đặt câu hỏi hàng năm với tổ tiên và với nhau</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: DIAGNOSIS RUBRIC -->
+  <section>
+    <h2>🩺 Diagnosis Rubric — Bộ chỉ báo đánh giá</h2>
+    <p>Dùng rubric này để tự chấm điểm cộng đồng/tổ chức của bạn. Mỗi hàng <strong>0–2 điểm</strong>. Tổng điểm (trên 12) cho biết trạng thái rễ.</p>
+
+    <div style="overflow-x:auto">
+      <table class="rubric-table">
+        <thead>
+          <tr>
+            <th>Chỉ báo</th>
+            <th>0 — Rễ nông</th>
+            <th>1 — Đang phát triển</th>
+            <th>2 — Rễ sâu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Phân biệt lõi/hình thức</td>
+            <td>Không phân biệt được — bảo vệ tất cả hoặc bỏ tất cả</td>
+            <td>Biết có sự khác biệt nhưng chưa thống nhất được đâu là lõi</td>
+            <td>Cộng đồng đồng thuận về lõi và chủ động cập nhật qua thế hệ</td>
+          </tr>
+          <tr>
+            <td>Dấu ấn khi hấp thụ</td>
+            <td>Tiếp nhận nguyên bản — không biến đổi, không dấu ấn riêng</td>
+            <td>Có biến đổi nhưng không có chủ đích — tùy hứng</td>
+            <td>Chủ động chọn lọc: giữ gì, biến đổi gì, từ chối gì</td>
+          </tr>
+          <tr>
+            <td>Hòa giải & ký ức</td>
+            <td>Hoặc oán thù dai dẳng hoặc quên hoàn toàn</td>
+            <td>Nhận thức được cần hòa giải nhưng chưa có cơ chế</td>
+            <td>Giữ được vết thương lịch sử + khả năng tiếp tục về phía trước</td>
+          </tr>
+          <tr>
+            <td>Truyền đạt liên thế hệ</td>
+            <td>Thế hệ trẻ không biết và không quan tâm</td>
+            <td>Có truyền đạt nhưng một chiều — "tổ tiên ta đã làm vậy"</td>
+            <td>Đối thoại hai chiều — "tổ tiên làm vậy, điều đó nói gì với chúng ta hôm nay?"</td>
+          </tr>
+          <tr>
+            <td>Phản ứng với áp lực ngoại sinh</td>
+            <td>Phòng thủ toàn diện hoặc buông bỏ toàn diện</td>
+            <td>Phản ứng không nhất quán — tùy từng tình huống</td>
+            <td>Áp lực bên ngoài = lực thử nghiệm → kích hoạt câu hỏi về lõi</td>
+          </tr>
+          <tr>
+            <td>Ngôn ngữ chung</td>
+            <td>Không có từ vựng về bản sắc — tranh luận theo cảm xúc</td>
+            <td>Có một số từ nhưng chưa thống nhất — mỗi người hiểu một kiểu</td>
+            <td>5 khái niệm nền tảng được hiểu và dùng nhất quán</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="score-bands">
+      <div class="score-band s0">
+        <div class="range">0–4</div>
+        <div class="status">Rễ nông trầm trọng</div>
+        <div class="action">Nguy cơ tan rã bản sắc trong 1–2 thế hệ → Bắt đầu từ Thực hành 1</div>
+      </div>
+      <div class="score-band s1">
+        <div class="range">5–8</div>
+        <div class="status">Rễ đang nông</div>
+        <div class="action">Còn hình thức nhưng lõi đang mỏng dần → Ưu tiên Thực hành 2</div>
+      </div>
+      <div class="score-band s2">
+        <div class="range">9–10</div>
+        <div class="status">Rễ đang phát triển</div>
+        <div class="action">Có ý thức nhưng chưa hệ thống → Củng cố bằng Thực hành 3</div>
+      </div>
+      <div class="score-band s3">
+        <div class="range">11–12</div>
+        <div class="status">Rễ sâu</div>
+        <div class="action">Mạch Rễ đang vận hành, dù chưa có tên → Chia sẻ, dạy lại</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: CORE AXIOMS -->
+  <section>
+    <h2>⚙️ Ba Core Axioms — Nền tảng lý thuyết</h2>
+    <p>Mạch Rễ được xây trên giao điểm của ba hệ thống tư tưởng: Phan Ngọc (cấu trúc luận văn hóa), Ashby/Weick (lý thuyết hệ thống phức tạp), và Anattā (vô ngã Phật giáo).</p>
+
+    <div class="axiom-list">
+      <div class="axiom">
+        <div class="axiom-num">Core Axiom I</div>
+        <div class="axiom-name">Invariant Qua Biến Đổi</div>
+        <blockquote>"Một hệ thống tồn tại khi và chỉ khi nó có một invariant — thứ không thay đổi khi mọi thứ khác thay đổi. Invariant đó không phải nội dung, không phải thực thể — mà là cấu trúc của các quan hệ."</blockquote>
+        <div class="systems">
+          <span class="sys-tag">Phan Ngọc: kiểu cấu trúc hóa thực tại</span>
+          <span class="sys-tag">Ashby: Identity(S) = Inv(S) under perturbation</span>
+          <span class="sys-tag">Anattā: santāna — invariant pattern không phải ngã cố định</span>
+        </div>
+      </div>
+
+      <div class="axiom">
+        <div class="axiom-num">Core Axiom II</div>
+        <div class="axiom-name">Phân Tán Mà Không Tan</div>
+        <blockquote>"Một hệ thống có thể duy trì invariant của nó mà không cần một trung tâm lưu giữ invariant đó — nếu và chỉ nếu invariant được phân tán vào trong cấu trúc quan hệ giữa các thành phần."</blockquote>
+        <div class="systems">
+          <span class="sys-tag">Phan Ngọc: 1000 năm Bắc thuộc không có nhà nước Việt → invariant phân tán</span>
+          <span class="sys-tag">Ashby: Invariant phân tán → resilient, không có single point of failure</span>
+          <span class="sys-tag">Anattā: Indra's Net — mỗi node chứa toàn bộ pattern</span>
+        </div>
+      </div>
+
+      <div class="axiom">
+        <div class="axiom-num">Core Axiom III — NOVEL</div>
+        <div class="axiom-name">Giao Diện Thời Gian</div>
+        <blockquote>"Invariant của một hệ thống phức tạp không được duy trì trong thời gian ngang mà được duy trì qua giao diện thời gian dọc — cơ chế mà qua đó các cấu hình hiện tại truy cập vào pattern của các cấu hình đã qua và chưa đến."</blockquote>
+        <div class="systems">
+          <span class="sys-tag">Phan Ngọc: không có cơ chế nào khác giải thích tại sao kiểu cấu trúc được truyền dẫn</span>
+          <span class="sys-tag">Ashby: Attractor basin cần được "nạp lại" — giao diện thời gian dọc = cơ chế nạp lại</span>
+          <span class="sys-tag novel">❗ Axiom GAP thực sự — không có trong bất kỳ system nào</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="central-sentence">
+      <div class="label">Câu triết học tổng hợp — chứa đủ cả ba Core Axioms</div>
+      <blockquote>"Một hệ thống không cần trung tâm để có bản sắc — nó chỉ cần duy trì cuộc đối thoại với những người đã tạo ra nó."</blockquote>
+      <div class="proof">
+        "không cần trung tâm" → Core II<br/>
+        "để có bản sắc" → Core I<br/>
+        "duy trì cuộc đối thoại với những người đã tạo ra nó" → Core III
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TỰ KIỂM TRA -->
+  <section>
+    <h2>✅ Bộ câu hỏi tự đánh giá nhanh (5 phút)</h2>
+
+    <div class="selftest">
+      <div class="selftest-group">
+        <div class="st-header">👤 A. Cá nhân — Tự hỏi chính mình</div>
+        <table>
+          <thead><tr><th>#</th><th>Câu hỏi</th><th>Có / Không rõ / Không</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Tôi có thể phân biệt được điều gì làm tôi là <em>tôi</em> — và điều gì chỉ là hoàn cảnh, sở thích, hay ảnh hưởng tạm thời?</td><td>⬜ Có &nbsp; ⬜ Không rõ &nbsp; ⬜ Không</td></tr>
+            <tr><td>2</td><td>Khi tiếp xúc với ý tưởng hoặc văn hóa mới, tôi chủ động chọn lọc — giữ, biến đổi, từ chối — thay vì "nhận tất cả" hoặc "từ chối tất cả"?</td><td>⬜ Có &nbsp; ⬜ Không rõ &nbsp; ⬜ Không</td></tr>
+            <tr><td>3</td><td>Tôi có biết câu chuyện của ông bà/tổ tiên mình không — không chỉ như tự hào, mà như điều có thể đặt câu hỏi cho cuộc sống hôm nay?</td><td>⬜ Có &nbsp; ⬜ Không rõ &nbsp; ⬜ Không</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="selftest-group">
+        <div class="st-header">👥 B. Cộng đồng / Tổ chức — Tự hỏi về "chúng ta"</div>
+        <table>
+          <thead><tr><th>#</th><th>Câu hỏi</th><th>Có / Không rõ / Không</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Cộng đồng/tổ chức của chúng ta có biết điều gì nếu mất thì chúng ta không còn là chúng ta nữa không?</td><td>⬜ Có &nbsp; ⬜ Không rõ &nbsp; ⬜ Không</td></tr>
+            <tr><td>2</td><td>Khi tiếp nhận cái mới từ bên ngoài, chúng ta có để lại dấu ấn của mình lên nó — hay trở thành phiên bản kém hơn của nơi chúng ta học?</td><td>⬜ Có &nbsp; ⬜ Không rõ &nbsp; ⬜ Không</td></tr>
+            <tr><td>3</td><td>Người trẻ trong cộng đồng có biết họ thuộc về điều gì lớn hơn bản thân — không phải như gánh nặng, mà như lợi thế?</td><td>⬜ Có &nbsp; ⬜ Không rõ &nbsp; ⬜ Không</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p style="margin-top:12px; font-size:.88rem">
+      <strong>Đọc kết quả cá nhân:</strong> Nếu bạn trả lời "Có" cho cả 3 câu → Bạn đang sống Mạch Rễ, dù chưa có tên. Nếu có ≥1 câu "Không rõ" hoặc "Không" → Framework này có công cụ cho bạn.<br/>
+      <strong>Đọc kết quả cộng đồng:</strong> Nếu ≥1 câu "Không" → Có dấu hiệu rễ nông. Xem phần Diagnosis Rubric bên trên.
+    </p>
+  </section>
+
+  <!-- SECTION 5: TRIỂN KHAI 10 TẦNG -->
+  <section>
+    <h2>🏗️ Sơ đồ triển khai — 10 tầng ứng dụng</h2>
+    <p>Mạch Rễ không áp dụng "one size fits all". Mỗi tầng có <strong>entry point riêng</strong>, metrics riêng, và cách tiếp cận riêng:</p>
+
+    <div style="overflow-x:auto">
+      <table class="rubric-table">
+        <thead><tr><th>Tầng</th><th>Entry Point</th><th>Thực hành cốt lõi</th><th>Metrics đo lường</th></tr></thead>
+        <tbody>
+          <tr><td>🏠 Gia đình</td><td>Bữa cơm gia đình</td><td>Ba câu hỏi: "Ông bà đã đối mặt điều này thế nào?"</td><td>Tần suất đối thoại liên thế hệ</td></tr>
+          <tr><td>🏫 Trường học</td><td>Môn Lịch sử + Văn</td><td>Lăng kính mới: dạy lịch sử như đối thoại, không chỉ như sự kiện</td><td>Khả năng học sinh đặt câu hỏi "điều này nói gì với hôm nay?"</td></tr>
+          <tr><td>🏢 Doanh nghiệp</td><td>Văn hóa công ty</td><td>"Phần nào phù hợp với cách người Việt làm việc cùng nhau?"</td><td>Tỷ lệ giữ/biến đổi/từ chối khi nhập mô hình ngoại</td></tr>
+          <tr><td>🏘️ Cộng đồng đô thị</td><td>Tổ dân phố → Citizen assembly</td><td>Distributed decision-making cho quy hoạch đô thị</td><td>Tỷ lệ tham gia của cư dân vào quyết định công</td></tr>
+          <tr><td>🌾 Nông thôn</td><td>Hội đồng làng (phục hưng)</td><td>Commons management: đình, ao, ruộng công</td><td>Số tài sản chung được quản lý tập thể</td></tr>
+          <tr><td>🏛️ Không gian công</td><td>Công viên, thư viện, chợ</td><td>Thiết kế không gian khuyến khích gặp gỡ liên thế hệ</td><td>Tần suất tương tác người già↔người trẻ</td></tr>
+          <tr><td>👤 Cá nhân</td><td>3 câu hỏi tự đánh giá</td><td>Nhận dạng lõi cá nhân: "Điều gì làm tôi là tôi?"</td><td>Khả năng phân biệt lõi/hình thức cá nhân</td></tr>
+          <tr><td>🌏 Hải ngoại</td><td>Mạng lưới diaspora</td><td>Kết nối qua framework thay vì chỉ qua quê quán</td><td>Số thế hệ thứ 2, 3 vẫn thực hành Mạch Rễ</td></tr>
+          <tr><td>🗳️ Xã hội dân sự</td><td>Civic trust building</td><td>Mở rộng trust từ hàng xóm ra thiết chế</td><td>Chỉ số trust vào hệ thống công</td></tr>
+          <tr><td>🌐 Đối thoại quốc tế</td><td>Nghiên cứu so sánh</td><td>Framework cho các dân tộc khác đang đối mặt cùng câu hỏi</td><td>Số case study áp dụng ngoài Việt Nam</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 6: BỐN ĐIỀU KIỆN TRIỂN KHAI -->
+  <section>
+    <h2>⚠️ Bốn điều kiện triển khai bắt buộc</h2>
+    <p>Nếu vi phạm bất kỳ điều kiện nào, triển khai sẽ thất bại hoặc bị biến tướng:</p>
+
+    <div class="selftest">
+      <div class="selftest-group">
+        <div class="st-header">❶ Không top-down</div>
+        <table><tbody>
+          <tr><td>Mạch Rễ không thể áp đặt từ trên xuống. Nếu trở thành "chương trình chính phủ" — nó chết. Phải <strong>lan từ gốc rễ lên</strong>: gia đình → cộng đồng → xã hội → quốc gia.</td></tr>
+        </tbody></table>
+      </div>
+      <div class="selftest-group">
+        <div class="st-header">❷ Thực hành trước lý thuyết</div>
+        <table><tbody>
+          <tr><td>Không dạy framework trước khi thực hành. <strong>Sống trước, đặt tên sau.</strong> Ba câu hỏi hàng ngày quan trọng hơn bất kỳ tiểu luận nào.</td></tr>
+        </tbody></table>
+      </div>
+      <div class="selftest-group">
+        <div class="st-header">❸ Người già là nguồn, không phải đích</div>
+        <table><tbody>
+          <tr><td>Thế hệ cuối cùng còn nhớ Việt Nam trước đô thị hóa đang già đi. <strong>Họ là Source of Truth</strong> — cần được phỏng vấn, ghi chép, tôn trọng trước khi dòng mạch đó đứt.</td></tr>
+        </tbody></table>
+      </div>
+      <div class="selftest-group">
+        <div class="st-header">❹ Traceability bắt buộc</div>
+        <table><tbody>
+          <tr><td>Mọi claim trong framework phải <strong>truy xuất được về nguồn gốc thực nghiệm</strong>. Nếu không có bằng chứng từ lịch sử 4.000 năm — thì claim đó phải được đánh dấu "speculative".</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: TIÊN ĐỀ IV vs TRIẾT HỌC THẾ GIỚI -->
+  <section>
+    <h2>🌍 Tiên Đề IV — Đối thoại với triết học thế giới</h2>
+    <p>Tiên Đề IV (Giao diện thời gian dọc) — đóng góp lý thuyết novel nhất của Mạch Rễ — được đặt trong đối thoại với các triết gia phương Tây:</p>
+
+    <div style="overflow-x:auto">
+      <table class="rubric-table">
+        <thead><tr><th>Triết gia</th><th>Luận điểm</th><th>Mạch Rễ đồng tình/khác biệt</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Walter Benjamin</strong></td>
+            <td>"Thiên thần lịch sử" — quá khứ là đống đổ nát, tương lai là bão</td>
+            <td><strong>Mạch Rễ:</strong> Quá khứ không phải đổ nát — mà là rễ đang nuôi. Người Việt không nhìn lại lịch sử như thiên thần bất lực — mà <strong>nói chuyện trực tiếp với tổ tiên.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Hans-Georg Gadamer</strong></td>
+            <td>"Fusion of Horizons" — hiểu biết = hòa trộn chân trời</td>
+            <td><strong>Đồng tình nhưng mở rộng:</strong> Fusion không chỉ xảy ra giữa hai người đang sống — mà giữa người sống và người đã khuất. <strong>Giao diện thời gian dọc = Fusion dọc.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Maurice Halbwachs</strong></td>
+            <td>"Collective Memory" — ký ức tập thể là kiến tạo xã hội</td>
+            <td><strong>Mạch Rễ mở rộng:</strong> Ký ức tập thể không chỉ là kiến tạo — mà là <strong>cơ chế duy trì invariant</strong>. Phân biệt trí nhớ sống (còn đặt câu hỏi) vs trí nhớ chết (chỉ trưng bày).</td>
+          </tr>
+          <tr>
+            <td><strong>Paul Ricœur</strong></td>
+            <td>"Narrative Identity" — bản sắc qua kể chuyện</td>
+            <td><strong>Mạch Rễ mở rộng:</strong> Narrative không đủ — cần <strong>cấu trúc quan hệ</strong>. Câu chuyện có thể mất, nhưng cấu trúc quan hệ (thờ tổ tiên, bữa cơm gia đình) bền vững hơn narrative.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="central-sentence" style="margin-top:20px">
+      <div class="label">Ba câu hỏi hàng ngày — Minimum Viable Practice</div>
+      <blockquote>
+        ❶ "Ông bà mình đã đối mặt với điều này như thế nào?"<br/>
+        ❷ "Điều gì trong tình huống này cần giữ, cần biến đổi, cần từ chối?"<br/>
+        ❸ "Thế hệ sau sẽ nhìn quyết định này ra sao?"
+      </blockquote>
+      <div class="proof">
+        Câu ❶ → Trí nhớ sống (Core III)<br/>
+        Câu ❷ → Hấp thụ có định hướng (Core I)<br/>
+        Câu ❸ → Giao diện thời gian dọc (Axiom IV/V)
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottom-nav">
+  <a href="when.html" class="secondary">← Khi Nào?</a>
+  <a href="index.html">↩ Tổng quan</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="what.html">Là gì</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a></p>
+</footer>
+
+</body>
+</html>

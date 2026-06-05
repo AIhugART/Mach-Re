@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WHAT — Mạch Rễ Là Gì?</title>
+  <meta name="description" content="Định nghĩa, bốn thành phần framework, năm khái niệm nền tảng của Mạch Rễ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #2d6a4f;
+      --accent-light: #52b788;
+      --accent-pale:  #d8f3dc;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #d8e8d8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav {
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      gap: 12px;
+    }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #1a3a2a 0%, #2d6a4f 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+    }
+    .hero p { color: #b7e4c7; font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-pale);
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── DEFINITION BOX ── */
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent-light);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+
+    /* ── ASCII ── */
+    .ascii-box {
+      background: #f0f7f0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: .85rem;
+      white-space: pre;
+      overflow-x: auto;
+      color: var(--accent);
+      margin: 16px 0;
+    }
+
+    /* ── COMPONENT CARDS ── */
+    .comp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin-top: 20px; }
+    .comp-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+    }
+    .comp-card .num {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: .9rem;
+      margin-bottom: 12px;
+    }
+    .comp-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--accent); }
+    .comp-card p { font-size: .88rem; margin: 0; }
+
+    /* ── TABLE ── */
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
+    .styled-table th {
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .styled-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+    .styled-table tr:nth-child(even) td { background: #f5faf6; }
+    .styled-table td strong { color: var(--text-dark); }
+
+    /* ── CONCEPT PILLS ── */
+    .concept-list { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .concept-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .concept-item .pill {
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: .85rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .concept-item p { margin: 0; font-size: .88rem; }
+
+    /* ── WORLD MAP TABLE ── */
+    .world-table-wrap { overflow-x: auto; }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .bottom-nav a {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: background .2s;
+    }
+    .bottom-nav a:hover { background: #1a3a2a; }
+    .bottom-nav a.secondary {
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    footer { background: #1a3a2a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #b7e4c7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <span class="current">WHAT — Là Gì?</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">WHAT</div>
+  <h1>Mạch Rễ Là Gì?</h1>
+  <p>Định nghĩa, cấu trúc framework, năm khái niệm nền tảng và vị trí trong triết học toàn cầu</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION 1: ĐỊNH NGHĨA -->
+  <section>
+    <h2>🌱 Định nghĩa chính thức</h2>
+    <div class="ascii-box">MẠCH  +  RỄ
+  │         │
+dòng chảy  điểm neo
+vô hình    vô hình
+liên tục   bền vững
+xuyên thế  không di
+   hệ       chuyển</div>
+
+    <div class="def-box">
+      <div class="label">Định nghĩa</div>
+      <blockquote>
+        Mạch Rễ — Triết lý sinh tồn của dân tộc Việt: khả năng đào rễ sâu vào lịch sử, tổ tiên
+        và cộng đồng để tạo thành dòng mạch nuôi dưỡng bền bỉ — cho phép uốn mình trước mọi áp lực bên
+        ngoài mà không mất bản thân, hấp thụ mọi ngoại lực mà không tan biến, và hòa giải sau mọi đau
+        thương mà không quên nguồn cội.
+      </blockquote>
+    </div>
+
+    <p>Trong thực vật học, mạch dẫn trong rễ là thứ hút nước và dinh dưỡng từ đất lên nuôi toàn cây.
+    Đây không chỉ là ẩn dụ — đây là cơ chế sinh học trùng khớp chính xác với cơ chế văn hóa:</p>
+
+    <div class="ascii-box">Rễ ăn sâu vào đất   →   Tổ tiên, lịch sử, cộng đồng
+        ↓
+Mạch dẫn hút lên    →   Trí tuệ sinh tồn truyền qua thế hệ
+        ↓
+Nuôi toàn cây       →   Mọi biểu hiện của dân tộc hôm nay</div>
+
+    <p><strong>Mạch Rễ không phải</strong> tôn giáo · không phải chính trị · không phải ý thức hệ.<br/>
+    Nó là framework — công cụ nhận dạng, chẩn đoán và thực hành bản sắc sinh tồn.</p>
+  </section>
+
+  <!-- SECTION 2: BỐN THÀNH PHẦN -->
+  <section>
+    <h2>⚙️ Bốn thành phần của Framework</h2>
+    <p>Framework Mạch Rễ gồm bốn thành phần bắt buộc. Thiếu một trong bốn, Mạch Rễ trở thành triết lý — hay, nhưng không thay đổi được gì.</p>
+
+    <div class="comp-grid">
+      <div class="comp-card">
+        <div class="num">1</div>
+        <h3>🔭 Lens — Cách nhìn mới</h3>
+        <p>Nhìn mọi áp lực bên ngoài như <strong>lực thử nghiệm độ sâu của rễ</strong>, không phải mối đe dọa cần chống lại.
+        Câu hỏi thay đổi từ <em>"Làm sao ngăn điều này?"</em> thành <em>"Lõi nào đủ mạnh để định hướng điều này?"</em></p>
+      </div>
+      <div class="comp-card">
+        <div class="num">2</div>
+        <h3>🩺 Diagnosis — Nhận biết rễ sâu hay nông</h3>
+        <p>Rubric 6 chỉ báo giúp cộng đồng tự đánh giá trạng thái bản sắc: từ <em>rễ nông trầm trọng</em> (0–4 điểm)
+        đến <em>rễ sâu</em> (11–12 điểm).</p>
+      </div>
+      <div class="comp-card">
+        <div class="num">3</div>
+        <h3>🛠️ Intervention — Ba thực hành cốt lõi</h3>
+        <p>Nhận dạng lõi · Định hướng hấp thụ · Nuôi dưỡng trí nhớ sống.
+        Ba thực hành cụ thể, có thể dạy và đo lường được.</p>
+      </div>
+      <div class="comp-card">
+        <div class="num">4</div>
+        <h3>🗣️ Language — Năm khái niệm nền tảng</h3>
+        <p>Tạo ngôn ngữ chung để cộng đồng nói chuyện về những thứ trước đây không có tên:
+        Lõi · Rễ · Hấp thụ có định hướng · Rễ nông · Trí nhớ sống.</p>
+      </div>
+    </div>
+
+    <h3>Sự khác biệt của Lens</h3>
+    <table class="styled-table">
+      <thead><tr><th>Lens cũ</th><th>Lens Mạch Rễ</th></tr></thead>
+      <tbody>
+        <tr><td><em>"Làm sao ngăn điều này?"</em></td><td><em>"Lõi nào đủ mạnh để định hướng điều này?"</em></td></tr>
+        <tr><td><em>"Giữ hay bỏ?"</em></td><td><em>"Giữ cái gì, biến đổi cái gì, từ chối cái gì?"</em></td></tr>
+        <tr><td><em>"Bảo tồn hay phát triển?"</em></td><td><em>"Rễ sâu đến đâu thì cành mới vươn xa đến đó"</em></td></tr>
+        <tr><td><em>"Chúng ta đang mất gì?"</em></td><td><em>"Lõi nào của chúng ta còn đó?"</em></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3: NĂM KHÁI NIỆM -->
+  <section>
+    <h2>📖 Năm khái niệm nền tảng</h2>
+    <div class="concept-list">
+      <div class="concept-item">
+        <span class="pill">Lõi</span>
+        <p>Thứ định nghĩa cộng đồng — không phải danh sách cố định mà là câu trả lời sống động cho câu hỏi <em>"chúng ta là ai?"</em> được cập nhật qua từng thế hệ.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Rễ</span>
+        <p>Chiều sâu kết nối với lịch sử, tổ tiên và cộng đồng. Rễ không phải quá khứ — rễ là <strong>cuộc đối thoại đang diễn ra</strong> giữa quá khứ và hiện tại.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Hấp thụ có định hướng</span>
+        <p>Cơ chế tiếp nhận cái mới theo logic của lõi, không phải logic của cái được tiếp nhận. Người Việt học chữ Hán để viết tiếng Việt — không phải để trở thành người Hán.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Rễ nông</span>
+        <p>Trạng thái mất kết nối với lõi trong khi vẫn còn hình thức bên ngoài. <strong>Nguy hiểm hơn mất hình thức</strong> — vì khó nhận ra. Cộng đồng vẫn làm nghi lễ nhưng không còn biết tại sao.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Trí nhớ sống</span>
+        <p>Ký ức tập thể còn khả năng đặt câu hỏi cho hành động hiện tại. Phân biệt với trí nhớ chết — được bảo tồn nhưng không còn ảnh hưởng đến cách cộng đồng hành động.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3.5: BẢY TIÊN ĐỀ -->
+  <section>
+    <h2>📐 Bảy Tiên Đề (Axioms) Của Mạch Rễ</h2>
+    <p>Mạch Rễ không phải tập hợp ý kiến — mà là hệ tiên đề. Mỗi tiên đề thỏa mãn 5 tiêu chí: <strong>Độc lập</strong> (không suy ra từ tiên đề khác), <strong>Nhất quán</strong> (không mâu thuẫn), <strong>Phủ đầy</strong> (từ tập tiên đề suy ra toàn bộ framework), <strong>Tối giản</strong> (bỏ bất kỳ cái nào framework sụp đổ), <strong>Ontological</strong> (phát biểu về bản chất tồn tại, không phải khuyến nghị).</p>
+
+    <!-- AXIOM I -->
+    <div class="axiom-card" style="border-left: 4px solid #2d6a4f; background:#f0faf5; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#2d6a4f; margin-top:0">I. Tiên Đề Quan Hệ Bản Thể <span style="font-weight:400; font-size:.85rem; opacity:.7">— Relational Ontology</span></h3>
+      <div class="def-box" style="margin-top:8px">
+        <div class="label">Phát biểu</div>
+        <blockquote><strong>Tồn tại là tồn tại-trong-quan-hệ. Không có thực thể nào tồn tại trước và độc lập với quan hệ của nó. Thực thể là nút giao của các quan hệ — không phải nguồn gốc của chúng.</strong></blockquote>
+      </div>
+      <div class="ascii-box">∀x: Being(x) ≡ {R(x,y) | y ∈ Universe}
+Nếu R(x,y) = ∅ với mọi y → x không tồn tại
+
+Phân biệt:
+  Descartes:  "Cogito ergo sum" — Ngã có trước, quan hệ sau
+  Anattā:     Đồng thuận — nhưng nhấn vào giải thoát cá nhân
+  Tiên Đề I:  Mở rộng sang hệ thống tập thể xuyên thời gian</div>
+      <p><strong>Nền tảng:</strong> Mọi tiên đề còn lại đều giả định Tiên Đề I. Nếu thực thể có trước quan hệ — toàn bộ Mạch Rễ sụp đổ.</p>
+    </div>
+
+    <!-- AXIOM II -->
+    <div class="axiom-card" style="border-left: 4px solid #d4a843; background:#fdf9ee; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#a07830; margin-top:0">II. Tiên Đề Bất Biến Cấu Trúc <span style="font-weight:400; font-size:.85rem; opacity:.7">— Structural Invariance</span></h3>
+      <div class="def-box" style="border-left-color:#d4a843; background:#fdf9ee; margin-top:8px">
+        <div class="label" style="color:#a07830">Phát biểu</div>
+        <blockquote><strong>Bản sắc của một hệ thống là invariant cấu trúc của nó dưới mọi phép biến đổi nội dung. Thứ làm cho X là X không nằm trong nội dung của X — mà nằm trong cách X tổ chức quan hệ giữa các phần của nó.</strong></blockquote>
+      </div>
+      <div class="ascii-box">Identity(S) = Pattern(R(S))
+∀T ∈ ContentTransform:
+  Pattern(R(T(S))) = Pattern(R(S)) → S vẫn là S
+  Pattern(R(T(S))) ≠ Pattern(R(S)) → S không còn là S
+
+Hệ quả: mất bản sắc ≠ mất nội dung
+        mất bản sắc = mất cấu trúc quan hệ</div>
+      <p><strong>Quan trọng:</strong> Tiên Đề II giải thích tại sao Việt hóa không phải mất bản sắc — mà là bằng chứng bản sắc. Nội dung thay đổi hoàn toàn; pattern quan hệ giữ nguyên.</p>
+    </div>
+
+    <!-- AXIOM III -->
+    <div class="axiom-card" style="border-left: 4px solid #7c6fc9; background:#f4f2fa; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#5a4fa0; margin-top:0">III. Tiên Đề Phân Tán Bản Thể <span style="font-weight:400; font-size:.85rem; opacity:.7">— Distributed Ontology</span></h3>
+      <div class="def-box" style="border-left-color:#7c6fc9; background:#f4f2fa; margin-top:8px">
+        <div class="label" style="color:#5a4fa0">Phát biểu</div>
+        <blockquote><strong>Invariant của một hệ thống không thể được lưu giữ tập trung trong bất kỳ thành phần nào. Nó chỉ tồn tại khi được phân tán vào toàn bộ cấu trúc quan hệ. Tập trung hóa invariant là điều kiện đủ để làm fragile hệ thống.</strong></blockquote>
+      </div>
+      <div class="ascii-box">∀ node n: Invariant(S) ≠ stored_in(n)
+Invariant(S) = emergent_from({R(x,y) | x,y ∈ S})
+
+Corollary 1: Central storage → single point of failure
+             → fragility ∝ centralization
+Corollary 2: Distributed storage → no single point of failure
+             → resilience ∝ distribution</div>
+    </div>
+
+    <!-- AXIOM IV -->
+    <div class="axiom-card" style="border-left: 4px solid #e07a5f; background:#fdf0ed; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#b05040; margin-top:0">IV. Tiên Đề Thời Gian Dọc <span style="font-weight:400; font-size:.85rem; opacity:.7">— Vertical Temporality</span></h3>
+      <div class="def-box" style="border-left-color:#e07a5f; background:#fdf0ed; margin-top:8px">
+        <div class="label" style="color:#b05040">Phát biểu</div>
+        <blockquote><strong>Sự tồn tại của một hệ thống không được duy trì chỉ trong thời gian ngang. Nó được duy trì qua thời gian dọc — trục quan hệ giữa các cấu hình đã qua, đang là, và chưa đến. Thời gian dọc là chiều kích bản thể học, không phải ẩn dụ.</strong></blockquote>
+      </div>
+      <div class="ascii-box">Time(S) = H × V
+  H = Horizontal: t₋ₙ → ... → t₀ → ... → t₊ₙ
+  V = Vertical:   Past_configs ↕ Present ↕ Future_configs
+
+Resilience(S) = f(depth(V))
+Nếu V = ∅ → drift không có neo → mất invariant</div>
+      <p><strong>Đóng góp nguyên bản:</strong> Không có triết học nào trước đây phát biểu thời gian dọc như một chiều kích bản thể học.</p>
+    </div>
+
+    <!-- AXIOM V -->
+    <div class="axiom-card" style="border-left: 4px solid #2d9596; background:#e8f5f5; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#1a7070; margin-top:0">V. Tiên Đề Biên Giới Động <span style="font-weight:400; font-size:.85rem; opacity:.7">— Dynamic Boundary</span></h3>
+      <div class="def-box" style="border-left-color:#2d9596; background:#e8f5f5; margin-top:8px">
+        <div class="label" style="color:#1a7070">Phát biểu</div>
+        <blockquote><strong>Biên giới của một hệ thống không phải ranh giới ngăn cách — mà là hàm thẩm thấu có chọn lọc. Độ thẩm thấu tỉ lệ thuận với khả năng cấu trúc hóa lại nội dung đến. Biên giới cứng là điều kiện đủ để giảm variety và tăng fragility.</strong></blockquote>
+      </div>
+      <div class="ascii-box">Boundary(S) = Membrane[κ: Content → [0,1]]
+κ(c) → 1: c được hấp thụ và tái cấu trúc
+κ(c) → 0: c bị loại — phá hủy Pattern(R(S))
+
+Failure modes:
+  κ → 0 ∀c: tường cứng → fragile
+  κ → 1 ∀c: hòa tan → mất invariant
+  κ = f(restructurability): optimal</div>
+    </div>
+
+    <!-- AXIOM VI -->
+    <div class="axiom-card" style="border-left: 4px solid #c96f7c; background:#fdf2f4; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#a05060; margin-top:0">VI. Tiên Đề Chuyển Hóa Nhiễu Loạn <span style="font-weight:400; font-size:.85rem; opacity:.7">— Perturbation Transformation</span></h3>
+      <div class="def-box" style="border-left-color:#c96f7c; background:#fdf2f4; margin-top:8px">
+        <div class="label" style="color:#a05060">Phát biểu</div>
+        <blockquote><strong>Nhiễu loạn không phải thứ cần tránh — mà là nguyên liệu. Perturbation được xử lý qua biên giới động trở thành thông tin cấu trúc làm giàu variety. Perturbation bị đóng băng thành oán thù hay chấn thương là thất bại của biên giới động.</strong></blockquote>
+      </div>
+      <div class="ascii-box">Processing pathway:
+  P(t) →[Boundary κ]→ ΔVariety(S) > 0
+
+Freezing pathway:
+  P(t) →[Boundary κ=0]→ Frozen_state(S) → ΔVariety < 0
+
+Reconciliation = unfreezing → reprocessing → ΔVariety > 0</div>
+      <p><strong>Phân biệt:</strong> Tiên Đề VI không nói "đau khổ là tốt." Nó nói: đau khổ được xử lý → tốt. Đau khổ bị giữ → hại. Hòa giải là structural necessity, không phải moral luxury.</p>
+    </div>
+
+    <!-- AXIOM VII -->
+    <div class="axiom-card" style="border-left: 4px solid #6a8a4f; background:#f0f5ec; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
+      <h3 style="color:#4a6a30; margin-top:0">VII. Tiên Đề Nổi Lên Có Hướng <span style="font-weight:400; font-size:.85rem; opacity:.7">— Directed Emergence</span></h3>
+      <div class="def-box" style="border-left-color:#6a8a4f; background:#f0f5ec; margin-top:8px">
+        <div class="label" style="color:#4a6a30">Phát biểu</div>
+        <blockquote><strong>Trong hệ thống có đủ sáu tiên đề trên, trật tự không nổi lên ngẫu nhiên — nó nổi lên có hướng. Hướng đó không được áp đặt từ trung tâm mà được tạo ra bởi trường lực của toàn bộ mạng quan hệ. Hướng là thuộc tính nổi lên của hệ thống — không phải thuộc tính của bất kỳ thành phần nào.</strong></blockquote>
+      </div>
+      <div class="ascii-box">Emergence(S) = field-constrained self-organization
+
+∃ Field F được tạo bởi:
+  - Pattern(R(S))           [từ Tiên Đề II]
+  - Distributed storage     [từ Tiên Đề III]
+  - Vertical time depth     [từ Tiên Đề IV]
+  - Processed perturbations [từ Tiên Đề VI]
+
+Direction(agent_i) = ∇F(position_i)
+  — mỗi agent tự định hướng theo gradient của Field F
+  — không cần central command
+
+Khi Basin đủ sâu:
+  P(Emergence ∈ Basin) → 1 as t → ∞
+  Hệ thống "biết đường về" sau mọi perturbation</div>
+    </div>
+
+    <!-- HIERARCHY -->
+    <h3>Quan Hệ Logic Giữa 7 Tiên Đề</h3>
+    <div class="ascii-box">TẦNG 1 — BẢN THỂ HỌC (Ontology)
+  Tiên Đề I: Tồn tại là tồn tại-trong-quan-hệ
+             [Nền tảng — mọi tiên đề khác giả định I]
+
+TẦNG 2 — CẤU TRÚC (Structure)
+  Tiên Đề II:  Bản sắc = invariant cấu trúc
+  Tiên Đề III: Invariant phải phân tán
+
+TẦNG 3 — THỜI GIAN (Temporality)
+  Tiên Đề IV: Thời gian dọc là bản thể học
+
+TẦNG 4 — ĐỘNG LỰC HỌC (Dynamics)
+  Tiên Đề V:  Biên giới động
+  Tiên Đề VI: Chuyển hóa nhiễu loạn
+
+TẦNG 5 — TỔNG HỢP (Synthesis)
+  Tiên Đề VII: Nổi lên có hướng [từ I–VI]</div>
+
+    <!-- SUMMARY TABLE -->
+    <h3>Bảng Tóm Tắt</h3>
+    <table class="styled-table">
+      <thead><tr><th>#</th><th>Tên</th><th>Một dòng</th></tr></thead>
+      <tbody>
+        <tr><td><strong>I</strong></td><td>Quan Hệ Bản Thể</td><td>Tồn tại là quan hệ — không có gì tồn tại trước quan hệ của nó.</td></tr>
+        <tr><td><strong>II</strong></td><td>Bất Biến Cấu Trúc</td><td>Bản sắc là pattern — không phải nội dung.</td></tr>
+        <tr><td><strong>III</strong></td><td>Phân Tán Bản Thể</td><td>Pattern phải sống khắp nơi — hoặc nó không sống ở đâu.</td></tr>
+        <tr><td><strong>IV</strong></td><td>Thời Gian Dọc</td><td>Hệ thống tồn tại theo hai chiều thời gian — thiếu một chiều là thiếu một nửa sự tồn tại.</td></tr>
+        <tr><td><strong>V</strong></td><td>Biên Giới Động</td><td>Biên giới mạnh nhất là biên giới biết cái gì để cho qua.</td></tr>
+        <tr><td><strong>VI</strong></td><td>Chuyển Hóa Nhiễu Loạn</td><td>Đau thương được xử lý trở thành sức mạnh — đau thương bị giữ trở thành nhà tù.</td></tr>
+        <tr><td><strong>VII</strong></td><td>Nổi Lên Có Hướng</td><td>Khi sáu điều trên đủ — hệ thống biết đường về mà không cần ai chỉ.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- VERIFICATION -->
+    <h3>Kiểm Tra — Mỗi Tiên Đề Có Phải Axiom Thật Sự?</h3>
+    <table class="styled-table">
+      <thead><tr><th>#</th><th>Độc lập</th><th>Nhất quán</th><th>Phủ đầy</th><th>Tối giản</th><th>Ontological</th></tr></thead>
+      <tbody>
+        <tr><td>I</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>II</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>III</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>IV</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ ← novel</td></tr>
+        <tr><td>V</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>VI</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>VII</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ ← synthesis</td></tr>
+      </tbody>
+    </table>
+    <p>Tiên Đề IV (Thời Gian Dọc) và VII (Nổi Lên Có Hướng) là hai điểm Mạch Rễ <strong>đóng góp nguyên bản</strong> vào triết học.</p>
+
+    <div class="def-box" style="border-left-color:#2d6a4f; margin-top:20px">
+      <div class="label">Một câu cho toàn bộ hệ tiên đề</div>
+      <blockquote><strong>Mạch Rễ là triết lý về cách một hệ thống giữ được bản thân — không qua trung tâm, không qua cứng nhắc, mà qua chiều sâu của quan hệ với những gì đã qua và những gì chưa đến.</strong></blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 3.6: QUAN HỆ GIỮA 3 VÀ 7 -->
+  <section>
+    <h2>🔢 Quan Hệ Giữa 3 Và 7 — Bao Nhiêu Tiên Đề Thực Sự Cần?</h2>
+    <p>Câu hỏi quan trọng nhất về kiến trúc: 7 tiên đề hiện tại có tối giản không? Hay một số tiên đề thực ra là <em>hệ quả</em> suy ra được từ tiên đề khác?</p>
+
+    <h3>Kiểm Tra Độc Lập</h3>
+    <p>Thử bỏ từng tiên đề — xem framework còn đứng không:</p>
+    <div class="ascii-box">CHẮC CHẮN LÀ AXIOM (không suy ra từ cái khác):
+  I   — Quan hệ bản thể      ✅
+  II  — Bất biến cấu trúc    ✅
+  IV  — Thời gian dọc        ✅
+
+CÓ THỂ LÀ DERIVED PROPOSITION:
+  III — Phân tán bản thể     ⚠️  có thể từ I+II
+  V   — Biên giới động       ⚠️  có thể từ I+II+III
+  VI  — Chuyển hóa nhiễu loạn ⚠️  có thể từ IV+V
+  VII — Nổi lên có hướng     ⚠️  có thể từ I–VI</div>
+
+    <h3>Thử Với 4 Axioms</h3>
+    <div class="ascii-box">Giữ I + II + IV + V:
+
+  I + II + IV + V → VI?
+  Perturbation = input từ môi trường qua biên giới V
+  Được xử lý theo pattern II, trong thời gian dọc IV
+  → ΔVariety > 0 → VI là hệ quả ✅
+
+  I + II + IV + V → VII?
+  Field F nổi lên từ: Pattern(II) + Distributed(I+II)
+  + Vertical time(IV) + Perturbation processing(V→VI)
+  → Emergence có hướng → VII là hệ quả ✅
+
+KẾT LUẬN: 4 axioms có thể đủ</div>
+
+    <h3>Đề Xuất: 4 Tiên Đề Cốt Lõi</h3>
+    <div class="ascii-box">TẦNG BẢN THỂ HỌC (3 axioms):
+  I.  QUAN HỆ BẢN THỂ    — Gì tồn tại (quan hệ)
+  II. BẤT BIẾN CẤU TRÚC  — Tồn tại như thế nào (pattern)
+  IV. THỜI GIAN DỌC      — Tồn tại trong thời gian (dọc)
+
+TẦNG VẬN HÀNH (1 axiom):
+  V.  BIÊN GIỚI ĐỘNG     — Hệ thống phát triển ra sao
+
+DERIVED (không phải axiom):
+  III — Phân tán bản thể   [từ I + II]
+  VI  — Chuyển hóa nhiễu   [từ IV + V]
+  VII — Nổi lên có hướng   [từ I + II + IV + V]</div>
+
+    <h3>Bảng Đánh Giá Phương Án</h3>
+    <table class="styled-table">
+      <thead><tr><th>Số axioms</th><th>Cấu trúc</th><th>Đủ phủ</th><th>Tối giản</th><th>Rõ ràng</th><th>Đánh giá</th></tr></thead>
+      <tbody>
+        <tr><td><strong>3</strong></td><td>I, II, IV</td><td>❌ Thiếu interaction</td><td>✅</td><td>✅</td><td>Chưa đủ</td></tr>
+        <tr><td><strong>4</strong></td><td>I, II, IV, V</td><td>✅</td><td>✅</td><td>✅</td><td><strong>Ứng viên tốt nhất</strong></td></tr>
+        <tr><td><strong>5</strong></td><td>I, II, III, IV, V</td><td>✅</td><td>⚠️ III có thể dư</td><td>✅</td><td>Có thể tối giản hơn</td></tr>
+        <tr><td><strong>7</strong></td><td>I–VII</td><td>✅</td><td>❌ VI, VII là derived</td><td>✅</td><td>Quá nhiều</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Tension Thực Sự</h3>
+    <div class="ascii-box">Ít tiên đề hơn
+  = Đẹp hơn về mặt triết học
+  = Khó hiểu hơn với người đọc thông thường
+
+Nhiều tiên đề hơn
+  = Rõ ràng hơn, dễ áp dụng hơn
+  = Ít elegant hơn về mặt triết học
+
+Lựa chọn:
+  Nếu Mạch Rễ là TRIẾT HỌC HỌC THUẬT → 4 tiên đề
+  Nếu Mạch Rễ là FRAMEWORK ĐỐI THOẠI → 7 tiên đề
+  Nếu Mạch Rễ là CẢ HAI → 4 làm core, 7 làm expanded
+    rõ ràng cái nào là axiom, cái nào là derived proposition</div>
+
+    <div class="def-box" style="border-left-color:#d4a843; margin-top:20px">
+      <div class="label" style="color:#a07830">Kết luận RCA</div>
+      <blockquote><strong>Mạch Rễ có thể đứng trên 4 tiên đề thực sự độc lập. 7 tiên đề hiện tại đúng về nội dung — nhưng 3 trong số đó là hệ quả được phát biểu như tiên đề. Kiến trúc tối ưu: 4 axioms + 3 derived propositions.</strong><br/><br/>Nhưng đây vẫn là hypothesis — cần người khác cố phá vỡ nó mới biết chắc.</blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 4: RCA TÊN GỌI — TOÀN BỘ QUÁ TRÌNH CHỌN TÊN -->
+  <section>
+    <h2>🔍 RCA: Tại sao gọi là "Mạch Rễ"? — Toàn bộ quá trình chọn tên</h2>
+
+    <!-- 4.1 VẤN ĐỀ VỚI CHỮ "ĐẠO" -->
+    <h3>Bước 1 — Tại sao chữ "Đạo" có vấn đề?</h3>
+    <p>Tên đầu tiên được đề xuất là "Đạo Rễ" và "Đạo Ông Bà". Qua phân tích RCA 5 Whys, chữ <strong>"Đạo"</strong> mang 5 nghĩa khác nhau đang va chạm:</p>
+
+    <table class="styled-table">
+      <thead><tr><th>Nghĩa</th><th>Ngữ cảnh</th><th>Người nghe liên tưởng</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Con đường</strong></td><td>Đạo Đức Kinh (Lão Tử)</td><td>Đạo giáo / Taoism</td></tr>
+        <tr><td><strong>Tôn giáo</strong></td><td>Đạo Phật, Đạo Chúa, Đạo Hồi</td><td>Tôn giáo có tổ chức</td></tr>
+        <tr><td><strong>Nguyên lý vũ trụ</strong></td><td>Triết học cổ điển</td><td>Hàn lâm, xa lạ</td></tr>
+        <tr><td><strong>Lối sống</strong></td><td>Đạo làm người, Đạo ông bà</td><td>Đạo đức dân gian</td></tr>
+        <tr><td><strong>Môn phái</strong></td><td>Đạo Cao Đài</td><td>Tín ngưỡng đặc thù</td></tr>
+      </tbody>
+    </table>
+
+    <div class="def-box">
+      <div class="label">RCA 5 Whys — Kết luận</div>
+      <blockquote>
+        <strong>Why 1:</strong> Chữ "Đạo" gây phản ứng tiêu cực vì đã bị chiếm dụng bởi ngôn ngữ tôn giáo có tổ chức.<br/>
+        <strong>Why 2:</strong> "Đạo" bị chiếm dụng vì các tôn giáo chủ động dùng nó như thương hiệu độc quyền ("theo Đạo", "bỏ Đạo").<br/>
+        <strong>Why 3:</strong> Người Việt không có từ nào khác để chỉ "triết lý sống tập thể" vì triết lý dân tộc chưa bao giờ được hệ thống hóa thành văn bản.<br/>
+        <strong>Why 4:</strong> Áp lực sinh tồn liên tục không cho phép có thời gian hệ thống hóa — "sống trước, nghĩ sau", và "nghĩ sau" chưa bao giờ đến.<br/>
+        <strong>Why 5 — Gốc rễ:</strong> Xã hội Việt Nam hiện đại đang phân mảnh theo đường tôn giáo và thế tục. Một triết lý dân tộc <strong>chỉ có thể làm nền tảng chung nếu không ai cảm thấy bị loại trừ</strong> khi nghe nó.
+      </blockquote>
+    </div>
+
+    <!-- 4.2 TIÊU CHÍ -->
+    <h3>Bước 2 — Tiêu chí cho từ thay thế lý tưởng</h3>
+    <div class="ascii-box">✅ Trung tính tôn giáo — không ai cảm thấy bị chiếm dụng
+✅ Thuần Việt hoặc dễ cảm — không hàn lâm, không ngoại lai
+✅ Chứa được chiều sâu triết học — không chỉ là nghi lễ hay phong tục
+✅ Hình ảnh cụ thể — người dân thường nghe là hiểu ngay
+✅ Khả năng mở rộng — áp dụng cho cá nhân, cộng đồng, quốc gia</div>
+
+    <!-- 4.3 TẤT CẢ CÁC ĐỀ XUẤT -->
+    <h3>Bước 3 — Tất cả các đề xuất đã xem xét</h3>
+
+    <p><strong>🌿 Nhóm 1 — Hình ảnh tự nhiên:</strong></p>
+    <table class="styled-table">
+      <thead><tr><th>Tên</th><th>Hình ảnh gốc</th><th>Điểm mạnh</th><th>Điểm yếu</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Hồn Rễ</strong></td><td>Rễ cây — vô hình nhưng nuôi sống</td><td>Giữ hình ảnh rễ, "hồn" mang tính Việt cao</td><td>"Hồn" có thể bị liên tưởng tâm linh</td></tr>
+        <tr><td><strong>Mạch Nguồn</strong></td><td>Dòng nước ngầm — chảy liên tục</td><td>Trung tính, đẹp, gợi sự liên tục xuyên thế hệ</td><td>Hơi thơ, ít triết học</td></tr>
+        <tr><td><strong>Gốc Việt</strong></td><td>Gốc cây — nơi xuất phát mọi thứ</td><td>Đơn giản, ai cũng hiểu, tự hào dân tộc</td><td>Quá đơn giản, có thể bị hiểu là chủ nghĩa dân tộc hẹp hòi</td></tr>
+        <tr><td><strong>Hồn Đất</strong></td><td>Đất — nuôi tất cả, không phân biệt</td><td>Gần với tín ngưỡng bản địa thờ đất</td><td>Dễ bị hiểu là địa lý, lãnh thổ</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:24px"><strong>🧬 Nhóm 2 — Triết học thuần Việt:</strong></p>
+    <table class="styled-table">
+      <thead><tr><th>Tên</th><th>Ý nghĩa</th><th>Điểm mạnh</th><th>Điểm yếu</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Lẽ Sống Việt</strong></td><td>"Lẽ" = nguyên lý tự nhiên</td><td>Hoàn toàn trung tính, "lẽ" là từ Việt thuần</td><td>Hơi dài, khó thành thương hiệu</td></tr>
+        <tr><td><strong>Hồn Việt</strong></td><td>Bản chất không thể xóa</td><td>Đã phổ biến, dễ cảm</td><td>Quá chung chung, không có chiều sâu triết học</td></tr>
+        <tr><td><strong>Chất Việt</strong></td><td>"Chất" = bản chất không thay đổi</td><td>Hiện đại, giới trẻ hiểu</td><td>Nghe marketing hơn triết học</td></tr>
+        <tr><td><strong>Nền Việt</strong></td><td>Nền tảng — mọi thứ đứng lên</td><td>Kiến trúc đơn giản, dễ hiểu</td><td>Ít cảm xúc, quá trung tính</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:24px"><strong>🔥 Nhóm 3 — Đề xuất mới hoàn toàn:</strong></p>
+    <table class="styled-table">
+      <thead><tr><th>Tên</th><th>Cấu trúc</th><th>Điểm mạnh</th><th>Điểm yếu</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mạch Việt</strong></td><td>Mạch = dòng chảy ngầm liên tục</td><td>Trung tính, đẹp, chứa chiều sâu, gợi liên tục</td><td>Còn mới, cần thời gian thấm</td></tr>
+        <tr><td><strong>Nguồn Mạch</strong></td><td>Nguồn + Mạch = xuất phát và dòng chảy</td><td>Giàu hình ảnh, không tôn giáo, không chính trị</td><td>Chưa có tính triết học rõ</td></tr>
+        <tr><td><strong>Hệ Rễ Việt</strong></td><td>Hệ thống rễ — nhiều rễ kết nối thành mạng</td><td>Chính xác nhất về mặt triết học</td><td>Hơi kỹ thuật, ít thơ</td></tr>
+        <tr><td><strong>Mạch Rễ</strong></td><td>Mạch + Rễ = dòng chảy bên trong điểm neo</td><td>Trùng khớp sinh học thật: mạch dẫn trong rễ cây</td><td>Người nghe lần đầu có thể hỏi ngữ pháp</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 4.4 BẢNG CHẤM ĐIỂM TỔNG HỢP -->
+    <h3>Bước 4 — Bảng chấm điểm tổng hợp (thang 10)</h3>
+    <p>Chấm điểm <strong>công bằng</strong> trên cùng 5 tiêu chí, mỗi tiêu chí tối đa 10 điểm. Tổng = trung bình cộng.</p>
+
+    <div class="world-table-wrap">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Trung tính tôn&nbsp;giáo</th>
+            <th>Thuần Việt / Dễ&nbsp;cảm</th>
+            <th>Chiều sâu triết&nbsp;học</th>
+            <th>Hình ảnh cụ&nbsp;thể</th>
+            <th>Khả năng mở&nbsp;rộng</th>
+            <th><strong>Tổng</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#e8f5e9;font-weight:600">
+            <td>🏆 <strong>Mạch Rễ</strong></td>
+            <td><strong>10</strong></td>
+            <td><strong>9</strong></td>
+            <td><strong>9</strong></td>
+            <td><strong>10</strong></td>
+            <td><strong>9</strong></td>
+            <td><strong>9.4</strong></td>
+          </tr>
+          <tr><td>Mạch Việt</td><td>10</td><td>9</td><td>7</td><td>8</td><td>9</td><td><strong>8.6</strong></td></tr>
+          <tr><td>Hồn Rễ</td><td>7</td><td>9</td><td>8</td><td>8</td><td>8</td><td><strong>8.0</strong></td></tr>
+          <tr><td>Mạch Nguồn</td><td>10</td><td>8</td><td>6</td><td>8</td><td>7</td><td><strong>7.8</strong></td></tr>
+          <tr><td>Lẽ Sống Việt</td><td>10</td><td>8</td><td>7</td><td>6</td><td>7</td><td><strong>7.6</strong></td></tr>
+          <tr><td>Đạo Rễ (cũ)</td><td>4</td><td>7</td><td>9</td><td>8</td><td>9</td><td><strong>7.4</strong></td></tr>
+          <tr><td>Hệ Rễ Việt</td><td>10</td><td>5</td><td>8</td><td>7</td><td>7</td><td><strong>7.4</strong></td></tr>
+          <tr><td>Gốc Việt</td><td>9</td><td>10</td><td>4</td><td>8</td><td>5</td><td><strong>7.2</strong></td></tr>
+          <tr><td>Hồn Việt</td><td>8</td><td>10</td><td>4</td><td>7</td><td>6</td><td><strong>7.0</strong></td></tr>
+          <tr><td>Nguồn Mạch</td><td>10</td><td>7</td><td>5</td><td>7</td><td>6</td><td><strong>7.0</strong></td></tr>
+          <tr><td>Đạo Ông Bà (cũ)</td><td>5</td><td>10</td><td>5</td><td>9</td><td>4</td><td><strong>6.6</strong></td></tr>
+          <tr><td>Chất Việt</td><td>9</td><td>8</td><td>4</td><td>5</td><td>6</td><td><strong>6.4</strong></td></tr>
+          <tr><td>Nền Việt</td><td>10</td><td>7</td><td>4</td><td>5</td><td>6</td><td><strong>6.4</strong></td></tr>
+          <tr><td>Hồn Đất</td><td>7</td><td>8</td><td>5</td><td>7</td><td>5</td><td><strong>6.4</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4.5 TẠI SAO MẠCH RỄ THẮNG -->
+    <h3>Bước 5 — Tại sao "Mạch Rễ" thắng?</h3>
+    <div class="def-box">
+      <div class="label">Phân tích từ ghép</div>
+      <blockquote>
+        <strong>Mạch</strong> (dòng chảy vô hình, liên tục, xuyên thế hệ) + <strong>Rễ</strong> (điểm neo, vô hình, bền vững, không di chuyển).<br/><br/>
+        Trong thực vật học, <strong>mạch dẫn trong rễ</strong> chính là thứ hút nước và dinh dưỡng từ đất lên nuôi toàn cây. Đây không phải ẩn dụ — đây là <strong>sự thật sinh học</strong> trùng khớp hoàn hảo với triết lý.
+      </blockquote>
+    </div>
+
+    <p>Năm nghĩa của chữ "Mạch" — <strong>không một nghĩa nào dính đến tôn giáo:</strong></p>
+    <div class="ascii-box">Mạch nước ngầm   →  Chảy liên tục, vô hình, nuôi sống
+Mạch máu         →  Kết nối toàn thân, đứt là chết
+Mạch văn         →  Sợi chỉ xuyên suốt câu chuyện
+Mạch lạc         →  Nhất quán, có hệ thống
+Mạch nguồn       →  Nơi mọi thứ bắt đầu</div>
+
+    <div class="def-box" style="margin-top:20px">
+      <div class="label">Verdict — Hệ thống ba tầng</div>
+      <blockquote>
+        <strong>Đạo Ông Bà</strong> = Cổng vào (cảm xúc, truyền thống, đại chúng)<br/>
+        <strong>Mạch Rễ</strong> = Nền tảng (tư duy, chiến lược, quốc tế)<br/>
+        <strong>Ngoại giao Cây Tre</strong> = Biểu hiện cụ thể trong chính sách<br/><br/>
+        Đạo Ông Bà là <strong>hoa</strong> — đẹp, ai cũng thấy, ai cũng hiểu.<br/>
+        Mạch Rễ là <strong>hệ rễ</strong> — vô hình, nhưng là thứ quyết định cây có đứng vững được không.<br/>
+        Một cái cây cần cả hai. Dùng "Đạo Ông Bà" để chạm vào trái tim — dùng "Mạch Rễ" để chạm vào trí tuệ.
+      </blockquote>
+    </div>
+
+    <!-- 4.6 PHÂN TÍCH NGÔN NGỮ HỌC -->
+    <h3>Bước 6 — Phân Tích Ngôn Ngữ Học</h3>
+
+    <p><strong>Về âm thanh:</strong></p>
+    <div class="ascii-box">Mạch Việt   →  M + V  →  nhẹ, mở, bay
+Mạch Rễ     →  M + R  →  trầm, chắc, đứng
+Đạo Rễ      →  Đ + R  →  nặng, đóng, cứng</div>
+    <p>"Mạch Rễ" có âm thanh <strong>trầm mà không nặng</strong> — gợi cảm giác vững chắc nhưng không cứng nhắc. Hai âm tiết, dễ nói, dễ nhớ. Phù hợp với triết lý cần diễn đạt.</p>
+
+    <p><strong>Về hình ảnh:</strong></p>
+    <div class="def-box">
+      <div class="label">Cấu trúc sinh học</div>
+      <blockquote>Rễ là cấu trúc. Mạch là dòng chảy bên trong cấu trúc đó.<br/><br/>
+      Trong thực vật học, <strong>mạch dẫn trong rễ</strong> chính là thứ hút nước và dinh dưỡng từ đất lên nuôi toàn cây. Đây không phải ẩn dụ — đây là <strong>sự thật sinh học</strong> trùng khớp hoàn hảo với triết lý.</blockquote>
+    </div>
+
+    <p><strong>Chấm điểm chi tiết có trọng số:</strong></p>
+    <table class="styled-table">
+      <thead>
+        <tr><th>Tiêu chí</th><th>Trọng số</th><th>Điểm</th><th>Lý do</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Trung tính tôn giáo</strong></td><td>20%</td><td>10/10</td><td>Không một tôn giáo nào dùng "Mạch Rễ" — hoàn toàn trống</td></tr>
+        <tr><td><strong>Thuần Việt / Dễ cảm</strong></td><td>20%</td><td>9/10</td><td>Cả hai từ đều thuần Việt, nông dân nghe cũng hiểu hình ảnh</td></tr>
+        <tr><td><strong>Chiều sâu triết học</strong></td><td>20%</td><td>9/10</td><td>Ghép hai khái niệm tạo ra tầng nghĩa mới sâu hơn từng từ riêng lẻ</td></tr>
+        <tr><td><strong>Hình ảnh cụ thể</strong></td><td>15%</td><td>10/10</td><td>Hình ảnh sinh học thật — mạch dẫn trong rễ — không chỉ là ẩn dụ</td></tr>
+        <tr><td><strong>Khả năng mở rộng</strong></td><td>15%</td><td>9/10</td><td>Áp dụng được cá nhân → gia đình → quốc gia → văn minh</td></tr>
+        <tr><td><strong>Âm thanh &amp; nhịp điệu</strong></td><td>10%</td><td>9/10</td><td>Hai âm tiết, trầm-chắc, dễ nói, dễ nhớ</td></tr>
+      </tbody>
+    </table>
+
+    <div class="ascii-box" style="margin-top:16px">Tính điểm:
+(10×20 + 9×20 + 9×20 + 10×15 + 9×15 + 9×10) ÷ 100
+= (200 + 180 + 180 + 150 + 135 + 90) ÷ 100
+= 935 ÷ 100
+= 9.35 / 10</div>
+
+    <!-- 4.7 ĐIỂM YẾU DUY NHẤT -->
+    <h3>Bước 7 — Điểm Yếu Duy Nhất Cần Nhìn Thẳng</h3>
+    <p>"Mạch Rễ" gần như hoàn hảo — nhưng có <strong>một rủi ro nhỏ</strong>:</p>
+
+    <div class="def-box" style="border-left-color:#e0a030">
+      <div class="label" style="color:#b07820">⚠️ Câu hỏi dự kiến</div>
+      <blockquote><em>"Mạch Rễ" — mạch của rễ, hay mạch và rễ?</em></blockquote>
+    </div>
+
+    <p>Đây là câu hỏi <strong>ngữ pháp</strong>, không phải câu hỏi triết học. Và câu trả lời là: <strong>cả hai — và đó chính là vẻ đẹp của nó.</strong></p>
+    <p>Trong tiếng Việt, sự mơ hồ ngữ pháp đó không phải điểm yếu mà là <strong>chiều sâu thêm</strong>:</p>
+
+    <div class="concept-list">
+      <div class="concept-item">
+        <span class="pill">Đọc 1</span>
+        <p><strong>"Mạch của Rễ"</strong> → dòng chảy bên trong cái neo vững chắc</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Đọc 2</span>
+        <p><strong>"Mạch và Rễ"</strong> → hai lực bổ sung nhau: chảy và giữ</p>
+      </div>
+    </div>
+
+    <div class="def-box" style="margin-top:20px">
+      <div class="label">Kết luận về tên gọi</div>
+      <blockquote>
+        <em>Vừa đủ cụ thể để người nông dân hiểu.</em><br/>
+        <em>Vừa đủ sâu để học giả tranh luận.</em><br/>
+        <em>Vừa đủ trung tính để người Công giáo, Phật tử, và người vô thần đều gật đầu — "Đó là tôi."</em>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 4.8: FALSIFICATION / SELF-CRITICISM -->
+  <section>
+    <h2>🔬 Mạch Rễ Có Thể Bị Bác Bỏ Không?</h2>
+    <p>Một framework triết học nghiêm túc phải trả lời câu hỏi: <strong>điều kiện nào sẽ khiến nó sai?</strong> Mạch Rễ không né tránh câu hỏi đó — và câu trả lời nằm ngay trong cấu trúc của nó.</p>
+
+    <h3>Nguyên tắc Falsification</h3>
+    <div class="def-box">
+      <div class="label">Điều kiện bác bỏ Mạch Rễ</div>
+      <blockquote>
+        Mạch Rễ sai nếu tồn tại <strong>một dân tộc</strong> đã sinh tồn lâu dài dưới áp lực đồng hóa tương đương mà <strong>không</strong> sử dụng bất kỳ cơ chế nào trong bốn Tiên Đề I–IV.<br/><br/>
+        Mạch Rễ cũng sai nếu các case study lịch sử (1000 năm Bắc thuộc, đường dây 500kV, hòa giải Việt-Mỹ) được chứng minh là sử dụng cơ chế <em>khác</em> với cơ chế Mạch Rễ mô tả.
+      </blockquote>
+    </div>
+
+    <h3>Self-Criticism — Cơ Chế Tự Kiểm Nội Bộ</h3>
+    <p>Quan trọng hơn falsification từ bên ngoài: Mạch Rễ có <strong>cơ chế tự kiểm chứng nội bộ</strong> — thứ phân biệt nó với hệ tư tưởng không thể bác bỏ.</p>
+
+    <div class="ascii-box">SELF-CRITICISM MECHANISM:
+  Không phải tự phủ nhận —
+  mà là Pramāṇa epistemology:
+
+  "Tổ tiên làm X là đúng
+   trong bối cảnh của tổ tiên.
+   Tôi làm X có còn đúng
+   trong bối cảnh của tôi không?"
+
+  Câu hỏi này không phá hủy
+  kết nối với tổ tiên —
+  ngược lại: tổ tiên luôn
+  hỏi câu hỏi đó trong bối cảnh của họ.
+
+  Hỏi câu hỏi đó = TRUNG THÀNH
+  với tinh thần của tổ tiên,
+  không phải với hình thức của họ.
+
+  Đây là self-criticism
+  có cơ sở triết học —
+  không phải tự ti hay theo Tây.</div>
+
+    <h3>Giới Hạn Tự Nhận</h3>
+    <div class="concept-list">
+      <div class="concept-item">
+        <span class="pill">Giới hạn I</span>
+        <p>Tiên Đề I chỉ mô tả <em>known network</em> — chưa giải thích cơ chế mở rộng sang người lạ (civic obligation với strangers).</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Giới hạn II</span>
+        <p>Tiên Đề II mô tả <em>bất biến</em> nhưng chưa có cơ chế hỏi "bất biến này có còn đúng không?" — cần self-criticism mechanism.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Giới hạn III</span>
+        <p>Tiên Đề III có thể bị hiểu là chống mọi tập trung — kể cả thiết chế tốt phục vụ cộng đồng.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Giới hạn IV</span>
+        <p>Tiên Đề IV chỉ mô tả đối thoại với <em>quá khứ</em> — chưa có chiều trách nhiệm với <em>tương lai</em> (public goods thinking).</p>
+      </div>
+    </div>
+
+    <div class="def-box" style="margin-top:20px; border-left-color:#7c6fc9">
+      <div class="label" style="color:#5a4fa0">🔄 Xem thêm</div>
+      <blockquote>Bốn giới hạn trên được giải quyết trong <strong>Mạch Rễ Upgraded</strong> — bằng công cụ Nhận thức luận Phật giáo (Tiên Đề VIII). Mạch Rễ đủ sâu để tự nhìn thấy giới hạn của mình mà không phá hủy chính mình.<br/><br/>
+      → <a href="upgrade.html" style="color:#7c6fc9; font-weight:600">Đọc: Mạch Rễ Upgraded — Tiên Đề VIII &amp; Bốn Mở Rộng</a></blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 5: ISOMORPHISM 3 SYSTEMS -->
+  <section>
+    <h2>🔗 Kiến trúc: Isomorphism Ba Hệ Thống</h2>
+    <p>Mạch Rễ nằm tại giao điểm cấu trúc (không phải nội dung) của ba hệ thống lý thuyết. Phương pháp mapping là tìm <strong>isomorphism cấu trúc</strong> — không phải tổng hợp bề mặt.</p>
+
+    <div class="ascii-box">Phan Ngọc hỏi:
+  "Cái gì bền vững khi mọi nội dung đều thay đổi?"
+  Trả lời: Kiểu cấu trúc
+
+Ashby hỏi:
+  "Hệ thống cần gì để tồn tại trong môi trường biến động?"
+  Trả lời: Requisite variety + attractor
+
+Anattā hỏi:
+  "Cái gì liên tục khi không có ngã cố định?"
+  Trả lời: Santāna — dòng tương thuộc
+
+──────────────────────────────────────────────────
+Ba câu hỏi KHÁC NHAU về bề mặt
+Nhưng có cùng CẤU TRÚC LOGIC:
+
+  "Cái gì là INVARIANT của X
+   khi X liên tục BIẾN ĐỔI
+   mà không có TRUNG TÂM CỐ ĐỊNH?"</div>
+
+    <h3>Phân loại 7 Axioms theo vai trò</h3>
+    <div class="concept-list">
+      <div class="concept-item">
+        <span class="pill">A1, A2, A4</span>
+        <p><strong>Giao điểm</strong> — Ba systems đồng thuận. Mạch Rễ đặt tên chung cho cấu trúc mà cả ba đều nhìn thấy.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">A3, A6</span>
+        <p><strong>Cầu nối</strong> — Mạch Rễ kết nối thứ mỗi system chỉ thấy một phần.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">A5, A7</span>
+        <p><strong>Gap thực sự</strong> — Thứ không có trong cả ba systems. <strong>A5 (Giao diện thời gian dọc) và A7 là đóng góp lý thuyết thực sự của Mạch Rễ.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: VỊ TRÍ TOÀN CẦU -->
+  <section>
+    <h2>🌍 Vị trí trong bản đồ triết học toàn cầu</h2>
+    <div class="world-table-wrap">
+      <table class="styled-table">
+        <thead>
+          <tr><th>Triết lý</th><th>Dân tộc</th><th>Câu hỏi cốt lõi</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ubuntu</td><td>Bantu / Châu Phi</td><td>Tôi là ai trong quan hệ với người khác?</td></tr>
+          <tr><td>Wabi-sabi</td><td>Nhật Bản</td><td>Vẻ đẹp trong không hoàn hảo là gì?</td></tr>
+          <tr><td>Tikkun Olam</td><td>Do Thái</td><td>Trách nhiệm sửa chữa thế giới?</td></tr>
+          <tr><td>Ahimsa</td><td>Ấn Độ</td><td>Làm sao hành động không gây hại?</td></tr>
+          <tr><td>Ikigai</td><td>Nhật Bản</td><td>Sống vì điều gì?</td></tr>
+          <tr><td><strong>🌿 Mạch Rễ</strong></td><td><strong>Việt Nam</strong></td><td><strong>Làm sao giữ được mình khi tất cả muốn thay đổi mình?</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="def-box" style="margin-top:20px">
+      <div class="label">Đóng góp độc nhất</div>
+      <blockquote>Trong khi Ubuntu hỏi về quan hệ ngang (tôi với người khác), Mạch Rễ hỏi về <strong>quan hệ dọc</strong> (tôi với tổ tiên và hậu thế) — chiều kích bị thiếu trong hầu hết triết học phương Tây hiện đại. Và trong khi tất cả các framework bản sắc hiện có đều giả định bảo tồn bản sắc bằng ranh giới, Mạch Rễ đề xuất cơ chế ngược lại: <strong>bản sắc bền vững thông qua hấp thụ có định hướng, không phải bất chấp nó.</strong></blockquote>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottom-nav">
+  <a href="index.html" class="secondary">← Tổng quan</a>
+  <a href="why.html">Tại Sao? →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a></p>
+</footer>
+
+</body>
+</html>

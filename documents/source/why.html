@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WHY — Tại Sao Cần Mạch Rễ?</title>
+  <meta name="description" content="Ba biến động toàn cầu, RCA 5 Whys, lý do cấp bách và tại sao Việt Nam là case study nền tảng" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #a07830;
+      --accent-light: #d4a843;
+      --accent-pale:  #fdf3dc;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #e8dfc8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    .topnav { background: #6b4f14; display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    .hero {
+      background: linear-gradient(135deg, #4a2c00 0%, #8b5e1a 60%, #c4832d 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem; font-weight: 700; letter-spacing: .14em; margin-bottom: 16px;
+    }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 12px; }
+    .hero p { color: #fdf3dc; font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale); }
+    h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    .quote-box {
+      background: #fff;
+      border-left: 5px solid var(--accent-light);
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-dark);
+    }
+
+    /* ── DISRUPTION CARDS ── */
+    .disruption-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 20px; }
+    .dis-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .dis-card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .dis-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--accent); }
+    .dis-card p { margin: 0; font-size: .88rem; }
+
+    /* ── RCA ── */
+    .rca-list { display: flex; flex-direction: column; gap: 0; margin-top: 20px; }
+    .rca-item {
+      display: flex;
+      gap: 0;
+      position: relative;
+    }
+    .rca-item:not(:last-child) .rca-left::after {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 48px;
+      bottom: -16px;
+      width: 2px;
+      background: var(--border);
+    }
+    .rca-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 16px;
+      position: relative;
+      padding-top: 8px;
+    }
+    .rca-num {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .rca-body {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+    .rca-body .why-label { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+    .rca-body p { margin: 0; font-size: .9rem; }
+
+    /* ── COMPARISON ── */
+    .binary-fail {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .fail-card {
+      background: #fff;
+      border: 1px solid #e0c0c0;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .fail-card .icon { font-size: 1.8rem; }
+    .fail-card h4 { font-size: .95rem; margin: 8px 0 4px; color: #a03030; }
+    .fail-card p { margin: 0; font-size: .82rem; }
+    .vs { font-size: 1.1rem; font-weight: 700; color: var(--text-muted); text-align: center; }
+    .third-way {
+      background: var(--accent-pale);
+      border: 2px solid var(--accent-light);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 12px;
+    }
+    .third-way h4 { color: var(--accent); margin-bottom: 6px; }
+    .third-way p { margin: 0; font-size: .9rem; }
+
+    /* ── WINDOW ── */
+    .urgency-box {
+      background: linear-gradient(135deg, #4a2c00, #8b5e1a);
+      color: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 16px;
+    }
+    .urgency-box h3 { color: #fdf3dc; margin-bottom: 12px; }
+    .urgency-box p { color: rgba(255,255,255,.8); font-size: .92rem; }
+
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
+    .styled-table th { background: var(--accent); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
+    .styled-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .styled-table tr:nth-child(even) td { background: #faf5e8; }
+
+    .bottom-nav { max-width: 820px; margin: 0 auto; padding: 0 24px 60px; display: flex; justify-content: space-between; gap: 12px; }
+    .bottom-nav a { background: #8b5e1a; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: .9rem; font-weight: 600; transition: background .2s; }
+    .bottom-nav a:hover { background: #4a2c00; }
+    .bottom-nav a.secondary { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
+
+    footer { background: #4a2c00; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #fdf3dc; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <span class="current">WHY — Tại Sao?</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">WHY</div>
+  <h1>Tại Sao Cần Mạch Rễ?</h1>
+  <p>Ba biến động toàn cầu, sự thất bại của các lựa chọn nhị phân, và lý do tại sao ngay bây giờ</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION 1: BA BIẾN ĐỘNG -->
+  <section>
+    <h2>🌐 Ba biến động đang xảy ra đồng thời</h2>
+    <p>Ba biến động này cùng chỉ về một nhu cầu: <strong>nhân loại cần lý thuyết bản sắc thứ ba</strong> — không phải đóng cửa, không phải đồng hóa, mà là con đường chưa có tên.</p>
+
+    <div class="disruption-grid">
+      <div class="dis-card">
+        <div class="icon">📱</div>
+        <h3>Toàn cầu hóa kỹ thuật số</h3>
+        <p>Đang xóa ranh giới văn hóa với tốc độ chưa từng có. Hàng trăm ngôn ngữ đang mất — một ngôn ngữ mỗi hai tuần. Không phải vì bị cấm, mà vì <strong>thế hệ trẻ tự nguyện chọn ngôn ngữ khác.</strong></p>
+      </div>
+      <div class="dis-card">
+        <div class="icon">🔥</div>
+        <h3>Khủng hoảng bản sắc toàn cầu</h3>
+        <p>Phong trào dân tộc chủ nghĩa cực đoan đang nổi lên ở khắp nơi như phản ứng phòng thủ — vì người ta không có lựa chọn nào khác ngoài <strong>đóng cửa hoặc mở cửa hoàn toàn.</strong></p>
+      </div>
+      <div class="dis-card">
+        <div class="icon">🤖</div>
+        <h3>AI và số hóa</h3>
+        <p>Khi máy có thể tạo ra văn hóa, ngôn ngữ, nghệ thuật — thì bản sắc văn hóa là gì, và tồn tại như thế nào? Câu hỏi về bản sắc cá nhân và tập thể ở cấp độ <strong>chưa từng có.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SỰ THẤT BẠI CỦA NHỊ PHÂN -->
+  <section>
+    <h2>⚖️ Tại sao các lựa chọn hiện có đều thất bại</h2>
+    <p>Các câu trả lời hiện có đều đặt người ta trước một lựa chọn nhị phân:</p>
+
+    <div class="binary-fail">
+      <div class="fail-card">
+        <div class="icon">🚪</div>
+        <h4>Đóng cửa</h4>
+        <p>Giữ bản sắc bằng cách từ chối thay đổi. Gãy khi áp lực đủ lớn.</p>
+      </div>
+      <div class="vs">VS</div>
+      <div class="fail-card">
+        <div class="icon">💧</div>
+        <h4>Mở cửa hoàn toàn</h4>
+        <p>Hội nhập bằng cách từ bỏ bản thân. Tan chảy — không còn là mình.</p>
+      </div>
+    </div>
+
+    <div class="third-way">
+      <h4>🌿 Con đường thứ ba — Mạch Rễ</h4>
+      <p>Được chứng minh qua 2.000 năm lịch sử Việt Nam: <strong>bản sắc bền vững không được tạo ra bằng cách chống lại thay đổi, mà bằng cách định hướng thay đổi từ một lõi đủ sâu.</strong></p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: RCA 5 WHYS -->
+  <section>
+    <h2>🔍 RCA 5 Whys — Tại sao phải đặt tên ngay bây giờ</h2>
+
+    <div class="rca-list">
+      <div class="rca-item">
+        <div class="rca-left"><div class="rca-num">1</div></div>
+        <div class="rca-body">
+          <div class="why-label">Why 1</div>
+          <p>Thế hệ trẻ Việt Nam đang <strong>mất kết nối</strong> với thứ cha ông sống tự nhiên mà không cần giải thích.</p>
+        </div>
+      </div>
+      <div class="rca-item">
+        <div class="rca-left"><div class="rca-num">2</div></div>
+        <div class="rca-body">
+          <div class="why-label">Why 2</div>
+          <p>Vì trước đây bản sắc được truyền qua <strong>môi trường sống</strong> — làng xã, nghi lễ, ca dao, bữa cơm gia đình. Môi trường đó đã thay đổi triệt để trong một thế hệ.</p>
+        </div>
+      </div>
+      <div class="rca-item">
+        <div class="rca-left"><div class="rca-num">3</div></div>
+        <div class="rca-body">
+          <div class="why-label">Why 3</div>
+          <p>Vì triết lý dân tộc Việt <strong>chưa bao giờ được ngôn ngữ hóa</strong> — nó sống trong hành vi, không sống trong văn bản. Khi môi trường hành vi biến mất, triết lý mất đi phương tiện truyền tải.</p>
+        </div>
+      </div>
+      <div class="rca-item">
+        <div class="rca-left"><div class="rca-num">4</div></div>
+        <div class="rca-body">
+          <div class="why-label">Why 4</div>
+          <p>Vì sống được là đủ — dân tộc luôn trong trạng thái sinh tồn, không có thời gian hệ thống hóa. Và triết lý đó <strong>hiệu quả hơn khi được sống</strong> hơn khi được viết.</p>
+        </div>
+      </div>
+      <div class="rca-item">
+        <div class="rca-left"><div class="rca-num">5</div></div>
+        <div class="rca-body">
+          <div class="why-label">Why 5 — Gốc rễ thật sự</div>
+          <p>Lần đầu tiên trong lịch sử, mối đe dọa với bản sắc không đến từ bên ngoài bằng vũ lực — mà đến từ bên trong bằng <strong>sự tự nguyện</strong>. Không có kẻ thù để kháng cự. Chỉ có Netflix, TikTok, chủ nghĩa tiêu dùng, và cái tôi cá nhân đang dần thay thế rễ.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="urgency-box">
+      <h3>⚠️ Có một cửa sổ thời gian đang đóng lại</h3>
+      <p>Thế hệ cuối cùng còn nhớ Việt Nam trước đô thị hóa đang già đi. Đây là lần đầu tiên cây tre có thể <strong>tự nhổ rễ mình mà không nhận ra.</strong> Việt Nam còn kịp đặt tên — nhưng không còn nhiều thời gian.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TẠI SAO VIỆT NAM -->
+  <section>
+    <h2>🇻🇳 Tại sao Việt Nam là case study nền tảng</h2>
+    <p>Không phải vì Việt Nam đặc biệt hơn ai. Mà vì Việt Nam là nơi câu trả lời cho câu hỏi này đã được <em>sống</em> rõ ràng nhất và lâu nhất trong lịch sử được ghi chép:</p>
+
+    <table class="styled-table">
+      <thead><tr><th>Sự kiện</th><th>Điều đặc biệt</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>1.000 năm Bắc thuộc</strong></td>
+          <td>Đầy đủ công cụ đồng hóa — nhưng tiếng Việt không mất. Không có tiền lệ trong lịch sử thế giới.</td>
+        </tr>
+        <tr>
+          <td><strong>Hấp thụ đa dạng</strong></td>
+          <td>Phật giáo Ấn, Nho giáo Trung Hoa, Công giáo Pháp, văn hóa Mỹ — và biến tất cả thành phiên bản Việt.</td>
+        </tr>
+        <tr>
+          <td><strong>Bình thường hóa với Mỹ</strong></td>
+          <td>Nhanh hơn bất kỳ cặp cựu thù nào trong thế kỷ 20. Không phải vì quên — mà vì rễ đủ sâu.</td>
+        </tr>
+        <tr>
+          <td><strong>Ngoại giao Cây Tre</strong></td>
+          <td>"Bạn với tất cả, không thuộc về ai" — đang được thế giới chú ý như mô hình.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="quote-box">
+      Đây không phải may mắn hay địa lý. Đây là <strong>cơ chế</strong> — và cơ chế đó có thể được đặt tên, dạy được, và áp dụng.
+    </div>
+  </section>
+
+  <!-- SECTION 5: BỐN HẠN CHẾ CẤU TRÚC -->
+  <section>
+    <h2>⚠️ Bốn hạn chế cấu trúc của Mạch Rễ v1.0</h2>
+    <p>Mạch Rễ giải thích xuất sắc cách dân tộc tồn tại — nhưng <strong>không đủ để xây dựng tương lai</strong>. Bốn hạn chế thực sự này đòi hỏi phải upgrade:</p>
+
+    <div class="disruption-grid">
+      <div class="dis-card">
+        <div class="icon">🤝</div>
+        <h3>1. Civic Trust Gap</h3>
+        <p>Rễ sâu nhưng <strong>chỉ đến hàng xóm</strong> — không kéo dài đến tổ chức, thiết chế, và người lạ. Người Việt tin hàng xóm nhưng không tin hệ thống.</p>
+      </div>
+      <div class="dis-card">
+        <div class="icon">🔍</div>
+        <h3>2. Self-Criticism Gap</h3>
+        <p>Khả năng tự kiểm điểm <strong>bị giới hạn ở tầng cá nhân</strong>. Làng có tự phê nhưng dân tộc thiếu cơ chế tự hỏi: "Phải chăng chúng ta đang sai?"</p>
+      </div>
+      <div class="dis-card">
+        <div class="icon">🏛️</div>
+        <h3>3. Public Goods Gap</h3>
+        <p>Rễ nuôi gia đình, dòng họ — nhưng <strong>không tự nhiên mở rộng đến tài sản công</strong>. Thiếu cơ chế chuyển từ "nhà tôi sạch" sang "đường phố sạch".</p>
+      </div>
+      <div class="dis-card">
+        <div class="icon">🏗️</div>
+        <h3>4. Institutional Building Gap</h3>
+        <p>Giỏi xây dựng quan hệ cá nhân, <strong>yếu xây dựng thiết chế bền vững</strong>. Hệ thống chạy bằng "quan hệ" thay vì bằng "luật chơi".</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: BỐN UPGRADE MODULES -->
+  <section>
+    <h2>🔧 Bốn Module Upgrade — Mạch Rễ v2.0</h2>
+    <p>Mỗi module giải quyết chính xác một hạn chế cấu trúc. Không phải vá lỗi — mà là <strong>mở rộng hệ thống rễ để phù hợp với xã hội hiện đại.</strong></p>
+
+    <table class="styled-table">
+      <thead><tr><th>Module</th><th>Hạn chế v1.0</th><th>Giải pháp v2.0</th><th>Nguồn triết học</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>🤝 Civic Trust</strong></td>
+          <td>Trust chỉ đến hàng xóm</td>
+          <td>Mở rộng rễ tin cậy ra thiết chế: luật pháp, tài sản công, citizen assembly</td>
+          <td>Social Capital Theory (Putnam) + Làng Việt</td>
+        </tr>
+        <tr>
+          <td><strong>🔍 Self-Criticism</strong></td>
+          <td>Thiếu tự phê tập thể</td>
+          <td>Cơ chế tự hỏi: "Phải chăng chúng ta đang sai?" — Pramāṇa từ Phật giáo + Karl Popper Falsifiability</td>
+          <td>Epistemology Pramāṇa (Phật giáo) + Popper</td>
+        </tr>
+        <tr>
+          <td><strong>🏛️ Public Goods</strong></td>
+          <td>Rễ chỉ nuôi gia đình</td>
+          <td>Rễ mở rộng: commons management, tài sản chung, không gian công</td>
+          <td>Elinor Ostrom (Commons) + Đình làng</td>
+        </tr>
+        <tr>
+          <td><strong>🏗️ Institutional Building</strong></td>
+          <td>Giỏi quan hệ, yếu thiết chế</td>
+          <td>Distributed power: không tập trung, không phân tán — mà phân bổ theo chức năng</td>
+          <td>Polycentric governance (Ostrom) + Hội đồng làng</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Prajñā và Upāya — Hai bổ sung triết học</h3>
+    <p>Kiến trúc Upgraded tích hợp hai khái niệm Phật giáo làm nền tảng vận hành:</p>
+
+    <div class="binary-fail" style="grid-template-columns: 1fr 1fr;">
+      <div class="fail-card" style="border-color: var(--border);">
+        <div class="icon">👁️</div>
+        <h4 style="color: var(--accent);">Prajñā — Thấy bản chất</h4>
+        <p>Khả năng nhìn xuyên hình thức để thấy cấu trúc bên dưới. Không phải "hiểu biết" — mà là <strong>thấy thẳng vào bản chất sự vật.</strong></p>
+      </div>
+      <div class="fail-card" style="border-color: var(--border);">
+        <div class="icon">🎯</div>
+        <h4 style="color: var(--accent);">Upāya — Phương tiện thiện xảo</h4>
+        <p>Khả năng chọn đúng công cụ cho đúng hoàn cảnh. Không phải "linh hoạt" — mà là <strong>thay đổi hình thức mà không mất mục đích.</strong></p>
+      </div>
+    </div>
+
+    <div class="quote-box">
+      Prajñā là thấy đúng. Upāya là làm đúng. Mạch Rễ Upgraded = Prajñā + Upāya + bốn module vá lỗ cấu trúc. <strong>Đây không phải là chương trình — đây là dòng chảy.</strong>
+    </div>
+  </section>
+
+
+<div class="bottom-nav">
+  <a href="what.html" class="secondary">← Là Gì?</a>
+  <a href="who.html">Cho Ai? →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="what.html">Là gì</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a></p>
+</footer>
+
+</body>
+</html>
