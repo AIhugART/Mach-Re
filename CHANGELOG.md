@@ -1,5 +1,59 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-05 — what.html: Cập nhật Tiên Đề IV → Thời Gian Cội Nguồn (6 vị trí)
+
+**RCA 3-round:**
+- R1 Triệu chứng: `what.html` dùng "Thời Gian Dọc / Vertical Temporality" mà không có tên bản chất "Orthogonal Temporality / Thời Gian Cội Nguồn" — mâu thuẫn thuật ngữ với `axiom_4.html` vừa cập nhật.
+- R2 Cơ chế: Người đọc đọc what.html (tổng quan) xong sang axiom_4.html (chi tiết) gặp "Thời Gian Cội Nguồn / Root-Flow" mà không có context chuẩn bị.
+- R3 Gốc: CLAUDE.md quy định "phát biểu bản thể học → dùng Orthogonal Temporality (bản chất)". what.html phát biểu bản thể học nhưng thiếu tên bản chất.
+
+**Scoring tất cả ≥ 4/5 → thực hiện 6 sửa (extend, không overwrite):**
+- Heading card IV: thêm "Thời Gian Cội Nguồn / Orthogonal"
+- Note hai tầng (mới): thêm inline note Bản chất ↔ Biểu hiện sau phát biểu
+- ASCII hierarchy: thêm "(Orthogonal Temporality)" vào dòng Tiên Đề IV
+- Summary table: "Thời Gian Dọc" → "Thời Gian Dọc / Cội Nguồn"
+- Link text: mention "Thời Gian Cội Nguồn"
+- Paragraph verification: "Thời Gian Dọc" → "Thời Gian Dọc / Cội Nguồn"
+
+---
+
+## 2026-06-05 — Tích hợp raw/axiom_4.html: Thời Gian Cội Nguồn (Root-Flow Temporality)
+
+**RCA 3-round × 5-Why:**
+- R1 Triệu chứng: `axiom_4.html` thiếu thuật ngữ Việt hóa chính thức cho Orthogonal Temporality, thiếu bảng song ngữ 6 cặp, thiếu 3 định dạng phát biểu Tiên Đề IV.
+- R2 Cơ chế: Nội dung RCA về "Thời Gian Cội Nguồn" đã được tạo ra (lưu trong `raw/axiom_4.html`) nhưng chưa được tích hợp vào tài liệu chính — tồn tại dưới dạng HTML thô từ Claude.ai.
+- R3 Gốc: Không có workflow tích hợp `raw/` → tài liệu chính, dẫn đến phát hiện quan trọng (cội nguồn = Orthogonal Temporality trong ngôn ngữ Việt bản địa) bị cô lập khỏi nơi người đọc sẽ tra cứu.
+
+**Scoring:** Đúng 1 / Sâu 1 / Khả thi 1 / Rủi ro mâu thuẫn 1 / Bảo tồn 1 → **5/5 → PROCEED**
+
+**Sửa gì (extend, không overwrite):**
+- `axiom_4.html`: Thêm Section 1B "Từ Việt Hóa — Thời Gian Cội Nguồn" sau Section 1. Bao gồm: RCA 5-Why, bảng đánh giá 6 phương án (Cội Nguồn = 9.5), phát biểu chính thức song ngữ (TIÊN ĐỀ IV — Thời Gian Cội Nguồn / AXIOM IV — Root-Flow Temporality), bảng song ngữ 6 cặp, 3 định dạng phát biểu.
+
+**Phát hiện quan trọng ghi nhận:**
+- "Cội nguồn" trong tiếng Việt = Orthogonal Temporality (cội = V, nguồn = H) — người Việt đã vận hành triết học này trong ngôn ngữ hàng nghìn năm trước khi có tên.
+- Tên tiếng Anh chính thức: **Root-Flow Temporality** (Root = cội/V, Flow = nguồn/H).
+
+---
+
+## 2026-06-05 — RCA finding: Orthogonal Temporality là bản chất của Tiên Đề IV
+
+**RCA 3-round × 5-Why:**
+- R1 Triệu chứng: Tiên Đề IV chỉ có tên "Vertical Temporality" — mô tả hình thức trực quan nhưng không đặt tên tính chất cấu trúc nền tảng.
+- R2 Cơ chế: Không có tên cho tính chất cấu trúc nên phần so sánh với Luhmann phải dùng 5 dòng để diễn đạt "past ↕ present không phải subset của past → present" — dấu hiệu thiếu thuật ngữ. Không phân biệt được Tiên Đề IV với "past là input của present" chỉ bằng tên "Vertical."
+- R3 Gốc: Bản chất của Tiên Đề IV là tính **trực giao** (V ⊥ H) — hai chiều thời gian độc lập tuyến tính, không rút gọn về nhau. "Vertical" chỉ là cách tính trực giao hiện ra trong văn hóa. Thiếu tên "Orthogonal Temporality" = thiếu falsifiability handle.
+
+**Scoring (5 tiêu chí):** Đúng 1 / Sâu 1 / Khả thi 1 / Rủi ro mâu thuẫn 1 / Bảo tồn 1 → **5/5 → PROCEED**
+
+**Sửa gì (extend, không overwrite):**
+- `CLAUDE.md`: Thêm `### Tiên Đề IV — Bản chất và Biểu hiện` vào Core Principles.
+- `axiom_4.html`: Thêm def-box "Bản chất và Biểu hiện" vào cuối Section 1 (formal statement).
+- `mach_re_homologous.html`: Mở rộng Foundation Statement — thêm câu clarification Orthogonal/Vertical.
+- `plan/dictionary_rule.md`: Thêm section `## 8.` — bảng tra cứu hai tầng, quy tắc thuật ngữ.
+
+**Không đụng:** Tên "Vertical Temporality" trong titles/headings, ASCII diagrams, compare-cards, thực hành văn hóa.
+
+---
+
 ## 2026-06-05 — Governance update: CLAUDE.md (quyết định qua 3-round RCA × scoring)
 
 **RCA tổng kết (3 round):**
