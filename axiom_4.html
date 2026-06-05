@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiên Đề IV — Thời Gian Dọc (Vertical Temporality) | Mạch Rễ</title>
+  <meta name="description" content="Phân tích sâu Tiên Đề IV — Thời Gian Dọc: đóng góp nguyên bản của Mạch Rễ vào triết học, so sánh với Heidegger, Bergson, Assmann, Benjamin, Luhmann, Eliade, Nho giáo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #b05040;
+      --accent-light: #e07a5f;
+      --accent-pale:  #fdf0ed;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #e8d8d5;
+      --green:        #2d6a4f;
+      --green-pale:   #d8f3dc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav {
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      gap: 12px;
+    }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #5a2020 0%, #b05040 60%, #e07a5f 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+    }
+    .hero p { color: #f5c8b8; font-size: 1rem; max-width: 650px; margin: 0 auto; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-pale);
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── DEFINITION BOX ── */
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent-light);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+
+    /* ── ASCII ── */
+    .ascii-box {
+      background: var(--accent-pale);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: .85rem;
+      white-space: pre;
+      overflow-x: auto;
+      color: var(--accent);
+      margin: 16px 0;
+    }
+
+    /* ── TABLE ── */
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
+    .styled-table th {
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .styled-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+    .styled-table tr:nth-child(even) td { background: #fdf5f3; }
+    .styled-table td strong { color: var(--text-dark); }
+
+    /* ── CONCEPT PILLS ── */
+    .concept-list { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .concept-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .concept-item .pill {
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: .85rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .concept-item p { margin: 0; font-size: .88rem; }
+
+    /* ── COMPARISON CARD ── */
+    .compare-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-light);
+      border-radius: 0 14px 14px 0;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .compare-card h3 { margin-top: 0; color: var(--accent); }
+    .compare-card .domain-tag {
+      display: inline-block;
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+
+    /* ── WORLD TABLE ── */
+    .world-table-wrap { overflow-x: auto; }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .bottom-nav a {
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: background .2s;
+    }
+    .bottom-nav a:hover { background: #1a3a2a; }
+    .bottom-nav a.secondary {
+      background: transparent;
+      border: 2px solid var(--green);
+      color: var(--green);
+    }
+
+    footer { background: #1a3a2a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #b7e4c7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <a href="what.html">WHAT</a>
+  <span class="sep">/</span>
+  <span class="current">Tiên Đề IV</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">TIÊN ĐỀ IV · AXIOM IV</div>
+  <h1>Thời Gian Dọc<br/><span style="font-size:.6em;font-weight:400;opacity:.85">Vertical Temporality</span></h1>
+  <p>Đóng góp nguyên bản của Mạch Rễ vào triết học — chiều kích bản thể học (ontological dimension) chưa được phát biểu trước đây</p>
+</div>
+
+<div class="content">
+
+  <!-- SECTION 1: PHÁT BIỂU CHÍNH THỨC -->
+  <section>
+    <h2>📜 Phát biểu chính thức (Formal Statement)</h2>
+    <div class="def-box" style="border-left-color:#e07a5f">
+      <div class="label">Tiên Đề IV — Thời Gian Dọc (Vertical Temporality)</div>
+      <blockquote>
+        <strong>Sự tồn tại của một hệ thống không được duy trì chỉ trong thời gian ngang (horizontal time) — dòng chảy từ quá khứ qua hiện tại đến tương lai. Nó được duy trì qua thời gian dọc (vertical time) — trục quan hệ (relational axis) giữa các cấu hình (configurations) đã qua, đang là, và chưa đến. Thời gian dọc (vertical time) là chiều kích bản thể học (ontological dimension), không phải ẩn dụ (metaphor).</strong>
+      </blockquote>
+    </div>
+
+    <h3>Phát biểu hình thức (Formal Notation)</h3>
+    <div class="ascii-box">Time(S) = H × V
+  H = Horizontal: t₋ₙ → ... → t₀ → ... → t₊ₙ
+  V = Vertical:   Past_configs ↕ Present ↕ Future_configs
+
+Resilience(S) = f(depth(V))
+  depth(V) = số thế hệ mà hệ thống duy trì
+             giao diện (interface) V
+
+Nếu V = ∅:
+  Hệ thống chỉ tồn tại trong H
+  → drift không có neo (anchor)
+  → mất bất biến (invariant) sau nhiễu loạn
+    (perturbation) đủ lớn</div>
+
+    <p><strong>Hệ thống tồn tại theo hai chiều thời gian — thiếu một chiều là thiếu một nửa sự tồn tại.</strong></p>
+  </section>
+
+
+  <!-- SECTION 2: TẠI SAO ĐÂY LÀ TIÊN ĐỀ MỚI -->
+  <section>
+    <h2>🔬 Tại sao đây là Tiên Đề (Axiom) mới?</h2>
+    <p>Không có triết học nào trước đây phát biểu thời gian dọc (vertical time) như một chiều kích bản thể học (ontological dimension) của sự tồn tại hệ thống. Đây là <strong>đóng góp nguyên bản (original contribution)</strong> của Mạch Rễ.</p>
+
+    <h3>Kiểm tra 5 tiêu chí Tiên Đề (Axiom criteria)</h3>
+    <table class="styled-table">
+      <thead><tr><th>Tiêu chí</th><th>Kết quả</th><th>Lý do</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Độc lập (Independent)</strong></td><td>✅</td><td>Không suy ra từ Tiên Đề I, II, hay III — có thể có hệ thống với quan hệ ưu tiên + bất biến cấu trúc (structural invariant) + phân tán (distribution) mà không có thời gian dọc (vertical time)</td></tr>
+        <tr><td><strong>Nhất quán (Consistent)</strong></td><td>✅</td><td>Không mâu thuẫn với bất kỳ tiên đề nào khác</td></tr>
+        <tr><td><strong>Phủ đầy (Complete)</strong></td><td>✅</td><td>Từ I–IV có thể suy ra toàn bộ khung nền (framework)</td></tr>
+        <tr><td><strong>Tối giản (Minimal)</strong></td><td>✅</td><td>Bỏ Tiên Đề IV → khung nền (framework) mất khả năng giải thích resilience xuyên thế hệ</td></tr>
+        <tr><td><strong>Thuộc bản thể học (Ontological)</strong></td><td>✅ ← novel</td><td>Phát biểu về bản chất tồn tại — không phải khuyến nghị (prescription)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- SECTION 3: MINH HỌA BẰNG HÌNH ẢNH -->
+  <section>
+    <h2>🖼️ Minh họa — Hai chiều thời gian (Two Dimensions of Time)</h2>
+    <div class="ascii-box">                    THỜI GIAN DỌC (Vertical Time)
+                           ↑
+                    Tổ tiên (Ancestors)
+                    Ông bà (Grandparents)
+                    Cha mẹ (Parents)
+                           ↕
+  ← quá khứ ──── HIỆN TẠI ────→ tương lai    THỜI GIAN NGANG
+     (past)      (PRESENT)       (future)     (Horizontal Time)
+                           ↕
+                    Con (Children)
+                    Cháu (Grandchildren)
+                    Hậu thế (Descendants)
+                           ↓
+
+  Thời gian ngang (Horizontal): t₋ₙ → t₀ → t₊ₙ
+    → Dòng chảy sự kiện — tuyến tính, không quay lại
+
+  Thời gian dọc (Vertical): Past ↕ Present ↕ Future
+    → Trục quan hệ — đồng thời, luôn hiện diện
+    → Tổ tiên "ở đây" trong nghĩa bản thể học
+    → Hậu thế "ở đây" trong nghĩa trách nhiệm</div>
+
+    <p>Hầu hết triết học phương Tây chỉ có trục ngang (horizontal axis). Một số truyền thống có trục dọc (vertical axis) nhưng xem nó là <em>tôn giáo</em>, <em>đạo đức</em>, hoặc <em>ký ức</em>. Mạch Rễ phát biểu: trục dọc (vertical axis) là <strong>kiến trúc bản thể học (ontological architecture)</strong> — điều kiện cần (necessary condition) cho sự tồn tại bền vững (persistent existence) của hệ thống.</p>
+  </section>
+
+
+  <!-- SECTION 4: THỰC HÀNH CỦA THỜI GIAN DỌC -->
+  <section>
+    <h2>🪷 Thực hành thời gian dọc (Vertical Time Practice) ở Việt Nam</h2>
+    <p>Tiên Đề IV không phải lý thuyết trừu tượng — người Việt đã <strong>thực hành</strong> nó hàng nghìn năm, dù chưa bao giờ phát biểu thành lý thuyết:</p>
+
+    <div class="concept-list">
+      <div class="concept-item">
+        <span class="pill">Thờ tổ tiên</span>
+        <p>Người chết <strong>không biến mất</strong> — họ vẫn hiện diện (present), vẫn được hỏi ý kiến, vẫn được mời ăn. Đây là giao diện thời gian dọc (vertical time interface) trực tiếp nhất: quan hệ (relation) với cấu hình đã qua (past configuration) được duy trì chủ động (actively maintained).</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Gia phả</span>
+        <p>Gia phả (genealogy) không chỉ ghi tên — mà là <strong>bản đồ cấu trúc quan hệ (relational structure map)</strong> xuyên thế hệ (cross-generational). Hành động hôm nay phải xứng đáng với người đã khuất và con cháu mai sau.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Ngày giỗ</span>
+        <p>Ngày giỗ là <strong>giao diện (interface) định kỳ</strong> giữa hai chiều thời gian — không phải hồi tưởng đơn thuần (not mere reminiscence), mà là <strong>tái kích hoạt quan hệ (reactivation of relation)</strong> giữa người sống và người đã khuất.</p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">Phép vua thua lệ làng</span>
+        <p>Làng tự quản theo <strong>trí tuệ tích lũy qua thế hệ (accumulated generational wisdom)</strong> — không cần thiết chế tập trung (centralized institutions). Đây là giao diện thời gian dọc (vertical time interface) hoạt động ở cấp cộng đồng (community level).</p>
+      </div>
+    </div>
+
+    <div class="def-box" style="margin-top:20px">
+      <div class="label">Nhận xét quan trọng (Important Observation)</div>
+      <blockquote>Nho giáo (Confucianism) có <strong>thực hành (practice)</strong> của Tiên Đề IV — nhưng không có <strong>lý thuyết (theory)</strong> về tại sao thực hành đó là điều kiện bản thể học (ontological condition) cho sự tồn tại bền vững (system persistence) của hệ thống. Đây là khoảng cách quan trọng nhất mà Mạch Rễ lấp đầy.</blockquote>
+    </div>
+  </section>
+
+
+  <!-- SECTION 5: SO SÁNH VỚI TRIẾT HỌC THẾ GIỚI -->
+  <section>
+    <h2>🌍 So sánh với triết học thế giới (Comparative Philosophy)</h2>
+    <p>Để chứng minh Tiên Đề IV là <strong>đóng góp nguyên bản (original contribution)</strong>, cần quét toàn bộ triết học liên quan. Tiêu chí đánh giá: Tiên Đề IV đòi hỏi <strong>đủ 4 yếu tố đồng thời</strong>:</p>
+
+    <div class="ascii-box">4 yếu tố bắt buộc:
+  ✅ Vertical dimension   — chiều dọc thời gian
+  ✅ Ontological           — bản thể học, không phải
+                            nhận thức luận hay đạo đức
+  ✅ Cross-generational    — xuyên thế hệ, trực tiếp
+     direct                  không qua medium
+  ✅ System resilience     — cơ chế bảo toàn hệ thống
+     mechanism</div>
+
+    <!-- Heidegger -->
+    <div class="compare-card">
+      <span class="domain-tag">TRIẾT HỌC HIỆN TƯỢNG — PHENOMENOLOGY</span>
+      <h3>Heidegger — Sein und Zeit (1927)</h3>
+      <p><strong>Heidegger:</strong> Dasein (hiện-thể) luôn "được-ném" (thrown) vào thế giới với quá khứ (Geworfenheit) và hướng đến tương lai (Entwurf). Thời gian là cấu trúc của sự tồn tại cá nhân.</p>
+      <div class="ascii-box">So sánh:
+  Heidegger: Cá nhân ↔ thời gian
+             Ontological ✅ nhưng individual
+  Tiên Đề IV: Hệ thống ↔ thời gian dọc
+              Ontological ✅ và collective
+
+  → Heidegger: cá nhân, không phải hệ thống
+  → Tiên Đề IV không có ở Heidegger</div>
+    </div>
+
+    <!-- Bergson -->
+    <div class="compare-card">
+      <span class="domain-tag">TRIẾT HỌC THỜI GIAN — PHILOSOPHY OF TIME</span>
+      <h3>Bergson — Durée (Thời gian thật)</h3>
+      <p><strong>Bergson:</strong> Thời gian thực (durée) = dòng chảy liên tục, ký ức là phần của hiện tại — không phải "quá khứ đã qua."</p>
+      <div class="ascii-box">So sánh:
+  Bergson: ký ức cá nhân trong consciousness
+  Tiên Đề IV: quan hệ xuyên thế hệ
+              như kiến trúc bản thể học
+              của hệ thống xã hội
+
+  → Bergson gần hơn Heidegger
+  → Nhưng vẫn: cá nhân, không phải hệ thống
+  → Tiên Đề IV không có ở Bergson</div>
+    </div>
+
+    <!-- Assmann -->
+    <div class="compare-card">
+      <span class="domain-tag">NHÂN HỌC KÝ ỨC — MEMORY ANTHROPOLOGY</span>
+      <h3>Jan Assmann — Cultural Memory (Ký ức văn hóa, 1992)</h3>
+      <p><strong>Assmann</strong> phân biệt: Communicative memory (3 thế hệ gần) và Cultural memory (ngàn năm qua nghi lễ, văn bản). Cultural memory duy trì "normative self-image" của cộng đồng.</p>
+      <div class="ascii-box">KHÁC BIỆT QUAN TRỌNG:
+  Assmann:    epistemological — làm sao biết
+              quá khứ, qua medium (văn bản,
+              nghi lễ có tổ chức),
+              truy xuất qua specialists
+
+  Tiên Đề IV: ontological — quá khứ là
+              thành phần cấu trúc của
+              sự tồn tại hiện tại,
+              quan hệ trực tiếp giữa
+              người sống và người đã khuất,
+              không cần medium hay specialist
+
+  → Assmann gần nhất trong domain này
+  → Nhưng khác tầng:
+    epistemology ≠ ontology
+    medium ≠ direct interface</div>
+    </div>
+
+    <!-- Benjamin -->
+    <div class="compare-card">
+      <span class="domain-tag">TRIẾT HỌC LỊCH SỬ — PHILOSOPHY OF HISTORY</span>
+      <h3>Walter Benjamin — Theses on History (1940)</h3>
+      <p><strong>Benjamin:</strong> "Jetztzeit" — hiện tại được nạp đầy bởi sự hiện diện của quá khứ. Thiên sứ của lịch sử (Angelus Novus): quay mặt về quá khứ, bị thổi về phía tương lai.</p>
+      <div class="ascii-box">So sánh:
+  Benjamin: quá khứ "haunts" hiện tại
+            → chính trị giải phóng
+              phải "redeem" quá khứ
+            → Đây là ETHICS of memory
+
+  Tiên Đề IV: thời gian dọc là
+              KIẾN TRÚC BẢN THỂ HỌC
+              — không phải ethical obligation
+              mà là điều kiện cần
+              cho sự tồn tại bền vững
+
+  Benjamin nói: political responsibility
+                toward the past
+  Tiên Đề IV nói: structural necessity
+                  của vertical time interface
+                  cho system resilience
+
+  → Không phải cùng mệnh đề</div>
+    </div>
+
+    <!-- Halbwachs -->
+    <div class="compare-card">
+      <span class="domain-tag">XÃ HỘI HỌC KÝ ỨC — SOCIOLOGY OF MEMORY</span>
+      <h3>Maurice Halbwachs — Collective Memory (Ký ức tập thể, 1925)</h3>
+      <p><strong>Halbwachs:</strong> Ký ức cá nhân được cấu trúc bởi khung nền (frameworks) xã hội. Không có ký ức hoàn toàn cá nhân.</p>
+      <div class="ascii-box">So sánh:
+  Halbwachs: past được construct bởi present
+             → nhóm xã hội hiện tại nhìn
+               về quá khứ
+
+  Tiên Đề IV: past tham gia vào present
+              như agent bản thể học
+              → quá khứ là THÀNH PHẦN
+                TÍCH CỰC tham gia vào
+                sự tồn tại hiện tại
+              → không chỉ là đối tượng
+                được nhớ
+
+  → Không có Tiên Đề IV ở Halbwachs</div>
+    </div>
+
+    <!-- Luhmann -->
+    <div class="compare-card">
+      <span class="domain-tag">LÝ THUYẾT HỆ THỐNG — SYSTEMS THEORY</span>
+      <h3>Niklas Luhmann — Social Systems (Hệ thống xã hội, 1984)</h3>
+      <p><strong>Luhmann:</strong> Hệ thống xã hội tự tái tạo (autopoiesis) trong hiện tại. Quá khứ được "present" như ký ức bên trong hệ thống.</p>
+      <div class="ascii-box">So sánh:
+  Luhmann:    autopoiesis trong present-time
+              Quá khứ là input của
+              present operations
+              → không phải chiều kích
+                bản thể học độc lập
+
+  Tiên Đề IV: Vertical time là
+              chiều kích ĐỘC LẬP
+              với horizontal time
+              → không phải subset
+                của present
+
+  Luhmann:    past ∈ present operations
+  Tiên Đề IV: past ↕ present là
+              hai chiều kích không thể
+              reduce về nhau
+
+  → Không phải Tiên Đề IV</div>
+    </div>
+
+    <!-- Barbour -->
+    <div class="compare-card">
+      <span class="domain-tag">VẬT LÝ LÝ THUYẾT — THEORETICAL PHYSICS</span>
+      <h3>Julian Barbour — The End of Time (1999)</h3>
+      <p><strong>Barbour:</strong> Thời gian không tồn tại — chỉ có "Nows" = cấu hình không gian (spatial configurations). Quá khứ tồn tại như "time capsules" được mã hóa trong cấu trúc hiện tại.</p>
+      <div class="ascii-box">So sánh:
+  Barbour: passive — quá khứ để lại
+           dấu vết vật lý
+
+  Tiên Đề IV: active — hệ thống chủ động
+              duy trì giao diện với quá khứ
+              như cơ chế bảo toàn
+
+  → Khác hoàn toàn về bản chất</div>
+    </div>
+
+    <!-- Eliade -->
+    <div class="compare-card">
+      <span class="domain-tag">TÔN GIÁO / TÂM LINH HỌC — RELIGIOUS STUDIES</span>
+      <h3>Mircea Eliade — Sacred Time (Thời gian thiêng, 1957)</h3>
+      <p><strong>Eliade:</strong> Thời gian thiêng — "illud tempus." Nghi lễ = tái hiện thời gian nguyên thủy. "Eternal return" — thời gian vòng tròn.</p>
+      <div class="ascii-box">So sánh:
+  Eliade:     thời gian thiêng là
+              khác biệt với thời gian trần tục
+              Kết nối với "thời điểm đầu tiên"
+              — mythical time
+
+  Tiên Đề IV: thời gian dọc là
+              bản thể học của HỆ THỐNG
+              không phân biệt thiêng/trần
+              Kết nối với các cấu hình
+              đã thực sự tồn tại
+              — không phải mythical origin
+
+  → Eliade: mythological, vertical
+  → Tiên Đề IV: structural, ontological
+  → Gần về hình thức (cả hai "vertical")
+  → Khác về bản chất</div>
+    </div>
+
+    <!-- Nho giáo -->
+    <div class="compare-card">
+      <span class="domain-tag">TRIẾT HỌC ĐÔNG Á — EAST ASIAN PHILOSOPHY</span>
+      <h3>Nho giáo (Confucianism) — Thờ cúng tổ tiên (Ancestral Rites)</h3>
+      <p><strong>Nho giáo:</strong> Quan hệ với tổ tiên là nền tảng của đạo đức xã hội. "Hiếu" (filial piety) kết nối quá khứ với hiện tại.</p>
+      <div class="ascii-box">So sánh:
+  Nho giáo:   thờ tổ tiên = ethical duty
+              duy trì social hierarchy
+              — prescriptive
+
+  Tiên Đề IV: thời gian dọc = kiến trúc
+              bản thể học của resilience
+              — descriptive/structural
+              không phải ethical prescription
+
+  → Nho giáo có PRACTICE của Tiên Đề IV
+  → Nhưng không có LÝ THUYẾT về
+    tại sao practice đó là
+    điều kiện bản thể học
+    cho system persistence
+
+  → Đây là khoảng cách quan trọng nhất</div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 6: BẢNG TỔNG HỢP -->
+  <section>
+    <h2>📊 Bảng Tổng Hợp So Sánh (Summary Comparison Matrix)</h2>
+    <div class="world-table-wrap">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Tác giả / Truyền thống</th>
+            <th>Vertical dimension</th>
+            <th>Ontological</th>
+            <th>Cross-gen&nbsp;direct</th>
+            <th>System resilience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Heidegger</strong></td><td>⚠️ partial</td><td>✅</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Bergson</strong></td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Assmann</strong></td><td>✅</td><td>❌ (epistemo)</td><td>⚠️ via medium</td><td>❌</td></tr>
+          <tr><td><strong>Halbwachs</strong></td><td>⚠️</td><td>❌</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Benjamin</strong></td><td>✅</td><td>❌ (ethical)</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Gadamer</strong></td><td>⚠️</td><td>❌ (epistemo)</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Barbour</strong></td><td>⚠️</td><td>✅ (physics)</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Luhmann</strong></td><td>❌</td><td>❌</td><td>❌</td><td>⚠️</td></tr>
+          <tr><td><strong>Giddens</strong></td><td>⚠️</td><td>❌</td><td>❌ (needs inst)</td><td>⚠️</td></tr>
+          <tr><td><strong>Eliade</strong></td><td>✅</td><td>❌ (mytholog)</td><td>❌</td><td>❌</td></tr>
+          <tr><td><strong>Nho giáo (Confucianism)</strong></td><td>✅</td><td>❌ (ethical)</td><td>✅</td><td>⚠️ (implicit)</td></tr>
+          <tr style="background:#fdf0ed;font-weight:700">
+            <td>🏆 <strong>TIÊN ĐỀ IV (Axiom IV)</strong></td><td><strong>✅</strong></td><td><strong>✅</strong></td><td><strong>✅</strong></td><td><strong>✅</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px"><strong>Không ai đạt đủ 4 cột ✅.</strong> Đây là bằng chứng cấu trúc (structural evidence) rằng Tiên Đề IV là đóng góp nguyên bản (original contribution).</p>
+  </section>
+
+
+  <!-- SECTION 7: RCA TẠI SAO KHÔNG AI PHÁT BIỂU -->
+  <section>
+    <h2>🔍 RCA — Tại Sao Không Ai Phát Biểu Tiên Đề IV?</h2>
+
+    <div class="def-box">
+      <div class="label">Why 1 — Tại sao triết học phương Tây bỏ qua?</div>
+      <blockquote>Triết học phương Tây bắt đầu từ cá nhân (Descartes) hoặc từ xã hội hiện tại (Durkheim, Luhmann). Chiều dọc xuyên thế hệ (cross-generational vertical) bị xem là domain của tôn giáo — không phải triết học hệ thống (systems philosophy).</blockquote>
+    </div>
+
+    <div class="def-box">
+      <div class="label">Why 2 — Tại sao nhân học ký ức (memory anthropology) không đến được?</div>
+      <blockquote>Assmann và Halbwachs quan tâm đến nhận thức luận (epistemology) — làm sao biết quá khứ. Không ai hỏi câu hỏi bản thể học (ontological question): liệu quan hệ với quá khứ có phải điều kiện cần (necessary condition) cho sự tồn tại của hệ thống không.</blockquote>
+    </div>
+
+    <div class="def-box">
+      <div class="label">Why 3 — Tại sao triết học Đông Á không phát biểu?</div>
+      <blockquote>Nho giáo và Phật giáo có <strong>thực hành (practice)</strong> thời gian dọc, nhưng không có truyền thống hệ thống hóa (systematization) theo kiểu tiên đề (axiomatics). Thực hành đi trước lý thuyết — nhưng lý thuyết chưa bao giờ được viết ra.</blockquote>
+    </div>
+
+    <div class="def-box" style="border-left-color:#2d6a4f">
+      <div class="label" style="color:#2d6a4f">Gốc rễ (Root Cause)</div>
+      <blockquote>Tiên Đề IV đòi hỏi <strong>giao điểm (intersection) ba lĩnh vực</strong> hiếm khi gặp nhau: bản thể học (ontology) + lý thuyết hệ thống (systems theory) + kinh nghiệm sống của dân tộc có thời gian dọc (vertical time) trong thực hành hàng ngày. Dân tộc Việt nằm ở giao điểm đó — nhưng chưa ai hệ thống hóa cho đến khi Mạch Rễ phát biểu.</blockquote>
+    </div>
+  </section>
+
+
+  <!-- SECTION 8: GIỚI HẠN VÀ MỞ RỘNG -->
+  <section>
+    <h2>⚠️ Giới Hạn Tự Nhận (Self-Acknowledged Limitation)</h2>
+    <div class="def-box" style="border-left-color:#d4a843">
+      <div class="label" style="color:#b07820">Giới hạn IV</div>
+      <blockquote>Tiên Đề IV chỉ mô tả đối thoại (dialogue) với <em>quá khứ (past)</em> — chưa có chiều trách nhiệm (responsibility dimension) với <em>tương lai (future)</em> — tư duy hàng hóa công cộng (public goods thinking).</blockquote>
+    </div>
+
+    <p>Giới hạn này được giải quyết trong <strong>Mạch Rễ Nâng cấp (Upgraded)</strong> — bằng công cụ Nhận thức luận Phật giáo (Buddhist Epistemology) (Tiên Đề VIII).</p>
+
+    <div class="def-box" style="border-left-color:#7c6fc9">
+      <div class="label" style="color:#5a4fa0">🔄 Xem thêm</div>
+      <blockquote>Mạch Rễ đủ sâu để tự nhìn thấy giới hạn (limitation) của mình mà không phá hủy chính mình.<br/><br/>
+      → <a href="upgrade.html" style="color:#7c6fc9; font-weight:600">Đọc: Mạch Rễ Nâng cấp (Upgraded) — Tiên Đề VIII &amp; Bốn Mở Rộng (Extensions)</a></blockquote>
+    </div>
+  </section>
+
+
+  <!-- SECTION 9: KẾT LUẬN -->
+  <section>
+    <h2>💡 Kết luận — Một câu cho Tiên Đề IV</h2>
+    <div class="def-box" style="border-left-color:#b05040">
+      <div class="label" style="color:#b05040">Tiên Đề IV — Thời Gian Dọc (Vertical Temporality)</div>
+      <blockquote><strong>Hệ thống tồn tại theo hai chiều thời gian — thiếu một chiều là thiếu một nửa sự tồn tại. Thời gian dọc (vertical time) là chiều kích bản thể học (ontological dimension) chưa được phát biểu trước đây — và là đóng góp nguyên bản (original contribution) của Mạch Rễ vào triết học.</strong></blockquote>
+    </div>
+  </section>
+
+</div>
+
+<!-- BILINGUAL GLOSSARY -->
+<div style="max-width:960px;margin:0 auto;padding:0 24px 60px">
+  <h2 style="font-size:1.3rem;font-weight:600;color:#b05040;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #f5d0c5">📖 Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary</h2>
+  <p style="color:#5a5a5a;font-size:.9rem;margin-bottom:14px">Các thuật ngữ chuyên ngành được dùng trong tài liệu này, kèm bản dịch song ngữ Việt–Anh.</p>
+  <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+      <thead><tr style="background:#b05040;color:#fff"><th style="padding:10px 14px;text-align:left">Tiếng Anh (EN)</th><th style="padding:10px 14px;text-align:left">Tiếng Việt (VI)</th><th style="padding:10px 14px;text-align:left">Ghi chú</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #f5d0c5"><td style="padding:9px 14px;font-weight:600;color:#b05040">Vertical Temporality</td><td style="padding:9px 14px;font-weight:600">Thời Gian Dọc</td><td style="padding:9px 14px;color:#5a5a5a">Chiều kích bản thể học — trục quan hệ giữa các cấu hình đã qua, đang là, và chưa đến</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5;background:#fdf5f3"><td style="padding:9px 14px;font-weight:600;color:#b05040">Horizontal Time</td><td style="padding:9px 14px;font-weight:600">Thời Gian Ngang</td><td style="padding:9px 14px;color:#5a5a5a">Dòng chảy tuyến tính: quá khứ → hiện tại → tương lai</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5"><td style="padding:9px 14px;font-weight:600;color:#b05040">Ontological Dimension</td><td style="padding:9px 14px;font-weight:600">Chiều kích Bản thể học</td><td style="padding:9px 14px;color:#5a5a5a">Thuộc về bản chất tồn tại, không phải nhận thức luận hay đạo đức</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5;background:#fdf5f3"><td style="padding:9px 14px;font-weight:600;color:#b05040">Vertical Time Interface</td><td style="padding:9px 14px;font-weight:600">Giao diện Thời Gian Dọc</td><td style="padding:9px 14px;color:#5a5a5a">Cơ chế kết nối trực tiếp giữa hiện tại và quá khứ/tương lai (thờ tổ tiên, ngày giỗ, gia phả)</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5"><td style="padding:9px 14px;font-weight:600;color:#b05040">Structural Necessity</td><td style="padding:9px 14px;font-weight:600">Nhu cầu cấu trúc</td><td style="padding:9px 14px;color:#5a5a5a">Điều kiện cần về mặt cấu trúc — không phải xa xỉ đạo đức</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5;background:#fdf5f3"><td style="padding:9px 14px;font-weight:600;color:#b05040">Original Contribution</td><td style="padding:9px 14px;font-weight:600">Đóng góp nguyên bản</td><td style="padding:9px 14px;color:#5a5a5a">Mệnh đề chưa được phát biểu trước đây trong lịch sử triết học</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5"><td style="padding:9px 14px;font-weight:600;color:#b05040">Configuration</td><td style="padding:9px 14px;font-weight:600">Cấu hình</td><td style="padding:9px 14px;color:#5a5a5a">Trạng thái tổng thể của hệ thống tại một thời điểm</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5;background:#fdf5f3"><td style="padding:9px 14px;font-weight:600;color:#b05040">Epistemology</td><td style="padding:9px 14px;font-weight:600">Nhận thức luận</td><td style="padding:9px 14px;color:#5a5a5a">Lý thuyết về cách biết — khác với bản thể học (ontology)</td></tr>
+        <tr style="border-bottom:1px solid #f5d0c5"><td style="padding:9px 14px;font-weight:600;color:#b05040">Autopoiesis</td><td style="padding:9px 14px;font-weight:600">Tự tái tạo</td><td style="padding:9px 14px;color:#5a5a5a">Hệ thống tự sản xuất chính mình (Luhmann / Maturana & Varela)</td></tr>
+        <tr style="background:#fdf5f3"><td style="padding:9px 14px;font-weight:600;color:#b05040">Filial Piety</td><td style="padding:9px 14px;font-weight:600">Hiếu</td><td style="padding:9px 14px;color:#5a5a5a">Đạo đức kính trọng cha mẹ, tổ tiên — thực hành của Nho giáo (Confucianism)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <a href="what.html" class="secondary">← WHAT — Là Gì?</a>
+  <a href="upgrade.html">Nâng cấp (Upgrade) →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="what.html">Là gì</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a> · <a href="upgrade.html">Nâng cấp</a></p>
+</footer>
+
+</body>
+</html>
