@@ -187,6 +187,31 @@
       color: var(--accent);
     }
 
+    /* ── AXIOM CARDS (canonical from axioms.html) ── */
+    .axiom { border: 1px solid var(--border); border-left: 5px solid var(--c, var(--accent)); border-radius: 10px; padding: 20px 22px; margin-bottom: 18px; background: #fff; }
+    .axiom .num { display: inline-block; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; color: var(--c, var(--accent)); }
+    .axiom .typetag { float: right; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; background: var(--accent-pale); color: #1b4d38; border-radius: 12px; padding: 3px 10px; }
+    .axiom h3 { margin: 4px 0 4px; font-size: 1.18rem; }
+    .axiom .en { font-weight: 400; font-size: .86rem; opacity: .7; }
+    .axiom .stmt { margin: 10px 0; color: var(--text-dark); }
+    .axiom dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: .9rem; margin-top: 10px; }
+    .axiom dt { color: var(--text-muted); font-weight: 600; }
+    .axiom dd { color: var(--text-dark); }
+    .axiom code { background: #f1ede3; padding: 1px 6px; border-radius: 4px; font-size: .85em; }
+    .tier-label { font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin: 26px 0 10px; }
+    .anchors { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 8px; }
+    .anchor { border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; background: #fff; }
+    .anchor b { color: var(--accent); }
+    .anchor small { color: var(--text-muted); }
+    .rootq { background: var(--accent-pale); border-radius: 12px; padding: 22px 24px; font-size: 1.08rem; font-weight: 500; color: #1b4d38; }
+    .rootq .scope { display: block; margin-top: 10px; font-size: .9rem; font-weight: 400; color: #2d6a4f; }
+    .note { background: #fff8e8; border: 1px solid #ead9a8; border-radius: 10px; padding: 16px 18px; font-size: .9rem; }
+    .note b { color: #a07830; }
+    table.styled { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; }
+    table.styled th, table.styled td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; }
+    table.styled th { background: var(--accent-pale); color: #1b4d38; }
+    .disclaimer { font-size: .82rem; color: var(--text-muted); font-style: italic; }
+
     footer { background: #1a3a2a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
     footer a { color: #b7e4c7; text-decoration: none; }
   </style>
@@ -197,6 +222,10 @@
   <a href="index.html">🌿 Mạch Rễ</a>
   <span class="sep">/</span>
   <span class="current">WHAT — Là Gì?</span>
+  <span class="sep">·</span>
+  <a href="axioms.html">Hệ Tiên Đề</a>
+  <span class="sep">·</span>
+  <a href="axiom_conflict.html">Xung Đột Lõi</a>
 </nav>
 
 <div class="hero">
@@ -510,7 +539,7 @@ Mạch Rễ     →  M + R  →  trầm, chắc, đứng
       </div>
       <div class="concept-item">
         <span class="pill">Hấp thụ có định hướng</span>
-        <p>Cơ chế tiếp nhận cái mới theo logic của lõi, không phải logic của cái được tiếp nhận. Người Việt học chữ Hán để viết tiếng Việt — không phải để trở thành người Hán.</p>
+        <p>Cơ chế tiếp nhận cái mới theo logic của lõi, không phải logic của cái được tiếp nhận. Người Việt học chữ Hán để viết tiếng Việt — không phải để trở thành người Hán. <em style="font-size:.85em;color:var(--text-muted)">(Đây là cơ chế dẫn xuất — chữ ký của Tiên Đề II × IV — nằm trong Mệnh Đề VI, không phải tiên đề riêng.)</em></p>
       </div>
       <div class="concept-item">
         <span class="pill">Rễ nông</span>
@@ -523,276 +552,192 @@ Mạch Rễ     →  M + R  →  trầm, chắc, đứng
     </div>
   </section>
 
-  <!-- SECTION 3.5: BẢY TIÊN ĐỀ -->
+  <!-- SECTION 3.5: HỆ TIÊN ĐỀ (CANONICAL — render từ axiom_spec.md) -->
   <section>
-    <h2>📐 Bảy Tiên Đề (Axioms) Của Mạch Rễ</h2>
-    <p>Mạch Rễ không phải tập hợp ý kiến — mà là hệ tiên đề. Mỗi tiên đề thỏa mãn 5 tiêu chí: <strong>Độc lập</strong> (không suy ra từ tiên đề khác), <strong>Nhất quán</strong> (không mâu thuẫn), <strong>Phủ đầy</strong> (từ tập tiên đề suy ra toàn bộ khung nền (framework)), <strong>Tối giản</strong> (bỏ bất kỳ cái nào khung nền (framework) sụp đổ), <strong>Thuộc bản thể học (Ontological)</strong> (phát biểu về bản chất tồn tại, không phải khuyến nghị).</p>
+    <h2>📐 Hệ Tiên Đề Mạch Rễ — 4 · 3 · 1</h2>
+    <p>Mạch Rễ không phải tập hợp ý kiến — mà là hệ tiên đề, tái dựng từ đầu (<em>re-derivation</em>) từ một câu hỏi gốc, neo trên ba hệ tư tưởng độc lập. Kết quả tự lọc bằng <em>independence test</em> — không pre-commit số lượng.</p>
+    <p style="margin-top:6px"><strong>4</strong> Tiên Đề Cốt Lõi (I–IV) · <strong>3</strong> Mệnh Đề Dẫn Xuất (V–VII) · <strong>1</strong> Meta-Tiên Đề (VIII) · đánh số <strong>La Mã đếm lại từ đầu theo tầng</strong>.</p>
+    <p style="font-size:.88rem;color:var(--text-muted)">→ Trang chuyên đề chi tiết: <a href="axioms.html" style="color:#a07830;font-weight:600">axioms.html</a> · nguồn chân lý duy nhất: <a href="axiom_spec.md" style="color:var(--accent);font-weight:600">axiom_spec.md</a>.</p>
+
+    <!-- CÂU HỎI GỐC -->
+    <h3>Câu hỏi gốc (R)</h3>
+    <div class="rootq">
+      Vì sao một số hệ bản sắc tập thể sống sót dưới áp lực đồng hóa <em>tiến hóa</em> — đổi chất qua mỗi thời đại — kéo dài qua nhiều thế hệ, trong khi số khác tan rã?
+      <span class="scope">Scope chốt: áp lực <b>mở, tiến hóa</b> (không phải một áp lực cố định). Chính scope này khiến Tiên Đề VIII (phản tư) trở nên cần thiết.</span>
+    </div>
+
+    <!-- BA HỆ NEO -->
+    <h3 style="margin-top:28px">Ba hệ neo (triangulation)</h3>
+    <p>Re-derivation suy trên ba hệ <strong>độc lập</strong>. Một tiên đề <em>mạnh hơn</em> nếu hiện ra (gần khớp <strong>cấu trúc</strong>, không đồng nhất) ở ≥2/3 hệ. <span class="disclaimer">Hội tụ là phép chống tùy tiện, không phải bằng chứng.</span></p>
+    <div class="anchors">
+      <div class="anchor"><b>A — Phan Ngọc</b><br/><small><em>Bản sắc văn hóa Việt Nam</em>: bản sắc = "kiểu quan hệ" bền dưới nội dung đổi.</small></div>
+      <div class="anchor"><b>B — Ashby / Weick</b><br/><small><em>Requisite Variety</em> + organizing / sensemaking / retrospect.</small></div>
+      <div class="anchor"><b>C — Anattā</b><br/><small>Pratītyasamutpāda / Śūnyatā: vô ngã, duyên khởi, tánh không.</small></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  TẦNG CỐT LÕI — 4 Tiên Đề Core                -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="tier-label">Tầng Cốt Lõi — 4 Tiên Đề (Core Axioms)</div>
 
     <!-- AXIOM I -->
-    <div class="axiom-card" style="border-left: 4px solid #2d6a4f; background:#f0faf5; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#2d6a4f; margin-top:0">I. Tiên Đề Quan Hệ Bản Thể — Sống Trong Quan Hệ — Có Nhau Mới Có Mình <span style="font-weight:400; font-size:.85rem; opacity:.7">— Relational Ontology</span></h3>
-      <div class="def-box" style="margin-top:8px">
-        <div class="label">Phát biểu</div>
-        <blockquote><strong>Tồn tại là tồn tại-trong-quan-hệ. Không có thực thể nào tồn tại trước và độc lập với quan hệ của nó. Thực thể là nút giao của các quan hệ — không phải nguồn gốc của chúng.</strong></blockquote>
-      </div>
-      <div class="ascii-box">∀x: Being(x) ≡ {R(x,y) | y ∈ Universe}
-Nếu R(x,y) = ∅ với mọi y → x không tồn tại
-
-Phân biệt:
-  Descartes:  "Cogito ergo sum" — Ngã có trước, quan hệ sau
-  Anattā:     Đồng thuận — nhưng nhấn vào giải thoát cá nhân
-  Tiên Đề I:  Mở rộng sang hệ thống tập thể xuyên thời gian</div>
-      <p><strong>Nền tảng:</strong> Mọi tiên đề còn lại đều giả định Tiên Đề I. Nếu thực thể có trước quan hệ — toàn bộ Mạch Rễ sụp đổ.</p>
-    </div>
+    <article class="axiom" style="--c:var(--accent)">
+      <span class="typetag">Core Axiom</span>
+      <span class="num">Tiên Đề I</span>
+      <h3>Quan Hệ Bản Thể — Sống Trong Quan Hệ — Có Nhau Mới Có Mình <span class="en">— Relational Ontology</span></h3>
+      <p class="stmt">Bản sắc của một hệ tập thể được cấu thành <strong>bởi quan hệ</strong>, không phải bởi một bản thể/cốt lõi định vị được độc lập với quan hệ.</p>
+      <dl>
+        <dt>Sơ đồ</dt><dd><code>Being(x) ≡ {R(x,y)}</code> <span class="disclaimer">(sơ đồ cấu trúc, không phải công thức)</span></dd>
+        <dt>Neo</dt><dd>A · B · <strong>C</strong> — 3/3</dd>
+        <dt>Phản chứng</dt><dd>SAI nếu một bản sắc sống sót lâu dài nhờ cốt lõi-bản-thể cố định, độc lập mọi quan hệ.</dd>
+        <dt>Prior-art</dt><dd>Whitehead, Buttimer, Anattā · <em>khác:</em> áp vào hệ bản sắc tập thể xuyên thế hệ.</dd>
+      </dl>
+    </article>
 
     <!-- AXIOM II -->
-    <div class="axiom-card" style="border-left: 4px solid #d4a843; background:#fdf9ee; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#a07830; margin-top:0">II. Tiên Đề Bất Biến Cấu Trúc — Nếp Bản Sắc — Đổi Mà Vẫn Là Mình <span style="font-weight:400; font-size:.85rem; opacity:.7">— Structural Invariance</span></h3>
-      <div class="def-box" style="border-left-color:#d4a843; background:#fdf9ee; margin-top:8px">
-        <div class="label" style="color:#a07830">Phát biểu</div>
-        <blockquote><strong>Bản sắc của một hệ thống là bất biến cấu trúc (invariant) của nó dưới mọi phép biến đổi nội dung. Thứ làm cho X là X không nằm trong nội dung của X — mà nằm trong cách X tổ chức quan hệ giữa các phần của nó.</strong></blockquote>
-      </div>
-      <div class="ascii-box">Identity(S) = Pattern(R(S))
-∀T ∈ ContentTransform:
-  Pattern(R(T(S))) = Pattern(R(S)) → S vẫn là S
-  Pattern(R(T(S))) ≠ Pattern(R(S)) → S không còn là S
-
-Hệ quả: mất bản sắc ≠ mất nội dung
-        mất bản sắc = mất cấu trúc quan hệ</div>
-      <p><strong>Quan trọng:</strong> Tiên Đề II giải thích tại sao Việt hóa không phải mất bản sắc — mà là bằng chứng bản sắc. Nội dung thay đổi hoàn toàn; khuôn mẫu quan hệ (pattern) giữ nguyên.</p>
-      <p><strong>Phân tầng (xem thêm Xung Đột Lõi):</strong> Cái <em>bất biến</em> là kiểu quan hệ (pattern), không phải <em>nội dung</em> hay <em>biên giới thành viên</em> ("ai được tính là người Việt"). Vì vậy cộng đồng có thể bất đồng về lõi mà không phá Tiên Đề II — bất đồng nằm ở tầng nội dung, không ở tầng pattern. → <a href="axiom_conflict.html" style="color:#a07830; font-weight:600">Xung Đột Lõi (Core Conflict)</a>.</p>
-    </div>
+    <article class="axiom" style="--c:#a07830">
+      <span class="typetag">Core Axiom</span>
+      <span class="num">Tiên Đề II</span>
+      <h3>Bất Biến Cấu Trúc — Nếp Bản Sắc — Đổi Mà Vẫn Là Mình <span class="en">— Structural Invariance</span></h3>
+      <p class="stmt">Cái bền qua thay đổi nội dung là một <strong>pattern bất biến của quan hệ</strong> — bền ở mức <em>quy ước</em> (conventional truth, Nhị đế), không phải bản thể tuyệt đối — chứ không phải nội dung tại bất kỳ điểm nào.</p>
+      <dl>
+        <dt>Sơ đồ</dt><dd><code>Identity(S) = Pattern(R(S))</code></dd>
+        <dt>Neo</dt><dd><strong>A</strong> · B · C-có-điều-kiện — ~2.5/3</dd>
+        <dt>Phản chứng</dt><dd>SAI nếu một bản sắc sống sót mà không có bất kỳ pattern bất biến nào.</dd>
+        <dt>Prior-art</dt><dd>Phan Ngọc, Lévi-Strauss, Group Theory · <em>khác:</em> nâng mô tả (Việt) thành nguyên lý cho mọi hệ.</dd>
+      </dl>
+      <p style="margin-top:12px"><strong>Phân tầng (xem thêm Xung Đột Lõi):</strong> Cái <em>bất biến</em> là kiểu quan hệ (pattern), không phải <em>nội dung</em> hay <em>biên giới thành viên</em>. Vì vậy cộng đồng có thể bất đồng về lõi mà không phá Tiên Đề II. → <a href="axiom_conflict.html" style="color:#a07830;font-weight:600">Xung Đột Lõi (Core Conflict)</a>.</p>
+    </article>
 
     <!-- AXIOM III -->
-    <div class="axiom-card" style="border-left: 4px solid #7c6fc9; background:#f4f2fa; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#5a4fa0; margin-top:0">III. Tiên Đề Phân Tán Bản Thể — Giữ Mà Không Gom — Ai Cũng Giữ Một Phần <span style="font-weight:400; font-size:.85rem; opacity:.7">— Distributed Ontology</span></h3>
-      <div class="def-box" style="border-left-color:#7c6fc9; background:#f4f2fa; margin-top:8px">
-        <div class="label" style="color:#5a4fa0">Phát biểu</div>
-        <blockquote><strong>Bất biến (Invariant) của một hệ thống không thể được lưu giữ tập trung trong bất kỳ thành phần nào. Nó chỉ tồn tại khi được phân tán vào toàn bộ cấu trúc quan hệ. Tập trung hóa bất biến (invariant) là điều kiện đủ để làm hệ thống dễ vỡ (fragile).</strong></blockquote>
-      </div>
-      <div class="ascii-box">∀ node n: Invariant(S) ≠ stored_in(n)
-Invariant(S) = emergent_from({R(x,y) | x,y ∈ S})
-
-Corollary 1: Central storage → single point of failure
-             → fragility ∝ centralization
-Corollary 2: Distributed storage → no single point of failure
-             → resilience ∝ distribution</div>
-    </div>
+    <article class="axiom" style="--c:#b05040">
+      <span class="typetag">Core Axiom</span>
+      <span class="num">Tiên Đề III</span>
+      <h3>Thời Gian Dọc — Thời Gian Cội Nguồn <span class="en">— Vertical / Orthogonal Temporality</span></h3>
+      <p class="stmt">Mạng quan hệ cấu thành bản sắc trải <strong>xuyên thời gian</strong>; chiều dọc là <em>điều kiện tồn tại</em>, không chỉ điều kiện nhận thức.</p>
+      <dl>
+        <dt>Bản chất</dt><dd>Orthogonal Temporality — trục dọc <code>V ⊥ H</code> trục ngang, không rút gọn về nhau.</dd>
+        <dt>Biểu hiện</dt><dd>Vertical Temporality — hình thức trục dọc trong đời sống văn hóa.</dd>
+        <dt>Neo</dt><dd>A-yếu · B · <strong>C</strong> — ~2.5/3</dd>
+        <dt>Phản chứng</dt><dd>SAI nếu một bản sắc sống sót áp lực kéo dài <em>chỉ bằng</em> quan hệ đồng đại (H), không có chiều dọc.</dd>
+        <dt>Prior-art</dt><dd>Heidegger, Gadamer, Burke, Pratītyasamutpāda · <em>khác:</em> đặt tính <em>trực giao</em> làm điều kiện tồn tại.</dd>
+      </dl>
+      <p style="margin-top:12px">→ <a href="axiom_3.html" style="color:#b05040;font-weight:600;text-decoration:none;border-bottom:2px solid #e07a5f">📖 Đọc chi tiết: Tiên Đề III — Thời Gian Cội Nguồn, So sánh triết học thế giới &amp; RCA</a></p>
+      <p style="margin-top:8px">→ <a href="mach_re_homologous.html" style="color:#6c5ce7;font-weight:600;text-decoration:none;border-bottom:2px solid #a29bfe">🔬 Homologous: Mạch Rễ vs Ubuntu vs Yoruba — 5 Điểm Phân Kỳ Gốc Rễ</a></p>
+    </article>
 
     <!-- AXIOM IV -->
-    <div class="axiom-card" style="border-left: 4px solid #e07a5f; background:#fdf0ed; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#b05040; margin-top:0">IV. Tiên Đề Thời Gian Dọc — Thời Gian Cội Nguồn <span style="font-weight:400; font-size:.85rem; opacity:.7">— Orthogonal / Vertical Temporality</span></h3>
-      <div class="def-box" style="border-left-color:#e07a5f; background:#fdf0ed; margin-top:8px">
-        <div class="label" style="color:#b05040">Phát biểu</div>
-        <blockquote><strong>Sự tồn tại của một hệ thống không được duy trì chỉ trong thời gian ngang. Nó được duy trì qua thời gian dọc — trục quan hệ giữa các cấu hình đã qua, đang là, và chưa đến. Thời gian dọc là chiều kích bản thể học, không phải ẩn dụ.</strong></blockquote>
-      </div>
-      <div style="background:#fff8f6; border:1px solid #f5d0c5; border-radius:8px; padding:12px 16px; margin:8px 0; font-size:.88rem; line-height:1.6">
-        <strong style="color:#b05040">Hai tầng khái niệm:</strong>
-        <span style="color:#5a5a5a"> <strong>Bản chất — Orthogonal Temporality</strong> (V ⊥ H, <em>Thời Gian Cội Nguồn</em>): hai chiều độc lập, không rút gọn về nhau. &nbsp;|&nbsp; <strong>Biểu hiện — Vertical Temporality</strong> (<em>Chiều Cội</em>): tổ tiên ↕ hiện tại ↕ hậu thế trong đời sống.</span>
-      </div>
-      <div class="ascii-box">Sơ đồ — Hai chiều thời gian:
-  H (ngang): t₋ₙ → ... → t₀ → ... → t₊ₙ
-  V (dọc):   Past_configs ↕ Present ↕ Future_configs
+    <article class="axiom" style="--c:#1a7070">
+      <span class="typetag">Core Axiom</span>
+      <span class="num">Tiên Đề IV</span>
+      <h3>Biên Giới Động — Ranh Giới Mềm — Đóng Mở Có Chọn <span class="en">— Dynamic Boundary</span></h3>
+      <p class="stmt">Hệ sống sót nhờ biên giới <strong>thấm chọn lọc</strong>: không tường kín (→ giòn), không mở toang (→ bị đồng hóa). Nội dung đến được <em>tái tổ chức</em> theo logic pattern nội tại (Tiên Đề II).</p>
+      <dl>
+        <dt>Neo</dt><dd>A · <strong>B</strong> (Requisite Variety) · C-yếu — ~2.5/3</dd>
+        <dt>Phản chứng</dt><dd>SAI nếu một bản sắc sống sót bằng tường kín hoàn toàn hoặc mở hoàn toàn.</dd>
+        <dt>Prior-art</dt><dd>Ashby, membrane biology · <em>khác:</em> đặc tả cơ chế <em>restructuring</em> theo pattern nội tại.</dd>
+      </dl>
+    </article>
 
-Sức bền của hệ thống tăng theo chiều sâu của V.
-Khi V = ∅ → drift không có neo → mất invariant.</div>
-      <p><strong>Góc đặc trưng:</strong> Mạch Rễ nhấn mạnh thời gian dọc như một chiều kích bản thể học — góc ít được khai thác trực diện trong các framework bản sắc tôi khảo sát (Ubuntu, Wabi-sabi, Tikkun Olam, Ahimsa, Ikigai). <em>(Ghi chú: đây là nhận xét dựa trên phạm vi tham khảo có giới hạn — không phải tuyên bố phổ quát.)</em></p>
-      <p style="margin-top:12px">→ <a href="axiom_4.html" style="color:#b05040; font-weight:600; text-decoration:none; border-bottom:2px solid #e07a5f">📖 Đọc chi tiết: Tiên Đề IV — Thời Gian Cội Nguồn, So sánh triết học thế giới &amp; RCA</a></p>
-      <p style="margin-top:8px">→ <a href="mach_re_homologous.html" style="color:#6c5ce7; font-weight:600; text-decoration:none; border-bottom:2px solid #a29bfe">🔬 Homologous: Mạch Rễ vs Ubuntu vs Yoruba — 5 Điểm Phân Kỳ Gốc Rễ</a></p>
-    </div>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  TẦNG DẪN XUẤT — 3 Mệnh Đề Derived              -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="tier-label">Tầng Dẫn Xuất — 3 Mệnh Đề (Derived Propositions)</div>
 
-    <!-- AXIOM V -->
-    <div class="axiom-card" style="border-left: 4px solid #2d9596; background:#e8f5f5; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#1a7070; margin-top:0">V. Tiên Đề Biên Giới Động — Ranh Giới Mềm — Đóng Mở Có Chọn <span style="font-weight:400; font-size:.85rem; opacity:.7">— Dynamic Boundary</span></h3>
-      <div class="def-box" style="border-left-color:#2d9596; background:#e8f5f5; margin-top:8px">
-        <div class="label" style="color:#1a7070">Phát biểu</div>
-        <blockquote><strong>Biên giới của một hệ thống không phải ranh giới ngăn cách — mà là hàm thẩm thấu có chọn lọc. Độ thẩm thấu tỉ lệ thuận với khả năng cấu trúc hóa lại nội dung đến. Biên giới cứng là điều kiện đủ để giảm đa dạng (variety) và tăng tính dễ vỡ (fragility).</strong></blockquote>
-      </div>
-      <div class="ascii-box">Boundary(S) = Membrane[κ: Content → [0,1]]
-κ(c) → 1: c được hấp thụ và tái cấu trúc
-κ(c) → 0: c bị loại — phá hủy Pattern(R(S))
+    <!-- DERIVED V -->
+    <article class="axiom" style="--c:#5a4fa0">
+      <span class="typetag">Derived · từ I + II</span>
+      <span class="num">Mệnh Đề V</span>
+      <h3>Phân Tán Bản Thể — Giữ Mà Không Gom <span class="en">— Distributed</span></h3>
+      <p class="stmt">Pattern (II) của mạng quan hệ (I) là thuộc tính <strong>toàn mạng</strong> → không lưu được tại node đơn → tập trung hóa invariant = <em>single point of failure</em>.</p>
+      <dl>
+        <dt>Hàm ý</dt><dd>phân tán ↔ bền (ít điểm gãy); không chống mọi thiết chế tập trung.</dd>
+        <dt>Neo</dt><dd>A · B · <strong>C</strong> (vô ngã → không trung tâm)</dd>
+      </dl>
+    </article>
 
-Failure modes:
-  κ → 0 ∀c: tường cứng → fragile
-  κ → 1 ∀c: hòa tan → mất invariant
-  κ = f(restructurability): optimal</div>
-    </div>
+    <!-- DERIVED VI -->
+    <article class="axiom" style="--c:#5a4fa0">
+      <span class="typetag">Derived · từ II + III + IV</span>
+      <span class="num">Mệnh Đề VI</span>
+      <h3>Chuyển Hóa Nhiễu Loạn — Hóa Nhiễu Thành Sức <span class="en">— Perturbation Transformation</span></h3>
+      <p class="stmt">Nhiễu vào qua biên giới (IV) → pattern tái tổ chức (II) → trong chiều thời gian dọc (III) → tăng variety. Bao gồm cơ chế "hấp thụ có định hướng" = <em>chữ ký</em> của II×IV (không phải tiên đề riêng).</p>
+      <dl>
+        <dt>Phân biệt</dt><dd>không nói "đau khổ là tốt"; nói đau khổ <em>có thể</em> chuyển hóa nếu đủ biên giới + chiều dọc.</dd>
+      </dl>
+    </article>
 
-    <!-- AXIOM VI -->
-    <div class="axiom-card" style="border-left: 4px solid #c96f7c; background:#fdf2f4; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#a05060; margin-top:0">VI. Tiên Đề Chuyển Hóa Nhiễu Loạn — Hóa Nhiễu Thành Sức — Đau Được Xử Là Đau Lành <span style="font-weight:400; font-size:.85rem; opacity:.7">— Perturbation Transformation</span></h3>
-      <div class="def-box" style="border-left-color:#c96f7c; background:#fdf2f4; margin-top:8px">
-        <div class="label" style="color:#a05060">Phát biểu</div>
-        <blockquote><strong>Nhiễu loạn không phải thứ cần tránh — mà là nguyên liệu. Nhiễu loạn (Perturbation) được xử lý qua biên giới động trở thành thông tin cấu trúc làm giàu sự đa dạng (variety). Nhiễu loạn (Perturbation) bị đóng băng thành oán thù hay chấn thương là thất bại của biên giới động.</strong></blockquote>
-      </div>
-      <div class="ascii-box">Processing pathway:
-  P(t) →[Boundary κ]→ ΔVariety(S) > 0
+    <!-- DERIVED VII -->
+    <article class="axiom" style="--c:#5a4fa0">
+      <span class="typetag">Derived · từ I + II + III + IV</span>
+      <span class="num">Mệnh Đề VII</span>
+      <h3>Nổi Lên Có Hướng — Hợp Lại Thành Cái Mới <span class="en">— Directed Emergence</span></h3>
+      <p class="stmt">Khi cả 4 Core vận hành, trật tự nổi lên <strong>có hướng</strong> = gradient trường F do toàn mạng tạo ra, không áp từ trung tâm. Tổng hợp, không thêm giả định.</p>
+      <dl>
+        <dt>Neo</dt><dd><strong>B</strong> (self-organization, Weick) · C (duyên khởi)</dd>
+      </dl>
+    </article>
 
-Freezing pathway:
-  P(t) →[Boundary κ=0]→ Frozen_state(S) → ΔVariety < 0
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  TẦNG PHẢN TƯ — 1 Meta-Tiên Đề                  -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="tier-label">Tầng Phản Tư — 1 Meta-Tiên Đề (Meta-Axiom)</div>
 
-Reconciliation = unfreezing → reprocessing → ΔVariety > 0</div>
-      <p><strong>Phân biệt:</strong> Tiên Đề VI không nói "đau khổ là tốt." Nó nói: đau khổ được xử lý → tốt. Đau khổ bị giữ → hại. Hòa giải là nhu cầu cấu trúc (structural necessity), không phải xa xỉ đạo đức (moral luxury).</p>
-    </div>
+    <!-- META VIII -->
+    <article class="axiom" style="--c:#7a3b8c">
+      <span class="typetag">Meta-Axiom · scope-conditional → IN</span>
+      <span class="num">Tiên Đề VIII</span>
+      <h3>Tự Nhìn Thấy Mình — Soi Mình Mà Không Vỡ <span class="en">— Reflexive Cognition</span></h3>
+      <p class="stmt">Hệ áp chính Tiên Đề I–IV lên <strong>bản thân nó</strong> → tự quan sát, tự phê bình, tự cập nhật invariant. Đứng <em>trên</em> và <em>ngoài</em> hệ đối tượng (không nằm trong 4 Core).</p>
+      <dl>
+        <dt>Tính cần</dt><dd>Với scope áp lực <em>tiến hóa</em>, invariant cố định không tự-xét-lại sẽ giòn → VIII cần thiết (có biện minh, không bolt-on).</dd>
+        <dt>Hệ quả</dt><dd>Module <a href="axiom_conflict.html">Xung Đột Lõi</a> — bất đồng nội bộ về invariant là điều <em>phải có</em>, không phải bệnh lý.</dd>
+        <dt>Neo</dt><dd>A-yếu · B (second-order cybernetics) · <strong>C</strong> (Śūnyatā)</dd>
+        <dt>Phản chứng</dt><dd>SAI nếu một hệ sống sót áp lực thay đổi căn bản qua nhiều thế hệ mà không có cơ chế tự-xét-lại-invariant.</dd>
+      </dl>
+    </article>
 
-    <!-- AXIOM VII -->
-    <div class="axiom-card" style="border-left: 4px solid #6a8a4f; background:#f0f5ec; border-radius:0 14px 14px 0; padding:20px 24px; margin:20px 0">
-      <h3 style="color:#4a6a30; margin-top:0">VII. Tiên Đề Nổi Lên Có Hướng — Hợp Lại Thành Cái Mới <span style="font-weight:400; font-size:.85rem; opacity:.7">— Directed Emergence</span></h3>
-      <div class="def-box" style="border-left-color:#6a8a4f; background:#f0f5ec; margin-top:8px">
-        <div class="label" style="color:#4a6a30">Phát biểu</div>
-        <blockquote><strong>Trong hệ thống có đủ sáu tiên đề trên, trật tự không nổi lên ngẫu nhiên — nó nổi lên có hướng. Hướng đó không được áp đặt từ trung tâm mà được tạo ra bởi trường lực của toàn bộ mạng quan hệ. Hướng là thuộc tính nổi lên của hệ thống — không phải thuộc tính của bất kỳ thành phần nào.</strong></blockquote>
-      </div>
-      <div class="ascii-box">Emergence(S) = field-constrained self-organization
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  SƠ ĐỒ DẪN XUẤT + KIỂM TỐI GIẢN               -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <h3 style="margin-top:32px">Sơ đồ dẫn xuất &amp; kiểm tối giản</h3>
+    <div class="ascii-box" style="background:#1c1c1c;color:#d8f3dc;font-family:ui-monospace,'Cascadia Code',Consolas,monospace">TẦNG PHẢN TƯ
+  VIII (Tự Nhìn Thấy Mình) ── quan sát ──▼ toàn hệ dưới
 
-∃ Field F được tạo bởi:
-  - Pattern(R(S))           [từ Tiên Đề II]
-  - Distributed storage     [từ Tiên Đề III]
-  - Vertical time depth     [từ Tiên Đề IV]
-  - Processed perturbations [từ Tiên Đề VI]
+TẦNG CỐT LÕI (object-level)
+  I ──┬──→ II ─────────────→ V  (Phân Tán)         [I+II]
+      │     │
+      │    III (Thời Gian Dọc)
+      │     │
+      │    IV (Biên Giới Động) ──→ VI (Chuyển Hóa)  [II+III+IV]
+      │     │
+      └─────┴──────────────────→ VII (Nổi Lên)      [I+II+III+IV]</div>
+    <p style="margin-top:14px">Bỏ thử từng Core → hệ không còn trả lời câu hỏi gốc → cả 4 đều <strong>cần</strong> (necessary). Tính <em>đủ</em> (sufficient) vẫn là <strong>giả thuyết</strong> — cần người khác cố phá.</p>
 
-Mỗi agent tự định hướng theo lực hút của Field F
-  — không cần lệnh trung tâm (central command)
-
-Khi Basin đủ sâu:
-  P(Emergence ∈ Basin) → 1 as t → ∞
-  Hệ thống "biết đường về" sau mọi perturbation</div>
-    </div>
-
-    <!-- HIERARCHY -->
-    <h3>Quan Hệ Logic Giữa 7 Tiên Đề</h3>
-    <div class="ascii-box">TẦNG 1 — BẢN THỂ HỌC (Ontology)
-  Tiên Đề I — Sống Trong Quan Hệ — Có Nhau Mới Có Mình
-             [Nền tảng — mọi tiên đề khác giả định I]
-
-TẦNG 2 — CẤU TRÚC (Structure)
-  Tiên Đề II  — Nếp Bản Sắc — Đổi Mà Vẫn Là Mình
-  Tiên Đề III — Giữ Mà Không Gom — Ai Cũng Giữ Một Phần
-
-TẦNG 3 — THỜI GIAN (Temporality)
-  Tiên Đề IV — Thời Gian Dọc — Thời Gian Cội Nguồn (Orthogonal Temporality)
-
-TẦNG 4 — ĐỘNG LỰC HỌC (Dynamics)
-  Tiên Đề V  — Ranh Giới Mềm — Đóng Mở Có Chọn
-  Tiên Đề VI — Hóa Nhiễu Thành Sức — Đau Được Xử Là Đau Lành
-
-TẦNG 5 — TỔNG HỢP (Synthesis)
-  Tiên Đề VII — Nổi Lên Có Hướng — Hợp Lại Thành Cái Mới [từ I–VI]</div>
-
-    <!-- SUMMARY TABLE -->
-    <h3>Bảng Tóm Tắt</h3>
-    <table class="styled-table">
-      <thead><tr><th>#</th><th>Tên</th><th>Một dòng</th></tr></thead>
+    <table class="styled" style="margin-top:14px">
+      <thead><tr><th>Bỏ</th><th>Hệ quả</th><th>Cần?</th></tr></thead>
       <tbody>
-        <tr><td><strong>I</strong></td><td>Quan Hệ Bản Thể<br/><em style="font-size:.85rem;color:#5a8a6a">Sống Trong Quan Hệ — Có Nhau Mới Có Mình</em></td><td>Tồn tại là quan hệ — không có gì tồn tại trước quan hệ của nó.</td></tr>
-        <tr><td><strong>II</strong></td><td>Bất Biến Cấu Trúc<br/><em style="font-size:.85rem;color:#a07830">Nếp Bản Sắc — Đổi Mà Vẫn Là Mình</em></td><td>Bản sắc là pattern — không phải nội dung.</td></tr>
-        <tr><td><strong>III</strong></td><td>Phân Tán Bản Thể<br/><em style="font-size:.85rem;color:#5a4fa0">Giữ Mà Không Gom — Ai Cũng Giữ Một Phần</em></td><td>Pattern phải sống khắp nơi — hoặc nó không sống ở đâu.</td></tr>
-        <tr><td><strong>IV</strong></td><td>Thời Gian Dọc / Cội Nguồn<br/><em style="font-size:.85rem;color:#b05040">Thời Gian Cội Nguồn (bản chất: Orthogonal)</em></td><td>Hệ thống tồn tại theo hai chiều thời gian — thiếu một chiều là thiếu một nửa sự tồn tại.</td></tr>
-        <tr><td><strong>V</strong></td><td>Biên Giới Động<br/><em style="font-size:.85rem;color:#1a7070">Ranh Giới Mềm — Đóng Mở Có Chọn</em></td><td>Biên giới mạnh nhất là biên giới biết cái gì để cho qua.</td></tr>
-        <tr><td><strong>VI</strong></td><td>Chuyển Hóa Nhiễu Loạn<br/><em style="font-size:.85rem;color:#a05060">Hóa Nhiễu Thành Sức — Đau Được Xử Là Đau Lành</em></td><td>Đau thương được xử lý trở thành sức mạnh — đau thương bị giữ trở thành nhà tù.</td></tr>
-        <tr><td><strong>VII</strong></td><td>Nổi Lên Có Hướng<br/><em style="font-size:.85rem;color:#4a6a30">Hợp Lại Thành Cái Mới</em></td><td>Khi sáu điều trên đủ — hệ thống biết đường về mà không cần ai chỉ.</td></tr>
+        <tr><td>I</td><td>bản sắc thành bản thể → đồng hóa thay bản thể → không sống sót đổi nội dung</td><td>✅</td></tr>
+        <tr><td>II</td><td>không invariant → không gì tồn tại → tan rã</td><td>✅</td></tr>
+        <tr><td>III</td><td>chỉ đồng đại → không truyền thế hệ → bản sắc một đời</td><td>✅</td></tr>
+        <tr><td>IV</td><td>không cơ chế tương tác → tường (giòn) hoặc tan</td><td>✅</td></tr>
       </tbody>
     </table>
 
-    <!-- VERIFICATION -->
-    <h3>Kiểm Tra — Mỗi Tiên Đề Có Phải Axiom Thật Sự?</h3>
-    <table class="styled-table">
-      <thead><tr><th>#</th><th>Độc lập</th><th>Nhất quán</th><th>Phủ đầy</th><th>Tối giản</th><th>Ontological</th></tr></thead>
-      <tbody>
-        <tr><td>I</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        <tr><td>II</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        <tr><td>III</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        <tr><td>IV</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ ← novel</td></tr>
-        <tr><td>V</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        <tr><td>VI</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-        <tr><td>VII</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ ← synthesis</td></tr>
-      </tbody>
-    </table>
-    <p>Tiên Đề IV (Thời Gian Dọc / Cội Nguồn) và VII (Nổi Lên Có Hướng) là hai điểm Mạch Rễ <strong>tự thấy khác biệt nhất</strong> so với các nguồn nó kế thừa (Ashby, cấu trúc luận, Phật giáo Việt).</p>
+    <div class="note" style="margin-top:16px"><b>Phản chứng toàn hệ:</b> Mạch Rễ sai nếu tồn tại <em>một dân tộc</em> sống sót áp lực đồng hóa tương đương mà <strong>không</strong> dùng bất kỳ cơ chế nào trong Tiên Đề I–IV.</div>
 
-    <div class="def-box" style="border-left-color:#2d6a4f; margin-top:20px">
+
+
+
+
+
+    <!-- MỘT CÂU CHO TOÀN BỘ -->
+    <div class="def-box" style="border-left-color:var(--accent); margin-top:24px">
       <div class="label">Một câu cho toàn bộ hệ tiên đề</div>
       <blockquote><strong>Mạch Rễ là triết lý về cách một hệ thống giữ được bản thân — không qua trung tâm, không qua cứng nhắc, mà qua chiều sâu của quan hệ với những gì đã qua và những gì chưa đến.</strong></blockquote>
     </div>
   </section>
 
-  <!-- SECTION 3.6: QUAN HỆ GIỮA 3 VÀ 7 -->
-  <section>
-    <h2>🔢 Quan Hệ Giữa 3 Và 7 — Bao Nhiêu Tiên Đề Thực Sự Cần?</h2>
-    <p>Câu hỏi quan trọng nhất về kiến trúc: 7 tiên đề hiện tại có tối giản không? Hay một số tiên đề thực ra là <em>hệ quả</em> suy ra được từ tiên đề khác?</p>
-
-    <h3>Kiểm Tra Độc Lập</h3>
-    <p>Thử bỏ từng tiên đề — xem framework còn đứng không:</p>
-    <div class="ascii-box">CHẮC CHẮN LÀ AXIOM (không suy ra từ cái khác):
-  I   — Quan hệ bản thể      ✅
-  II  — Bất biến cấu trúc    ✅
-  IV  — Thời gian dọc        ✅
-
-CÓ THỂ LÀ DERIVED PROPOSITION:
-  III — Phân tán bản thể     ⚠️  có thể từ I+II
-  V   — Biên giới động       ⚠️  có thể từ I+II+III
-  VI  — Chuyển hóa nhiễu loạn ⚠️  có thể từ IV+V
-  VII — Nổi lên có hướng     ⚠️  có thể từ I–VI</div>
-
-    <h3>Thử Với 4 Axioms</h3>
-    <div class="ascii-box">Giữ I + II + IV + V:
-
-  I + II + IV + V → VI?
-  Perturbation = input từ môi trường qua biên giới V
-  Được xử lý theo pattern II, trong thời gian dọc IV
-  → ΔVariety > 0 → VI là hệ quả ✅
-
-  I + II + IV + V → VII?
-  Field F nổi lên từ: Pattern(II) + Distributed(I+II)
-  + Vertical time(IV) + Perturbation processing(V→VI)
-  → Emergence có hướng → VII là hệ quả ✅
-
-KẾT LUẬN: 4 axioms có thể đủ</div>
-
-    <h3>Đề Xuất: 4 Tiên Đề Cốt Lõi</h3>
-    <div class="ascii-box">TẦNG BẢN THỂ HỌC (3 axioms):
-  I.  QUAN HỆ BẢN THỂ    — Gì tồn tại (quan hệ)
-  II. BẤT BIẾN CẤU TRÚC  — Tồn tại như thế nào (pattern)
-  IV. THỜI GIAN DỌC      — Tồn tại trong thời gian (dọc)
-
-TẦNG VẬN HÀNH (1 axiom):
-  V.  BIÊN GIỚI ĐỘNG     — Hệ thống phát triển ra sao
-
-DERIVED (không phải axiom):
-  III — Phân tán bản thể   [từ I + II]
-  VI  — Chuyển hóa nhiễu   [từ IV + V]
-  VII — Nổi lên có hướng   [từ I + II + IV + V]</div>
-
-    <h3>Bảng Đánh Giá Phương Án</h3>
-    <table class="styled-table">
-      <thead><tr><th>Số axioms</th><th>Cấu trúc</th><th>Đủ phủ</th><th>Tối giản</th><th>Rõ ràng</th><th>Đánh giá</th></tr></thead>
-      <tbody>
-        <tr><td><strong>3</strong></td><td>I, II, IV</td><td>❌ Thiếu interaction</td><td>✅</td><td>✅</td><td>Chưa đủ</td></tr>
-        <tr><td><strong>4</strong></td><td>I, II, IV, V</td><td>✅</td><td>✅</td><td>✅</td><td><strong>Ứng viên tốt nhất</strong></td></tr>
-        <tr><td><strong>5</strong></td><td>I, II, III, IV, V</td><td>✅</td><td>⚠️ III có thể dư</td><td>✅</td><td>Có thể tối giản hơn</td></tr>
-        <tr><td><strong>7</strong></td><td>I–VII</td><td>✅</td><td>❌ VI, VII là derived</td><td>✅</td><td>Quá nhiều</td></tr>
-      </tbody>
-    </table>
-
-    <h3>Căng thẳng (Tension) Thực Sự</h3>
-    <div class="ascii-box">Ít tiên đề hơn
-  = Đẹp hơn về mặt triết học
-  = Khó hiểu hơn với người đọc thông thường
-
-Nhiều tiên đề hơn
-  = Rõ ràng hơn, dễ áp dụng hơn
-  = Ít elegant hơn về mặt triết học
-
-Lựa chọn:
-  Nếu Mạch Rễ là TRIẾT HỌC HỌC THUẬT → 4 tiên đề
-  Nếu Mạch Rễ là FRAMEWORK ĐỐI THOẠI → 7 tiên đề
-  Nếu Mạch Rễ là CẢ HAI → 4 làm core, 7 làm expanded
-    rõ ràng cái nào là axiom, cái nào là derived proposition</div>
-
-    <div class="def-box" style="border-left-color:#d4a843; margin-top:20px">
-      <div class="label" style="color:#a07830">Kết luận RCA</div>
-      <blockquote><strong>Mạch Rễ có thể đứng trên 4 tiên đề thực sự độc lập. 7 tiên đề hiện tại đúng về nội dung — nhưng 3 trong số đó là hệ quả được phát biểu như tiên đề. Kiến trúc tối ưu: 4 axioms + 3 derived propositions.</strong><br/><br/>Nhưng đây vẫn là giả thuyết (hypothesis) — cần người khác cố phá vỡ nó mới biết chắc.</blockquote>
-    </div>
-  </section>
 
   <!-- SECTION 4.8: FALSIFICATION / SELF-CRITICISM -->
   <section>
@@ -844,12 +789,12 @@ Lựa chọn:
         <p>Tiên Đề II mô tả <em>bất biến</em> nhưng chưa có cơ chế hỏi “bất biến này có còn đúng không?” — cần cơ chế tự phê bình (self-criticism mechanism).</p>
       </div>
       <div class="concept-item">
-        <span class="pill">Giới hạn III</span>
-        <p>Tiên Đề III có thể bị hiểu là chống mọi tập trung — kể cả thiết chế tốt phục vụ cộng đồng.</p>
+        <span class="pill">Giới hạn V</span>
+        <p>Mệnh Đề V (Phân Tán) có thể bị hiểu là chống mọi tập trung — kể cả thiết chế tốt phục vụ cộng đồng. <em>(Derived, không phải Core.)</em></p>
       </div>
       <div class="concept-item">
-        <span class="pill">Giới hạn IV</span>
-        <p>Tiên Đề IV chỉ mô tả đối thoại với <em>quá khứ</em> — chưa có chiều trách nhiệm với <em>tương lai</em> (tư duy hàng hóa công cộng / public goods thinking).</p>
+        <span class="pill">Giới hạn III</span>
+        <p>Tiên Đề III (Thời Gian Dọc) chỉ mô tả đối thoại với <em>quá khứ</em> — chưa có chiều trách nhiệm với <em>tương lai</em> (tư duy hàng hóa công cộng / public goods thinking).</p>
       </div>
       <div class="concept-item">
         <span class="pill">Giới hạn V</span>
@@ -862,6 +807,11 @@ Lựa chọn:
       <blockquote>Năm giới hạn trên được giải quyết trong <strong>Mạch Rễ Upgraded</strong> — bằng công cụ Nhận thức luận Phật giáo (Tiên Đề VIII). Mạch Rễ đủ sâu để tự nhìn thấy giới hạn của mình mà không phá hủy chính mình.<br/><br/>
       → <a href="upgrade.html" style="color:#7c6fc9; font-weight:600">Đọc: Mạch Rễ Upgraded — Tiên Đề VIII &amp; Bốn Mở Rộng</a><br/>
       → <a href="axiom_conflict.html" style="color:#7c6fc9; font-weight:600">Đọc: Xung Đột Lõi (Core Conflict) — giới hạn V & cơ chế xử lý bất đồng nội bộ</a></blockquote>
+    </div>
+
+    <div class="def-box" style="margin-top:20px; border-left-color:#2d6a4f">
+      <div class="label" style="color:#2d6a4f">Một điều Mạch Rễ cố tình KHÔNG đặt thành tiên đề (no-telos)</div>
+      <blockquote>Mạch Rễ <strong>không</strong> thêm một tiên đề về <em>mục đích</em> (telos) — kiểu "hệ thống tồn tại <em>để</em> đạt X". "Sống sót" là <em>cái cần giải thích</em> (explanandum), không phải một tiên đề. Việc từ chối một tiên đề mục đích luận là kỷ luật vay từ Anattā / Śūnyatā (hệ C đối chiếu): gán cho lõi một "tự tính" hay một đích cố định sẽ mâu thuẫn chính Tiên Đề I–II. → Chi tiết: <a href="axioms.html" style="color:#2d6a4f;font-weight:600">axioms.html</a>.</blockquote>
     </div>
   </section>
 
@@ -890,19 +840,23 @@ Nhưng có cùng CẤU TRÚC LOGIC:
    khi X liên tục BIẾN ĐỔI
    mà không có TRUNG TÂM CỐ ĐỊNH?"</div>
 
-    <h3>Phân loại 7 Axioms theo vai trò</h3>
+    <h3>Phân loại hệ tiên đề (4 Core + 3 Derived + 1 Meta) theo vai trò</h3>
     <div class="concept-list">
       <div class="concept-item">
-        <span class="pill">A1, A2, A4</span>
+        <span class="pill">I, II, III</span>
         <p><strong>Giao điểm</strong> — Ba systems đồng thuận. Mạch Rễ đặt tên chung cho cấu trúc mà cả ba đều nhìn thấy.</p>
       </div>
       <div class="concept-item">
-        <span class="pill">A3, A6</span>
-        <p><strong>Cầu nối</strong> — Mạch Rễ kết nối thứ mỗi system chỉ thấy một phần.</p>
+        <span class="pill">V, VI</span>
+        <p><strong>Cầu nối (Derived)</strong> — Mạch Rễ kết nối thứ mỗi system chỉ thấy một phần. Suy ra từ Core.</p>
       </div>
       <div class="concept-item">
-        <span class="pill">A5, A7</span>
-        <p><strong>Khoảng trống (Gap) quan sát được</strong> — Thứ ba hệ thống kia chưa nói rõ. <strong>A5 (Giao diện thời gian dọc) và A7 là phần Mạch Rễ bổ sung so với ba nguồn kế thừa trên.</strong></p>
+        <span class="pill">IV, VII</span>
+        <p><strong>Khoảng trống (Gap) quan sát được</strong> — Thứ ba hệ thống kia chưa nói rõ. <strong>IV (Biên Giới Động) và VII (Nổi Lên Có Hướng) là phần Mạch Rễ bổ sung so với ba nguồn kế thừa trên.</strong></p>
+      </div>
+      <div class="concept-item">
+        <span class="pill">VIII</span>
+        <p><strong>Meta</strong> — Hệ tự áp tiên đề lên chính mình. Tầng khác, cần thiết khi scope là áp lực tiến hóa.</p>
       </div>
     </div>
   </section>
@@ -926,8 +880,8 @@ Nhưng có cùng CẤU TRÚC LOGIC:
       </table>
     </div>
     <div class="def-box" style="margin-top:20px">
-      <div class="label">Đóng góp độc nhất</div>
-      <blockquote>Trong khi Ubuntu hỏi về quan hệ ngang (tôi với người khác), Mạch Rễ hỏi về <strong>quan hệ dọc</strong> (tôi với tổ tiên và hậu thế) — chiều kích bị thiếu trong hầu hết triết học phương Tây hiện đại. Và trong khi tất cả các khung nền bản sắc (framework) hiện có đều giả định bảo tồn bản sắc bằng ranh giới, Mạch Rễ đề xuất cơ chế ngược lại: <strong>bản sắc bền vững thông qua hấp thụ có định hướng, không phải bất chấp nó.</strong></blockquote>
+      <div class="label">Góc đặc trưng</div>
+      <blockquote>Trong khi Ubuntu nhấn quan hệ ngang (tôi với người khác), Mạch Rễ nhấn <strong>quan hệ dọc</strong> (tôi với tổ tiên và hậu thế) — chiều ít được khai thác trực diện trong phần lớn triết học phương Tây hiện đại tôi khảo sát. Và trong khi <strong>phần lớn</strong> framework bản sắc tôi khảo sát nghiêng về bảo tồn bằng ranh giới, Mạch Rễ nhấn cơ chế <strong>hấp thụ có định hướng</strong> — bản sắc bền nhờ hấp thụ, không bất chấp nó. <em>(Cơ chế này là hệ quả của Bất Biến Cấu Trúc × Biên Giới Động — chữ ký của hai tiên đề, không phải tiên đề riêng; xem <a href="axioms.html" style="color:#a07830;font-weight:600">axioms.html</a>.)</em></blockquote>
     </div>
   </section>
 
@@ -964,7 +918,7 @@ Nhưng có cùng CẤU TRÚC LOGIC:
 </div>
 
 <footer>
-  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a> · <a href="axiom_4.html">Tiên Đề IV</a> · <a href="mach_re_homologous.html">Homologous</a></p>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="why.html">Tại sao</a> · <a href="who.html">Cho ai</a> · <a href="when.html">Khi nào</a> · <a href="how.html">Áp dụng</a> · <a href="axioms.html">Hệ Tiên Đề</a> · <a href="axiom_3.html">Tiên Đề III</a> · <a href="mach_re_homologous.html">Homologous</a></p>
 </footer>
 
 </body>

@@ -116,8 +116,8 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 
 ## 9. Bảng Tên Canonical — Tên Thuần Việt Các Tiên Đề
 
-> **Nguồn chân lý duy nhất.** Mọi file HTML/MD khi hiển thị tên định danh tiên đề tra bảng này.
-> Ngày chốt: 2026-06-05 · Cổng quyết định: 3-round RCA × 5-Why × ≥ 4/5.
+> **[HẠ TRẠNG THÁI 2026-06-06 · rebuild P1]** KHÔNG còn là "nguồn chân lý duy nhất". Bảng này nay là **ứng viên carry-forward**: tên thuần Việt = tài sản *kỹ thuật đặt tên* (giữ), nhưng *tập tiên đề + số định danh I–VIII* phải chờ re-derivation (P2 của `mach-re-axiom-rebuild-plan.md`) xác nhận. Nguồn chân lý tương lai: `axiom_spec.md`. File HTML/MD tạm tra bảng này, biết nó **có thể đổi sau P2**.
+> Ngày chốt gốc: 2026-06-05 · Cổng quyết định: 3-round RCA × 5-Why × ≥ 4/5.
 > **Quy tắc dùng:** format đầy đủ = `Tiên Đề [số] — [Biểu hiện] — [Bản chất] ("EN")`.
 > Khi không gian hạn chế (menu, breadcrumb) → chỉ dùng `Tiên Đề [số] — [Biểu hiện]`.
 
@@ -138,11 +138,43 @@ Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
 
 ---
 
-## 7. Điều KHÔNG đụng (bảo tồn — đừng "hạ giọng" nhầm)
+## 7. Carry-Forward Set mặc định (rebuild governance)
 
-- Ý lõi: **bản sắc bền nhờ hấp thụ có định hướng, không nhờ dựng tường.**
-- "rễ nông", "trí nhớ sống / trí nhớ chết", phân biệt quan hệ dọc vs ngang.
-- Cơ chế tự phê bình + tiêu chí phản chứng — *chính là chuẩn để soi mọi quy tắc trên.*
-- Đoạn tự mổ xẻ "7 tiên đề thực ra cần 4".
-- Câu manifesto ở **hero/mở đầu** (vd "Được sống... đặt tên 2026") — cho phép ở mở đầu, không lặp trong thân học thuật.
-- Mô tả *ý định thiết kế* ("đủ chính xác để đối thoại", "giải quyết một hạn chế") — không phải empirical claim, không cần hạ giọng.
+> **Vai trò mới (2026-06-06 · P1 của `mach-re-axiom-rebuild-plan.md`).** Thay cho "Điều KHÔNG đụng".
+> Theo quy tắc CLAUDE.md "rebuild with carry-forward": đây là danh sách tài sản *được phép mang sang* khi re-derive hệ tiên đề. Mục **PHƯƠNG PHÁP** giữ vô điều kiện (là công cụ suy). Mục **NỘI DUNG** là *ứng viên* phải sống sót cổng RCA (≥4/5) trong P2; ngoài danh sách → bỏ (reference-only).
+> Cổng quyết định P1: 3-round RCA × 5-Why × ≥4/5 → TB **4.6/5 → PROCEED**.
+
+### 7.1 Ba hệ quy chiếu neo (triangulation backbone cho P2)
+> Re-derivation suy trên ba hệ **độc lập**. Một candidate axiom **mạnh hơn** nếu nó hiện ra (gần khớp *cấu trúc* theo §2 — ẩn dụ đắt, KHÔNG phải đồng nhất) trong ≥2/3 hệ. Đây là phép chống tùy tiện, KHÔNG phải bằng chứng.
+
+| Hệ | Nguồn | Neo cấu trúc cho |
+|---|---|---|
+| **A** | Phan Ngọc — *Bản sắc văn hóa Việt Nam*: bản sắc = "kiểu lựa chọn / kiểu quan hệ" bền dưới nội dung đổi | bất biến cấu trúc; quan hệ làm nền |
+| **B** | Ashby (*Requisite Variety*) + Weick (*organizing / sensemaking / enactment / retrospect*) | biên giới động & xử lý nhiễu; bản sắc duy trì qua vận hành; chiều hồi cố |
+| **C** | Anattā / Pratītyasamutpāda / Śūnyatā (nhận thức luận Phật giáo) | vô ngã = quan hệ bản thể (không "svabhāva"); phân tán không trung tâm; phản tư / tánh không của lõi |
+
+⚠️ **Confirmation bias (P2.3):** ba hệ này từng sinh ra hệ tiên đề cũ → dễ vô thức lái re-derivation về kết quả cũ. Bắt buộc chạy independence test *bằng văn bản*.
+
+### 7.2 PHƯƠNG PHÁP — giữ vô điều kiện
+- Cổng RCA: 3-round × 5-Why × ≥4/5.
+- §1–§6 của file này (chống tuyệt đối · ẩn dụ≠sự thật · minh họa≠chứng minh · công thức giả→sơ đồ · bỏ tự-chấm-điểm · quy trình P1–P5).
+- **Cơ chế tự phê bình + tiêu chí phản chứng** — chuẩn để soi chính các tiên đề mới.
+- La bàn nhận thức luận Phật giáo (Upāya, Śūnyatā, Nhị đế, Tứ cú, Pramāṇa) — dùng để suy, không phải kết luận.
+
+### 7.3 NỘI DUNG — ứng viên, phải sống sót re-derivation (P2)
+| Ứng viên | Điều kiện sống sót |
+|---|---|
+| Câu hỏi gốc: *vì sao một số hệ bản sắc tập thể sống sót đồng hóa, số khác không?* | Giữ làm điểm xuất phát (không cần chứng minh) |
+| Ý lõi: **bản sắc bền nhờ hấp thụ có định hướng, không nhờ dựng tường** | Re-test: tiên đề, hệ quả, hay minh họa? |
+| Từ vựng: "rễ nông", "trí nhớ sống / trí nhớ chết", quan hệ dọc vs ngang | Giữ nếu khái niệm tương ứng tái xuất hiện |
+| Hai tầng IV: essence (Orthogonal) vs manifestation (Vertical) | Chỉ giữ nếu "thời gian" tái xuất hiện như tiên đề độc lập |
+| "Hấp thụ có định hướng" như cơ chế thứ ba (giữa assimilation ↔ isolation) | Re-test phân loại đóng góp (Synthesis/Extension/Novel) |
+| Prior-art catalog (Whitehead, Heidegger, Gadamer, Lévi-Strauss…) | Gắn vào tiên đề mới ở P3 (bổ sung ngoài 3 hệ neo) |
+
+### 7.4 BỎ → reference-only (KHÔNG carry-forward)
+- Tập 7/8 tiên đề + **số La Mã I–VIII** như định danh ràng buộc.
+- Nhãn "4 Core + 3 Derived" + đoạn tự-mổ-xẻ "7 thực ra cần 4" (chỉ còn là provenance lịch sử).
+- Bảng tên canonical §9 như *ràng buộc* (xem trạng thái mới ở §9).
+
+### 7.5 Tầng trình bày — theo vế "đã xuất bản vẫn extend"
+- Câu manifesto ở **hero/mở đầu** (vd "Được sống... đặt tên 2026") và mô tả *ý định thiết kế* ("đủ chính xác để đối thoại", "giải quyết một hạn chế") — KHÔNG bị rebuild đụng; đây là tầng trình bày đã công bố, không phải nội dung tiên đề.

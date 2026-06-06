@@ -1,5 +1,55 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-06 — P5 #1: hòa giải overclaim "Không Ai Phát Biểu Tiên Đề IV" (`axiom_4.html`)
+
+**Cổng RCA (claim, 4.6/5 → FIX).** Plan: `plan/mach-re-P5-content-reconciliation.md` (#1). P1 quét đa trang: overclaim chỉ tập trung ở `axiom_4.html` (các "không ai" khác là nghĩa lành tính; bản trong `raw/` không đụng — P4).
+
+**Mâu thuẫn:** "Không ai/chưa ai phát biểu" trái (a) prior-art của chính `axiom_spec.md` (Heidegger *Geschichtlichkeit*, Gadamer *Wirkungsgeschichte*) và (b) `dictionary §1` (cấm tuyệt đối).
+
+**Sửa (4 chỗ, `axiom_4.html`):** tiêu đề §7 "Tại Sao Không Ai Phát Biểu" → "Vì Sao Góc Này Ít Được Phát Biểu Trực Diện?" + ghi chú phạm vi (nêu tên nguồn, acknowledge Heidegger/Gadamer là tiền lệ gần nhất); Why-2 "Không ai hỏi" → "ít được đặt trực diện trong phạm vi này"; Gốc rễ "chưa ai hệ thống hóa" → "ít được hệ thống hóa trực diện trong phạm vi khảo sát"; glossary "Đóng góp nguyên bản = mệnh đề chưa được phát biểu trước đây" → "góc đặc trưng / ít được phát biểu trực diện trong phạm vi đã nêu — không phải tuyên bố phổ quát".
+
+**Bảo tồn:** giữ "góc đặc trưng" (tính trực giao V⊥H) làm điểm khác biệt — chỉ scope, không bỏ.
+
+**P5 #2 (cùng đợt) — "hấp thụ có định hướng" khỏi khung novel cấp tiên đề (RCA 4.4/5).** P1 quét: chỗ thật duy nhất = `what.html:933` ("Đóng góp độc nhất" + "tất cả framework hiện có" + "hầu hết triết học phương Tây"). Các match khác lành tính (how.html:420 đã scoped "ba hệ đối chiếu"; axiom_conflict:208 chỉ nêu ví dụ; upgrade:343 "không ai được phép hỏi lại" nghĩa khác). Sửa `what.html:933`: label "Đóng góp độc nhất" → "Góc đặc trưng"; "tất cả/hầu hết" → "phần lớn … tôi khảo sát"; thêm chú "cơ chế này là *hệ quả* của Bất Biến × Biên Giới Động — không phải tiên đề riêng" (khớp `axiom_spec.md` Mệnh Đề VI).
+
+**P5 #3 (cùng đợt) — lớp Nhị đế cho Tiên Đề II (RCA 4.8/5, theo spec Quyết định 3).** P1: `axiom_conflict.html` + `upgrade.html` đã có "lõi trống tự tính"; chỗ thiếu = card II `what.html`. Thêm clause vào phát biểu II: "bất biến bền ở mức *quy ước* (conventional / Nhị đế), không phải bản thể tuyệt đối — pattern cũng *trống tự tính* (svabhāva), nhất quán Tiên Đề I". Gỡ rủi ro essentialism (II mâu thuẫn I).
+
+**P5 #4 (cùng đợt) — VIII scope-conditional có biện minh (RCA 4.6/5).** `upgrade.html` §3: thêm đoạn "Vì sao VIII là điều kiện cần (không phải bolt-on)": với áp lực *tiến hóa*, invariant cố định không tự-xét-lại sẽ giòn → phản tư là điều kiện cần; VIII là Meta-Tiên Đề. Lấp khoảng trống biện minh mà spec divergence #1 nêu.
+
+**P5 #5 (cùng đợt) — bổ sung no-telos (additive, RCA 4.4/5).** `what.html` §Giới Hạn: thêm def-box "Một điều Mạch Rễ cố tình KHÔNG đặt thành tiên đề (no-telos)" — "sống sót" là explanandum, không phải tiên đề; từ chối tiên đề mục đích luận theo kỷ luật Anattā/Śūnyatā (hệ C). Khớp `axiom_spec.md` K10.
+
+**→ P5 #1–#5 hoàn tất** (mọi mâu thuẫn claim legacy↔spec đã hòa giải + no-telos). Còn lại #6 (đổi số La Mã toàn site) tách thành plan riêng `plan/mach-re-P6-renumber-batch.md`.
+
+---
+
+## 2026-06-06 — REBUILD P0–P4(mẫu): governance + Carry-Forward Set + re-derive + render mẫu
+
+**Quyết định bằng cổng RCA (3-round × 5-Why × threshold 4/5).** Chuyển từ *revision* sang *rebuild* hệ tiên đề (plan: `plan/mach-re-axiom-rebuild-plan.md`, thay thế hai plan axiom-revision).
+
+**RCA gốc (vì sao rebuild, không revision):** "extend, not overwrite" là quy tắc *bảo tồn* — hợp cho corpus đã xuất bản — bị áp lên hệ tiên đề *chưa xuất bản, đang dò* → mỗi sửa khái niệm cõng chi phí tương thích ngược → chính quy tắc chống mâu thuẫn lại đẻ mâu thuẫn (bảng ✅ độc lập / text derived; 7 vs 8). Điểm ~4.0/5 (cảnh báo Bảo-tồn 2/5 → bịt bằng Carry-Forward Set).
+
+**P0 — đổi governance:** `CLAUDE.md` §Document contract rules — thay "extend, not overwrite" → **"rebuild with carry-forward"**: phần chưa xuất bản cho viết đè sạch / re-derive, NHƯNG phải khai báo Carry-Forward Set trước; phần đã xuất bản vẫn ưu tiên extend.
+
+**P1 — khai báo Carry-Forward Set (TB 4.6/5):** `dictionary_rule.md §7` đổi vai "Điều KHÔNG đụng" → **"Carry-Forward Set mặc định"**. Tách PHƯƠNG PHÁP (giữ vô điều kiện: cổng RCA, §1–§6, phản chứng, la bàn Phật giáo) khỏi NỘI DUNG (ứng viên, phải sống sót P2). Backbone tam giác đạc: **A Phan Ngọc · B Ashby/Weick · C Anattā**. `§9` hạ trạng thái từ "nguồn chân lý duy nhất" → "ứng viên carry-forward chờ re-derive".
+
+**P2 — re-derive hệ tiên đề (TB 4.6/5):** sản phẩm `axiom_spec.md` (single source of truth). Suy từ câu hỏi gốc, independence test *bằng văn bản*, neo 3 hệ A/B/C. Kết quả KHÔNG pre-commit: **4 Core (CA-1..4) + 3 Derived (DP-1..3) + 1 Meta (MA-1)**. 3 quyết định §5 giải bằng RCA: (1) scope R = áp lực tiến hóa → MA-1 IN (4.6); (2) định danh CA/DP/MA, bỏ La Mã, giữ tên thuần Việt (4.6); (3) CA-2 gắn lớp Nhị đế "trống svabhāva" để tránh mâu thuẫn CA-1 (4.8). 4 điểm phân kỳ thật so với hệ cũ (anti-rubber-stamp): MA scope-conditional · "hấp thụ có định hướng" → cơ chế dẫn xuất · phát hiện no-telos · CA-2 quy ước.
+
+**Bỏ → reference-only:** tập 7/8 tiên đề + số La Mã I–VIII (giữ bảng map cũ→mới ở `axiom_spec.md §5.1`) + nhãn "4 Core+3 Derived" cũ.
+
+**P4 — đánh số & render (người dùng chốt: bỏ CA/DP/MA, dùng SỐ LA MÃ đếm lại theo tầng I–IV/V–VII/VIII; file cũ archive):**
+- `axiom_spec.md` cập nhật định danh sang La Mã mới (single source).
+- `axioms.html` (MỚI) — trang mẫu render từ spec, theo phong cách site.
+- `index.html` — thêm thẻ nav "Hệ Tiên Đề" → `axioms.html`.
+- `what.html` — banner trỏ canonical `axioms.html` (additive) + gỡ mâu thuẫn bảng kiểm tra (III/VI/VII "Độc lập" ✅→⚠️ dẫn xuất) + kết luận §3.6 "giả thuyết" → "đã giải" (W4 transform, giữ lập luận làm provenance). Card 7 tiên đề giữ số cũ (banner phủ legacy) — chưa renumber tại chỗ vì cần reorder + trùng `axioms.html`.
+- Banner canonical (additive, không remap) thêm vào: `upgrade.html`, `mach_re_homologous.html` (lưu ý IV→III), `axiom_conflict.html` (VIII giữ số), `axiom_4.html` (IV→III), `how.html` (generic). Mỗi banner trỏ `axioms.html` + bảng map `axiom_spec.md §5.1`. `who.html` (1 ref thoáng) + `when.html`/`why.html` (không nhắc số) bỏ qua.
+- **Deep-renumber từng trang = GATE REJECT (3.0/5):** cascade cross-file (tên file/text-link/cross-ref). Chỉ làm khi có batch phối hợp toàn site, hoặc không (banner đã đủ). **P4 hoàn tất ở mức single-source + canonical pointer; site coherent, không mâu thuẫn ngầm.**
+- **Quyết định gate — renumber hàng loạt 8 file: 2.0/5 → REJECT.** Lý do: ~150 ref La Mã trong prose bị *remap nghĩa* (III cũ=Phân Tán → III mới=Thời Gian) → find/replace mù sẽ hỏng nghĩa = đúng bẫy vá-chồng-vá. Rollout đúng phương pháp = **regenerate từng trang từ spec + archive**, page-by-page (chưa làm).
+
+**Files đã sửa:** `CLAUDE.md`, `plan/dictionary_rule.md` (§7, §9), `axiom_spec.md` (MỚI→renumber), `axioms.html` (MỚI), `index.html`, `what.html` (banner), `plan/mach-re-axiom-rebuild-plan.md` (P0–P4 mẫu).
+**Không đụng:** `raw/`, `archives/` (P4); 7 file HTML còn lại (`upgrade`, `who`, `how`, `mach_re_homologous`, `axiom_4`, `axiom_conflict`, `when`, `why`) — chờ regenerate page-by-page.
+
+---
+
 ## 2026-06-05 — Bổ sung tên thuần Việt cho 8 Tiên Đề (Phase 2–4 hoàn tất)
 
 **Quyết định bằng cổng RCA (3-round × 5-Why × threshold 4/5). La bàn: Nhận thức luận Phật giáo (Upāya).**
