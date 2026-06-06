@@ -1,5 +1,20 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-06 — `when.html` Section 3: Mở rộng bảng so sánh + fix "Trí tuệ sâu nhất"
+
+**RCA gate (4.8/5 → FIX).** 3-round RCA × 5-Why.
+
+**Root cause:** Quote-box "Trí tuệ sâu **nhất**" là superlative tuyệt đối rút từ bảng 5 dân tộc — vi phạm `dictionary §1` (không dùng "nhất" không phạm vi). Sâu hơn: bảng đo tiêu chí "phân tán / không trung gian" (structural resilience) rồi kết luận "wisdom depth" (value judgment) — category error: structural robustness ≠ epistemic depth.
+
+**Sửa 3 chỗ:**
+1. **Intro paragraph** — đổi "điểm neo" → "loại trung gian thể chế mà điểm neo phụ thuộc vào" + thêm scope disclaimer ("bộ so sánh có chủ đích, không phủ hết mọi trường hợp").
+2. **Bảng** — đổi cột "Rủi ro" → "Loại trung gian / Điểm nghẽn" (tiêu chí chính xác hơn); mở rộng từ 5 → 11 dân tộc: thêm Triều Tiên, Tây Tạng, Armenia, Basque, Duy Ngô Nhĩ, Kurd — tất cả có áp lực đồng hóa kéo dài tương đương; cập nhật nội dung cột 3 từ tham chiếu "Core II" sang mô tả loại trung gian cụ thể.
+3. **Quote-box** — thay "Trí tuệ sâu **nhất**" → "ít phụ thuộc trung gian thể chế **nhất** trong bộ khảo sát này" (scoped structural claim); giữ nguyên câu kết "nó được sống thành thực hành, trước khi lý thuyết có ngôn ngữ để gọi tên nó".
+
+**Bảo tồn:** Insight lõi về implicit/lived wisdom giữ nguyên — chỉ scope lại từ absolute value judgment thành structural claim có phạm vi. Luận điểm so sánh mạnh hơn vì có nhiều case studies hơn.
+
+---
+
 ## 2026-06-06 — `when.html`: Thêm Section 0 — Địa lý như môi trường chọn lọc
 
 **RCA gate (5/5 → FIX).** Gap: `when.html` trình bày timeline Việt Nam mà không có case selection justification — người đọc có thể quy việc chọn Việt Nam cho confirmation bias (tác giả người Việt).
