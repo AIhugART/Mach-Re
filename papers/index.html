@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài Báo Nghiên Cứu | Mạch Rễ</title>
+  <meta name="description" content="Các bài báo nghiên cứu khoa học và tài liệu chuyên sâu thuộc dự án Mạch Rễ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent:       #b05040;
+      --accent-light: #e07a5f;
+      --accent-pale:  #fdf0ed;
+      --cream:        #faf7f0;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #e8d8d5;
+      --green:        #2d6a4f;
+      --green-deep:   #1a3a2a;
+      --green-pale:   #d8f3dc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav {
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      gap: 12px;
+    }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--green-deep) 0%, var(--green) 60%, #3f8c68 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+    }
+    .hero p { color: var(--green-pale); font-size: 1rem; max-width: 650px; margin: 0 auto; line-height: 1.6; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    
+    .paper-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.03);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .paper-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+    }
+    .paper-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #f0e6e4;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .paper-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      max-width: 80%;
+    }
+    .paper-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: var(--green-deep);
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+    .paper-author {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+    .paper-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .paper-num {
+      background: var(--green-pale);
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      align-self: flex-start;
+    }
+    .paper-abstract {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .paper-abstract strong {
+      color: var(--text-dark);
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: var(--green-deep);
+    }
+
+    footer { background: var(--green-deep); color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: var(--green-pale); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="../index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <a href="../index.html#nav-grid">Tài liệu</a>
+  <span class="sep">/</span>
+  <span class="current">Bài báo</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">BÀI BÁO · PAPERS</div>
+  <h1>Bài Báo Nghiên Cứu</h1>
+  <p>Các tài liệu nghiên cứu khoa học, phân tích chuyên sâu ứng dụng hệ tiên đề Mạch Rễ vào các lĩnh vực ngoại giao, giao thông đô thị và nghệ thuật điện ảnh.</p>
+</div>
+
+<div class="content">
+
+  <!-- PAPER 1 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="paper-meta">
+        <h2 class="paper-title">"Chắc ở gốc, vững ở thân, uyển chuyển như lá cành": Tái diễn giải Ngoại giao Cây Tre Việt Nam qua hệ tiên đề Mạch Rễ</h2>
+        <div class="paper-author">Tác giả: Nguyễn Xuân Việt (VietVunVut)</div>
+        <div class="paper-date">Năm công bố: 2026</div>
+      </div>
+      <span class="paper-num">Paper 001</span>
+    </div>
+    <div class="paper-abstract">
+      <p><strong>Tóm tắt:</strong> Bài báo nghiên cứu cách thức chính sách "Ngoại giao Cây Tre" của Việt Nam hoạt động hiệu quả dưới lăng kính của Mạch Rễ. Nghiên cứu tập trung phân tích sự kết hợp giữa tính bất biến cấu trúc (Tiên Đề II) và biên giới thấm chọn lọc (Tiên Đề IV) tạo nên sự uyển chuyển mềm mại nhưng vô cùng vững chắc trước các áp lực địa chính trị toàn cầu.</p>
+    </div>
+    <a href="paper_001/paper_001.pdf" class="download-btn" target="_blank">
+      📥 Tải bản PDF (196 KB)
+    </a>
+  </div>
+
+  <!-- PAPER 2 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="paper-meta">
+        <h2 class="paper-title">"Điền vào khoảng trống": Tái diễn giải xung đột giao thông đô thị Việt Nam qua hệ tiên đề Mạch Rễ</h2>
+        <div class="paper-author">Tác giả: Nguyễn Xuân Việt (VietVunVut)</div>
+        <div class="paper-date">Năm công bố: 2026</div>
+      </div>
+      <span class="paper-num">Paper 002</span>
+    </div>
+    <div class="paper-abstract">
+      <p><strong>Tóm tắt:</strong> Nghiên cứu này phân tích hành vi giao thông đô thị đặc thù tại các thành phố lớn ở Việt Nam, tiêu biểu là hiện tượng "điền vào khoảng trống". Dưới lăng kính của Mạch Rễ, hành vi này không đơn thuần là sự hỗn loạn mà phản ánh một cấu trúc quan hệ động, tự tổ chức và linh hoạt của người tham gia giao thông trước hạ tầng hạn chế.</p>
+    </div>
+    <a href="paper_002/paper_002.pdf" class="download-btn" target="_blank">
+      📥 Tải bản PDF (367 KB)
+    </a>
+  </div>
+
+  <!-- PAPER 3 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="paper-meta">
+        <h2 class="paper-title">Hiện tượng học về cấu trúc quan hệ trong điện ảnh Việt Nam: Phân tích sự thành bại phòng vé qua lăng kính hiện tượng học tự sự</h2>
+        <div class="paper-author">Tác giả: Nguyễn Xuân Việt (VietVunVut)</div>
+        <div class="paper-date">Năm công bố: 2026</div>
+      </div>
+      <span class="paper-num">Paper 003</span>
+    </div>
+    <div class="paper-abstract">
+      <p><strong>Tóm tắt:</strong> Bài báo nghiên cứu các cấu trúc tự sự và thiết lập quan hệ nhân vật trong phim điện ảnh Việt Nam. Bằng việc phân tích các tác phẩm thành công và thất bại ngoài phòng vé, nghiên cứu chỉ ra mối liên hệ chặt chẽ giữa mức độ thấu cảm văn hóa và cách thức triển khai cấu trúc quan hệ Mạch Rễ trong mạch truyện phim.</p>
+    </div>
+    <a href="paper_003/paper_003.pdf" class="download-btn" target="_blank">
+      📥 Tải bản PDF (175 KB)
+    </a>
+  </div>
+
+  <!-- PAPER 4 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="paper-meta">
+        <h2 class="paper-title">Sự tương tác giữa cấu trúc tự sự Đông Á và khả năng thấu cảm văn hóa: Giải mã hiện tượng chuyển thể điện ảnh "Em là bà nội của anh" qua lăng kính hiện tượng học tương quan Việt - Hàn</h2>
+        <div class="paper-author">Tác giả: Nguyễn Xuân Việt (VietVunVut)</div>
+        <div class="paper-date">Năm công bố: 2026</div>
+      </div>
+      <span class="paper-num">Paper 004</span>
+    </div>
+    <div class="paper-abstract">
+      <p><strong>Tóm tắt:</strong> Nghiên cứu phân tích chuyên sâu case-study của tác phẩm chuyển thể thành công "Em là bà nội của anh" (từ kịch bản Hàn Quốc "Miss Granny"). Tác giả giải mã cách thức mà bộ phim đã Việt hóa cấu trúc tự sự để kích hoạt khả năng thấu cảm văn hóa bản địa, đồng thời liên hệ sâu sắc với Tiên Đề III về chiều thời gian dọc cội nguồn gia đình.</p>
+    </div>
+    <a href="paper_004/paper_004.pdf" class="download-btn" target="_blank">
+      📥 Tải bản PDF (212 KB)
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="../index.html">Tổng quan</a> · <a href="../what.html">Là gì</a> · <a href="../why.html">Tại sao</a> · <a href="../who.html">Cho ai</a> · <a href="../when.html">Khi nào</a> · <a href="../how.html">Áp dụng</a> · <a href="../upgrade.html">Nâng cấp</a></p>
+</footer>
+
+</body>
+</html>

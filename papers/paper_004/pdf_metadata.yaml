@@ -1,0 +1,52 @@
+---
+title: |
+  Sự tương tác giữa cấu trúc tự sự Đông Á và khả năng thấu cảm văn hóa:
+  Giải mã hiện tượng chuyển thể điện ảnh "Em là bà nội của anh" qua lăng kính hiện tượng học tương quan Việt - Hàn
+author: "Nguyễn Xuân Việt (VietVunVut)"
+date: "2026"
+lang: vi
+documentclass: article
+papersize: a4
+fontsize: 12pt
+mainfont: "Times New Roman"
+sansfont: "Arial"
+monofont: "Consolas"
+CJKmainfont: "Times New Roman"
+geometry:
+  - top=25mm
+  - bottom=25mm
+  - left=30mm
+  - right=25mm
+linestretch: 1.5
+numbersections: true
+toc: true
+toc-depth: 3
+header-includes:
+  - |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\small\itshape Giải mã "Em là bà nội của anh" qua hiện tượng học tương quan Việt - Hàn}
+    \fancyhead[R]{\small\thepage}
+    \fancyfoot[C]{\small Paper 004 — Mạch Rễ Project}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+  - |
+    \usepackage{titlesec}
+    \titleformat{\section}{\Large\bfseries}{\thesection.}{0.5em}{}
+    \titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.5em}{}
+    \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
+  - |
+    \usepackage{hyperref}
+    \hypersetup{colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black,citecolor=blue!60!black}
+  - |
+    \usepackage{abstract}
+    \renewcommand{\abstractnamefont}{\normalfont\bfseries}
+    \renewcommand{\abstracttextfont}{\normalfont\itshape}
+  - |
+    \usepackage{booktabs}
+    \usepackage{longtable}
+  - |
+    \usepackage{enumitem}
+    \setlist{nosep}
+---
