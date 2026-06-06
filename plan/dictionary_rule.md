@@ -97,42 +97,41 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 
 ---
 
-## 8. Tiên Đề IV — Hai tầng khái niệm (bản chất vs biểu hiện)
+## 8. Tiên Đề III — Hai tầng khái niệm (bản chất vs biểu hiện)
 
-> RCA finding 2026-06-05 — Điểm 5/5. Bắt buộc áp dụng trong mọi phát biểu và so sánh liên quan đến Tiên Đề IV.
+> RCA finding 2026-06-05 — Điểm 5/5. Bắt buộc áp dụng trong mọi phát biểu và so sánh liên quan đến Tiên Đề III.
 
 | Tầng | Thuật ngữ | Dùng khi nào |
 |---|---|---|
-| **Bản chất** (Essence) | **Orthogonal Temporality** — Thời gian trực giao | Phát biểu nguyên lý bản thể học; phân biệt Tiên Đề IV với Halbwachs/Luhmann |
+| **Bản chất** (Essence) | **Orthogonal Temporality** — Thời gian trực giao | Phát biểu nguyên lý bản thể học; phân biệt Tiên Đề III với Halbwachs/Luhmann |
 | **Biểu hiện** (Manifestation) | **Vertical Temporality** — Thời gian dọc | Mô tả thực hành văn hóa; sơ đồ trực quan; so sánh ba nền văn hóa |
 
 **Quy tắc:** Hai thuật ngữ **không** thay thế nhau — chúng khác tầng (essence ≠ manifestation).
 - ❌ Cấm: "Orthogonal Temporality tức là Vertical Temporality"
-- ✅ Đúng: "Tiên Đề IV có bản chất là Orthogonal Temporality, biểu hiện trong đời sống qua cấu trúc Vertical Temporality"
+- ✅ Đúng: "Tiên Đề III có bản chất là Orthogonal Temporality, biểu hiện trong đời sống qua cấu trúc Vertical Temporality"
 
-**Gốc rễ của quy tắc:** Nếu chỉ dùng "Vertical Temporality," không thể phân biệt Tiên Đề IV với "past là input của present operations" (Luhmann) — vì cả hai đều có hướng "dọc" về quá khứ. Chỉ tính **trực giao** (V không rút gọn về H) mới là ranh giới falsifiable.
+**Gốc rễ của quy tắc:** Nếu chỉ dùng "Vertical Temporality," không thể phân biệt Tiên Đề III với "past là input của present operations" (Luhmann) — vì cả hai đều có hướng "dọc" về quá khứ. Chỉ tính **trực giao** (V không rút gọn về H) mới là ranh giới falsifiable.
 
 ---
 
 ## 9. Bảng Tên Canonical — Tên Thuần Việt Các Tiên Đề
 
-> **[HẠ TRẠNG THÁI 2026-06-06 · rebuild P1]** KHÔNG còn là "nguồn chân lý duy nhất". Bảng này nay là **ứng viên carry-forward**: tên thuần Việt = tài sản *kỹ thuật đặt tên* (giữ), nhưng *tập tiên đề + số định danh I–VIII* phải chờ re-derivation (P2 của `mach-re-axiom-rebuild-plan.md`) xác nhận. Nguồn chân lý tương lai: `axiom_spec.md`. File HTML/MD tạm tra bảng này, biết nó **có thể đổi sau P2**.
-> Ngày chốt gốc: 2026-06-05 · Cổng quyết định: 3-round RCA × 5-Why × ≥ 4/5.
-> **Quy tắc dùng:** format đầy đủ = `Tiên Đề [số] — [Biểu hiện] — [Bản chất] ("EN")`.
+> **[CHỐT CANONICAL 2026-06-06 · P6 Renumber]** Đã đồng bộ hoàn toàn với `axiom_spec.md`. Số La Mã đã đếm lại từ đầu theo tầng (I–IV Core, V–VII Derived, VIII Meta).
+> Quy tắc dùng: format đầy đủ = `Tiên Đề [số] — [Biểu hiện] — [Bản chất] ("EN")`.
 > Khi không gian hạn chế (menu, breadcrumb) → chỉ dùng `Tiên Đề [số] — [Biểu hiện]`.
 
-| # | Biểu hiện (thuần Việt) | Bản chất (thuần Việt) | Thuật ngữ kỹ thuật (EN) | Điểm |
-|---|---|---|---|---|
-| I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | Relational Ontology | 4.8 |
-| II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | 4.8 |
-| III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 |
-| IV | Thời Gian Dọc | Thời Gian Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 |
-| V | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | 5.0 |
-| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 |
-| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 |
-| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 |
+| # | Biểu hiện (thuần Việt) | Bản chất (thuần Việt) | Thuật ngữ kỹ thuật (EN) | Điểm | Tầng |
+|---|---|---|---|---|---|
+| I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | Relational Ontology | 4.8 | Core |
+| II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | 4.8 | Core |
+| III | Thời Gian Dọc | Thời Gian Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 | Core |
+| IV | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | 5.0 | Core |
+| V | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 | Derived |
+| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 | Derived |
+| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 | Derived |
+| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 | Meta |
 
-**Neo quan trọng (IV):** "Cội Nguồn" = tên thuần Việt cho bản chất *cảm xúc-bản sắc* của Tiên Đề IV.
+**Neo quan trọng (III):** "Cội Nguồn" = tên thuần Việt cho bản chất *cảm xúc-bản sắc* của Tiên Đề III.
 KHÔNG đồng nghĩa với "Orthogonal/trực giao" (thuật ngữ cấu trúc). Hai tầng khác nhau: essence ≠ manifestation.
 Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
 

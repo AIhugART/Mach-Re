@@ -1,0 +1,52 @@
+---
+title: |
+  "Chắc ở gốc, vững ở thân, uyển chuyển như lá cành":
+  Tái diễn giải Ngoại giao Cây Tre Việt Nam qua hệ tiên đề Mạch Rễ
+author: "Nguyễn Xuân Việt (VietVunVut)"
+date: "2026"
+lang: vi
+documentclass: article
+papersize: a4
+fontsize: 12pt
+mainfont: "Times New Roman"
+sansfont: "Arial"
+monofont: "Consolas"
+CJKmainfont: "Times New Roman"
+geometry:
+  - top=25mm
+  - bottom=25mm
+  - left=30mm
+  - right=25mm
+linestretch: 1.5
+numbersections: true
+toc: true
+toc-depth: 3
+header-includes:
+  - |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\small\itshape Ngoại giao Cây Tre qua hệ tiên đề Mạch Rễ}
+    \fancyhead[R]{\small\thepage}
+    \fancyfoot[C]{\small Paper 001 — Mạch Rễ Project}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+  - |
+    \usepackage{titlesec}
+    \titleformat{\section}{\Large\bfseries}{\thesection.}{0.5em}{}
+    \titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.5em}{}
+    \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
+  - |
+    \usepackage{hyperref}
+    \hypersetup{colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black,citecolor=blue!60!black}
+  - |
+    \usepackage{abstract}
+    \renewcommand{\abstractnamefont}{\normalfont\bfseries}
+    \renewcommand{\abstracttextfont}{\normalfont\itshape}
+  - |
+    \usepackage{booktabs}
+    \usepackage{longtable}
+  - |
+    \usepackage{enumitem}
+    \setlist{nosep}
+---

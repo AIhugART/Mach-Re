@@ -1,5 +1,17 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-06 — `when.html`: Thêm Section 0 — Địa lý như môi trường chọn lọc
+
+**RCA gate (5/5 → FIX).** Gap: `when.html` trình bày timeline Việt Nam mà không có case selection justification — người đọc có thể quy việc chọn Việt Nam cho confirmation bias (tác giả người Việt).
+
+**Root cause:** Thiếu epistemological framing phân biệt "địa lý là selection environment" khỏi "địa lý là structural origin". Giả thuyết dạng mạnh ("địa lý sinh ra Mạch Rễ") đã bị bác bỏ qua RCA 3-round × 5-Why trong cùng phiên (falsification: (1) diaspora Việt duy trì Mạch Rễ ngoài địa lý; (2) người Chăm cùng địa lý → cấu trúc đối lập).
+
+**Sửa:** Thêm `<!-- SECTION 0 -->` vào `when.html`, trước timeline hiện tại. Nội dung: (a) lưu ý phương pháp luận rõ ràng — địa lý = selection environment ≠ structural origin; (b) ba nguồn áp lực đa hướng (Hoa Hạ, sông Hằng, cận-hiện đại); (c) bảng 3 điều kiện tạo "phòng thí nghiệm tự nhiên"; (d) bảng so sánh 4 dân tộc cùng áp lực → kết quả khác nhau (Chăm, Khmer, Triều Tiên, Việt).
+
+**Bảo tồn:** Toàn bộ 6 section cũ giữ nguyên, không sửa. Section 0 là additive.
+
+---
+
 ## 2026-06-06 — P5 #1: hòa giải overclaim "Không Ai Phát Biểu Tiên Đề IV" (`axiom_4.html`)
 
 **Cổng RCA (claim, 4.6/5 → FIX).** Plan: `plan/mach-re-P5-content-reconciliation.md` (#1). P1 quét đa trang: overclaim chỉ tập trung ở `axiom_4.html` (các "không ai" khác là nghĩa lành tính; bản trong `raw/` không đụng — P4).
@@ -251,3 +263,46 @@
 - Cơ chế tự phê bình + tiêu chí phản chứng
 - Đoạn tự mổ xẻ "7 tiên đề thực ra cần 4"
 - Các sơ đồ quan hệ có kiểu (`Time = H × V`, `Identity = Pattern(R(S))`, v.v.)
+
+
+## 2026-06-06 — P6 Coordinated Renumbering Batch (đổi số La Mã toàn site)
+
+**Lý do gốc:** Thực thi Quyết định 2 về định danh (đã chốt bởi người dùng) để chuyển đổi toàn diện website sang hệ tiên đề canonical mới (Core I-IV · Derived V-VII · Meta VIII), thống nhất hiển thị và gỡ bỏ các thông báo di trú trung gian.
+
+### dictionary_rule.md
+- Cập nhật Mục 8 & 9 và chốt trạng thái canonical cho bộ thuật ngữ.
+
+### axiom_spec.md
+- Đánh dấu trạng thái migration hoàn tất tại §5.1.
+
+### what.html
+- Thay thế dải số cũ bằng hệ tiên đề canonical 4+3+1.
+- Reorder các thẻ tiên đề (Phân tán từ III -> V, Ranh giới mềm từ V -> IV, Thời gian dọc từ IV -> III).
+- Cập nhật các bảng so sánh và sơ đồ dẫn xuất ASCII.
+- Điều chỉnh phân loại pills trong kiến trúc đồng cấu (Giao điểm: I,II,V; Cầu nối: IV,VI; Khoảng trống: III,VII).
+
+### axiom_3.html (đổi tên từ axiom_4.html)
+- Chuyển đổi các nhãn và tham chiếu tự thân "Tiên Đề IV" thành "Tiên Đề III".
+- Chuyển đổi tham chiếu chéo "hay III" (Phân tán) ở dòng 396 thành "hay V".
+- Gỡ bỏ banner cảnh báo di trú trung gian.
+- Thêm chú thích HTML giải thích việc đổi tên file.
+
+### upgrade.html
+- Thay thế các nhãn "Tiên Đề IV" thành "Tiên Đề III" và "Tiên Đề III" thành "Tiên Đề V".
+- Cập nhật tham chiếu "Tiên Đề IV Nâng cấp" thành "Tiên Đề III Nâng cấp" ở dòng 376.
+- Gỡ bỏ banner cảnh báo di trú trung gian.
+
+### axiom_conflict.html
+- Remap tham chiếu "Tiên Đề IV" thành "Tiên Đề III" ở dòng 253.
+- Gỡ bỏ banner cảnh báo di trú trung gian.
+
+### index.html
+- Cập nhật mô tả thẻ "how" (IV -> III) và phần thuật ngữ chân trang (II và III -> II và V).
+
+### how.html
+- Cập nhật tham chiếu thời gian dọc (IV -> III) ở dòng 7.
+- Thêm banner chú giải tại mục 3 nêu rõ sơ đồ 3 Core Axioms cục bộ là mô hình rút gọn riêng.
+
+### mach_re_homologous.html
+- Remap toàn bộ các tham chiếu "Tiên Đề IV" sang "Tiên Đề III".
+- Gỡ bỏ banner cảnh báo di trú trung gian.

@@ -91,11 +91,11 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 ## Core Principles
 
-### Tiên Đề IV — Bản chất và Biểu hiện (RCA finding 2026-06-05)
+### Tiên Đề III — Bản chất và Biểu hiện (RCA finding 2026-06-05)
 
-> Phân tích gốc rễ (không phải hotfix). Điểm RCA: 5/5. Áp dụng bắt buộc trong mọi tài liệu, phát biểu, và so sánh triết học liên quan đến Tiên Đề IV.
+> Phân tích gốc rễ (không phải hotfix). Điểm RCA: 5/5. Áp dụng bắt buộc trong mọi tài liệu, phát biểu, và so sánh triết học liên quan đến Tiên Đề III.
 
-**Bản chất (Essence):** Thời gian trực giao (Orthogonal Temporality) — trục V và trục H là hai chiều kích thời gian **trực giao** (mathematically independent, irreducible to each other): `V ⊥ H`. Tính trực giao này là tính chất cấu trúc (structural property) nền tảng của Tiên Đề IV — lý do duy nhất để phân biệt Tiên Đề IV với "ký ức là một phần của hiện tại" (Halbwachs, Luhmann).
+**Bản chất (Essence):** Thời gian trực giao (Orthogonal Temporality) — trục V và trục H là hai chiều kích thời gian **trực giao** (mathematically independent, irreducible to each other): `V ⊥ H`. Tính trực giao này là tính chất cấu trúc (structural property) nền tảng của Tiên Đề III — lý do duy nhất để phân biệt Tiên Đề III với "ký ức là một phần của hiện tại" (Halbwachs, Luhmann).
 
 **Biểu hiện (Manifestation):** Thời gian dọc (Vertical Temporality) — hình thức mà tính trực giao hiện ra trong đời sống văn hóa xã hội: trục quan hệ tổ tiên ↕ hiện tại ↕ hậu thế. "Dọc" là cách đặt tên trực quan cho chiều trực giao đó, không phải định nghĩa cấu trúc.
 
@@ -109,16 +109,54 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 > Điểm RCA: 8/8 tiên đề đạt ≥ 4/5. Bảng canonical (nguồn chân lý duy nhất) tại `plan/dictionary_rule.md §9`.
 > Format đầy đủ: `Tiên Đề [số] — [Biểu hiện thuần Việt] — [Bản chất thuần Việt] ("EN")`.
 
-| # | Biểu hiện | Bản chất |
+| # | Tầng | Biểu hiện | Bản chất |
+|---|---|---|---|
+| I | Core | Sống Trong Quan Hệ | Có Nhau Mới Có Mình |
+| II | Core | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình |
+| III | Core | Thời Gian Dọc | Thời Gian Cội Nguồn |
+| IV | Core | Ranh Giới Mềm | Đóng Mở Có Chọn |
+| V | Derived | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần |
+| VI | Derived | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành |
+| VII | Derived | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới |
+| VIII | Meta | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ |
+
+### Paper & Publication Rules (sourced from `papers/CLAUDE_REF.md`)
+
+> Áp dụng khi viết, sửa, hoặc review bất kỳ paper nào trong `papers/`.
+
+**Tier 1 — Project-specific frameworks (đọc trước khi viết):**
+
+| Framework | File | Khi nào |
 |---|---|---|
-| I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình |
-| II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình |
-| III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần |
-| IV | Thời Gian Dọc | Thời Gian Cội Nguồn |
-| V | Ranh Giới Mềm | Đóng Mở Có Chọn |
-| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành |
-| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới |
-| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ |
+| **ESP Framework** | `papers/ESP_Framework_Scientific_Paper.md` | **Bắt buộc đọc.** Quy trình 3 lớp E→S→P (Epistemic→Structural→Presentational) cho mọi paper. Chứa RCA Stack, Claim Ladder, Sub-Question Architecture, Red Flag Audit, LLM Prompt Library. |
+| **Einstein Writing** | `papers/einstein_writing_framework.md` | 6 nguyên tắc từ Einstein 1905: epistemic honesty, open with contradiction, intuition before formalism, structured sub-questions, minimal citation, bold reasoning + careful conclusions. |
+| **RCA Scientific Paper** | `papers/SKILL_RCA_scientific_paper.md` | 5-layer RCA stack chuyên cho scientific paper. Claim Ladder (Analogy → Empirical). RCA Output Template. Red Flags list. |
+| **Scientific Paper Writing** | `papers/SKILL_scientific_paper_writing.md` | Framing rules: never self-label, anchor→gap→extend, steel-man first, scope conservatively. Verb & hedge calibration table. 5-sentence abstract formula. |
+
+**Tier 2 — Installed agent skills (routing theo giai đoạn):**
+
+| Giai đoạn | Skill | Khi nào |
+|---|---|---|
+| Research & outline | `scientific-writing` | IMRAD structure, section drafting, reporting guidelines (CONSORT/STROBE/PRISMA), venue-specific style, LaTeX `scientific_report.sty` |
+| Citations | `citation-management` | DOI → BibTeX, PubMed/Scholar search, metadata extraction, validation, dedup |
+| Format conversion | `latex-paper-conversion` | Chuyển LaTeX giữa template journals (Springer → MDPI → IEEE…) |
+| Literature lookup | `literature-search-arxiv`, `literature-search-europepmc`, `literature-search-openalex` | Tìm paper theo keyword, DOI, author |
+| Deep research | `deep-research` | Autonomous research tasks: plan → search → read → synthesize |
+
+**Tier 3 — Quy tắc bắt buộc (carry-forward từ `papers/CLAUDE_REF.md`):**
+
+1. **ESP trước khi viết** — mọi paper phải qua Layer E (RCA Stack + Claim Ladder + Boundary Statement) TRƯỚC KHI viết prose. Không skip.
+2. **RCA trước khi sửa claim** — mọi claim trong paper phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (cùng rubric §RULE ZERO ở trên).
+3. **Phản chứng** — mỗi tiên đề / claim core phải kèm điều kiện bác bỏ (falsification condition) rõ ràng.
+4. **Claim Ladder** — locate claim level (Analogy → Interpretive Mapping → Ontological Framework → Physical Model → Empirical Solution). Không viết trên mức evidence hỗ trợ.
+5. **Boundary Statement** — mỗi paper phải có: "This paper does not claim…" + "This paper claims…" trong Introduction.
+6. **Prose, không bullet** — bản nộp (manuscript) phải viết prose đầy đủ; bullet chỉ cho outline nội bộ (Stage 1 → Stage 2 workflow).
+7. **Citation traceability** — mọi claim phải trace về nguồn; mark rõ `[established]` / `[contested]` / `[interpretation]` / `[analogy]` / `[hypothesis]`. Không bịa citation.
+8. **Conservative form** — dùng "proposes", "may clarify", "one interpretation consistent with". KHÔNG dùng "revolutionary", "groundbreaking", "overturns", "proves" (trừ khi có formal proof).
+9. **Bilingual** — thuật ngữ kỹ thuật giữ English; giải thích bằng Vietnamese khi cần. Formal claims bằng English.
+10. **Avoid negatively evaluative wording** — không dùng "logical fallacy", "mistake", "wrong" khi nói về hệ khác. Dùng "scope boundary", "category boundary", "not implied by this framework".
+11. **Author metadata** — file trong `papers/` (không nằm trong `public_documents/`) thêm dòng đầu: `Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/`
+
 
 ### Document contract rules
 
