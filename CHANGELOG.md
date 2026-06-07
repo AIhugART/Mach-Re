@@ -1,5 +1,59 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` Section 1: Dời box "Phát biểu tường minh nhất" xuống sau Tiếng Việt/English
+
+**Thực hiện theo yêu cầu user.** Không RCA gate (thay đổi thứ tự trình bày, không sửa nội dung/claim).
+
+**Sửa:** Hoán vị thứ tự trong Section 1 — Tiếng Việt/English (canonical) lên trước; box "Phát biểu tường minh nhất" + gloss "cấu hình" xuống sau. Cập nhật dòng ghi chú trong box plain: "ngay bên dưới" → "ngay bên trên" (cho đúng hướng sau khi dời).
+
+**Thứ tự mới:** H2 → Tiếng Việt → English → [box plain + gloss cấu hình] → Formal Notation → box Bản chất/Biểu hiện.
+
+**Bảo tồn:** Toàn bộ nội dung hai box giữ nguyên, không sửa câu chữ nào ngoài "bên dưới" → "bên trên".
+
+---
+
+## 2026-06-07 — `axiom_3.html` Section 1: Đánh dấu canonical + sửa câu cụt trong box "Phát biểu tường minh nhất"
+
+**Cổng RCA (claim, 4.4/5 → FIX).** 3-round RCA × 5-Why.
+
+**Vấn đề 1 — vị trí:** Box "Phát biểu tường minh nhất" (bản plain) là item đầu tiên dưới H2 "Phát biểu **chính thức** (Formal Statement)", trước phát biểu Tiếng Việt/English (bản canonical). Root cause: một H2 gánh hai thứ khác tầng nhận thức (on-ramp + canonical) mà không đánh dấu trạng thái → người lướt dễ tưởng box plain là bản để trích dẫn. Kết luận RCA: **giữ vị trí đầu** (đúng progressive disclosure, nhất quán với fix jargon-first turn trước), khuyết tật thật là *trạng thái canonical chưa đánh dấu*.
+
+**Vấn đề 2 — câu cụt:** "...sau một nhiễu loạn đủ lớn hệ thống mất bất biến." — "mất bất biến" thiếu danh từ (mất *cái gì*), thiếu dấu phẩy, chưa nói rõ mất bản sắc.
+
+**Sửa 2 chỗ:**
+1. Thêm dòng ghi chú in nghiêng dưới phần "Rút gọn một câu": "Đây là điểm vào dễ nhất để nắm ý — không phải bản để trích dẫn. Bản chính thức (canonical) là phát biểu Tiếng Việt và English ngay bên dưới."
+2. Sửa câu: → "...bỏ nó đi thì sau một nhiễu loạn đủ lớn, hệ thống đánh mất bản sắc — đúng cái bất biến cấu trúc mà nó cần giữ."
+
+**Bảo tồn:** Vị trí box, nội dung phát biểu lõi, bảng 3 thành phần, falsification giữ nguyên — chỉ thêm 1 dòng đánh dấu trạng thái và làm rõ 1 câu.
+
+---
+
+## 2026-06-07 — `axiom_3.html` Section 1: Gỡ khó từ "cấu hình"
+
+**Cổng RCA (claim, 4.4/5 → FIX).** 3-round RCA × 5-Why.
+
+**Root cause:** Chữ "cấu hình" xuất hiện ngay trong box "Phát biểu tường minh nhất" (vừa thêm cùng ngày) và phát biểu Tiếng Việt, nhưng định nghĩa đầy đủ chỉ nằm ở §1C (~300 dòng dưới, nối qua link `#rca-configuration`). Box có mục đích "dễ nhất" lại rò rỉ từ "khó nhất" mà không gloss tại chỗ → tự mâu thuẫn mục đích; gloss tồn tại nhưng không ở-gần điểm dùng.
+
+**Sửa 2 chỗ:**
+1. **Box lõi** — thay "các cấu hình đã qua và chưa tới" → "những thế hệ đã qua và chưa tới — không chỉ con người, mà với cả *nếp tổ chức* của họ (quan hệ, giá trị, quy tắc)" (bỏ jargon khỏi box plain nhất).
+2. **Thêm gloss "Đọc nhanh — cấu hình nghĩa là gì?"** ngay sau box lõi (trước "Tiếng Việt"): định nghĩa plain (thành phần + mạng lưới quan hệ = "bức ảnh toàn cảnh"), ví dụ hai gia đình cùng số người khác nếp → hai cấu hình, và diễn giải "cấu hình đã qua/chưa tới" theo nghĩa nếp tổ chức tổ tiên/hậu thế. Vẫn trỏ §1C cho lý do chọn thuật ngữ.
+
+**Bảo tồn:** Định nghĩa §1C và phát biểu Tiếng Việt/English giữ nguyên; gloss mới là additive, đặt ngay điểm dùng. Đồng bộ với §1C (không định nghĩa lại khác đi).
+
+---
+
+## 2026-06-07 — `axiom_3.html` Section 1: Thêm box "Phát biểu tường minh nhất"
+
+**Cổng RCA (claim, 4.6/5 → FIX).** 3-round RCA × 5-Why.
+
+**Root cause:** Section 1 có 5+ phát biểu Tiên Đề III (def-box dòng 223, 385, 3 "định dạng"), nhưng mỗi phát biểu đều mở đầu bằng thuật ngữ kỹ thuật ("orthogonal", "ontological", "configuration") rồi mới đến nội dung — *jargon-first ordering*. Người đọc hỏi "tiên đề này khẳng định điều gì, trần trụi nhất?" phải tự lắp ráp từ 4 lớp (cấu trúc + bản thể học + cơ chế + biểu hiện). Gốc: chưa tách được **mệnh đề lõi** (lõi = tính trực giao V không phải tập con của H; bỏ chữ này thì sụp về Halbwachs/Luhmann) khỏi các hệ quả và biểu hiện.
+
+**Sửa:** Chèn `<div class="def-box">` "Phát biểu tường minh nhất (Plainest Statement)" làm box **dẫn đầu** Section 1, ngay sau H2, trước phần "Tiếng Việt" — fix đúng gốc (plain-statement-first). Nội dung: (a) phát biểu lõi đã bóc hết ẩn dụ/biểu hiện; (b) bản rút gọn một câu; (c) bảng 3 thành phần không-được-thiếu kèm "bỏ đi thì sụp thành gì"; (d) điều kiện phản chứng (falsification) 2 nhánh.
+
+**Bảo tồn:** Toàn bộ phát biểu cũ (def-box 223/385, 3 định dạng, box Bản chất/Biểu hiện) giữ nguyên — box mới là additive, đặt trước để làm điểm vào dễ nhất; dùng class CSS sẵn có, không sửa style.
+
+---
+
 ## 2026-06-07 — `papers/paper_003/paper_003_draft.md`: Thêm Bảng Giải Thích Thuật Ngữ Cấp Học Sinh (Glossary)
 
 **Cổng RCA (claim, 5/5 → FIX).**
