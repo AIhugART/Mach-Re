@@ -1,5 +1,33 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` glossary: thêm "Inherited Patterns / nề nếp" + hyperlink · 5/5 → FIX
+
+**Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** 2 hành động: (1) thêm hàng glossary "Inherited Patterns / nề nếp"; (2) thêm hyperlink EN + VI → `#formal-statement`. Cả hai đạt 5/5.
+
+### Thêm hàng glossary · **5/5 → FIX**
+- *Root*: "nề nếp" xuất hiện ở Formal Statement (dòng 237) nhưng vắng glossary — vi phạm contract "mọi thuật ngữ chuyên ngành trong tài liệu".
+- *Sửa*: thêm hàng cuối bảng — EN: `Inherited Patterns`, VI: `nề nếp`, Ghi chú: "truyền thống / tập quán văn hóa — phân biệt với 'nếp tổ chức' (structural configuration)".
+
+### Thêm hyperlink EN + VI → `#formal-statement` · **5/5 → FIX**
+- *Root*: hàng mới không có link ngược về nơi dùng, vi phạm truy vết hai chiều mà document architecture thực hiện nhất quán ở mọi term khác (nếp tổ chức → `#rca-configuration`, mạch tồn tại → `#rca-ontological`).
+- *Sửa*: thêm `id="formal-statement"` vào `<section>` §1 (dòng 230); wrap "Inherited Patterns" và "nề nếp" trong glossary với `<a href="#formal-statement">`.
+- *Bảo tồn*: nội dung không thay đổi; style link giữ màu gốc của từng cột (`color:#b05040` cho EN, `color:inherit` cho VI).
+
+---
+
+## 2026-06-07 — `axiom_3.html` Formal Statement: "nếp" → "nề nếp" · 5/5 → FIX
+
+**Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** Vị trí: dòng 237, Phát biểu chính thức (Formal Statement), Tiếng Việt (Việt hóa bản sắc). 1 ứng viên; đạt ngưỡng 5/5 → FIX.
+
+### "kế thừa nếp từ" → "kế thừa nề nếp từ" · **5/5 → FIX**
+- *Symptom (R1)*: "kế thừa **nếp** từ các **nếp** tổ chức" — từ "nếp" xuất hiện hai lần liên tiếp: một lần đơn lẻ, một lần trong thuật ngữ kỹ thuật "nếp tổ chức" → người đọc không phân biệt được nghĩa.
+- *Mechanism (R2)*: Formal Statement là *source of truth* cho mọi tài liệu downstream; category blur giữa "nếp" (văn hóa) và "nếp tổ chức" (structural configuration) tại đây sẽ lan toàn hệ.
+- *Root (R3)*: "nếp" đơn lẻ trong "kế thừa nếp từ" không phân biệt được với thuật ngữ kỹ thuật "nếp tổ chức" ngay sau đó trong cùng câu, vi phạm yêu cầu nhất quán thuật ngữ nội tại của framework.
+- *Sửa*: dòng 237 `kế thừa nếp từ các nếp tổ chức quá khứ` → `kế thừa nề nếp từ các nếp tổ chức quá khứ`. "Nề nếp" (truyền thống / tập quán văn hóa) tách biệt hoàn toàn với "nếp tổ chức" (structural configuration).
+- *Bảo tồn*: toàn bộ cấu trúc câu, anchor, link giữ nguyên; chỉ thêm "nề" trước "nếp" đứng độc lập.
+
+---
+
 ## 2026-06-07 — `axiom_3.html` Việt hóa trục V/H trong prose: 6 fix qua gate 4/5, GIỮ nhóm formal
 
 **Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** Yêu cầu user: `trục dọc thế hệ (V)` / `Mối quan hệ thế hệ (trục dọc V)` / `trục dọc V` → "mạch cội dọc"; `trục ngang H` → "mạch nguồn ngang". 10 ứng viên; 6 (prose) đạt ngưỡng → FIX, 4 (formal) dưới ngưỡng → GIỮ.
