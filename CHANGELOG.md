@@ -666,3 +666,14 @@ Ba tên cùng dùng tiền tố "Mạch", nhất quán với tên dự án "Mạ
 ### mach_re_homologous.html
 - Remap toàn bộ các tham chiếu "Tiên Đề IV" sang "Tiên Đề III".
 - Gỡ bỏ banner cảnh báo di trú trung gian.
+
+## 2026-06-07 — Bổ sung phần giải thích các nhãn phân loại học thuật (RCA) cho Paper 005
+
+**Lý do:** Bổ sung bảng giải thích ý nghĩa của các nhãn phân loại học thuật/RCA (`[established scholarship]`, `[contested scholarship]`, `[project interpretation]`, `[analogy]`, `[hypothesis]`) vào phần cuối của Paper 005 nhằm tăng tính tự giải thích và minh bạch học thuật cho người đọc.
+
+### paper_005.md
+- Bổ sung chương "## Ý NGHĨA CÁC NHÃN PHÂN LOẠI HỌC THUẬT (RCA)" ở cuối tệp.
+
+### paper_005.html & paper_005.pdf
+- Biên dịch lại từ tệp Markdown để cập nhật nội dung đồng bộ.
+
