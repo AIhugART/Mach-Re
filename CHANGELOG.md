@@ -1,5 +1,24 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` Section 1: Cập nhật thuật ngữ "chiều kích bản thể học" → "mạch tồn tại" trong phát biểu Tiếng Việt
+
+**Cổng RCA (terminology, 4.8/5 → FIX).** Thực hiện theo yêu cầu của user.
+
+**RCA (3-round × 5-Why):**
+- *Symptom (Round 1)*: Thuật ngữ chuyên môn dịch gốc phương Tây "chiều kích bản thể học" (ontological dimension) quá hàn lâm và trừu tượng, tạo khoảng cách nhận thức đối với độc giả phổ thông khi đọc phát biểu Tiếng Việt.
+- *Mechanism (Round 2)*: Từ "chiều kích" mang tính tĩnh của không gian hình học, trong khi "Mạch Rễ" vốn đang mô tả sự tồn tại và tự tạo của hệ thống như một dòng chảy động, xuyên thế hệ. Việc duy trì từ Hán-Việt hàn lâm này ở ngay phát biểu Tiếng Việt chính thức mâu thuẫn với nỗ lực Việt hóa và làm trực quan hóa triết lý Mạch Rễ.
+- *Root cause (Round 3)*: Chưa bản địa hóa triệt để thuật ngữ triết học phương Tây theo nguyên lý *Upāya* (phương tiện thiện xảo) và tính nhất quán với cốt tủy tên dự án "Mạch Rễ" (hướng tới các thực thể tự nhiên động).
+- *Hướng giải quyết*: Thay thế bằng "mạch tồn tại". "Mạch" vừa biểu thị tính liên kết (mạch nguồn, mạch cội), vừa biểu thị sự sống động của cấu trúc nâng đỡ hệ thống; "mạch tồn tại" phản ánh chính xác ontological dimension một cách giản dị, thuần Việt và tự nhiên hơn.
+
+**Sửa:**
+- Thay thế cụm từ `"chiều kích bản thể học"` bằng `"mạch tồn tại"` trong phát biểu chính thức Tiếng Việt tại Section 1 của [axiom_3.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_3.html).
+
+**Bảo tồn**:
+- Giữ nguyên anchor liên kết `href="#rca-ontological"` để bảo đảm khả năng điều hướng bài viết đến phần giải nghĩa chi tiết ở dưới.
+- Giữ nguyên nhãn "ontological dimension" ở phiên bản tiếng Anh (English statement) để đối chiếu chính xác với các prior-art học thuật.
+
+---
+
 ## 2026-06-07 — `axiom_3.html`: Việt hóa hoàn toàn phát biểu Tiếng Việt Section 1 & Tinh chỉnh thuật ngữ
 
 **Thực hiện theo yêu cầu và đồng thuận của user.** Không qua RCA gate (đây là tinh chỉnh ngôn từ phát biểu và Việt hóa thuật ngữ, không thay đổi core claim).
