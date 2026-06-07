@@ -1,5 +1,19 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-08 — `paper_005` Tiên Đề III: sync theo `axiom_spec.md` · RCA 5/5
+
+**Hành động:** Đồng bộ `paper_005.md` + `paper_005.html` theo nguồn chân lý `axiom_spec.md`.
+
+**RCA findings (3-round × 5-Why × scoring 5/5 → FIX):**
+
+- **Abstract** (5/5 → FIX): "Mạch Cội Dọc" → "Mạch Cội Nguồn" trong danh sách 4 tiên đề cốt lõi. Root: abstract liệt kê tên tiên đề theo nguyên lý bản thể học → dùng bản chất (essence).
+- **§4.3 header** (5/5 → FIX): "Mạch Cội Dọc:" → "Mạch Cội Nguồn (Orthogonal Temporality):" — nhất quán với canonical header `axiom_spec.md §2`.
+- **§4.3 phát biểu** (5/5 → FIX): cập nhật tên + nội dung thêm "mạch tồn tại / ontological dimension, không phải ẩn dụ". Root: phát biểu cũ thiếu claim bản thể học cốt lõi được chốt trong `axiom_spec.md` (sync từ `axiom_3.html` session trước).
+
+**Files changed:** `papers/paper_005/paper_005.md`, `papers/paper_005/paper_005.html`.
+
+---
+
 ## 2026-06-08 — `axiom_spec.md` Tiên Đề III: đồng bộ theo `axiom_3.html` · RCA sync (single source of truth)
 
 **Hành động:** Cập nhật spec canonical Tiên Đề III theo `axiom_3.html` — nguồn chân lý phát triển đầy đủ nhất.
