@@ -1,5 +1,24 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html`: Việt hóa hoàn toàn phát biểu Tiếng Việt Section 1 & Tinh chỉnh thuật ngữ
+
+**Thực hiện theo yêu cầu và đồng thuận của user.** Không qua RCA gate (đây là tinh chỉnh ngôn từ phát biểu và Việt hóa thuật ngữ, không thay đổi core claim).
+
+**Sửa:**
+1. **Việt hóa thuật ngữ**:
+   - Thay thế toàn bộ cụm từ tiếng Anh còn sót trong phát biểu chính thức Tiếng Việt tại Section 1: `(past → present → future)` thành `(quá khứ → hiện tại → tương lai)`.
+   - Lược bỏ phụ đề `(pattern)` sau từ `khuôn mẫu` vì nghĩa tiếng Việt đã tự đủ và rõ ràng.
+2. **Cập nhật thuật ngữ "nếp tổ chức"**:
+   - Thay thế từ "cấu hình" thành "nếp tổ chức" trong phát biểu Tiếng Việt tại Section 1 (3 vị trí: các nếp tổ chức hiện tại, các nếp tổ chức đã qua, các nếp tổ chức chưa đến), nhất quán với định nghĩa chi tiết tại §1C.
+3. **Dịch "resilience"**:
+   - Dịch "resilience" thành "sức bền" (sức bền hệ thống / sức bền văn hóa) trong các ngữ cảnh tiếng Việt liên quan để thuần Việt hóa hoàn toàn ngôn ngữ trình bày.
+
+**Bảo tồn**:
+- Giữ nguyên các thẻ liên kết `href` (ví dụ `#rca-configuration`) để đảm bảo các liên kết điều hướng trong trang không bị hỏng.
+- Giữ nguyên phiên bản tiếng Anh (English statement) và các ký hiệu kỹ thuật trong hộp ASCII (như `Past_configs`) để duy trì tính đối chiếu cấu trúc học thuật.
+
+---
+
 ## 2026-06-07 — Global rename: "Thời Gian Dọc" → "Mạch Cội Dọc" và "Thời Gian Ngang" → "Mạch Nguồn Ngang"
 
 **Thực hiện theo xác nhận user.** Không qua RCA gate (đây là rename thuật ngữ đồng thuận, không phải sửa claim).
