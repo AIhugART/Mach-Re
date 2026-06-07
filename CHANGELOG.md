@@ -15,6 +15,7 @@
 - Sửa dấu câu và viết hoa đúng chính tả: Viết hoa chữ cái đầu câu cho từ `Mạch` trong cụm liên kết `Mạch cội dọc` ở đầu câu thứ hai.
 - Tinh chỉnh từ ngữ liên kết ở vế sau phát biểu: Thay đổi `hướng tới` thành `truyền tới` để thể hiện rõ nét hơn tính truyền thừa, tiếp nối nếp tổ chức đến hậu thế.
 - Đồng bộ hóa định nghĩa thời gian: Thay thế `nếp tổ chức đã qua` thành `nếp tổ chức quá khứ` và `nếp tổ chức chưa đến` thành `nếp tổ chức tương lai` để tương hợp chính xác với chú thích hệ thời gian `(quá khứ → hiện tại → tương lai)` ở vế trước.
+- Tinh chỉnh động từ liên kết: Thay thế `"kết nối với"` thành `"chạm tới"` (tổng hợp lại chuyển đổi từ `"truy cập"` ban đầu thành `"chạm tới"`) để tăng tính gần gũi, trực giác và bản sắc của Mạch Rễ.
 
 **Bảo tồn**:
 - Giữ nguyên anchor liên kết `href="#rca-ontological"` để bảo đảm khả năng điều hướng bài viết đến phần giải nghĩa chi tiết ở dưới.
