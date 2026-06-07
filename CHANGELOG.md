@@ -1,5 +1,30 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` Việt hóa trục V/H trong prose: 6 fix qua gate 4/5, GIỮ nhóm formal
+
+**Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** Yêu cầu user: `trục dọc thế hệ (V)` / `Mối quan hệ thế hệ (trục dọc V)` / `trục dọc V` → "mạch cội dọc"; `trục ngang H` → "mạch nguồn ngang". 10 ứng viên; 6 (prose) đạt ngưỡng → FIX, 4 (formal) dưới ngưỡng → GIỮ.
+
+### Phát hiện gốc rễ (R3)
+`mạch cội dọc` = Vertical Temporality = **biểu hiện (manifestation)**; còn `Trục V ⊥ trục H`, `V ⊆ H`, `tập con của H` = **essence/cấu trúc hình thức** (`CLAUDE.md §Core Principles`, RCA 2026-06-05 score 5/5). Thay tên biểu hiện vào tầng essence sẽ tạo mâu thuẫn nội tại với chính dòng 294–296 (nơi file tự phân biệt essence ≠ manifestation) → đúng loại category error RULE ZERO cấm. Do đó phân loại theo ngữ cảnh, không tìm-thay máy móc.
+
+### FIX — prose/bản thể học (≥ 4/5)
+- *497* (5.0): `trục dọc thế hệ (V)` → `mạch cội dọc (V)` (card Bản thể học, ví dụ user).
+- *509* (5.0): `Mối quan hệ thế hệ (trục dọc V)` → `Mối quan hệ thế hệ (mạch cội dọc)` (ví dụ user).
+- *510* (4.6): `cắt đứt trục dọc này` → `cắt đứt mạch cội dọc này` (mở rộng nhất quán).
+- *531* (4.2): `trục ngang H (…) và trục dọc V (…)` → `mạch nguồn ngang (…) và mạch cội dọc (…)` (RCA Why 3-5; giữ khung "hai chiều trực giao độc lập"; là chỗ "trục ngang H" literal duy nhất).
+- *577* (4.4): `thứ trục dọc đang duy trì` → `thứ mạch cội dọc đang duy trì` (mở rộng nhất quán).
+- *583* (4.2): `Trục dọc (Vertical Time)` → `Mạch cội dọc (Vertical Time)` (mở rộng nhất quán).
+
+### GIỮ NGUYÊN (< 4/5 cho hành động convert — convert sẽ phá tầng essence)
+- *265* (convert 1.8): `trục V độc lập, không là tập con của H` — set object.
+- *272* (convert 1.6): `liên tục theo trục H… tức V ⊆ H` — phản chứng, ký hiệu tập hợp.
+- *294* (convert 1.2): `Trục V ⊥ trục H` — nhãn tường minh "Bản chất (Essence)".
+- *277–287* (convert 1.0): ASCII formal notation `H (ngang)`, `V = ∅`, `depth(V)`.
+
+**Bảo tồn chung:** toàn bộ cấu trúc/layout/anchor/JS giữ nguyên; tầng essence & formal notation không đụng; 6 fix chỉ là đồng bộ thuật ngữ trong prose.
+
+---
+
 ## 2026-06-07 — `axiom_3.html` RCA logic nội tại: 4 fix (A, B, E, F) qua gate 4/5
 
 **Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** Quét logic nội tại toàn file theo yêu cầu user. 7 ứng viên A–G; 4 đạt ngưỡng → FIX, 3 dưới ngưỡng → GIỮ.
