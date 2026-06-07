@@ -77,16 +77,18 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ---
 
-#### Tiên Đề III — Mạch Cội Dọc (Vertical / Orthogonal Temporality) · *"Mạch Cội Dọc — Mạch Cội Nguồn"*
+#### Tiên Đề III — Mạch Cội Dọc — Mạch Cội Nguồn (Orthogonal Temporality)
 - **Loại:** Core Axiom (ontological). *(Đánh số mới III; hệ cũ là IV.)*
 - **Bản chất (essence):** **Orthogonal Temporality** — trục dọc V (xuyên thời gian: tổ tiên ↕ hậu thế) *trực giao* trục ngang H (quan hệ đương đại): `V ⊥ H`, không rút gọn về nhau.
 - **Biểu hiện (manifestation):** **Vertical Temporality** — hình thức trục dọc trong đời sống văn hóa. (Hai tầng essence ≠ manifestation — `dictionary §8`.)
-- **Phát biểu:** Mạng quan hệ cấu thành bản sắc trải *xuyên thời gian*; chiều dọc là *điều kiện tồn tại*, không chỉ điều kiện nhận thức.
+- **Phát biểu (VI):** Bất biến cấu trúc (bản sắc) của một hệ thống không được duy trì trong mạch nguồn ngang (H: quá khứ → hiện tại → tương lai) mà được duy trì qua mạch cội dọc — cơ chế mà qua đó các *nếp tổ chức* hiện tại kế thừa *nề nếp* từ tổ tiên và truyền tới hậu thế. Mạch cội dọc là *mạch tồn tại* (cấu trúc thực tế đang nâng đỡ hệ thống), không phải ẩn dụ.
+- **Phát biểu (EN):** The structural invariant (identity) of a complex system is not maintained in horizontal time (H: past → present → future) but is maintained through the vertical temporal interface — the mechanism by which present configurations access and inherit patterns of past configurations (ancestors) and project onto future ones (descendants). Vertical time is an *ontological dimension* (the actual structure sustaining the system), not a metaphor.
+- **Ba thành phần cốt lõi (không câu nào được phép thiếu):** (1) **Phủ định H** — bản sắc không nhờ trôi liên tục dọc H; (2) **Trực giao** — V độc lập, không là tập con của H (`V ⊄ H`); (3) **Điều kiện sống còn** — V là cấu trúc thật, bỏ đi thì hệ mất bất biến sau nhiễu loạn lớn.
 - **Triangulation:** A-yếu (Phan Ngọc nghiêng đồng đại) · B (Weick: retrospect; Ashby: stored history) · **C** (Pratītyasamutpāda: nhân quả xuyên thời gian — neo mạnh nhất) — **~2.5/3**.
 - **5 tiêu chí:** Độc lập 5 · Nhất quán 5 · Phủ đầy 5 · Tối giản 4 · Ontological 5 → **4.8**.
-- **Điều kiện phản chứng (V⊥H falsifier):** SAI nếu một bản sắc tập thể sống sót áp lực kéo dài *chỉ bằng* quan hệ đồng đại (H), không có chiều dọc cấu thành. (Ranh giới phân biệt với Halbwachs/Luhmann.)
+- **Điều kiện phản chứng (V⊥H falsifier):** SAI nếu chỉ ra được một trong hai: (1) một hệ thống giữ được bất biến cấu trúc qua nhiễu loạn lớn *chỉ bằng* liên tục theo trục H, không cần neo trục V (phá thành phần 3); hoặc (2) mọi "nối kết trục V" thực chất *rút gọn được* về trí nhớ / ghi chép trên trục H — tức V ⊆ H (phá thành phần 2, tính trực giao biến mất). (Ranh giới phân biệt với Halbwachs/Luhmann.)
 - **Prior-art:** Heidegger (*Geschichtlichkeit*), Gadamer (*Wirkungsgeschichte*), Burke, Pratītyasamutpāda. *Phân biệt:* các hệ này nói ảnh hưởng quá khứ→hiện tại; Tiên Đề III đặt tính *trực giao* làm điều kiện tồn tại.
-- **Đóng góp:** Extension (+ Novel ở tính trực giao).
+- **Đóng góp:** Extension (+ Novel ở tính trực giao; mạch cội dọc là *mạch tồn tại* — ontological dimension, không phải metaphor).
 
 ---
 
