@@ -1,5 +1,16 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` hyperlink hai chiều: Formal Statement ↔ glossary "Inherited Patterns / nề nếp"
+
+**Hành động:** thêm `id="glossary-inherited-patterns"` vào glossary row; link "nề nếp" (VI, dòng 237) và "inherit patterns" (EN, dòng 245) → `#glossary-inherited-patterns`; glossary row đã có link ngược `#formal-statement` từ commit trước.
+
+- *237 VI*: `kế thừa nề nếp từ` → `kế thừa <a href="#glossary-inherited-patterns">nề nếp</a> từ` (style: `var(--accent)`, underline — nhất quán với các link cùng câu).
+- *245 EN*: `access and inherit patterns` → `access and <a href="#glossary-inherited-patterns">inherit patterns</a>` (style: `var(--green)`, underline — nhất quán với EN def-box).
+- *1328 Glossary*: thêm `id="glossary-inherited-patterns"` vào `<tr>`.
+- *Bảo tồn*: không thay đổi nội dung, cấu trúc, hay các link hiện có trong cùng câu.
+
+---
+
 ## 2026-06-07 — `axiom_3.html` glossary: thêm "Inherited Patterns / nề nếp" + hyperlink · 5/5 → FIX
 
 **Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** 2 hành động: (1) thêm hàng glossary "Inherited Patterns / nề nếp"; (2) thêm hyperlink EN + VI → `#formal-statement`. Cả hai đạt 5/5.
