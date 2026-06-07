@@ -1,5 +1,23 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` Section 1: Tinh chỉnh câu rút gọn "cắm thẳng" → "nối thẳng" trong Plainest Statement
+
+**Cổng RCA (terminology, 4.8/5 → FIX).** Thực hiện theo yêu cầu của user.
+
+**RCA (3-round × 5-Why):**
+- *Symptom (Round 1)*: Động từ "cắm thẳng" mang cảm giác cơ học, tĩnh và hơi thô ráp trong câu tóm tắt rút gọn của Tiên Đề III.
+- *Mechanism (Round 2)*: Từ "cắm" (như cắm cọc, cắm mốc) gợi lên trạng thái cố định về mặt không gian địa lý, trong khi Mạch Rễ đang mô tả tính liên kết mạng lưới (relational network) và dòng chảy thông tin/bản sắc động của hệ thống tự tạo (autopoietic system). Việc dùng từ mang nghĩa cơ học thô ráp làm mờ đi tính chất liên kết quan hệ linh động.
+- *Root cause (Round 3)*: Chưa tối ưu hóa ngôn từ theo nguyên lý *Upāya* và tính nhất quán với Tiên Đề I (Quan hệ bản thể - Relational Ontology, vạn vật duyên khởi và luôn kết nối/nối kết với nhau).
+- *Hướng giải quyết*: Thay thế bằng "nối thẳng". Từ "nối" biểu đạt chính xác tính liên kết mạng lưới và dòng chảy liên thông của mạch cội dọc, nhất quán với các cụm từ khác trong cùng box ("nối trực tiếp", "nối kết theo trục").
+
+**Sửa:**
+- Thay thế `"vẫn cắm thẳng vào quá khứ và tương lai"` thành `"vẫn nối thẳng vào quá khứ và tương lai"` trong câu rút gọn của box "Phát biểu tường minh nhất" tại Section 1 của [axiom_3.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_3.html).
+
+**Bảo tồn**:
+- Giữ nguyên các nội dung và cấu trúc so sánh, phản chứng khác trong cùng box "Phát biểu tường minh nhất".
+
+---
+
 ## 2026-06-07 — `axiom_3.html` Section 1: Cập nhật thuật ngữ "chiều kích bản thể học" → "mạch tồn tại" trong phát biểu Tiếng Việt
 
 **Cổng RCA (terminology, 4.8/5 → FIX).** Thực hiện theo yêu cầu của user.
