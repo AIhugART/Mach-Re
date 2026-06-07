@@ -1,5 +1,18 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axioms.html` + `what.html` Tiên Đề III: đồng bộ stmt + phản chứng theo `axiom_3.html` · RCA sync
+
+**Hành động:** Cập nhật card Tiên Đề III trong cả hai file theo nguồn chân lý `axiom_3.html` (Section 1 "Phát biểu tường minh nhất" + Section 1C "Mạch Tồn Tại · Chiều kích Bản thể học").
+
+**RCA findings (3-round × 5-Why × scoring):**
+
+- **stmt** (4.5/5 → FIX): "chiều dọc là *điều kiện tồn tại*, không chỉ điều kiện nhận thức" không dùng thuật ngữ canonical "mạch tồn tại / ontological dimension". Root: stmt được viết trước Section 1C xác lập khái niệm này. Fix: `mạch cội dọc là *mạch tồn tại* — chiều kích bản thể học (ontological dimension) của hệ thống`.
+- **phản chứng** (5/5 → FIX): chỉ có 1 điều kiện (thiếu V) — bỏ qua điều kiện 2 (V ⊆ H, mất trực giao) là claim gốc rễ nhất của Tiên Đề III. Root: phản chứng viết trước "Ba thành phần không câu nào được phép thiếu" trong `axiom_3.html`. Fix: thêm cả hai điều kiện.
+
+**Files changed:** `axioms.html` (Tiên Đề III article), `what.html` (Tiên Đề III article trong section Hệ Tiên Đề).
+
+---
+
 ## 2026-06-07 — `axiom_3.html` hyperlink hai chiều: Formal Statement ↔ glossary "Inherited Patterns / nề nếp"
 
 **Hành động:** thêm `id="glossary-inherited-patterns"` vào glossary row; link "nề nếp" (VI, dòng 237) và "inherit patterns" (EN, dòng 245) → `#glossary-inherited-patterns`; glossary row đã có link ngược `#formal-statement` từ commit trước.
