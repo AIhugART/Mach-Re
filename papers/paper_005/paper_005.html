@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Paper 005</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Paper 005</h1>
+</header>
+<p>Author: VietVunVut (Viet - Nguyen Xuan); GitHub:
+https://github.com/AIhugART/ Facebook:
+https://www.facebook.com/xuanviet</p>
+<hr />
+<h1
+id="ứng-dụng-mạch-rễ-phân-tích-nhận-định-không-có-triết-học-việt-nam-tiên-đề-viii-như-điều-kiện-tự-phản-tư-và-hướng-tới-khắc-phục">Ứng
+dụng Mạch Rễ phân tích nhận định “Không có triết học Việt Nam”: Tiên đề
+VIII như điều kiện tự phản tư và hướng tới khắc phục</h1>
+<p><strong>Tác giả:</strong> VietVunVut (Việt - Nguyễn Xuân)</p>
+<p><strong>Tóm tắt:</strong> Nhận định “không có triết học Việt Nam” —
+rằng dân tộc Việt Nam chỉ tiếp thu rời rạc, giáo điều, thiếu sáng tạo
+các hệ tư tưởng ngoại lai — đã tồn tại hơn một thế kỷ trong giới học
+thuật, được xác nhận bởi nhiều tên tuổi từ Léopold-Michel Cadière đến
+Đào Duy Anh, Vũ Trọng Phụng, Thạch Lam, mà chưa được phản bác thỏa đáng
+ở cấp cấu trúc. Các phản bác trước đây thường liệt kê thành tựu tư tưởng
+Việt Nam để chứng minh “có triết học”, nhưng không đặt câu hỏi về chính
+thước đo được sử dụng để phán xét “có hay không”. Bài viết này tiếp cận
+vấn đề theo hướng khác: thay vì tranh luận về nội dung, chúng tôi phân
+tích cấu trúc của thước đo. Áp dụng hệ tiên đề Mạch Rễ (Root-Circuit) —
+gồm bốn tiên đề cốt lõi (Quan Hệ Bản Thể, Bất Biến Cấu Trúc, Mạch Cội
+Dọc, Biên Giới Động) và một meta-tiên đề (Tự Nhìn Thấy Mình) — lên từng
+phần của nhận định, chúng tôi lập luận rằng nhận định “không có triết
+học” mắc một lỗi phạm trù (category error): đánh giá một hệ triết học
+tương quan-phân tán bằng thước đo của triết học hệ thống-siêu hình. Các
+đặc trưng bị coi là khuyết điểm — thiên trực giác, thiếu hệ thống mệnh
+đề, giản lược hóa nội dung ngoại lai — đều là biểu hiện có thể giải
+thích của một loại hình triết học khác, không phải bằng chứng của sự
+vắng mặt triết học. Tiên đề VIII (Tự Nhìn Thấy Mình) được đề xuất như
+điều kiện tự phản tư: hướng tới một chương trình nghiên cứu triết học
+Việt Nam không mô phỏng dạng siêu hình phương Tây mà kích hoạt năng lực
+tự nhìn nhận nội tại.</p>
+<p><strong>Từ khóa:</strong> triết học Việt Nam, triết học so sánh, lỗi
+phạm trù, bản thể học tương quan, Mạch Rễ, phản tư hệ thống, Tiên đề
+VIII.</p>
+<hr />
+<h2
+id="bức-tranh-toàn-cảnh-nhận-định-rỗng-triết-học-từ-cadière-đến-đào-duy-anh">1.
+BỨC TRANH TOÀN CẢNH: NHẬN ĐỊNH “RỖNG TRIẾT HỌC” TỪ CADIÈRE ĐẾN ĐÀO DUY
+ANH</h2>
+<h3 id="văn-bản-nguồn">1.1 Văn bản nguồn</h3>
+<p>Nhận định về đặc điểm triết học Việt Nam mà bài viết này phân tích
+xuất phát từ một cụm các phát biểu học thuật có thể nhóm lại như sau
+(<code>[established scholarship]</code>):</p>
+<p><strong>(a) Về năng lực sáng tạo và hệ thống:</strong></p>
+<blockquote>
+<p>“Không có sáng tạo, chỉ có vay mượn; chỉ có áp dụng, chỉ có thích
+nghi. Đó là sự thật của lịch sử tư tưởng chính thống Đại Việt.”</p>
+</blockquote>
+<blockquote>
+<p>“Tư tưởng triết học Việt Nam là bản sao chép rời rạc mang tính giáo
+điều thiếu sáng tạo, là sự thu nhỏ của triết học Ấn Độ và Trung
+Quốc.”</p>
+</blockquote>
+<p><strong>(b) Đào Duy Anh nhận xét trong <em>Việt Nam văn hóa sử
+cương</em> (1938):</strong></p>
+<blockquote>
+<p>“Về tính chất tinh thần, thì người Việt Nam đại khái thông minh,
+nhưng xưa nay thấy ít người có trí tuệ lỗi lạc phi thường. Sức ký ức thì
+phát đạt lắm, mà giàu trí nghệ thuật hơn trí khoa học, giàu trực giác
+hơn luận lý. Phần nhiều người có tính ham học, song thích văn chương phù
+hoa hơn là thực học, thích thành sáo và hình thức hơn là tư tưởng hoạt
+động. Não tưởng tượng thường bị não thực tiễn hoãn bớt, cho nên dân tộc
+Việt Nam ít người mộng tưởng mà phán đoán thường có vẻ thiết thực.”</p>
+</blockquote>
+<p><strong>(c) Vũ Trọng Phụng:</strong></p>
+<blockquote>
+<p>“Tôi tin rằng đất Đại Cồ Việt ta là cái đất cằn cỗi, những lý thuyết
+và tư tưởng đâu đâu, tốt đẹp thế nào mặc lòng cũng cứ đến đây là thành
+thối nát. Tôi không tin dân An Nam ta lại có nổi một điều tín ngưỡng
+nào, một quan điểm chắc chắn gì.”</p>
+</blockquote>
+<p><strong>(d) Thạch Lam:</strong></p>
+<blockquote>
+<p>“Chúng ta có cái đời sống bên trong rất nghèo nàn và rất bạc nhược…
+Chúng ta đổi lòng tín ngưỡng sâu xa ra một tín ngưỡng thiển cận và nông
+nổi, giữ cái vươn cao về đạo giáo của tâm hồn xuống mực thước sự săn sóc
+nhỏ bé về ấm no.”</p>
+</blockquote>
+<p><strong>(e) Léopold-Michel Cadière — phát biểu đầy đủ
+nhất:</strong></p>
+<blockquote>
+<p>“Không có triết học Việt Nam. Cùng với toàn bộ văn hóa Trung quốc,
+dân Việt đã thâu nhận lấy những nguyên lý triết học lâu đời được người
+Tàu chấp nhận. Người Việt đã không in được vào những nguyên lý ấy một
+sắc thái riêng nào cả, họ không thay đổi gì, và có thể nói là họ cũng
+chẳng đả động gì đến cả. Các học thuyết trong kinh điển truyền sang thế
+nào, thì nho sĩ Việt Nam chấp nhận như thế; riêng lối giải thích của Chu
+Hi, thì họ tiếp nhận mà không tranh luận gì cả, thường thì họ không hiểu
+cho đúng, và cũng chẳng đào sâu thêm nữa. Trừ mấy tác phẩm về luân lý
+ra, thì không có tác phẩm triết học nào gốc từ Việt Nam mà ra. Vì thế,
+khi nói là không có triết học Việt Nam, thì tôi có ý nói là không có một
+hệ thống triết học, không có những học thuyết có thể xếp thành một bộ
+môn, không có một triết học có lý sự, tóm tắt được những nỗ lực tìm tòi,
+suy tư, ngưỡng vọng, của tâm hồn người Việt.” <em>(Cadière)</em></p>
+</blockquote>
+<h3 id="một-mâu-thuẫn-cần-giải-quyết">1.2 Một mâu thuẫn cần giải
+quyết</h3>
+<p>Các nhận định trên nhất quán ở một điểm: Việt Nam không sản sinh ra
+hệ thống triết học hoàn chỉnh, sâu sắc, độc lập. Nhận định này được ủng
+hộ bởi những quan sát thực tế khó bác bỏ: không có kinh điển triết học
+gốc Việt tương đương <em>Luận ngữ</em> hay <em>Upanishad</em>; không có
+truyền thống bình chú triết học kiểu <em>Chu Tử Ngữ Loại</em>; các văn
+bản còn lưu không thể hiện nỗ lực đào sâu siêu hình học
+(<code>[established scholarship]</code>).</p>
+<p>Tuy nhiên, cùng lúc đó, một thực tế lịch sử đặt ra câu hỏi khó: dân
+tộc Việt Nam đã tồn tại và duy trì bản sắc tập thể qua hơn 1.000 năm Bắc
+thuộc (111 TCN – 938 CN), nhiều thế kỷ chiến tranh với các đế chế lớn
+(Mông, Minh, Thanh, Pháp, Mỹ), và áp lực đồng hóa liên tục từ nhiều
+hướng (<code>[established scholarship]</code>). Theo nguyên lý đa dạng
+cần thiết (Requisite Variety) của W. Ross Ashby: một hệ <em>không
+thể</em> sống sót dưới áp lực biến đổi kéo dài nếu không sở hữu ít nhất
+một cơ chế bất biến cấu trúc nào đó
+(<code>[established scholarship]</code>).</p>
+<p>Đặt hai thực tế này cạnh nhau tạo ra một nghịch lý: hoặc nhận định
+“rỗng triết học” sai về thực chất, hoặc thước đo đang dùng đã bỏ sót
+loại hình triết học mà người Việt thực sự vận hành. Bài viết này lập
+luận rằng trường hợp sau là đúng
+(<code>[project interpretation]</code>).</p>
+<p><strong>Ranh giới nhận thức luận (Epistemological Boundary).</strong>
+Bài viết này <em>không</em> tuyên bố rằng triết học Việt Nam “ngang
+hàng” hay “vượt trội” triết học Hy Lạp, Ấn Độ, hay Trung Quốc theo thước
+đo hệ thống-siêu hình (<code>[established scholarship]</code>). Bài viết
+cũng <em>không</em> tuyên bố các nhận định của Léopold-Michel Cadière,
+Đào Duy Anh, Vũ Trọng Phụng, Thạch Lam là sai — chúng phản ánh thực tế
+chính xác khi áp dụng thước đo mà các tác giả đó sử dụng
+(<code>[established scholarship]</code>). Bài viết <em>tuyên bố</em>
+rằng nhận định “không có triết học Việt Nam” mắc một lỗi phạm trù
+(category error) do đánh giá một hệ triết học tương quan-phân tán bằng
+thước đo của triết học hệ thống-siêu hình
+(<code>[project interpretation]</code>). Chúng tôi lập luận rằng triết
+học Việt Nam thuộc loại hình tương quan-phân tán, lưu trữ tri thức trong
+mẫu hình (pattern) quan hệ thay vì văn bản mệnh đề kinh viện
+(<code>[project interpretation]</code>), và hệ tiên đề Mạch Rễ cung cấp
+khung phân tích phù hợp để nhận diện cấu trúc này
+(<code>[project interpretation]</code>).</p>
+<hr />
+<h2
+id="thước-đo-ẩn-triết-học-hệ-thống-siêu-hình-như-tiêu-chuẩn-duy-nhất">2.
+THƯỚC ĐO ẨN: TRIẾT HỌC HỆ THỐNG-SIÊU HÌNH NHƯ TIÊU CHUẨN DUY NHẤT</h2>
+<h3 id="thước-đo-ngầm-là-gì">2.1 Thước đo ngầm là gì?</h3>
+<p>Phân tích kỹ các nhận định ở §1, một tiêu chuẩn ẩn xuất hiện nhất
+quán: “có triết học” đồng nghĩa với “có hệ thống mệnh đề trừu tượng +
+văn bản kinh viện + logic hình thức”
+(<code>[project interpretation]</code>). Cadière phát biểu rõ nhất:
+“không có một hệ thống triết học, không có những học thuyết có thể xếp
+thành một bộ môn.” Đào Duy Anh đo bằng cặp “luận lý vs. trực giác” và
+“khoa học vs. nghệ thuật”. Vũ Trọng Phụng đo bằng “tín ngưỡng chắc chắn
+/ quan điểm vững bền”.</p>
+<p>Thước đo này thuộc về một truyền thống triết học đặc thù mà chúng tôi
+gọi là <strong>triết học hệ thống-siêu hình (systematic
+metaphysics)</strong>: triết học vận hành qua hệ thống mệnh đề được văn
+bản hóa, được tổ chức logic, và được truyền qua đào tạo kinh viện
+(<code>[project interpretation]</code>). Đây là mô hình tiêu biểu của
+truyền thống Hy Lạp (Platon, Aristoteles), Ấn Độ cổ diễn (Nyāya,
+Vaiśeṣika), và Tống Nho Trung Quốc (Chu Hi).</p>
+<p>Bảng đối chiếu dưới đây tóm tắt đặc trưng của hai loại hình
+(<code>[project interpretation]</code>):</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Đặc trưng</th>
+<th>Triết học Hệ thống-Siêu hình</th>
+<th>Triết học Tương quan-Phân tán</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phương tiện truyền</td>
+<td>Văn bản kinh viện</td>
+<td>Thực hành, nghi lễ, truyền miệng</td>
+</tr>
+<tr>
+<td>Cấu trúc tri thức</td>
+<td>Hệ thống mệnh đề logic</td>
+<td>Pattern quan hệ trong cộng đồng</td>
+</tr>
+<tr>
+<td>Chủ thể sáng tạo</td>
+<td>Triết gia cá nhân</td>
+<td>Mạng tập thể qua thế hệ</td>
+</tr>
+<tr>
+<td>Tiêu chí đánh giá</td>
+<td>Tính nhất quán mệnh đề</td>
+<td>Tính bền vững của pattern quan hệ</td>
+</tr>
+<tr>
+<td>Phân phối</td>
+<td>Tập trung (học giả, kinh điển)</td>
+<td>Phân tán (toàn mạng xã hội)</td>
+</tr>
+<tr>
+<td>Ví dụ</td>
+<td>Platon, Chu Hi, Nyāya</td>
+<td>Ca dao tục ngữ Việt, Ubuntu châu Phi</td>
+</tr>
+</tbody>
+</table>
+<p>Khi dùng cột trái để đánh giá một thực thể thuộc cột phải, kết quả
+tất yếu là “không có” — không phải vì đối tượng trống, mà vì thước đo
+không tương thích (<code>[project interpretation]</code>).</p>
+<h3 id="cuộc-tranh-luận-trong-triết-học-so-sánh">2.2 Cuộc tranh luận
+trong triết học so sánh</h3>
+<p>Vấn đề này không phải mới trong giới hàn lâm. Trong triết học châu
+Phi, Paulin Hountondji (<em>African Philosophy: Myth and Reality</em>,
+1983) đã đặt câu hỏi tương tự: liệu “triết học châu Phi” có tồn tại
+không (<code>[contested scholarship]</code>)? Oruka (<em>Sage
+Philosophy</em>, 1990) chỉ ra rằng nhiều dân tộc châu Phi có hệ thống tư
+duy phức tạp nhưng không ở dạng văn bản kinh viện — và đây là lý do
+chúng bị coi là “không có triết học” chứ không phải vì chúng vắng mặt
+(<code>[established scholarship]</code>). Kwasi Wiredu (<em>Cultural
+Universals and Particulars</em>, 1996) xác lập rằng mọi nền văn hóa đều
+có triết học, chỉ khác loại hình
+(<code>[established scholarship]</code>). B.K. Matilal
+(<em>Perception</em>, 1986) cho thấy triết học Ấn Độ cổ đại phát triển
+một truyền thống nhận thức luận cực kỳ tinh vi mà không theo mô hình Hy
+Lạp (<code>[established scholarship]</code>).</p>
+<p>Cuộc tranh luận này xác lập một điểm quan trọng: chẩn đoán “không có
+triết học” là <em>hệ quả của thước đo</em>, không phải hệ quả của sự
+vắng mặt thực sự (<code>[project interpretation]</code>). Đây là lỗi
+phạm trù.</p>
+<hr />
+<h2
+id="chẩn-đoán-gốc-rễ-lỗi-phạm-trù-khi-đo-hệ-tương-quan-bằng-thước-siêu-hình">3.
+CHẨN ĐOÁN GỐC RỄ: LỖI PHẠM TRÙ KHI ĐO HỆ TƯƠNG QUAN BẰNG THƯỚC SIÊU
+HÌNH</h2>
+<h3 id="lỗi-phạm-trù-là-gì">3.1 Lỗi phạm trù là gì?</h3>
+<p>Lỗi phạm trù (category error) xảy ra khi một thực thể thuộc phạm trù
+X được đánh giá bằng tiêu chuẩn của phạm trù Y — và kết quả là một phán
+xét “thiếu” hay “không có” mà thực ra chỉ phản ánh sự không tương thích
+của tiêu chuẩn, không phải sự vắng mặt của đối tượng
+(<code>[established scholarship]</code>).</p>
+<p>Ví dụ cổ điển: đo “khả năng bay” của cá bằng tiêu chí “có cánh không”
+→ cá “không có khả năng di chuyển trong không gian ba chiều”
+(<code>[analogy]</code>). Phán xét này đúng theo tiêu chí được chọn,
+nhưng bỏ sót khả năng bơi và di chuyển trong nước của cá — một loại di
+chuyển khác về loại hình, không phải kém hơn
+(<code>[analogy]</code>).</p>
+<h3 id="lỗi-phạm-trù-trong-nhận-định-triết-học-việt-nam">3.2 Lỗi phạm
+trù trong nhận định triết học Việt Nam</h3>
+<p>Cấu trúc của lỗi trong nhận định “không có triết học Việt Nam” là
+(<code>[project interpretation]</code>):</p>
+<ul>
+<li><strong>Tiêu chí được dùng:</strong> “Có triết học = có hệ thống
+mệnh đề trừu tượng + văn bản kinh viện + logic hình thức”
+(<code>[established scholarship]</code>).</li>
+<li><strong>Thực tế quan sát:</strong> Việt Nam không sản sinh ra sản
+phẩm thuộc mô tả trên (<code>[established scholarship]</code>).</li>
+<li><strong>Kết luận:</strong> “Không có triết học Việt Nam”
+(<code>[established scholarship]</code>).</li>
+</ul>
+<p>Nhưng cấu trúc này ẩn một giả định chưa được kiểm tra: <strong>chỉ có
+MỘT loại hình triết học hợp lệ</strong>
+(<code>[contested scholarship]</code>). Nếu giả định này sai — tức là
+tồn tại nhiều loại hình triết học — thì kết luận không còn hiệu lực
+(<code>[project interpretation]</code>).</p>
+<p>Hệ tiên đề Mạch Rễ cung cấp khung để nhận diện một loại hình khác.
+Như chúng tôi sẽ chỉ ra trong §4, các đặc trưng bị coi là khuyết điểm
+trong nhận định (thiên trực giác, thiếu hệ thống mệnh đề, giản lược hóa
+ngoại lai) đều là biểu hiện có cấu trúc của một hệ triết học vận hành
+theo logic tương quan-phân tán
+(<code>[project interpretation]</code>).</p>
+<p>Câu hỏi vì thế đổi từ: &gt; “Có triết học Việt Nam không?”</p>
+<p>Sang: &gt; “Triết học Việt Nam thuộc loại hình nào và vận hành theo
+logic nào?” (<code>[project interpretation]</code>)</p>
+<hr />
+<h2 id="phân-tích-tiên-đề-iiv-triết-học-việt-trong-khung-mạch-rễ">4.
+PHÂN TÍCH TIÊN ĐỀ I–IV: TRIẾT HỌC VIỆT TRONG KHUNG MẠCH RỄ</h2>
+<h3
+id="tiên-đề-i-quan-hệ-bản-thể-tư-duy-người-việt-được-cấu-thành-bởi-quan-hệ">4.1
+Tiên đề I — Quan Hệ Bản Thể: “Tư duy người Việt được cấu thành bởi quan
+hệ”</h3>
+<p><strong>Tiên đề I — Quan Hệ Bản Thể (Relational Ontology)</strong>
+phát biểu: bản sắc của một hệ tập thể được cấu thành <em>bởi quan
+hệ</em>, không phải bởi một bản thể/cốt lõi định vị được độc lập với
+quan hệ (<code>[project interpretation]</code>).
+<code>Being(x) ≡ {R(x,y)}</code>.</p>
+<p>Nhận định phê phán rằng tư duy người Việt “thiên về kinh nghiệm cá
+nhân, trực giác, cảm tính” và “không có ưu thế về phân tích, tổng hợp,
+suy luận logic, trừu tượng hóa”
+(<code>[established scholarship]</code>). Đây được hiểu là khuyết điểm
+nhận thức.</p>
+<p><em>Lưu ý thuật ngữ:</em> “Trực giác” trong ngữ cảnh nhận định nguồn
+không mang nghĩa triết học phương Tây (intuition theo Kant: nhận thức
+tiên nghiệm) (<code>[established scholarship]</code>). Nó mang nghĩa
+thực hành — tri thức phát sinh từ tiếp xúc trực tiếp với tình huống quan
+hệ cụ thể (người ↔︎ môi trường, người ↔︎ cộng đồng, hành động ↔︎ hậu quả) —
+không qua trung gian của logic hình thức
+(<code>[project interpretation]</code>). Đây là nghĩa chúng tôi sử dụng
+trong phân tích sau.</p>
+<p>Dưới Tiên đề I, “thiên trực giác” không phải thiếu năng lực logic —
+mà là biểu hiện của một cấu trúc tri thức nơi <strong>tri thức được cấu
+thành trong quan hệ thực tiễn</strong>, không tách rời thành mệnh đề độc
+lập (<code>[project interpretation]</code>). Tín ngưỡng Việt “thiên về
+sùng bái, thờ cúng, cầu xin” — tức là thiên về quan hệ với thần linh, tổ
+tiên, cộng đồng — hơn giáo lý trừu tượng — chính xác là biểu hiện của
+bản thể học tương quan: tri thức nằm trong quan hệ (Being(x) ≡
+{R(x,y)}), không trong doctrine cô lập
+(<code>[project interpretation]</code>).</p>
+<p>Điều đáng chú ý: triết học châu Phi (Ubuntu: “Umuntu ngumuntu
+ngabantu” — “Tôi là người vì có người khác”) và nhận thức luận Phật giáo
+(Pratītyasamutpāda: duyên khởi — mọi thứ hiện hữu trong sự phụ thuộc
+tương quan) đều là các hệ triết học tương quan được giới hàn lâm công
+nhận đầy đủ (<code>[established scholarship]</code>). Chúng không bị coi
+là “không có triết học” chỉ vì không theo mô hình mệnh đề Hy Lạp.</p>
+<p>Kết luận (SQ4): “Thiên trực giác, kinh nghiệm, quan hệ” là đặc trưng
+loại hình của triết học tương quan-phân tán, không phải bằng chứng thiếu
+năng lực triết học (<code>[project interpretation]</code>).</p>
+<h3
+id="tiên-đề-ii-bất-biến-cấu-trúc-ca-dao-tục-ngữ-như-pattern-bất-biến">4.2
+Tiên đề II — Bất Biến Cấu Trúc: “Ca dao tục ngữ như pattern bất
+biến”</h3>
+<p><strong>Tiên đề II — Bất Biến Cấu Trúc (Structural
+Invariance)</strong> phát biểu: cái bền qua thay đổi nội dung là một
+<em>pattern bất biến của quan hệ</em> (invariant under transformation) —
+bền ở mức <em>quy ước</em> (conventional truth, Nhị đế), không phải bản
+thể tuyệt đối — chứ không phải nội dung tại bất kỳ điểm nào
+(<code>[project interpretation]</code>).
+<code>Identity(S) = Pattern(R(S))</code>.</p>
+<p>Nhận định phê phán rằng tư tưởng Việt “rời rạc”, thiếu hệ thống
+(<code>[established scholarship]</code>). Đúng theo thước đo hệ
+thống-siêu hình: không có hệ thống mệnh đề nhất quán. Nhưng dưới Tiên đề
+II, câu hỏi đúng là: có pattern bất biến không?
+(<code>[project interpretation]</code>).</p>
+<p>Phan Ngọc (<em>Bản sắc văn hóa Việt Nam</em>, 2000) đã nhận ra “kiểu
+lựa chọn” / “kiểu quan hệ” như là bất biến của bản sắc Việt — bền dưới
+nội dung đổi (<code>[established scholarship]</code>). Ông đã quan sát
+hiện tượng này trước khi Mạch Rễ tồn tại, tức là bằng chứng cho loại
+hình này có nguồn gốc độc lập với framework.</p>
+<p>Ca dao và tục ngữ Việt Nam không phải “triết lý vụn vặt” mà là
+pattern bất biến được phân tán toàn mạng xã hội
+(<code>[project interpretation]</code>):</p>
+<ul>
+<li><strong>Tính tương quan:</strong> “Bầu ơi thương lấy bí cùng / Tuy
+rằng khác giống nhưng chung một giàn” — tri thức về quan hệ cộng đồng,
+không về bản thể cô lập (<code>[project interpretation]</code>).</li>
+<li><strong>Tính thực tiễn:</strong> “Học ăn, học nói, học gói, học mở”
+— tri thức trong hành động quan hệ
+(<code>[project interpretation]</code>).</li>
+<li><strong>Tính bền qua thay đổi:</strong> các pattern này bền trong
+nhiều thế kỷ dưới biến động nội dung — không phải vì được văn bản hóa
+kinh viện, mà vì pattern quan hệ được tái tạo liên tục trong thực hành
+cộng đồng (<code>[project interpretation]</code>).</li>
+</ul>
+<p>“Rời rạc” theo thước đo siêu hình = không hệ thống mệnh đề. “Bền”
+theo Tiên đề II = pattern bất biến của quan hệ phân tán toàn mạng
+(<code>[project interpretation]</code>).</p>
+<h3
+id="tiên-đề-iii-mạch-cội-dọc-triết-học-việt-truyền-qua-thực-hành-không-qua-kinh-viện">4.3
+Tiên đề III — Mạch Cội Dọc: “Triết học Việt truyền qua thực hành, không
+qua kinh viện”</h3>
+<p><strong>Tiên đề III — Mạch Cội Dọc (Vertical / Orthogonal
+Temporality)</strong> phát biểu: mạng quan hệ cấu thành bản sắc trải
+<em>xuyên thời gian</em>; chiều dọc là <em>điều kiện tồn tại</em>, không
+chỉ điều kiện nhận thức (<code>[project interpretation]</code>).</p>
+<p>Ở đây, chúng tôi phân biệt rõ hai tầng của Tiên đề III: bản chất cấu
+trúc (essence) là <strong>Thời gian trực giao (Orthogonal
+Temporality)</strong> — biểu thị mối quan hệ vuông góc và độc lập toán
+học giữa trục dọc thế hệ <span class="math inline"><em>V</em></span>
+(bổn phận cội nguồn) và trục ngang đương đại <span
+class="math inline"><em>H</em></span> (quan hệ hiện thời), ký hiệu <span
+class="math inline"><em>V</em> ⟂ <em>H</em></span>; trong khi biểu hiện
+văn hóa (manifestation) của nó là <strong>Thời gian chiều dọc / Mạch cội
+dọc (Vertical Temporality / Vertical Axis)</strong> — biểu thị qua các
+thực hành liên kết giữa tổ tiên, hiện tại và hậu thế
+(<code>[project interpretation]</code>).</p>
+<p>Nhận định nguồn quan sát rằng “các văn bản còn lưu giữ được đến ngày
+nay cho thấy người Việt đã không có nỗ lực nào để hiểu sâu sắc bản
+chất.” Đây là quan sát dựa trên <em>trục ngang</em> <span
+class="math inline"><em>H</em></span> — văn bản kinh viện đương đại.
+Nhưng Tiên đề III chỉ ra rằng triết học Việt vận hành chủ yếu trên
+<em>trục dọc</em> <span class="math inline"><em>V</em></span>: truyền
+tri thức xuyên thế hệ qua thực hành Vertical Temporality (nghi lễ thờ
+cúng, ứng xử gia tộc, ca dao truyền miệng, thực hành nghề nghiệp), ký ức
+cộng đồng (hội làng, hội đền thờ tổ), và thân thể (kỹ năng sinh tồn, võ
+thuật cổ truyền) (<code>[project interpretation]</code>).</p>
+<p>Điều này giải thích tại sao văn bản còn lại ít: hệ thống lưu trữ tri
+thức không phụ thuộc vào văn bản
+(<code>[project interpretation]</code>). Đây không phải thiếu nỗ lực tư
+duy mà là <em>lựa chọn cấu trúc</em> của hệ tương quan-phân tán — bảo
+toàn tri thức qua thực hành sống, không qua văn bản vật lý có thể bị
+tiêu hủy (<code>[project interpretation]</code>).</p>
+<p>Lịch sử xác nhận tính hiệu quả của lựa chọn này: qua hàng thế kỷ
+chiến tranh và đốt phá thư viện (các cuộc xâm lược của Minh, Pháp), bản
+sắc tập thể Việt Nam không tan rã — vì nó không lưu trữ trong văn bản mà
+lưu trữ trong con người và thực hành cộng đồng
+(<code>[established scholarship]</code>).</p>
+<h3
+id="tiên-đề-iv-biên-giới-động-giản-lược-hóa-là-tái-tổ-chức-có-hướng-không-phải-thiếu-trí-tuệ">4.4
+Tiên đề IV — Biên Giới Động: “‘Giản lược hóa’ là tái tổ chức có hướng,
+không phải thiếu trí tuệ”</h3>
+<p><strong>Tiên đề IV — Biên Giới Động (Dynamic Boundary)</strong> phát
+biểu: hệ sống sót nhờ biên giới <em>thấm chọn lọc</em> (selective
+permeability): không tường kín (→ giòn), không mở toang (→ bị đồng hóa).
+Nội dung đến được <em>tái tổ chức</em> theo logic pattern nội tại (Tiên
+đề II), không theo logic nội dung đến
+(<code>[project interpretation]</code>).</p>
+<p>Cadière và nhận định nguồn ghi nhận: “Các tư tưởng triết học được du
+nhập vào Việt Nam đều bị giản lược hóa và biến thành giáo điều”
+(<code>[established scholarship]</code>). Đây là quan sát đúng nhưng kết
+luận sai. Dưới Tiên đề IV, “giản lược hóa” là cơ chế biên giới thấm chọn
+lọc: nội dung ngoại lai được lọc và tái cấu trúc theo pattern nội tại,
+không bị “hiểu sai” ngẫu nhiên
+(<code>[project interpretation]</code>).</p>
+<p>Hai ví dụ cụ thể minh họa pattern này:</p>
+<p><strong>Ví dụ (a) — Phật giáo Việt Nam:</strong> - <em>Được giữ:</em>
+Vô ngã (phù hợp bản thể học tương quan — Tiên đề I), tam bảo
+(Phật-Pháp-Tăng như mạng quan hệ), báo hiếu và thờ cúng tổ tiên tích hợp
+vào Phật giáo (phù hợp mạch cội dọc — Tiên đề III), Bồ Tát cứu khổ (quan
+hệ từ bi thực tiễn) (<code>[established scholarship]</code>). - <em>Bị
+lọc:</em> Siêu hình học Abhidharma chi tiết (không tương thích thực hành
+trực quan), các cuộc tranh luận giáo lý trừu tượng giữa các trường phái
+(<code>[established scholarship]</code>). - <em>Pattern của việc
+lọc:</em> giữ những gì tương thích với quan hệ thực tiễn (Tiên đề I+II),
+lọc những gì thuần mệnh đề siêu hình
+(<code>[project interpretation]</code>).</p>
+<p><strong>Ví dụ (b) — Nho giáo Việt Nam:</strong> - <em>Được giữ:</em>
+Ngũ thường (nhân-nghĩa-lễ-trí-tín) như hệ mã quan hệ xã hội (Tiên đề I),
+hiếu đễ như mạch cội dọc gia đình-xã hội (Tiên đề III), các nghi lễ và
+ứng xử xã hội (<code>[established scholarship]</code>). - <em>Bị
+lọc:</em> Tống Nho hình nhi thượng học (siêu hình học của Chu Hi về
+lý-khí), các cuộc tranh luận trừu tượng giữa các trường phái Nho
+(<code>[established scholarship]</code>). - <em>Pattern của việc
+lọc:</em> giữ Nho như hệ mã quan hệ (ứng xử, nghi lễ), lọc Nho như hệ
+thống siêu hình (<code>[project interpretation]</code>).</p>
+<p>Đây không phải “không hiểu” Phật giáo hay Nho giáo. Đây là
+<strong>hấp thụ có định hướng</strong> (Mệnh đề VI: chữ ký II×IV):
+pattern nội tại (Tiên đề II) chi phối hướng của biên giới thấm (Tiên đề
+IV) (<code>[project interpretation]</code>). Cái được giữ là cái tương
+thích với logic tương quan-phân tán của hệ; cái bị lọc là cái thuộc về
+logic hệ thống-siêu hình (<code>[project interpretation]</code>).</p>
+<hr />
+<h2 id="phân-tích-chuyên-sâu-tiên-đề-viii-như-điều-kiện-tự-phản-tư">5.
+PHÂN TÍCH CHUYÊN SÂU — TIÊN ĐỀ VIII NHƯ ĐIỀU KIỆN TỰ PHẢN TƯ</h2>
+<h3 id="vấn-đề-thực-hệ-vận-hành-nhưng-không-tự-nhận-diện">5.1 Vấn đề
+thực: hệ vận hành nhưng không tự nhận diện</h3>
+<p>Nhận định “không có triết học Việt Nam” — dù mắc lỗi phạm trù — chỉ
+ra một <strong>vấn đề thực</strong>: hệ triết học tương quan-phân tán
+của Việt Nam <strong>chưa tự nhận diện</strong> mình là triết học
+(<code>[project interpretation]</code>). Nó vận hành nhưng không tự biết
+mình đang vận hành. Thêm nữa, nó chưa có một phương pháp luận tự phản tư
+và tự phê bình hệ thống để phân biệt được đâu là pattern bất biến cần
+giữ và đâu là điểm mù cần cập nhật
+(<code>[project interpretation]</code>).</p>
+<p>Điều này dẫn đến hai phản ứng đối lập khi đối mặt với câu hỏi “chúng
+ta là ai?” (<code>[project interpretation]</code>):</p>
+<ul>
+<li><strong>Phản ứng A — Đóng kín:</strong> “Triết học dân gian của ta
+đã đủ, không cần thay đổi” → Đóng biên giới → hệ giòn, không thích nghi
+được áp lực mới.</li>
+<li><strong>Phản ứng B — Mở toang:</strong> “Phải xây hệ thống siêu hình
+như phương Tây mới là triết học thật” → Từ bỏ loại hình tương quan →
+nguy cơ đồng hóa tri thức, mất identity.</li>
+</ul>
+<p>Cả hai phản ứng đều không có cơ chế tự phản tư. <strong>Tiên đề VIII
+— Tự Nhìn Thấy Mình (Reflexive Cognition)</strong> đề xuất điều kiện cho
+một phản ứng thứ ba, mở ra hướng đi tự nhận thức để vượt qua bế tắc này
+(<code>[project interpretation]</code>).</p>
+<blockquote>
+<p><strong>Tiên đề VIII — Tự Nhìn Thấy Mình (Reflexive
+Cognition):</strong> “Hệ áp chính Tiên Đề I–IV lên <em>bản thân nó</em>
+→ tự quan sát, tự phê bình, tự cập nhật invariant của mình.”</p>
+</blockquote>
+<h3 id="protocol-4-bước-tiên-đề-viii-áp-lên-triết-học-việt">5.2 Protocol
+4 bước — Tiên đề VIII áp lên triết học Việt</h3>
+<p>Tiên đề VIII không phải “lời khuyên hãy tự nhìn lại” mà là một
+protocol có cấu trúc cụ thể. Đối tượng của tự phản tư là chính hệ tiên
+đề I–IV áp lên hệ triết học Việt
+(<code>[project interpretation]</code>):</p>
+<p><strong>Bước 1 — VIII áp Tiên đề I lên chính hệ:</strong> - <em>Câu
+hỏi phản tư:</em> “Tri thức triết học của ta được cấu thành bởi gì?” -
+<em>Kết quả:</em> Hệ tự nhận ra rằng tri thức của mình được cấu thành
+trong quan hệ thực tiễn (mối liên kết gia đình, dòng họ, xóm giềng),
+không phải trong mệnh đề cô lập. Đây không phải khuyết điểm mà là đặc
+trưng loại hình (<code>[project interpretation]</code>). - <em>Sản phẩm
+dự kiến:</em> Bản đồ quan hệ tư tưởng — ánh xạ các tri thức triết học
+Việt (ca dao, tục ngữ, nghi lễ, ứng xử) thành mạng quan hệ có cấu trúc
+(<code>[hypothesis]</code>).</p>
+<p><strong>Bước 2 — VIII áp Tiên đề II lên chính hệ:</strong> - <em>Câu
+hỏi phản tư:</em> “Pattern bất biến nào tồn tại trong triết lý của ta
+qua các thời đại?” - <em>Kết quả:</em> Hệ tự nhận ra invariant: trọng
+quan hệ, trọng thực tiễn, trọng cộng đồng, tích hợp qua lọc chọn lọc.
+Đây là “nếp bản sắc tư tưởng” — bền qua thay đổi nội dung
+(<code>[project interpretation]</code>). - <em>Sản phẩm dự kiến:</em> Hệ
+thống hóa ca dao triết học Việt theo các pattern quan hệ
+(<code>[hypothesis]</code>).</p>
+<p><strong>Bước 3 — VIII áp Tiên đề III lên chính hệ:</strong> - <em>Câu
+hỏi phản tư:</em> “Tri thức của ta truyền qua thế hệ bằng cơ chế nào?” -
+<em>Kết quả:</em> Hệ tự nhận ra mạch cội dọc: tri thức truyền qua thực
+hành Vertical Temporality (nghi lễ, ứng xử đời thường, truyền khẩu),
+không qua văn bản kinh viện. Đây là cơ chế bảo tồn sống, không phải lỗi
+(<code>[project interpretation]</code>). - <em>Sản phẩm dự kiến:</em>
+Chương trình lưu trữ tri thức thực hành theo trục dọc thế hệ
+(<code>[hypothesis]</code>).</p>
+<p><strong>Bước 4 — VIII áp Tiên đề IV lên chính hệ:</strong> - <em>Câu
+hỏi phản tư:</em> “Cơ chế biên giới của ta vận hành thế nào — và có điểm
+nào cần cải thiện?” - <em>Kết quả:</em> Hệ tự nhận ra: biên giới thấm
+chọn lọc đã hoạt động hiệu quả trong lịch sử nhưng cần cập nhật bộ lọc
+có ý thức để tránh hấp thụ thụ động hoặc đóng kín cực đoan
+(<code>[project interpretation]</code>). - <em>Sản phẩm dự kiến:</em>
+Bản đồ biên giới tư tưởng để chủ động chuyển hóa nhiễu ngoại lai
+(<code>[hypothesis]</code>).</p>
+<h3 id="xung-đột-lõi-và-điều-kiện-tự-nâng-cấp">5.3 Xung đột lõi và điều
+kiện tự nâng cấp</h3>
+<p>Tiên đề VIII dự đoán rằng khi hệ tự phản tư, sẽ nảy sinh <strong>bất
+đồng nội bộ</strong> về invariant: “chúng ta là gì?” Đây là điều
+<em>phải có</em> (theo <code>axiom_spec.md</code> §2), không phải bệnh
+lý (<code>[project interpretation]</code>). Lịch sử tranh luận giữa các
+phe “bảo thủ” và “tây hóa” trong học thuật Việt Nam chính là biểu hiện
+của xung đột lõi này (<code>[established scholarship]</code>).</p>
+<p>Tiên đề VIII gợi ý con đường thứ ba để giải quyết xung đột
+(<code>[project interpretation]</code>): - Nhận ra cả hai phe đều đang
+vận hành bên trong cùng một loại hình tương quan-phân tán. - Phân biệt
+pattern bất biến (invariant) cần giữ và nội dung cụ thể (content) có thể
+cập nhật. - Cập nhật invariant một cách có ý thức — không phải thụ động
+dưới áp lực ngoại cảnh (<code>[project interpretation]</code>).</p>
+<hr />
+<h2
+id="hướng-tới-triết-học-việt-nam-tự-phản-tư-từ-vay-mượn-thụ-động-sang-chuyển-hóa-chủ-động">6.
+HƯỚNG TỚI TRIẾT HỌC VIỆT NAM TỰ PHẢN TƯ: TỪ “VAY MƯỢN THỤ ĐỘNG” SANG
+“CHUYỂN HÓA CHỦ ĐỘNG”</h2>
+<h3 id="tổng-kết-phân-tích">6.1 Tổng kết phân tích</h3>
+<p>Bài viết này lập luận rằng nhận định “không có triết học Việt Nam” —
+tuy đúng theo thước đo hệ thống-siêu hình — mắc lỗi phạm trù: đánh giá
+một hệ triết học tương quan-phân tán bằng thước đo thuộc về một loại
+hình khác (<code>[project interpretation]</code>).</p>
+<p>Khi phân tích bằng hệ tiên đề Mạch Rễ
+(<code>[project interpretation]</code>): - <strong>Tiên đề I:</strong>
+“Thiên trực giác, quan hệ, kinh nghiệm” là biểu hiện của bản thể học
+tương quan — tri thức cấu thành trong quan hệ, không trong mệnh đề cô
+lập. - <strong>Tiên đề II:</strong> Ca dao, tục ngữ, triết lý dân gian
+là pattern bất biến của quan hệ — invariant bền qua thay đổi nội dung. -
+<strong>Tiên đề III:</strong> Triết học Việt truyền qua mạch cội dọc
+(thực hành, nghi lễ, ký ức tập thể) dưới dạng biểu hiện của <strong>Thời
+gian chiều dọc (Vertical Temporality)</strong>, được neo giữ bằng bản
+chất <strong>Thời gian trực giao (Orthogonal Temporality)</strong>. -
+<strong>Tiên đề IV:</strong> “Giản lược hóa” và “Việt hóa” là hấp thụ có
+định hướng (chữ ký II×IV) — biên giới thấm lọc theo pattern nội tại.</p>
+<h3 id="hàm-ý-điều-kiện-tự-phản-tư">6.2 Hàm ý: điều kiện tự phản tư</h3>
+<p>Tiên đề VIII không trực tiếp giải quyết vấn đề “không có triết học
+Việt Nam” — vì vấn đề thực sự không phải sự vắng mặt mà là sự thiếu tự
+nhận diện. Điều kiện mà Tiên đề VIII mở ra là
+(<code>[hypothesis]</code>):</p>
+<ol type="1">
+<li><strong>Tự gọi tên:</strong> nhận diện mình là “triết học tương
+quan-phân tán” thay vì tự đánh giá mình là “phiên bản kém của triết học
+Trung Quốc”.</li>
+<li><strong>Tự phê bình chọn lọc:</strong> phân biệt pattern bất biến
+cần giữ và điểm mù cần cập nhật.</li>
+<li><strong>Tự sản sinh tri thức mới:</strong> tạo ra sản phẩm tri thức
+dạng tương quan (bản đồ quan hệ tư tưởng, hệ thống hóa ca dao triết học,
+phương pháp luận phản tư nội tại) mà không cần mô phỏng dạng mệnh đề
+siêu hình.</li>
+</ol>
+<h3 id="câu-hỏi-mở-cho-nghiên-cứu-tiếp-theo">6.3 Câu hỏi mở cho nghiên
+cứu tiếp theo</h3>
+<p>Câu hỏi quan trọng nhất mà bài viết này để ngỏ là: <strong>Làm thế
+nào để operationalize Tiên đề VIII vào thực hành nghiên cứu triết học
+Việt Nam?</strong> Tức là, biến “tự nhìn thấy mình” từ nguyên lý trừu
+tượng thành phương pháp luận cụ thể có thể dùng trong các dự án nghiên
+cứu (<code>[project interpretation]</code>). Đây là hướng cho nghiên cứu
+tiếp theo.</p>
+<hr />
+<h2 id="tài-liệu-tham-khảo">TÀI LIỆU THAM KHẢO</h2>
+<p><strong>Nguồn nhận định phân tích:</strong> - Cadière, L.-M. (1958).
+<em>Croyances et pratiques religieuses des Viêtnamiens</em>. Saigon:
+École française d’Extrême-Orient. - Đào Duy Anh (1938). <em>Việt Nam văn
+hóa sử cương</em>. Huế: Quan Hải Tùng Thư. - Văn bản nguồn: <em>Nhận
+định về đặc điểm của triết học Việt Nam</em> (tổng hợp).</p>
+<p><strong>Hệ neo triangulation:</strong> - Phan Ngọc (2000). <em>Bản
+sắc văn hóa Việt Nam</em>. Hà Nội: NXB Văn học. - Ashby, W. R. (1956).
+<em>An Introduction to Cybernetics</em>. London: Chapman &amp; Hall. -
+Weick, K. E. (1995). <em>Sensemaking in Organizations</em>. Thousand
+Oaks: Sage.</p>
+<p><strong>Comparative philosophy (prior-art RCA Claim 1):</strong> -
+Hountondji, P. J. (1983). <em>African Philosophy: Myth and Reality</em>.
+London: Hutchinson. - Wiredu, K. (1996). <em>Cultural Universals and
+Particulars: An African Perspective</em>. Bloomington: Indiana UP. -
+Matilal, B. K. (1986). <em>Perception: An Essay on Classical Indian
+Theories of Knowledge</em>. Oxford: Clarendon. - Oruka, H. O. (1990).
+<em>Sage Philosophy: Indigenous Thinkers and Modern Debate on African
+Philosophy</em>. Leiden: Brill.</p>
+<p><strong>Bối cảnh lịch sử tư tưởng Việt Nam:</strong> - Trần Văn Giàu
+(1973). <em>Sự phát triển của tư tưởng ở Việt Nam</em>. Hà Nội: NXB Khoa
+học Xã hội. - Nguyễn Tài Thư (chủ biên) (1993). <em>Lịch sử tư tưởng
+Việt Nam</em>. Hà Nội: NXB Khoa học Xã hội.</p>
+<p><strong>Hệ tiên đề:</strong> - Mạch Rễ <code>axiom_spec.md</code>
+(2026-06-06). <em>Single Source of Truth — Hệ tiên đề Mạch Rễ</em>.
+MACH_RE repository.</p>
+<hr />
+<h2
+id="bảng-giải-thích-thuật-ngữ-dành-cho-trình-độ-trung-học-phổ-thông">BẢNG
+GIẢI THÍCH THUẬT NGỮ (Dành cho trình độ Trung học phổ thông)</h2>
+<p>Để giúp độc giả dễ dàng tiếp cận các khái niệm triết học hệ thống và
+lý thuyết Mạch Rễ được sử dụng trong bài viết, dưới đây là bảng giải
+thích các thuật ngữ cốt lõi bằng các ví dụ trực quan, tương đồng với thế
+giới của học sinh cấp 3:</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Số thứ tự</th>
+<th>Thuật ngữ học thuật</th>
+<th>Tên gọi gần gũi</th>
+<th>Giải thích trực quan (Trình độ Học sinh Cấp 3)</th>
+<th>Ví dụ cụ thể trong nhận định triết học Việt Nam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[1]</strong></td>
+<td><strong>Relational Ontology</strong></td>
+<td>Quan hệ bản thể — Có nhau mới có mình</td>
+<td>Bạn không phải là một viên bi đứng cô độc, mà là một nút thắt trên
+chiếc lưới. Nếu cắt bỏ chiếc lưới xung quanh, bạn cũng không còn là bạn
+nữa. Bản sắc của con người được định nghĩa qua các mối quan hệ (làm con,
+làm cha mẹ, làm bạn). Hạnh phúc của bạn luôn gắn chặt với người
+thân.</td>
+<td>Tín ngưỡng của người Việt thiên về thờ cúng tổ tiên, sùng bái thần
+linh. Đây là sự thiết lập mối quan hệ kết nối giữa con người với cộng
+đồng và thế giới tâm linh chứ không phải là giáo lý trừu tượng tách
+rời.</td>
+</tr>
+<tr>
+<td><strong>[2]</strong></td>
+<td><strong>Structural Invariance</strong></td>
+<td>Bất biến cấu trúc — Nếp bản sắc</td>
+<td>Giống như một bài hát gốc được phối lại (remix) bằng nhiều thể loại
+nhạc (Ballad, Lofi, Rock) nhưng giai điệu cốt lõi vẫn giữ nguyên. Dù bối
+cảnh cuộc sống thay đổi qua các thời kỳ lịch sử, nếp sống và nếp tư duy
+cốt lõi vẫn giữ nguyên sự thống nhất.</td>
+<td>Ca dao, tục ngữ Việt Nam tuy ngắn gọn, mộc mạc và biến đổi ngôn từ
+theo thời gian nhưng luôn giữ vững các khuôn mẫu ứng xử tương thuộc
+trong gia đình và làng xã.</td>
+</tr>
+<tr>
+<td><strong>[3]</strong></td>
+<td><strong>Orthogonal Temporality / Vertical Temporality</strong></td>
+<td>Thời gian trực giao / Mạch cội dọc — Mạch cội nguồn</td>
+<td>Hãy tưởng tượng cuộc đời bạn có hai trục vuông góc: Trục ngang
+(<span class="math inline"><em>H</em></span>) là cuộc sống cá nhân hiện
+tại (học tập, yêu đương, khát vọng tự do của cái tôi); Trục dọc (<span
+class="math inline"><em>V</em></span>) là dòng chảy thế hệ (bổn phận với
+cha mẹ, cội nguồn lịch sử dân tộc). Hai trục này vuông góc và không thể
+thay thế cho nhau (<span
+class="math inline"><em>V</em> ⟂ <em>H</em></span>).</td>
+<td>Người Việt truyền tri thức sinh tồn xuyên thế hệ qua trục dọc (thực
+hành nghi lễ, truyền khẩu, hội làng) chứ không qua trục ngang văn bản
+kinh viện, giúp bảo toàn bản sắc qua hàng nghìn năm Bắc thuộc.</td>
+</tr>
+<tr>
+<td><strong>[4]</strong></td>
+<td><strong>Dynamic Boundary / Porous Boundaries</strong></td>
+<td>Biên giới động / Ranh giới mềm — Đóng mở có chọn</td>
+<td>Giống như chiếc khẩu trang lọc bụi bẩn nhưng vẫn cho không khí sạch
+đi qua, hoặc màng tế bào cho chất dinh dưỡng đi vào và ngăn chất độc.
+Ranh giới văn hóa không đóng kín (→ gây giòn, dễ vỡ) mà cũng không mở
+toang (→ bị hòa tan), mà chọn lọc thông tin.</td>
+<td>Người Việt tiếp thu Nho giáo, Phật giáo, Đạo giáo từ bên ngoài nhưng
+chọn lọc tinh hoa tương thích và lược bỏ các phần siêu hình học phức tạp
+không phù hợp với đời sống thực tế.</td>
+</tr>
+<tr>
+<td><strong>[5]</strong></td>
+<td><strong>Distributed Storage</strong></td>
+<td>Phân tán bản thể — Giữ mà không gom</td>
+<td>Thay vì lưu trữ toàn bộ dữ liệu trên một máy chủ duy nhất (dễ bị mất
+nếu máy hỏng), dữ liệu được chia nhỏ và lưu trên hàng triệu máy tính cá
+nhân trong mạng internet. Tri thức được phân tán trong toàn bộ đời sống
+nhân dân.</td>
+<td>Triết lý của người Việt không nằm ở một cuốn kinh điển tập trung của
+một triết gia nào, mà nằm rải cãi trong hàng vạn câu ca dao, tục ngữ
+được lưu giữ và truyền khẩu trong trí nhớ của từng người dân.</td>
+</tr>
+<tr>
+<td><strong>[6]</strong></td>
+<td><strong>Perturbation Transformation</strong></td>
+<td>Chuyển hóa nhiễu loạn — Hóa nhiễu thành sức</td>
+<td>Khi gặp một biến cố lớn hoặc khó khăn ập đến (nhiễu loạn), hệ thống
+không bị sụp đổ mà sử dụng chính sức ép đó để học hỏi, thích nghi và làm
+cho bản thân mạnh mẽ hơn, tăng độ phong phú nội tại.</td>
+<td>Áp lực đồng hóa cực đại từ các triều đại phương Bắc và các cuộc
+chiến tranh liên miên được người Việt chuyển hóa thành động lực củng cố
+tinh thần đoàn kết cộng đồng và phát triển các chiến lược sinh tồn dẻo
+dai.</td>
+</tr>
+<tr>
+<td><strong>[7]</strong></td>
+<td><strong>Directed Emergence</strong></td>
+<td>Nổi lên có hướng — Hợp lại thành cái mới</td>
+<td>Khi nhiều bộ phận nhỏ kết hợp lại với nhau theo một quy tắc nhất
+định, một thuộc tính mới to lớn và có định hướng rõ ràng sẽ tự động xuất
+hiện, dù từng bộ phận đơn lẻ không hề có thuộc tính đó.</td>
+<td>Từng câu ca dao, tục ngữ, hội làng riêng lẻ có vẻ giản đơn, nhưng
+khi kết hợp lại trên quy mô cả nước sẽ tạo nên một gradient trường lực
+bản sắc Việt Nam thống nhất và vững chắc bảo vệ dân tộc.</td>
+</tr>
+<tr>
+<td><strong>[8]</strong></td>
+<td><strong>Reflexive Cognition</strong></td>
+<td>Tự nhìn thấy mình — Soi mình mà không vỡ</td>
+<td>Khả năng tự soi gương, tự quan sát và phê bình chính bản thân mình
+một cách khách quan để tự sửa đổi và nâng cấp, mà không làm mất đi cốt
+cách hay bản sắc nguyên bản của mình.</td>
+<td>Tiên đề VIII giúp triết học Việt Nam tự nhận diện mình là loại hình
+“tương quan-phân tán”, nhận ra điểm mạnh để phát huy và điểm yếu (như
+thiếu hệ thống hóa văn bản) để chủ động khắc phục.</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
