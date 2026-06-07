@@ -26,7 +26,7 @@
 | I | Quan Hệ Bản Thể | **I** | Core |
 | II | Bất Biến Cấu Trúc | **II** | Core |
 | III | Phân Tán Bản Thể | **V** | Derived |
-| IV | Thời Gian Dọc | **III** | Core |
+| IV | Mạch Cội Dọc | **III** | Core |
 | V | Biên Giới Động | **IV** | Core |
 | VI | Chuyển Hóa Nhiễu | **VI** | Derived |
 | VII | Nổi Lên Có Hướng | **VII** | Derived |
@@ -60,12 +60,12 @@
 |---|---|---|
 | **A. Giữ tên `axiom_4.html`** (khuyến nghị) | không vỡ 4 inbound link + bookmark ngoài | tên file ≠ nội dung ("4" mà là III) — thêm chú giải |
 | B. Đổi tên `axiom_3.html` | tên khớp nội dung | phải sửa mọi href + bookmark ngoài vỡ |
-> Khuyến nghị **A** + thêm chú `<!-- file axiom_4.html = Tiên Đề III (Thời Gian Dọc) -->` và một dòng hiển thị nhỏ.
+> Khuyến nghị **A** + thêm chú `<!-- file axiom_4.html = Tiên Đề III (Mạch Cội Dọc) -->` và một dòng hiển thị nhỏ.
 
 ### P6c — Render lại vùng tiên đề (per-page, content-aware)
 - `what.html`: reorder 7 card về thứ tự mới (I,II,III=Thời Gian,IV=Biên Giới,V=Phân Tán,VI,VII) + đổi nhãn loại + sửa bảng tóm tắt/kiểm tra/sơ đồ dẫn xuất + cross-ref `[từ …]`. *(Hoặc thay cả vùng bằng render giống `axioms.html` để dedupe — cân nhắc single-source.)*
 - `axiom_4.html`: title/meta/hero/breadcrumb/nội dung "IV"→"III"; cross-ref line ~396 "I, II, hay III(Phân Tán)" → "I, II, hay V".
-- `mach_re_homologous.html`: "Tiên Đề IV"→"III" (toàn trang về Thời Gian Dọc).
+- `mach_re_homologous.html`: "Tiên Đề IV"→"III" (toàn trang về Mạch Cội Dọc).
 - `upgrade.html`: "7 Tiên Đề gốc" + ascii giới hạn theo số — remap; VIII giữ.
 - `axiom_conflict.html`: VIII/II giữ số; các ref khác remap.
 - `how.html`: sơ đồ "3 Core Axioms" CỤC BỘ — KHÔNG cùng tập; chỉ cập nhật câu "Tiên Đề IV vs triết học" (→III) + ghi rõ đây là sơ đồ rút gọn riêng.

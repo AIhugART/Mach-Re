@@ -32,7 +32,7 @@ Tiên Đề [số] — [Biểu hiện thuần Việt] — [Bản chất thuần 
 
 Ví dụ mẫu người dùng đưa ra cho IV:
 
-> **Tiên Đề IV — Thời Gian Dọc — Thời Gian Cội Nguồn**
+> **Tiên Đề IV — Mạch Cội Dọc — Mạch Cội Nguồn**
 
 ### Ràng buộc bắt buộc (từ CLAUDE.md)
 
@@ -59,7 +59,7 @@ Ví dụ mẫu người dùng đưa ra cho IV:
 | I | Tồn tại-trong-quan-hệ | Relational Ontology |
 | II | Bản sắc = bất biến cấu trúc | Structural Invariant |
 | III | Bất biến phải phân tán | Distributed Storage |
-| IV | Thời Gian Dọc / Cội Nguồn | Vertical / Orthogonal Temporality |
+| IV | Mạch Cội Dọc / Cội Nguồn | Vertical / Orthogonal Temporality |
 | V | Biên giới động | Dynamic Boundaries |
 | VI | Chuyển hóa nhiễu loạn | Perturbation Transformation |
 | VII | Nổi lên có hướng | Directed Emergence |
@@ -97,14 +97,14 @@ Ghi rõ: la bàn Upāya quyết định *vì sao*; mỗi tên đề xuất qua c
 | I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | Relational Ontology | 4.8 | ✅ áp dụng |
 | II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | 4.8 | ✅ áp dụng |
 | III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 | ✅ áp dụng |
-| IV | Thời Gian Dọc | Thời Gian Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 | ✅ áp dụng |
+| IV | Mạch Cội Dọc | Mạch Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 | ✅ áp dụng |
 | V | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | 5.0 | ✅ áp dụng |
 | VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 | ✅ áp dụng |
 | VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 | ✅ áp dụng |
 | VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 | ✅ áp dụng |
 
 → Tên đầy đủ = `Tiên Đề [số] — [Biểu hiện] — [Bản chất] ("EN")`.
-Ví dụ IV: **Tiên Đề IV — Thời Gian Dọc — Thời Gian Cội Nguồn ("Vertical / Orthogonal Temporality")**.
+Ví dụ IV: **Tiên Đề IV — Mạch Cội Dọc — Mạch Cội Nguồn ("Vertical / Orthogonal Temporality")**.
 
 #### Chi tiết RCA + chấm điểm từng tên
 
@@ -123,7 +123,7 @@ Ví dụ IV: **Tiên Đề IV — Thời Gian Dọc — Thời Gian Cội Nguồ
 - R3 gốc: bất biến phải *phân tán*, không tập trung → "giữ mà không gom" + "ai cũng giữ một phần".
 - Correct 5 · Deep 5 · Feasible 5 · Conflict-risk 5 · Preservation 5 → **5.0 ✅** (thuần Việt trọn vẹn)
 
-**IV — Thời Gian Dọc — Thời Gian Cội Nguồn** (Vertical / Orthogonal Temporality) *(mẫu người dùng)*
+**IV — Mạch Cội Dọc — Mạch Cội Nguồn** (Vertical / Orthogonal Temporality) *(mẫu người dùng)*
 - R3 gốc: Biểu hiện = "dọc" (vertical); Bản chất cảm xúc-bản sắc = "cội nguồn".
 - Correct 5 · Deep 5 · Feasible 5 · **Conflict-risk 4** *(BẮT BUỘC neo: "Cội Nguồn" = bản chất
   cảm xúc-bản sắc, KHÔNG đồng nghĩa thuật ngữ cấu trúc "Orthogonal/trực giao" —

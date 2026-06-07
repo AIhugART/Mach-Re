@@ -19,7 +19,7 @@ Nguyên tắc chung: tránh **"không ai / tất cả / duy nhất / chính xác
 
 | # | Vị trí | Câu hiện tại (rút gọn) | Đề xuất sửa |
 |---|--------|------------------------|-------------|
-| A1 | Tiên Đề IV (trang WHAT) | "Không có triết học nào trước đây phát biểu thời gian dọc như một chiều kích bản thể học." | "Mạch Rễ nhấn mạnh thời gian dọc như một chiều bản thể học — góc ít được khai thác trực diện trong các framework bản sắc đương đại." |
+| A1 | Tiên Đề IV (trang WHAT) | "Không có triết học nào trước đây phát biểu mạch cội dọc như một chiều kích bản thể học." | "Mạch Rễ nhấn mạnh mạch cội dọc như một chiều bản thể học — góc ít được khai thác trực diện trong các framework bản sắc đương đại." |
 | A2 | Ghi chú dưới bảng 7 tiên đề | "Tiên Đề IV và VII là hai điểm Mạch Rễ đóng góp nguyên bản vào triết học." | "...là hai điểm Mạch Rễ tự thấy khác biệt nhất so với các nguồn nó kế thừa." |
 | A3 | Phần Đồng cấu (Isomorphism) | "A5 và A7 là đóng góp lý thuyết thực sự của Mạch Rễ." | "A5 và A7 là phần Mạch Rễ bổ sung mà ba hệ thống kia chưa nói rõ." |
 | A4 | Hộp "Đóng góp độc nhất" (bản đồ triết học) | "...chiều kích bị thiếu trong **hầu hết** triết học phương Tây hiện đại" / "**tất cả** các khung nền bản sắc hiện có đều... bằng ranh giới." | Bỏ "hầu hết / tất cả" → "phần lớn framework tôi khảo sát". Hoặc nêu rõ phạm vi đã đối chiếu (Ubuntu, Wabi-sabi, Tikkun Olam, Ahimsa, Ikigai). |
@@ -36,7 +36,7 @@ Vấn đề: các biểu thức kiểu `∀x: Being(x) ≡ {R(x,y) | y ∈ Unive
 Hành động:
 - **Bỏ** các "công thức" không thật sự tính toán được điều gì.
 - Giữ lại tối đa 1–2 sơ đồ quan hệ (dạng mũi tên / tầng) nếu chúng giúp người đọc hình dung — nhưng gọi đúng tên là *sơ đồ*, không phải *công thức*.
-- Diễn đạt lại bằng câu chữ rõ ràng. Ví dụ thay `Resilience(S) = f(depth(V))` bằng: "Sức bền của hệ thống tăng theo chiều sâu của trục thời gian dọc."
+- Diễn đạt lại bằng câu chữ rõ ràng. Ví dụ thay `Resilience(S) = f(depth(V))` bằng: "Sức bền của hệ thống tăng theo chiều sâu của trục mạch cội dọc."
 
 ---
 

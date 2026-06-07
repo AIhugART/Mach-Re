@@ -61,7 +61,7 @@ TẦNG ĐỐI TƯỢNG (Object-level) — hệ tiên đề về bản sắc
 ├── 4 Core Axioms (độc lập thật)
 │   ├── A1 — Quan Hệ Bản Thể     (Relational Ontology)
 │   ├── A2 — Bất Biến Cấu Trúc   (Structural Invariance)
-│   ├── A4 — Thời Gian Dọc       (Vertical / Orthogonal Temporality)
+│   ├── A4 — Mạch Cội Dọc       (Vertical / Orthogonal Temporality)
 │   └── A5 — Biên Giới Động      (Dynamic Boundary)
 └── 3 Derived Propositions (suy ra, không phải tiên đề)
     ├── P3 — Phân Tán Bản Thể     [từ A1 + A2]
@@ -83,7 +83,7 @@ TẦNG ĐỐI TƯỢNG (Object-level) — hệ tiên đề về bản sắc
 ```
 A1 ──┬──→ A2 ──────────────→ P3 (Phân Tán)   [A1+A2]
      │      │
-     │     A4 (Thời Gian Dọc)
+     │     A4 (Mạch Cội Dọc)
      │      │
      │     A5 (Biên Giới Động) ──→ P6 (Chuyển Hóa) [A4+A5]
      │      │
@@ -124,7 +124,7 @@ Thêm cột **"Loại"** vào bảng canonical, không xóa tên thuần Việt:
 | I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | Relational Ontology | **Core Axiom A1** |
 | II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | **Core Axiom A2** |
 | III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | **Derived P3** [A1+A2] |
-| IV | Thời Gian Dọc | Thời Gian Cội Nguồn | Vertical/Orthogonal Temporality | **Core Axiom A4** |
+| IV | Mạch Cội Dọc | Mạch Cội Nguồn | Vertical/Orthogonal Temporality | **Core Axiom A4** |
 | V | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | **Core Axiom A5** |
 | VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | **Derived P6** [A4+A5] |
 | VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | **Derived P7** [A1+A2+A4+A5] |

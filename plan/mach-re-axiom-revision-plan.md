@@ -27,7 +27,7 @@
 |-----|----------|--------|-------|
 | 🔴 CRITICAL | Mâu thuẫn nội bộ | Bảng 7 tiên đề + Phần "Quan Hệ 3 và 7" | Tài liệu tự kết luận III, VI, VII là hệ quả nhưng vẫn gọi chúng là "tiên đề" |
 | 🔴 CRITICAL | Vi phạm định nghĩa | Bảng kiểm tra "Axiom thật sự" | III được đánh ✅ "Độc lập" nhưng ngay sau đó thừa nhận có thể suy ra từ I+II |
-| 🟡 MAJOR | Overclaim | Tiên Đề IV | "Không có triết học nào trước đây phát biểu thời gian dọc như chiều kích bản thể học" — cần bằng chứng so sánh |
+| 🟡 MAJOR | Overclaim | Tiên Đề IV | "Không có triết học nào trước đây phát biểu mạch cội dọc như chiều kích bản thể học" — cần bằng chứng so sánh |
 | 🟡 MAJOR | Nhầm lẫn thể loại | Công thức toán học | Notation triết học được trình bày như toán học hình thức, không có định lý kiểm chứng được |
 | 🟢 MINOR | Thiếu trích dẫn | Tiên Đề I | Relational Ontology đã có trong Whitehead, Buttimer — cần acknowledge |
 | 🟢 MINOR | Thiếu trích dẫn | Tiên Đề II | Structural invariant gần với Phan Ngọc + Group Theory — cần link rõ hơn |
@@ -97,7 +97,7 @@ A1 (Quan Hệ Bản Thể)
     ├──→ A2 (Bất Biến Cấu Trúc) ──→ P3 (Phân Tán Bản Thể)
     │         │                              │
     │         │                              │
-    │    A4 (Thời Gian Dọc)                  │
+    │    A4 (Mạch Cội Dọc)                  │
     │         │                              │
     │    A5 (Biên Giới Động) ───────────→ P6 (Chuyển Hóa Nhiễu Loạn)
     │         │                              │
@@ -172,14 +172,14 @@ P3 có thể được dẫn xuất từ A1 + A2:
 
 ---
 
-### 3.4 Tiên Đề IV — Thời Gian Dọc (GIỮ, điều chỉnh claim)
+### 3.4 Tiên Đề IV — Mạch Cội Dọc (GIỮ, điều chỉnh claim)
 
 **Trạng thái:** ✅ Giữ làm Core Axiom A4 — nhưng **phải sửa claim**
 
 **Thay đổi bắt buộc:**
 
 ❌ **Xóa dòng này:**
-> "Không có triết học nào trước đây phát biểu thời gian dọc như một chiều kích bản thể học."
+> "Không có triết học nào trước đây phát biểu mạch cội dọc như một chiều kích bản thể học."
 
 ✅ **Thay bằng:**
 ```markdown
@@ -193,7 +193,7 @@ P3 có thể được dẫn xuất từ A1 + A2:
 
 **Đóng góp thực sự của A4 (cần diễn đạt lại):**
 Các triết học trên nói đến ảnh hưởng của quá khứ lên hiện tại.
-A4 phát biểu thời gian dọc như **điều kiện tồn tại của bản sắc hệ thống** —
+A4 phát biểu mạch cội dọc như **điều kiện tồn tại của bản sắc hệ thống** —
 không chỉ điều kiện nhận thức. Cụ thể hơn: *chiều sâu của V (vertical time)
 tỉ lệ thuận với khả năng phục hồi của hệ thống sau nhiễu loạn.*
 
@@ -226,7 +226,7 @@ tái tổ chức theo logic của pattern nội tại, không phải logic của
 **Lý do:**
 P6 = A4 (vertical time depth cho ngữ cảnh) + A5 (dynamic boundary cho cơ chế xử lý):
 - Perturbation đến qua boundary A5
-- Được xử lý trong ngữ cảnh thời gian dọc A4
+- Được xử lý trong ngữ cảnh mạch cội dọc A4
 - → ΔVariety > 0 nếu boundary hoạt động đúng
 
 **Phiên bản chỉnh sửa:**
@@ -234,7 +234,7 @@ P6 = A4 (vertical time depth cho ngữ cảnh) + A5 (dynamic boundary cho cơ ch
 ### P6 — Mệnh Đề Chuyển Hóa (Derived Proposition, từ A4 + A5)
 
 > **Hệ quả của A4 và A5:** Perturbation đi qua biên giới động (A5) và được xử lý
-> trong ngữ cảnh thời gian dọc (A4) → trở thành thông tin cấu trúc làm tăng variety.
+> trong ngữ cảnh mạch cội dọc (A4) → trở thành thông tin cấu trúc làm tăng variety.
 > Perturbation bị đóng băng = biên giới thất bại (κ→0) hoặc thiếu chiều sâu dọc (V=∅).
 
 **Hàm ý thực hành (quan trọng):**
@@ -305,7 +305,7 @@ Thay vì claim tất cả đều "nguyên bản," phân loại rõ 3 mức:
 ### 4.2 Tái Viết Claim Chính
 
 ❌ **Phiên bản gốc:**
-> "Tiên Đề IV (Thời Gian Dọc) và VII (Nổi Lên Có Hướng) là hai điểm Mạch Rễ đóng góp nguyên bản vào triết học."
+> "Tiên Đề IV (Mạch Cội Dọc) và VII (Nổi Lên Có Hướng) là hai điểm Mạch Rễ đóng góp nguyên bản vào triết học."
 
 ✅ **Phiên bản đề xuất:**
 ```markdown
@@ -363,7 +363,7 @@ Thêm disclaimer vào đầu phần công thức:
 | I | Quan Hệ Bản Thể | Axiom | **Core Axiom A1** | Thêm prior art (Whitehead, Anattā) |
 | II | Bất Biến Cấu Trúc | Axiom | **Core Axiom A2** | Thêm prior art (Phan Ngọc, Lévi-Strauss) |
 | III | Phân Tán Bản Thể | Axiom | **Derived Proposition P3** | Chuyển loại, thêm derivation từ A1+A2 |
-| IV | Thời Gian Dọc | Axiom | **Core Axiom A4** | Xóa overclaim, thêm prior art, phát biểu lại đóng góp thực |
+| IV | Mạch Cội Dọc | Axiom | **Core Axiom A4** | Xóa overclaim, thêm prior art, phát biểu lại đóng góp thực |
 | V | Biên Giới Động | Axiom | **Core Axiom A5** | Thêm link với Ashby, phân biệt rõ hơn |
 | VI | Chuyển Hóa Nhiễu Loạn | Axiom | **Derived Proposition P6** | Chuyển loại, thêm derivation từ A4+A5 |
 | VII | Nổi Lên Có Hướng | Axiom | **Derived Proposition P7** | Chuyển loại, thêm derivation từ A1+A2+A4+A5 |

@@ -319,7 +319,7 @@ KHÔNG AI HỎI:
 | A2 | Bất biến cấu trúc | Bản sắc là invariant dưới content transformation |
 | A3 | Phi tập trung hữu hướng | Hệ thống có thể có hướng mà không cần trung tâm |
 | A4 | Biên giới thẩm thấu | Biên giới mạnh nhất là màng thẩm thấu, không phải tường |
-| **A5** | **Thời gian dọc** | **Invariant duy trì qua giao diện thời gian dọc — không chỉ thời gian ngang** |
+| **A5** | **mạch cội dọc** | **Invariant duy trì qua giao diện mạch cội dọc — không chỉ mạch nguồn ngang** |
 | A6 | Đau thương chuyển hóa | Trauma được xử lý → variety tăng |
 | **A7** | **Nổi lên có neo** | **Emergence bị neo bởi basin đủ sâu** |
 
@@ -375,14 +375,14 @@ Anattā PHẢI chấp nhận: Indra's Net — mỗi node chứa toàn bộ patte
 
 **CORE AXIOM III — Giao Diện Thời Gian**
 
-> "Invariant của một hệ thống phức tạp không được duy trì trong thời gian ngang mà được duy trì qua giao diện thời gian dọc — cơ chế mà qua đó các cấu hình hiện tại truy cập vào pattern của các cấu hình đã qua và chưa đến."
+> "Invariant của một hệ thống phức tạp không được duy trì trong mạch nguồn ngang mà được duy trì qua giao diện mạch cội dọc — cơ chế mà qua đó các cấu hình hiện tại truy cập vào pattern của các cấu hình đã qua và chưa đến."
 
 ```
 Phan Ngọc PHẢI chấp nhận: Không có cơ chế nào khác giải thích
                             tại sao kiểu cấu trúc được truyền dẫn
                             mà không cần thiết chế trung tâm
 Ashby PHẢI chấp nhận: Attractor basin cần được "nạp lại"
-                       Giao diện thời gian dọc = cơ chế nạp lại
+                       Giao diện mạch cội dọc = cơ chế nạp lại
 Anattā PHẢI chấp nhận: Santāna không thể giải thích
                         tại sao stream không drift sau perturbation lớn
                         mà không có giao diện với pattern đã qua
@@ -589,7 +589,7 @@ Mạch Rễ không có lý thuyết về bốn câu hỏi này. Mạch Rễ có 
 
 ### Bốn Điểm Đối Thoại
 
-**Với lý thuyết tổ chức:** Làng Việt Nam là Holacracy vận hành 2000 năm. Missing mechanism mà Holacracy đang tìm: giao diện thời gian dọc.
+**Với lý thuyết tổ chức:** Làng Việt Nam là Holacracy vận hành 2000 năm. Missing mechanism mà Holacracy đang tìm: giao diện mạch cội dọc.
 
 **Với triết học bản sắc:** Con đường thứ ba giữa "bản sắc cứng" và "hòa tan" — đã tồn tại và có thể quan sát được.
 

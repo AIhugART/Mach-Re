@@ -78,7 +78,7 @@ Dưới đây là tóm tắt bảy tiên đề, trình bày theo thứ tự mà 
 
 **Tiên Đề II — Bất Biến Cấu Trúc** (*Structural Invariance* — "Nếp Bản Sắc — Đổi Mà Vẫn Là Mình"). Cái bền qua thay đổi nội dung là một *pattern bất biến của quan hệ* — bền ở mức quy ước (theo nghĩa Nhị đế trong Phật giáo), không phải bản thể tuyệt đối. Sơ đồ: `Identity(S) = Pattern(R(S))`. Điều kiện "trống svabhāva" (không có bản thể nội tại) là bắt buộc — nếu thiếu, Tiên Đề II trở thành chủ nghĩa bản chất (*essentialism*), mâu thuẫn trực tiếp với Tiên Đề I. Hội tụ: A (kiểu quan hệ = invariant — neo mạnh nhất), B (Ashby: essential variables; invariant under transformation), C có điều kiện (Śūnyatā) — ~2.5/3.
 
-**Tiên Đề III — Thời Gian Dọc** (*Orthogonal Temporality* — "Thời Gian Dọc — Thời Gian Cội Nguồn"). Mạng quan hệ cấu thành bản sắc trải *xuyên thời gian*: trục dọc V (tổ tiên ↕ hiện tại ↕ hậu thế) trực giao với trục ngang H (quan hệ đương đại): `V ⊥ H`. Chiều dọc là *điều kiện tồn tại*, không chỉ là nhận thức hay ảnh hưởng. Phân biệt then chốt: Halbwachs (1950) coi ký ức tập thể là thành phần *trong* hiện tại; Gadamer (1960) coi lịch sử tác động (*Wirkungsgeschichte*) là *ảnh hưởng*; Tiên Đề III đặt chiều dọc là *trực giao* — không rút gọn được về chiều ngang, cũng không phải "ảnh hưởng" — mà là *điều kiện để hệ tồn tại qua thay đổi*. Hội tụ: A yếu (Phan Ngọc nghiêng đồng đại), B (Weick: retrospect; Ashby: stored history), C (Pratītyasamutpāda: nhân quả xuyên thời gian — neo mạnh nhất) — ~2.5/3.
+**Tiên Đề III — Mạch Cội Dọc** (*Orthogonal Temporality* — "Mạch Cội Dọc — Mạch Cội Nguồn"). Mạng quan hệ cấu thành bản sắc trải *xuyên thời gian*: trục dọc V (tổ tiên ↕ hiện tại ↕ hậu thế) trực giao với trục ngang H (quan hệ đương đại): `V ⊥ H`. Chiều dọc là *điều kiện tồn tại*, không chỉ là nhận thức hay ảnh hưởng. Phân biệt then chốt: Halbwachs (1950) coi ký ức tập thể là thành phần *trong* hiện tại; Gadamer (1960) coi lịch sử tác động (*Wirkungsgeschichte*) là *ảnh hưởng*; Tiên Đề III đặt chiều dọc là *trực giao* — không rút gọn được về chiều ngang, cũng không phải "ảnh hưởng" — mà là *điều kiện để hệ tồn tại qua thay đổi*. Hội tụ: A yếu (Phan Ngọc nghiêng đồng đại), B (Weick: retrospect; Ashby: stored history), C (Pratītyasamutpāda: nhân quả xuyên thời gian — neo mạnh nhất) — ~2.5/3.
 
 **Tiên Đề IV — Biên Giới Động** (*Dynamic Boundary* — "Ranh Giới Mềm — Đóng Mở Có Chọn"). Hệ sống sót nhờ biên giới *thấm chọn lọc*: không tường kín (→ giòn, thiếu variety, gãy khi áp lực vượt ngưỡng), không mở toang (→ bị đồng hóa, mất pattern). Nội dung đi qua biên giới được *tái tổ chức* theo logic pattern nội tại (Tiên Đề II), không theo logic nội dung đến. Đây là cơ chế cho phép hệ *tương tác* với môi trường mà không tan rã — và lý do tại sao "tường rào" (isolation) không phải là chiến lược sinh tồn bền vững. Hội tụ: A (Việt hóa = hấp thụ chọn lọc), B (Ashby Requisite Variety — neo mạnh nhất), C yếu (vô chấp, không dựng tường) — ~2.5/3.
 
@@ -88,7 +88,7 @@ Ba mệnh đề sau *suy được* từ các Tiên Đề Cốt Lõi — chúng k
 
 **Mệnh Đề V — Phân Tán Bản Thể** (*Distributed* — "Giữ Mà Không Gom"). Suy từ I + II: pattern (II) của mạng quan hệ (I) là thuộc tính *toàn mạng*, không lưu được tại bất kỳ nút đơn lẻ nào. Hàm ý: tập trung hóa pattern vào một thiết chế duy nhất (nhà nước, giáo hội, đảng phái) tạo ra *single point of failure* — khi thiết chế đó sụp, bản sắc sụp theo. Bản sắc phân tán bền hơn — không phải vì phân tán là "tốt" trên nguyên tắc đạo đức, mà vì nó ít điểm gãy hơn.
 
-**Mệnh Đề VI — Chuyển Hóa Nhiễu Loạn** (*Perturbation Transformation* — "Hóa Nhiễu Thành Sức"). Suy từ II + III + IV: nhiễu loạn đi vào qua biên giới (IV), pattern tái tổ chức nhiễu loạn theo logic nội tại (II), trong chiều thời gian dọc (III), kết quả là variety tăng (ΔVariety > 0). Cơ chế "hấp thụ có định hướng" (*directed absorption*) — mà Phan Ngọc gọi là "Việt hóa" — là *chữ ký* của Mệnh Đề VI, không phải tiên đề riêng. Lưu ý quan trọng: Mệnh Đề VI *không* nói "đau khổ là tốt" — nó nói đau khổ *có thể* chuyển hóa nếu hệ có đủ biên giới (IV) và chiều dọc (III). Khi thiếu một trong hai, nhiễu loạn bị *đóng băng* — trauma không được xử lý.
+**Mệnh Đề VI — Chuyển Hóa Nhiễu Loạn** (*Perturbation Transformation* — "Hóa Nhiễu Thành Sức"). Suy từ II + III + IV: nhiễu loạn đi vào qua biên giới (IV), pattern tái tổ chức nhiễu loạn theo logic nội tại (II), trong chiều mạch cội dọc (III), kết quả là variety tăng (ΔVariety > 0). Cơ chế "hấp thụ có định hướng" (*directed absorption*) — mà Phan Ngọc gọi là "Việt hóa" — là *chữ ký* của Mệnh Đề VI, không phải tiên đề riêng. Lưu ý quan trọng: Mệnh Đề VI *không* nói "đau khổ là tốt" — nó nói đau khổ *có thể* chuyển hóa nếu hệ có đủ biên giới (IV) và chiều dọc (III). Khi thiếu một trong hai, nhiễu loạn bị *đóng băng* — trauma không được xử lý.
 
 **Mệnh Đề VII — Nổi Lên Có Hướng** (*Directed Emergence* — "Nổi Lên Có Hướng"). Suy từ I + II + III + IV: khi cả bốn Tiên Đề Cốt Lõi vận hành đồng thời, trật tự nổi lên *có hướng* — không phải từ mệnh lệnh trung tâm, mà từ trường lực (*field gradient*) do toàn mạng tạo ra. Đây là tổng hợp, không thêm giả định. Phân biệt với *tự tổ chức* (self-organization) không hướng: Mệnh Đề VII đặt "hướng" — pattern bất biến (II) cung cấp gradient, không phải mục đích (*telos*). Hệ không *muốn* tồn tại — nó *nổi lên theo hướng* khi các điều kiện đáp ứng.
 
@@ -100,7 +100,7 @@ Bỏ thử từng Tiên Đề Cốt Lõi — hệ còn trả lời được câu
 |---|---|---|
 | I (Quan hệ bản thể) | Bản sắc thành bản thể cố định → bất kỳ đồng hóa nào thay bản thể = mất bản sắc | Cần |
 | II (Bất biến cấu trúc) | Không có invariant → mọi thứ biến đổi → không gì "tồn tại qua thay đổi" | Cần |
-| III (Thời gian dọc) | Chỉ còn chiều ngang → bản sắc một đời → không truyền thế hệ | Cần |
+| III (mạch cội dọc) | Chỉ còn chiều ngang → bản sắc một đời → không truyền thế hệ | Cần |
 | IV (Biên giới động) | Không cơ chế tương tác → tường kín (giòn) hoặc mở toang (tan) | Cần |
 
 Bốn Tiên Đề đều cần thiết (*necessary*). Tính *đủ* (*sufficient*) vẫn là giả thuyết mở — cần cộng đồng học thuật cố phá (*attempt to falsify*).
@@ -129,7 +129,7 @@ Mapping lên "gốc chắc" của Ngoại giao Cây Tre:
 
 ## 5. "Vững ở thân": thời gian trực giao và biên giới động
 
-Tầng thân — "vững ở thân" — cung cấp sức chịu lực cấu trúc cho toàn bộ hệ thống. Trong hình tượng Cây Tre, thân là phần chịu tải trọng gió bão: nó uốn nhưng không gãy, truyền dẫn dưỡng chất từ rễ lên cành, và giữ cho toàn cây đứng vững. Tiên Đề III (Thời Gian Dọc) và Tiên Đề IV (Biên Giới Động) cung cấp hai cơ chế tương ứng.
+Tầng thân — "vững ở thân" — cung cấp sức chịu lực cấu trúc cho toàn bộ hệ thống. Trong hình tượng Cây Tre, thân là phần chịu tải trọng gió bão: nó uốn nhưng không gãy, truyền dẫn dưỡng chất từ rễ lên cành, và giữ cho toàn cây đứng vững. Tiên Đề III (Mạch Cội Dọc) và Tiên Đề IV (Biên Giới Động) cung cấp hai cơ chế tương ứng.
 
 ### 5.1 Thời gian trực giao — sức bền cấu trúc
 

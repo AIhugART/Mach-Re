@@ -77,7 +77,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ---
 
-#### Tiên Đề III — Thời Gian Dọc (Vertical / Orthogonal Temporality) · *"Thời Gian Dọc — Thời Gian Cội Nguồn"*
+#### Tiên Đề III — Mạch Cội Dọc (Vertical / Orthogonal Temporality) · *"Mạch Cội Dọc — Mạch Cội Nguồn"*
 - **Loại:** Core Axiom (ontological). *(Đánh số mới III; hệ cũ là IV.)*
 - **Bản chất (essence):** **Orthogonal Temporality** — trục dọc V (xuyên thời gian: tổ tiên ↕ hậu thế) *trực giao* trục ngang H (quan hệ đương đại): `V ⊥ H`, không rút gọn về nhau.
 - **Biểu hiện (manifestation):** **Vertical Temporality** — hình thức trục dọc trong đời sống văn hóa. (Hai tầng essence ≠ manifestation — `dictionary §8`.)
@@ -109,7 +109,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 - **Triangulation:** A·B·C nhất quán (C mạnh: vô ngã → không trung tâm).
 
 #### Mệnh Đề VI — Chuyển Hóa Nhiễu Loạn (Perturbation Transformation) · *"Hóa Nhiễu Thành Sức"* · **[từ II + III + IV]**
-- **Suy:** nhiễu vào qua biên giới (IV) → pattern tái tổ chức (II) → trong chiều thời gian dọc (III) → ΔVariety > 0. Nhiễu bị đóng băng = biên giới hỏng hoặc thiếu chiều dọc.
+- **Suy:** nhiễu vào qua biên giới (IV) → pattern tái tổ chức (II) → trong chiều mạch cội dọc (III) → ΔVariety > 0. Nhiễu bị đóng băng = biên giới hỏng hoặc thiếu chiều dọc.
 - **Bao gồm cơ chế K9 "hấp thụ có định hướng"** = chữ ký II×IV (KHÔNG phải tiên đề riêng — §4).
 - **Hàm ý:** không nói "đau khổ là tốt"; nói đau khổ *có thể* chuyển hóa nếu đủ biên giới + chiều dọc.
 
@@ -140,7 +140,7 @@ TẦNG PHẢN TƯ
 TẦNG CỐT LÕI (object-level)
   I ──┬──→ II ─────────────→ V  (Phân Tán)        [I+II]
       │     │
-      │    III (Thời Gian Dọc)
+      │    III (Mạch Cội Dọc)
       │     │
       │    IV (Biên Giới Động) ──→ VI (Chuyển Hóa) [II+III+IV]
       │     │
@@ -188,14 +188,14 @@ Bỏ thử từng Core — hệ còn trả lời R không?
 |---|---|---|---|
 | I | **I** | Core | Sống Trong Quan Hệ |
 | II | **II** | Core | Nếp Bản Sắc |
-| IV | **III** | Core | Thời Gian Dọc — Cội Nguồn |
+| IV | **III** | Core | Mạch Cội Dọc — Cội Nguồn |
 | V | **IV** | Core | Ranh Giới Mềm |
 | III | **V** | Derived | Giữ Mà Không Gom |
 | VI | **VI** | Derived | Hóa Nhiễu Thành Sức |
 | VII | **VII** | Derived | Nổi Lên Có Hướng |
 | VIII | **VIII** | Meta | Tự Nhìn Thấy Mình |
 
-> Reorder cốt yếu: Thời Gian Dọc (cũ IV → mới **III**), Biên Giới Động (cũ V → mới **IV**), Phân Tán (cũ III → mới **V**, chuyển tầng sang Derived). VI/VII đổi *loại* (Tiên Đề → Mệnh Đề Dẫn Xuất) nhưng giữ số. Đây là phân loại có biện minh (§1), không tùy tiện.
+> Reorder cốt yếu: Mạch Cội Dọc (cũ IV → mới **III**), Biên Giới Động (cũ V → mới **IV**), Phân Tán (cũ III → mới **V**, chuyển tầng sang Derived). VI/VII đổi *loại* (Tiên Đề → Mệnh Đề Dẫn Xuất) nhưng giữ số. Đây là phân loại có biện minh (§1), không tùy tiện.
 
 ---
 

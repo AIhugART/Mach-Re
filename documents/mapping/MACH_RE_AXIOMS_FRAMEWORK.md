@@ -279,7 +279,7 @@ Vietnamese reconciliation with former enemies (USA, France, China) is not weakne
 ---
 
 ### AXIOM 5 — Vertical Time
-*Thời gian dọc*
+*mạch cội dọc*
 
 **Plain language:**
 Resilient systems do not only move forward through horizontal time. They also operate on a vertical time axis — in ongoing dialogue with ancestors above and descendants below. This is an architectural feature, not a metaphor.

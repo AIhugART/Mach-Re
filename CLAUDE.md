@@ -97,7 +97,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 **Bản chất (Essence):** Thời gian trực giao (Orthogonal Temporality) — trục V và trục H là hai chiều kích thời gian **trực giao** (mathematically independent, irreducible to each other): `V ⊥ H`. Tính trực giao này là tính chất cấu trúc (structural property) nền tảng của Tiên Đề III — lý do duy nhất để phân biệt Tiên Đề III với "ký ức là một phần của hiện tại" (Halbwachs, Luhmann).
 
-**Biểu hiện (Manifestation):** Thời gian dọc (Vertical Temporality) — hình thức mà tính trực giao hiện ra trong đời sống văn hóa xã hội: trục quan hệ tổ tiên ↕ hiện tại ↕ hậu thế. "Dọc" là cách đặt tên trực quan cho chiều trực giao đó, không phải định nghĩa cấu trúc.
+**Biểu hiện (Manifestation):** mạch cội dọc (Vertical Temporality) — hình thức mà tính trực giao hiện ra trong đời sống văn hóa xã hội: trục quan hệ tổ tiên ↕ hiện tại ↕ hậu thế. "Dọc" là cách đặt tên trực quan cho chiều trực giao đó, không phải định nghĩa cấu trúc.
 
 **Quy tắc sử dụng thuật ngữ:**
 - Khi phát biểu nguyên lý bản thể học → dùng **Orthogonal Temporality** (bản chất)
@@ -113,7 +113,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 |---|---|---|---|
 | I | Core | Sống Trong Quan Hệ | Có Nhau Mới Có Mình |
 | II | Core | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình |
-| III | Core | Thời Gian Dọc | Thời Gian Cội Nguồn |
+| III | Core | Mạch Cội Dọc | Mạch Cội Nguồn |
 | IV | Core | Ranh Giới Mềm | Đóng Mở Có Chọn |
 | V | Derived | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần |
 | VI | Derived | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành |
@@ -166,7 +166,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **MACH_RE** (908 symbols, 860 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **MACH_RE** (1058 symbols, 980 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 

@@ -10,7 +10,7 @@
 | Cũ | Axiom | → Mới |
 |---|---|---|
 | III | Phân Tán Bản Thể | **V** |
-| IV | Thời Gian Dọc | **III** |
+| IV | Mạch Cội Dọc | **III** |
 | V | Biên Giới Động | **IV** |
 > I, II, VI, VII, VIII giữ số. **Cấm find/replace** — "III"/"IV"/"V" mỗi chỗ phải đọc nghĩa.
 
@@ -35,18 +35,18 @@
 
 ---
 
-## 2. NHÓM ĐỔI IV (Thời Gian Dọc) → III  *(lớn nhất)*
+## 2. NHÓM ĐỔI IV (Mạch Cội Dọc) → III  *(lớn nhất)*
 | File:dòng | Ngữ cảnh | Hành động |
 |---|---|---|
-| **axiom_4.html** | **toàn trang đơn-chủ-đề** Thời Gian Dọc | title:6, meta:7, breadcrumb:204, hero tag:208, label:222/975, AXIOM IV:338, body: 438,461,469,488,492,502,508,522,546,554,571,579,594,601,605,617,635,643,658,663,732,739,740,924,928,948,958,973 — **TẤT CẢ IV→III** (trừ 396 ở §1, và VIII:961 giữ) |
-| **mach_re_homologous.html** | **toàn trang** về Thời Gian Dọc | 206,220,221,226,243,368,370,376,379,386,398,400,408,412,414,415,416,425,455,477,493,505,506,507,508,552 — **TẤT CẢ IV→III** |
+| **axiom_4.html** | **toàn trang đơn-chủ-đề** Mạch Cội Dọc | title:6, meta:7, breadcrumb:204, hero tag:208, label:222/975, AXIOM IV:338, body: 438,461,469,488,492,502,508,522,546,554,571,579,594,601,605,617,635,643,658,663,732,739,740,924,928,948,958,973 — **TẤT CẢ IV→III** (trừ 396 ở §1, và VIII:961 giữ) |
+| **mach_re_homologous.html** | **toàn trang** về Mạch Cội Dọc | 206,220,221,226,243,368,370,376,379,386,398,400,408,412,414,415,416,425,455,477,493,505,506,507,508,552 — **TẤT CẢ IV→III** |
 | what.html:585 | `<!-- AXIOM IV -->` card Thời Gian | IV→III (Core, giữ vị trí 3) |
 | what.html:653 | `[từ Tiên Đề IV]` (Vertical time) | IV→III |
-| what.html:675 | hierarchy "Tiên Đề IV — Thời Gian Dọc" | IV→III |
+| what.html:675 | hierarchy "Tiên Đề IV — Mạch Cội Dọc" | IV→III |
 | what.html:692 | summary table row IV | IV→III |
 | what.html:707 | check-table row IV "✅ ← novel" | IV→III |
-| what.html:713 | "Tiên Đề IV (Thời Gian Dọc) và VII…" | IV→III |
-| what.html:731 | ascii "IV — Thời gian dọc ✅" | IV→III |
+| what.html:713 | "Tiên Đề IV (Mạch Cội Dọc) và VII…" | IV→III |
+| what.html:731 | ascii "IV — mạch cội dọc ✅" | IV→III |
 | what.html:855 | self-limit "Tiên Đề IV chỉ mô tả đối thoại với quá khứ" | IV→III |
 | upgrade.html:308 | "UPGRADE IV — Tiên Đề IV" (nhãn axiom) | "Tiên Đề IV"→"Tiên Đề III" |
 | upgrade.html:310 | "Tiên Đề IV hiện tại: …giao diện tổ tiên" | IV→III |
@@ -71,7 +71,7 @@
 ## 4. LINK-TEXT cần đổi (P6d)
 | File:dòng | Text hiện tại | → |
 |---|---|---|
-| what.html:603 | "Đọc chi tiết: Tiên Đề IV — Thời Gian Cội Nguồn" | "Tiên Đề III" |
+| what.html:603 | "Đọc chi tiết: Tiên Đề IV — Mạch Cội Nguồn" | "Tiên Đề III" |
 | what.html:975 | footer `<a href="axiom_4.html">Tiên Đề IV</a>` | "Tiên Đề III" |
 | mach_re_homologous.html:198,560,566 | `Tiên Đề IV` (link axiom_4) | "Tiên Đề III" |
 | axiom_conflict.html:410 | footer `Tiên Đề IV` | "Tiên Đề III" |

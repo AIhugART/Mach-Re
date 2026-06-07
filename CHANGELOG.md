@@ -1,5 +1,50 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — Global rename: "Thời Gian Dọc" → "Mạch Cội Dọc" và "Thời Gian Ngang" → "Mạch Nguồn Ngang"
+
+**Thực hiện theo xác nhận user.** Không qua RCA gate (đây là rename thuật ngữ đồng thuận, không phải sửa claim).
+
+**Rationale:** Hoàn thiện hệ thống tên "Mạch" thống nhất cho cả ba trục thời gian:
+- "Mạch Cội Dọc" (Vertical / Root) — Biểu hiện của Tiên Đề III, trục tổ tiên ↕ hiện tại ↕ hậu thế
+- "Mạch Nguồn Ngang" (Horizontal / Flow) — Trục tuyến tính quá khứ → hiện tại → tương lai
+- "Mạch Cội Nguồn" (Orthogonal Temporality) — Bản chất của Tiên Đề III (đã đổi trước đó, 2026-06-07)
+
+Ba tên cùng dùng tiền tố "Mạch", nhất quán với tên dự án "Mạch Rễ". Bỏ hoàn toàn "Thời Gian" khỏi tên trục dọc/ngang để tránh confusion với clock-time tuyến tính.
+
+**Phạm vi:** 34 files ("Mạch Cội Dọc") + 7 files bổ sung ("Mạch Nguồn Ngang") — tổng 34 files cập nhật. Bao gồm toàn bộ HTML pages, plan docs, academic papers, raw/, archives/.
+
+**Canonical:** `plan/dictionary_rule.md §9` — đã cập nhật. `CLAUDE.md` bảng Tiên Đề — đã cập nhật.
+
+---
+
+## 2026-06-07 — Global rename: "Thời Gian Cội Nguồn" → "Mạch Cội Nguồn" (Tiên Đề III Bản chất)
+
+**Cổng RCA (terminology, 4.6/5 → FIX).** 3-round RCA × 5-Why. Thực hiện theo xác nhận user.
+
+**Root cause:** "Thời Gian" trong "Thời Gian Cội Nguồn" gợi clock-time tuyến tính (chronological time), trong khi Tiên Đề III mô tả tính **trực giao** của trục thời gian (V ⊥ H — structurally independent, not sequential). Từ "Thời Gian" tạo category confusion với "Horizontal temporality" (cũng là thời gian), làm mờ bản chất distinguishing của Tiên Đề III. Root: tên gọi không encode structural property cốt lõi (`⊥`) mà chỉ encode domain ("time").
+
+**Rationale "Mạch":** mạch (vein / underground current / pulse) = flow + depth + connectivity, không mang nghĩa clock-time, kết nối với tên dự án "Mạch Rễ", không xung đột với sub-terms "Chiều Cội" / "Chiều Nguồn". Score: Correct 5 / Deep 5 / Feasible 4 / Conflict-risk 4 / Preservation 5 = **4.6/5**.
+
+**Phạm vi:** 16 files — `axiom_3.html`, `axioms.html`, `what.html`, `mach_re_homologous.html`, `CLAUDE.md`, `CHANGELOG.md`, `axiom_spec.md`, `plan/dictionary_rule.md`, `plan/mach-re-P6a-inventory.md`, `plan/mach-re-axiom-revision-plan-v2.md`, `plan/mach-re-plan-ten-thuan-viet-tien-de.md`, `raw/axiom_4.html`, `papers/paper_001/paper_001_draft.md`, `papers/paper_003/paper_003_draft.md`, `papers/paper_003/paper_003.html`, `papers/paper_004/paper_004_draft.md`.
+
+**Canonical:** `plan/dictionary_rule.md §9` — nguồn chân lý duy nhất cho tên Tiên Đề III Bản chất đã cập nhật.
+
+---
+
+## 2026-06-07 — `axiom_3.html`: Hợp nhất 2 định nghĩa "cấu hình" thành 1 tại §1C
+
+**Cổng RCA (structural, 4.6/5 → FIX).** 3-round RCA × 5-Why.
+
+**Root cause:** Có hai box định nghĩa cùng một khái niệm: (1) gloss §1 "Đọc nhanh — cấu hình nghĩa là gì?" (thêm 2026-06-07 vì §1C quá xa điểm dùng) và (2) §1C "Giải thích khái niệm: Cấu hình" (bản gốc). Mỗi bên có nội dung unique mà bên kia thiếu (gloss §1 có ví dụ hai gia đình + diễn giải "đã qua/chưa tới"; §1C có lý do không dùng "thực thể"/"trạng thái" + câu kết giao diện kết nối). Hai bản song song tạo redundancy và nguy cơ drift nội dung.
+
+**Sửa 2 chỗ:**
+1. **Xóa** gloss §1 (dòng 263–273) hoàn toàn.
+2. **Mở rộng §1C** — thêm ví dụ hai gia đình và diễn giải "đã qua/chưa tới" vào box §1C; giữ nguyên anchor `id="rca-configuration"`, lý do không dùng "thực thể"/"trạng thái", câu kết giao diện kết nối. Thứ tự 5 lớp: định nghĩa → ví dụ → lý do thuật ngữ → đã qua/chưa tới → câu kết.
+
+**Bảo tồn:** Anchor `id="rca-configuration"` giữ nguyên (nhiều link trỏ đến). Toàn bộ nội dung unique của cả hai bên được giữ lại trong box hợp nhất. Không mất thông tin.
+
+---
+
 ## 2026-06-07 — `axiom_3.html` Section 1: Dời box "Phát biểu tường minh nhất" xuống sau Tiếng Việt/English
 
 **Thực hiện theo yêu cầu user.** Không RCA gate (thay đổi thứ tự trình bày, không sửa nội dung/claim).
@@ -58,7 +103,7 @@
 
 **Cổng RCA (claim, 5/5 → FIX).**
 
-**Root cause:** Bài viết sử dụng nhiều thuật ngữ chuyên môn phức tạp (Bản thể học liên chủ thể, Thời gian cội nguồn, Bất biến cấu trúc, Ranh giới thấm hút...) nhưng chưa có định nghĩa đơn giản hóa, làm hạn chế khả năng tiếp cận đối với đối tượng độc giả phổ thông (học sinh trung học phổ thông - high school level) và dễ dẫn đến hiểu nhầm hoặc lạm dụng thuật ngữ.
+**Root cause:** Bài viết sử dụng nhiều thuật ngữ chuyên môn phức tạp (Bản thể học liên chủ thể, Mạch cội nguồn, Bất biến cấu trúc, Ranh giới thấm hút...) nhưng chưa có định nghĩa đơn giản hóa, làm hạn chế khả năng tiếp cận đối với đối tượng độc giả phổ thông (học sinh trung học phổ thông - high school level) và dễ dẫn đến hiểu nhầm hoặc lạm dụng thuật ngữ.
 
 **Sửa:**
 1. Thêm mục `## Bảng giải thích thuật ngữ (Glossary)` vào cuối bài viết, trước phần tài liệu tham khảo.
@@ -159,7 +204,7 @@
 | I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | 4.8 |
 | II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | 4.8 |
 | III | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | 5.0 |
-| IV | Thời Gian Dọc | Thời Gian Cội Nguồn | 4.8 |
+| IV | Mạch Cội Dọc | Mạch Cội Nguồn | 4.8 |
 | V | Ranh Giới Mềm | Đóng Mở Có Chọn | 5.0 |
 | VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | 4.8 |
 | VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | 5.0 |
@@ -215,34 +260,34 @@
 
 ---
 
-## 2026-06-05 — what.html: Cập nhật Tiên Đề IV → Thời Gian Cội Nguồn (6 vị trí)
+## 2026-06-05 — what.html: Cập nhật Tiên Đề IV → Mạch Cội Nguồn (6 vị trí)
 
 **RCA 3-round:**
-- R1 Triệu chứng: `what.html` dùng "Thời Gian Dọc / Vertical Temporality" mà không có tên bản chất "Orthogonal Temporality / Thời Gian Cội Nguồn" — mâu thuẫn thuật ngữ với `axiom_4.html` vừa cập nhật.
-- R2 Cơ chế: Người đọc đọc what.html (tổng quan) xong sang axiom_4.html (chi tiết) gặp "Thời Gian Cội Nguồn / Root-Flow" mà không có context chuẩn bị.
+- R1 Triệu chứng: `what.html` dùng "Mạch Cội Dọc / Vertical Temporality" mà không có tên bản chất "Orthogonal Temporality / Mạch Cội Nguồn" — mâu thuẫn thuật ngữ với `axiom_4.html` vừa cập nhật.
+- R2 Cơ chế: Người đọc đọc what.html (tổng quan) xong sang axiom_4.html (chi tiết) gặp "Mạch Cội Nguồn / Root-Flow" mà không có context chuẩn bị.
 - R3 Gốc: CLAUDE.md quy định "phát biểu bản thể học → dùng Orthogonal Temporality (bản chất)". what.html phát biểu bản thể học nhưng thiếu tên bản chất.
 
 **Scoring tất cả ≥ 4/5 → thực hiện 6 sửa (extend, không overwrite):**
-- Heading card IV: thêm "Thời Gian Cội Nguồn / Orthogonal"
+- Heading card IV: thêm "Mạch Cội Nguồn / Orthogonal"
 - Note hai tầng (mới): thêm inline note Bản chất ↔ Biểu hiện sau phát biểu
 - ASCII hierarchy: thêm "(Orthogonal Temporality)" vào dòng Tiên Đề IV
-- Summary table: "Thời Gian Dọc" → "Thời Gian Dọc / Cội Nguồn"
-- Link text: mention "Thời Gian Cội Nguồn"
-- Paragraph verification: "Thời Gian Dọc" → "Thời Gian Dọc / Cội Nguồn"
+- Summary table: "Mạch Cội Dọc" → "Mạch Cội Dọc / Cội Nguồn"
+- Link text: mention "Mạch Cội Nguồn"
+- Paragraph verification: "Mạch Cội Dọc" → "Mạch Cội Dọc / Cội Nguồn"
 
 ---
 
-## 2026-06-05 — Tích hợp raw/axiom_4.html: Thời Gian Cội Nguồn (Root-Flow Temporality)
+## 2026-06-05 — Tích hợp raw/axiom_4.html: Mạch Cội Nguồn (Root-Flow Temporality)
 
 **RCA 3-round × 5-Why:**
 - R1 Triệu chứng: `axiom_4.html` thiếu thuật ngữ Việt hóa chính thức cho Orthogonal Temporality, thiếu bảng song ngữ 6 cặp, thiếu 3 định dạng phát biểu Tiên Đề IV.
-- R2 Cơ chế: Nội dung RCA về "Thời Gian Cội Nguồn" đã được tạo ra (lưu trong `raw/axiom_4.html`) nhưng chưa được tích hợp vào tài liệu chính — tồn tại dưới dạng HTML thô từ Claude.ai.
+- R2 Cơ chế: Nội dung RCA về "Mạch Cội Nguồn" đã được tạo ra (lưu trong `raw/axiom_4.html`) nhưng chưa được tích hợp vào tài liệu chính — tồn tại dưới dạng HTML thô từ Claude.ai.
 - R3 Gốc: Không có workflow tích hợp `raw/` → tài liệu chính, dẫn đến phát hiện quan trọng (cội nguồn = Orthogonal Temporality trong ngôn ngữ Việt bản địa) bị cô lập khỏi nơi người đọc sẽ tra cứu.
 
 **Scoring:** Đúng 1 / Sâu 1 / Khả thi 1 / Rủi ro mâu thuẫn 1 / Bảo tồn 1 → **5/5 → PROCEED**
 
 **Sửa gì (extend, không overwrite):**
-- `axiom_4.html`: Thêm Section 1B "Từ Việt Hóa — Thời Gian Cội Nguồn" sau Section 1. Bao gồm: RCA 5-Why, bảng đánh giá 6 phương án (Cội Nguồn = 9.5), phát biểu chính thức song ngữ (TIÊN ĐỀ IV — Thời Gian Cội Nguồn / AXIOM IV — Root-Flow Temporality), bảng song ngữ 6 cặp, 3 định dạng phát biểu.
+- `axiom_4.html`: Thêm Section 1B "Từ Việt Hóa — Mạch Cội Nguồn" sau Section 1. Bao gồm: RCA 5-Why, bảng đánh giá 6 phương án (Cội Nguồn = 9.5), phát biểu chính thức song ngữ (TIÊN ĐỀ IV — Mạch Cội Nguồn / AXIOM IV — Root-Flow Temporality), bảng song ngữ 6 cặp, 3 định dạng phát biểu.
 
 **Phát hiện quan trọng ghi nhận:**
 - "Cội nguồn" trong tiếng Việt = Orthogonal Temporality (cội = V, nguồn = H) — người Việt đã vận hành triết học này trong ngôn ngữ hàng nghìn năm trước khi có tên.
@@ -361,7 +406,7 @@
 
 ### what.html
 - Thay thế dải số cũ bằng hệ tiên đề canonical 4+3+1.
-- Reorder các thẻ tiên đề (Phân tán từ III -> V, Ranh giới mềm từ V -> IV, Thời gian dọc từ IV -> III).
+- Reorder các thẻ tiên đề (Phân tán từ III -> V, Ranh giới mềm từ V -> IV, mạch cội dọc từ IV -> III).
 - Cập nhật các bảng so sánh và sơ đồ dẫn xuất ASCII.
 - Điều chỉnh phân loại pills trong kiến trúc đồng cấu (Giao điểm: I,II,V; Cầu nối: IV,VI; Khoảng trống: III,VII).
 
@@ -384,7 +429,7 @@
 - Cập nhật mô tả thẻ "how" (IV -> III) và phần thuật ngữ chân trang (II và III -> II và V).
 
 ### how.html
-- Cập nhật tham chiếu thời gian dọc (IV -> III) ở dòng 7.
+- Cập nhật tham chiếu mạch cội dọc (IV -> III) ở dòng 7.
 - Thêm banner chú giải tại mục 3 nêu rõ sơ đồ 3 Core Axioms cục bộ là mô hình rút gọn riêng.
 
 ### mach_re_homologous.html

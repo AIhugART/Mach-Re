@@ -104,7 +104,7 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 | Tầng | Thuật ngữ | Dùng khi nào |
 |---|---|---|
 | **Bản chất** (Essence) | **Orthogonal Temporality** — Thời gian trực giao | Phát biểu nguyên lý bản thể học; phân biệt Tiên Đề III với Halbwachs/Luhmann |
-| **Biểu hiện** (Manifestation) | **Vertical Temporality** — Thời gian dọc | Mô tả thực hành văn hóa; sơ đồ trực quan; so sánh ba nền văn hóa |
+| **Biểu hiện** (Manifestation) | **Vertical Temporality** — mạch cội dọc | Mô tả thực hành văn hóa; sơ đồ trực quan; so sánh ba nền văn hóa |
 
 **Quy tắc:** Hai thuật ngữ **không** thay thế nhau — chúng khác tầng (essence ≠ manifestation).
 - ❌ Cấm: "Orthogonal Temporality tức là Vertical Temporality"
@@ -124,7 +124,7 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 |---|---|---|---|---|---|
 | I | Sống Trong Quan Hệ | Có Nhau Mới Có Mình | Relational Ontology | 4.8 | Core |
 | II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | 4.8 | Core |
-| III | Thời Gian Dọc | Thời Gian Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 | Core |
+| III | Mạch Cội Dọc | Mạch Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 | Core |
 | IV | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | 5.0 | Core |
 | V | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 | Derived |
 | VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 | Derived |
