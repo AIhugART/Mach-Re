@@ -1,5 +1,20 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `papers/paper_003/paper_003_draft.md`: Thêm Bảng Giải Thích Thuật Ngữ Cấp Học Sinh (Glossary)
+
+**Cổng RCA (claim, 5/5 → FIX).**
+
+**Root cause:** Bài viết sử dụng nhiều thuật ngữ chuyên môn phức tạp (Bản thể học liên chủ thể, Thời gian cội nguồn, Bất biến cấu trúc, Ranh giới thấm hút...) nhưng chưa có định nghĩa đơn giản hóa, làm hạn chế khả năng tiếp cận đối với đối tượng độc giả phổ thông (học sinh trung học phổ thông - high school level) và dễ dẫn đến hiểu nhầm hoặc lạm dụng thuật ngữ.
+
+**Sửa:**
+1. Thêm mục `## Bảng giải thích thuật ngữ (Glossary)` vào cuối bài viết, trước phần tài liệu tham khảo.
+2. Giải thích 9 khái niệm then chốt bằng ngôn ngữ phổ thông giản dị kết hợp với các ẩn dụ trực quan (ví dụ: viên bi, ngôi nhà, sợi chỉ) và các ví dụ điện ảnh Việt Nam quen thuộc (*Bố Già*, *Nhà Bà Nữ*, *Mai*, *Móng Vuốt*).
+3. Cập nhật đồng bộ các khái niệm ở phần kết luận khớp với từ điển thuật ngữ mới.
+
+**Bảo tồn:** Giữ nguyên các lập luận học thuật và bố cục nguyên bản của bài viết.
+
+---
+
 ## 2026-06-06 — `when.html` Section 3: Mở rộng bảng so sánh + fix "Trí tuệ sâu nhất"
 
 **RCA gate (4.8/5 → FIX).** 3-round RCA × 5-Why.
