@@ -14,6 +14,7 @@
 - Thay thế cụm từ `"chiều kích bản thể học"` bằng `"mạch tồn tại"` trong phát biểu chính thức Tiếng Việt tại Section 1 của [axiom_3.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_3.html).
 - Sửa dấu câu và viết hoa đúng chính tả: Viết hoa chữ cái đầu câu cho từ `Mạch` trong cụm liên kết `Mạch cội dọc` ở đầu câu thứ hai.
 - Tinh chỉnh từ ngữ liên kết ở vế sau phát biểu: Thay đổi `hướng tới` thành `truyền tới` để thể hiện rõ nét hơn tính truyền thừa, tiếp nối nếp tổ chức đến hậu thế.
+- Đồng bộ hóa định nghĩa thời gian: Thay thế `nếp tổ chức đã qua` thành `nếp tổ chức quá khứ` và `nếp tổ chức chưa đến` thành `nếp tổ chức tương lai` để tương hợp chính xác với chú thích hệ thời gian `(quá khứ → hiện tại → tương lai)` ở vế trước.
 
 **Bảo tồn**:
 - Giữ nguyên anchor liên kết `href="#rca-ontological"` để bảo đảm khả năng điều hướng bài viết đến phần giải nghĩa chi tiết ở dưới.
