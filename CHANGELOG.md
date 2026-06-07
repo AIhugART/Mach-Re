@@ -1,5 +1,43 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` RCA logic nội tại: 4 fix (A, B, E, F) qua gate 4/5
+
+**Cổng RCA (3-round × 5-Why × scoring ≥ 4/5).** Quét logic nội tại toàn file theo yêu cầu user. 7 ứng viên A–G; 4 đạt ngưỡng → FIX, 3 dưới ngưỡng → GIỮ.
+
+### A — "cấu hình" → "nếp tổ chức" (terminology self-contradiction) · **4.8/5 → FIX**
+- *Symptom (R1)*: §1C (dòng 578) lập luận tường minh "không giữ 'Cấu hình'", nhưng "cấu hình" vẫn còn trong giọng Mạch Rễ ở 5 chỗ (662 SVG, 755, 769, 963 Eliade card, 1315 glossary).
+- *Mechanism (R2)*: link `#rca-configuration` (755) có chữ neo "cấu hình" trỏ tới đúng hộp bảo "đừng dùng từ này" → tự phản ở điểm lập luận.
+- *Root (R3)*: quyết định đổi "cấu hình"→"nếp tổ chức" (§1C, CHANGELOG trước) chưa được quét toàn file.
+- *Sửa*: 662 `Cấu hình đã qua`→`Nếp tổ chức đã qua`; 755 chữ neo `cấu hình`→`nếp tổ chức`; 769 `với cấu hình đã qua`→`với nếp tổ chức đã qua`; 963 `Kết nối với các cấu hình`→`…các nếp tổ chức`; 1315 glossary `các cấu hình đã qua`→`các nếp tổ chức đã qua`.
+- *Bảo tồn (KHÔNG đụng)*: dòng 578 (trích "Cấu hình" như từ bị bác bỏ — buộc phải giữ) và dòng 937 (thuật ngữ Barbour "spatial configurations" — không phải thuật ngữ Mạch Rễ). Verify: `grep "cấu hình"` còn đúng 2 chỗ này.
+
+### B — Ma trận §6 có hàng rating không có chỗ chống đỡ · **Giddens 4.6 / Gadamer 4.1 → FIX**
+- *Symptom (R1)*: §6 chấm ✅/❌/⚠️ cho Gadamer (1019) & Giddens (1022); §5 không có compare-card cho cả hai (Giddens không có gì ngoài hàng bảng; Gadamer chỉ 1 câu ở §7).
+- *Mechanism (R2)*: bảng "Tổng Hợp So Sánh" ngụ ý tóm tắt phân tích trên; rating không truy được làm yếu câu chốt "Không triết học nào… đạt đủ 4 cột".
+- *Root (R3)*: phạm vi ma trận rộng hơn phạm vi card §5, gap chưa khớp → vi phạm truy vết (mọi rating phải trace về chỗ đỡ).
+- *Sửa*: thêm 1 đoạn ghi chú italic ngay dưới bảng §6, nêu cơ sở rating: Gadamer (*Wirkungsgeschichte* — thông diễn/epistemo, không đặt điều kiện sức bền) và Giddens (*structuration* — truyền thống tái tạo qua thiết chế nên cross-gen không trực tiếp). Extend, không xóa hàng.
+
+### E — §7B: rating sao tự chấm thiếu đánh dấu tầng-claim · **4.5/5 → FIX**
+- *Symptom (R1)*: §7B dùng "⭐⭐⭐⭐⭐", "hấp thụ cao nhất" như sự kiện thực nghiệm; thiếu câu cảnh báo phạm vi mà §2/§5/§6/§7 đều có.
+- *Mechanism (R2)*: phần còn lại hedge cẩn thận; §7B không hedge → lệch register/epistemic ngay trong cùng file, làm yếu chính sự cẩn trọng đã xây.
+- *Root (R3)*: vi phạm Claim Ladder (viết ở tầng Empirical nội dung chỉ ở tầng Interpretation), thiếu marker phạm vi.
+- *Sửa*: thêm 1 đoạn italic "Ghi chú phạm vi (claim level)" ngay sau h2 §7B, đánh dấu "đánh giá định tính minh họa, không phải đo lường thực nghiệm; tầng claim = diễn giải/đối chiếu". Giữ nguyên toàn bộ nội dung bảng/sao.
+
+### F — "mạch tồn tại" trong phát biểu chính thức nhưng vắng glossary · **4.5/5 → FIX**
+- *Symptom (R1)*: "mạch tồn tại" ở hero (224), phát biểu chính thức (237), tiêu đề §1C — nhưng glossary chỉ có "Chiều kích Bản thể học", không đăng ký "mạch tồn tại".
+- *Mechanism (R2)*: glossary tự cam kết liệt "các thuật ngữ chuyên ngành dùng trong tài liệu"; từ nằm trong câu canonical mà tra glossary không thấy → gap truy vết chỗ dễ thấy nhất.
+- *Root (R3)*: vi phạm contract glossary/term-traceability — định nghĩa trong prose §1C nhưng chưa đăng ký vào bảng index.
+- *Sửa*: gộp vào hàng "Ontological Dimension" (giữ một nguồn chân lý): VI cell → "Chiều kích Bản thể học · mạch tồn tại"; note thêm "Việt hóa song song: 'mạch tồn tại' = 'Chiều kích Bản thể học'". Verify: `grep "mạch tồn tại"` 7→8.
+
+### Giữ nguyên (< 4/5, ghi lý do)
+- **C — hai nghĩa "Mạch Cội Nguồn" (2.8/5)**: kiểm chứng cho thấy nhất quán — "Cội Nguồn" = cả hai trục = bản chất; "Mạch Cội Dọc" = trục dọc = biểu hiện; không chỗ nào dùng "mạch cội dọc" để chỉ toàn hệ. Không phải defect; sửa tên canonical = rủi ro cao lan `dictionary_rule.md §9`.
+- **D — pseudo-formula `depth(V)` (3.8/5, biên)**: "=" là định nghĩa depth (đếm thế hệ) hợp lệ; "tăng theo" là claim định tính, không phải phương trình số giả. Dưới ngưỡng.
+- **G — §2 "Phủ đầy" vs "Tối giản" (2.6/5)**: không mâu thuẫn (III ∈ I–IV và là trụ chịu tải). Oddity "không suy ra từ … hay V" nhẹ, không sai logic.
+
+**Bảo tồn chung:** toàn bộ cấu trúc, layout, anchor, nội dung 3 item dưới ngưỡng giữ nguyên; 4 fix đều là extend/đồng bộ thuật ngữ (an toàn cho HTML đã publish).
+
+---
+
 ## 2026-06-07 — `axiom_3.html` Hero banner: Thêm "mạch tồn tại" vào link text `#rca-ontological`
 
 **Cổng RCA (terminology consistency, 5/5 → FIX).** Thực hiện theo yêu cầu của user.
