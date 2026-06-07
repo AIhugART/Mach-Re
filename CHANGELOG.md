@@ -12,6 +12,8 @@
    - Thay thế từ "cấu hình" thành "nếp tổ chức" trong phát biểu Tiếng Việt tại Section 1 (3 vị trí: các nếp tổ chức hiện tại, các nếp tổ chức đã qua, các nếp tổ chức chưa đến), nhất quán với định nghĩa chi tiết tại §1C.
 3. **Dịch "resilience"**:
    - Dịch "resilience" thành "sức bền" (sức bền hệ thống / sức bền văn hóa) trong các ngữ cảnh tiếng Việt liên quan để thuần Việt hóa hoàn toàn ngôn ngữ trình bày.
+4. **Tinh chỉnh cụm từ liên kết**:
+   - Trong phát biểu chính thức (Formal Statement) của Tiên Đề III: Thay thế cụm từ `truy cập và kế thừa` thành `kết nối với và kế thừa` để diễn đạt chính xác mối liên kết bản thể học của nếp tổ chức hiện tại với các nếp tổ chức quá khứ/tương lai.
 
 **Bảo tồn**:
 - Giữ nguyên các thẻ liên kết `href` (ví dụ `#rca-configuration`) để đảm bảo các liên kết điều hướng trong trang không bị hỏng.
