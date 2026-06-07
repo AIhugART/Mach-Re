@@ -1,5 +1,59 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` §1C: Thêm "mạch tồn tại" vào h2 anchor `#rca-ontological` (bổ sung fix trước)
+
+**Cổng RCA (document contract, 5/5 → FIX).** Bổ sung fix bị thiếu trong lần trước.
+
+**Root cause:** Fix trước (h3 + def-box) chưa đủ sâu — bỏ sót h2 là phần tử đang mang `id="rca-ontological"`, tức điểm đầu tiên reader thấy khi click "mạch tồn tại" từ formal statement. H2 vẫn chỉ hiện "Chiều kích Bản thể học."
+
+**Sửa** (tại [axiom_3.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_3.html) §1C dòng 483–486):
+- Comment HTML: `CHIỀU KÍCH BẢN THỂ HỌC` → `MẠCH TỒN TẠI · CHIỀU KÍCH BẢN THỂ HỌC`
+- h2: `Chiều kích Bản thể học (Ontological Dimension)` → `Mạch Tồn Tại · Chiều kích Bản thể học (Ontological Dimension)`
+- Đoạn mở: thêm `<strong>mạch tồn tại</strong> (chiều kích bản thể học)` thay cho `"bản thể học"` đứng một mình
+
+**Bảo tồn:** `id="rca-ontological"`, "Chiều kích Bản thể học (Ontological Dimension)" giữ nguyên hoàn toàn.
+
+---
+
+## 2026-06-07 — `axiom_3.html` §1C: Thêm "mạch tồn tại" vào section `#rca-ontological`
+
+**Cổng RCA (terminology / document contract, 5/5 → FIX).** Thực hiện theo yêu cầu của user.
+
+**RCA (3-round × 5-Why):**
+- *Symptom (Round 1)*: Anchor link `href="#rca-ontological"` gắn vào "mạch tồn tại" trong formal statement (dòng 237), nhưng §1C không chứa từ "mạch tồn tại" ở bất kỳ đâu — người đọc click link đến §1C và không tìm thấy thuật ngữ họ vừa click.
+- *Mechanism (Round 2)*: "mạch tồn tại" được đưa vào formal statement như Việt hóa của "chiều kích bản thể học" (CHANGELOG 2026-06-07) nhưng §1C không được cập nhật song hành — hai tầng tên (Việt hóa + học thuật) tách rời nhau.
+- *Root cause (Round 3)*: Vi phạm document contract của anchor link — destination phải surface linked term; khi một thuật ngữ được Việt hóa, section giải thích phải chứa cả Việt hóa lẫn academic term song song.
+
+**Sửa** (tại [axiom_3.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_3.html) §1C dòng 500–507):
+- Comment HTML: `Chiều kích Bản thể học` → `mạch tồn tại / Chiều kích Bản thể học (Ontological Dimension)`
+- h3: thêm `"mạch tồn tại" —` trước `Chiều kích Bản thể học (Ontological Dimension)`
+- def-box label: đồng bộ tương tự
+- Câu mở blockquote: giới thiệu `Mạch tồn tại` là Việt hóa của `Chiều kích Bản thể học — Ontological Dimension`, giải thích ngắn lý do chọn từ ("Mạch" = tính sống và chảy; "tồn tại" = giữ nghĩa ontological)
+- Câu dẫn vào bullet list: cập nhật thành `"mạch tồn tại" (chiều kích bản thể học)`
+
+**Bảo tồn:**
+- h2 `#rca-ontological` giữ nguyên: `🔍 1C. Phân tích RCA — Chiều kích Bản thể học (Ontological Dimension)`
+- Toàn bộ nội dung 3 bullet list và các def-box Why 1–5 giữ nguyên.
+
+---
+
+## 2026-06-07 — `axiom_3.html` Section 1 Tiếng Việt: "khuôn mẫu" → "nếp" trong phát biểu chính thức
+
+**Cổng RCA (terminology, 5/5 → FIX).** Thực hiện theo RCA "kế thừa khuôn mẫu" do user yêu cầu.
+
+**RCA (3-round × 5-Why):**
+- *Symptom (Round 1)*: "khuôn mẫu" dùng để chuyển nghĩa "patterns" trong "kế thừa khuôn mẫu của các nếp tổ chức quá khứ". Từ "khuôn" = cái khuôn đúc (hình thức cố định, áp từ ngoài vào); "mẫu" = mẫu để sao chép (prescriptive, static). Kết hợp: "khuôn mẫu" = template/mold — thứ bạn đổ vào để tạo bản sao đồng nhất.
+- *Mechanism (Round 2)*: Framework đã định nghĩa tường minh tại §1C: "nếp tổ chức" được chọn vì "nếp" nhấn mạnh "tính sống và truyền được". "khuôn mẫu" vi phạm cả hai: không "sống" (khuôn là thứ tĩnh, passive) và không "truyền theo thực hành" (khuôn truyền bằng cách đổ/áp, không qua thực hành và thấm).
+- *Root cause (Round 3)*: "khuôn mẫu" là category mismatch — vi phạm nhất quán nội bộ giữa formal statement và glossary §1C: toàn bộ §1C định nghĩa "nếp" là thứ được kế thừa theo trục V, nhưng formal statement dùng "khuôn mẫu" ở điểm phát biểu chính thức.
+
+**Sửa:**
+- Thay `"kế thừa khuôn mẫu của các nếp tổ chức quá khứ (tổ tiên)"` → `"kế thừa nếp từ các nếp tổ chức quá khứ (tổ tiên)"` tại dòng 237 của [axiom_3.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_3.html). Dùng "từ" thay "của" để tránh redundancy "nếp của nếp tổ chức".
+
+**Bảo tồn:**
+- Giữ nguyên toàn bộ cấu trúc câu, anchor links, và nội dung còn lại của phát biểu Tiếng Việt.
+
+---
+
 ## 2026-06-07 — `axiom_3.html` Section 1: Tinh chỉnh câu rút gọn "cắm thẳng" → "nối thẳng" trong Plainest Statement
 
 **Cổng RCA (terminology, 4.8/5 → FIX).** Thực hiện theo yêu cầu của user.
