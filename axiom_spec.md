@@ -77,7 +77,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ---
 
-#### Tiên Đề III — Mạch Cội Dọc — Mạch Cội Nguồn (Orthogonal Temporality)
+#### Tiên Đề III — Mạch Cội Nguồn (Orthogonal Temporality)
 - **Loại:** Core Axiom (ontological). *(Đánh số mới III; hệ cũ là IV.)*
 - **Bản chất (essence):** **Orthogonal Temporality** — trục dọc V (xuyên thời gian: tổ tiên ↕ hậu thế) *trực giao* trục ngang H (quan hệ đương đại): `V ⊥ H`, không rút gọn về nhau.
 - **Biểu hiện (manifestation):** **Vertical Temporality** — hình thức trục dọc trong đời sống văn hóa. (Hai tầng essence ≠ manifestation — `dictionary §8`.)

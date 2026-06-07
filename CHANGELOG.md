@@ -6,12 +6,12 @@
 
 **RCA findings (3-round × 5-Why × scoring):**
 
-- **Header** (4/5 → FIX): `Mạch Cội Dọc (Vertical / Orthogonal Temporality) · "Mạch Cội Dọc — Mạch Cội Nguồn"` không khớp format canonical CLAUDE.md. Fix: `Mạch Cội Dọc — Mạch Cội Nguồn (Orthogonal Temporality)`.
+- **Header** (5/5 → FIX): `Mạch Cội Dọc — Mạch Cội Nguồn (Orthogonal Temporality)` → `Mạch Cội Nguồn (Orthogonal Temporality)`. Root: "Mạch Cội Dọc" = biểu hiện (manifestation), "Mạch Cội Nguồn" = bản chất (essence). Header nên dùng tên bản chất làm định danh chính — nhất quán với page title `axiom_3.html` và CLAUDE.md §Tiên Đề III. "Mạch Cội Dọc" đã có trong field `Biểu hiện (manifestation)` bên trong entry.
 - **Phát biểu** (5/5 → FIX): Phát biểu cũ thiếu 3 yếu tố: (a) phủ định H tường minh, (b) "mạch tồn tại / ontological dimension", (c) "không phải ẩn dụ". Root: spec viết trước khi canonical statement trong `axiom_3.html` Section 1 được hoàn chỉnh. Fix: thêm VI + EN đầy đủ.
 - **Ba thành phần cốt lõi** (5/5 → ADD): Cấu trúc "không câu nào được phép thiếu" từ `axiom_3.html` vắng mặt trong spec — đây là guard chống drift cho các render file. Fix: thêm field mới.
 - **Phản chứng** (5/5 → FIX): Chỉ có điều kiện (1). Điều kiện (2) V ⊆ H (mất trực giao) — claim gốc rễ phân biệt với Halbwachs/Luhmann — vắng mặt. Fix: thêm cả hai điều kiện.
 
-**File changed:** `axiom_spec.md` (Tiên Đề III section, lines 80–89 → 80–95).
+**File changed:** `axiom_spec.md` (Tiên Đề III header + spec, lines 80–95).
 
 ---
 
