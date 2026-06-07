@@ -1,5 +1,18 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-07 — `axiom_3.html` Hero banner: Thêm "mạch tồn tại" vào link text `#rca-ontological`
+
+**Cổng RCA (terminology consistency, 5/5 → FIX).** Thực hiện theo yêu cầu của user.
+
+**Root cause:** Hero banner `<p>` (dòng 224) dùng `"chiều kích bản thể học (ontological dimension)"` làm link text dẫn vào `#rca-ontological`, trong khi toàn bộ chuỗi §1 → §1C đã được cập nhật để "mạch tồn tại" dẫn đầu. Hero là phần tử đầu tiên reader thấy — phải nhất quán.
+
+**Sửa** (dòng 224):
+- `chiều kích bản thể học (ontological dimension)` → `mạch tồn tại — chiều kích bản thể học (ontological dimension)` trong link text của hero `<p>`.
+
+**Bảo tồn:** `href="#rca-ontological"`, style, và cụm "chiều kích bản thể học (ontological dimension)" giữ nguyên hoàn toàn.
+
+---
+
 ## 2026-06-07 — `axiom_3.html` §1C: Thêm "mạch tồn tại" vào h2 anchor `#rca-ontological` (bổ sung fix trước)
 
 **Cổng RCA (document contract, 5/5 → FIX).** Bổ sung fix bị thiếu trong lần trước.
