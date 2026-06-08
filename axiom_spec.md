@@ -51,6 +51,8 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ## 2. HỆ TIÊN ĐỀ (the spec)
 
+> **[GLOBAL SCOPE]** Các tiên đề này được hiệu chuẩn cho hệ bản sắc tập thể (S) thỏa mãn: (i) |S| > một thế hệ (thang thời gian: thập niên đến thế kỷ); (ii) áp lực đồng hóa: mở, tiến hóa (không cố định/một-lần); (iii) claim bản sắc: hệ tồn tại như một thực thể nhận diện được qua thời gian. Áp dụng cho vi-tập-thể (gia đình, doanh nghiệp) là khả thể nhưng đòi hỏi scope adaptation tường minh — coi như analogical extension. Xem: Câu hỏi gốc (§0).
+
 ### TẦNG CỐT LÕI — 4 Tiên Đề (Core Axioms): I, II, III, IV
 
 ---
@@ -59,6 +61,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 - **Loại:** Core Axiom (ontological).
 - **Phát biểu:** Bản sắc của một hệ tập thể được cấu thành *bởi quan hệ*, không phải bởi một bản thể/cốt lõi định vị được độc lập với quan hệ.
 - **Sơ đồ:** `[DEF-1]` Relational profile of S: `RP(S) := {R_i(S, y_j) | i ∈ Relations, j ∈ Environment}`. `[AX-I]` Identity(S) is constituted by RP(S), not by any substance independent of RP(S). (Sơ đồ cấu trúc, không phải công thức — §4 dictionary. Ký hiệu cũ `Being(x) ≡ {R(x,y)}` giữ làm pedagogical shorthand, đã được thay bằng `[DEF-1]`+`[AX-I]`.)
+- **Phạm vi:** Hệ bản sắc tập thể xuyên thế hệ dưới áp lực đồng hóa tiến hóa. Xem: [GLOBAL SCOPE] + Câu hỏi gốc (§0).
 - **Triangulation [A·B·C]:** A (kiểu quan hệ) · B (identity enacted relationally — Weick) · **C** (Anattā: vô "svabhāva", duyên khởi) — **3/3**.
 - **5 tiêu chí:** Độc lập 5 · Nhất quán 5 · Phủ đầy 5 · Tối giản 5 · Ontological 5 → **5.0**.
 - **Điều kiện phản chứng:** SAI nếu tồn tại một bản sắc tập thể sống sót lâu dài nhờ một *cốt lõi-bản-thể cố định, định vị được, độc lập với mọi quan hệ*.
@@ -69,6 +72,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 #### Tiên Đề II — Bất Biến Cấu Trúc (Structural Invariance) · *"Nếp Bản Sắc — Đổi Mà Vẫn Là Mình"*
 - **Loại:** Core Axiom (ontological).
+- **Phạm vi:** Hệ bản sắc tập thể xuyên thế hệ dưới áp lực đồng hóa tiến hóa. Xem: [GLOBAL SCOPE] + Câu hỏi gốc (§0).
 - **Phát biểu:** Cái bền qua thay đổi nội dung là một *pattern bất biến của quan hệ* (invariant under transformation) — bền ở mức *quy ước* (conventional truth, Nhị đế), không phải bản thể tuyệt đối — chứ không phải nội dung tại bất kỳ điểm nào. `Identity(S) = Pattern(R(S))`. *(Mệnh đề "trống svabhāva" này bắt buộc theo Quyết định 3 §5: thiếu nó Tiên Đề II mâu thuẫn Tiên Đề I.)*
 - **Triangulation:** **A** (kiểu quan hệ = invariant — neo mạnh nhất) · B (Ashby: invariant under transformation; essential variables) · C-có-điều-kiện (Śūnyatā: pattern cũng trống) — **~2.5/3**.
 - **5 tiêu chí:** Độc lập 5 · Nhất quán 5 · Phủ đầy 5 · Tối giản 5 · Ontological 4 → **4.8**.
@@ -97,6 +101,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 #### Tiên Đề III — Mạch Cội Nguồn (Orthogonal Temporality)
 - **Loại:** Core Axiom (ontological). *(Đánh số mới III; hệ cũ là IV.)*
+- **Phạm vi:** Hệ bản sắc tập thể xuyên thế hệ dưới áp lực đồng hóa tiến hóa. Xem: [GLOBAL SCOPE] + Câu hỏi gốc (§0).
 - **Bản chất (essence):** **Orthogonal Temporality** — trục dọc V (xuyên thời gian: tổ tiên ↕ hậu thế) *trực giao* trục ngang H (quan hệ đương đại): `V ⊥ H`, không rút gọn về nhau.
 - **Biểu hiện (manifestation):** **Vertical Temporality** — hình thức trục dọc trong đời sống văn hóa. (Hai tầng essence ≠ manifestation — `dictionary §8`.)
 - **Phát biểu (VI):** Bất biến cấu trúc (bản sắc) của một hệ thống không được duy trì trong mạch nguồn ngang (H: quá khứ → hiện tại → tương lai) mà được duy trì qua mạch cội dọc — cơ chế mà qua đó các *nếp tổ chức* hiện tại kế thừa *nề nếp* từ tổ tiên và truyền tới hậu thế. Mạch cội dọc là *mạch tồn tại* (cấu trúc thực tế đang nâng đỡ hệ thống), không phải ẩn dụ.
@@ -113,6 +118,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 #### Tiên Đề IV — Biên Giới Động (Dynamic Boundary) · *"Ranh Giới Mềm — Đóng Mở Có Chọn"*
 - **Loại:** Core Axiom (operational-ontological). *(Đánh số mới IV; hệ cũ là V.)*
+- **Phạm vi:** Hệ bản sắc tập thể xuyên thế hệ dưới áp lực đồng hóa tiến hóa. Xem: [GLOBAL SCOPE] + Câu hỏi gốc (§0).
 - **Phát biểu:** Hệ sống sót nhờ biên giới *thấm chọn lọc* (selective permeability): không tường kín (→ giòn), không mở toang (→ bị đồng hóa). Nội dung đến được *tái tổ chức* theo logic pattern nội tại (Tiên Đề II), không theo logic nội dung đến.
 - **Cơ chế (Mechanism Addendum):** Quá trình tái tổ chức vận hành qua ba cơ chế con: (a) *Pattern recognition* — tác nhân biên giới (con người, thiết chế, thực hành) đối chiếu nội dung đến với mẫu pattern hiện có (từ II); (b) *Selective integration* — nội dung được nạp nếu có thể làm tương thích với pattern; nếu không, bị từ chối hoặc cách ly; (c) *Pattern update* — nếu nội dung nạp tích lũy làm dịch chuyển pattern, Tiên Đề VIII (phản tư) kích hoạt tái đánh giá invariant. Cơ chế con (c) tạo liên kết IV → VIII và ngăn IV trở thành cơ chế bảo thủ thuần túy.
 - **Triangulation:** **A** (Việt hóa = hấp thụ chọn lọc) · **B** (Ashby Requisite Variety — neo mạnh nhất) · C-yếu (vô chấp, không dựng tường) — **~2.5/3**.
@@ -137,6 +143,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 #### Mệnh Đề VII — Nổi Lên Có Hướng (Directed Emergence) · *"Nổi Lên Có Hướng"* · **[từ I + II + III + IV]**
 - **Suy:** khi cả 4 Core vận hành, trật tự nổi lên *có hướng* = gradient trường F do toàn mạng tạo ra, không áp từ trung tâm. Tổng hợp, không thêm giả định.
+- **Ký hiệu (Notation Clarification):** "Gradient trường F" được dùng như *structural analogy* (loại suy cấu trúc), không phải formal claim (claim hình thức). Formal rendering tương đương: hệ biểu hiện attractor dynamics A(S) — quyết định cục bộ của tác nhân có xu hướng tiến về trạng thái tương thích với pattern toàn cục (II) mà không cần điều phối trung tâm. Nếu muốn formal treatment, tham khảo: Kauffman (NK landscapes), Weick (sensemaking attractors), hoặc Odum (energy field ecology).
 - **Triangulation:** B mạnh (self-organization, Weick organizing); C (duyên khởi → nổi lên không người điều khiển).
 
 ---

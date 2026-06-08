@@ -1,5 +1,18 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-08 — `axiom_spec.md` P4: ISSUE-06 (VII notation) + ISSUE-07 (scope pointers) · RCA ≥ 4/5
+
+**Hành động:** Phase 4. ISSUE-06: làm rõ "gradient trường F" là structural analogy. ISSUE-07: thêm GLOBAL SCOPE block + scope pointer cho mỗi Tiên Đề I-IV.
+
+**RCA per-issue (3-round × 5-Why × scoring):**
+
+- **ISSUE-06 — VII notation** — 5/5 → ADD: "Gradient trường F" trộn formal notation với metaphor → giảm LLM parsability, mời misreading. Fix: gán nhãn "structural analogy", cung cấp formal rendering (attractor dynamics A(S)), tham khảo Kauffman/Weick/Odum.
+- **ISSUE-07 — scope pointers** — 5/5 → ADD: Tiên Đề I-IV phát biểu ở dạng universal, nhưng câu hỏi gốc scope rõ ràng cho collective identity systems xuyên thế hệ. Thiếu scope qualifier → risk over-application (startup culture) và under-application (micro-collectives). Fix: GLOBAL SCOPE block + one-line pointer mỗi axiom, reference về Câu hỏi gốc.
+
+**Files changed:** `axiom_spec.md`, `axioms.html`, `what.html`.
+
+---
+
 ## 2026-06-08 — `axiom_spec.md` P3: ISSUE-05 (AX-VIII continuity constraint, MP + SOT-K) · RCA ≥ 4/5
 
 **Hành động:** Phase 3. ISSUE-05: thêm ràng buộc liên tục cho Tiên Đề VIII — meta-pattern MP bảo toàn identity-across-revision.
