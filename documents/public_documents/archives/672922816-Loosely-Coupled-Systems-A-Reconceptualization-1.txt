@@ -1,0 +1,1118 @@
+Loosely Coupled Systems: A Reconceptualization
+Author(s): J. Douglas Orton and Karl E. Weick
+Source: The Academy of Management Review, Vol. 15, No. 2, (Apr., 1990), pp. 203-223
+Published by: Academy of Management
+Stable URL: http://www.jstor.org/stable/258154
+Accessed: 28/05/2008 05:05
+
+
+Your use of the JSTOR archive indicates your acceptance of JSTOR's Terms and Conditions of Use, available at
+http://www.jstor.org/page/info/about/policies/terms.jsp. JSTOR's Terms and Conditions of Use provides, in part, that unless
+you have obtained prior permission, you may not download an entire issue of a journal or multiple copies of articles, and you
+may use content in the JSTOR archive only for your personal, non-commercial use.
+
+
+Please contact the publisher regarding any further use of this work. Publisher contact information may be obtained at
+http://www.jstor.org/action/showPublisher?publisherCode=aom.
+
+
+Each copy of any part of a JSTOR transmission must contain the same copyright notice that appears on the screen or printed
+page of such transmission.
+
+
+
+
+JSTOR is a not-for-profit organization founded in 1995 to build trusted digital archives for scholarship. We enable the
+scholarly community to preserve their work and the materials they rely upon, and to build a common research platform that
+promotes the discovery and use of these resources. For more information about JSTOR, please contact support@jstor.org.
+
+
+
+
+                                                                                             http://www.jstor.org
+? Academy of ManagementReview, 1990,Vol. 15, No. 2, 203-223.
+
+
+
+                                 Loosely Coupled Systems:
+                                    A Reconceptualization
+                                                   J. DOUGLASORTON
+                                                      KARLE. WEICK
+                                                 The University of Michigan
+                       Diverse applications of the concept of loose coupling are embodied in
+                       five recurring voices that focus separately on causation, typology,
+                       effects, compensations, and outcomes. Each has a tendency to drift
+                       away from a dialectical interpretation of loose coupling toward a
+                       unidimensional interpretation of loose coupling, thereby weakening
+                       the explanatory value of the concept. The authors first use the five
+                       voices to review the loose coupling literature and then to suggest
+                       more precise and more productive uses of the concept.
+
+   The concept of organizations as loosely cou-                      published about the same time as Weick's (1976)
+pled systems is widely used and diversely un-                        article on educational organizations as loosely
+derstood. The concept has a rare combination of                      coupled systems: transaction cost economics
+face validity, metaphorical salience, and cut-                       (Williamson, 1975), institutional theory (Meyer &
+ting-edge mysticism, all of which encourage re-                      Rowan, 1977), population ecology theory (Han-
+searchers to adopt the concept but do not help                       nan & Freeman, 1977), and resource depen-
+them to examine its underlying structure,                            dence theory (Pfeffer & Salancik, 1978). Each of
+themes, and implications. Like a linguistic Tro-                     these four perspectives has a more distinctive
+jan horse, the loose coupling concept has pre-                       paradigm, a more compact theory, and more
+ceded loose coupling theory into the various                         empirical support than is true of loose coupling.
+strongholds of organizational studies.                                 Researchers who invoke the concept of loose
+   Because the concept has been underspeci-                          coupling generally cite one of three definitions.
+fied, its use has generated controversy. Re-                         Glassman (1973) wrote that loose coupling is
+searchers who oppose the concept on the basis                        present when systems have either few variables
+of its imprecision have watched as more and                          in common or the variables they have in com-
+more researchers adopt it. Researchers who ad-                       mon are weak (p. 73). Weick (1976) defined loose
+vocate the concept on the basis of its face valid-                   coupling as a situation in which elements are
+ity have watched it become unrecognizable. Re-                       responsive, but retain evidence of separateness
+searchers who are in the middle have often used                      and identity (p. 3). Later, he wrote that loose
+the concept hesitantly, convinced that it fits the                   coupling is evident when elements affect each
+phenomena they study, but uncertain about its                        other "suddenly (rather than continuously), oc-
+meaning. These problems become even more                             casionally (rather than constantly), negligibly
+apparent when loose coupling is compared with                        (rather than significantly), indirectly (rather than
+four other organizational perspectives that were                     directly), and eventually (rather than imme-
+
+
+
+                                                               203
+diately)" (Weick, 1982a, p. 380). Few researchers           pling was first identified by Thompson (1967). He
+have questioned the meaning behind these                    argued that although organizational forms are
+statements.                                                 designed to deal with inherent contradictions,
+   On the surface, these underspecifications and            the language of organizational scholars does
+the contradictions they have created may seem               not allow them to capture this reality. Organiza-
+like social science run amok. However, as                   tions appear to be both determinate, closed sys-
+Levine (1985) argued, underspecified formula-               tems searching for certainty and indeterminate,
+tions often serve as a vehicle through which in-            open systems expecting uncertainty. Faced with
+vestigators can work on difficult conceptual                these "incompatible concepts," and with "the
+problems. This seems to have been true of writ-             fact that our culture does not contain concepts
+ing about loose coupling, and such an argu-                 for simultaneously thinking about rationality
+ment would explain why the notion is widely                 and indeterminateness" (Thompson, 1967, p.
+used, despite its apparent ambiguity.                        10), people simplify their analyses either by ig-
+   This article has two objectives. The first is to         noring uncertainty to see rationality or by ignor-
+organize the diverse literature on loose cou-               ing rational action to see spontaneous pro-
+pling. While reviewing this literature, we were             cesses.
+disappointed to find that the concept has been                 Thompson's contribution was to see that one
+applied to simpler organizational puzzles than              way to preserve both rationality and indetermi-
+originally intended. Thus, the second goal is to            nacy in the same system is to separate their lo-
+redirect research on loose coupling toward                  cations. He treated the technical core as a
+more difficult, yet potentially more useful, inter-         closed, rational system that eliminated uncer-
+pretations.                                                 tainty; the institutional level as an open system
+   In studying approximately 300 works that in-             that "faced up to uncertainty" and permitted
+voke the concept of loose coupling, five rela-              "the intrusion of variables penetrating from the
+tively distinct voices were noted: causation, ty-           outside"; and the managerial level as a system
+pology, effects, compensations, and organiza-               that "mediated" between the two extremes (p.
+tional outcomes. To attain the first goal of                 12).
+organizing the loose coupling literature, most of              Loose coupling has proven to be a durable
+the article is devoted to discussions of these five         concept precisely because it allows organiza-
+voices and their recurring arguments. Once the              tional analysts to explain the simultaneous ex-
+voices are established, they are linked in a pre-           istence of rationality and indeterminacy without
+liminary theory of the loosely coupled system. To           specializing these two logics in distinct loca-
+attain the second goal of redirecting loose cou-            tions. Loose coupling suggests that any location
+pling research, the article begins with a discus-           in an organization (top, middle, or bottom) con-
+sion of the underlying loose coupling puzzle.               tains interdependent elements that vary in the
+Throughout the essay we explain how each of                 number and strength of their interdependen-
+the five voices drifts away from the puzzle, and            cies. The fact that these elements are linked and
+we conclude with suggestions on how research-               preserve some degree of determinacy is cap-
+ers can focus more directly on explaining the               tured by the word coupled in the phrase loosely
+puzzle.                                                     coupled. The fact that these elements are also
+                                                            subject to spontaneous changes and preserve
+          The Underlying Puzzle                             some degree of independence and indetermi-
+                                                            nacy is captured by the modifying word loosely.
+  The basic problem being addressed when                    The resulting image is a system that is simulta-
+people struggle to grasp the nature of loose cou-           neously open and closed, indeterminate and ra-
+
+
+                                                      204
+tional, spontaneous and deliberate. If a person         coupling have not yet made a distinction be-
+selectively attends to the determinacy that exists      tween the unidimensional and dialectical inter-
+among some elements, he or she will describe            pretation of the concept. Consequently, the
+the interdependence as a tightly coupled sys-           loose coupling literaturecontains confusing mix-
+tem. That characterization is partly inaccurate         tures of the two interpretations. For example,
+because not all elements and linkages are af-           Rubin (1979)drew on dialectical interpretations
+fected and parts of the system remain loose and         to portray universities as loosely coupled sys-
+open. Ifa person selectively attends to the open-       tems. From this portrayal, she derived the uni-
+ness, independence, and indeterminate links             dimensional proposition that it should be easy
+among some elements, he or she will describe            for universities, because they are loosely cou-
+what amounts to a decoupled system. That                pled systems, to eliminate unwanted depart-
+characterization, too, is incomplete and inaccu-        ments. Yet, when studying five state universities,
+rate because parts of the system remain coupled         she found that departments were difficult to
+and closed.                                             eliminate because of ties among faculty mem-
+   Thus, the concept of loose coupling allows           bers. She concluded by dismissing the notion
+theorists to posit that any system, in any organi-      that universities are loosely coupled systems
+zational location, can act on both a technical          and argued that researchers should pay atten-
+level, which is closed to outside forces (coupling      tion to patterns of loose and tight coupling.
+produces stability), and an institutional level,        Within one article, then, the concept of loose
+which is open to outside forces (looseness pro-         coupling was described in terms of dialectical
+duces flexibility).                                     theory, a unidimensional proposition, dialecti-
+   The image that should emerge from this dis-          cal findings, unidimensional dismissal, and di-
+cussion is the following. If there is neither re-       alectical suggestions for further research.
+sponsiveness nor distinctiveness, the system is            One reason that the distinction between the
+not really a system, and it can be defined as a         unidimensional and dialectical interpretation
+noncoupled system. If there is responsiveness           has not been made is that no reviews of the
+without distinctiveness, the system is tightly cou-     loose coupling literature have been published.
+pled. If there is distinctiveness without respon-       Instead, what have been written are documents
+siveness, the system is decoupled. If there is          that approximate reviews, including several
+both distinctiveness and responsiveness, the            unpublished qualifying examinations and dis-
+system is loosely coupled. This general image is        sertations (Beekun, 1988b;Cude, 1989;Taylor,
+described here as the dialectical interpretation        1983), a few retrospective assessments of the
+of loose coupling.                                      concept (Firestone, 1985;Weick, 1986, 1989),oc-
+   The image that more commonly does emerge             casional translations of the concept across disci-
+from uses of the loose coupling concept is much         plinary boundaries (Dane, 1985; Gummer,
+simpler. Loose coupling is typically portrayedas        1982),a typology of loose coupling presented at
+the endpoint of a scale that extends from tightly       a conference (Clark, Astuto, & Kuh, 1983),and
+coupled to loosely coupled. Tightlycoupled sys-         the summary of a seminar on loosely coupled
+tems are portrayed as having responsive com-            systems (Gibson, 1977). Because few of these
+ponents that do not act independently, whereas          works are widely available, organizational re-
+loosely coupled systems are portrayed as hav-           searchers have had to constructidiosyncratic in-
+ing independent components that do not act re-          terpretationsof the concept, its general proposi-
+sponsively. This image is described here as the         tions, and its operationalizations. A straightfor-
+unidimensional interpretationof loose coupling.         ward review of the loose coupling literaturemay
+  Researchers who invoke the concept of loose           be the easiest way to free theorists to consider
+
+
+                                                  205
+puzzles such as the one highlighted in this sec-         coupling is most likely when observation time is
+tion.                                                    limited, the number of observable variables is
+                                                         decreased, and the instruments for measuring
+         The Voice of Causation                          variables are weakened.
+   The voice of causation is the firstvoice used in         Researchers also have observed how uncer-
+this article to review the loose coupling litera-        tainty can create causal indeterminacy, which
+ture. Researchers who use the causation-                 can then create loose coupling (Weick, 1976, p.
+seeking voice neither advocate nor condemn               4). For example, Faulkner and Anderson (1987)
+loose coupling as a management tool. In a rel-           studied the effects of uncertainty on governance
+atively dispassionate way, they look for process         structures by analyzing the credits of 2,430 films
+and variance theories that help to explain why           released between 1965 and 1980. Unclear links
+some systems are loosely coupled and others              between means ("capitalization, choice of cre-
+are not. This causation-seeking voice is struc-          ative elements, and marketing strategies"; p.
+tured around three recurring explanations for            885) and ends ("economic and critical out-
+what causes loose coupling: causal indetermi-            comes"; p. 884) were created by variance in the
+nacy, fragmentation of the external environ-             content and composition of artistic work, vari-
+ment, and fragmentationof the internal environ-          ance in the rates of investment flows, and vari-
+ment.                                                    ance in stochastic demand; this lack of clarity
+                                                         was heightened by diverse, uncertain, and im-
+Causal Indeterminacy                                     perfectly perceived markets. Under these uncer-
+   Several researchers have suggested that cau-          tain conditions, loosely coupled project-based
+sal indeterminacy causes loose coupling. Cau-            teams were created.
+sal indeterminacy refers to unclear means-ends              In a similar vein, March (1987) argued that
+connections, which are explored in writings on           ambiguity causes loose coupling, and he iden-
+bounded rationality, selective perception, un-           tified four ambiguities that are inherent in deci-
+certainty, ambiguity, and intangibility of pro-          sion environments: (a) the preferences of deci-
+duction materials. For example, Orton and                sion makers are unstable and unpredictable
+Weick (1988, p. 14)argued that because people            over time; (b) problems, solutions, and actions
+have bounded rationality(e.g., limited informa-          are unrelated to each other; (c) self-interested
+tion-processing capabilities, memories that ob-          reason is subordinated to occasionally obsoles-
+scure details, and short attentionspans) they no-        cent traditions; and (d) information is used pri-
+tice different parts of their surroundings, will         marily to create meaning out of previous deci-
+tune out different parts at different times, and         sions. March suggested that these ambiguities
+will process different parts at different speeds.        create loose coupling between information ac-
+As a result of the idiosyncratic worlds formed           tivities and decision activities.
+under these conditions, people will find it diffi-          Additionally,     Clark (1983) wrote that the
+cult to coordinate their actions and will share          loosely coupled structure of universities is an in-
+few variables or weak variables, all of which            evitable consequence of their primary produc-
+leads to loose coupling.                                 tion material: knowledge.
+   Glassman (1973)portrayed loose coupling as                [A]nacademic system works with materials that
+a problem of selective perception: "If the ob-               are increasingly specialized and numerous,
+server is not looking at or understanding the op-            knowledge-intensive and knowledge-extensive,
+eration of variables involved in coupling then               with a momentum of autonomy. This character-
+                                                             ization applies most strongly to advanced sys-
+his conceptual system will show a looser cou-                tems, but even the most retarded systems will
+pling than exists in the real world" (p. 85). Ac-            be based on a half-dozen or more distinct bun-
+cording to Glassman, the perception of loose                 dles of knowledge that have their own internal
+
+                                                   206
+  logics and an inherent bent toward autonomy.           pants are constantly involved or care about ev-
+  (p. 16)                                                ery dimension of the organization's operations"
+Fragmented External Environment                          (p. 37). Additionally, Boynton and Zmud (1987)
+                                                         observed that professionals who work with in-
+   Fragmentation of a system's external environ-         formation systems face increased loose coupling
+ment, a second recurring cause of loose cou-             between subunits when personal computers are
+pling, typically takes one of two forms: dispersed       dispersed throughout organizations. Sunesson
+stimuli or incompatible expectations. Fragmen-           (1985) suggested that "street-level bureaucra-
+tation that takes the form of dispersed stimuli          cies" (p. 243) lead to loose coupling between
+explains such diverse concepts as geographic             goals and actions, whereas Raghunathan and
+dispersion, specialized market niches, and var-          Beekun (1989) proposed that the ownership cou-
+ied demands on the system. For example,                  pling patterns of multinational corporations are
+Chase and Tansik (1983) wrote that customer              a function of the maturity and cultural diversity
+contact increases the need for decoupling the            of subsidiaries. Finally, Thomas (1983) described
+activities within the organization. Manning              the Chicago Eight trial as a competition for con-
+(1979) demonstrated that the constant stream of          trol of proceedings and meanings that created
+diverse emergency calls to police organizations          loose couplings between judicial practices and
+diminished the effects of hierarchical coordina-         the ideological premises of due process.
+tion by creating internal differentiation among             In summary, this voice often preserves a dia-
+operators, dispatchers, and officers. Manning            lectical interpretation, as is evident in work on
+argued that geographical dispersion and multi-           project-based teams over time (Faulkner &
+ple possible stimuli require information struc-          Anderson, 1987), interactions between judicial
+tures that can simultaneously filter and respond         practices and due process principles (Thomas,
+to an environment of callers.                            1983), and police organizations' joint tasks of fil-
+   Fragmentation that takes the form of incom-           tering and responding to emergency calls (Man-
+patible expectations has been illustrated by             ning, 1979). However, this voice also drifts from
+Meyer and Rowan (1977), who argued that                  a dialectical interpretation when investigators
+schools must somehow reconcile incompatibili-            portray loose coupling as decoupling (e.g.,
+ties between institutional pressures and tech-           Chase & Tansik, 1983; Meyer & Rowan, 1977).
+nical pressures. They noted that organizations           When loose coupling is portrayed as decou-
+respond to this contradiction by buffering, build-       pling, the diminished emphasis on connected-
+ing gaps between, loosely coupling, or decou-            ness, responsiveness, and interdependence dis-
+pling formal structures from actual work activi-         solves the dialectic.
+ties in order to maintain "ceremonial conform-
+ity" (p. 341). In addition, support for Meyer and
+Rowan's decoupling thesis has been found in                        The Voice of Typology
+studies of hospitals (Covaleski & Dirsmith, 1983),
+courts (Hagan, Hewitt, & Alwin, 1979), and pris-            The voice of typology is the second voice used
+ons (Thomas, 1984).                                      in this article to review the loose coupling liter-
+Fragmented Internal Environment                          ature. Similar to researchers who use the voice
+                                                         of causation, researchers who use the voice of
+  A third recurring source of loose coupling is          typology are not directly concerned with the
+the fragmentation of the internal environment,           value of loose coupling as a management tool.
+which can take a variety of forms. For example,          The voice of typology emphasizes descriptive
+Pfeffer (1978) suggested that organizations "are         clarity as a precursor to causal clarity. Such re-
+loosely coupled, in part, because few partici-           searchers see loose coupling as an analytical
+
+                                                   207
+language, rather than as a set of causal propo-        organizations: coalitions, participatory federa-
+sitions. Consequently, this voice is structured        tions, independent federations, mandated fed-
+around different types of loose coupling, rather       erations, and intraorganizational systems (p.
+than its causes or effects.                            83). Although Provan rank-ordered these inter-
+   Working in the voice of typology, we identify       organizational organizations from loosely cou-
+the eight most frequentlyrecurringtypes of loose       pled (coalition)to tightly coupled (intraorganiza-
+coupling: loose coupling among individuals,            tional system), loose coupling has been docu-
+among subunits, among organizations, be-               mented within each of these organizational
+tween hierarchical levels, between organiza-           types. Bygrave (1988)studied the coupling in co-
+tions and environments, among ideas, between           investment coalitions of venture capitalists. Co-
+activities, and between intentions and actions.        valeski, Dirsmith, and Jablonsky (1985) de-
+   Studies of loose coupling in which the individ-     scribed a loosely coupled network of state geri-
+ual is the unit of analysis are illustrated by         atric service agencies. Luke, Begun, and Pointer
+Beekun's (1988a) network analysis of a multi-          (1989) described independent "quasi firms" in
+player organization game, Hedberg's (1984)use          the hospital industry. Kaplan (1982) described
+of loose coupling as a design criterionin a steel-     an interventioninto a loosely coupled federation
+works, Schall's (1983) description of an invest-       of state agencies that shared a mandated com-
+ment division, Keidel's (1984) description of          mon funding source. Finally, Raghunathan and
+baseball teams, and Hagan, Hewitt, and Al-             Beekun (1989)discussed the varying looseness of
+win's (1979)study of relationships within the ju-      ownership patterns of multinational corpora-
+dicial system.                                         tions.
+   Researchers also have considered a wide                The fourth type of loose coupling, loose cou-
+range of structuralelements that are above the         pling that occurs between hierarchical levels,
+individual level and below the organizational          also has received attention. Firestone (1985)and
+level; in this article, these elements are catego-     his colleagues documented loose coupling be-
+rized as subunits. Because the concept of loose        tween hierarchical levels in schools through a
+coupling was firstempirically grounded in edu-         "school assessment survey," which measured
+cational organizations, one of the most fre-           coupling on five vertical dimensions: vertical
+quently studied subunits has been the school           communications, centralization on instruction
+classroom (Deal & Celotti, 1980;Murphy & Hal-          matters, centralizationon resource matters, sup-
+linger, 1984; Weick, 1976). Researchers have           portby the principal, and goal consensus (p. 12).
+also considered the loose coupling between             In keeping with this theme, Gamoran and Dree-
+functional departments. For example, they have         ben (1986)also studied the influence of princi-
+studied groups of telephone operators, dispatch-       pals on classroom activity. Similarly, Ouchi
+ers, and officers in a police organization (Man-       (1978) studied the transmission of behavioral
+ning, 1979); information systems departments           control and output control between hierarchical
+and the rest of the organization (Boynton &            levels in department stores.
+Zmud, 1987);nursing subunits and physicians              In a different approach to loose coupling be-
+and paramedical subunits of hospitals (Leatt &         tween hierarchical levels, Covaleski and
+Schneck, 1984);and business units (Gupta, 1984;        Dirsmith(1983)studied how the structuralsepa-
+Horwitch& Thietart, 1987).                             rations implied by Meyer and Rowan's (1977)
+   Many studies have been conducted on the             version of institutionaltheory could be translated
+third type of loose coupling, loose coupling be-       into the freedom of nurses from the intrusion of
+tween organizations. For example, Provan               cost controls. Covaleski and Dirsmithsuggested
+(1983)differentiatedfive types of organizations of     that effective nurse administrators alternately
+
+
+                                                 208
+adopt "budget masks" (forcommunications with                  lutions,and decision makershappen to make
+hospital administrators)and professional "clan                actionpossible.(p. 16)
+masks" (for communications with nurses), and
+they inferred that loose coupling between hier-             This puzzle, in various permutations, including
+archical levels occurs when people are willing              loose coupling between information gathering
+and able to speak different languages to differ-            and decision making, has been revisited many
+ent levels.                                                 times by March and his colleagues (Cohen &
+   A fifth type of loose coupling, loose coupling           March, 1974; Feldman & March, 1982; March,
+between organizations and environments, also                 1987; March & Olsen, 1976; March & Simon,
+has been described (e.g., Beekun & Ginn, 1988;               1958, p. 176).
+Weick, 1979, p. 178). Other examples include                   Several theorists have explored loose cou-
+Manning (1982), who described semiotic loose                pling between ideas contained in accounts,
+coupling between a police communication sys-                goals, and ideologies. For example, Gaertner
+tem and an environment of people making                     and Ramnarayan (1983)discussed four types of
+emergency phone calls. He reported that dra-                accounts that can be loosely coupled: auditing
+matic phone calls are "conventionalized" (p.                (performingwithin a framework for an external
+234)and frozen (p. 235)into rigidly defined crime           audience), implementation (performingwithin a
+codes by police operators, and he defined the               frameworkfor an internal audience), integration
+telephone operators' task as one of processing,             (setting the frameworkfor an internal audience),
+decoding, classifying, encoding, and transform-             and legitimation (setting the framework for an
+ing the calls into the code, language, or per-              external audience). Bussigel, Barzansky, and
+spective of the organization. Therefore, by                 Grenholm (1986)found that not only were goals
+changing the information as it crosses the                  in some medical schools incompatible, inconsis-
+boundaries into the organization, police com-               tent, and indirectlyrelated, but the relationships
+munication systems (a) maintain the integrity,              between these goals also were vaguely articu-
+consistency, and autonomy of their organiza-                lated. In addition, Meyerson and Martin (1987)
+tions and (b) loosen the couplings between the              suggested that ideologies can be loosely cou-
+organization and its environment.                           pled (p. 634).
+   Frequently, researchers are concerned with                  The final type of loose coupling, that is, loose
+the actions, events, or sequences within organi-            coupling between intentions and actions, is de-
+zations, rather than specific entities or levels            scribed through the following examples. An un-
+(Weick, 1979, p. 236). Such studies are catego-             published manuscript by Salancik (1975) on
+rized in this article as demonstrations of loose            loose coupling between intentions and actions
+coupling between activities, and one example of             serves as an anchor for several ideas, including
+this type of analysis is the study of loose coupling        loose coupling between planning and imple-
+between problems and choices. Cohen, March,                 mentation (Withane, 1984), official structures
+and Olsen's (1972)article focused on the loose              and negotiated orders (Thomas, 1983, 1984),and
+coupling between problems and choice:                       structuralfacades and technical cores (Meyer &
+                                                            Rowan, 1977).Similarly, Hagan, Hewitt, and Al-
+  A major feature of the garbage can process is             win (1979),who studied loose coupling between
+  the uncoupling of problems and choices. Al-               the structuralfacades and technical cores of ju-
+  though decision making is thought of as a pro-            dicial systems, argued that societal demands for
+  cess for solving problems, that is often not what
+  happens. Problemsare worked upon in the con-              individualized justice were grafted onto the
+  text of some choice, but choices are made only            American judicial system in the early 20th cen-
+  when the shiftingcombinations of problems, so-            turyin the formof probation officers'presentenc-
+
+
+                                                      209
+ing recommendations (p. 597). These authors                relationships, and by using loose couplings in-
+further demonstrated that the judicial system              stead of tight couplings. To differentiate loose
+has kept parole officers decoupled from a more             couplings from tight couplings, he proposed a
+efficiency-oriented judge-prosecutor subsystem             continuum of couplings between software mod-
+that rewards guilty pleas.                                 ules, ranging from "loose, or good" to "tight, or
+   In summary, this voice can also preserve the            bad" (p. 103). As the tightness of couplings in-
+dialectical interpretation of loose coupling. The          creases, the modularity (p. 102) of the system
+dialectical interpretation is most evident when            decreases. Page-Jones referred to high coupling
+the typology captures descriptions of ongoing              as "pathological coupling" because it "brings us
+actions, for example, nurse administrators                 back to the mess of nonmodular coding" (p. 114).
+adopting masks (Covaleski & Dirsmith, 1983),               Other studies by Perrow (1984) and Cude and
+police operators conventionalizing emergency               Browning (1989) have identified similarities be-
+phone calls (Manning, 1982), and judicial sys-             tween machine modularity and modularity in
+tems decoupling parole officers' recommenda-               human systems.
+tions from sentencing decisions (Hagan, Hewitt,               The second direct effect of loose coupling, req-
+& Alwin, 1979). However, this voice drifts from            uisite variety, also has been analyzed by orga-
+the dialectical interpretation when the typology           nizational scholars. Weick (1976) proposed that
+captures descriptions of static entities, for exam-        loosely coupled systems could more accurately
+ple, when sports teams, schools, or geriatric ser-         register their environments through requisite
+vices networks are labeled as loosely coupled              variety. (A system has requisite variety to the
+systems (Keidel, 1984; Murphy & Hallinger, 1984;           extent that its elements serve as a medium that
+Covaleski, Dirsmith, & Jablonsky, 1985).                   can register inputs with accuracy.) Additionally,
+                                                           registering improves when elements become
+                                                           more numerous and the constraints among
+        The Voice of Direct Effects                        them weaken (Heider, 1959; Orton, 1988).
+  Researchers who use the voice of direct effects             The final direct effect of loose coupling, discre-
+are the strongest advocates of loose coupling as           tion, can be broken into two forms: behavioral
+a management strategy. The voice's theme is,               discretion and cognitive discretion. Behavioral
+"loose coupling has specific effects and the ef-           discretion is the capacity for autonomous action.
+fects are desirable." The three most frequently            March (1987) suggested that ambiguity creates
+recurring direct effects are modularity, requisite         loose coupling between information activities
+variety, and discretion.                                   and decision activities and that this loose cou-
+  For example, Page-Jones (1980) encouraged                pling creates autonomy for information gather-
+software designers to attain "modularity" (p.              ers. Vaughan (1982), writing for a law review
+102) through loose coupling:                               audience, suggested a more specific type of be-
+  The firstway of measuring design quality we'll           havioral discretion-freedom         to make external
+  explore is coupling, the degree of interdepen-           alliances for illegal purposes. She cited loosely
+  dence between two modules. Our objective is to           coupled systems as an organizational            form
+  minimize coupling; that is, to make modules as           which obscures subunit activities from the mon-
+  independent as possible.. . . Low coupling be-           itoring of top management. Acccording to her,
+  tween modules signifies a well-designed sys-
+  tem. (pp. 101, 103)                                      as top management's ability to monitor subunit
+                                                           activities decreases, the subunits are more likely
+Page-Jones suggested that modularity is at-                to "engage in a fraudulent transaction with an-
+tained by the elimination of unnecessary rela-             other organization" because "no countervailing
+tionships, by reducing the number of necessary             intraorganizational authority can prevent or
+
+
+                                                     210
+control the unlawful behavior" (Vaughan, 1982,         1982),highlighting modularity, requisite variety,
+pp. 1394-1395).                                        and discretion, while ignoring interaction, req-
+   In contrast to behavioral discretion, cognitive     uisite integration, and control.
+discretion is the freedom to perceive or construct
+an idiosyncratic meaning. For example, Man-                  The Voice of Compensations
+ning (1982)described the process through which
+police organizations create semiotic worlds,              Theoristswho use the voice of compensations
+which are distinct from the communities these          try to restore a dialectic to the concept of loose
+organizations are intended to serve. This pro-         coupling. The voice's theme is "loose coupling is
+cess is facilitated by an expectation that Weick,      an unsatisfactory condition that should be
+Gilfillan, and Keith (1973)described as the pre-       reversed." The voice of compensations is most
+sumption of logic. These authors proposed that         visible in the educational administration litera-
+when people are about to confront an indeter-          ture, where researchers have had to redefine
+minate set of events, they often presume that the      the role of educational administratorsbased on
+events will have made sense and then act as if         recurrent findings that schools are loosely cou-
+the events are sensible and determinate, which         pled systems (Firestone, 1985). Researchers
+often makes the set of events determinate in the       working in the voice of compensations search
+process. The process unfolds like a generic self-      for nonobvious sources of order that administra-
+fulfilling prophecy. Having presumed that the          tors can use to influence dispersed organiza-
+events follow a logic of some sort, these people       tions. The three most frequently recurring man-
+act with confidence and implant a logic that con-      agerial strategies are enhanced leadership, fo-
+firms their prescription.                              cused effort, and shared values.
+   In summary, the voice of direct effects pre-
+serves the dialectical interpretationof loose cou-     Enhanced Leadership
+pling when it frames loose coupling as a coun-            Some theorists view the management of
+terrational concept. The voice of direct effects       loosely coupled systems as a problem and call
+has always been dependent on a prevailing,             for "stronger"leadership. For example, Murphy
+rational, Weberian emphasis on structuresthat          and Hallinger (1984)argued that loose coupling
+increase determinacy. One important example            research described "what is" and school effec-
+is found in the abstract to Weick's (1976)loose        tiveness research described "what can be" (p.
+coupling article, which begins, "In contrast to        10).They wrote that loose coupling research im-
+the prevailing image ...." (p. 3). Additionally,       plies that organizational levels and components
+when researchers such as Manning (1982)de-             have limited influence on other organizational
+scribe how connectedness (police responsive-           levels and components because of "the pres-
+ness to phone calls) can be explained as discon-       ence of multiple and often conflicting goals" and
+nectedness (idiosyncraticsemiotic worlds), they        "the lack of a clear instructionaltechnology" (p.
+are grounding the voice of direct effects in a         7). Murphy and Hallinger (1984)also stated that
+larger context that expects connectedness. As          in contrast to loose coupling, "the teacher effec-
+theorists' concepts of loose coupling have ma-         tiveness literature portrays schools as possess-
+tured, the counterrationaltone has softened, but       ing a clearly defined technology or means to
+so too has the dialectical tone. When research-        reach goals" (p. 8). The solution, according to
+ers remove the concept of loose coupling from          these authors, is strong leadership that unifies
+the rational background that it attacks, the voice     goals and clarifies technology (pp. 9-10).
+of direct effect drifts toward a unidimensional           Other researchers have suggested that loose
+interpretation(e.g., Page-Jones, 1980;Vaughan,         coupling calls for subtle leadership. For exam-
+
+
+                                                 211
+ple, Boynton and Zmud (1987)counseled infor-            vide the freedom for subordinates to adapt the
+mation systems professionals who, because of            behavior to local needs.
+the dispersal of computer technology, will find           The use of resource control as a compensation
+themselves in more loosely coupled systems, to          for loose coupling has been illustrated by Ga-
+try "tosimultaneously provide centralized direc-        moran and Dreeben (1986) in their study of
+tion and coordination while recognizing the             school administrators. They found, in a year-
+value of increased discretion"(p. 62). Similarly,       long study of 13 classes in 7 schools, that the
+Weick (1982b) counseled educational adminis-            allocation of time to reading activities, the pro-
+trators to be more attentive to the "glue" that         vision of particularcurricularmaterials, and the
+holds loosely coupled systems together: "since          grouping of students each had a significant ef-
+channels are unpredictable, administrators              fect on children's reading ability. Gamoran and
+must get out of the office and spend lots of time       Dreeben interpreted their findings as evidence
+one on one-both to remind people of central             of administratorinfluence on classroom activity.
+visions and to assist them in applying these vi-           Specific targets, such as curriculum materials
+sions to their own activities" (p. 676). Therefore,     and resource flows, do not have to be "correctly"
+this one-on-one or subtle leadership implies sen-       selected to serve as compensations for loose
+sitivity to diverse system components (Kaplan,          coupling. Forceful action itself can often create
+1982)and the ability to control systems through         orderly contingencies among events that then
+conversation (Gronn, 1983, p. 20).                      remove some indeterminacy. Self-fulfilling
+                                                        prophecies are an example of this process, but
+Focused Attention                                       the more general formulationis that people can
+                                                        enact regularities into their environment (Smir-
+   A second form of compensation is to focus at-        cich & Stubbart, 1985;Weick, 1979).People who
+tention on specific relations in the system. For        disagree about causation can reestablish some
+example, Peters (1978) wrote that "small step           determinacy either by voting for a subset of fac-
+strategies" within "vast, loosely linked systems"       tual premises, which they will treat as binding,
+may produce more effective, efficient, interest-        or by manipulating the environment (Hedberg,
+ing, varied, and thoughtful organizational              Nystrom, & Starbuck, 1976) so that it contains
+changes (p. 49). In addition, researchers have          explicit cause-effect ties on which they can
+described several ways in which individuals             agree.
+can compensate for loose coupling by carefully
+selecting targets, controlling resources, and act-      Shared Values
+ing forcefully.
+   Glatthorn(1981)emphasized the careful selec-            Use of shared values is a third means to com-
+tion of targets when he described a process             pensate for loose coupling. This formof compen-
+through which a successful curriculum change            sation is especially crucial because it often con-
+could be attained in a loosely coupled system:          stitutes the sole remaining basis that holds
+map what is currentlytaught, reduce the curric-         together a loosely coupled system. If organiza-
+ulum to structured and basic information, and           tions are determinate means-ends structuresfor
+provide flexibilityfor teachers to adapt the cur-       attaining preferred outcomes, and if loose cou-
+riculum (p. 112).Generalizing fromthis strategy,        pling is produced by uncertainties about these
+managers can change the behavior of subordi-            means-ends structures(Thompson, 1967,p. 134),
+nates in loosely coupled systems if they build on       then agreement about preferences is the only
+subordinates' ongoing behavior, focus only on           source of order that is left. Reaffirmation of
+controllable and essential behaviors, and pro-          shared values in the face of loose coupling has
+
+
+                                                  212
+been emphasized by such authors as Deal                effects that loose coupling has on the perfor-
+(1985), Ouchi (1978, 1980), and Meyer and              mance of organizations. Because of the causal
+Rowan (1977).                                          distance between loose coupling and organiza-
+   For example, Deal (1985)wrote that adminis-         tional outcomes, the voice of organizational out-
+trators should use tight cultural couplings to         comes requires the consideration of more inde-
+counteract loose couplings between policies            pendent variables than does the voice of direct
+and actions. He suggested that administrators          effects. The outcome voice, consequently, is less
+should build stronger cultures through the anal-       forceful than the voice of direct effects in advo-
+ysis of history, the identification of heroes and      cating loose coupling as a managerial strategy,
+heroines, the enhancement of ceremonies and            and it focuses on five organizational outcomes:
+rituals, and the cultivation of stories and story-     persistence, buffering, adaptability, satisfac-
+tellers. Similarly, Ouchi (1978)argued that con-       tion, and effectiveness.
+trol loss between hierarchical levels leads to
+modularityand discretion (p. 283),which is com-        Persistence
+pensated for by a clan orientation (Ouchi, 1980,
+                                                          Persistence, a general term referring to stabil-
+ 1981).
+                                                       ity, resistance to change, and continued opera-
+   Meyer and Rowan (1977)suggested that the
+                                                       tion, is discussed frequently as an organiza-
+cohesive force that keeps decoupled organiza-
+                                                       tional outcome of loose coupling. For example,
+tions from becoming anarchies is "the logic of
+                                                       Glassman (1973) presented 13 examples, from
+confidence and good faith" (p. 358). This logic
+                                                       varying levels of system complexity, of loose
+emphasizes ceremonial management, consider-
+                                                       couplings that create persistence. Persistence is
+ations of face, the twin assumptions that people
+                                                       also evident in the reduced responsiveness of an
+are performing their tasks correctly and that
+                                                       organization. Wilson and Corbett (1983) found
+"things are as they seem," all of which allow
+                                                       empirical support, emphasized by Firestone
+decoupled structuresto continue operation.
+   In summary, this voice preserves a dialectical      (1985), for the idea that tightly coupled systems
+                                                       are more conducive to systemwide change
+interpretationwhen it builds on the premise that
+                                                       than loosely coupled systems. In addition, Mey-
+looseness on some dimensions should be com-
+                                                       erson and Martin (1987) noted that managers
+plemented by coupling on other dimensions.
+                                                       were unable to plan, predict, control, or change
+Gamoran and Dreeben (1986)accepted the con-
+                                                       a loosely coupled system. Finally, Hagan,
+cept of diminished direct control by principals,
+which fuels a search for alternative sources of        Hewitt, and Alwin (1979) demonstrated that pa-
+                                                       role officers evoke little response from judges;
+control. Researchers who use this voice drift
+                                                       Kaplan (1982) suggested that interventionists
+away from the dialectical interpretation when
+                                                       can only evoke short-term responses from feder-
+they reject looseness as a legitimate organiza-
+tional form. When researchers try to replace           ations; and Deal and Celotti (1980) noted that
+looseness with coupling, they assume the dia-          communities are not always able to evoke re-
+lectic away (e.g., Lutz, 1982; Murphy & Hal-           sponses from loosely coupled schools.
+linger, 1984).                                         Buffering
+
+               The Voice                                  Buffering is a second outcome of loose cou-
+      of Organizational Outcomes                       pling (Thompson, 1967). Weick (1976) suggested
+                                                       that loosely coupled systems seal off and pre-
+   Researchers who use the voice of organiza-          vent the spread of problems, an ability that
+tional outcomes try to predict and measure the         Schoonhoven (1986) saw as desirable in space
+
+
+                                                 213
+stations. One proposed benefit of modularity in              workers' desires for more local information, ex-
+software design is that it reduces the occurrence            ploration (p. 53), learning, self-design, experi-
+of ripple effects, for exam-lple, a bug in one mod-          mentation, reflection (p. 57), "a right to curiosity"
+ule appearing as a symptom in another module                 (p. 58), local learning, and local solutions (p. 64).
+(Page-Jones, 1980, p. 102).                                  Confirming Hedberg's link between loose cou-
+   Three studies have demonstrated that buffer-              pling and experimentation, Manning (1979) ar-
+ing in loosely coupled systems is partial, rather            gued that loosely coupled police officers were
+than complete. Although Perrow (1984) ideal-                 better able to find solutions to complex problems
+ized loose coupling as a solution to the dangers             than tightly coupled police officers, and Perrow
+of tight coupling, evidence in his analysis of the           (1984) argued that if complex technologies were
+Three Mile Island accident indicated that loose              more loosely coupled, operators would be able
+coupling was part of the cause of the Three Mile             to find solutions through exploratory problem
+Island accident: Three warnings that conceiv-                solving.
+ably could have prevented the accident were                     Collective judgment, another form of adapt-
+not communicated to the plant engineers (Per-                ability, was described by Thompson and Tuden
+row, 1981). In a similar vein, Rubin (1979) found            (1959). They argued that when loose coupling
+that five state universities could not easily termi-         takes the form of disagreement on means-ends
+nate departments, which she interpreted as ev-               relationships (causal indeterminacy), the system
+idence that the universities were characterized              coheres if there is still agreement on preferences
+by patterns of tight and loose couplings, rather             (shared values). Thompson and Tuden referred
+than simply loose couplings. Finally, Cameron,               to this combination as the judgment decision-
+Kim, and Whetten (1987) found that although ad-              making strategy. The structural form which cor-
+ministrators in loosely coupled systems could                responds to a judgment decision strategy is rep-
+buffer their subordinates from turbulence, they              resented by a self-governing voluntary group, a
+could not buffer them from decline (p. 236).                 form often called a collegium (Thompson, 1967,
+                                                             p. 200). The collegium promotes wise choice be-
+Adaptability                                                 cause people who have equal influence, equal
+                                                             information, and a decision scheme of majority
+   Whereas persistence and buffering imply ad-               rule are able to apply multiple perspectives to
+aptation to change through neutralizing the im-              situations and combine their perspectives to cre-
+pact of the change, another outcome of loose                 ate a collective judgment. Because of the rela-
+coupling, adaptability, implies assimilation and             tive advantages of the loosely coupled form in
+accommodation of the change (Weick, 1979, p.                 creating collective judgment, it is not surprising
+ 120). In the literature on loose coupling, three            that collegium forms such as the judiciary (e.g.,
+types of adaptability have been suggested: ex-               Hagan, Hewitt, & Alwin, 1979), universities
+perimentation, collective judgment, and dis-                 (e.g., Rubin, 1979), and voluntary associations
+sent.                                                        (e.g., Golembiewski, 1979) are heavily repre-
+   To cope directly with conditions such as ap-              sented in loose coupling literature.
+parent causal indeterminacy, people often "act                  A third type of adaptability, the preservation
+to expose the conditions for acting; causal rela-            of dissent, is preserved and generated in loosely
+tionships in the environment or in the interface             coupled systems through cultural insurance
+between learner and environment are gradu-                   (Weick, 1976) and unified diversity (Eisenberg,
+ally untangled" (Hedberg, 1981, p. 4). Actions               1984). Nemeth (1986) argued that minority influ-
+that untangle causality are what is meant by                 ence helps systems adapt to complex problems
+experimentation. Hedberg (1984) argued that                  because it intensifies cognitive effort by the ma-
+the design of a steelworks should respond to                 jority. Nemeth and Staw (in press) demonstrated
+
+                                                       214
+through a review of literature on minority influ-          ineffectiveness (e.g., Lutz, 1982; Murphy & Hal-
+ence that the strain for uniformity threatens dis-         linger, 1984), whereas others emphasize out-
+sent and restricts adaptability, creativity, and           comes that suggest effectiveness         (e.g., Co-
+survival. Eisenberg (1984) wrote that ambiguity            valeski & Dirsmith, 1983). The debate over the
+facilitates "unified diversity" because people re-         effectiveness of loose coupling is pervasive, wo-
+tain multiple understandings while believing               ven throughout many discussions of loose cou-
+their understanding is singular and shared. The            pling. For example, a few investigators have
+result is an increased likelihood of adaptability.         addressed effectiveness directly by considering
+                                                           productivity, market share, return on investment
+Satisfaction
+                                                           (ROI), efficiency, and "excellence" as organiza-
+   Loose coupling also appears to have implica-            tional outcomes.
+tions for job satisfaction because it affects effi-           On a group level, Birnbaum (1981) found that
+cacy, conflict, security, and social contacts.             research groups composed of members who
+First, some investigators have argued that loose           agreed on the overall goals of the research proj-
+coupling fosters self-determination and a sense            ect, but had diverse academic training and af-
+of efficacy (Weick, 1976). In part, this may be            filiations, were more productive on some dimen-
+because the setting of objectives is easier on a           sions than groups composed of members with
+localized level (Chase & Tansik, 1983). Second,            less diverse academic training and affiliations.
+researchers have noted that loosely coupled                   On a business-unit level, Horwitch and Thi-
+systems often reduce conflict between system el-           etart (1987) conducted a PIMS data analysis that
+ements because in these situations such ele-               tested the effects of three types of coupling on
+ments are not required to agree, interact with, or         ROI (a measure of short-term effectiveness) and
+adapt to each other, creating fewer occasions              market share (a measure of long-term effective-
+for conflict (Deal & Celotti, 1980; Meyer &                ness). These authors found (a) that loose cou-
+Rowan, 1977). Third, researchers have sug-                 pling (e.g., no shared market) is often compen-
+gested that loosely coupled systems create a ha-           sated for (e.g., by shared facilities) to create ef-
+ven of psychological safety in which deviance              fectiveness and (b) that different contexts require
+and experimentation are protected (Meyerson &              different coupling patterns. Beekun and Ginn
+Martin, 1987, p. 636). Finally, Jones (1984) pro-          (1988) reported similar findings in hospitals' ex-
+posed that loosely coupled, horizontally differ-           tra-organizational linkages: Different strategic
+entiated, or self-contained subunits create a              types (analyzer, defender, reactor, prospector)
+perception of smaller group size, which he hy-             imply their own optimal coupling gestalts for at-
+pothesized would increase task visibility, moni-           taining efficiency and effectiveness. Therefore,
+toring, and social exchange among employees.               effectiveness, from a strategy perspective, is at-
+Although self-determination, reduced conflict,             tained by conforming to the coupling patterns
+psychological safety, and deepened social inter-           dictated by a combination of environment and
+action are generally considered as contributors            strategy (Raghunathan & Beekun, 1989).
+to higher satisfaction, loose coupling can also               On a general organizational level, Peters and
+generate loneliness (Deal & Celotti, 1980), which          Waterman (1982) argued that simultaneous
+detracts from satisfaction.                                loose-tight coupling helped create "excellence."
+                                                           More specifically, they argued that employee
+Effectiveness
+                                                           autonomy, experimentation,        and innovation
+   If an organization is persistent, buffered, and         can be facilitated through a strongly held set of
+adaptable, and has satisfied employees, is it ef-          shared values.
+fective? Some researchers emphasize organiza-                 In summary, researchers who use this voice
+tional outcomes of loose coupling that suggest             preserve the dialectical interpretation of loose
+
+                                                     215
+coupling when they begin with a unidimen-                    difficult to think simultaneously about rationality
+sional interpretation of loose coupling and end              and indeterminacy. For each of the five voices,
+by concluding that researchers should use a di-              loose coupling is often reduced to a unidimen-
+alectical interpretation. For example, according             sional variable, a simplification that should be
+to Rubin (1979), universities have a limited abil-           resisted. The following section explains how re-
+ity to eliminate departments, and researchers                searchers can avoid that simplification.
+should continue to study patterns of loose and                  Within organization theory, there are many
+tight coupling. Cameron, Kim, and Whetten                    unidimensional variables but few dialectical
+(1987, p. 236) found that loose coupling can pro-            concepts. Dialectical concepts are rare because
+tect organizations from some effects of decline,             they are difficult to build. Loose coupling, for
+but not from others. Theorists who use this voice            example, is the product of many years of effort
+weaken the dialectical interpretation when they              by organization theorists to combine the contra-
+begin and end with a unidimensional interpre-                dictory concepts of connection and autonomy.
+tation of loose coupling (e.g., Kaplan, 1982).               Burns and Stalker (1961) assigned connected-
+                                                             ness to the mechanistic organization and auton-
+           A Preliminary Model                               omy of components to the organic organization.
+        of Loose Coupling Theory                             Thompson (1967) moved these two forces inside
+                                                             one system by combining the concepts of open
+   The five voices reviewed in the previous sec-
+                                                             systems (connected to environmental forces)
+tion can be combined to form a simple, sequen-
+                                                             and closed systems (independent of environ-
+tial model. In Figure 1, we present a preliminary
+                                                             mental forces). Lawrence and Lorsch (1967) pro-
+model of loose coupling theory, built on the pre-
+                                                             vided another organizational resolution to the
+sentation conventions      of causal modeling
+                                                             connected/autonomous         paradox by arguing
+(J6reskog & S6rbom, 1986).
+                                                             that differentiation could be compensated for by
+   The switch from five voices to five latent-
+                                                             the creation of integrating mechanisms such as
+variable-like constructs changes the discussion
+                                                             liaisons or cross-functional committees. The di-
+in several ways. First, the intricate interactions
+                                                             alectical interpretation of loose coupling builds
+among the voices/variables are represented as
+                                                             on and extends these arguments by juxtaposing
+simple sequentiality. Second, each variable
+                                                             both forces, simultaneously, within the same
+now appears to have the same weight, although
+                                                             system (Das, 1984).
+different voices are stronger in different con-
+                                                                If loose coupling is maintained as a dialectical
+texts. Third, the single model implies a much
+                                                             concept, it can illuminate the answers to several
+higher degree of consensus than actually exists
+                                                             organizational puzzles that have eluded organi-
+among loose coupling researchers; researchers
+                                                             zation theorists.
+who use different voices would portray the
+                                                                The first puzzle involves the definition of orga-
+model differently. Despite all these simplifica-
+                                                             nization. Most definitions of organization consist
+tions, the model compactly summarizes past
+                                                             of at least two components: (a) a source of order
+thinking on loose coupling. Additionally, al-
+                                                             which consolidates, unifies, or coalesces diverse
+though not formally presented as propositions,
+                                                             elements or fragments and (b) elements or frag-
+each arrow in the model is a proposed causal
+                                                             ments, which are consolidated, unified, or coa-
+relationship.
+                                                             lesced by a source of order. When researchers
+                                                             define organizations as monolithic corporate ac-
+                 Conclusions                                 tors, they overemphasize order and underem-
+   In general, the review of the loose coupling              phasize elements; when researchers define or-
+literature presented here supports Thompson's                ganizations as mere aggregates of individuals,
+(1967) assertion that organization theorists find it         they overemphasize elements and underem-
+
+                                                       216
+                  Causal Indeterminacy               I
+                                                                              Y               \                                                   |    ~~~~~~~~~~Persistence
+                   Fragmented External                                        Causes
+                       Environment                                              of
+             ______________________________Loose
+
+                   Fragmented Internal                                        Coupling
+                       Environment
+
+
+                                                                                                                                                            Buffering
+
+
+
+                         Individuals                                                       |t\                                                              /er
+                          Subunits         theory.
+
+     I                 Organizations                                                             \                  \X/
+                                                                     /            Types               \               \//
+         |          Hierarchiccrl Levels                                           o?fs                                  \//|                           Adalptabilit
+
+                    Organizations and                     1>                  Coupling                /                    \/
+
+
+
+                          Activities
+                                                                                                                                 Oranztin
+    X                                                    1=/ /                     *                                               ~~~~~~~~~~~Outcomes
+     |                     ~~~Ideas                      r                                                                      of Loose Coupling
+
+    |             Intentionsand Actions                   /                                                                                   /
+
+
+             r                                       E                                            /                                                      Satisfaction
+                             /dula\it
+
+                                                                      Direct Effects                                  /\
+         l           Requisite Variety                                             of                     |          /\
+                                                                     Loose Coupling/                               /\
+
+     |            Behavioral Discretion                                  \/                                   /\
+
+
+
+
+             |Enhanced          Leadership \
+
+                                                                     /Compensations\
+         |          Focused Attention                                               for\
+
+
+         |            Shared Vcrlues                             /
+                                                                                                                                                    |Effectiveness
+
+Figure 1. Loose coupling theory.
+
+                                                                                        217
+phasize order. If researchers begin with richer           similarly forces researchers to move more
+definitions of organization, they will arrive at          deeply into the human workings which underlie
+more accurate findings and conclusions. If the            organizational structure. In the same way that
+loose coupling concept can be maintained in its           bounded rationality has led researchers to study
+dialectical form, and if it can help researchers          the processes of decision making, rather than
+begin studies with more subtle and intricate def-         merely the outcomes, loose coupling may lead
+initions of organizations, it can raise the quality       researchers to study structure as something that
+of organizational research.                               organizations do, rather than merely as some-
+   A second potential contribution of loose cou-          thing they have.
+pling is its use in the measurement and interpre-            For researchers to begin to solve puzzles such
+tation of interpretive systems (Daft & Weick,             as these, it is essential that the concept of loose
+ 1984). A loosely coupled system is a good vehi-          coupling remain dialectical, rather than unidi-
+cle for registering objectives outside itself, but is     mensional.     The following suggestions        are
+itself an elusive object to understand. Thus, in a        means by which the simplification of unidimen-
+loosely coupled system, what is most likely to be         sionality can be avoided.
+socially constructed is the system itself, not the           Research methodologies that encourage re-
+world it faces. This raises an interesting issue          searchers to parse dialectical concepts into uni-
+because it suggests that analysts know and un-            dimensional variables should be avoided. The
+derstand least well the vehicles that are most            frequently pursued direct effect, X causes Y, is
+effective at sensing. The property that makes             still the social science ideal. The numerous,
+them good sensors is t]he very same property              more complicated forms of this relationship
+that has made them indistinct objects. A corol-           have been considered as disappointing approx-
+lary to these ideas is thLatorganization theory           imations to the ideal. Within this netherworld of
+currently may be skewed toward the study of               approximations to direct effects, there are sev-
+organizations that are least able to interpret            eral ways to represent dialectical concepts. One
+their environments. The concept of loose cou-             of the simplest is the translation of bipolar vari-
+pling, when maintainecd in its dialectical form,          ables to two-variable matrices (Bobko, 1985).
+should be a useful tool in identifying, measur-           Another technique is to regress a concept onto
+ing, and understanding interpretive systems.              contradictory independent variables, which
+   A third puzzle that the loose coupling concept         was used in Figure 1 to combine decoupling
+may help theorists to understand is the fluidity,         (types of loose coupling) and coupling (compen-
+complexity, and social construction of organiza-          sations for loose coupling). A third technique is
+tional structure. Loose coupling may be able to           the use of deviation-regulating loops, in which
+do for the study of organizational structure what         variables shift values as the cycle progresses
+bounded rationality did for the study of decision         (Maruyama, 1963; Orton & Weick, 1988). To pre-
+making (Simon, 1976). By recognizing and ex-              serve the dialectical interpretation of loose cou-
+plaining how decisions are made by humans                 pling, researchers must continue to transform
+with limited interest, time, and energy, Simon            methodology to serve theory, rather than trans-
+required studies of decision making to move into          forming theory to serve methodology.
+more subtle, more detailed, and more enigmatic               The concept of loose coupling is simplified
+directions. The concept of loose coupling, with           when researchers use it for flat, static descrip-
+its recognition of numerous structural dimen-             tions, rather than detailed, dynamic descrip-
+sions, its emphasis on simultaneous coupling              tions. Weick (1979, p. 44) argued that nouns fo-
+and decoupling, and its portrayal of structures           cus attention on reified objects, whereas verbs
+as malleable through managerial intervention,             focus attention on dynamic processes. Re-
+
+
+                                                    218
+searchers who see systems as static objects to be             "General Motors is more loosely coupled than
+labeled ("this is a loosely coupled system") are              Ford," (c) "Ford has been more profitable in re-
+less likely to capture loose coupling than are re-            cent years," therefore, (d) "tightly coupled sys-
+searchers who see systems as an arena for com-                tems may be more effective than loosely coupled
+plex, ongoing processes ("loose coupling in this              systems." To state that an organization is a
+system occurs when. . ."). The dialectical inter-             loosely coupled system is the beginning of a dis-
+pretation of loose coupling can be strengthened               cussion, not the end. What elements are loosely
+when researchers look closely at the processes                coupled? What domains are they coupled on?
+within systems. For example, ethnographies,                   What domains are they decoupled on? What are
+case studies, and systematic observations (Man-               the characteristics of the couplings and decou-
+ning, 1979, 1982; Rubin, 1979; Thomas, 1984) are              plings? Researchers who invoke the concept of
+methodologies that seem to encourage this care-               loose coupling can avoid simplifying it by spec-
+ful analysis, whereas questionnaires and casual               ifying their assumptions more precisely.
+observations (Firestone, 1985; Lutz, 1982) are                   The last way in which researchers drift away
+methodologies that seem to discourage it. The                 from the dialectical interpretation of loose cou-
+relevant criterion is familiarity: Will researchers           pling is to describe it as managerial failure. The
+describe the processes within the system or will              easiest way to remedy this situation is to observe
+they simply categorize systems? To preserve the               a set of organizations that are routinely labeled
+dialectical interpretation, greater familiarity               as loosely coupled systems: schools, universi-
+with a few systems is currently more valuable                 ties, hospitals, police organizations, and judicial
+than lesser familiarity with many.                            systems. These forms are not failed bureaucra-
+   The third way to drift away from the unidi-                cies, but distinct organizational forms. As Gran-
+mensional interpretation is to ignore the pres-               dori (1987) noted, "A system in which everybody
+ence of connectedness        within organizations.            can do everything and in which the links be-
+From a Weberian bureaucratic perspective, the                 tween various parts do not necessarily have to
+recurring surprise is that organizations routinely            follow given interdependence relationships but
+exhibit looseness (Corwin, 1981). From a decou-               are virtually interchangeable and separable is
+pling perspective, the recurring surprise is that             a concept that organization theory had previ-
+organizations routinely exhibit coupling. When                ously treated primarily in terms of peer groups.
+researchers enter organizations expecting to                  Indeterminists coined the phrase loosely cou-
+find little that is coupled (e.g., Orton, 1989), they         pled systems to define complex organizations
+are surprised to find that organizational mem-                that have this feature" (pp. 93-94). Some orga-
+bers spend most of their time thinking about                  nizations fit Grandori's description better than
+structural connections, rather than structural                others. The reason it is important to focus on
+disconnections. Theorists who err on the side of              these organizations is that such organization
+overemphasizing the presence of disconnected-                 members are more likely to have thought deeply
+ness in organizations need little exposure to or-             about interactions between couplings and de-
+ganizations before they begin to speak about                  couplings, their interactions are more salient,
+patterns of couplings and decouplings, instead                and observers are more likely to categorize the
+of just decouplings (Meyer, 1980; Rubin, 1979).               interactions as characteristics of loosely coupled
+   Researchers also drift away from the dialecti-             systems.
+cal interpretation by making imprecise general                   To assert that a system is loosely coupled is to
+statements, as in the following argument: (a)                 predicate specific properties and a specific his-
+"loosely coupled systems are supposed to be                   tory to the system, rather than an absence of
+more effective than tightly coupled systems," (b)             properties.
+
+
+                                                        219
+                                                        References
+Beekun, R. I. (1988a) Toward a contingency framework of                   "loose coupling." In R. G. Corwin (Ed.), Research in the
+  coupling: A conceptual and quantitative approach. Un-                   sociology of education and socialization (Vol. 2, pp. 261-
+  published doctoral disserta:tion, University of Texas at                291). Greenwich, CT: JAI Press.
+  Austin.
+                                                                        Covaleski, M. A., & Dirsmith, M. W. (1983) Budgeting as a
+Beekun, R. I. (1988b) Dimensionalizing and measuring loose                means for control and loose coupling. Accounting, Orga-
+  coupling: A conceptual and quantitative approach. Un-                  nizations, and Society, 8, 323-340.
+  published manuscript.
+                                                                        Covaleski, M. A., Dirsmith, M. W., & Jablonsky, S. F. (1985)
+Beekun, R. I., & Ginn, G. 0. (1988) The impact of organiza-              Traditional and emergent theories of budgeting: An em-
+  tional strategy upon external coupling and performance.                pirical analysis. Journal of Accounting and Public Policy,
+  Unpublished manuscript.                                                4, 277-300.
+Birnbaum, P. H. (1981) Integration and specialization in ac-            Cude, R. L. (1989) A model of loose communication coupling
+  ademic research. Academy of Management Review, 24,                     in organizations. Unpublished manuscript, University of
+  487-503.                                                               Texas at Austin.
+Bobko, P. (1985) Removing assumptions of bipolarity: To-                Cude, R., & Browning, L. D. (1989) A comparison of loose
+  wards variation and circularity. Academy of Manage-                    coupling theory in technical and managerial literature.
+  ment Review, 10, 99-108.                                               Unpublished manuscript, The University of Texas at Aus-
+Boynton, A. C., & Zmud, R. W. (1987) Information technol-                tin.
+  ogy planning in the 1990's: Directions for practice and re-           Daft, R. L., & Weick, K. E. (1984) Toward a model of organi-
+  search. MIS Quarterly, 11, 59-71.                                       zations as interpretation systems. Academy of Manage-
+Burns, T., & Stalker, G. M. (1961) The management of inno-                ment Review, 9, 284-295.
+  vation. London: Tavistock.                                            Dane, E. (1985) Managing organizational relationships in
+Bussigel, M., Barzansky, B., & Grenholm, G. (1986) Goal                   continuing education programs: Is loose coupling the an-
+  coupling and innovation in medical schools. The Journal                 swer? Administration in Social Work, 9(3), 83-92.
+  of Applied Behavioral Science, 22, 425-441.                           Das, T. K. (1984) Discussion note: Portmanteau ideas for or-
+Bygrave, W. D. (1988) The structure of the investment net-                ganizational theorizing. Organization Studies, 5, 261-267.
+  works of venture capital firms. Journal of Business Ventur-           Deal, T. E. (1985) The symbolism of effective schools. The
+  ing, 3, 137-157.                                                        Elementary School Journal, 85, 601-620.
+Cameron, K. S., Kim, M. U., & Whetten, D. A. (1987) Orga-               Deal, T. E., & Celotti, L. D. (1980, March) How much influ-
+  nizational effects of decline and turbulence. Administra-               ence do (and can) educational administrators have on
+  tive Science Quarterly, 32, 222-240.                                    classrooms? Phi Delta Kappan, 471-473.
+Chase, R. B., & Tansik, D. A. (1983) The customer contact               Eisenberg, E. M. (1984) Ambiguity as strategy in organiza-
+  model for organization design. Management Science, 29,                  tional communication. Communications Monographs, 51,
+  1037-1050.                                                              227-242.
+Clark, B. R. (1983) The higher education system: Academic               Faulkner, R. R., & Anderson, A. B. (1987) Short-term pro-
+  organization in cross-national perspective. Berkeley: Uni-              jects and emergent careers: Evidence from Hollywood.
+  versity of California Press.                                            American Journal of Sociology, 92, 879-909.
+Clark, D. L., Astuto, T., & Kuh, G. (1983) Strength of coupling         Feldman, M. S., & March, J. G. (1982) Information in orga-
+  in the organization and operation of colleges and univer-               nizations as signal and symbol. Administrative Science
+  sities. Paper presented at the American Educational Re-                 Quarterly, 26, 171-186.
+  search Association Convention, Montreal.
+                                                                        Firestone, W. A. (1985) The study of loose coupling: Prob-
+Cohen, M. D., & March, J. G. (1974) Leadership and ambi-                  lems, progress, and prospects. In A. Kerckhoff (Ed.), Re-
+  guity. New York: McGraw-Hill.                                           search in sociology of education and socialization (Vol. 5,
+Cohen, M. D., March, J. G., & Olsen, J. P. (1972) A garbage               pp. 3-30). Greenwich, CT: JAI Press.
+  can model of organizational choice. Administrative Sci-               Gaertner, G. H., & Ramnarayan, S. (1983) Organizational
+  ence Quarterly, 17, 1-25.                                              effectiveness: An alternative perspective. Academy of
+Corwin, R. G. (1981) Patterns of organizational control and              Management Review, 8, 97-107.
+ teacher militancy: Theoretical continuities in the idea of             Gamoran, A., & Dreeben, R. (1986) Coupling and control in
+
+
+                                                                  220
+  educational organizations:An explication and illustrative              ployee behavior. Academy of Management Review, 9,
+  comparative test. Administrative Science Quarterly, 31,                684-695.
+  612-632.                                                             J6reskog,K. G., & S6rbom, D. (1986)LISRELVI:Analysis of
+Gibson, D. V. (Ed.) (1977) Seminars on organizations at Stan-            linear structuralrelationshipsby maximum likelihood, in-
+ ford University(Vol.4). Stanford,CA: StanfordUniversity,                strumentalvariables, and least squares methods (4thed.).
+ Organizational Research Training Program, Department                    Mooresville, IN:Scientific Software.
+ of Sociology.                                                         Kaplan, R. E. (1982)Interventionin a loosely organized sys-
+Glassman, R. B. (1973)Persistence and loose coupling in                  tem:An encounter with non-being. TheJournalof Applied
+ living systems. Behavioral Science, 18, 83-98.                          Behavioral Science, 18, 415-432.
+Glatthorn, A. A. (1981)Curriculumchange in loosely cou-                Keidel, R. W. (1984)Baseball, football, and basketball:Mod-
+  pled systems. Educational Leadership, 19, 110-113.                     els for business. OrganizationalDynamics, 12(3),4-18.
+Golembiewski, R. T. (1979)Perspectives on the growth and               Lawrence, P. R., & Lorsch, J. W. (1967)Differentiationand
+ development of organizations:SPSA as a specific case of                 integrationin complex organizations. AdministrativeSci-
+  choice and transition. The Journal of Politics, 41, 335-360.           ence Quarterly, 12, 1-47.
+Grandori, A. (1987) Perspectives    on organization theory.            Leatt, P., & Schneck, R. (1984)Criteriafor grouping nursing
+  Cambridge, MA:Ballinger.                                               subunits in hospitals. Academy of Management Journal,
+Gronn, P. C. (1983)Talk as work: The accomplishment of                   27, 150-165.
+  school administration. Administrative Science Quarterly,             Levine, D. N. (1985)Theflight fromambiguity. Chicago: Uni-
+  28, 1-21.                                                              versity of Chicago.
+Gummer, B. (1982)Organized anarchies, loosely coupled                  Luke,R., Begun, G. W., & Pointer, D. D. (1989)Quasi firms:
+ systems, and adhocracies: Currentperspectives on orga-                  Strategic interorganizationalforms in the health care in-
+  nizational design. Administration in Social Work, 8(3), 5-             dustry. Academy of Management Review, 14, 9-19.
+  15.                                                                  Lutz,F. W. (1982)Tightening up loose coupling in organiza-
+Gupta, A. K. (1984)Contingency linkages between strategy                 tions of higher education. AdministrativeScience Quar-
+ and general manager characteristics:A conceptual ex-                    terly, 27, 653-669.
+  amination. Academy of Management Review, 9, 399-412.                 Manning, P. K. (1979).Semiotics and loosely coupled orga-
+Hagan, J., Hewitt, J. D., & Alwin, D. F. (1979)Ceremonial                nizations. Revised version of a paper presented to the
+ justice: Crime and punishment in a loosely coupled sys-                 Southern Sociological Society, Atlanta.
+ tem. Social Forces, 58, 506-527.                                      Manning, P. K. (1982)Producing drama: Symbolic commu-
+Hannan, M. T., &Freeman, J. (1977)The populationecology                  nication and the police. Symbolic Interaction,5, 223-24 1.
+ of organizations. American Journalof Sociology, 82, 929-              March, J. G. (1987)Ambiguity and accounting: The elusive
+ 964.                                                                    link between informationand decision making. Account-
+Hedberg, B. (1981)How organizationslearn and unlearn. In                 ing, Organizations, and Society, 12, 153-168.
+ P. C. Nystrom& W. H. Starbuck(Eds.), Handbook of or-                  March, J. G., & Olsen, J. P. (Eds.) (1976) Ambiguity and
+ ganizational design (Vol. 1, pp. 1-27). New York:Oxford                 choice in organizations. Bergen, Norway: Universitetsfor-
+ UniversityPress.                                                        laget.
+Hedberg, B. (1984)Career dynamics in a steelworks of the               March, J. G., & Simon, H. A. (1958) Organizations. New
+  future. Journal of Occupational Behaviour, 5, 53-69.                  York:Wiley.
+Hedberg, B. L. T., Nystrom,P. C., & Starbuck,W. H. (1976)              Maruyama, M. (1963)The second cybernetics: Deviation-
+ Camping on seesaws: Prescriptionsfor a self-designing                  amplifying mutual causal processes. American Scientist,
+  organization. Administrative Science Quarterly, 21, 41-               51, 164-179.
+  65.
+                                                                       Meyer, A. D. (1980)Operationalizing loose coupling: From
+Heider, F. (1959)Thingand medium. PsychologicalIssues, 1,               metaphor to prediction. Unpublished manuscript, School
+  1-34.                                                                 of Business Administration, University of Wisconsin-
+Horwitch,M., & Thietart,R. A. (1987)The effect of business              Milwaukee.
+  interdependencies on product R & D-intensive business                Meyer, J. W., & Rowan, B. (1977)Institutionalizedorganiza-
+  performance. Management Science, 33, 178-197.                         tions:Formal structureas myth and ceremony. American
+Jones, G. R. (1984)Task visibility, free riding, and shirking:          Journalof Sociology, 83, 340-363.
+  Explaining the effect of structureand technology on em-              Meyerson, D., & Martin,J. (1987)Culturalchange: An inte-
+
+                                                                 221
+  gration of three different views. Journal of Management               Provan, K. G. (1983) The federation as an interorganiza-
+  Studies, 24, 623-647.                                                   tional linkage network. Academy of Management Re-
+                                                                          view, 8, 79-89.
+Murphy, J. A., & Hallinger, P. (1984) Policy analysis at the
+ local level: A framework for expanded investigation. Ed-               Raghunathan, S. P., & Beekun, R. I. (1989) Intra-MNC own-
+ ucational Evaluation and Policy Analysis, 6, 5-13.                       ership structures: A coupling perspective. Unpublished
+Nemeth, C. J. (1986) Differential contributions of majority and           manuscript, Temple University, Philadelphia.
+  minority influence. Psychological Review, 93, 23-32.                  Rubin, I. S. (1979) Retrenchment, loose structure, and adapt-
+Nemeth, C. J., & Staw, B. M. (in press) The trade-offs of so-            ability in the university. Sociology of Education, 52, 211 -
+  cial control and innovation within groups and organiza-                222.
+  tions. In L. Berkowitz (Ed.), Advances in experimental so-            Salancik, G. R. (1975) Notes on loose coupling: Linking in-
+  cial psychology (Vol. 22). New York: Academic Press.                    tentions to actions. Unpublished manuscript, University of
+Orton, J. D. (1988) Group design implications of requisite va-            Illinois, Urbana-Champaign.
+ riety. Unpublished manuscript, University of Michigan.                 Schall, M. S. (1983) A communication-rules approach to or-
+Orton, J. D. (1989) Structuring the Ford White House: A mi-               ganizational culture. Administrative Science Quarterly,
+ crosociological     archival ethnography.    Unpublished                 28, 557-581.
+ manuscript, University of Michigan.                                    Schoonhoven, C. B. (1986) Sociotechnical considerations for
+Orton, J. D., & Weick, K. E. (1988) Toward a theory of the                the development of the space station: Autonomy and the
+ loosely coupled system. Working Paper No. 586, Univer-                   human element in space. The Journal of Applied Behav-
+  sity of Michigan, School of Business Administration, Divi-              ioral Science, 22, 271-286.
+  sion of Research, Ann Arbor, MI.
+                                                                        Simon, H. A. (1976) Administrative behavior (3rd ed.). New
+Ouchi, W. G. (1978) Coupled versus uncoupled control in                   York: Free Press.
+ organizational hierarchies. In M. W. Meyer & Associates
+                                                                        Smircich, L., & Stubbart, C. (1985) Strategic management in
+ (Eds.), Environments and o;rganizations (pp. 264-289). San
+                                                                         an enacted world. Academy of Management Review, 10,
+ Francisco: Jossey-Bass.
+                                                                          724-736.
+Ouchi, W. G. (1980) Markets, clans, and hierarchies. Admin-
+ istrative Science Quarterly, 25, 129-141.                              Sunesson, S. (1985) Outside the goal paradigm: Power and
+                                                                          structural patterns of non-rationality. Organization Stud-
+Ouchi, W. G. (1981) Theory Z: How American business can                   ies, 6, 229-249.
+ meet the Japanese challenge. Reading, MA: Addison-
+ Wesley.                                                                Taylor, P. D. (1983) The use of qualitative methods in search
+                                                                          of loose coupling within a complex public agency. Unpub-
+Page-Jones, M. (1980) The practical guide to structured sys-
+                                                                          lished doctoral dissertation, University of Texas at Austin.
+  tems design. New York: Yourdon Press.
+                                                                        Thomas, J. (1983) Justice as interaction: Loose coupling and
+Perrow, C. (1981) Normal accident at Three Mile Island. So-
+                                                                          mediations in the adversary process. Symbolic Interac-
+  ciety, 18(5), 17-26.
+                                                                          tion, 6, 243-260.
+Perrow, C. (1984) Normal accidents: Living with high-risk
+  technologies. New York: Basic Books.                                  Thomas, J. (1984) Some aspects of negotiated order, loose
+                                                                          coupling, and mesostructure in maximum security pris-
+Peters, T. J. (1978) Some applications of the loose coupling              ons. Symbolic Interaction, 7, 213-231.
+  approach in managerial/organizational consulting prac-
+  tice. [Summarized by R. J. Bies] In D. V. Gibson (Ed.),               Thompson, J. D. (1967) Organizations in action: Social sci-
+  Seminars on organizations at Stanford University (Vol. 4,               ence bases of administrative theory. New York: McGraw-
+  pp. 46-50). Stanford, CA: Organizational Research Train-                Hill.
+  ing Program, Department of Sociology.                                 Thompson, J. D., & Tuden, A. (1959) Strategies, structures,
+Peters, T. J., & Waterman, R. H., Jr. (1982) In search of ex-             and processes of organizational decision. In J. D. Thomp-
+  cellence: Lessons from America's best-run companies.                    son, P. B. Hammond, R. W. Hawkes, B. H. Junker, & A.
+  New York: Warner Books.                                                 Tuden (Eds.), Comparative studies in administration. Pitts-
+Pfeffer, J. (1978) The micropolitics of organizations. In M. W.           burgh, PA: The University of Pittsburgh Press.
+  Meyer & Associates (Eds.), Environments and organiza-                 Vaughan, D. (1982) Toward understanding unlawful organi-
+  tions (pp. 29-50). San Francisco: Jossey-Bass.                          zational behavior. Michigan Law Review, 80, 1377-1402.
+Pfeffer, J., & Salancik, G. R. (1978) The external control of           Weick, K. E. (1976) Educational organizations as loosely cou-
+  organizations. San Francisco: Harper & Row.                            pled systems. Administrative Science Quarterly, 21, 1-19.
+
+
+
+                                                                  222
+Weick, K. E. (1979) The social psychology of organizing (2nd               composer credibility on orchestra performance. Sociome-
+ ed.). Reading, MA: Addison-Wesley.                                        try, 36, 435-462.
+Weick, K. E. (1982a) Management of organizational change
+ among loosely coupled elements. In P. S. Goodman & As-                  Williamson, 0. E. (1975) Markets and hierarchies: Analysis
+ sociates (Eds.), Change in organizations (pp. 375-408).                  and anti-trust implications. New York: Free Press.
+ San Francisco: Jossey-Bass.
+                                                                         Wilson, B. L., & Corbett, H. D. (1983) Organization and
+Weick, K. E. (1982b, June) Administering education in
+                                                                          change: The effects of school linkages on the quantity of
+ loosely coupled schools. Phi Delta Kappan, 673-676.
+                                                                          implementation. Educational Administration Quarterly,
+Weick, K. E. (1986, December) The concept of loose cou-                   19(4), 85-104.
+ pling: An assessment. AERA Organizational Theory Dia-
+ logue, 8-11.                                                            Withane, S. (1984) Changing patterns of local administration
+Weick, K. E. (1989) Loose coupling: Beyond the metaphor.                  in Sri Lanka: Loose coupling between planning and im-
+ Current Contents, 20(12), 14.                                            plementation. Canadian Journal of Developmental Stud-
+Weick, K. E., Gilfillan, D. P., & Keith, T. (1973) The effect of          ies, 5, 243-255.
+
+
+                                      J. Douglas Orton is a doctoral candidate at the Uni-
+                                      versity of Michigan. Karl E. Weick is the Rensis Likert
+                                      Collegiate Professor of organizational psychology
+                                      and organizational behavior at the University of
+                                      Michigan. Correspondence regarding this article can
+                                      be sent to either author at the School of Business Ad-
+                                      ministration, University of Michigan, 701 Tappan
+                                      Street, Ann Arbor, MI 48109-1234.
+                                      We would like to acknowledge the thoughtful and
+                                      generous assistance of David Ulrich, Mayer Zald,
+                                      Rick Bagozzi, Jane Dutton, Kim Cameron, Larry
+                                      Browning, Richard Price, Peter Manning, Brian
+                                      Chambers, Mary Tschirhart, Sarah Freeman, Schon
+                                      Beechler, Dick Daft, John Meyer, William Firestone,
+                                      Alan Meyer, George Huber, Eli Berniker, and Hu-
+                                      seyin Leblebici. Portions of the paper were developed
+                                      in presentations to the organizational behavior group
+                                      at the University of Texas (February 1987), the Texas
+                                      Conference on Organizations (April 1987), and the
+                                      University of Michigan's Invisible College of Organi-
+                                      zational Studies (October 1988; March 1989).
+
+
+
+
+                                                                   223
+
