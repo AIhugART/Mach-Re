@@ -242,4 +242,53 @@ Bỏ thử từng Core — hệ còn trả lời R không?
 
 ---
 
+## 7. TRIANGULATION PROTOCOL (forward-only by default)
+
+Giao thức xác định neo-score cho mỗi tiên đề/mệnh đề. **Forward-only:** áp dụng khi thêm tiên đề mới, khi chuẩn bị formal publication, hoặc khi tác giả quyết định tường minh re-derive toàn bộ hệ thống. **Không** tự động retroactive re-score I–VIII trừ khi tác giả khởi tạo re-derivation.
+
+**Quy trình 5 bước:**
+
+1. **Identify structural claim** — xác định claim cấu trúc của tiên đề (không phải nội dung).
+2. **Find closest structural analogue** — với mỗi hệ neo (A, B, C), tìm tương đồng cấu trúc gần nhất.
+3. **Score each system:**
+   - **STRONG (1.0):** structural isomorphism — independent derivation possible
+   - **PARTIAL (0.5):** structural similarity with key differences noted
+   - **WEAK (0.25):** thematic resonance only — structural difference significant
+   - **NONE (0.0):** no convergence
+4. **Total neo-score = sum** (max = 3.0). **Threshold for inclusion = 1.5.**
+5. **Document disagreements** — mọi bất đồng về scoring phải ghi vào `axiom_conflict.md`.
+
+> **Retroactive application:** yêu cầu explicit author decision + full re-derivation từ đầu. Protocol này không làm thay đổi neo-score hiện có trừ khi re-derivation được khởi tạo.
+
+---
+
+## 8. YAML DEPENDENCY GRAPH (machine-readable)
+
+```yaml
+# axiom_dependencies.yaml
+axioms:
+  I:   {type: core, depends_on: [],            neo: [A, B, C],        score: 3.0}
+  II:  {type: core, depends_on: [I],           neo: [A, B, "C-cond"], score: 2.5}
+  III: {type: core, depends_on: [I, II],       neo: ["A-weak", B, C], score: 2.5}
+  IV:  {type: core, depends_on: [I, II],       neo: [A, "B-strong", "C-weak"], score: 2.5}
+  V:   {type: derived, depends_on: [I, II],    neo: [A, B, C]}
+  VI:  {type: derived, depends_on: [II, III, IV], neo: [B, C]}
+  VII: {type: derived, depends_on: [I, II, III, IV], neo: [B, C]}
+  VIII:{type: meta,    depends_on: [I, II, III, IV], neo: ["A-weak", "B-2nd-order", C]}
+
+issues_blocking_axioms:
+  I:   [ISSUE-01]
+  II:  [ISSUE-02]
+  III: [ISSUE-02, ISSUE-03]   # ISSUE-02 must precede ISSUE-03
+  IV:  [ISSUE-04]
+  VIII:[ISSUE-05]
+
+sot_references:
+  ISSUE-02: [SOT-K, SOT-M]
+  ISSUE-03: [SOT-K]
+  ISSUE-05: [SOT-K]
+```
+
+---
+
 > **Metadata:** single source · định danh = La Mã đếm lại theo tầng (I–IV Core, V–VII Derived, VIII Meta) · cổng RCA 4.6/5 · neo A/B/C · trang mẫu `axioms.html`.

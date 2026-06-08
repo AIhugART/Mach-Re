@@ -1,5 +1,18 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-08 — `axiom_spec.md` P5: ISSUE-08 (triangulation protocol) + YAML dependency graph · RCA ≥ 4/5
+
+**Hành động:** Phase 5 (optional). ISSUE-08: thêm triangulation protocol (forward-only) với 5-step scoring procedure. YAML dependency graph cho machine readability.
+
+**RCA (3-round × 5-Why × scoring):**
+
+- **ISSUE-08 — Triangulation Protocol** — 5/5 → ADD: neo-score hiện tại là informal, author-assessed. Không có intersubjective procedure → scoring không reproducible. Fix: 5-step protocol với STRONG(1.0)/PARTIAL(0.5)/WEAK(0.25)/NONE(0.0), threshold 1.5. Forward-only: không retroactive re-score I–VIII trừ khi tác giả quyết định re-derive.
+- **YAML Graph** — 5/5 → ADD: dependency graph giúp LLM + tooling parse được cấu trúc hệ tiên đề. Bao gồm sot_references mapping.
+
+**Files changed:** `axiom_spec.md` only (no render propagation needed).
+
+---
+
 ## 2026-06-08 — `axiom_spec.md` P4: ISSUE-06 (VII notation) + ISSUE-07 (scope pointers) · RCA ≥ 4/5
 
 **Hành động:** Phase 4. ISSUE-06: làm rõ "gradient trường F" là structural analogy. ISSUE-07: thêm GLOBAL SCOPE block + scope pointer cho mỗi Tiên Đề I-IV.
