@@ -1,5 +1,15 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-08 — `axiom_spec.md` P3: ISSUE-05 (AX-VIII continuity constraint, MP + SOT-K) · RCA ≥ 4/5
+
+**Hành động:** Phase 3. ISSUE-05: thêm ràng buộc liên tục cho Tiên Đề VIII — meta-pattern MP bảo toàn identity-across-revision.
+
+**RCA (3-round × 5-Why × scoring):** 5/5 → ADD: VIII cho phép self-revision. Không có boundary condition → full revision = hệ mới thay hệ cũ → phá claim persistence. Fix: MP(P_t) ≈ MP(P_{t+1}). First-order pattern sửa được; second-order MP phải ổn định. Kantian analogy (SOT-K §1.1): MP ≈ transcendental unity of apperception.
+
+**Files changed:** `axiom_spec.md`, `axioms.html`, `what.html`.
+
+---
+
 ## 2026-06-08 — `axiom_spec.md` P2: ISSUE-03 (ARG-III-1) + ISSUE-04 (AX-IV mechanism) · RCA ≥ 4/5
 
 **Hành động:** Phase 2 của `review/mach-re-axioms-review-plan.md` (v2). ISSUE-03: thêm ARG-III-1 bảo vệ tính trực giao V ⊥ H bằng lập luận Synchronic vs Diachronic + Kantian framing (SOT-K), dựa trên BRIDGE-II-III. ISSUE-04: thêm mechanism addendum (3 cơ chế con) cho Tiên Đề IV.
