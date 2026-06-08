@@ -1,5 +1,18 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-08 — `axiom_spec.md` P2: ISSUE-03 (ARG-III-1) + ISSUE-04 (AX-IV mechanism) · RCA ≥ 4/5
+
+**Hành động:** Phase 2 của `review/mach-re-axioms-review-plan.md` (v2). ISSUE-03: thêm ARG-III-1 bảo vệ tính trực giao V ⊥ H bằng lập luận Synchronic vs Diachronic + Kantian framing (SOT-K), dựa trên BRIDGE-II-III. ISSUE-04: thêm mechanism addendum (3 cơ chế con) cho Tiên Đề IV.
+
+**RCA per-issue (3-round × 5-Why × scoring):**
+
+- **ISSUE-03 — ARG-III-1** — 5/5 → ADD: Claim V ⊄ H không có lập luận bảo vệ → burden of proof chưa được đáp ứng → physicalist có thể argue mọi "nối kết cội nguồn" đều là H-axis phenomena. Fix: lập luận Synchronic vs Diachronic — trí nhớ H là diachronic (mã hóa quá khứ), V là synchronic (hành động *như thể* ràng buộc tổ tiên đang vận hành NOW). Bằng chứng: nghi lễ tạo nghĩa vụ hiện tại, cấu trúc thừa kế nợ/ân tình, "nghĩa vụ với tổ tiên" có hiệu lực pháp lý/văn hóa. Kantian framing (SOT-K): V là transcendental condition — không lượng H-axis memory nào bù đắp được sự vắng mặt của V.
+- **ISSUE-04 — AX-IV mechanism** — 5/5 → ADD: IV mô tả *cái gì* xảy ra (thấm chọn lọc, tái tổ chức) nhưng không nói *như thế nào*. Thiếu → không operationalizable, không phân biệt được với mô tả hiện tượng. Fix: 3 cơ chế con (a) Pattern recognition, (b) Selective integration, (c) Pattern update. Cơ chế (c) tạo liên kết IV → VIII, ngăn IV thành cơ chế bảo thủ thuần túy.
+
+**Files changed:** `axiom_spec.md` (source of truth), `axioms.html` (primary render), `what.html` (ISSUE-04 only).
+
+---
+
 ## 2026-06-08 — `axiom_spec.md` P1: ISSUE-01 (≡ → DEF/AX split) + ISSUE-02 (BRIDGE-II-III, SOT-K + SOT-M) · RCA ≥ 4/5
 
 **Hành động:** Phase 1 của `review/mach-re-axioms-review-plan.md` (v2). ISSUE-01: tách ký hiệu `≡` thành `[DEF-1]` + `[AX-I]` — giữ precision notation, làm axiom falsifiable. ISSUE-02: thêm BRIDGE-II-III giữa Tiên Đề II và III — giải quyết sức căng saṃvṛtisat × ontological dimension bằng Kantian transcendental condition (SOT-K) + Madhyamaka saṃvṛtisat (SOT-M).
