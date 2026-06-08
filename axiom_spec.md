@@ -57,7 +57,8 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 #### Tiên Đề I — Quan Hệ Bản Thể (Relational Ontology) · *"Sống Trong Quan Hệ — Có Nhau Mới Có Mình"*
 - **Loại:** Core Axiom (ontological).
-- **Phát biểu:** Bản sắc của một hệ tập thể được cấu thành *bởi quan hệ*, không phải bởi một bản thể/cốt lõi định vị được độc lập với quan hệ. `Being(x) ≡ {R(x,y)}` (sơ đồ cấu trúc, không phải công thức — §4 dictionary).
+- **Phát biểu:** Bản sắc của một hệ tập thể được cấu thành *bởi quan hệ*, không phải bởi một bản thể/cốt lõi định vị được độc lập với quan hệ.
+- **Sơ đồ:** `[DEF-1]` Relational profile of S: `RP(S) := {R_i(S, y_j) | i ∈ Relations, j ∈ Environment}`. `[AX-I]` Identity(S) is constituted by RP(S), not by any substance independent of RP(S). (Sơ đồ cấu trúc, không phải công thức — §4 dictionary. Ký hiệu cũ `Being(x) ≡ {R(x,y)}` giữ làm pedagogical shorthand, đã được thay bằng `[DEF-1]`+`[AX-I]`.)
 - **Triangulation [A·B·C]:** A (kiểu quan hệ) · B (identity enacted relationally — Weick) · **C** (Anattā: vô "svabhāva", duyên khởi) — **3/3**.
 - **5 tiêu chí:** Độc lập 5 · Nhất quán 5 · Phủ đầy 5 · Tối giản 5 · Ontological 5 → **5.0**.
 - **Điều kiện phản chứng:** SAI nếu tồn tại một bản sắc tập thể sống sót lâu dài nhờ một *cốt lõi-bản-thể cố định, định vị được, độc lập với mọi quan hệ*.
@@ -74,6 +75,23 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 - **Điều kiện phản chứng:** SAI nếu một bản sắc sống sót mà KHÔNG có bất kỳ pattern bất biến nào (thuần biến động nhưng vẫn nhận diện được qua thời gian).
 - **Prior-art:** Phan Ngọc, Lévi-Strauss (deep structure), Group Theory. *Phân biệt:* Phan Ngọc mô tả hiện tượng (Việt); Tiên Đề II phát biểu thành nguyên lý cho mọi hệ bản sắc.
 - **Đóng góp:** Synthesis / Extension.
+
+---
+
+### BRIDGE-II-III — Cầu Bản Thể Học (Ontological Bridge)
+
+> **Mục đích:** Giải quyết sức căng nội bộ giữa tầm quy ước của Tiên Đề II (saṃvṛti-satya) và claim bản thể học của Tiên Đề III (chiều kích bản thể học). Cầu này dùng hai hệ quy chiếu: SOT-M (Madhyamaka epistemology) cho độ chính xác saṃvṛtisat, và SOT-K (Kantian transcendental arguments) cho bản chất của claim bản thể học.
+
+**1. Saṃvṛtisat scope (SOT-M Row 110-111):** Pattern (II) là *quy ước thật* (conventionally real / saṃvṛtisat) — nó có causal efficacy trong operational domain của hệ thống, và mất identity khi tập thể bị giải tán — nó không phải paramārtha-sat (chân đế / ultimately real). Đây không phải điểm yếu; đây là scope chính xác cho II.
+
+**2. Transcendental condition (SOT-K):** Trục dọc (III) không được claim là một metaphysical substance (svabhāva) — như vậy sẽ mâu thuẫn với phạm vi niḥsvabhāvatā của II (SOT-M Row 59-60). Thay vào đó, V ⊥ H là một *điều kiện siêu nghiệm* (transcendental condition) theo nghĩa Kant: một tiền giả định cấu trúc cần thiết cho khả thể (possibility) của pattern persistence xuyên thế hệ — lời giải thích duy nhất khả dụng cho câu hỏi vì sao hệ bản sắc đa thế hệ đòi hỏi V. Tính cần thiết là *cấu trúc* (structural necessity), không phải *bản thể tuyệt đối* (ultimate-ontological).
+
+**3. Tổng hợp:** Hai move này cùng tạo ra cầu nối — pattern là saṃvṛtisat (II không mất chân), trục dọc là transcendental condition (III không claim svabhāva). Kết quả: tính trực giao V ⊥ H được giữ nguyên, phạm vi quy ước của II được bảo toàn, và không có mâu thuẫn nội bộ.
+
+> **SOT references:**
+> - Kantian transcendental condition: `SOT-K` (Kant_Transcendental_Arguments.html — "transcendental condition" = necessary structural precondition for the possibility of a system, not a metaphysical substance)
+> - Saṃvṛtisat definition: `SOT-M` Row 110-111 (conventionally real — designation-dependent, conceptual, phenomenal, pragmatically usable; loses cognition when broken into parts)
+> - Niḥsvabhāvatā scope boundary: `SOT-M` Row 59-60 (Madhyamaka essencelessness critique — V ⊥ H is structural claim, not svabhāva claim)
 
 ---
 

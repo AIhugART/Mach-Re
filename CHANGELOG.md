@@ -1,5 +1,18 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-08 — `axiom_spec.md` P1: ISSUE-01 (≡ → DEF/AX split) + ISSUE-02 (BRIDGE-II-III, SOT-K + SOT-M) · RCA ≥ 4/5
+
+**Hành động:** Phase 1 của `review/mach-re-axioms-review-plan.md` (v2). ISSUE-01: tách ký hiệu `≡` thành `[DEF-1]` + `[AX-I]` — giữ precision notation, làm axiom falsifiable. ISSUE-02: thêm BRIDGE-II-III giữa Tiên Đề II và III — giải quyết sức căng saṃvṛtisat × ontological dimension bằng Kantian transcendental condition (SOT-K) + Madhyamaka saṃvṛtisat (SOT-M).
+
+**RCA per-issue (3-round × 5-Why × scoring):**
+
+- **ISSUE-01 — Option B (DEF/AX split)** — 5/5 → FIX: `≡` là definitional operator → axiom không falsifiable được → mâu thuẫn với KEEP-02 (explicit falsifiability per axiom). Fix: `[DEF-1]` định nghĩa relational profile; `[AX-I]` claim identity constituted by RP(S). Ký hiệu cũ giữ làm pedagogical shorthand.
+- **ISSUE-02 — BRIDGE-II-III** — 5/5 → ADD: II claim pattern là saṃvṛtisat (quy ước thật); III claim trục dọc là ontological dimension. Thiếu cầu → mâu thuẫn nội bộ (quy ước vs bản thể). Fix: (1) saṃvṛtisat scope = pattern có causal efficacy trong operational domain, không phải paramārtha-sat (SOT-M Row 110-111); (2) V ⊥ H là transcendental condition (SOT-K), không phải svabhāva claim. Hai move cùng hoạt động: pattern saṃvṛtisat + trục dọc transcendental condition → không mâu thuẫn.
+
+**Files changed:** `axiom_spec.md` (source of truth), `axioms.html` (primary render), `what.html` (secondary render — ISSUE-01 only).
+
+---
+
 ## 2026-06-08 — `paper_005` Tiên Đề III: sync theo `axiom_spec.md` · RCA 5/5
 
 **Hành động:** Đồng bộ `paper_005.md` + `paper_005.html` theo nguồn chân lý `axiom_spec.md`.
