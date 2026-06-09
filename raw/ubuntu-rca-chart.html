@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RCA — Triết học Ubuntu</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --earth:    #2C1810;
+    --terracotta: #C4622D;
+    --amber:    #E8955A;
+    --gold:     #F2C04A;
+    --cream:    #FAF3E8;
+    --sage:     #6B8F71;
+    --sky:      #4A7FA5;
+    --muted:    #8A7968;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--earth);
+    font-family: 'Inter', sans-serif;
+    color: var(--cream);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 3rem 2rem 1.5rem;
+    position: relative;
+  }
+  .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--cream);
+  }
+  h1 span { color: var(--gold); }
+  .subtitle {
+    margin-top: 0.9rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* UBUNTU CORE CIRCLE */
+  .core-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem auto 0;
+  }
+  .core-circle {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, var(--amber), var(--terracotta));
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    box-shadow: 0 0 0 12px rgba(196,98,45,0.18), 0 0 0 28px rgba(196,98,45,0.08);
+    text-align: center;
+    padding: 1rem;
+    animation: pulse 3s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 12px rgba(196,98,45,0.18), 0 0 0 28px rgba(196,98,45,0.08); }
+    50%      { box-shadow: 0 0 0 16px rgba(196,98,45,0.22), 0 0 0 36px rgba(196,98,45,0.06); }
+  }
+  .core-circle .zulu {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    opacity: 0.85;
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
+  }
+  .core-circle .word {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+  }
+
+  /* DIVIDER */
+  .divider {
+    display: flex; align-items: center; gap: 1rem;
+    max-width: 680px; margin: 2.5rem auto 0;
+    padding: 0 2rem;
+  }
+  .divider-line { flex: 1; height: 1px; background: rgba(242,192,74,0.25); }
+  .divider-dot  { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); opacity: 0.6; }
+
+  /* SECTION LABEL */
+  .section-label {
+    text-align: center;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* ── LAYER 1: ROOTS ── */
+  .roots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .root-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(242,192,74,0.15);
+    border-radius: 10px;
+    padding: 1rem 0.9rem;
+    text-align: center;
+    transition: transform 0.25s, border-color 0.25s;
+    cursor: default;
+  }
+  .root-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(242,192,74,0.45);
+    background: rgba(255,255,255,0.07);
+  }
+  .root-card .icon { font-size: 1.4rem; margin-bottom: 0.45rem; }
+  .root-card .rc-title {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.04em;
+  }
+  .root-card .rc-desc {
+    font-size: 0.72rem;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  /* ── LAYER 2: CORE VALUES WHEEL ── */
+  .values-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .values-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.7rem;
+  }
+  .val-cell {
+    display: flex; flex-direction: column;
+    align-items: center; text-align: center;
+    padding: 1rem 0.6rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+  .val-cell::before {
+    content: '';
+    position: absolute; inset: 0;
+    opacity: 0.08;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+  }
+  .val-cell:hover::before { opacity: 0.18; }
+  .val-cell:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.15); }
+
+  .val-cell.c1::before { background: var(--terracotta); }
+  .val-cell.c2::before { background: var(--sage); }
+  .val-cell.c3::before { background: var(--sky); }
+  .val-cell.c4::before { background: var(--gold); }
+  .val-cell.c5::before { background: var(--amber); }
+
+  .val-cell .v-icon { font-size: 1.6rem; margin-bottom: 0.5rem; position: relative; }
+  .val-cell .v-name {
+    font-size: 0.75rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    position: relative;
+    margin-bottom: 0.35rem;
+  }
+  .val-cell.c1 .v-name { color: var(--amber); }
+  .val-cell.c2 .v-name { color: #9BC49F; }
+  .val-cell.c3 .v-name { color: #88B8D8; }
+  .val-cell.c4 .v-name { color: var(--gold); }
+  .val-cell.c5 .v-name { color: #F0B07A; }
+  .val-cell .v-desc {
+    font-size: 0.68rem; color: var(--muted);
+    line-height: 1.4; position: relative;
+  }
+
+  /* ── LAYER 3: PHILOSOPHY STRATA ── */
+  .strata-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .stratum {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.07);
+    transition: transform 0.25s;
+  }
+  .stratum:hover { transform: translateX(4px); }
+  .stratum-label {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 0.9rem 0.5rem;
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .stratum-label .layer-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+  .stratum-body {
+    padding: 0.85rem 1.1rem;
+    background: rgba(255,255,255,0.03);
+  }
+  .stratum-body .s-title {
+    font-size: 0.82rem; font-weight: 600; margin-bottom: 0.2rem;
+    color: var(--cream);
+  }
+  .stratum-body .s-quote {
+    font-style: italic; font-size: 0.72rem;
+    color: var(--muted); margin-bottom: 0.35rem;
+  }
+  .stratum-body .s-desc {
+    font-size: 0.72rem; color: rgba(250,243,232,0.65); line-height: 1.45;
+  }
+
+  .stratum.s1 .stratum-label { background: rgba(196,98,45,0.35); color: var(--amber); }
+  .stratum.s2 .stratum-label { background: rgba(107,143,113,0.3); color: #9BC49F; }
+  .stratum.s3 .stratum-label { background: rgba(74,127,165,0.3); color: #88B8D8; }
+  .stratum.s4 .stratum-label { background: rgba(242,192,74,0.2); color: var(--gold); }
+  .stratum.s5 .stratum-label { background: rgba(138,121,104,0.3); color: #C4B49A; }
+
+  /* ── LAYER 4: COMPARISON TABLE ── */
+  .compare-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.76rem;
+  }
+  thead tr { border-bottom: 1px solid rgba(242,192,74,0.35); }
+  th {
+    padding: 0.7rem 0.8rem;
+    text-align: left;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  th:first-child { color: var(--muted); }
+  tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: background 0.2s;
+  }
+  tbody tr:hover { background: rgba(255,255,255,0.04); }
+  td {
+    padding: 0.7rem 0.8rem;
+    color: rgba(250,243,232,0.7);
+    line-height: 1.4;
+  }
+  td:first-child { color: var(--amber); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; }
+  td.ubuntu-col { color: var(--cream); font-weight: 500; }
+
+  /* ── LAYER 5: APPLICATIONS ── */
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .app-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    transition: all 0.25s;
+    cursor: default;
+  }
+  .app-card:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(196,98,45,0.4);
+    transform: translateY(-2px);
+  }
+  .app-card .a-header {
+    display: flex; align-items: center; gap: 0.55rem;
+    margin-bottom: 0.5rem;
+  }
+  .app-card .a-icon { font-size: 1.2rem; }
+  .app-card .a-title {
+    font-size: 0.78rem; font-weight: 700;
+    color: var(--amber); text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .app-card .a-desc {
+    font-size: 0.7rem; color: var(--muted); line-height: 1.45;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2.5rem 1.5rem 2rem;
+    font-size: 0.65rem;
+    color: rgba(138,121,104,0.5);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  /* FLOW ARROWS between sections */
+  .flow-arrow {
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(242,192,74,0.3);
+    margin: 1rem 0 0;
+    line-height: 1;
+  }
+
+  @media (max-width: 580px) {
+    .roots-grid   { grid-template-columns: repeat(2, 1fr); }
+    .values-row   { grid-template-columns: repeat(3, 1fr); }
+    .apps-grid    { grid-template-columns: 1fr; }
+    .stratum      { grid-template-columns: 80px 1fr; }
+  }
+  @media (max-width: 380px) {
+    .values-row { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <p class="eyebrow">Root Cause Analysis</p>
+  <h1>Triết học <span>Ubuntu</span></h1>
+  <p class="subtitle">"Umuntu ngumuntu ngabantu" — Tôi là người vì người khác tồn tại</p>
+</header>
+
+<!-- CORE -->
+<div class="core-wrap">
+  <div class="core-circle">
+    <span class="zulu">Ubuntu</span>
+    <span class="word">●</span>
+    <span class="zulu" style="font-size:0.65rem;margin-top:0.15rem">Nguồn gốc Bantu</span>
+  </div>
+</div>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+
+<!-- ── ROOT CAUSES ── -->
+<p class="section-label">① Nguồn gốc — Roots</p>
+<div class="roots-grid">
+  <div class="root-card">
+    <div class="icon">🌍</div>
+    <div class="rc-title">Văn hóa Bantu</div>
+    <div class="rc-desc">Truyền miệng từ Nam & Đông Phi hàng nghìn năm</div>
+  </div>
+  <div class="root-card">
+    <div class="icon">✊</div>
+    <div class="rc-title">Chống Apartheid</div>
+    <div class="rc-desc">Mandela & Tutu phổ biến ra thế giới qua đấu tranh</div>
+  </div>
+  <div class="root-card">
+    <div class="icon">🕊️</div>
+    <div class="rc-title">Hòa giải dân tộc</div>
+    <div class="rc-desc">Ủy ban Sự thật & Hòa giải Nam Phi (TRC)</div>
+  </div>
+</div>
+
+<div class="flow-arrow">▼</div>
+
+<!-- ── CORE VALUES ── -->
+<p class="section-label">② Giá trị cốt lõi — Core Values</p>
+<div class="values-wrap">
+  <div class="values-row">
+    <div class="val-cell c1">
+      <div class="v-icon">🤝</div>
+      <div class="v-name">Cộng đồng</div>
+      <div class="v-desc">Cá nhân tồn tại qua quan hệ</div>
+    </div>
+    <div class="val-cell c2">
+      <div class="v-icon">💚</div>
+      <div class="v-name">Nhân từ</div>
+      <div class="v-desc">Con người trên vật chất</div>
+    </div>
+    <div class="val-cell c3">
+      <div class="v-icon">🌊</div>
+      <div class="v-name">Chia sẻ</div>
+      <div class="v-desc">Tài nguyên thuộc tập thể</div>
+    </div>
+    <div class="val-cell c4">
+      <div class="v-icon">⭐</div>
+      <div class="v-name">Tôn trọng</div>
+      <div class="v-desc">Phẩm giá mọi người như nhau</div>
+    </div>
+    <div class="val-cell c5">
+      <div class="v-icon">🗣️</div>
+      <div class="v-name">Đồng thuận</div>
+      <div class="v-desc">Quyết định qua lắng nghe chung</div>
+    </div>
+  </div>
+</div>
+
+<div class="flow-arrow">▼</div>
+
+<!-- ── 5 TẦNG TRIẾT HỌC ── -->
+<p class="section-label">③ Năm tầng triết học — Philosophical Strata</p>
+<div class="strata-wrap">
+
+  <div class="stratum s1">
+    <div class="stratum-label">
+      <span class="layer-num">1</span>
+      Bản thể
+    </div>
+    <div class="stratum-body">
+      <div class="s-title">Ontology — Bản thể học</div>
+      <div class="s-quote">"Tôi tồn tại vì ta tồn tại cùng nhau"</div>
+      <div class="s-desc">Không có "cái tôi" độc lập. Bản thể là quan hệ, không phải thực thể đơn lẻ.</div>
+    </div>
+  </div>
+
+  <div class="stratum s2">
+    <div class="stratum-label">
+      <span class="layer-num">2</span>
+      Nhận thức
+    </div>
+    <div class="stratum-body">
+      <div class="s-title">Epistemology — Nhận thức luận</div>
+      <div class="s-quote">"Tri thức là sản phẩm tập thể"</div>
+      <div class="s-desc">Học qua kể chuyện, quan sát cộng đồng và thực hành chung — không phải cá nhân nghiên cứu đơn độc.</div>
+    </div>
+  </div>
+
+  <div class="stratum s3">
+    <div class="stratum-label">
+      <span class="layer-num">3</span>
+      Đạo đức
+    </div>
+    <div class="stratum-body">
+      <div class="s-title">Ethics — Đạo đức học</div>
+      <div class="s-quote">"Tốt = tăng cường kết nối & nhân tính"</div>
+      <div class="s-desc">Hành động được đánh giá qua tác động đến cộng đồng, không phải lợi ích cá nhân.</div>
+    </div>
+  </div>
+
+  <div class="stratum s4">
+    <div class="stratum-label">
+      <span class="layer-num">4</span>
+      Chính trị
+    </div>
+    <div class="stratum-body">
+      <div class="s-title">Socio-Politics — Xã hội Chính trị</div>
+      <div class="s-quote">"Lãnh đạo là phục vụ, không phải thống trị"</div>
+      <div class="s-desc"><em>Indaba</em> (đối thoại tập thể), kinh tế chia sẻ, tư pháp phục hồi thay cho trừng phạt.</div>
+    </div>
+  </div>
+
+  <div class="stratum s5">
+    <div class="stratum-label">
+      <span class="layer-num">5</span>
+      Tâm linh
+    </div>
+    <div class="stratum-body">
+      <div class="s-title">Spirituality — Chiều sâu tâm linh</div>
+      <div class="s-quote">"Kết nối với tổ tiên và thế hệ tương lai"</div>
+      <div class="s-desc">Trách nhiệm không chỉ với người sống — mà cả người đã mất và thế hệ chưa sinh ra.</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="flow-arrow">▼</div>
+
+<!-- ── SO SÁNH ── -->
+<p class="section-label">④ So sánh triết học — Comparative Matrix</p>
+<div class="compare-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Trục</th>
+        <th>Ubuntu 🌍</th>
+        <th>Phương Tây 🏛️</th>
+        <th>Nho giáo 🎋</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Điểm xuất phát</td>
+        <td class="ubuntu-col">Cộng đồng</td>
+        <td>Cá nhân (Descartes)</td>
+        <td>Gia đình</td>
+      </tr>
+      <tr>
+        <td>Bản sắc</td>
+        <td class="ubuntu-col">Quan hệ</td>
+        <td>Lý trí</td>
+        <td>Vai trò xã hội</td>
+      </tr>
+      <tr>
+        <td>Đạo đức</td>
+        <td class="ubuntu-col">Chia sẻ</td>
+        <td>Quyền cá nhân</td>
+        <td>Lễ nghĩa</td>
+      </tr>
+      <tr>
+        <td>Quyền lực</td>
+        <td class="ubuntu-col">Phục vụ</td>
+        <td>Hợp đồng xã hội</td>
+        <td>Thiên mệnh</td>
+      </tr>
+      <tr>
+        <td>Tri thức</td>
+        <td class="ubuntu-col">Tập thể</td>
+        <td>Cá nhân lý trí</td>
+        <td>Truyền thừa</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="flow-arrow">▼</div>
+
+<!-- ── ỨNG DỤNG ── -->
+<p class="section-label">⑤ Ứng dụng hiện đại — Applications</p>
+<div class="apps-grid">
+  <div class="app-card">
+    <div class="a-header">
+      <span class="a-icon">🏢</span>
+      <span class="a-title">Quản trị tổ chức</span>
+    </div>
+    <div class="a-desc">Lãnh đạo servant, văn hóa tâm lý an toàn, ra quyết định theo đồng thuận.</div>
+  </div>
+  <div class="app-card">
+    <div class="a-header">
+      <span class="a-icon">🐧</span>
+      <span class="a-title">Công nghệ mã nguồn mở</span>
+    </div>
+    <div class="a-desc">Ubuntu Linux — triết lý chia sẻ tự do, cộng đồng phát triển chung, không độc quyền.</div>
+  </div>
+  <div class="app-card">
+    <div class="a-header">
+      <span class="a-icon">📚</span>
+      <span class="a-title">Giáo dục cộng đồng</span>
+    </div>
+    <div class="a-desc">Học tập hợp tác, đánh giá qua đóng góp tập thể, không phân tầng cạnh tranh.</div>
+  </div>
+  <div class="app-card">
+    <div class="a-header">
+      <span class="a-icon">⚖️</span>
+      <span class="a-title">Tư pháp phục hồi</span>
+    </div>
+    <div class="a-desc">Tha thứ thay vì trừng phạt — mô hình hòa giải TRC Nam Phi, áp dụng toàn cầu.</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  RCA Chart — Triết học Ubuntu &nbsp;·&nbsp; Root Cause Analysis &nbsp;·&nbsp; Nguồn gốc Bantu, Châu Phi
+</footer>
+
+</body>
+</html>

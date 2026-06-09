@@ -1,0 +1,293 @@
+<div class="standard-markdown grid-cols-1 grid [&amp;_&gt;_*]:min-w-0 gap-3 standard-markdown"><p class="font-claude-response-body break-words whitespace-normal">Đã đọc toàn bộ. Đây là một skill file viết cho LLM — không phải screenplay. RCA cần đúng đối tượng: kiểm tra <strong>chất lượng của skill file</strong> như một công cụ hướng dẫn sáng tác.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h3 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">RCA: Zhang Yimou × Spielberg Hybrid Screenplay Skill</h3>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">Xác định đối tượng kiểm tra</h4>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>file_type       : Skill file (hướng dẫn cho LLM)
+</span></span><span>không_phải      : Screenplay, story outline, character breakdown
+</span><span>mục_đích        : Hướng dẫn LLM viết/phân tích screenplay
+</span><span>                  theo phong cách Zhang Yimou × Spielberg
+</span><span>cấu_trúc        : 6 sections —
+</span><span>                  Core Principles (5) / Story Architecture / Character Construction /
+</span><span>                  Scene-Level Guidelines / Tonal Calibration / Output Formats +
+</span><span>                  Quick Reference Checklist</span></code></pre></div></div>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h3 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">PHẦN I — ĐIỂM MẠNH (PASS)</h3>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PASS_01 — Nguyên tắc nền được phát biểu như load-bearing axioms</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Năm Core Hybrid Principles không phải "gợi ý phong cách" mà được phát biểu như điều kiện cấu trúc: <em>"They are not stylistic preferences — they are load-bearing walls."</em> Đây là ngôn ngữ triết học thiết kế đúng — phân biệt được cái không được bỏ vs cái có thể điều chỉnh.</p>
+<p class="font-claude-response-body break-words whitespace-normal">Đặc biệt Nguyên tắc 4 ("Loss arrives without a villain") là điểm phân biệt sắc nét nhất giữa hybrid này với melodrama thông thường. Phát biểu ngắn gọn, không thừa.</p>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PASS_02 — Story Architecture có tỉ lệ runtime cụ thể</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Hiếm thấy skill file screenplay nào gắn mốc cấu trúc với % runtime:</p>
+<ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Act 1 ~22%</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Plot Point I ~25%</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Act 2A 25–50%</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Midpoint 50%</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Act 2B 50–75%</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Plot Point II ~75%</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Act 3 75–100%</li>
+</ul>
+<p class="font-claude-response-body break-words whitespace-normal">Đây là thông tin hành động được cho LLM — không phải lý thuyết trừu tượng. LLM có thể dùng trực tiếp để kiểm tra tỉ lệ beat trong một draft cụ thể.</p>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PASS_03 — Ba-pass dialogue reduction là cơ chế vận hành được</h4>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>Pass 1 — viết thẳng điều nhân vật muốn nói
+</span></span><span>Pass 2 — cắt cái không cần thiết
+</span><span>Pass 3 — hỏi: có thể thay bằng cử chỉ/im lặng không?</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Đây là instruction có thể execute — không phải lời khuyên mơ hồ như "viết dialogue tự nhiên hơn". LLM biết chính xác cần làm gì với một đoạn dialogue.</p>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PASS_04 — Tonal Calibration section có tiêu chí phân biệt hai phía</h4>
+<p class="font-claude-response-body break-words whitespace-normal">"Too cold" vs "Too warm" vs "Correct register" với giải pháp sửa cụ thể cho từng trường hợp. Đây là calibration tool — LLM có thể tự kiểm tra output và điều chỉnh.</p>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PASS_05 — Quick Reference Checklist là bộ lọc cuối có thể execute</h4>
+<p class="font-claude-response-body break-words whitespace-normal">12 items cụ thể, dạng checkbox. Mỗi item có thể trả lời Yes/No. Đây là điểm mạnh thực dụng nhất của toàn bộ skill file.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h3 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">PHẦN II — ĐIỂM YẾU (FAIL / PARTIAL)</h3>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">FAIL_01 — Không có cơ chế phân biệt hai đạo diễn về mặt cấu trúc</h4>
+<p class="font-claude-response-body break-words whitespace-normal"><strong>Vấn đề gốc rễ:</strong> Skill file mô tả <em>kết quả</em> của hybrid nhưng không phân tích <em>cấu trúc khác nhau</em> của từng đạo diễn trước khi ghép.</p>
+<p class="font-claude-response-body break-words whitespace-normal">Zhang Yimou và Spielberg thực ra hoạt động theo logic hoàn toàn khác nhau:</p>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>Zhang Yimou              Spielberg
+</span></span><span>─────────────────────    ──────────────────────
+</span><span>Cảm xúc từ hình ảnh      Cảm xúc từ nhân vật
+</span><span>Cộng đồng &gt; cá nhân      Cá nhân &gt; cộng đồng
+</span><span>Thời gian dài, chậm       Nhịp đẩy, acceleration
+</span><span>Lịch sử là không gian     Lịch sử là áp lực ngoại
+</span><span>Kết thúc mở               Kết thúc đóng (dù bi)</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Skill file ghép hai người mà không phân tích điểm ma sát thực sự giữa hai hệ thống. Hậu quả: LLM không biết khi nào cần ưu tiên Zhang, khi nào ưu tiên Spielberg — chỉ biết "hãy ghép hai cái vào."</p>
+<p class="font-claude-response-body break-words whitespace-normal"><strong>Hậu quả thực tế:</strong> Output có thể đẹp về mặt mô tả nhưng không coherent về mặt cấu trúc narrative.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">FAIL_02 — Color system chưa đủ để vận hành</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Section "Color and Light as Emotional Score" đưa ra bảng màu:</p>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>Warm amber-gold → connection, belonging
+</span></span><span>Deep red → desire, vitality, danger
+</span><span>Blue-gray → distance, longing
+</span><span>White → threshold between states</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Nhưng không có:</p>
+<ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Cơ chế transition giữa các màu (xảy ra ở beat nào, bao lâu)</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Quy tắc khi hai màu va chạm trong cùng một scene</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Ví dụ cụ thể từ phim Zhang Yimou thực tế (Raise the Red Lantern, Hero, House of Flying Daggers)</li>
+</ul>
+<p class="font-claude-response-body break-words whitespace-normal">Zhang Yimou dùng màu như hệ thống triết học — đỏ trong Raise the Red Lantern không phải "desire/danger" đơn giản mà là <em>quyền lực được nghi lễ hóa</em>. Skill file flatten màu thành emotional shorthand thay vì hệ thống semantic phức tạp hơn.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">FAIL_03 — "The System as Invisible Antagonist" thiếu cơ chế hiện thân hóa</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Skill file viết: <em>"Name the system clearly for yourself, even if it is never named in the screenplay."</em></p>
+<p class="font-claude-response-body break-words whitespace-normal">Đây là nguyên tắc đúng — nhưng không có hướng dẫn <strong>làm thế nào để system hiện thân</strong> trong scene cụ thể mà không thành exposition.</p>
+<p class="font-claude-response-body break-words whitespace-normal">Zhang Yimou làm điều này qua:</p>
+<ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Kiến trúc và không gian (cửa, tường, sân trong)</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Nghi lễ lặp đi lặp lại</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Người thứ ba không có tên riêng (đại diện cho system)</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Objects được system giao cho nhân vật</li>
+</ul>
+<p class="font-claude-response-body break-words whitespace-normal">Spielberg làm qua:</p>
+<ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Nhân vật đại diện (người cha, người sếp, người thầy)</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Thể chế có mặt qua paperwork, quy trình, đồng phục</li>
+</ul>
+<p class="font-claude-response-body break-words whitespace-normal">Hybrid cần cả hai — nhưng skill file không chỉ ra cách phối hợp.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PARTIAL_01 — Midpoint "Perfect Moment" là chỉ dẫn thẩm mỹ, chưa phải cấu trúc</h4>
+<p class="font-claude-response-body break-words whitespace-normal"><em>"At the exact center of the film, place one scene that is both visually exquisite and emotionally complete."</em></p>
+<p class="font-claude-response-body break-words whitespace-normal">Đúng về cảm giác, nhưng không trả lời: <em>tại sao</em> midpoint phải là khoảnh khắc đẹp nhất? Và quan trọng hơn — làm thế nào để khoảnh khắc đó <strong>tự nó báo hiệu sự kết thúc</strong> mà không cần nhân vật hoặc khán giả biết?</p>
+<p class="font-claude-response-body break-words whitespace-normal">Zhang Yimou làm điều này bằng cách để khoảnh khắc đẹp <em>quá hoàn chỉnh</em> — hoàn chỉnh đến mức nó đóng lại thay vì mở ra. Đây là kỹ thuật có thể dạy được nhưng skill file không phân tích.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PARTIAL_02 — Three-layer character construction thiếu tension giữa các tầng</h4>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>Surface layer       — nghề nghiệp, thói quen xã hội
+</span></span><span>Personal wound      — nỗi đau cá nhân chưa nói ra
+</span><span>Generational wound  — nỗi đau thế hệ</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Framework này đúng nhưng không nói đến <strong>mâu thuẫn giữa ba tầng</strong> — trường hợp khi Surface layer đòi hỏi một hành vi mà Personal wound layer không thể thực hiện. Đây là nơi drama thực sự sống. Thiếu hướng dẫn về điểm đó.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PARTIAL_03 — "Silence and Negative Space" có format tốt nhưng thiếu ví dụ vận hành</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Format tốt:</p>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>Specify: length / what character is doing / what audience should feel</span></span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Nhưng không có ví dụ viết thực tế. Skill file cho hướng dẫn format mà không demo. LLM sẽ apply format đúng nhưng có thể sai về <em>độ dài</em> và <em>nội dung</em> của silence vì không có calibration example.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">PARTIAL_04 — Output Formats section quá ngắn</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Liệt kê 5 output formats (full screenplay, beat sheet, scene draft, character breakdown, opening image brief) nhưng không có template hay ví dụ cho từng format. Một skill file tốt nên có ít nhất 1 example output để LLM calibrate.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h3 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">PHẦN III — LỖ HỔNG CẤU TRÚC (ROOT CAUSE)</h3>
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">RCA_01 — Không có tension map giữa hai hệ thống</h4>
+<p class="font-claude-response-body break-words whitespace-normal"><strong>Vấn đề gốc:</strong> Skill file xử lý Zhang Yimou và Spielberg như hai palette màu có thể trộn tự do. Thực tế, hai hệ thống này có <strong>điểm mâu thuẫn cấu trúc thực sự</strong>:</p>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>ĐIỂM MÂU THUẪN          ZHANG YIMOU          SPIELBERG
+</span></span><span>─────────────────────    ────────────         ──────────
+</span><span>Câu hỏi trung tâm        "Chúng ta là ai?"    "Tôi là ai?"
+</span><span>Đơn vị cảm xúc           Cộng đồng            Cá nhân
+</span><span>Thời gian                 Tuần hoàn            Tuyến tính
+</span><span>Cái kết                   Cởi mở, mơ hồ       Đóng lại (dù bi)
+</span><span>Khán giả được làm gì      Quan sát, tham dự    Đồng hành, đau cùng</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Hybrid tốt phải quyết định: ở mỗi beat, tầng nào dẫn? Skill file không có cơ chế để đưa ra quyết định đó.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">RCA_02 — Không có ví dụ phim thực tế làm anchor</h4>
+<p class="font-claude-response-body break-words whitespace-normal">Skill file không trích dẫn một phim cụ thể nào. Điều này tạo ra rủi ro: LLM có thể hiểu "Zhang Yimou style" theo Raise the Red Lantern (màu đỏ, không gian đóng, harem) hoặc theo Hero (màu luận lý, triết học chiến tranh) hoặc theo Not One Less (neorealism). Đây là ba phong cách khác nhau căn bản của cùng một đạo diễn.</p>
+<p class="font-claude-response-body break-words whitespace-normal">Tương tự với Spielberg: Schindler's List (tài liệu lịch sử) vs E.T. (gia đình + sci-fi) vs Lincoln (lịch sử - chính trị) là ba mode khác nhau.</p>
+<p class="font-claude-response-body break-words whitespace-normal"><strong>Không anchor = không calibration = output drift.</strong></p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h4 class="text-text-100 mt-2 -mb-1 text-base font-bold">RCA_03 — Quick Reference Checklist không có weight phân tầng</h4>
+<p class="font-claude-response-body break-words whitespace-normal">12 items trong checklist được xử lý ngang nhau. Nhưng:</p>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>HIGH WEIGHT (vi phạm = phá cấu trúc):
+</span></span><span>  ✓ Loss has no villain
+</span><span>  ✓ Climax is small concrete action
+</span><span>  ✓ Protagonist wound operates on two levels
+</span><span>
+</span><span>MEDIUM WEIGHT (vi phạm = suy yếu):
+</span><span>  ✓ Color temperature shifts
+</span><span>  ✓ Recurring object accumulated weight
+</span><span>
+</span><span>LOW WEIGHT (vi phạm = thẩm mỹ yếu hơn):
+</span><span>  ✓ Closing image has human trace
+</span><span>  ✓ Opening image emotionally unsettled</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal">Không có phân tầng → LLM không biết nên fix cái gì trước khi fix cái khác.</p>
+<hr class="border-border-200 border-t-0.5 my-3 mx-1.5">
+<h3 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">TỔNG KẾT RCA</h3>
+<div role="group" aria-label="Code" tabindex="0" class="relative group/copy bg-bg-000/50 border-0.5 border-border-400 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-100"><div class="sticky opacity-0 group-hover/copy:opacity-100 group-focus-within/copy:opacity-100 top-2 py-2 h-12 w-0 float-right"><div class="absolute right-0 h-8 px-2 items-center inline-flex z-10"><button class="inline-flex
+  items-center
+  justify-center
+  relative
+  isolate
+  shrink-0
+  can-focus
+  select-none
+  disabled:pointer-events-none
+  disabled:opacity-50
+  disabled:shadow-none
+  disabled:drop-shadow-none border-transparent
+          transition
+          font-base
+          duration-300
+          ease-[cubic-bezier(0.165,0.85,0.45,1)] h-8 w-8 rounded-md backdrop-blur-md _fill_10ocf_9 _ghost_10ocf_96" type="button" aria-label="Copy to clipboard" data-state="closed"><div class="relative"><div class="transition-all opacity-100 scale-100" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-100 scale-100" aria-hidden="true" style="flex-shrink: 0;"><path d="M12.5 3A1.5 1.5 0 0 1 14 4.5V6h1.5A1.5 1.5 0 0 1 17 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 6 15.5V14H4.5A1.5 1.5 0 0 1 3 12.5v-8A1.5 1.5 0 0 1 4.5 3zm1.5 9.5a1.5 1.5 0 0 1-1.5 1.5H7v1.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5H14zM4.5 4a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5z"></path></svg></div><div class="absolute inset-0 flex items-center justify-center"><div class="transition-all opacity-0 scale-50" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="transition-all opacity-0 scale-50" aria-hidden="true" style="flex-shrink: 0;"><path d="M15.188 5.11a.5.5 0 0 1 .752.626l-.056.084-7.5 9a.5.5 0 0 1-.738.033l-3.5-3.5-.064-.078a.501.501 0 0 1 .693-.693l.078.064 3.113 3.113 7.15-8.58z"></path></svg></div></div></div></button></div></div><div class="overflow-x-auto"><pre class="code-block__code !my-0 !rounded-lg !text-sm !leading-relaxed p-3.5" style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono);"><code style="color: rgb(20, 24, 31); background: transparent; font-family: var(--font-mono); white-space: pre-wrap;"><span><span>PASS  (5) : Core Principles / Runtime percentages / 3-pass dialogue /
+</span></span><span>            Tonal calibration / Checklist format
+</span><span>
+</span><span>PARTIAL (4): Midpoint rationale / Character layer tension / 
+</span><span>             Silence specification / Output format examples
+</span><span>
+</span><span>FAIL  (3) : Zhang-Spielberg tension map / Color system depth /
+</span><span>            System antagonist embodiment mechanism
+</span><span>
+</span><span>ROOT CAUSE: Skill file xây trên kết quả (output aesthetic) thay vì
+</span><span>            xây trên cơ chế (tại sao hai hệ thống tạo ra kết quả đó).
+</span><span>            Hậu quả: LLM có thể tạo ra thứ trông đúng nhưng
+</span><span>            không hoạt động đúng ở tầng cấu trúc narrative.
+</span><span>
+</span><span>PRIORITY FIX:
+</span><span>  1. Thêm Zhang vs Spielberg tension map (RCA_01)
+</span><span>  2. Anchor bằng 2-3 phim cụ thể với scene examples (RCA_02)
+</span><span>  3. Weight phân tầng checklist (RCA_03)
+</span><span>  4. Deepening color system (FAIL_02)
+</span><span>  5. System antagonist embodiment (FAIL_03)</span></code></pre></div></div>
+<p class="font-claude-response-body break-words whitespace-normal"><strong>Verdict:</strong> Đây là skill file <strong>tốt về thẩm mỹ, yếu về cơ chế</strong>. Đủ để LLM tạo ra output có không khí đúng — chưa đủ để LLM tạo ra output có cấu trúc đúng khi gặp trường hợp phức tạp hơn. Cần bổ sung tension map và ví dụ anchor trước khi dùng cho các yêu cầu screenplay phức tạp.</p></div>

@@ -131,6 +131,8 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 | VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 | Derived |
 | VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 | Meta |
 
+**Neo quan trọng (I):** Với Tiên Đề I, Biểu hiện ("Sống Trong Quan Hệ") và Bản chất ("Có Nhau Mới Có Mình") gần nghĩa một cách có chủ đích — không phải lỗi thiết kế. Bản thân nội dung ontological của Tiên Đề I (identity IS relations) làm collapse khoảng cách essence-manifestation: nếu bản sắc được cấu thành bởi quan hệ, thì "sống trong quan hệ" (cách nó hiện ra trong đời sống) và "có nhau mới có mình" (cấu trúc nền) là hai mặt của cùng một thực tại. Phân biệt gắt gao Biểu hiện/Bản chất là thiết yếu cho Tiên Đề III (ngăn category collapse với Halbwachs/Luhmann), nhưng với Tiên Đề I, sự gần nghĩa là hệ quả logic của chính nội dung tiên đề, không phải khiếm khuyết cần sửa. RCA 2026-06-09 — xem CHANGELOG.md A12.
+
 **Neo quan trọng (III):** "Cội Nguồn" = tên thuần Việt cho bản chất *cảm xúc-bản sắc* của Tiên Đề III.
 KHÔNG đồng nghĩa với "Orthogonal/trực giao" (thuật ngữ cấu trúc). Hai tầng khác nhau: essence ≠ manifestation.
 Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.

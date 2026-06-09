@@ -34,6 +34,45 @@ Q: Tại sao raw/luu_tru.html chưa được publish?
 
 **File mới:** `luu_tru.html` — bảng tổng hợp 9 hàng (mở rộng từ 7 hàng gốc trong raw), thêm cột "Tầng" (Core/Derived/Meta), thêm hàng "Ai quyết định ghi gì" và "Làm sao biết pattern còn đúng", thêm điều kiện bác bỏ, thêm RCA trace section.
 
+## 2026-06-09 — A12: RCA Tiên Đề I Biểu hiện/Bản chất — Giữ nguyên "Có Nhau", thêm ghi chú canonical · RCA 2.2/5 (KHÔNG SỬA)
+
+**Payload:** RCA đánh giá đề xuất đổi tên Tiên Đề I từ "Sống Trong Quan Hệ — Có Nhau Mới Có Mình" → "Bên Nhau Mới Có Mình". Đề xuất bị bác (2.2/5 < 4/5). Thay vào đó, thêm ghi chú vào `plan/dictionary_rule.md §9` giải thích vì sao Biểu hiện và Bản chất của Tiên Đề I gần nghĩa — đây là feature, không phải bug.
+
+**RCA (3-round × 5-Why × scoring gate 2.2/5 — KHÔNG SỬA claim):**
+
+- **R1 Symptom:** "Sống Trong Quan Hệ" (Biểu hiện) và "Có Nhau Mới Có Mình" (Bản chất) gần nghĩa — khó phân biệt hai tầng.
+- **R2 Mechanism:** Tiên Đề III cần phân biệt gắt gao (ngăn collapse với Halbwachs/Luhmann), nhưng công cụ này được áp uniform cho toàn bộ 8 tiên đề. Với Tiên Đề I, chính ontological claim (identity IS relations) làm khoảng cách essence-manifestation tự triệt tiêu.
+- **R3 Root:** Yêu cầu phân biệt Biểu hiện/Bản chất — thiết yếu cho III — được áp máy móc cho I, nơi nội dung tiên đề khiến hai tầng trở thành near-synonym một cách logic. Không phải lỗi thiết kế.
+
+**5-Why trace:**
+```
+Q: Tại sao đề xuất đổi "Có Nhau" → "Bên Nhau"?
+  ↓ Why 1: Cảm giác hai tầng của Tiên Đề I dư thừa / gần nghĩa.
+  ↓ Why 2: "Sống Trong Quan Hệ" ≈ "Có Nhau Mới Có Mình" — cả hai đều nói về relational being.
+  ↓ Why 3: Với Relational Ontology, không có gap giữa "nó là gì" và "nó hiện ra thế nào".
+  ↓ Why 4: Bản thân Tiên Đề I tuyên bố identity = relations → essence và manifestation collapse.
+  ↓ Root: Uniform application của Biểu hiện/Bản chất (đúng cho III) tạo cảm giác dư thừa ở I — nhưng đây là hệ quả logic, không phải defect.
+```
+
+**Scoring (candidate edit: "Có Nhau" → "Bên Nhau", gộp một tầng):**
+
+| Criterion | Score | Reason |
+|---|---|---|
+| Correct | 3/5 | Có vấn đề thật (hai tầng gần nghĩa) nhưng là hệ quả logic của Tiên Đề I, không phải lỗi |
+| Deep | 2/5 | Fix chạm symptom (gộp tầng) nhưng không chạm root; "Bên" (spatial) yếu hơn "Có" (existential) cho ontological claim |
+| Feasible | 2/5 | Kỹ thuật làm được nhưng gãy đối xứng với II–VIII; canonical table có 2 cột — I sẽ thiếu 1 ô |
+| Conflict-risk | 2/5 | Tạo asymmetry trong canonical table; index.html:278 dẫn "Sống Trong Quan Hệ" → pratītyasamutpāda; 6+ file cần sync |
+| Preservation | 2/5 | "Có Nhau" (mutual existential belonging) mạnh hơn "Bên Nhau" (spatial co-presence) cho [AX-I] |
+
+**Average: 2.2/5 → DƯỚI NGƯỠNG → KHÔNG ÁP DỤNG.**
+
+**Hành động thay thế:** Thêm "Neo quan trọng (I)" vào `plan/dictionary_rule.md §9` — giải thích sự gần nghĩa là hệ quả logic của Relational Ontology, không phải khiếm khuyết. Không thay đổi tên canonical, không đụng bảng, không tạo asymmetry.
+
+**Phân tích bổ sung — "Có Nhau" vs "Bên Nhau":**
+- "Có" = sở hữu hiện sinh (existential having) → identity constituted THROUGH mutual relations → khớp [AX-I]
+- "Bên" = không gian cận kề (spatial beside) → co-presence ≠ constitution → yếu hơn cho ontological claim
+- "Bên Nhau" có thể chỉ là hai thực thể độc lập đứng cạnh nhau — không nhất thiết cấu thành lẫn nhau
+
 ## 2026-06-09 — A10: Trường ngữ nghĩa "nếp" — Sứ mệnh Việt hóa từ vựng triết học · RCA 5.0/5
 
 **Payload:** Thêm Core Principle mới vào CLAUDE.md: "Sứ mệnh Việt hóa — Từ vựng triết học thuần Việt". Thêm §10 vào `plan/dictionary_rule.md`: trường ngữ nghĩa "nếp" — bảng canonical 6 thuật ngữ, quy tắc chọn từ (4 mức ưu tiên), ranh giới phạm trù "nếp" ≠ "tập quán"/"tập tục".
