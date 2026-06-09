@@ -229,6 +229,36 @@ Bỏ thử từng Core — hệ còn trả lời R không?
 
 **Điều kiện phản chứng toàn hệ:** SAI nếu tồn tại *một dân tộc* sống sót áp lực đồng hóa tương đương mà KHÔNG dùng bất kỳ cơ chế nào trong Tiên Đề I–IV.
 
+**Định nghĩa "áp lực đồng hóa tương đương" — Khung so sánh định tính đa chiều (EAP — Equivalent Assimilation Pressure Qualitative Comparative Framework):**
+
+> **Trạng thái nhận thức luận:** `[qualitative comparative framework]` — công cụ so sánh lịch sử có cấu trúc, không phải công cụ đo lường định lượng. Khung này giúp điều kiện phản chứng toàn hệ *vận hành được* bằng cách chỉ rõ *chiều nào* cần so sánh và *thế nào* được tính là tương đương hoặc lớn hơn. Khung không claim tạo ra một con số duy nhất. **(RCA 4.4/5 — 2026-06-09.)**
+
+Áp lực đồng hóa được đánh giá trên **5 chiều (dimensions)** độc lập — mỗi chiều có 3 mức (none/partial/total hoặc short/medium/long):
+
+| Chiều (Dimension) | Mô tả | Các mức |
+|---|---|---|
+| **D₁ — Duration (Thời gian)** | Áp lực kéo dài bao nhiêu thế hệ? | Short (<3 thế hệ) · Medium (3–10 thế hệ) · Long (>10 thế hệ) |
+| **D₂ — Institutional Control (Kiểm soát thể chế)** | Lực lượng đồng hóa có kiểm soát bộ máy nhà nước, pháp luật, giáo dục không? | None · Partial (một số thiết chế) · Total (toàn bộ thiết chế) |
+| **D₃ — Elite Replacement (Thay thế tinh hoa)** | Tầng lãnh đạo bản địa có bị thay thế hoặc hợp tác hóa không? | None · Partial (một phần) · Total (toàn bộ tầng lãnh đạo) |
+| **D₄ — Demographic Ratio (Tỉ lệ dân số)** | Tỉ lệ dân số của lực lượng đồng hóa so với dân bản địa trong lãnh thổ? | Minority (<30%) · Parity (30–70%) · Majority (>70%) |
+| **D₅ — Cultural Infrastructure Attack (Tấn công hạ tầng văn hóa)** | Các kênh truyền dẫn văn hóa (ngôn ngữ, nghi lễ, cấu trúc thân tộc) có bị tấn công trực tiếp để tiêu diệt hoặc thay thế không? | None · Partial (một số kênh) · Systematic (có hệ thống, toàn bộ kênh) |
+
+**Quy tắc so sánh (Comparative Rule):** Một trường hợp B có áp lực đồng hóa **tương đương hoặc lớn hơn** trường hợp A nếu và chỉ nếu:
+1. B đạt mức **bằng hoặc cao hơn** A trên ít nhất **4 trong 5 chiều**, VÀ
+2. Không có chiều nào B thấp hơn A **hai mức** (vd: A = Total, B = None).
+
+**Neo hiệu chuẩn (Calibration Anchor):** Việt Nam dưới 1000 năm Bắc thuộc (179 TCN – 939 SCN) được dùng làm trường hợp hiệu chuẩn — không phải vì nó là "áp lực lớn nhất," mà vì nó là trường hợp được Phan Ngọc phân tích chi tiết nhất và là anomalous case khởi nguồn cho câu hỏi gốc R:
+
+| Chiều | Mức | Bằng chứng lịch sử |
+|---|---|---|
+| D₁ — Duration | **Long** (>10 thế hệ) | ~1118 năm đô hộ trực tiếp |
+| D₂ — Institutional Control | **Total** | Toàn bộ hành chính, giáo dục, pháp luật do phương Bắc kiểm soát |
+| D₃ — Elite Replacement | **Partial** | Tinh hoa bản địa vừa bị thay thế (quan lại Hán) vừa hợp tác (hào trưởng Việt) |
+| D₄ — Demographic Ratio | **Minority** | Dân Hán là thiểu số trong lãnh thổ Việt |
+| D₅ — Cultural Infrastructure | **Partial** | Chữ Hán áp đặt qua giáo dục; tiếng Việt và tín ngưỡng bản địa (thờ Mẫu, thờ tổ tiên) không bị tiêu diệt có hệ thống |
+
+> **Ghi chú sử dụng:** Để claim "dân tộc X sống sót áp lực tương đương mà không dùng I–IV," người claim phải chỉ ra X đạt ≥4/5 chiều ở mức bằng hoặc cao hơn calibration anchor. Nếu không làm được điều này, claim không đạt ngưỡng để bác bỏ Mạch Rễ. Ngược lại, nếu X đạt ngưỡng, Mạch Rễ bị bác bỏ — đây là điều kiện falsification vận hành được.
+
 ---
 
 ## 4. PHÂN KỲ THẬT SO VỚI HỆ CŨ (anti-rubber-stamp)

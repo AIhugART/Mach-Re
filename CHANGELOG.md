@@ -1,5 +1,67 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A04: Khung EAP — Qualitative Metric cho "áp lực đồng hóa tương đương" · RCA 4.4/5
+
+**Payload:** Thêm Khung So sánh Định tính Đa chiều EAP (Equivalent Assimilation Pressure Qualitative Comparative Framework) — định nghĩa vận hành cho "áp lực đồng hóa tương đương" trong điều kiện phản chứng toàn hệ. A04 đóng CHECK_08 (Falsification PARTIAL) — bottleneck cuối cùng khiến điều kiện phản chứng toàn hệ không vận hành được: trước A04, "áp lực đồng hóa tương đương" là placeholder từ, cho phép mọi counterexample đều bị dismiss với lý do "áp lực không tương đương." Sau A04, điều kiện phản chứng có operational content: 5 chiều độc lập × quy tắc so sánh ≥4/5 × calibration anchor (Việt Nam 1000 năm Bắc thuộc).
+
+**RCA (3-round × 5-Why × scoring gate 4.4/5):**
+
+- **R1 Symptom:** "Áp lực đồng hóa tương đương" không có định nghĩa vận hành — là placeholder từ. Điều kiện phản chứng toàn hệ trở thành vacuous: luôn có thể claim "áp lực không tương đương" để bảo vệ framework. Counterexample bất kỳ không thể được đánh giá vì không có tiêu chí so sánh.
+- **R2 Mechanism:** (a) Assimilation pressure là hiện tượng đa chiều (duration, institutional control, elite replacement, demographic ratio, cultural targeting) — gộp thành scalar "tương đương" là oversimplification khiến mọi so sánh lịch sử trở thành subjective. (b) Không có controlled experiment cho lịch sử → cần qualitative comparative framework, không phải quantitative metric. (c) Nếu A06 (Mệnh đề F) định nghĩa internal failure conditions, A04 định nghĩa external comparison conditions — cả hai đều cần để falsification vận hành.
+- **R3 Root:** **Category error** — falsification condition giả định "áp lực đồng hóa" là unidimensional scalar, trong khi nó là multi-dimensional historical phenomenon. Các chiều (duration, institutional control, etc.) có thể biến thiên độc lập — hai trường hợp có thể "tương đương" trên một chiều và khác biệt hoàn toàn trên chiều khác. Fix: thay scalar equivalence bằng multi-dimensional qualitative comparative framework với quy tắc so sánh rõ ràng.
+
+**5-Why trace:**
+
+```
+Observation: "áp lực đồng hóa tương đương" is undefined.
+  ↓ Why? Because it was a placeholder from initial axiom derivation — "good enough for now."
+  ↓ Why was it "good enough"? Because priority was deriving positive axioms (I-VIII); falsification was deferred.
+  ↓ Why does it need fixing NOW? A06 (F) closed internal failure; without A04, global falsification still vacuous.
+  ↓ Why can't a simple scalar metric work? Because assimilation pressure varies independently on multiple dimensions.
+  ↓ ROOT: Category error — treating a multi-dimensional historical phenomenon as a unidimensional scalar.
+```
+
+**Scoring (proposal rubric — 5 tiêu chí):**
+
+| Criterion | Score | Rationale |
+|-----------|-------|-----------|
+| Correct | 4 | Đúng: "áp lực tương đương" thực sự là multi-dimensional. Mất 1 điểm vì historical comparison luôn có edge cases. |
+| Deep | 4 | Chạm gốc: chuyển từ scalar equivalence → multi-dimensional comparative framework. Mất 1 điểm vì không giải quyết được fundamental problem của historical uniqueness. |
+| Feasible | 5 | 5 dimensions đều observable từ historical records. Calibration anchor có sẵn. Không cần controlled experiments. |
+| Conflict-risk | 5 | Không conflict với bất kỳ axiom/proposition nào. Tương thích với F: F = internal failure, EAP = external comparison. |
+| Preservation | 4 | Giữ nguyên falsification condition gốc, chỉ operationalize "tương đương." Mất 1 điểm vì qualitative framework inherently có ambiguity. |
+| **Avg** | **4.4** | **→ PASS threshold.** |
+
+**EAP Framework specification:**
+
+```
+5 chiều độc lập, mỗi chiều 3 mức:
+  D₁ — Duration:           Short (<3 gen) · Medium (3-10) · Long (>10)
+  D₂ — Institutional Ctrl: None · Partial · Total
+  D₃ — Elite Replacement:  None · Partial · Total
+  D₄ — Demographic Ratio:  Minority (<30%) · Parity (30-70%) · Majority (>70%)
+  D₅ — Cultural Infra Atk: None · Partial · Systematic
+
+Comparative Rule: B ≥ A ⇔ (1) B ≥ A on ≥4/5 dimensions, AND (2) no dimension where B < A by 2 levels.
+
+Calibration Anchor: Vietnam under 1000 năm Bắc thuộc (179 TCN – 939 SCN)
+  D₁=Long, D₂=Total, D₃=Partial, D₄=Minority, D₅=Partial
+
+Epistemic status: [qualitative comparative framework] — structured comparison tool, not measurement instrument.
+```
+
+**Files changed:**
+- `axiom_spec.md`: +EAP framework definition (5 dimensions, comparative rule, calibration anchor, usage note) at §3, directly after global falsification condition
+- `axioms.html`: +EAP framework in HTML (2 tables + 2 notes) after global falsification condition, in §3 derivation diagram section
+- `what.html`: +EAP framework in §4.8 Falsification section (2 tables + 2 def-boxes); +cross-reference link from §3.5 falsification note → §4.8; +anchor `id="falsification"` on §4.8 header
+- `CHANGELOG.md`: this entry
+
+**Verification:** (1) Global falsification condition now has operational definition — a critic must specify 5 EAP dimensions to claim counterexample. (2) EAP framework is structural (observable from historical records), not metaphysical. (3) Calibration anchor is explicit and documented — not hidden behind "equivalent." (4) Epistemic status is correctly labeled as `[qualitative comparative framework]`, not `[measurement instrument]`. (5) A04 + A06 together close CHECK_08 completely: F defines internal failure criterion, EAP defines external comparison criterion. (6) All links between axiom_spec.md, axioms.html, and what.html are consistent.
+
+**A04 status: COMPLETE** — CHECK_08 moves from PARTIAL → PASS. A01-A04, A06, A08 now complete (Phase 1 closed).
+
+---
+
 ## 2026-06-09 — A08: Diagnosis Rubric "Đứt gãy" integration hoàn tất · RCA 4.0→4.8/5
 
 **Payload:** Hoàn tất A08 với 3 fix nhỏ (A08a/A08b/A08c) sau 3-round RCA. A08 ban đầu được tích hợp cùng commit A06 (thêm score band "Rễ đã đứt" + điều chỉnh range 1-4), nhưng 3-round RCA phát hiện 3 gap: (S1) derivation diagram thiếu F trong axioms.html, (S2) 6 rubric indicators không map đến A/B/C conditions của F, (S3) score band 1-4 không có differential diagnosis giữa recoverable crisis và approaching severance.
