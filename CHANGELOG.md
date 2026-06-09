@@ -1,5 +1,41 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — `Zhang_Yimou_Spielberg_Hybrid_Screenplay_v2.md`: Canonical promotion + auto-trigger · RCA 5.0/5
+
+**Payload:** Replace v1 (`Zhang_Yimou_Spielberg_Hybrid_Screenplay.md`) with v2 (`_v2.md`) as canonical skill file referenced in CLAUDE.md §Screenplay & Creative Writing Rules. Mark v1 deprecated. Add "Luôn kích hoạt khi tạo kịch bản phim" to ensure the skill auto-triggers for all screenplay work.
+
+**RCA (3-round × 5-Why × scoring gate 5/5):**
+
+- **R1 Symptom:** CLAUDE.md points to v1, but v2 exists with 104 additional lines including Analysis Mode (6-step protocol), Project Brief Template, Layer Tension model, Screenplay Format Sample, Supporting Character Test, and Priority Rule. Capability gap: user asks "analyze this scene" → v1 has no Analysis Mode → improvise ad-hoc.
+- **R2 Mechanism:** v2's frontmatter states "This skill covers creation mode and analysis mode equally — trigger for both." But v1-only CLAUDE.md reference makes analysis mode unreachable. This is an internal inconsistency in the project's own tooling.
+- **R3 Root:** The skill file upgrade (v1→v2) was performed without a Carry-Forward Set declaration, violating the "rebuild with carry-forward" rule (CLAUDE.md §Document contract rules). CLAUDE.md reference to v1 is a downstream symptom of this protocol gap.
+
+**Scoring (plan item rubric):** Correct=1, Deep=1, Feasible=1, Conflict-risk=1, Preservation=1 → **5/5**.
+
+**Carry-Forward Set (v1→v2):**
+| Asset | Status |
+|---|---|
+| 5 Core Hybrid Principles | Carried verbatim |
+| Structural Tension Map (V/H axes) | Carried verbatim |
+| Beat-Level Priority Rule (8 beats) | Carried verbatim |
+| Story Architecture (3 acts) | Carried verbatim |
+| Character Construction (3-layer) | Carried + expanded (Layer Tension) |
+| Scene-Level Writing Guidelines | Carried + expanded (Format Sample) |
+| Tonal Calibration | Carried verbatim |
+| Output Formats (5 types) | Carried + expanded (axis annotation) |
+| Quick Reference Checklist (12 items) | Carried + expanded (Priority Rule) |
+| Film Anchor Reference | Carried verbatim |
+| **NEW: Analysis Mode** | v2 only |
+| **NEW: Project Brief Template** | v2 only |
+| **NEW: Supporting Character Test** | v2 only |
+| **NEW: How to Begin / Choose Mode** | v2 only |
+
+**Files changed:** `CLAUDE.md` (1 line updated: path→v2 + expanded description + "Luôn kích hoạt khi tạo kịch bản phim"), `publish/movie_script/Zhang_Yimou_Spielberg_Hybrid_Screenplay.md` (deprecation notice replacing frontmatter), `CHANGELOG.md` (this entry).
+
+**Verification:** `grep -r "Zhang_Yimou_Spielberg_Hybrid_Screenplay.md"` — only v1's own deprecation notice + CHANGELOG historical entries + frozen screenplay artifacts (mv_001). No broken references. v2 path active in CLAUDE.md. Skill auto-trigger instruction embedded.
+
+---
+
 ## 2026-06-09 — `Zhang_Yimou_Spielberg_Hybrid_Screenplay.md`: RCA review × Mạch Rễ — 7 structural edits · RCA ≥ 4/5
 
 **Hành động:** Review `rev.txt` phát hiện 3 FAIL + 4 PARTIAL trong skill file. Dùng 3-round RCA × 5-Why × scoring gate ≥ 4/5 để quyết định từng edit. Tất cả 7 edits đạt 5.0/5 → applied. Bổ sung cơ chế cấu trúc dùng Mạch Rễ axioms làm structural backbone, không phải loose analogy.

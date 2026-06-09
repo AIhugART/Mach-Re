@@ -1,6 +1,6 @@
 ---
 name: zhang-spielberg-screenplay
-description: Write, develop, or analyze screenplays and story outlines using the Zhang Yimou × Steven Spielberg hybrid style — combining Asian minimalist aesthetics (silence, negative space, color as language, collective history) with Spielberg's emotional warmth (ordinary people with hidden fractures, loss as turning point, acceptance as climax). Use this skill whenever the user wants to write a screenplay, scene, story beat, character arc, or narrative outline that blends Eastern visual philosophy with Western emotional storytelling. Also trigger when the user asks for a "quiet but emotional" film style, "Asian aesthetic with universal heart," or any hybrid Eastern-Western cinematic approach.
+description: ⚠️ DEPRECATED — This v1 file has been superseded by `Zhang_Yimou_Spielberg_Hybrid_Screenplay_v2.md`. All new screenplay work should use the v2 skill, which includes Analysis Mode (6-step protocol), Project Brief Template, Layer Tension model, Screenplay Format Sample, Supporting Character Test, and Priority Rule in checklist. RCA gate score: 5/5 (2026-06-09, 3-round × 5-Why × scoring). Historical reference only — do not trigger for new work.
 ---
 
 # Zhang Yimou × Spielberg Hybrid Screenplay Skill
