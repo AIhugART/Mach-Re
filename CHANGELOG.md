@@ -1,5 +1,82 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A05: DSH — Diagnostic Stratification Heuristic (Heuristic Chẩn Đoán Phân Tầng) · RCA 4.6/5
+
+**Payload:** Thêm Diagnostic Stratification Heuristic (DSH) — công cụ chẩn đoán nằm GIỮA tầng tiên đề và Diagnosis Rubric, KHÔNG phải tiên đề mới. DSH đóng GAP_01 (thiếu phân tầng bất biến) bằng cách cung cấp 3 nguyên tắc chẩn đoán: DSH-1 (vi sai tốc độ thay đổi), DSH-2 (lọc theo độ sâu), DSH-3 (độ sâu = khoảng cách cấu trúc, không phải loại nội dung). DSH vận hành hóa Condition A của Mệnh Đề F và cung cấp cơ sở cho trọng số chẩn đoán trong Diagnosis Rubric.
+
+**RCA (3-round × 5-Why × scoring gate 4.6/5):**
+
+- **R1 Symptom:** Mạch Rễ collapses Phan Ngọc's stratified observations (văn hóa/văn minh, 4 lĩnh vực với tốc độ thay đổi khác nhau) into a single flat `Pattern(R(S))`. Không phân biệt được thay đổi ở core vs. surface. Diagnosis Rubric có 6 indicators với trọng số ngang nhau — nhưng thờ cúng tổ tiên thay đổi ≠ từ vay mượn thay đổi.
+- **R2 Mechanism:** (a) F's Condition A ("core relational pattern attacked") không operationalizable nếu không biết cái gì là "core pattern" vs "surface content." (b) Tiên Đề IV's "tái tổ chức theo logic pattern nội tại" không phân biệt được restructuring ở độ sâu nào. (c) Framework không giải thích được tại sao một số yếu tố bản sắc thay đổi chậm hơn yếu tố khác — một hiện tượng quan sát được xuyên văn hóa.
+- **R3 Root:** `Identity(S) = Pattern(R(S))` treats the invariant relational pattern as structurally flat. Nhưng identity systems empirically exhibit differential coupling strength — một số quan hệ có structural distance ngắn hơn đến invariant pattern và do đó thay đổi chậm hơn. Đây là structural fact, không phải ontological claim — không có "essence" (svabhāva) nào được giới thiệu.
+
+**5-Why trace:**
+
+```
+Observation: Mạch Rễ treats all identity elements as equally deep.
+  ↓ Why? Pattern(R(S)) is flat — one pattern, one depth.
+  ↓ Why? Re-derivation prioritized Pattern vs Content distinction; depth-within-Pattern deferred.
+  ↓ Why now? A06 (F) defines "core pattern attacked" but "core" is undefined without depth.
+  ↓ Why can't existing axioms handle this? II, III, IV define pattern/invariance/transmission/boundary
+    but not differential coupling strength within the pattern itself.
+  ↓ ROOT: Pattern(R(S)) is structurally flat. A diagnostic heuristic (not axiom) can add depth
+    without claiming ontological stratification — preserving BRIDGE-II-III's anti-svabhāva constraint.
+```
+
+**Scoring (proposal rubric — 5 tiêu chí):**
+
+| Criterion | Score | Rationale |
+|-----------|-------|-----------|
+| Correct | 5 | GAP_01 thật. F's Condition A cần operationalization. Diagnosis Rubric cần trọng số khác biệt. |
+| Deep | 4 | Chạm root (flat pattern → differential coupling). Mất 1 điểm: không claim giải quyết epistemological problem xác định depth trong novel cases. |
+| Feasible | 5 | Heuristic (không axiom) → không phá vỡ cấu trúc hiện có. Additive only. 2.0/3 triangulation advisory support. |
+| Conflict-risk | 4 | DSH-3 "depth = structural distance" tương thích BRIDGE-II-III (không svabhāva). Risk nhỏ: misinterpretation "depth = essence" — mitigated bằng explicit disclaimer trong §9.8. |
+| Preservation | 5 | Tất cả axiom I-VIII, F không đổi. F được củng cố (Condition A operational). Diagnosis Rubric được làm giàu (trọng số phân tầng). |
+| **Avg** | **4.6** | **→ PASS threshold.** |
+
+**DSH specification:**
+
+```
+DSH-1 — Differential Rate of Change:
+  Yếu tố có coupling strength với invariant pattern (II) càng cao → thay đổi càng chậm.
+  Empirical grounding: Phan Ngọc's văn hóa/văn minh distinction.
+
+DSH-2 — Depth-Dependent Filtering:
+  Biên giới (IV) lọc nghiêm ngặt hơn ở gần invariant pattern.
+  Empirical grounding: Phan Ngọc's differential Việt hóa (Phật giáo sâu, Nho giáo nông).
+
+DSH-3 — Depth = Structural Distance, Not Content Type:
+  "Độ sâu" = structural distance từ invariant pattern (II), không phải content type.
+  Cùng content type có thể ở độ sâu khác nhau trong các hệ khác nhau.
+
+Triangulation: A (STRONG 1.0) + B (PARTIAL 0.5) + C (PARTIAL 0.5) = 2.0/3 (advisory)
+Falsification: DSH-F1 (no differential rate) | DSH-F2 (no depth-dependent filtering)
+Status: [empirical hypothesis] — pending cross-cultural verification (Phase 2)
+```
+
+**Carry-Forward Set (PROPOSAL_01 → DSH):**
+
+| Asset từ PROPOSAL_01 | Trạng thái |
+|---|---|
+| "Bất biến cấu trúc không phải một tầng duy nhất" | **Carried** → DSH-1 |
+| "Tầng sâu hơn bền hơn, thay đổi chậm hơn" | **Carried** → DSH-1 |
+| "Hấp thụ có định hướng vận hành khác nhau ở mỗi tầng" | **Carried** → DSH-2 |
+| 4-tier model (Tier 1-4 với tên cụ thể) | **DROPPED** — quá Vietnam-specific |
+| "Tiên Đề IIb" status (new core axiom) | **DROPPED** — category error |
+| Phân biệt văn hóa/văn minh (Phan Ngọc) | **Carried** — empirical grounding |
+| Điều kiện phản chứng gốc | **REFORMULATED** → DSH-F1, DSH-F2 |
+
+**Files changed:**
+- `axiom_spec.md`: +DSH header in numbering scheme (§0); +`heuristics:` block in YAML dependency graph (§8); +§9 Diagnostic Stratification Heuristic (full spec: phát biểu VI/EN, empirical grounding from Phan Ngọc, connection to F, connection to Diagnosis Rubric, triangulation check, falsification conditions, limitations & warnings, status & roadmap, carry-forward set)
+- `axioms.html`: +DSH in hero count; +DSH section (3 DSH articles + connections to F & Diagnosis Rubric + indicator weight table + neo table + falsification + limitations + validation roadmap); updated `<title>` and `<meta>` (3→4 Derived, +1 Heuristic); updated footer (DSH RCA score)
+- `CHANGELOG.md`: this entry
+
+**Verification:** (1) DSH explicitly marked "NOT an axiom" — không thêm architectural complexity vào hệ tiên đề. (2) DSH-3 "depth = structural distance" tương thích BRIDGE-II-III — không svabhāva, tất cả tầng đều saṃvṛtisat. (3) F-A có operational content: "core relational pattern" = yếu tố có structural distance ngắn nhất đến invariant pattern — observable, không phải mysterious essence. (4) Triangulation 2.0/3 (advisory — heuristic không yêu cầu ≥2/3 nhưng có ≥2/3 làm tăng confidence). (5) Connection to Mệnh Đề F (A06) rõ ràng — DSH phụ thuộc vào F (như PLAN_RCA_REVIEW requirement). (6) Connection to Diagnosis Rubric rõ ràng — bảng trọng số 6 indicators kèm cảnh báo Vietnam-specific. (7) 2 falsification conditions (DSH-F1, DSH-F2) vận hành được. (8) 5 limitations tường minh ngăn misuse.
+
+**A05 status: COMPLETE** — GAP_01 được đóng bằng DSH (empirical hypothesis, pending Phase 2 cross-cultural verification). Phase 1 complete (A01-A04, A06, A08, now A05). A07 (Amendment IV operational definition) còn lại.
+
+---
+
 ## 2026-06-09 — A04: Khung EAP — Qualitative Metric cho "áp lực đồng hóa tương đương" · RCA 4.4/5
 
 **Payload:** Thêm Khung So sánh Định tính Đa chiều EAP (Equivalent Assimilation Pressure Qualitative Comparative Framework) — định nghĩa vận hành cho "áp lực đồng hóa tương đương" trong điều kiện phản chứng toàn hệ. A04 đóng CHECK_08 (Falsification PARTIAL) — bottleneck cuối cùng khiến điều kiện phản chứng toàn hệ không vận hành được: trước A04, "áp lực đồng hóa tương đương" là placeholder từ, cho phép mọi counterexample đều bị dismiss với lý do "áp lực không tương đương." Sau A04, điều kiện phản chứng có operational content: 5 chiều độc lập × quy tắc so sánh ≥4/5 × calibration anchor (Việt Nam 1000 năm Bắc thuộc).

@@ -9,6 +9,7 @@
 > - **Tiên Đề Cốt Lõi (Core Axiom): I, II, III, IV**
 > - **Mệnh Đề Dẫn Xuất (Derived Proposition): V, VI, VII, F**
 > - **Meta-Tiên Đề (Meta-Axiom): VIII**
+> - **Heuristic Chẩn Đoán (Diagnostic Heuristic): DSH** — NOT an axiom (§9)
 
 ---
 
@@ -346,6 +347,9 @@ axioms:
   F:   {type: derived, depends_on: [II, III, IV], neo: [A, B, "C-cond"], score: 5.0, rca_date: "2026-06-09"}
   VIII:{type: meta,    depends_on: [I, II, III, IV], neo: ["A-weak", "B-2nd-order", C]}
 
+heuristics:
+  DSH: {type: diagnostic_heuristic, depends_on: [II, IV, F], neo: [A, "B-partial", "C-partial"], score: 4.6, rca_date: "2026-06-09", status: "empirical_hypothesis"}
+
 issues_blocking_axioms:
   I:   [ISSUE-01]
   II:  [ISSUE-02]
@@ -361,4 +365,162 @@ sot_references:
 
 ---
 
-> **Metadata:** single source · định danh = La Mã đếm lại theo tầng (I–IV Core, V–VII Derived, VIII Meta) · cổng RCA 4.6/5 · neo A/B/C · trang mẫu `axioms.html`.
+---
+
+## 9. DIAGNOSTIC STRATIFICATION HEURISTIC (DSH) — heuristic, NOT an axiom
+
+> **Trạng thái:** `[empirical hypothesis]` — pending cross-cultural verification. RCA 4.6/5 (2026-06-09).
+> **Vai trò:** DSH là một **công cụ chẩn đoán** (diagnostic heuristic) nằm GIỮA tầng tiên đề và Diagnosis Rubric. Nó không claim trạng thái tiên đề (axiom status), không phải universal ontological property, và không yêu cầu ≥2/3 triangulation để tồn tại — chỉ cần *hữu ích* (useful), không cần *cấu trúc cần thiết* (structurally necessary).
+> **Điểm RCA:** 4.6/5 (3-round × 5-Why × scoring gate). Đóng GAP_01 (thiếu phân tầng bất biến).
+
+### 9.0 Carry-Forward Set — A05 (2026-06-09)
+
+Trước khi viết DSH, tuyên bố tường minh các tài sản được carry-forward từ audit plan gốc (PROPOSAL_01 — Tiên Đề IIb) sang DSH:
+
+| Asset từ PROPOSAL_01 | Trạng thái | Ghi chú |
+|---|---|---|
+| "Bất biến cấu trúc không phải một tầng duy nhất" | **Carried** — làm DSH-1 | Reformulated: "change rate" thay vì "depth" để tránh essentialism |
+| "Tầng sâu hơn bền hơn và thay đổi chậm hơn" | **Carried** — làm DSH-1 | Giữ nguyên insight, thêm "structural coupling strength" làm cơ chế |
+| "Hấp thụ có định hướng vận hành khác nhau ở mỗi tầng" | **Carried** — làm DSH-2 | Kết nối tường minh với Tiên Đề IV |
+| 4-tier model (Tier 1-4 với tên cụ thể) | **DROPPED** — quá đặc thù Việt Nam | Thay bằng DSH-3: "structural distance from invariant pattern" — content-type-independent |
+| "Tiên Đề IIb" status (new core axiom) | **DROPPED** — category error | DSH là heuristic, không phải axiom |
+| Phân biệt văn hóa / văn minh (Phan Ngọc) | **Carried** — làm empirical grounding | Dùng làm bằng chứng neo, không phải universal definition |
+| Điều kiện phản chứng gốc (Tier 4 ảnh hưởng Tier 1 không qua trung gian) | **REFORMULATED** | Thay bằng 2 falsification conditions cho DSH-1 và DSH-2 |
+
+### 9.1 Phát biểu (VI)
+
+> **Khi chẩn đoán một hệ bản sắc tập thể, ba nguyên tắc sau là công cụ hữu ích — không phải chân lý phổ quát:**
+>
+> **DSH-1 — Vi sai tốc độ thay đổi (Differential Rate of Change):** Không phải mọi yếu tố bản sắc đều thay đổi với cùng tốc độ. Yếu tố nào có **coupling strength** (độ kết nối cấu trúc) với invariant relational pattern (Tiên Đề II) càng cao thì thay đổi càng chậm — vì thay đổi nó đòi hỏi tái cấu trúc toàn bộ mạng quan hệ, không chỉ thay đổi cục bộ.
+>
+> **DSH-2 — Lọc theo độ sâu (Depth-Dependent Filtering):** Biên giới động (Tiên Đề IV) vận hành khác nhau ở các "độ sâu" khác nhau. Yếu tố gần invariant pattern bị lọc nghiêm ngặt hơn (vì pattern recognition có template chính xác hơn, deviation dễ bị phát hiện hơn). Yếu tố xa invariant pattern được phép biến thiên rộng hơn (vì pattern recognition có template lỏng hơn, variation được dung nạp dễ hơn).
+>
+> **DSH-3 — Độ sâu là khoảng cách cấu trúc, không phải loại nội dung (Depth = Structural Distance, Not Content Type):** "Độ sâu" của một yếu tố không được xác định bởi *loại* nội dung của nó (ngôn ngữ vs. nghi lễ vs. công nghệ) — cùng một loại nội dung có thể ở độ sâu khác nhau trong các hệ khác nhau. "Độ sâu" được xác định bởi **structural distance** từ invariant relational pattern (II): có bao nhiêu quan hệ trung gian giữa yếu tố đó và invariant pattern? Càng ít quan hệ trung gian → càng gần invariant → càng "sâu".
+
+### 9.2 Phát biểu (EN)
+
+> **When diagnosing a collective identity system, three principles are useful tools — not universal truths:**
+>
+> **DSH-1 — Differential Rate of Change:** Not all identity elements change at the same rate. Elements with higher **coupling strength** to the invariant relational pattern (Axiom II) change more slowly — because changing them requires restructuring the entire relational network, not just a local adjustment.
+>
+> **DSH-2 — Depth-Dependent Filtering:** The dynamic boundary (Axiom IV) operates differently at different "depths." Elements closer to the invariant pattern are filtered more strictly (pattern recognition has more precise templates; deviation is easier to detect). Elements farther from the invariant pattern are permitted wider variation (pattern recognition has looser templates; variation is easier to tolerate).
+>
+> **DSH-3 — Depth = Structural Distance, Not Content Type:** The "depth" of an element is not determined by its content *type* (language vs. ritual vs. technology) — the same content type can be at different depths in different systems. "Depth" is determined by **structural distance** from the invariant relational pattern (II): how many intermediate relations are there between that element and the invariant pattern? Fewer intermediate relations → closer to invariant → "deeper."
+
+### 9.3 Neo thực nghiệm — Phan Ngọc (Empirical Grounding)
+
+DSH không được suy ra từ chân không. Nó có nền tảng thực nghiệm từ quan sát của Phan Ngọc về lịch sử Việt Nam:
+
+**A. Phân biệt văn hóa / văn minh (Phần I, Chương I):**
+
+> Phan Ngọc phân biệt: **văn hóa** = "mối quan hệ giữa thế giới biểu tượng và thế giới thực tại" (biểu hiện thành "kiểu lựa chọn" đặc trưng của tộc người) — cái **không thể chuyển giao** giữa các tộc người; **văn minh** = "kĩ thuật làm chủ thế giới" — cái **có thể chuyển giao** giữa các tộc người.
+
+→ Đây là nền tảng thực nghiệm cho **DSH-1**: cái "không thể chuyển giao" (văn hóa, gần invariant pattern) thay đổi chậm hơn cái "có thể chuyển giao" (văn minh, xa invariant pattern). Nhưng DSH-3 cảnh báo: không phải mọi thứ "văn hóa" đều sâu như nhau, và không phải mọi thứ "văn minh" đều nông như nhau — khoảng cách cấu trúc mới là yếu tố quyết định.
+
+**B. Bốn yêu cầu bất biến của tâm thức Việt Nam (Phần I, Chương II):**
+
+> Phan Ngọc xác định bốn yêu cầu bất biến: Tổ quốc, Gia đình - Làng xã, Thân phận, Diện mạo. Bốn yêu cầu này **không thay đổi** qua lịch sử, trong khi nội dung cụ thể đáp ứng chúng thay đổi theo từng thời đại.
+
+→ Đây là minh họa cho **DSH-1** và **DSH-2**: bốn yêu cầu này có coupling strength cực cao với invariant pattern → chúng thay đổi chậm nhất và bị lọc nghiêm ngặt nhất. Một nội dung đến mà mâu thuẫn với "yêu cầu Tổ quốc" sẽ bị từ chối mạnh hơn nhiều so với nội dung đến chỉ mâu thuẫn với "yêu cầu Diện mạo" (vì Diện mạo có thể có nhiều quan hệ trung gian hơn giữa nó và invariant pattern).
+
+**C. Cơ chế Việt hóa (Phần II — Giao lưu văn hóa):**
+
+> Phan Ngọc quan sát: Việt Nam hấp thụ Phật giáo, Nho giáo, Đạo giáo từ Trung Hoa nhưng **Việt hóa** chúng — giữ lại yếu tố tương thích với "kiểu quan hệ" Việt, loại bỏ hoặc biến đổi yếu tố không tương thích.
+
+→ Đây là minh họa cho **DSH-2**: biên giới (IV) lọc Phật giáo khác với lọc Nho giáo — vì Phật giáo (với vô ngã, từ bi) có structural distance gần hơn với invariant pattern Việt (quan hệ linh hoạt, không giáo điều) so với Nho giáo (với tôn ti trật tự cứng nhắc). Kết quả: Phật giáo được hấp thụ sâu hơn (vào tận cấu trúc tín ngưỡng), Nho giáo bị hấp thụ nông hơn (chủ yếu ở tầng tổ chức hành chính và giáo dục).
+
+### 9.4 Kết nối với Mệnh Đề F (Connection to Failure Conditions)
+
+DSH cung cấp công cụ chẩn đoán để vận hành hóa (operationalize) Condition A của Mệnh Đề F:
+
+> **F-A:** "Pattern quan hệ cốt lõi (Tiên Đề II) bị tấn công trực tiếp."
+
+Với DSH, "pattern quan hệ cốt lõi" được xác định là **tập hợp các yếu tố bản sắc có structural distance ngắn nhất đến invariant pattern** — tức là các yếu tố mà nếu thay đổi sẽ đòi hỏi tái cấu trúc toàn bộ mạng quan hệ. Đây không phải là "bản chất bí ẩn" — mà là **observable structural fact**: bạn có thể quan sát một yếu tố thay đổi và đo lường có bao nhiêu quan hệ khác bị ảnh hưởng bởi sự thay đổi đó.
+
+**Quy trình chẩn đoán F-A dùng DSH:**
+
+```
+1. Với yếu tố bản sắc X đang bị tấn công:
+   a. Xác định structural distance của X đến invariant pattern (II):
+      - Có bao nhiêu quan hệ trung gian giữa X và II?
+      - Nếu X thay đổi, bao nhiêu quan hệ khác bị kéo theo?
+   b. Nếu structural distance NGẮN (X gần invariant):
+      → X là "core relational pattern" → F-A có thể đang xảy ra.
+   c. Nếu structural distance DÀI (X xa invariant):
+      → X là "surface content" → F-A không xảy ra (dù X bị thay đổi).
+2. KHÔNG tự động kết luận: "X gần invariant" ≠ "F đang xảy ra."
+   Cần kiểm tra thêm F-B và F-C — cả 3 điều kiện phải đồng thời.
+```
+
+### 9.5 Kết nối với Diagnosis Rubric (Connection to Diagnosis Rubric)
+
+DSH cung cấp cơ sở cho việc gán **trọng số chẩn đoán khác nhau** cho các indicators trong Diagnosis Rubric — điều mà CHECK_04 của audit plan đã xác định là thiếu:
+
+| Indicator | Structural distance đến invariant | Trọng số chẩn đoán | Lý do |
+|-----------|----------------------------------|-------------------|-------|
+| Quan hệ tổ tiên / liên thế hệ | Cực ngắn (gần như trực tiếp) | **CAO NHẤT** | Đây là kênh truyền dẫn của chính invariant pattern qua III |
+| Cấu trúc thân tộc / gia đình | Rất ngắn | **CAO** | Quan hệ gia đình là đơn vị cơ bản của pattern transmission |
+| Nghi lễ / thực hành cộng đồng | Ngắn-Trung bình | **TRUNG BÌNH-CAO** | Nghi lễ là pattern embodied; nhưng hình thức nghi lễ có thể biến đổi |
+| Ngôn ngữ / biểu tượng | Trung bình | **TRUNG BÌNH** | Ngôn ngữ mang pattern nhưng không phải pattern itself; loanwords possible |
+| Thẩm mỹ / nghệ thuật | Trung bình-Dài | **TRUNG BÌNH-THẤP** | Biểu hiện của pattern, không phải pattern; nhiều biến thiên được dung nạp |
+| Công nghệ / vật chất | Dài (nhiều quan hệ trung gian) | **THẤP NHẤT** | "Văn minh" theo Phan Ngọc — có thể chuyển giao giữa các tộc người |
+
+> **Cảnh báo (DSH-3):** Bảng trên là **minh họa cho hệ Việt Nam** dựa trên quan sát của Phan Ngọc. Trong một hệ bản sắc khác (vd: Do Thái diaspora, Yoruba, Nhật Bản), structural distance của cùng một indicator có thể khác. Không áp dụng bảng trọng số này máy móc cho hệ khác — phải xác định structural distance từ dữ liệu của hệ đó.
+
+### 9.6 Triangulation Check (Advisory — DSH không yêu cầu ≥2/3)
+
+| Neo | Structural Analogue | Score | Ghi chú |
+|-----|--------------------|-------|--------|
+| **A — Phan Ngọc** | Phân biệt văn hóa/văn minh; bốn yêu cầu bất biến ≠ nội dung đổi; Việt hóa khác nhau theo lĩnh vực | **STRONG (1.0)** | Neo chính — DSH trực tiếp từ quan sát của Phan Ngọc |
+| **B — Ashby/Weick** | Ashby: hierarchical variety engineering — subsystems at different levels handle different variety → structural analogue of depth-dependent filtering. Weick: causal maps have different "depths" of embeddedness in organizational identity | **PARTIAL (0.5)** | Ashby's hierarchy là functional/organizational, không phải depth-based; nhưng nguyên lý "different levels → different variety handling" là structural analogue |
+| **C — Anattā** | Two truths (saṃvṛti-satya / paramārtha-satya): conventional truth is "closer to operational domain" (pragmatically real), ultimate truth is "farther" (empty of inherent existence) → epistemological stratification | **PARTIAL (0.5)** | Cảnh báo: DSH-3 ("depth = structural distance") không được misinterpret thành "depth = ontological reality." Two truths nhắc nhở: mọi tầng đều là saṃvṛti — không có tầng nào là paramārtha-sat. |
+| **Total** | | **2.0/3** | → Advisory support vững. DSH không cần ≥2/3 để tồn tại (vì là heuristic), nhưng có ≥2/3 làm tăng confidence. |
+
+> **Ghi chú triangulation:** DSH được phép single-anchor (Phan Ngọc) vì nó là heuristic, không phải axiom. Tuy nhiên, sự hiện diện của structural analogues trong Ashby và Anattā làm tăng confidence rằng DSH không phải là Vietnam-specific artifact. Ashby's hierarchical variety engineering độc lập với Phan Ngọc (không cùng khu vực văn hóa, không cùng truyền thống triết học) — đây là cross-domain structural convergence đáng chú ý.
+
+### 9.7 Điều kiện phản chứng (Falsification Conditions)
+
+DSH có thể bị bác bỏ (falsified) nếu một trong hai điều kiện sau được chứng minh:
+
+> **DSH-F1 (bác bỏ DSH-1):** Tồn tại một hệ bản sắc tập thể trong đó **mọi** yếu tố bản sắc thay đổi với **cùng tốc độ** khi bị áp lực bên ngoài — không có yếu tố nào chậm hơn yếu tố nào. (Nói cách khác: differential rate of change = 0 cho mọi cặp yếu tố.)
+>
+> **DSH-F2 (bác bỏ DSH-2):** Tồn tại một hệ bản sắc tập thể trong đó biên giới (IV) lọc **mọi** nội dung đến với **cùng một mức độ nghiêm ngặt** — bất kể nội dung đó gần hay xa invariant pattern. (Nói cách khác: depth-dependent filtering gradient = 0.)
+
+> **DSH-F3 (bác bỏ DSH-3 — cautionary):** Tồn tại một hệ bản sắc tập thể trong đó "độ sâu" của một yếu tố được xác định **chỉ bởi loại nội dung** (content type) của nó, không phải bởi structural distance đến invariant pattern — và pattern này nhất quán qua ≥3 hệ bản sắc không liên quan. (Nếu content type quyết định depth universally, DSH-3 sai — depth không phải structural distance mà là intrinsic property của content type.)
+
+### 9.8 Giới hạn và Cảnh báo (Limitations & Warnings)
+
+1. **DSH không phải ontology:** DSH-1 nói "yếu tố gần invariant thay đổi chậm hơn" — đây là **empirical generalization** (quan sát lặp lại), không phải **ontological necessity** (bản chất bắt buộc). Không claim rằng vũ trụ *phải* vận hành như vậy — chỉ claim rằng trong dữ liệu lịch sử quan sát được, nó vận hành như vậy.
+
+2. **DSH không phải causal mechanism:** DSH mô tả **pattern** (cái gì xảy ra), không giải thích **mechanism** (tại sao xảy ra). Mechanism được cung cấp bởi các axiom: II (pattern invariance) + IV (boundary filtering) + III (vertical transmission). DSH chỉ thêm *granularity* chẩn đoán.
+
+3. **Structural distance có thể không đo được chính xác trong mọi trường hợp:** Trong một số hệ, structural distance giữa một yếu tố và invariant pattern có thể ambiguous hoặc multi-path. DSH không claim precision — nó claim *usefulness*: ngay cả ước lượng thô (gần / trung bình / xa) cũng cải thiện chẩn đoán so với flat model.
+
+4. **Không dùng DSH để claim "yếu tố sâu quan trọng hơn":** DSH-1 nói yếu tố gần invariant thay đổi *chậm hơn*, không nói nó *quan trọng hơn*. Cả yếu tố "sâu" và "nông" đều có thể critical cho sự sống còn của hệ trong những điều kiện khác nhau. Một yếu tố "nông" (vd: công nghệ thích nghi) có thể quyết định sống còn trong môi trường thay đổi nhanh.
+
+5. **BRIDGE-II-III constraint:** DSH-3 định nghĩa "depth" = structural distance, không phải ontological depth. Không có "Tier 1 essence" (svabhāva). Tất cả các tầng đều là saṃvṛtisat — quy ước thật, có causal efficacy nhưng không có inherent existence. Nếu bất kỳ ai dùng DSH để claim "dân tộc X có bản chất Y ở tầng sâu nhất" — họ đang dùng sai DSH.
+
+### 9.9 Trạng thái và Lộ trình (Status & Roadmap)
+
+```
+Trạng thái hiện tại: [empirical hypothesis] — DRAFT v1.0 (2026-06-09)
+  - Được hỗ trợ bởi: Phan Ngọc (STRONG) + Ashby (PARTIAL) + Anattā (PARTIAL)
+  - Đã qua: 3-round RCA × 5-Why × scoring gate 4.6/5
+  - Đã kiểm tra: BRIDGE-II-III compatibility (no svabhāva introduced)
+  - Đã kết nối với: Mệnh đề F (§2, F-A operationalization), Diagnosis Rubric
+
+Lộ trình kiểm chứng (Phase 2 — July-August 2026):
+  1. Áp dụng DSH cho ít nhất 2 hệ bản sắc không phải Việt Nam
+     (đề xuất: Do Thái diaspora, Yoruba — xem A02 biện minh quy nạp của Tiên Đề II)
+  2. Kiểm tra DSH-F1 và DSH-F2: có hệ nào vi phạm không?
+  3. So sánh structural distance estimates từ 3 quan sát viên độc lập
+     → inter-rater reliability check
+  4. Nếu DSH vượt qua 3 bước trên → nâng trạng thái lên [validated heuristic]
+  5. Nếu DSH thất bại ở bất kỳ bước nào → quay lại RCA, điều chỉnh hoặc bác bỏ
+
+Tài liệu liên quan:
+  - A05 (PLAN_RCA_REVIEW_audit_mach_re_phan_ngoc.md §MODIFICATION 2)
+  - CHECK_04 (audit_mach_re_phan_ngoc.md §5 — "phân tầng biểu hiện FAIL")
+  - GAP_01 (audit_mach_re_phan_ngoc.md §6 — "thiếu phân tầng bất biến")
+  - Q05, Q06 (câu hỏi mở về Lévi-Strauss và Ashby stratification)
+```
