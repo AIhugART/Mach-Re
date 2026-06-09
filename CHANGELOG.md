@@ -1,5 +1,17 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — Fix link hư `#cau-hoi-goc` trong `axioms.html` + `what.html` · RCA 5.0/5
+
+**Symptom:** 8 internal links (`<a href="#cau-hoi-goc">`) trong `axioms.html` (4) và `what.html` (4) trỏ đến anchor không tồn tại. Không có element nào mang `id="cau-hoi-goc"` trong cả hai file.
+
+**Root:** Heading "Câu hỏi gốc" (`<h2>` trong axioms, `<h3>` trong what) được viết nhưng không có `id` attribute. Internal link được thêm vào "Phạm vi" của từng tiên đề với giả định anchor đã tồn tại — không ai kiểm tra chéo sau khi viết link.
+
+**Fix:** Thêm `id="cau-hoi-goc"` vào heading "Câu hỏi gốc" trong cả hai file:
+- `axioms.html:108`: `<h2 id="cau-hoi-goc">Câu hỏi gốc</h2>`
+- `what.html:563`: `<h3 id="cau-hoi-goc">Câu hỏi gốc (R)</h3>`
+
+**RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1)
+
 ## 2026-06-09 — A11: Cơ Chế Lưu Trữ — Trang HTML phân tích kiến trúc lưu trữ của Mạch Rễ · RCA 5.0/5
 
 **Payload:** Tạo `luu_tru.html` — trang phân tích cơ chế lưu trữ của triết học Mạch Rễ (lưu cái gì, ở đâu, theo chiều nào, ghi ra sao, xử lý nhiễu thế nào). Tham khảo nội dung từ `raw/luu_tru.html` (Claude chat export), tái cấu trúc thành tài liệu chính thức với RCA gate, cross-reference hệ tiên đề canonical (`axiom_spec.md`), và tích hợp navigation.
