@@ -1,5 +1,35 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A08: Diagnosis Rubric "Đứt gãy" integration hoàn tất · RCA 4.0→4.8/5
+
+**Payload:** Hoàn tất A08 với 3 fix nhỏ (A08a/A08b/A08c) sau 3-round RCA. A08 ban đầu được tích hợp cùng commit A06 (thêm score band "Rễ đã đứt" + điều chỉnh range 1-4), nhưng 3-round RCA phát hiện 3 gap: (S1) derivation diagram thiếu F trong axioms.html, (S2) 6 rubric indicators không map đến A/B/C conditions của F, (S3) score band 1-4 không có differential diagnosis giữa recoverable crisis và approaching severance.
+
+**RCA (3-round × 5-Why × scoring gate):**
+
+- **A08a (diagram sync) — 4.8/5:** Root: A06 commit cập nhật `axiom_spec.md` diagram nhưng quên đồng bộ sang `axioms.html`. Fix: 1 dòng ASCII art.
+- **A08b (indicator→F mapping) — 4.6/5:** Root: audit plan dùng "ngưỡng" cho cả continuous score threshold lẫn discrete AND gate — conflating two mathematical types. Fix: explanatory `<div class="note">` bridge hai loại thang đo.
+- **A08c (differential diagnosis) — 4.4/5:** Root: pre-F rubric chỉ có "rễ nông" — không có khái niệm structural severance. Thêm F thay đổi ngữ nghĩa band 1-4 nhưng action text chưa cập nhật. Fix: 1 câu phân biệt A+C (phục hồi) vs A+B+C (đứt gãy).
+
+**Scoring (A08 overall — proposal rubric):**
+
+| Phase | C | D | F | CR | P | Avg |
+|-------|---|---|---|---|-----|-----|
+| A08a | 5 | 4 | 5 | 5 | 5 | **4.8** |
+| A08b | 5 | 3 | 5 | 5 | 5 | **4.6** |
+| A08c | 4 | 4 | 5 | 4 | 5 | **4.4** |
+| **Tổng** | | | | | | **4.6** |
+
+**Files changed:**
+- `axioms.html`: +F line in derivation diagram (l.371), đồng bộ với `axiom_spec.md:214`
+- `how.html`: +indicator→F mapping note (l.363-369); +differential diagnosis in score band 1-4 (l.380)
+- `CHANGELOG.md`: this entry
+
+**Verification:** (1) Diagram axioms.html ≡ axiom_spec.md — F đối xứng với VI. (2) Mapping note bridge continuous↔discrete, không overclaim. (3) Differential diagnosis dùng ngôn ngữ hedged ("nếu nghi ngờ"). (4) Tất cả link → axioms.html#F. (5) Score bands 5-12 untouched.
+
+**A08 status: COMPLETE** — đóng S1, S2, S3. Không cần mở lại.
+
+---
+
 ## 2026-06-09 — A06: Mệnh đề F (Failure Conditions / Điều Kiện Đứt Gãy) · RCA 5.0/5
 
 **Payload:** Thêm Mệnh đề F (Điều Kiện Đứt Gãy — "Đứt Khi Hết Cội") là derived proposition thứ 4 của Mạch Rễ, suy từ II+III+IV. F đóng GAP_02 (survivorship bias) — lỗ hổng triết học nghiêm trọng nhất được audit plan xác định. F độc lập với A05 (IIb/DSH), dùng toàn bộ khái niệm hiện có, không thêm primitive concept nào.
