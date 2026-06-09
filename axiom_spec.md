@@ -7,7 +7,7 @@
 
 > **Sơ đồ đánh số (đếm lại từ đầu, La Mã liên tục; nhãn chỉ tầng):**
 > - **Tiên Đề Cốt Lõi (Core Axiom): I, II, III, IV**
-> - **Mệnh Đề Dẫn Xuất (Derived Proposition): V, VI, VII**
+> - **Mệnh Đề Dẫn Xuất (Derived Proposition): V, VI, VII, F**
 > - **Meta-Tiên Đề (Meta-Axiom): VIII**
 
 ---
@@ -60,6 +60,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 | **K8** Hệ *tự quan sát / tự phê bình* chính mình (reflexive) | Suy từ object-level? KHÔNG (cần level-shift). Cần thiết cho R? → phụ thuộc scope (§5 Q1: scope tiến hóa → CẦN). | **Meta VIII** |
 | **K9** "Hấp thụ có định hướng" (directed absorption) | Suy được? **CÓ** — = biên giới nạp (IV) + pattern chi phối hướng tái tổ chức (II). Chữ ký II×IV. | **Cơ chế dẫn xuất** (không phải tiên đề) |
 | **K10** Hệ có *mục đích/telos* muốn tồn tại | Loại — "sống sót" là explanandum, không phải tiên đề. Hệ C (Anattā) chủ động bác telos cố định. | **BÁC** (no-telos finding) |
+| **K11** Điều kiện *đứt gãy* (failure conditions) — khi nào pattern không còn tái tạo được | Suy từ II+III+IV? **CÓ** — pattern bị tấn công trực tiếp (II) + trục dọc bị cắt (III) + tốc độ vượt ngưỡng biên giới (IV) → 3-condition AND gate. Đây là mặt trái của VI: nếu VI mô tả chuyển hóa thành công, F mô tả điều kiện chuyển hóa thất bại. | **Derived F** [II+III+IV] — RCA 5.0/5 (2026-06-09) |
 
 ---
 
@@ -144,7 +145,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ---
 
-### TẦNG DẪN XUẤT — 3 Mệnh Đề Dẫn Xuất (Derived Propositions): V, VI, VII
+### TẦNG DẪN XUẤT — 4 Mệnh Đề Dẫn Xuất (Derived Propositions): V, VI, VII, F
 
 #### Mệnh Đề V — Phân Tán Bản Thể (Distributed) · *"Giữ Mà Không Gom"* · **[từ I + II]**
 - **Suy:** Pattern (II) của mạng quan hệ (I) là thuộc tính toàn mạng → không lưu được tại node đơn → tập trung hóa invariant = single point of failure.
@@ -160,6 +161,28 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 - **Suy:** khi cả 4 Core vận hành, trật tự nổi lên *có hướng* = gradient trường F do toàn mạng tạo ra, không áp từ trung tâm. Tổng hợp, không thêm giả định.
 - **Ký hiệu (Notation Clarification):** "Gradient trường F" được dùng như *structural analogy* (loại suy cấu trúc), không phải formal claim (claim hình thức). Formal rendering tương đương: hệ biểu hiện attractor dynamics A(S) — quyết định cục bộ của tác nhân có xu hướng tiến về trạng thái tương thích với pattern toàn cục (II) mà không cần điều phối trung tâm. Nếu muốn formal treatment, tham khảo: Kauffman (NK landscapes), Weick (sensemaking attractors), hoặc Odum (energy field ecology).
 - **Triangulation:** B mạnh (self-organization, Weick organizing); C (duyên khởi → nổi lên không người điều khiển).
+
+---
+
+#### Mệnh Đề F — Điều Kiện Đứt Gãy (Failure Conditions) · *"Đứt Khi Hết Cội"* · **[từ II + III + IV]**
+- **Loại:** Derived Proposition (mệnh đề dẫn xuất). KHÔNG phải tiên đề mới — suy trực tiếp từ II+III+IV, không thêm primitive concept nào. **(RCA 5.0/5 — 2026-06-09.)**
+- **Phát biểu (VI):** Bất biến cấu trúc (bản sắc) của một hệ tập thể bị phá vỡ không thể phục hồi khi và chỉ khi đồng thời xảy ra ba điều kiện: **(A)** Pattern quan hệ cốt lõi (Tiên Đề II) bị tấn công trực tiếp — không chỉ nội dung bề mặt thay đổi, mà chính cấu trúc bất biến của quan hệ bị phá hủy; **(B)** Mạch cội dọc (Tiên Đề III) bị cắt đứt vật lý — thế hệ sau không còn tiếp xúc đủ với thế hệ trước để truyền pattern; **(C)** Tốc độ xâm nhập vượt ngưỡng tái cấu trúc của biên giới (Tiên Đề IV) — nội dung đến nhanh hơn khả năng tái tổ chức theo pattern nội tại.
+- **Phát biểu (EN):** The structural invariant (identity) of a collective system is irreversibly destroyed if and only if three conditions hold simultaneously: **(A)** The core relational pattern (Axiom II) is directly attacked — the invariant structure of relations itself is disrupted, not merely surface content; **(B)** The vertical temporal axis (Axiom III) is physically severed — successor generations no longer have sufficient contact with predecessor generations to transmit the pattern; **(C)** The rate of external intrusion exceeds the boundary's restructuring capacity (Axiom IV) — incoming content arrives faster than the system can reorganize it according to its internal pattern logic.
+- **Sơ đồ (3-condition AND gate):** `F(S, t) ≡ A(S, t) ∧ B(S, t) ∧ C(S, t)` — trong đó: A(S, t) ≡ core relational pattern (II) của S bị tấn công trực tiếp tại t; B(S, t) ≡ V-axis (III) của S bị cắt đứt vật lý tại t (gián đoạn truyền liên thế hệ); C(S, t) ≡ tốc độ thay đổi do xâm nhập > ngưỡng tái cấu trúc biên giới (IV) của S tại t. Ký hiệu `F` là *structural notation* (không phải formal formalism) — nhất quán với §2 notation clarification của VII.
+- **Phân biệt với biến đổi bình thường (differential diagnosis):**
+  - **Chỉ C xảy ra** (A=FALSE, B=FALSE, C=TRUE) → **BIẾN ĐỔI THÍCH NGHI (Adaptive Change):** pattern dao động tạm thời nhưng tái tạo được qua thế hệ tiếp theo. Đây là trường hợp bình thường của mọi hệ bản sắc sống — tương đương Mệnh Đề VI (Chuyển Hóa Nhiễu Loạn) vận hành thành công.
+  - **A và C xảy ra, B không xảy ra** (A=TRUE, B=FALSE, C=TRUE) → **KHỦNG HOẢNG CÓ THỂ PHỤC HỒI (Recoverable Crisis):** pattern bị thách thức nghiêm trọng nhưng vẫn có kênh truyền dọc để tái lập. Ví dụ: Nhà Hồ thất bại trong cải cách nhưng trục dọc (dân tộc, gia đình, làng xã) chưa bị cắt → Lê Lợi khôi phục được.
+  - **Cả ba A, B, C đồng thời** (A=TRUE, B=TRUE, C=TRUE) → **ĐỨT GÃY THỰC SỰ (True Severance):** pattern không còn tái tạo được. Hệ có thể giữ tên gọi / địa danh / hình thức nhưng bất biến cấu trúc đã chết.
+- **Triangulation [A·B·C]:** **A** (Phan Ngọc: ẩn dụ dây thăng bằng — "nếu trọng tâm rời khỏi sợi dây, lập tức ngã xuống" [tr.140]; "không thiếu gì những tộc người đã mất hẳn diện mạo" [tr.145]; Jewish diaspora resilience như phản ví dụ [tr.146]; Hồ/Nguyễn "rời bỏ truyền thống → nước mất nhà tan" [tr.408]) · **B** (Ashby: Requisite Variety destruction — khi variety-handling capacity bị vượt ngưỡng, hệ sụp đổ; structural analogue của Condition C) · C-có-điều-kiện (Anattā/Pratītyasamutpāda: nirodha — điều kiện chấm dứt của pháp duyên khởi; "cessation conditions" là structural analogue của F) — **~2.5/3**.
+- **5 tiêu chí:** Correct 5 · Deep 5 · Feasible 5 · Conflict-risk 5 · Preservation 5 → **5.0** (RCA 2026-06-09; chi tiết: xem CHANGELOG.md A06 entry).
+- **Điều kiện phản chứng:** SAI nếu tồn tại một cộng đồng đã trải qua đồng thời cả ba điều kiện (A ∧ B ∧ C) — pattern cốt lõi bị tấn công trực tiếp, trục dọc bị cắt đứt vật lý, và tốc độ xâm nhập vượt ngưỡng tái cấu trúc — nhưng bất biến cấu trúc vẫn tái tạo được sau đó qua ít nhất một thế hệ.
+- **Quan hệ với các tiên đề/mệnh đề khác:**
+  - **F là mặt trái của VI:** Mệnh Đề VI mô tả chuyển hóa *thành công* (ΔVariety > 0); F mô tả điều kiện chuyển hóa *thất bại* (ΔPattern = ∅). Cùng đầu vào (II+III+IV), hai kết quả đối xứng.
+  - **F cung cấp internal failure criterion cho VIII:** Tiên Đề VIII (phản tư) cần biết khi nào self-revision vượt ngưỡng thành identity discontinuity. F trả lời: khi Ràng buộc Liên tục của VIII bị vi phạm — MP(P_t) ≉ MP(P_{t+1}) — tương đương với F(S, t) = TRUE.
+  - **F đóng GAP_02 (survivorship bias):** Trước F, Mạch Rễ không phân biệt được "rễ nông đang phục hồi" với "rễ đã đứt không còn phục hồi được." F cung cấp tiêu chí phân biệt dựa trên internal structural logic, không phải external comparison.
+- **Prior-art:** Ashby (variety destruction), Phan Ngọc (quan sát thực nghiệm về đứt gãy văn hóa — Phần II "Giao lưu văn hóa"), Anattā (nirodha — cessation conditions). *Phân biệt:* Ashby nói variety collapse tổng quát; F đặc tả 3 điều kiện đồng thời cho hệ bản sắc tập thể, grounded trong cultural specifics của Phan Ngọc.
+- **Trạng thái nhận thức luận:** `[structural hypothesis]` — suy diễn hợp lệ từ II+III+IV; được hỗ trợ bởi ≥2 empirical cases từ Phan Ngọc (Hồ/Nguyễn failure pattern, Jewish diaspora resilience như phản ví dụ). Có thể bác bỏ (falsifiable) qua điều kiện phản chứng nêu trên.
+- **Đóng góp:** Extension (điều kiện đứt gãy từ internal structural logic — không có trong Ashby hay Anattā ở dạng 3-condition AND gate cho hệ bản sắc tập thể).
 
 ---
 
@@ -188,6 +211,7 @@ TẦNG CỐT LÕI (object-level)
       │    III (Mạch Cội Dọc)
       │     │
       │    IV (Biên Giới Động) ──→ VI (Chuyển Hóa) [II+III+IV]
+      │     │                      F  (Đứt Gãy)    [II+III+IV]
       │     │
       └─────┴──────────────────→ VII (Nổi Lên Có Hướng) [I+II+III+IV]
 ```
@@ -289,6 +313,7 @@ axioms:
   V:   {type: derived, depends_on: [I, II],    neo: [A, B, C]}
   VI:  {type: derived, depends_on: [II, III, IV], neo: [B, C]}
   VII: {type: derived, depends_on: [I, II, III, IV], neo: [B, C]}
+  F:   {type: derived, depends_on: [II, III, IV], neo: [A, B, "C-cond"], score: 5.0, rca_date: "2026-06-09"}
   VIII:{type: meta,    depends_on: [I, II, III, IV], neo: ["A-weak", "B-2nd-order", C]}
 
 issues_blocking_axioms:

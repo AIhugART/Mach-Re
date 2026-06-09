@@ -1,5 +1,60 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A06: Mệnh đề F (Failure Conditions / Điều Kiện Đứt Gãy) · RCA 5.0/5
+
+**Payload:** Thêm Mệnh đề F (Điều Kiện Đứt Gãy — "Đứt Khi Hết Cội") là derived proposition thứ 4 của Mạch Rễ, suy từ II+III+IV. F đóng GAP_02 (survivorship bias) — lỗ hổng triết học nghiêm trọng nhất được audit plan xác định. F độc lập với A05 (IIb/DSH), dùng toàn bộ khái niệm hiện có, không thêm primitive concept nào.
+
+**RCA (3-round × 5-Why × scoring gate 5.0/5):**
+
+- **R1 Symptom:** Mạch Rễ chỉ có case study thành công (1000 năm Bắc thuộc, 500kV, hòa giải Việt-Mỹ). Không có case study thất bại. Diagnosis Rubric có thang "rễ nông" nhưng không có ngưỡng "không còn rễ." Điều kiện phản chứng toàn hệ không vận hành được vì "áp lực đồng hóa tương đương" không có định nghĩa.
+- **R2 Mechanism:** (a) Không có lý thuyết về thất bại → mọi trường hợp mất bản sắc đều có thể rationalize hậu kiểm là "áp dụng I-IV chưa đủ" thay vì "I-IV không đủ để giải thích." (b) "Rễ nông đang phục hồi" và "rễ đã đứt" là hai trạng thái khác nhau về bản chất, đòi hỏi can thiệp khác nhau — gộp chung = chẩn đoán sai. (c) Thiếu internal failure conditions → falsification chỉ dựa trên external comparison không thể chuẩn hóa.
+- **R3 Root:** Mạch Rễ được suy từ câu hỏi "vì sao một số hệ SỐNG SÓT?" — nó tập trung tự nhiên vào cơ chế sinh tồn. Nhưng một lý thuyết hoàn chỉnh về sinh tồn phải xác định được khi nào sinh tồn THẤT BẠI — nếu không "sống sót" chỉ là phát biểu tautological: "hệ sống sót là hệ có những thứ cần để sống sót."
+
+**Scoring (proposal rubric — 5 tiêu chí):**
+
+| Criterion | Score | Rationale |
+|-----------|-------|-----------|
+| Correct | 5 | Survivorship bias là thật và kiểm chứng được. 3 điều kiện suy trực tiếp từ II+III+IV. |
+| Deep | 5 | Chạm gốc: F định nghĩa internal failure conditions, không chỉ external comparison. |
+| Feasible | 5 | KHÔNG cần IIb. Dùng toàn bộ khái niệm hiện có. |
+| Conflict-risk | 5 | Ashby: variety destruction; Anattā: nirodha (cessation conditions); Phan Ngọc: empirical grounding (dây thăng bằng, Do Thái, Hồ/Nguyễn). |
+| Preservation | 5 | Đóng lỗ hổng quan trọng nhất mà không thêm architectural complexity. |
+
+**F specification:**
+
+```
+Mệnh Đề F — Điều Kiện Đứt Gãy (Failure Conditions)
+Loại: Derived Proposition [II+III+IV]
+3-condition AND gate: F(S,t) ≡ A(S,t) ∧ B(S,t) ∧ C(S,t)
+
+  A: Core relational pattern (II) bị tấn công trực tiếp
+  B: V-axis (III) bị cắt đứt vật lý (gián đoạn truyền liên thế hệ)
+  C: Tốc độ xâm nhập > ngưỡng tái cấu trúc biên giới (IV)
+
+Phân biệt:
+  Chỉ C → Biến đổi thích nghi (bình thường)
+  A+C, không B → Khủng hoảng có thể phục hồi
+  Cả A+B+C → Đứt gãy thực sự
+
+Triangulation: A (Phan Ngọc: dây thăng bằng tr.140; tộc người mất diện mạo tr.145;
+  Jewish diaspora tr.146; Hồ/Nguyễn tr.408) · B (Ashby: variety destruction) ·
+  C-cond (Anattā: nirodha) — ~2.5/3
+Falsification: SAI nếu tồn tại cộng đồng trải qua A∧B∧C mà pattern vẫn tái tạo
+  được qua ≥1 thế hệ.
+```
+
+**Files changed:**
+- `axiom_spec.md`: +K11 derivation log entry; +F full spec (VI/EN phát biểu, 3-condition AND gate, differential diagnosis, triangulation, falsification, relation to VI & VIII); updated derivation diagram, YAML dependency graph, headers (3→4 derived propositions)
+- `axioms.html`: +F article display (between VII and VIII) with id="F" anchor, tier label (3→4), hero count (3→4)
+- `how.html`: +"⛔ Rễ đã đứt" score band (score 0) with F link; adjusted "Rễ nông trầm trọng" range (0–4 → 1–4); +CSS for severed band
+- `CHANGELOG.md`: this entry
+
+**Verification:** (1) F chỉ dùng khái niệm từ II, III, IV — không primitive concept mới. (2) Triangulation ~2.5/3 — vượt threshold 1.5. (3) Điều kiện phản chứng rõ ràng, falsifiable. (4) F đối xứng với VI: cùng đầu vào (II+III+IV), hai kết quả đối xứng (ΔVariety>0 vs ΔPattern=∅). (5) Diagnosis Rubric có ngưỡng "Đứt gãy" phân biệt rõ với "Rễ nông trầm trọng."
+
+**Dependency note:** F độc lập với A05 (IIb/DSH). A06 được execute TRƯỚC A05 theo MODIFICATION 1 của PLAN_RCA_REVIEW. A08 (Diagnosis Rubric update) tích hợp cùng lần này.
+
+---
+
 ## 2026-06-09 — `Zhang_Yimou_Spielberg_Hybrid_Screenplay_v2.md`: Canonical promotion + auto-trigger · RCA 5.0/5
 
 **Payload:** Replace v1 (`Zhang_Yimou_Spielberg_Hybrid_Screenplay.md`) with v2 (`_v2.md`) as canonical skill file referenced in CLAUDE.md §Screenplay & Creative Writing Rules. Mark v1 deprecated. Add "Luôn kích hoạt khi tạo kịch bản phim" to ensure the skill auto-triggers for all screenplay work.

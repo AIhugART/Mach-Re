@@ -122,6 +122,8 @@
     .score-band .range { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
     .score-band .status { font-size: .82rem; font-weight: 700; margin: 4px 0; }
     .score-band .action { font-size: .78rem; color: var(--text-muted); }
+    .score-band.severed { border: 2px solid #900; }
+    .score-band.severed .status { color: #900; font-weight: 800; }
     .score-band.s0 .status { color: #c03030; }
     .score-band.s1 .status { color: #c06020; }
     .score-band.s2 .status { color: #8a7030; }
@@ -359,8 +361,13 @@
     </div>
 
     <div class="score-bands">
+      <div class="score-band severed">
+        <div class="range">0</div>
+        <div class="status">⛔ Rễ đã đứt</div>
+        <div class="action">Cả 3 điều kiện F đồng thời (pattern cốt lõi bị tấn công + trục dọc bị cắt + tốc độ vượt ngưỡng) → không còn khả năng tự phục hồi nội tại. <a href="axioms.html#F" style="color:#900;font-weight:600">Xem Mệnh Đề F</a></div>
+      </div>
       <div class="score-band s0">
-        <div class="range">0–4</div>
+        <div class="range">1–4</div>
         <div class="status">Rễ nông trầm trọng</div>
         <div class="action">Nguy cơ tan rã bản sắc trong 1–2 thế hệ → Bắt đầu từ Thực hành 1</div>
       </div>
