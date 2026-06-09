@@ -1,5 +1,39 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A11: Cơ Chế Lưu Trữ — Trang HTML phân tích kiến trúc lưu trữ của Mạch Rễ · RCA 5.0/5
+
+**Payload:** Tạo `luu_tru.html` — trang phân tích cơ chế lưu trữ của triết học Mạch Rễ (lưu cái gì, ở đâu, theo chiều nào, ghi ra sao, xử lý nhiễu thế nào). Tham khảo nội dung từ `raw/luu_tru.html` (Claude chat export), tái cấu trúc thành tài liệu chính thức với RCA gate, cross-reference hệ tiên đề canonical (`axiom_spec.md`), và tích hợp navigation.
+
+**RCA (3-round × 5-Why × scoring gate 5.0/5):**
+
+- **R1 Symptom:** `raw/luu_tru.html` tồn tại dưới dạng raw chat export — nội dung triết học có giá trị nhưng chưa tích hợp vào kiến trúc tài liệu chính thức.
+- **R2 Mechanism:** Nội dung được sinh ra trong hội thoại nhưng không có slot trong cấu trúc 4W1H hiện tại. Câu hỏi "Mạch Rễ lưu data ở đâu?" là câu hỏi về cơ chế nội tại, không thuộc 4W1H.
+- **R3 Root:** Architectural gap — thiếu trang "cơ chế nội tại". Fix = tạo `luu_tru.html`, neo vào hệ tiên đề canonical, cross-reference `axiom_spec.md`.
+
+**5-Why trace:**
+```
+Q: Tại sao raw/luu_tru.html chưa được publish?
+  ↓ Why 1: Nội dung là chat export, chưa qua RCA gate + reformat.
+  ↓ Why 2: Chưa có quyết định đây là tài liệu chính thức.
+  ↓ Why 3: Câu hỏi "cơ chế lưu trữ" không nằm trong cấu trúc 4W1H gốc.
+  ↓ Why 4: 4W1H không có slot cho câu hỏi "cơ chế nội tại" (how it works internally).
+  ↓ Root: Architectural gap — cần tạo slot mới hoặc gắn vào slot có sẵn.
+```
+
+**Scoring (action rubric):**
+
+| Criterion | Score | Reason |
+|---|---|---|
+| Correct | 1 | Nội dung thực sự có giá trị — trả lời câu hỏi phổ biến về kiến trúc hệ thống |
+| Deep | 1 | Fix tận gốc architectural gap, không patch bề mặt |
+| Feasible | 1 | Tạo file HTML + thêm link nav, không đụng cấu trúc core |
+| Conflict-risk | 1 | Nội dung derived từ axiom canonical, không tạo claim mới |
+| Preservation | 1 | Bảng tổng hợp (phần mạnh nhất của raw) được giữ và nâng cấp |
+
+**Links added to:** `index.html` (nav card), `what.html` (footer + inline cross-ref tại Mệnh Đề V), `axioms.html` (footer), `axiom_3.html` (footer).
+
+**File mới:** `luu_tru.html` — bảng tổng hợp 9 hàng (mở rộng từ 7 hàng gốc trong raw), thêm cột "Tầng" (Core/Derived/Meta), thêm hàng "Ai quyết định ghi gì" và "Làm sao biết pattern còn đúng", thêm điều kiện bác bỏ, thêm RCA trace section.
+
 ## 2026-06-09 — A10: Trường ngữ nghĩa "nếp" — Sứ mệnh Việt hóa từ vựng triết học · RCA 5.0/5
 
 **Payload:** Thêm Core Principle mới vào CLAUDE.md: "Sứ mệnh Việt hóa — Từ vựng triết học thuần Việt". Thêm §10 vào `plan/dictionary_rule.md`: trường ngữ nghĩa "nếp" — bảng canonical 6 thuật ngữ, quy tắc chọn từ (4 mức ưu tiên), ranh giới phạm trù "nếp" ≠ "tập quán"/"tập tục".
