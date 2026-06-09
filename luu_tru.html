@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cơ Chế Lưu Trữ — Triết Học Mạch Rễ</title>
-  <meta name="description" content="Cơ chế lưu trữ của triết học Mạch Rễ: lưu cái gì, ở đâu, theo chiều nào, ghi ra sao, xử lý nhiễu thế nào — phân tích qua hệ tiên đề I–VII" />
+  <meta name="description" content="Cơ chế lưu trữ của triết học Mạch Rễ: từ thân xác đến biểu tượng, từ không gian đến ngôn ngữ, từ cơ chế ghi đến truy xuất — sắp xếp theo thứ tự khoa học nhận thức" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
   <style>
@@ -129,6 +129,72 @@
     .mech-card .ref a { color: var(--accent-light); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent-pale); }
     .mech-card .ref a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
+    /* ── LAYER CARD (for cognitive layers) ── */
+    .layer-grid { display: flex; flex-direction: column; gap: 24px; margin-top: 20px; }
+    .layer-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.04);
+      position: relative;
+    }
+    .layer-card .layer-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 6px;
+      padding: 3px 12px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      margin-bottom: 14px;
+    }
+    .layer-card .layer-badge.embodied { background: #5c3d2e; }
+    .layer-card .layer-badge.social   { background: #7a5c3e; }
+    .layer-card .layer-badge.symbolic { background: #8b6d4f; }
+    .layer-card h3 { margin: 0 0 8px; font-size: 1.1rem; color: var(--accent); }
+    .layer-card .subtitle { font-size: .82rem; color: var(--accent-light); margin-bottom: 14px; font-style: italic; }
+    .layer-card p { font-size: .9rem; margin: 0 0 8px; }
+    .layer-card ul { margin: 8px 0 12px 20px; }
+    .layer-card ul li { font-size: .9rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 4px; }
+    .layer-card ul li strong { color: var(--text-dark); }
+    .layer-card .ref { font-size: .78rem; color: var(--accent-light); margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+
+    /* ── DEPTH CHAIN ── */
+    .depth-chain {
+      background: linear-gradient(180deg, #fef9f0 0%, #faf3e8 100%);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .depth-chain .chain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .depth-chain .chain-item:last-child { border-bottom: none; }
+    .depth-chain .chain-num {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .depth-chain .chain-num.shallow { background: #c4956a; }
+    .depth-chain .chain-num.deep { background: #4a2c17; }
+    .depth-chain .chain-body { font-size: .9rem; line-height: 1.7; }
+    .depth-chain .chain-body strong { color: var(--accent); }
+
     /* ── TABLE ── */
     .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
     .styled-table th {
@@ -184,6 +250,26 @@
     }
     .rca-trace .score { font-weight: 700; color: #4a2c17; }
 
+    /* ── INTERACTION MATRIX ── */
+    .interaction-matrix {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    @media (max-width: 640px) {
+      .interaction-matrix { grid-template-columns: 1fr; }
+    }
+    .interaction-cell {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .interaction-cell .cell-icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .interaction-cell h4 { margin: 0 0 6px; font-size: .95rem; }
+    .interaction-cell p { font-size: .85rem; margin: 0; }
+
     /* ── BOTTOM NAV ── */
     .bottom-nav {
       max-width: 820px;
@@ -210,6 +296,25 @@
       color: var(--accent);
     }
 
+    /* ── COG-SCI FLOW ── */
+    .cog-flow {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 24px;
+      font-size: .8rem;
+      color: var(--accent-light);
+    }
+    .cog-flow .step {
+      background: var(--accent-pale);
+      padding: 4px 10px;
+      border-radius: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .cog-flow .arrow { color: var(--accent); font-weight: 700; }
+
     footer { background: #2d1a0a; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
     footer a { color: #e0c8a8; text-decoration: none; }
   </style>
@@ -231,45 +336,169 @@
 <div class="hero">
   <div class="tag">CƠ CHẾ NỘI TẠI</div>
   <h1>Mạch Rễ Lưu Trữ Thế Nào?</h1>
-  <p>Cơ chế lưu trữ theo nghĩa triết học bản thể học — không phải "lưu ở đâu" theo nghĩa vật lý, mà theo nghĩa cấu trúc tồn tại</p>
+  <p>Từ thân xác đến biểu tượng, từ không gian đến ngôn ngữ — kiến trúc lưu trữ phân tán của bản sắc tập thể, sắp xếp theo thứ tự khoa học nhận thức</p>
 </div>
 
 <div class="content">
 
-  <!-- SECTION 0: RCA TRACE -->
+  <!-- ====== RCA TRACE ====== -->
   <div class="rca-trace">
     <strong>🔍 RCA Trace:</strong> 3-round × 5-Why × scoring gate <span class="score">5.0/5</span><br/>
-    <strong>Round 1 — Symptom:</strong> raw/luu_tru.html tồn tại dưới dạng chat export chưa tích hợp vào kiến trúc tài liệu chính thức.<br/>
-    <strong>Round 2 — Mechanism:</strong> nội dung có giá trị nhưng không có slot trong cấu trúc 4W1H hiện tại.<br/>
-    <strong>Round 3 — Root:</strong> architectural gap — thiếu trang "cơ chế nội tại". Fix = tạo trang mới, neo vào hệ tiên đề canonical.<br/>
-    <strong>Nguồn tham khảo:</strong> <a href="raw/luu_tru.html" style="color:#8b5e3c;font-weight:600">raw/luu_tru.html</a> (chat export gốc) — nội dung đã được tái cấu trúc, cross-reference axiom_spec.md, và RCA-gate.
+    <strong>Round 1 — Symptom:</strong> <a href="raw/luu_tru.html" style="color:#8b5e3c;font-weight:600">raw/luu_tru.html</a> chứa 4 lượt Q&A nhưng luu_tru.html v1 chỉ tích hợp 2 lượt đầu (kiến trúc trừu tượng), bỏ sót 6 nhóm loại hình lưu trữ cụ thể và phân tích tương tác giữa chúng.<br/>
+    <strong>Round 2 — Mechanism:</strong> cấu trúc cũ theo logic kỹ thuật (what→where→how→retrieval) — phù hợp cho technical spec nhưng ngược với cách bộ não con người xử lý thông tin: từ cụ thể (thân xác, không gian) đến trừu tượng (nguyên lý, kiến trúc). Người đọc gặp claim trừu tượng ("pattern, not content") trước khi thấy ví dụ cụ thể.<br/>
+    <strong>Round 3 — Root:</strong> chat export được xử lý theo thứ tự thời gian hội thoại thay vì được tái cấu trúc theo trật tự khoa học nhận thức: <em>Embodied → Social → Symbolic → Abstract Architecture → Operational → Retrieval → Interaction → Meta</em>.<br/>
+    <strong>Fix:</strong> (1) Thêm 6 nhóm loại hình + tương tác nhóm + điểm nghẽn từ Q3–Q4 của raw; (2) Sắp xếp toàn bộ theo thứ tự khoa học nhận thức; (3) Cập nhật canonical terms từ dictionary_rule.md §9.<br/>
+    <strong>Nguồn tham khảo:</strong> <a href="raw/luu_tru.html" style="color:#8b5e3c;font-weight:600">raw/luu_tru.html</a> (chat export gốc, 4 lượt Q&A) — toàn bộ nội dung đã RCA-gate, cross-reference axiom_spec.md, và cập nhật canonical terms.
   </div>
 
-  <!-- SECTION 1: CORE ANSWER -->
-  <section>
-    <h2>🥡 Câu Trả Lời Cốt Lõi: Không Tập Trung — Phân Tán</h2>
+  <!-- ====== COGNITIVE FLOW ====== -->
+  <div class="cog-flow">
+    <span style="font-weight:700;color:var(--accent)">Trật tự khoa học nhận thức:</span>
+    <span class="step">Nhập Thể</span><span class="arrow">→</span>
+    <span class="step">Xã Hội</span><span class="arrow">→</span>
+    <span class="step">Biểu Tượng</span><span class="arrow">→</span>
+    <span class="step">Kiến Trúc</span><span class="arrow">→</span>
+    <span class="step">Vận Hành</span><span class="arrow">→</span>
+    <span class="step">Truy Xuất</span><span class="arrow">→</span>
+    <span class="step">Tương Tác</span><span class="arrow">→</span>
+    <span class="step">Phản Tư</span>
+  </div>
 
-    <div class="answer-box">
-      <div class="label">Nguyên lý nền tảng</div>
-      <blockquote>
-        <strong>Mệnh Đề V — Phân Tán Bản Thể — Giữ Mà Không Gom</strong> phát biểu rõ:
-        bất biến (invariant) của một hệ thống không thể được lưu giữ tập trung trong bất kỳ thành phần nào.
-        Nó chỉ tồn tại khi được phân tán vào toàn bộ cấu trúc quan hệ.
-        Tập trung hóa bất biến là điều kiện đủ để làm hệ thống dễ vỡ (fragile).
-      </blockquote>
+  <!-- ====================================================================== -->
+  <!-- §1: TẦNG NHẬP THỂ — EMBODIED STORAGE                                  -->
+  <!-- ====================================================================== -->
+  <section>
+    <h2>🧠 §1 — Tầng Nhập Thể: Lưu Trữ Qua Thân Xác & Không Gian</h2>
+
+    <p>Trong khoa học nhận thức, tầng nền tảng nhất của trí nhớ không phải ngôn ngữ — mà là <strong>trí nhớ thân xác</strong> (embodied memory) và <strong>trí nhớ không gian</strong> (spatial memory). Con người — đặc biệt là trẻ em — tiếp nhận pattern trước khi hiểu được ý nghĩa. Hành vi được định hình bởi môi trường vật lý trước khi được giải thích bằng lời.</p>
+    <p>Mạch Rễ lưu pattern vào ba kênh nhập thể — từ bề mặt đến chiều sâu:</p>
+
+    <!-- 1A: Physical Space (Group 3) -->
+    <div class="layer-grid">
+      <div class="layer-card">
+        <div class="layer-badge embodied">KHÔNG GIAN VẬT LÝ — Nhóm 3</div>
+        <h3>Môi trường buộc hành vi — dù không muốn cũng phải làm</h3>
+        <p class="subtitle">Kênh truyền: kiến trúc & địa lý — thân xác tiếp xúc vật lý</p>
+        <p>Không gian không trung tính. Nó <strong>ra lệnh</strong> cho cơ thể. Một người vào đình làng tự động hạ giọng, đi chậm, cúi đầu — không cần ai nhắc. Pattern được lưu trong chính cấu trúc vật lý buộc thân xác thực hiện hành vi nhất định mỗi khi bước vào.</p>
+        <ul>
+          <li><strong>Đình làng</strong> — không gian tập hợp quyết định cộng đồng. Mạch Rễ đề xuất phục hưng hội đồng làng như entry point cho nông thôn, với commons management: đình, ao, ruộng công.</li>
+          <li><strong>Bàn thờ gia tiên</strong> — vật lý hóa trục thời gian dọc ngay trong nhà. Mỗi ngày đi ngang qua, thân xác bị nhắc: con không sống một mình.</li>
+          <li><strong>Chùa, miếu, đền</strong> — không gian thờ tự là nơi pattern được "đọc" định kỳ. Phật giáo vào Việt Nam không thay thế tín ngưỡng bản địa mà hợp lưu — Bồ Tát Quan Âm mang hình dáng người mẹ.</li>
+        </ul>
+        <div class="ref">→ Neo: Tiên Đề III (Mạch Cội Dọc — không gian là "phần cứng" của trục V) · Tiên Đề IV (Ranh Giới Mềm — không gian thiêng là biên giới vật lý của pattern)</div>
+      </div>
+
+      <!-- 1B: Labor Practices (Group 5) -->
+      <div class="layer-card">
+        <div class="layer-badge embodied">THỰC HÀNH LAO ĐỘNG — Nhóm 5</div>
+        <h3>Thân xác nhớ khi trí nhớ quên</h3>
+        <p class="subtitle">Kênh truyền: tay nghề — làm cùng nhau, không dạy bằng lời</p>
+        <p>Kỹ thuật là bề mặt. Cái được lưu thật sự là <strong>cách người thợ tổ chức với nhau</strong> — ai dạy ai, ai kiểm tra ai, ai quyết định khi nào sản phẩm "đạt". Pattern quan hệ ngấm vào thân xác qua hành động lặp lại.</p>
+        <ul>
+          <li><strong>Nghề truyền thống</strong> (gốm, dệt, làng nghề) — truyền nghề = truyền nếp tổ chức. Không ai đọc sách để học làm gốm Bát Tràng.</li>
+          <li><strong>Canh tác cộng đồng</strong> — thuỷ lợi, đổi công, làm ruộng chung. Pattern phân tán trách nhiệm tập thể được lưu vào chu kỳ mùa vụ.</li>
+          <li><strong>Ẩm thực</strong> — ai nấu, ai ngồi đâu, ai được ăn trước. Mỗi bữa ăn là một lần thực hành cấu trúc quan hệ.</li>
+        </ul>
+        <div class="ref">→ Neo: Tiên Đề I (Quan Hệ Bản Thể — quan hệ thợ-trò, cha-con là đơn vị lưu trữ) · Tiên Đề V (Giữ Mà Không Gom — mỗi làng nghề là một cluster lưu trữ)</div>
+      </div>
+
+      <!-- 1C: Behavioral Reflexes (Group 6) -->
+      <div class="layer-card">
+        <div class="layer-badge embodied">PHẢN XẠ ỨNG XỬ — Nhóm 6</div>
+        <h3>Tầng sâu nhất và bền nhất — pattern đã thành vô thức</h3>
+        <p class="subtitle">Kênh truyền: thân xác vô thức — không qua ý thức, không cần "vật chứa" bên ngoài</p>
+        <p>Đây là lớp lưu trữ bền nhất: pattern đã <strong>ngấm vào tầng vô thức tập thể</strong>. Khi tất cả kênh khác đứt — ngôn ngữ mất, nghi lễ cấm, không gian phá, gia đình tan — lớp này vẫn còn, miễn là có môi trường kích hoạt.</p>
+        <p>Người Việt hải ngoại thế hệ thứ ba — không nói được tiếng Việt, không thực hành tôn giáo truyền thống — vẫn có những phản xạ hành vi và hệ giá trị mà bạn bè họ không có. Cái gì được truyền khi ngôn ngữ và nghi lễ không còn? <strong>Pattern đã thành phản xạ.</strong></p>
+        <p>Nhưng lớp này cũng mong manh nhất về mặt tái tạo: mất môi trường kích hoạt qua 2-3 thế hệ → phản xạ teo dần, không thể phục hồi.</p>
+        <div class="ref">→ Neo: Tiên Đề II (Nếp Bản Sắc — pattern tồn tại độc lập với nội dung biểu hiện) · Tiên Đề III (Mạch Cội Nguồn — phản xạ là bằng chứng mạnh nhất của trục V)</div>
+      </div>
     </div>
 
-    <p>Nói theo ngôn ngữ kỹ thuật: <strong>không có server trung tâm. Data được lưu như blockchain — trong toàn bộ mạng lưới node.</strong></p>
-
-    <p>Mệnh Đề V được dẫn xuất từ <strong>Tiên Đề I (Quan Hệ Bản Thể) + Tiên Đề II (Bất Biến Cấu Trúc)</strong>: nếu bản sắc được cấu thành bởi quan hệ (I), và cái bền là pattern của quan hệ đó (II), thì pattern là thuộc tính <em>toàn mạng</em> — không thể tập trung tại một node đơn lẻ mà không phá hủy chính cái làm nên nó. Hàm ý: <strong>phân tán ↔ bền (ít điểm gãy)</strong>; không chống mọi thiết chế tập trung — chỉ chống tập trung hóa bất biến.</p>
+    <div class="note">
+      <b>🧠 Góc nhìn khoa học nhận thức:</b> Ba kênh này tương ứng với ba mức độ của trí nhớ nhập thể (embodied memory) trong cognitive science: <strong>nhận thức không gian</strong> (spatial cognition — O'Keefe & Nadel 1978), <strong>trí nhớ quy trình</strong> (procedural memory — Cohen & Squire 1980), và <strong>trí nhớ ngầm</strong> (implicit memory — Schacter 1987). Điểm khác biệt của Mạch Rễ: ba mức độ này không chỉ là hiện tượng tâm lý cá nhân — chúng là <strong>hạ tầng phân tán của bản sắc tập thể</strong>.
+    </div>
   </section>
 
-  <!-- SECTION 2: WHAT IS STORED -->
+  <!-- ====================================================================== -->
+  <!-- §2: TẦNG XÃ HỘI — SOCIAL STORAGE                                      -->
+  <!-- ====================================================================== -->
   <section>
-    <h2>📦 Lưu Cái Gì? — Không Phải Nội Dung, Mà Là Pattern</h2>
+    <h2>👥 §2 — Tầng Xã Hội: Lưu Trữ Qua Quan Hệ & Nghi Lễ</h2>
 
+    <p>Từ không gian và thân xác, pattern tiến lên tầng xã hội — nơi <strong>cấu trúc quan hệ giữa người với người</strong> và <strong>hành động lặp lại có tổ chức</strong> trở thành vật chứa. Trong khoa học nhận thức, đây là tầng <strong>nhận thức phân tán</strong> (distributed cognition — Hutchins 1995) và <strong>trí nhớ tập thể</strong> (collective memory — Halbwachs 1925).</p>
+
+    <div class="layer-grid">
+      <!-- 2A: Social Structure (Group 4) -->
+      <div class="layer-card">
+        <div class="layer-badge social">CẤU TRÚC XÃ HỘI — Nhóm 4</div>
+        <h3>Mạng người bền hơn vật thể</h3>
+        <p class="subtitle">Kênh truyền: quan hệ người-người — mỗi tương tác là một lần ghi pattern</p>
+        <p>Pattern không được lưu trong đầu từng cá nhân — nó được lưu trong <strong>khoảng trống giữa</strong> các cá nhân. Cách hai người Việt chào nhau, từ chối nhau, giúp đỡ nhau — mỗi tương tác là một điểm lưu trữ. Tiếng Việt mã hóa cấu trúc quan hệ ngay trong ngữ pháp xưng hô: mỗi câu nói là một lần xác nhận vị trí trong mạng.</p>
+        <ul>
+          <li><strong>Gia đình đa thế hệ</strong> — bữa cơm là nơi pattern được tái diễn hàng ngày. Trước đây bản sắc được truyền qua môi trường sống: làng xã, nghi lễ, ca dao, bữa cơm gia đình.</li>
+          <li><strong>Mạng lưới dòng họ</strong> — cấu trúc phi tập trung: pattern phân tán vào nhiều node, không có điểm nghẽn đơn nhất.</li>
+          <li><strong>Hàng xóm láng giềng</strong> — niềm tin mạnh đến hàng xóm; đây vừa là cơ chế lưu trữ, vừa là giới hạn cấu trúc cần nâng cấp (Civic Trust Gap).</li>
+        </ul>
+        <div class="ref">→ Neo: Tiên Đề I (Quan Hệ Bản Thể — "có nhau mới có mình") · Tiên Đề V (Giữ Mà Không Gom — mỗi gia đình/dòng họ là một cluster lưu trữ)</div>
+      </div>
+
+      <!-- 2B: Rituals (Group 2) -->
+      <div class="layer-card">
+        <div class="layer-badge social">NGHI LỄ & TẬP TỤC — Nhóm 2</div>
+        <h3>Hành động lặp lại — không cần giải thích bằng lời</h3>
+        <p class="subtitle">Kênh truyền: hành động có cấu trúc, lặp lại định kỳ theo nhịp thời gian</p>
+        <p>Nghi lễ là <strong>công nghệ lưu trữ cổ xưa nhất</strong> của loài người. Trước khi có chữ viết, pattern được lưu vào hành động lặp lại — mỗi lần thực hiện là một lần "ghi đè" pattern lên thế hệ mới. Nghi lễ không cần giải thích; người tham gia <em>cảm</em> được pattern mà không cần ai nói.</p>
+        <ul>
+          <li><strong>Thờ cúng tổ tiên</strong> — cơ chế lưu trữ theo thời gian dọc: người sống liên tục "đọc" dữ liệu từ thế hệ đã qua qua nghi thức. Người chết không biến mất — họ vẫn hiện diện, được hỏi ý kiến, được mời ăn.</li>
+          <li><strong>Tín ngưỡng thờ Mẫu</strong> — "rễ trước khi có tên": hệ thống kết nối thời gian, tồn tại từ tiền sử.</li>
+          <li><strong>Nghi lễ vòng đời</strong> (giỗ, cưới, tang, đầy tháng, thôi nôi) — mỗi nghi lễ là một lần cộng đồng tập hợp và <strong>tái xác nhận</strong> pattern quan hệ.</li>
+          <li><strong>Giỗ họ, hương ước làng xã</strong> — lưu pattern quản trị cộng đồng phi tập trung.</li>
+        </ul>
+        <div class="ref">→ Neo: Tiên Đề III (Mạch Cội Dọc — nghi lễ là "điểm đọc" của trục V) · Tiên Đề IV (Ranh Giới Mềm — nghi lễ vận hành như biên giới thời gian: mở vào ngày giỗ, đóng vào ngày thường)</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>🧠 Góc nhìn khoa học nhận thức:</b> Tầng này vận hành theo cơ chế <strong>nhận thức phân tán</strong> (distributed cognition — Hutchins): pattern không nằm trong đầu một người, mà trong <strong>tương tác</strong> giữa người với người và giữa người với nghi lễ. Nghi lễ là <strong>external cognitive artifact</strong> — công cụ bên ngoài bộ não để lưu và truy xuất pattern. Đây cũng là điểm khác biệt giữa Mạch Rễ và Halbwachs: Halbwachs coi ký ức tập thể là nội dung được chia sẻ; Mạch Rễ coi nó là <strong>cấu trúc quan hệ tự tái tạo qua nghi lễ</strong> — tương thích với quan điểm enactive cognition (Varela, Thompson, Rosch 1991).
+    </div>
+  </section>
+
+  <!-- ====================================================================== -->
+  <!-- §3: TẦNG BIỂU TƯỢNG — SYMBOLIC STORAGE                                -->
+  <!-- ====================================================================== -->
+  <section>
+    <h2>🗣️ §3 — Tầng Biểu Tượng: Lưu Trữ Qua Ngôn Ngữ</h2>
+
+    <p>Đây là tầng <strong>dễ nhận ra nhất và cũng dễ mất nhất</strong>. Khi pattern đã tồn tại trong thân xác và quan hệ xã hội, ngôn ngữ là lớp vỏ bọc — nén triết lý vào câu ngắn, dễ nhớ, dễ truyền miệng. Nhưng ngôn ngữ <em>không phải</em> pattern; ngôn ngữ là <strong>con trỏ</strong> (pointer) trỏ đến pattern đã có sẵn trong các tầng sâu hơn.</p>
+
+    <div class="layer-card">
+      <div class="layer-badge symbolic">NGÔN NGỮ & LỜI NÓI — Nhóm 1</div>
+      <h3>Âm thanh và ngữ nghĩa — không cần chữ viết</h3>
+      <p class="subtitle">Kênh truyền: tai nghe, miệng nói — truyền miệng qua nhiều thế hệ</p>
+      <ul>
+        <li><strong>Ca dao, tục ngữ, thành ngữ</strong> — nén triết lý sinh tồn vào câu ngắn. "Dĩ bất biến ứng vạn biến" — câu nói ngắn gọn nhất diễn đạt nguyên lý: <em>"Dĩ bất biến"</em> = lõi; <em>"Ứng vạn biến"</em> = hấp thụ có định hướng (Tiên Đề IV).</li>
+        <li><strong>Truyện kể, truyền thuyết, cổ tích</strong> — mã hóa pattern vào cốt truyện. Không phải sự kiện lịch sử — mà là <em>cấu trúc ứng xử</em> được bọc vỏ câu chuyện.</li>
+        <li><strong>Hò, vè, hát ru</strong> — pattern được lưu vào nhịp điệu âm thanh, truyền vào não trẻ em trước khi chúng hiểu ý nghĩa.</li>
+      </ul>
+      <div class="ref">→ Neo: Tiên Đề II (Nếp Bản Sắc — ngôn ngữ thay đổi (Hán → Nôm → Quốc ngữ) nhưng pattern hấp thụ theo logic của lõi giữ nguyên)</div>
+    </div>
+
+    <div class="note">
+      <b>🧠 Góc nhìn khoa học nhận thức:</b> Ngôn ngữ trong Mạch Rễ đóng vai trò <strong>cognitive scaffolding</strong> (Vygotsky 1934): nó không chứa pattern, mà là <strong>giàn giáo</strong> để thế hệ mới leo lên và tự khám phá pattern đã có trong thân xác, không gian, và quan hệ xã hội. Đây là điểm cốt yếu: mất ngôn ngữ (ví dụ: thế hệ trẻ không còn hiểu ca dao) không làm mất pattern ngay lập tức — nhưng nó <strong>xóa giàn giáo</strong>, khiến thế hệ sau không có đường để tiếp cận pattern. Qua 2-3 thế hệ không có scaffolding → pattern trong các tầng sâu cũng teo dần.
+    </div>
+  </section>
+
+  <!-- ====================================================================== -->
+  <!-- §4: TẦNG KIẾN TRÚC — ABSTRACT ARCHITECTURE                             -->
+  <!-- ====================================================================== -->
+  <section>
+    <h2>🏛️ §4 — Tầng Kiến Trúc: Lưu Cái Gì, Ở Đâu, Theo Chiều Nào</h2>
+
+    <p>Sau khi đã thấy pattern vận hành cụ thể qua 6 kênh nhập thể–xã hội–biểu tượng, ta có thể trừu tượng hóa thành <strong>nguyên lý kiến trúc</strong>. Đây là ba câu hỏi nền tảng mà bất kỳ hệ thống lưu trữ nào cũng phải trả lời.</p>
+
+    <!-- 4A: What — Pattern, not content -->
     <div class="answer-box">
-      <div class="label">Tiên Đề II — Bất Biến Cấu Trúc — Nếp Bản Sắc</div>
+      <div class="label">Lưu Cái Gì? — Tiên Đề II — Nếp Bản Sắc — Structural Invariant</div>
       <blockquote>
         Bản sắc của một hệ thống là bất biến cấu trúc (invariant) của nó dưới mọi phép biến đổi nội dung.
         Thứ làm cho X là X không nằm trong nội dung của X — mà nằm trong <strong>cách X tổ chức quan hệ</strong> giữa các phần của nó.
@@ -277,7 +506,6 @@
     </div>
 
     <p>Hệ quả trực tiếp cho cơ chế lưu trữ:</p>
-
     <div class="ascii-box">Mất nội dung      ≠  Mất bản sắc
 Mất bản sắc       =  Mất cấu trúc quan hệ
 
@@ -285,43 +513,47 @@ Mất bản sắc       =  Mất cấu trúc quan hệ
 → Cái được "lưu" là <strong>kiểu quan hệ</strong> — cách người Việt tổ chức tương tác
    giữa cá nhân–gia đình–làng xã–tổ tiên–hậu thế</div>
 
-    <p>Ví dụ cụ thể: Tiên Đề II giải thích tại sao <strong>Việt hóa không phải mất bản sắc — mà là bằng chứng bản sắc</strong>. Nội dung thay đổi hoàn toàn (chữ Hán → chữ Nôm → chữ Quốc ngữ); khuôn mẫu quan hệ (pattern) giữ nguyên (hấp thụ theo logic của lõi, không theo logic của cái được hấp thụ).</p>
+    <p>Ví dụ canonical: <strong>Việt hóa không phải mất bản sắc — mà là bằng chứng bản sắc</strong>. Nội dung thay đổi hoàn toàn (chữ Hán → chữ Nôm → chữ Quốc ngữ); pattern giữ nguyên (hấp thụ theo logic của lõi, không theo logic của cái được hấp thụ).</p>
 
     <div class="note">
       <b>⚡ Phân biệt quan trọng:</b> "Nếp" (living pattern) ≠ "tập quán" (social convention). Tập quán thuộc phạm trù <em>quy ước xã hội</em> — có thể mất mà hệ thống vẫn tồn tại. "Nếp" thuộc phạm trù <em>cấu trúc sống</em> — mất đi thì hệ thống sụp đổ. Cơ chế lưu trữ lưu "nếp", không lưu "tập quán". → Xem <a href="plan/dictionary_rule.md" style="color:#a07830;font-weight:600">dictionary_rule.md §10</a>.
     </div>
-  </section>
 
-  <!-- SECTION 3: WHERE IS IT STORED -->
-  <section>
-    <h2>🗺️ Lưu Ở Đâu? — Phân Tán Khắp Mạng Lưới</h2>
+    <!-- 4B: Where — Distributed -->
+    <h3 style="margin-top:32px">🗺️ Lưu Ở Đâu? — Phân Tán Khắp Mạng Lưới</h3>
+
+    <div class="answer-box">
+      <div class="label">Tiên Đề V — Giữ Mà Không Gom — Distributed Storage</div>
+      <blockquote>
+        Bất biến (invariant) của một hệ thống không thể được lưu giữ tập trung trong bất kỳ thành phần nào.
+        Nó chỉ tồn tại khi được phân tán vào toàn bộ cấu trúc quan hệ.
+        Tập trung hóa bất biến là điều kiện đủ để làm hệ thống dễ vỡ (fragile).
+      </blockquote>
+    </div>
+
+    <p>Nói theo ngôn ngữ kỹ thuật: <strong>không có server trung tâm. Data được lưu như blockchain — trong toàn bộ mạng lưới node.</strong></p>
+    <p>Tiên Đề V được dẫn xuất từ Tiên Đề I + II: nếu bản sắc được cấu thành bởi quan hệ (I), và cái bền là pattern của quan hệ đó (II), thì pattern là thuộc tính <em>toàn mạng</em> — không thể tập trung tại một node đơn lẻ mà không phá hủy chính cái làm nên nó.</p>
 
     <div class="mech-grid">
       <div class="mech-card">
         <div class="q">Tầng vi mô</div>
         <h3>Trong từng mối quan hệ cụ thể</h3>
-        <p>Mỗi tương tác giữa hai người Việt — cách chào, cách hỏi thăm, cách từ chối, cách giúp đỡ — là một <strong>điểm lưu trữ</strong> của pattern. Mỗi lần một đứa trẻ được dạy "con chào bác đi", pattern được <em>ghi lại</em> vào một node mới của mạng.</p>
+        <p>Mỗi tương tác giữa hai người Việt — cách chào, cách hỏi thăm, cách từ chối, cách giúp đỡ — là một <strong>điểm lưu trữ</strong> của pattern.</p>
       </div>
       <div class="mech-card">
         <div class="q">Tầng trung mô</div>
         <h3>Trong thiết chế xã hội trung gian</h3>
-        <p>Gia đình, dòng họ, làng xã, hội nhóm — mỗi thiết chế là một <strong>cluster lưu trữ</strong> với bản sao pattern riêng. Không cluster nào giữ toàn bộ pattern, nhưng mỗi cluster giữ đủ để tái tạo nếu cần.</p>
+        <p>Gia đình, dòng họ, làng xã, hội nhóm — mỗi thiết chế là một <strong>cluster lưu trữ</strong> với bản sao pattern riêng.</p>
       </div>
       <div class="mech-card">
         <div class="q">Tầng vĩ mô</div>
         <h3>Trong cấu trúc quan hệ giữa các thiết chế</h3>
-        <p>Cách gia đình kết nối với làng xã, cách làng xã kết nối với quốc gia, cách người sống kết nối với tổ tiên — pattern được lưu ở <strong>khớp nối</strong> giữa các tầng, không phải trong bất kỳ tầng nào riêng lẻ.</p>
+        <p>Cách gia đình kết nối với làng xã, cách làng xã kết nối với quốc gia, cách người sống kết nối với tổ tiên — pattern được lưu ở <strong>khớp nối</strong> giữa các tầng.</p>
       </div>
     </div>
 
-    <p style="margin-top:16px;font-size:.85rem;color:var(--accent-light)">
-      → Neo: Tiên Đề I (Quan Hệ Bản Thể) · Mệnh Đề V (Phân Tán Bản Thể) · Neo C (Anattā — vô ngã → không trung tâm)
-    </p>
-  </section>
-
-  <!-- SECTION 4: ALONG WHICH DIMENSION -->
-  <section>
-    <h2>⏳ Lưu Theo Chiều Nào? — Thời Gian Dọc, Xuyên Thế Hệ</h2>
+    <!-- 4C: Temporal Dimension -->
+    <h3 style="margin-top:32px">⏳ Lưu Theo Chiều Nào? — Thời Gian Dọc, Xuyên Thế Hệ</h3>
 
     <div class="answer-box">
       <div class="label">Tiên Đề III — Mạch Cội Nguồn — Orthogonal Temporality</div>
@@ -333,7 +565,7 @@ Mất bản sắc       =  Mất cấu trúc quan hệ
       </blockquote>
     </div>
 
-    <p>Tức là: data không chỉ được lưu <em>ở chỗ nào đó trong không gian</em> — mà được lưu <em>theo chiều dọc của thời gian</em>, trong chuỗi quan hệ giữa các thế hệ.</p>
+    <p>Data không chỉ được lưu <em>ở chỗ nào đó trong không gian</em> — mà được lưu <em>theo chiều dọc của thời gian</em>, trong chuỗi quan hệ giữa các thế hệ.</p>
 
     <div class="ascii-box">Trục H (ngang):  ghi chép, văn bản, bảo tàng, database
                     → lưu được NỘI DUNG, không lưu được PATTERN
@@ -349,9 +581,80 @@ Nếu V = ∅ → drift không có neo → mất invariant.</div>
     </div>
   </section>
 
-  <!-- SECTION 5: RETRIEVAL -->
+  <!-- ====================================================================== -->
+  <!-- §5: TẦNG VẬN HÀNH — OPERATIONAL MECHANISMS                             -->
+  <!-- ====================================================================== -->
   <section>
-    <h2>📖 Cơ Chế Truy Xuất — Trí Nhớ Sống vs. Trí Nhớ Chết</h2>
+    <h2>⚙️ §5 — Tầng Vận Hành: Cơ Chế Ghi, Xử Lý Nhiễu & Tự Tổ Chức</h2>
+
+    <p>Đã biết lưu cái gì, ở đâu, theo chiều nào. Bây giờ: <strong>làm sao data mới được ghi vào? Làm sao nhiễu được xử lý? Và làm sao toàn bộ hệ thống tự vận hành mà không cần người điều khiển?</strong></p>
+
+    <!-- 5A: Write Mechanism -->
+    <h3>✍️ Cơ Chế Ghi — Hấp Thụ Có Định Hướng</h3>
+
+    <div class="answer-box">
+      <div class="label">Tiên Đề IV — Ranh Giới Mềm — Dynamic Boundaries</div>
+      <blockquote>
+        Hệ sống sót nhờ biên giới <strong>thấm chọn lọc</strong>: không tường kín (→ giòn), không mở toang (→ bị đồng hóa).
+        Nội dung đến được <em>tái tổ chức</em> theo logic pattern nội tại (Tiên Đề II).
+      </blockquote>
+    </div>
+
+    <p>Cơ chế ghi data mới vận hành qua <strong>3 bước</strong>:</p>
+    <div class="ascii-box">Bước 1 — Pattern Recognition (nhận dạng):
+  Tác nhân biên giới (con người, thiết chế, thực hành) đối chiếu
+  nội dung đến với mẫu pattern hiện có (từ Tiên Đề II).
+
+Bước 2 — Selective Integration (hấp thụ có chọn):
+  Nội dung được nạp nếu có thể làm tương thích với pattern;
+  nếu không, bị từ chối hoặc cách ly.
+
+Bước 3 — Pattern Update (cập nhật pattern):
+  Nếu nội dung nạp tích lũy làm dịch chuyển pattern,
+  Tiên Đề VIII (phản tư) kích hoạt tái đánh giá invariant.</div>
+
+    <p><strong>Hàm thẩm thấu có chọn lọc:</strong> κ(c) → 1 khi nội dung được hấp thụ và tái cấu trúc; κ(c) → 0 khi nội dung bị loại vì phá hủy Pattern. Biên giới cứng là điều kiện đủ để giảm đa dạng và tăng tính dễ vỡ.</p>
+
+    <div class="note">
+      <b>🗣️ Ví dụ canonical:</b> Người Việt học chữ Hán để viết tiếng Việt — không phải để trở thành người Hán. Đây là "hấp thụ có định hướng": tiếp nhận cái mới theo logic của lõi, không phải logic của cái được tiếp nhận.
+    </div>
+
+    <!-- 5B: Noise Processing -->
+    <h3 style="margin-top:32px">🔄 Cơ Chế Xử Lý Nhiễu — Không Xóa, Mà Chuyển Hóa</h3>
+
+    <div class="answer-box">
+      <div class="label">Tiên Đề VI — Hóa Nhiễu Thành Sức — Perturbation Transformation</div>
+      <blockquote>
+        Nhiễu vào qua biên giới (IV) → pattern tái tổ chức (II) → trong chiều mạch cội dọc (III) → tăng variety.
+        Đau thương được xử lý → trở thành thông tin cấu trúc làm giàu sự đa dạng.
+        Đau thương bị giữ → frozen state.
+      </blockquote>
+    </div>
+
+    <p><strong>Phân biệt quan trọng:</strong> Tiên Đề VI không nói "đau khổ là tốt" — nó nói: đau khổ <em>được xử lý</em> → tốt; đau khổ <em>bị giữ</em> → hại. Hòa giải là nhu cầu cấu trúc (structural necessity), không phải xa xỉ đạo đức.</p>
+
+    <p>Trong ngôn ngữ lưu trữ: <strong>nhiễu không bị xóa khỏi hệ thống — nó được chuyển hóa thành một phần của pattern.</strong> Đây là điểm khác biệt căn bản với mô hình lưu trữ máy tính (nơi nhiễu = bit lỗi cần sửa). Trong Mạch Rễ, nhiễu đã qua xử lý <em>làm giàu</em> cấu trúc thay vì làm hỏng nó.</p>
+
+    <!-- 5C: Self-Organization -->
+    <h3 style="margin-top:32px">🧭 Cơ Chế Tự Vận Hành — Nổi Lên Có Hướng</h3>
+
+    <div class="answer-box">
+      <div class="label">Tiên Đề VII — Nổi Lên Có Hướng — Directed Emergence</div>
+      <blockquote>
+        Hệ không có người điều khiển. Hành vi toàn cục <strong>nổi lên</strong> (emerges) từ tương tác của các
+        thành phần tuân theo pattern cục bộ. "Có hướng" không phải do có người lái —
+        mà do bất biến cấu trúc (Tiên Đề II) giới hạn không gian trạng thái khả dĩ.
+      </blockquote>
+    </div>
+
+    <p>Trong ngôn ngữ lưu trữ: toàn bộ hệ thống lưu trữ/phân tán/ghi/nhiễu vận hành mà không cần một node trung tâm ra lệnh. <strong>Ai/cái gì quyết định ghi gì?</strong> — Toàn mạng. Không có node trung tâm quyết định; mỗi node hành động theo pattern cục bộ, và trật tự toàn cục nổi lên từ tổng tương tác.</p>
+  </section>
+
+  <!-- ====================================================================== -->
+  <!-- §6: TẦNG TRUY XUẤT — RETRIEVAL                                        -->
+  <!-- ====================================================================== -->
+  <section>
+    <h2>📖 §6 — Tầng Truy Xuất: Trí Nhớ Sống vs. Trí Nhớ Chết</h2>
 
     <p>Lưu trữ là một chuyện — <strong>truy xuất được</strong> mới là chuyện khác. Cùng một data được lưu, nhưng nếu không còn truy xuất được (không còn tác động lên hành vi), thì data đó đã "chết" về mặt chức năng.</p>
 
@@ -369,138 +672,257 @@ Nếu V = ∅ → drift không có neo → mất invariant.</div>
     </div>
 
     <p style="margin-top:16px"><strong>Đây là sự phân biệt quan trọng về khả năng đọc data:</strong> Mạch Rễ không quan tâm đến việc "lưu được bao nhiêu" — mà quan tâm đến "bao nhiêu trong số đó còn sống." Một cộng đồng có thể có hàng nghìn di tích (trí nhớ chết) nhưng vẫn rễ nông nếu không còn trí nhớ sống.</p>
-  </section>
-
-  <!-- SECTION 6: WRITE MECHANISM -->
-  <section>
-    <h2>✍️ Cơ Chế Ghi — Hấp Thụ Có Định Hướng</h2>
-
-    <div class="answer-box">
-      <div class="label">Tiên Đề IV — Biên Giới Động — Ranh Giới Mềm</div>
-      <blockquote>
-        Hệ sống sót nhờ biên giới <strong>thấm chọn lọc</strong>: không tường kín (→ giòn), không mở toang (→ bị đồng hóa).
-        Nội dung đến được <em>tái tổ chức</em> theo logic pattern nội tại (Tiên Đề II).
-      </blockquote>
-    </div>
-
-    <p>Cơ chế ghi data mới vận hành qua <strong>3 bước</strong> (từ Tiên Đề IV):</p>
-
-    <div class="ascii-box">Bước 1 — Pattern Recognition (nhận dạng):
-  Tác nhân biên giới (con người, thiết chế, thực hành) đối chiếu
-  nội dung đến với mẫu pattern hiện có (từ Tiên Đề II).
-
-Bước 2 — Selective Integration (hấp thụ có chọn):
-  Nội dung được nạp nếu có thể làm tương thích với pattern;
-  nếu không, bị từ chối hoặc cách ly.
-
-Bước 3 — Pattern Update (cập nhật pattern):
-  Nếu nội dung nạp tích lũy làm dịch chuyển pattern,
-  Tiên Đề VIII (phản tư) kích hoạt tái đánh giá invariant.</div>
-
-    <p><strong>Hàm thẩm thấu có chọn lọc:</strong> κ(c) → 1 khi nội dung được hấp thụ và tái cấu trúc; κ(c) → 0 khi nội dung bị loại vì phá hủy Pattern. Biên giới cứng là điều kiện đủ để giảm đa dạng và tăng tính dễ vỡ.</p>
 
     <div class="note">
-      <b>🗣️ Ví dụ canonical:</b> Người Việt học chữ Hán để viết tiếng Việt — không phải để trở thành người Hán. Đây là "hấp thụ có định hướng": tiếp nhận cái mới theo logic của lõi, không phải logic của cái được tiếp nhận. Cơ chế này là <em>chữ ký</em> của Tiên Đề II × IV (nằm trong Mệnh Đề VI), không phải tiên đề riêng.
+      <b>🧠 Góc nhìn khoa học nhận thức:</b> Phân biệt trí nhớ sống/chết tương ứng với <strong>accessibility vs. availability</strong> trong tâm lý học trí nhớ (Tulving & Pearlstone 1966). Data "có sẵn" (available) trong hệ thống không có nghĩa là "có thể truy xuất" (accessible). Một cộng đồng mất khả năng truy xuất pattern — dù pattern vẫn tồn tại đâu đó trong bảo tàng hay sách vở — là một cộng đồng đã mất trí nhớ sống.
     </div>
   </section>
 
-  <!-- SECTION 7: NOISE PROCESSING -->
+  <!-- ====================================================================== -->
+  <!-- §7: TẦNG TƯƠNG TÁC — INTERACTION BETWEEN 6 GROUPS                     -->
+  <!-- ====================================================================== -->
   <section>
-    <h2>🔄 Cơ Chế Xử Lý Nhiễu — Không Xóa, Mà Chuyển Hóa</h2>
+    <h2>🔗 §7 — Tầng Tương Tác: 6 Nhóm Chồng Chéo, Độc Lập, Hỗ Trợ</h2>
 
-    <div class="answer-box">
-      <div class="label">Mệnh Đề VI — Chuyển Hóa Nhiễu Loạn — Hóa Nhiễu Thành Sức</div>
-      <blockquote>
-        Nhiễu vào qua biên giới (IV) → pattern tái tổ chức (II) → trong chiều mạch cội dọc (III) → tăng variety.
-        Đau thương được xử lý → trở thành thông tin cấu trúc làm giàu sự đa dạng.
-        Đau thương bị giữ → frozen state.
-      </blockquote>
+    <p>Sáu nhóm loại hình — ba tầng nhập thể (không gian, lao động, phản xạ), hai tầng xã hội (cấu trúc, nghi lễ), một tầng biểu tượng (ngôn ngữ) — không phải 6 cái hộp riêng biệt. Chúng cùng tồn tại trong <strong>ba mối quan hệ đồng thời</strong>:</p>
+
+    <!-- Three Dimensions -->
+    <div class="interaction-matrix">
+      <div class="interaction-cell">
+        <div class="cell-icon">🪞</div>
+        <h4>Chồng Chéo — Về Nội Dung</h4>
+        <p>Cùng một sự kiện lưu data vào nhiều nhóm đồng thời. <strong>Là thiết kế dự phòng</strong>, không phải lỗi. Ví dụ: bữa cơm Tết đồng thời là nghi lễ (cúng), không gian (bàn thờ), cấu trúc xã hội (ai ngồi đâu), ngôn ngữ (câu chúc), thực hành (nấu món gì), và phản xạ (đứa trẻ <em>cảm</em> được khi nào nên im).</p>
+      </div>
+      <div class="interaction-cell">
+        <div class="cell-icon">🧱</div>
+        <h4>Độc Lập — Về Cơ Chế</h4>
+        <p>Mỗi nhóm dùng kênh truyền dẫn <strong>khác hoàn toàn</strong>. Khi một kênh đứt, kênh khác vẫn chạy. Đây là lý do 1.000 năm Bắc thuộc không xóa được bản sắc Việt: người Hán phá được một số kênh, nhưng không phá đồng thời được tất cả sáu.</p>
+      </div>
+      <div class="interaction-cell">
+        <div class="cell-icon">🪜</div>
+        <h4>Hỗ Trợ — Theo Chiều Sâu</h4>
+        <p>Sáu nhóm tạo thành <strong>chuỗi đào sâu</strong>: nhóm sau chứa nhóm trước và bền hơn. Nhóm nông (ngôn ngữ) dễ tiếp cận nhưng dễ mất; nhóm sâu (phản xạ) khó tiếp cận nhưng bền nhất.</p>
+      </div>
     </div>
 
-    <p><strong>Phân biệt quan trọng:</strong> Mệnh Đề VI không nói "đau khổ là tốt" — nó nói: đau khổ <em>được xử lý</em> → tốt; đau khổ <em>bị giữ</em> → hại. Hòa giải là nhu cầu cấu trúc (structural necessity), không phải xa xỉ đạo đức.</p>
+    <!-- Depth Chain -->
+    <h3>⛓️ Chuỗi Đào Sâu — Từ Nông Đến Sâu, Từ Dễ Mất Đến Bền Nhất</h3>
 
-    <p>Trong ngôn ngữ lưu trữ: <strong>nhiễu không bị xóa khỏi hệ thống — nó được chuyển hóa thành một phần của pattern.</strong> Đây là điểm khác biệt căn bản với mô hình lưu trữ máy tính (nơi nhiễu = bit lỗi cần sửa). Trong Mạch Rễ, nhiễu đã qua xử lý <em>làm giàu</em> cấu trúc thay vì làm hỏng nó.</p>
+    <div class="depth-chain">
+      <div class="chain-item">
+        <div class="chain-num shallow">1</div>
+        <div class="chain-body"><strong>Ngôn ngữ & Lời nói</strong> ← dễ nhận ra, dễ dạy, dễ mất nhất. Bị phá hủy bởi: mất ngôn ngữ, cấm truyền miệng.</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">↓</div>
+        <div class="chain-body" style="color:var(--accent-light);font-style:italic">nuôi dưỡng — nghi lễ mất ý nghĩa nếu không còn ai giải thích được ca dao gắn với nó</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">2</div>
+        <div class="chain-body"><strong>Nghi lễ & Tập tục</strong> ← gắn vào nhịp thời gian, bền hơn. Bị phá hủy bởi: cấm tụ tập, phá nghi lễ.</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">↓</div>
+        <div class="chain-body" style="color:var(--accent-light);font-style:italic">cần môi trường — phá đình thì hội làng không có chỗ, nghi lễ chết dù không ai cấm</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">3</div>
+        <div class="chain-body"><strong>Không gian vật lý</strong> ← buộc hành vi dù không muốn. Bị phá hủy bởi: phá đình chùa, đô thị hóa xóa cấu trúc làng.</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">↓</div>
+        <div class="chain-body" style="color:var(--accent-light);font-style:italic">định hình — không gian tạo điều kiện cho cấu trúc xã hội tồn tại</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">4</div>
+        <div class="chain-body"><strong>Cấu trúc xã hội</strong> ← mạng người bền hơn vật thể. Bị phá hủy bởi: phá vỡ gia đình, giải tán dòng họ.</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">↓</div>
+        <div class="chain-body" style="color:var(--accent-light);font-style:italic">luyện tập — nghề truyền thống không thể truyền nếu mạng quan hệ thầy-trò, cha-con đứt</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">5</div>
+        <div class="chain-body"><strong>Thực hành lao động</strong> ← thân xác nhớ khi trí nhớ quên. Bị phá hủy bởi: công nghiệp hóa, mất nghề truyền thống.</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num">↓</div>
+        <div class="chain-body" style="color:var(--accent-light);font-style:italic">thấm vào — tích lũy đủ lâu, pattern không còn là hành động có ý thức mà thành phản xạ</div>
+      </div>
+      <div class="chain-item">
+        <div class="chain-num deep">6</div>
+        <div class="chain-body"><strong>Phản xạ ứng xử</strong> ← bền nhất, khó nhất để phá, khó nhất để xây lại. Chỉ mất khi không có môi trường kích hoạt qua nhiều thế hệ.</div>
+      </div>
+    </div>
+
+    <!-- Independence Table -->
+    <h3 style="margin-top:32px">🛡️ Bảng Độc Lập Cơ Chế — Mỗi Kênh Bị Phá Bởi Tác Nhân Khác Nhau</h3>
+
+    <table class="styled-table">
+      <thead>
+        <tr><th>Nhóm</th><th>Kênh truyền</th><th>Bị phá hủy bởi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1. Ngôn ngữ & Lời nói</strong></td><td>Âm thanh — tai nghe, miệng nói</td><td>Mất ngôn ngữ, cấm truyền miệng</td></tr>
+        <tr><td><strong>2. Nghi lễ & Tập tục</strong></td><td>Hành động lặp lại định kỳ</td><td>Cấm tụ tập, phá nghi lễ</td></tr>
+        <tr><td><strong>3. Không gian vật lý</strong></td><td>Kiến trúc — thân xác tiếp xúc</td><td>Phá đình chùa, đô thị hóa xóa cấu trúc làng</td></tr>
+        <tr><td><strong>4. Cấu trúc xã hội</strong></td><td>Quan hệ người-người</td><td>Phá vỡ gia đình, giải tán dòng họ</td></tr>
+        <tr><td><strong>5. Thực hành lao động</strong></td><td>Tay nghề — làm cùng nhau</td><td>Công nghiệp hóa, mất nghề truyền thống</td></tr>
+        <tr><td><strong>6. Phản xạ ứng xử</strong></td><td>Thân xác vô thức</td><td>Chỉ mất khi không có môi trường kích hoạt qua nhiều thế hệ</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:16px">Kết luận: <strong>sáu nhóm là sáu lớp giáp phủ lên nhau — không phải sáu cái hộp riêng biệt.</strong> Ba tính chất (chồng chéo, độc lập, hỗ trợ) cùng tồn tại, không mâu thuẫn. Chồng chéo về nội dung là <em>thiết kế dự phòng</em>; độc lập về cơ chế là <em>khả năng sống sót</em>; hỗ trợ theo chiều sâu là <em>cấu trúc phân tầng</em>.</p>
   </section>
 
-  <!-- SECTION 8: SYNTHESIS TABLE -->
+  <!-- ====================================================================== -->
+  <!-- §8: ĐIỂM NGHẼN & CHUỖI SUY YẾU — BOTTLENECK & CASCADE                 -->
+  <!-- ====================================================================== -->
   <section>
-    <h2>📊 Tổng Hợp — Toàn Bộ Kiến Trúc Lưu Trữ</h2>
+    <h2>⚠️ §8 — Điểm Nghẽn & Chuỗi Suy Yếu</h2>
+
+    <h3>🔴 Nhóm 3 (Không Gian Vật Lý) Là Nút Cổ Chai</h3>
+
+    <p>Trước đây bản sắc được truyền qua môi trường sống — làng xã, nghi lễ, ca dao, bữa cơm gia đình. Môi trường đó <strong>đã thay đổi triệt để trong một thế hệ</strong>. Và nhóm 3 — không gian vật lý — là nút cổ chai: khi nó sụp đổ, nó kéo theo các nhóm khác theo chuỗi domino:</p>
+
+    <div class="ascii-box">Đô thị hóa phá Nhóm 3 (không gian làng xã, đình, bàn thờ trong căn hộ nhỏ)
+    → kéo theo Nhóm 2 suy yếu (nghi lễ mất chỗ)
+    → Nhóm 5 mất môi trường (không còn làm cùng nhau)
+    → Nhóm 4 phân tán (gia đình hạt nhân, dòng họ tan)
+    → Nhóm 1 còn lại nhưng rỗng nghĩa (ca dao không còn ngữ cảnh để hiểu)
+    → Nhóm 6 không được kích hoạt
+    → teo dần sau 2-3 thế hệ</div>
+
+    <p>Đây chính xác là <strong>Why 3</strong> trong RCA 5-Whys: triết lý dân tộc Việt chưa bao giờ được ngôn ngữ hóa — nó sống trong hành vi, không sống trong văn bản. Khi môi trường hành vi biến mất, triết lý mất đi phương tiện truyền tải.</p>
+
+    <div class="note">
+      <b>🧠 Hàm ý cho bảo tồn:</b> Nếu chỉ cứu Nhóm 1 (dạy ca dao, mở lớp tiếng Việt) mà không khôi phục môi trường kích hoạt cho các nhóm sâu hơn — thì giống như <strong>cứu con trỏ nhưng xóa vùng nhớ nó trỏ đến</strong>. Ngôn ngữ không có không gian, nghi lễ, và cấu trúc xã hội để neo vào → rỗng nghĩa → chết trong 1-2 thế hệ. Ngược lại: nếu khôi phục được không gian và cấu trúc xã hội, ngôn ngữ và nghi lễ có thể tự mọc lại.
+    </div>
+
+    <!-- 4 Structural Gaps -->
+    <h3 style="margin-top:32px">🔍 Bốn Hạn Chế Cấu Trúc (Structural Gaps)</h3>
+    <p>Mạch Rễ v1.0 giải thích xuất sắc cách dân tộc tồn tại — nhưng không đủ để xây dựng tương lai. Bốn hạn chế cấu trúc được xác định từ RCA:</p>
+
+    <table class="styled-table">
+      <thead>
+        <tr><th>Hạn chế</th><th>Mô tả</th><th>Liên quan đến nhóm</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Civic Trust Gap</strong></td><td>Niềm tin chỉ đến hàng xóm, không kéo dài đến thiết chế và người lạ</td><td>Nhóm 4 (Cấu trúc xã hội)</td></tr>
+        <tr><td><strong>Self-Criticism Gap</strong></td><td>Thiếu cơ chế tự hỏi tập thể "Phải chăng chúng ta đang sai?"</td><td>Toàn hệ thống — cần Tiên Đề VIII</td></tr>
+        <tr><td><strong>Public Goods Gap</strong></td><td>Rễ nuôi gia đình nhưng không tự nhiên mở rộng đến tài sản công</td><td>Nhóm 3 (Không gian) + Nhóm 5 (Thực hành)</td></tr>
+        <tr><td><strong>Institutional Building Gap</strong></td><td>Giỏi quan hệ cá nhân, yếu xây dựng thiết chế bền vững</td><td>Nhóm 4 (Cấu trúc xã hội)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====================================================================== -->
+  <!-- §9: TỔNG HỢP — SYNTHESIS TABLE                                        -->
+  <!-- ====================================================================== -->
+  <section>
+    <h2>📊 §9 — Tổng Hợp: Toàn Bộ Kiến Trúc Lưu Trữ</h2>
 
     <table class="styled-table">
       <thead>
         <tr>
           <th>Câu hỏi</th>
           <th>Cơ chế</th>
-          <th>Tiên đề / Mệnh đề</th>
+          <th>Tiên đề</th>
           <th>Tầng</th>
+          <th>Tầng KC Nhận Thức</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>Lưu cái gì?</strong></td>
-          <td>Pattern quan hệ (nếp), không phải nội dung</td>
-          <td>Tiên Đề II — Bất Biến Cấu Trúc</td>
-          <td>Core</td>
+          <td><strong>Lưu vào đâu? (kênh cụ thể)</strong></td>
+          <td>6 nhóm: Không gian, Lao động, Phản xạ, Cấu trúc XH, Nghi lễ, Ngôn ngữ</td>
+          <td>Tiên Đề I, III, V</td>
+          <td>—</td>
+          <td>Nhập Thể → Xã Hội → Biểu Tượng</td>
         </tr>
         <tr>
-          <td><strong>Lưu ở đâu?</strong></td>
+          <td><strong>Lưu cái gì?</strong></td>
+          <td>Pattern quan hệ (nếp), không phải nội dung</td>
+          <td>Tiên Đề II — Nếp Bản Sắc</td>
+          <td>Core</td>
+          <td>Kiến Trúc</td>
+        </tr>
+        <tr>
+          <td><strong>Lưu ở đâu? (nguyên lý)</strong></td>
           <td>Phân tán khắp mạng lưới quan hệ — không tập trung</td>
-          <td>Mệnh Đề V — Phân Tán Bản Thể</td>
-          <td>Derived (từ I+II)</td>
+          <td>Tiên Đề V — Giữ Mà Không Gom</td>
+          <td>Derived</td>
+          <td>Kiến Trúc</td>
         </tr>
         <tr>
           <td><strong>Lưu theo chiều nào?</strong></td>
           <td>Thời gian dọc (trục V) — xuyên thế hệ</td>
           <td>Tiên Đề III — Mạch Cội Nguồn</td>
           <td>Core</td>
+          <td>Kiến Trúc</td>
         </tr>
         <tr>
           <td><strong>Ghi data mới?</strong></td>
-          <td>Hấp thụ có định hướng qua biên giới động (3 bước: nhận dạng → tích hợp → cập nhật)</td>
-          <td>Tiên Đề IV — Biên Giới Động</td>
+          <td>Hấp thụ có định hướng qua biên giới động (3 bước)</td>
+          <td>Tiên Đề IV — Ranh Giới Mềm</td>
           <td>Core</td>
+          <td>Vận Hành</td>
         </tr>
         <tr>
           <td><strong>Xử lý nhiễu?</strong></td>
           <td>Chuyển hóa — không xóa, không đóng băng</td>
-          <td>Mệnh Đề VI — Chuyển Hóa Nhiễu Loạn</td>
-          <td>Derived (từ II+III+IV)</td>
-        </tr>
-        <tr>
-          <td><strong>Truy xuất được không?</strong></td>
-          <td>Trí nhớ sống (còn tác động) vs. trí nhớ chết (bảo tồn nhưng không tác động)</td>
-          <td>Khái niệm nền tảng (từ what.html)</td>
-          <td>—</td>
+          <td>Tiên Đề VI — Hóa Nhiễu Thành Sức</td>
+          <td>Derived</td>
+          <td>Vận Hành</td>
         </tr>
         <tr>
           <td><strong>Hệ thống tự vận hành?</strong></td>
           <td>Nổi lên có hướng từ trường lực tổng hợp của toàn mạng</td>
-          <td>Mệnh Đề VII — Nổi Lên Có Hướng</td>
-          <td>Derived (từ I+II+III+IV)</td>
+          <td>Tiên Đề VII — Nổi Lên Có Hướng</td>
+          <td>Derived</td>
+          <td>Vận Hành</td>
         </tr>
         <tr>
-          <td><strong>Ai/cái gì quyết định ghi gì?</strong></td>
-          <td>Toàn mạng — không có node trung tâm quyết định (hệ quả của phân tán)</td>
-          <td>Mệnh Đề V + VII</td>
-          <td>Derived</td>
+          <td><strong>Truy xuất được không?</strong></td>
+          <td>Trí nhớ sống (còn tác động) vs. trí nhớ chết (bảo tồn nhưng không tác động)</td>
+          <td>Khái niệm nền tảng</td>
+          <td>—</td>
+          <td>Truy Xuất</td>
+        </tr>
+        <tr>
+          <td><strong>6 nhóm tương tác thế nào?</strong></td>
+          <td>Chồng chéo (dự phòng) + Độc lập (sống sót) + Hỗ trợ (phân tầng)</td>
+          <td>Tiên Đề I, III, V</td>
+          <td>—</td>
+          <td>Tương Tác</td>
+        </tr>
+        <tr>
+          <td><strong>Điểm yếu nhất?</strong></td>
+          <td>Nhóm 3 (Không gian) là nút cổ chai — đứt kéo domino</td>
+          <td>Tiên Đề III, IV</td>
+          <td>—</td>
+          <td>Phản Tư</td>
         </tr>
         <tr>
           <td><strong>Làm sao biết pattern còn đúng?</strong></td>
           <td>Tự phản tư — hệ áp chính Tiên Đề I–IV lên bản thân nó</td>
           <td>Tiên Đề VIII — Tự Nhìn Thấy Mình</td>
           <td>Meta</td>
+          <td>Phản Tư</td>
         </tr>
       </tbody>
     </table>
 
     <div class="note" style="margin-top:20px">
-      <b>🔗 Ghi chú:</b> Bảng này là bản mở rộng từ bảng gốc trong <a href="raw/luu_tru.html" style="color:#a07830;font-weight:600">raw/luu_tru.html</a>. Đã bổ sung: cột "Tầng" (Core/Derived/Meta), hàng "Ai quyết định ghi gì", hàng "Làm sao biết pattern còn đúng" (neo vào Tiên Đề VIII). Tất cả cross-reference đã được kiểm tra khớp với <a href="axiom_spec.md" style="color:#a07830;font-weight:600">axiom_spec.md</a>.
+      <b>🔗 Ghi chú:</b> Bảng này là bản mở rộng toàn diện từ bảng gốc trong <a href="raw/luu_tru.html" style="color:#a07830;font-weight:600">raw/luu_tru.html</a>. Bổ sung: cột "Tầng KC Nhận Thức" (neo vào trật tự khoa học nhận thức), hàng "6 nhóm tương tác", hàng "Điểm yếu nhất". Tất cả cross-reference đã được kiểm tra khớp với <a href="axiom_spec.md" style="color:#a07830;font-weight:600">axiom_spec.md</a> và canonical terms từ <a href="plan/dictionary_rule.md" style="color:#a07830;font-weight:600">dictionary_rule.md §9</a>.
     </div>
   </section>
 
-  <!-- SECTION 9: ONE-SENTENCE SUMMARY -->
+  <!-- ====================================================================== -->
+  <!-- §10: MỘT CÂU TÓM GỌN                                                   -->
+  <!-- ====================================================================== -->
   <section>
-    <h2>🌿 Một Câu Tóm Gọn</h2>
+    <h2>🌿 §10 — Một Câu Tóm Gọn</h2>
 
     <div class="answer-box" style="border-left-color:var(--accent)">
       <blockquote style="font-size:1.15rem">
@@ -518,15 +940,18 @@ Mạch Rễ:        Mạng quan hệ → Pattern → Nếp → Thực hành số
                 (phân tán, cấu trúc, dòng chảy, không thể khôi phục nếu mất mạng)</div>
   </section>
 
-  <!-- SECTION 10: FALSIFICATION -->
+  <!-- ====================================================================== -->
+  <!-- §11: ĐIỀU KIỆN BÁC BỎ                                                  -->
+  <!-- ====================================================================== -->
   <section>
-    <h2>🔬 Điều Kiện Bác Bỏ</h2>
+    <h2>🔬 §11 — Điều Kiện Bác Bỏ</h2>
     <p>Mô hình lưu trữ này <strong>sai</strong> nếu:</p>
     <div class="answer-box">
       <blockquote>
-        (1) Tồn tại một hệ bản sắc tập thể sống sót lâu dài mà invariant của nó <strong>được lưu tập trung</strong> tại một thành phần đơn lẻ (bác bỏ Mệnh Đề V).<br/><br/>
+        (1) Tồn tại một hệ bản sắc tập thể sống sót lâu dài mà invariant của nó <strong>được lưu tập trung</strong> tại một thành phần đơn lẻ (bác bỏ Tiên Đề V).<br/><br/>
         (2) Tồn tại một hệ bản sắc tập thể mà toàn bộ pattern có thể được truyền <strong>chỉ qua trục H</strong> (văn bản, database) — không cần trục V (bác bỏ Tiên Đề III).<br/><br/>
-        (3) Tồn tại một hệ bản sắc tập thể sống sót mà <strong>không có cơ chế biên giới chọn lọc</strong> — mở toang hoặc tường kín hoàn toàn (bác bỏ Tiên Đề IV).
+        (3) Tồn tại một hệ bản sắc tập thể sống sót mà <strong>không có cơ chế biên giới chọn lọc</strong> — mở toang hoặc tường kín hoàn toàn (bác bỏ Tiên Đề IV).<br/><br/>
+        (4) Tồn tại một hệ bản sắc tập thể mà pattern có thể được truyền <strong>chỉ qua một kênh đơn độc</strong> — không cần dự phòng chồng chéo giữa các nhóm (bác bỏ mô hình 6 nhóm).
       </blockquote>
     </div>
     <p style="font-size:.85rem;color:var(--text-muted)">→ Điều kiện bác bỏ được định nghĩa vận hành qua <a href="what.html#falsification" style="color:var(--accent-light);font-weight:600">Khung EAP (5 chiều)</a> — xem what.html#falsification.</p>
