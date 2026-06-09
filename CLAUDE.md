@@ -157,6 +157,26 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 10. **Avoid negatively evaluative wording** — không dùng "logical fallacy", "mistake", "wrong" khi nói về hệ khác. Dùng "scope boundary", "category boundary", "not implied by this framework".
 11. **Author metadata** — file trong `papers/` (không nằm trong `public_documents/`) thêm dòng đầu: `Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/`
 
+### Screenplay & Creative Writing Rules (RCA finding 2026-06-09)
+
+> Điểm RCA: 5.0/5 (3-round × 5-Why × scoring gate). Áp dụng khi viết, sửa, hoặc review bất kỳ screenplay, story beat, character breakdown, hoặc opening image brief nào trong `publish/movie_script/`.
+
+**Tier 1 — Project-specific frameworks (đọc trước khi viết):**
+
+| Framework | File | Khi nào |
+|---|---|---|
+| **Zhang-Spielberg Hybrid** | `publish/movie_script/Zhang_Yimou_Spielberg_Hybrid_Screenplay.md` | **Bắt buộc đọc.** 5 core principles (beauty as argument, silence over dialogue, individual small / weight enormous, loss without villain, acceptance as bravery), story architecture (3-act structure with precise emotional markers), character construction (3-layer: surface → personal wound → generational wound), scene-level guidelines (dialogue 3-pass reduction, silence as content, color as emotional score, objects as emotional proxies), tonal calibration, 5 output formats, 12-item checklist. |
+| **Canonical 10 Slate** | `publish/movie_script/ideas/canonical_10_slate_v1.md` | 10 kịch bản đã RCA-gated (tất cả 5.0/5) — tham khảo ví dụ về cách Tiên Đề III vận hành như cấu trúc drama (không phải theme). Mỗi entry gồm: 3-round RCA, scoring rubric, cinematic mechanism, world & characters, central image, present-day problem. |
+
+**Tier 2 — Quy tắc bắt buộc:**
+
+1. **RCA trước khi viết idea mới** — mọi screenplay idea phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5, dùng rubric 5 tiêu chí: (C1) Axiom 3 core, (C2) Cinematic specificity, (C3) Everyday problem, (C4) Vietnamese rootedness, (C5) Originality gap.
+2. **Show, don't tell** — Tiên Đề III không bao giờ được giải thích trong lời thoại. Nó là cấu trúc sinh drama, không phải theme/message.
+3. **Antagonist as system** — kẻ phản diện là lực lượng kinh tế / xã hội / lịch sử / tập quán, không phải cá nhân ác.
+4. **Specificity over universality** — không "truyền thống vs. hiện đại", mà là "cái bát sứ cụ thể này mà bà ngoại dùng để chia cháo."
+5. **Constraint set** — Không chính trị · Không tôn giáo · UK/US cinematic language · Bối cảnh Việt Nam · Tiên Đề III là cấu trúc (không phải chủ đề).
+6. **RCA traceability** — mọi screenplay entry phải ghi rõ 3-round RCA trace và điểm scoring, theo format chuẩn trong canonical slate.
+7. **Falsification condition** — mỗi idea phải có điều kiện bác bỏ rõ ràng (khi nào idea fail).
 
 ### Document contract rules
 
@@ -166,7 +186,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **MACH_RE** (2361 symbols, 2546 relationships, 44 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **MACH_RE** (1794 symbols, 1987 relationships, 44 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 

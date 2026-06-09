@@ -1,5 +1,24 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — `CLAUDE.md`: Thêm Screenplay & Creative Writing Rules section · RCA 5.0/5
+
+**Hành động:** Thêm section mới vào CLAUDE.md — Screenplay & Creative Writing Rules — với Tier 1 (Zhang-Spielberg Hybrid framework + Canonical 10 Slate reference) và Tier 2 (7 quy tắc bắt buộc cho screenplay writing). Quyết định qua 3-round RCA × 5-Why × scoring gate.
+
+**RCA (3-round × 5-Why × scoring):**
+
+- **R1 Symptom:** CLAUDE.md có Paper & Publication Rules (Tier 1/2/3) nhưng không có routing cho screenplay/creative writing — dù project đã phát triển lượng lớn nội dung điện ảnh (Zhang-Spielberg skill 206 dòng, Canonical 10 Slate 659 dòng, 5 file ideas).
+- **R2 Mechanism:** MACH_RE dùng screenplay như phương tiện applied Tiên Đề III — không phải creative writing thông thường. Thiếu routing → agent không kích hoạt skill khi cần → chất lượng output không được guarantee bởi methodology đã thiết kế.
+- **R3 Root:** CLAUDE.md thiếu structural parity giữa academic writing và creative cinematic writing — Paper Rules có routing đầy đủ, Screenplay Rules không tồn tại → **bất đối xứng cấu trúc**.
+- **Scoring:** Correct 5 · Deep 5 · Feasible 5 · Conflict-risk 5 · Preservation 5 → **5.0/5 → ADD.**
+
+**Section mới gồm:**
+- Tier 1: Zhang-Spielberg Hybrid framework (bắt buộc đọc) + Canonical 10 Slate (reference)
+- Tier 2: 7 quy tắc (RCA gate cho idea mới, show-don't-tell, antagonist as system, specificity, constraint set, RCA traceability, falsification condition)
+
+**Files changed:** `CLAUDE.md` only (addition thuần túy, không sửa/xóa gì).
+
+---
+
 ## 2026-06-08 — `axiom_spec.md` P5: ISSUE-08 (triangulation protocol) + YAML dependency graph · RCA ≥ 4/5
 
 **Hành động:** Phase 5 (optional). ISSUE-08: thêm triangulation protocol (forward-only) với 5-step scoring procedure. YAML dependency graph cho machine readability.
