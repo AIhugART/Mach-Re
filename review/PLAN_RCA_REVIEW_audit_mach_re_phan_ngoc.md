@@ -23,7 +23,7 @@ status            : COMPLETE — ready for implementation
 
 ## EXECUTIVE SUMMARY
 
-**Verdict: Audit plan is structurally sound but needs 5 modifications before execution.**
+**Verdict: Audit plan is structurally sound but needs 4 modifications before execution.**
 
 The audit plan correctly identifies 3 real philosophical gaps (GAP_01–03) and 8 verifiable checkpoints (CHECK_01–08). However, the 3-round RCA reveals that:
 
@@ -33,7 +33,7 @@ The audit plan correctly identifies 3 real philosophical gaps (GAP_01–03) and 
 
 3. **PROPOSAL_03 (Amendment IV) is partially tautological** — the proposed "practical criterion" restates the problem rather than solving it. Needs reformulation.
 
-4. **The audit misses a key self-check** — it doesn't verify whether its own proposals pass the independence test and triangulation check that Mạch Rễ itself requires.
+4. **The audit already self-limits adequately** — LIMIT_01-03, hypothesis footer, and Section 9 open questions provide sufficient self-scoping. A10 (self-audit section) was proposed then dropped (RCA 2.8/5: category error — audit proposals are single-anchor hypotheses, not axioms).
 
 5. **Dependency chain A05→A06→A07 is fragile** — if IIb is rejected or significantly modified, the entire proposal stack collapses. Each proposal should be independently evaluable.
 
@@ -275,7 +275,7 @@ TRADE-OFF 3: Immediate actionability vs. Philosophical completeness
 
 ---
 
-## 4. REVISED PLAN — 5 MODIFICATIONS
+## 4. REVISED PLAN — 4 MODIFICATIONS
 
 ### MODIFICATION 1: Break the dependency chain (CRITICAL)
 
@@ -348,20 +348,15 @@ consistent with Phan Ngọc's observations and general systems theory.
 
 This makes IV falsifiable without claiming to have a universal decision algorithm.
 
-### MODIFICATION 4: Add a self-audit section (LOW)
-
-**Change:** Add a brief section to the audit plan: "Self-Check — Does This Audit Obey Mạch Rễ's Own Rules?" verifying that proposals pass independence test, triangulation check, and falsification condition check.
-
-**Rationale:** The audit correctly demands traceability from Mạch Rễ. It should model the same rigor. This is not just cosmetic — it forces each proposal to justify its status (axiom vs. heuristic vs. empirical hypothesis) before being drafted.
-
-### MODIFICATION 5: Revised priority and phasing (STRUCTURAL)
+### MODIFICATION 4: Revised priority and phasing (STRUCTURAL)
 
 **Change:** Two-phase execution instead of flat priority list.
 
 **Phase 1 — "Close the Critical Gaps" (June 2026, ~2 weeks)**
 ```
-Week 1: A01 (page references) + A02 (formalization justification) + A03 (Phần 3 statement)
+Week 1: A01 (page references) ✅ + A02 (formalization justification) + A03 (Phần 3 statement)
 Week 2: A06 (Failure Conditions draft) + A08 (Diagnosis Rubric update)
+Note: A10 (self-audit) dropped per RCA 2.8/5 — audit plan is single-anchor, not axiom-building; existing LIMIT_01-03 + hypothesis footer + Section 9 already provide self-limitation.
 Deliverable: Mạch Rễ v2.1 — traceable, transparent, with failure conditions
 ```
 
@@ -388,7 +383,7 @@ Deliverable: Mạch Rễ v2.2 — with diagnostic heuristics, operational IV, pe
 | A07 | Reformulate Tiên Đề IV operational definition | 2 | LOW | A06 | GAP_03 | 8-16h |
 | A08 | Cập nhật Diagnosis Rubric với ngưỡng "Đứt gãy" | 1 | MEDIUM | A06 | GAP_02 | 4-8h |
 | A09 | Peer review độc lập cho A05, A06, A07 | 2 | HIGH | A05-A07 | Toàn bộ | Variable |
-| A10 | **NEW**: Self-audit section — proposals pass Mạch Rễ's own rules? | 1 | MEDIUM | — | S4 | 2-4h |
+| ~~A10~~ | ~~Self-audit section~~ — **DROPPED** (RCA 2.8/5: category error — audit proposals are single-anchor hypotheses, not axioms; triangulation ≥2/3 rule does not apply) | — | — | — | — | — |
 
 ---
 
@@ -419,8 +414,9 @@ SC5 — Operational IV  : Tiên Đề IV's description includes operational indi
                          (generational time, structural consistency, observable
                          outcomes) that make the claim falsifiable. (A07 complete)
 
-SC6 — Self-consistency: Audit plan includes self-check section confirming its
-                         proposals obey Mạch Rễ's methodological rules. (A10 complete)
+SC6 — Self-consistency: ~~Audit plan includes self-check section...~~ **DROPPED** (see A10 RCA).
+                         Audit plan already self-limited via LIMIT_01-03 + hypothesis
+                         footer + Section 9 open questions.
 ```
 
 ### 6.2 Regression Tests
@@ -518,7 +514,7 @@ Q10 : [NEW] If Phan Ngọc's own text does NOT contain explicit failure
 | D2: Rescope IIb → DSH (heuristic, not axiom) | Avoids svabhāva risk, maintains universality, reduces conflict with Ashby/Anattā | 4.6/5 |
 | D3: Reformulate Amendment IV as operational definition | Current proposal (decision tree) doesn't resolve tautology. Operational indicators do. | 4.4/5 |
 | D4: Two-phase execution | Phase 1 closes critical gaps fast; Phase 2 handles complex proposals with peer review | 4.8/5 |
-| D5: Add self-audit section (A10) | Methodological symmetry — audit should obey rules it enforces | 4.2/5 |
+| D5: ~~Add self-audit section (A10)~~ **DROPPED** | RCA re-evaluation 2.8/5: audit plan is single-anchor (Phan Ngọc only); applying triangulation ≥2/3 to its proposals is a category error — proposals are gap-fill hypotheses, not axiom claims. Existing LIMIT_01-03 + hypothesis footer + Section 9 already sufficient. | ~~4.2/5~~ → 2.8/5 |
 | D6: Keep CHECK_04 and CHECK_07 findings but modify their actions | Gaps are real; proposed fixes need adjustment, not the diagnosis | 4.0/5 |
 
 All decisions pass ≥ 4/5 threshold → proceed.
@@ -605,7 +601,7 @@ pattern as a TESTABLE HYPOTHESIS from Phan Ngọc, not as the definition of IV.
 | **IIb status** | New core axiom (Tiên Đề IIb) | Diagnostic Stratification Heuristic (not axiom) |
 | **F status** | Derived, dependent on IIb | Derived, independent, grounded in II+III+IV |
 | **IV fix** | Decision tree with "practical criterion" | Operational definition with observable indicators + empirical hypothesis |
-| **Self-audit** | None | A10: self-check against Mạch Rễ's own rules |
+| **Self-audit** | Proposed then dropped (RCA 2.8/5) | N/A — existing LIMIT_01-03 + hypothesis footer sufficient |
 | **Risk management** | Implicit | Explicit risk register with 6 identified risks |
 | **Phasing** | None | Phase 1 (2 weeks, critical gaps) + Phase 2 (6 weeks, deepening) |
 | **Minimum viable** | Not specified | A01+A02+A03+A06+A08 = minimum to move verdict PARTIAL→PASS |
@@ -618,12 +614,9 @@ pattern as a TESTABLE HYPOTHESIS from Phan Ngọc, not as the definition of IV.
 ```
 IMMEDIATE (this week):
   1. [x] Execute A01 — add chapter/section references to all Phan Ngọc citations
-         in axioms.html, what.html, how.html (DONE 2026-06-09: 10 citations across
-         axiom_spec.md, axioms.html, what.html, how.html — all mapped to
-         Phần I Chương I tr.17-20 / Chương II / Phần II)
+         (DONE 2026-06-09: 10 citations across 4 files)
   2. [ ] Execute A02 — draft "Biện minh formalization" paragraph for Tiên Đề II
   3. [ ] Execute A03 — add Phần 3 transparency statement
-  4. [ ] Execute A10 — add self-audit section to audit plan
 
 NEXT WEEK:
   5. [ ] Execute A06 — draft Mệnh đề F (Failure Conditions) as derived proposition
