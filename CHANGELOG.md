@@ -1,5 +1,41 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — `Zhang_Yimou_Spielberg_Hybrid_Screenplay.md`: RCA review × Mạch Rễ — 7 structural edits · RCA ≥ 4/5
+
+**Hành động:** Review `rev.txt` phát hiện 3 FAIL + 4 PARTIAL trong skill file. Dùng 3-round RCA × 5-Why × scoring gate ≥ 4/5 để quyết định từng edit. Tất cả 7 edits đạt 5.0/5 → applied. Bổ sung cơ chế cấu trúc dùng Mạch Rễ axioms làm structural backbone, không phải loose analogy.
+
+**RCA (3-round × 5-Why × scoring) — root cause of all FAIL/PARTIAL findings:**
+
+- **R1 Symptom:** Skill file mô tả aesthetic outcomes (output) nhưng thiếu structural mechanisms (cơ chế). 3 FAIL: không có tension map giữa Zhang-Spielberg, color system phẳng, system antagonist thiếu embodiment. 4 PARTIAL: midpoint rationale, character layer tension, silence examples, output format examples.
+- **R2 Mechanism:** Skill file treat Zhang-Spielberg như hai palette blendable thay vì hai hệ thống cấu trúc trực giao. Mỗi FAIL trace về cùng một pattern: mô tả kết quả thẩm mỹ → không mô tả cơ chế sản sinh.
+- **R3 Root:** Skill file xây trên kết quả (output aesthetic) thay vì xây trên cơ chế (tại sao hai hệ thống tạo ra kết quả đó). Không nhận diện Zhang và Spielberg như hai trục trực giao (V⊥H — Axiom III) cần governance mechanism (Axiom IV) thay vì blending.
+
+**7 edits applied (all scored 5.0/5 via independent 3-round RCA):**
+
+| # | Edit | RCA Score | Mạch Rễ anchor | Addresses |
+|---|------|-----------|----------------|-----------|
+| 1 | Structural Tension Map — V-axis (Zhang) vs H-axis (Spielberg), beat-level priority rule, conflict check | 5.0 | Axiom III (V⊥H) + Axiom IV (Dynamic Boundary) | FAIL_01, RCA_01 |
+| 2 | Color System Deepening — 4-register vocabulary with Zhang film anchors + 4 grammar rules (transition, collision, beat-triggered shift, direction) | 5.0 | Axiom II (Structural Invariance) + Axiom IV (Selective Integration) | FAIL_02 |
+| 3 | System Antagonist Embodiment Catalog — Zhang methods (4) + Spielberg methods (3) + hybrid combination example | 5.0 | Axiom I (Relational Ontology) + Axiom III (Vertical Temporality) | FAIL_03 |
+| 4 | Midpoint Rationale — H-axis peak before V-axis reassertion; Zhang's "too complete to open" technique | 5.0 | Axiom III (V⊥H structural hinge) | PARTIAL_01 |
+| 5 | Character Layer Tension — Surface vs Personal Wound (primary) + Personal vs Generational Wound (deepening) + construction test | 5.0 | Axiom VI (Perturbation Transformation) | PARTIAL_02 |
+| 6 | Weighted Checklist (3-tier) — HIGH (structural failure) / MEDIUM (weakened impact) / LOW (aesthetic) + priority rule | 5.0 | Axiom hierarchy: Core (I-IV) → Derived (V-VII) → Meta (VIII) | RCA_03 |
+| 7 | Film Anchor Reference — Zhang 3 modes + Spielberg 3 modes + calibration rule (default: Raise the Red Lantern × E.T.) | 5.0 | Axiom II (Pattern Recognition requires calibration examples) | RCA_02 |
+
+**Nguyên tắc áp dụng Mạch Rễ:**
+- Mỗi edit mapped to a specific axiom's **structural mechanism** — không phải loose analogy hay thematic borrowing
+- Tension Map dùng V⊥H như structural description của hai hệ thống trực giao, không phải metaphor
+- Color Grammar dùng Axiom IV (selective permeability) cho collision rule: màu tối (system/V-axis) frames màu sáng (human/H-axis)
+- System Antagonist dùng Axiom I: system manifests through relations (space, ritual, objects), not as entity
+- Midpoint dùng Axiom III: H-axis peak → V-axis reassertion là structural hinge, không phải aesthetic choice
+- Không Tiên Đề nào được namedrop trong skill file — chúng vận hành như structural backbone, không phải content
+
+**Files changed:** `publish/movie_script/Zhang_Yimou_Spielberg_Hybrid_Screenplay.md` (7 targeted extensions; all original content preserved; file grew from 206 → 355 lines). `CHANGELOG.md` (this entry).
+
+**Verification:** Skill file checked against CLAUDE.md Screenplay Rules (Tier 2, 7 quy tắc) — no contradictions. All 5 Core Principles preserved intact. No axiom names appear in scene-level or dialogue instructions. The V/H terminology is internal to the skill file's structural analysis sections — consistent with "show, don't tell" rule (Tiên Đề III as structure, not theme).
+
+---
+
 ## 2026-06-09 — `CLAUDE.md`: Thêm Screenplay & Creative Writing Rules section · RCA 5.0/5
 
 **Hành động:** Thêm section mới vào CLAUDE.md — Screenplay & Creative Writing Rules — với Tier 1 (Zhang-Spielberg Hybrid framework + Canonical 10 Slate reference) và Tier 2 (7 quy tắc bắt buộc cho screenplay writing). Quyết định qua 3-round RCA × 5-Why × scoring gate.

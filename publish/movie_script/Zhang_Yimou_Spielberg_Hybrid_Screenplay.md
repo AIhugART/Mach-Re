@@ -32,6 +32,49 @@ The climax is a moment of acceptance — but the character chooses to continue l
 
 ---
 
+## Structural Tension Map — Two Orthogonal Axes
+
+Zhang Yimou and Spielberg operate on two fundamentally different structural logics. They are not two palettes to blend — they are two **orthogonal axes** that must coexist at every beat. One axis leads; the other supports. The skill of the hybrid is knowing which axis leads when.
+
+### The Two Axes
+
+| Dimension | Zhang Yimou (V-axis) | Spielberg (H-axis) |
+|-----------|---------------------|---------------------|
+| **Central question** | "Who are we?" | "Who am I?" |
+| **Emotional unit** | Collective > individual | Individual > collective |
+| **Time** | Cyclical, returns | Linear, progresses |
+| **Ending** | Open, ambiguous | Closed (even if sad) |
+| **Audience role** | Observe, witness | Accompany, ache with |
+| **Emotion source** | Image → feeling | Character → feeling |
+| **History** | Space we inhabit | Pressure from outside |
+
+### Beat-Level Priority Rule
+
+At each story beat, one axis leads. The leading axis determines the scene's *structural logic* — what drives the scene forward. The supporting axis provides *texture* — what makes the scene feel human.
+
+| Beat | Leading Axis | Structural Logic |
+|------|-------------|------------------|
+| Opening Image | **Zhang (V)** | Establish the world's structural weight — architecture, nature, the system's physical presence |
+| Protagonist Introduction | **Spielberg (H)** | Individual specificity, ordinary humanity, the person we will care about |
+| Inciting Incident | **Zhang (V)** | External arrival reveals the system's pressure — the fault line that was always there |
+| Act 2A — World Expands | **Spielberg (H)** | Emotional connection, falling in love with these people and this world |
+| Midpoint | **Zhang (V)** | Perfect moment as structural argument — the H-axis peaks right before the V-axis reasserts |
+| Turning Point (Loss) | **Zhang (V) → Spielberg (H)** | System causes the loss (V); personal grief registers (H) |
+| Climax (Small Action) | **Spielberg (H) → Zhang (V)** | Individual choice (H) framed against the continuing world (V) |
+| Closing Image | **Zhang (V)** | The world is larger than any of these people — but human traces remain |
+
+### Rule of Thumb
+
+- **When establishing structure → Zhang leads.** The system, the world, the weight.
+- **When establishing person → Spielberg leads.** The individual, the specific, the warmth.
+- **At the three major transitions (Midpoint → Loss → Climax), the leading axis shifts.** These shifts are the hybrid's structural engine — they are what make the film feel like both directors simultaneously, not alternating.
+
+### Conflict Check
+
+Before finalizing any beat, ask: *Is the leading axis correct for this structural position?* If the Opening Image leads with Spielberg (individual warmth before establishing the system's weight), the audience will not feel the pressure that makes the loss inevitable. If the Climax leads with Zhang (collective meaning over individual choice), the audience will not feel the protagonist's agency. The axis choice is not stylistic — it is structural.
+
+---
+
 ## Story Architecture
 
 Use this structure as the skeleton. Flesh varies by story; bones do not.
@@ -67,10 +110,33 @@ The protagonist crosses a threshold they cannot uncross. Unlike action-genre Plo
 As the protagonist moves through their new situation, the world expands — new relationships, deeper understanding of the system's rules, small moments of beauty and connection. This section should feel alive and full. The audience should fall in love with these people and this world.
 
 **Use of Color and Light as Emotional Score**
-Assign a color temperature to the emotional state of each sequence. Warm amber-gold: connection, belonging, fleeting happiness. Deep red: desire, vitality, danger. Blue-gray: distance, longing, the approach of loss. White: the threshold between states. These should shift subtly across Act 2A — starting warmer, cooling gradually.
+Assign a color temperature to the emotional state of each sequence. These are the four registers — but they are not static labels. They operate as a *grammar* with transition rules, collision rules, and beat-triggered shifts.
+
+**The Four Color Registers (Vocabulary)**
+
+| Color | Registers | Zhang Yimou anchor |
+|-------|-----------|-------------------|
+| Warm amber-gold | Connection, belonging, fleeting happiness | *Hero* — the golden forest duel: gold as memory, beauty that cannot last |
+| Deep red | Desire, vitality, danger — but in Zhang's grammar, red is *ritualized power*, not raw emotion | *Raise the Red Lantern* — red lanterns: the system's color, not the character's emotion. Red belongs to the patriarch, never to the women |
+| Blue-gray | Distance, longing, the approach of loss | *House of Flying Daggers* — the bamboo forest: blue-green as beauty that is also a trap |
+| White | The threshold between states — death, transformation, erasure, or possibility | *Hero* — the white funeral sequence: white as mourning that is also transcendence |
+
+**Color Grammar Rules (Grammar)**
+
+1. **Transition rule.** Colors shift at structural beats, not between random scenes. A color transition should coincide with a beat boundary (Inciting Incident, Midpoint, Turning Point, Climax). Between beats, colors hold — subtle variations within a register, but no register jump without a structural reason.
+
+2. **Collision rule.** When two color registers appear in the same scene (e.g., amber-gold from a window and blue-gray in the shadows), the *darker register frames the lighter one*. The darker color is the system's color — it surrounds, contains, and limits the warmer register. The warm register is always framed, never free-floating. This is how the V-axis (system) visually contains the H-axis (human connection) without a word of dialogue.
+
+3. **Beat-triggered shifts.** Act 2A starts warmer (amber-gold in scenes of connection), cools gradually toward Midpoint. The Midpoint itself is the warmest scene in the film — amber-gold at peak saturation. After Midpoint, the color temperature drops with each subsequent scene in Act 2B — blue-gray gradually overtakes amber. The Turning Point scene should be near-white or desaturated. Act 3 finds a new register — not the warmth of Act 2A, not the cold of the Turning Point, but something balanced: soft amber, morning light, clarity.
+
+4. **Direction, not description.** Write color notes as factual visual direction: "late afternoon light, amber on the walls" not "warm and hopeful." Let the cinematographer and audience make the emotional translation. The exception: when writing for an LLM to visualize, add one line of emotional intent in a separate annotation — not in the scene heading itself.
 
 **Midpoint — The Perfect Moment Before Everything Changes**
-At the exact center of the film, place one scene that is both visually exquisite and emotionally complete. Two people sharing a meal. A child running across a field. Hands touching briefly. This scene should feel like enough — like a whole life could be lived inside it. The beauty is intentional. It is the last moment of the before. The audience will not know this yet. They will only know it in retrospect.
+At the exact center of the film, place one scene that is both visually exquisite and emotionally complete. Two people sharing a meal. A child running across a field. Hands touching briefly. This scene should feel like enough — like a whole life could be lived inside it.
+
+**Why the midpoint must be the most beautiful scene.** The midpoint is the structural hinge of the hybrid. The H-axis (individual connection, emotional warmth — Spielberg's register) reaches its peak here. This is the last moment of full human presence before the V-axis (the system, history, structural pressure — Zhang's register) reasserts itself in Act 2B. The beauty is not decorative. It is *argument*: it makes the audience feel what is about to be lost. The more complete the midpoint feels, the more devastating the fracture that follows.
+
+Zhang Yimou achieves this by making the midpoint scene *too complete* — so complete that it closes rather than opens. The audience feels a fullness that, in retrospect, was the last moment of wholeness. The beauty is intentional. It is the last moment of the before. The audience will not know this yet. They will only know it in retrospect.
 
 ---
 
@@ -118,6 +184,16 @@ Build the protagonist from the inside out using three layers:
 
 **Generational wound layer** — the way the personal wound is also the wound of everyone who came before them. A woman who could not choose who to love because women of her generation could not. A man who gave up art because men of his class did not make art. This layer should never be stated. It should be felt.
 
+**Layer Tension — Where Drama Lives**
+
+The three layers are not three separate descriptions. They are three forces in conflict. Drama does not live inside any single layer — it lives in the *space between* them, where one layer demands what another layer cannot give.
+
+The primary dramatic tension is **Surface vs. Personal Wound.** The Surface layer (social role, occupation, daily obligation) demands an action that the Personal Wound layer (unspoken grief, suppressed desire) cannot perform. A mother who must arrange her daughter's marriage (Surface duty) but whose own Personal Wound is a marriage she never chose. A son who must inherit the family business (Surface obligation) but whose Personal Wound is the art career his class never permitted. The character is not torn between two choices — they are torn between two *versions of themselves* that cannot coexist.
+
+The deepening tension is **Personal Wound vs. Generational Wound.** The character discovers that their private grief is not private. It is the same wound their parents carried, and their grandparents before them. This discovery is both devastating (the wound was never truly theirs — it was assigned to them before birth) and liberating (they are not alone; they are part of a pattern larger than themselves). The Generational Wound layer should never be stated in dialogue — it should arrive through behavior: the character recognizes their own gesture in someone older, catches themselves repeating a phrase they heard as a child, touches an object their parent touched in the same way.
+
+**Construction test:** After building the three layers, write one scene where the Surface demands something the Personal Wound cannot perform. If the character can perform it without cost, the wound is not deep enough. If the character refuses immediately, the wound is too loud — wounds in this hybrid are quiet, and characters try very hard to function despite them.
+
 ### Supporting Characters
 
 Each supporting character should represent a different relationship to the same system the protagonist struggles against. One who has fully accepted the system's terms. One who fought and lost. One who has not yet understood the cost. Their fates are not didactic — they simply show the range of what the system produces.
@@ -125,6 +201,31 @@ Each supporting character should represent a different relationship to the same 
 ### The System (The Invisible Antagonist)
 
 Name the system clearly for yourself, even if it is never named in the screenplay. It could be: a village's marriage customs, a family's economic debt, a historical period's political demands, a gender hierarchy, a class boundary. The system should be old enough to feel like weather — not evil, not good, simply the conditions under which everyone lives.
+
+**How to embody the system in scenes — without making it a character or exposition.**
+
+The system must be *felt* by the audience, not explained. It manifests through concrete, filmable elements. Use both Zhang's and Spielberg's embodiment methods — they serve different dramatic functions.
+
+**Zhang Yimou methods — the system as SPACE and RITUAL:**
+
+| Mechanism | How it works | Scene example |
+|-----------|-------------|---------------|
+| **Architecture and space** | Walls, doors, courtyards, thresholds — physical structures that contain or exclude characters. The system is the wall. | *Raise the Red Lantern*: the courtyard compound — every wall reinforces the hierarchy without a word |
+| **Repeating ritual** | Actions performed the same way every time — tea service, foot washing, lantern lighting. The system is the repetition. | *Raise the Red Lantern*: the daily ritual of lantern selection — the system speaks through ceremony, not dialogue |
+| **Nameless third figures** | People who represent the system but have no individual identity — servants, guards, clerks. They do not speak or are not named. The system is the anonymity. | *Hero*: the Emperor's faceless court — attendants who move without being seen |
+| **System-assigned objects** | Objects given to characters by the system that mark their status — a key, a seal, a uniform, a lantern. The system is the object they cannot refuse. | *Raise the Red Lantern*: the red lantern itself — assigned, not chosen; taken away by others, not surrendered |
+
+**Spielberg methods — the system as PEOPLE and PROCESS:**
+
+| Mechanism | How it works | Scene example |
+|-----------|-------------|---------------|
+| **Representative figures** | A person who embodies the system — a father, a boss, a teacher, an officer. They are not evil; they are doing their job. The system speaks through their authority. | *Schindler's List*: Amon Goeth — not a cartoon villain but a man made monstrous by the system he serves |
+| **Paperwork and procedure** | Forms, stamps, signatures, files, ID cards — bureaucratic objects that decide fates without anyone making a decision. The system is the form. | *Schindler's List*: the list itself — names on paper that mean life or death |
+| **Uniforms and institutional markers** | Clothing that signals membership in the system — military uniforms, company badges, school crests. The system is what people wear when they stop being individuals. | *Saving Private Ryan*: the military chain of command — every uniform carries the weight of the institution |
+
+**Hybrid embodiment — combining both at the same beat:**
+
+At a single beat, use one Zhang method and one Spielberg method simultaneously. Example: the Turning Point scene. A character faces a nameless clerk (Zhang: nameless third figure) who stamps a form (Spielberg: paperwork as fate). The character stands before a large door (Zhang: architecture as power). The clerk does not look up. The stamp falls. The door opens — or closes. No dialogue. The system has acted. The audience feels both its impersonal weight (Zhang) and its specific human consequence (Spielberg).
 
 ---
 
@@ -189,17 +290,65 @@ Adapt output to what the user requests:
 
 ## Quick Reference Checklist
 
-Before finalizing any draft, verify:
+Before finalizing any draft, verify. Items are weighted by structural priority — fix HIGH items first; LOW items are refinement, not rescue.
 
-- [ ] The opening image is visually complete but emotionally unsettled
-- [ ] The protagonist's wound operates on both personal and generational levels
-- [ ] The inciting incident is external but activates a pre-existing internal fault line
-- [ ] The midpoint scene is beautiful enough to be the film's emotional peak
-- [ ] The loss at the turning point has no clear villain
-- [ ] The climax is a small, concrete action of continuation
-- [ ] The closing image contains both nature and a human trace
-- [ ] Dialogue has passed all three reduction passes
-- [ ] At least one recurring object carries accumulated emotional weight
-- [ ] Color temperature shifts from warm to cool across Act 2
-- [ ] No scene promises resolution it does not earn
-- [ ] The final tone is neither purely sad nor purely hopeful
+### HIGH — Violation = Structural Failure (fix these first)
+
+These items are load-bearing. If any of these fail, the hybrid structure collapses regardless of how well other items score.
+
+- [ ] **Loss has no villain.** The turning point is caused by the system, not a bad person. If the audience can point to who is to blame, the structure is broken. *(Principle 4)*
+- [ ] **Climax is a small, concrete action of continuation.** Not a confrontation, not a speech, not a resolution. A specific physical action that means: I am still here. *(Principle 5)*
+- [ ] **Protagonist's wound operates on two levels (personal + generational).** If the wound is only personal, the hybrid collapses into Spielberg alone. If only generational, it collapses into Zhang alone. *(Principle 3)*
+- [ ] **The inciting incident is external but activates a pre-existing fault line.** The outside event does not create the problem — it reveals the crack that was already there. *(Story Architecture)*
+
+### MEDIUM — Violation = Weakened Impact (fix these second)
+
+These items control emotional force. If they fail, the structure stands but the audience feels less.
+
+- [ ] **The midpoint scene is beautiful enough to be the film's emotional peak.** It should feel like enough — like a whole life lived in one moment. The more complete the midpoint, the more devastating what follows. *(Story Architecture)*
+- [ ] **Color temperature shifts across Act 2 are beat-triggered, not random.** Warm → cool trajectory with Midpoint as warmest scene, Turning Point near-white/desaturated, Act 3 as new balanced register. *(Color Grammar Rule 3)*
+- [ ] **At least one recurring object carries accumulated emotional weight across the full arc.** Neutral → connection → loss → remembrance. The object should earn its weight through placement, not description. *(Objects as Emotional Proxies)*
+- [ ] **Dialogue has passed all three reduction passes.** Pass 1 (direct intention) → Pass 2 (remove non-essential) → Pass 3 (replace with gesture/silence). Surviving dialogue earns its place. *(Dialogue)*
+
+### LOW — Violation = Aesthetic Weakening (fix these last)
+
+These items affect texture and tone. They refine rather than rescue.
+
+- [ ] **The opening image is visually complete but emotionally unsettled.** One detail signals something beneath the surface is wrong. Do not explain it. *(Act 1)*
+- [ ] **The closing image contains both nature and a human trace.** The world is larger than these people — but they were here. *(Act 3)*
+- [ ] **No scene promises resolution it does not earn.** The audience should feel what they feel without being told how to feel. *(Tonal Calibration)*
+- [ ] **The final tone is neither purely sad nor purely hopeful.** It resembles both. The audience leaves holding two things at once. *(Tonal Calibration)*
+
+### Priority Rule
+
+When time or capacity is limited: fix HIGH items or the structure breaks. MEDIUM items control whether the audience *aches*. LOW items control whether the audience *remembers*. Fix in order.
+
+---
+
+## Film Anchor Reference
+
+This skill references two directors, but each director operates in multiple modes. Use these anchors to calibrate which mode is relevant to the story at hand. The "primary reference" films are the ones whose grammar most closely matches this hybrid's register.
+
+### Zhang Yimou — Three Modes
+
+| Film | Mode | Color grammar | Key technique for this hybrid |
+|------|------|--------------|-------------------------------|
+| **Raise the Red Lantern** (1991) | Ritualized power, enclosed space | Red as system's color — assigned, never chosen; courtyard as structural compression | System embodied through architecture + repeating ritual + nameless figures. The protagonist never speaks against the system — she lives inside it until it consumes her. |
+| **Hero** (2002) | Color as philosophical argument, open landscape | Each version of the story has its own color register — color is epistemology, not emotion | Midpoint construction: each color segment is "too beautiful to be true" — beauty as deception, then beauty as sacrifice |
+| **Not One Less** (1999) | Neorealism, no color stylization | Natural light, documentary palette — the absence of color-as-argument is itself the argument | Protagonist as unremarkable social figure with a concrete task. System pressure is economic, not ceremonial. Small action as climax. |
+
+**Primary reference for this hybrid:** *Raise the Red Lantern* — its grammar of enclosed space, ritualized power, and color as system-speech is the closest match to the hybrid's structural core.
+
+### Spielberg — Three Modes
+
+| Film | Mode | Emotional register | Key technique for this hybrid |
+|------|------|-------------------|-------------------------------|
+| **Schindler's List** (1993) | Historical weight, individual within system | Documentary gravity + intimate human detail; the girl in the red coat | System embodied through representative figures + paperwork + uniforms. The individual's small action (writing names) carries enormous weight. |
+| **E.T. the Extra-Terrestrial** (1982) | Ordinary family, wonder and loss | Childhood perspective; loss arrives without a villain — the system (government scientists) is faceless but not evil | Ordinary people carrying unspoken wounds. The climax is acceptance, not victory. The closing image: a spaceship leaves, but the heart-light stays. |
+| **Lincoln** (2012) | Institutional process, moral weight | The system IS the drama — procedure, amendment, vote-counting. Individual choice within structural constraint. | System-as-process: the antagonist is the political structure itself. The climax is a vote — a small, concrete action with generational consequence. |
+
+**Primary reference for this hybrid:** *E.T.* — its grammar of ordinary people, loss without villain, acceptance as climax, and closing image with human trace in a continuing world matches the hybrid's emotional core.
+
+### Calibration Rule
+
+Before writing, decide which Zhang mode and which Spielberg mode the story needs. The hybrid defaults to **Raise the Red Lantern × E.T.** — ritualized system + ordinary people, color as power + loss without villain, enclosed space + acceptance as bravery. If the story requires a different pairing (e.g., *Not One Less × Lincoln* for a neorealist institutional drama), state this explicitly in the project brief so the LLM calibrates to the correct mode pair.
