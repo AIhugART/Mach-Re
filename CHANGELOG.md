@@ -1,5 +1,22 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — RCA: Sắp xếp lại `axiom_3.html` theo thứ tự khoa học + tách §7B thành trang riêng · RCA 4.8/5
+
+**Symptom:** 13 section trong `axiom_3.html` được sắp xếp theo thứ tự **viết** (accretion pattern: 1→1A→1B→1C→2→3→4→5→6→7→7B→8→9), không theo thứ tự **đọc khoa học** (dependency graph). Hậu quả: giải thích cấp-3 (§1A) và từ nguyên (§1B) nằm trước phân tích bản thể học (§1C); tiêu chí tiên đề (§2) nằm sau 350 dòng giải thích; so sánh văn hóa 7 quốc gia (§7B, ~200 dòng) chen giữa RCA gap analysis và Limitations.
+
+**Root:** Document được xây dựng incremental — mỗi RCA finding được append vào vị trí gần nhất (vd: §1C được gắn sau §1B, §7B được gắn sau §7). Không có dependency-ordered architecture rule. Số hiệu `1A/1B/1C` là bằng chứng trực quan của accretion pattern.
+
+**Fix:**
+
+1. **Reorder `axiom_3.html`** theo dependency graph (nguyên lý: mỗi section chỉ dùng khái niệm đã định nghĩa trước đó):
+   - §1 Phát biểu → §2 Tiên đề mới? → §3 Minh họa → §4 RCA Bản thể học → §5 So sánh triết học → §6 Bảng tổng hợp → §7 RCA Vì sao ít được phát biểu → §8 Thực hành ở VN → §9 Tổng quan văn hóa (summary mới) → §10 High School → §11 Từ Việt Hóa → §12 Giới hạn → §13 Kết luận
+
+2. **Tách §7B thành `axiom_3_cultural_comparison.html`** (RCA 5.0/5): §7B trả lời câu hỏi khác ("Tiên Đề III biểu hiện thế nào ở các nền văn hóa?" vs câu hỏi chính "Tiên Đề III là gì?"), có structural independence (methodology riêng, kết luận riêng), và dùng epistemic register khác (star ratings, ascii bar charts). Giữ lại insight cốt lõi + link trong §9 mới.
+
+**Result:** `axiom_3.html`: 1344 → 1153 dòng (-14%). `axiom_3_cultural_comparison.html`: ~200 dòng (trang mới). Tất cả anchor IDs bảo toàn. Glossary reference cập nhật (§1C → §4). Bottom nav + footer thêm link đến trang mới.
+
+**RCA score:** 4.8/5 (Correct: 1, Deep: 1, Feasible: 0.8 (cross-reference risk, đã verify), Conflict-risk: 1, Preservation: 1)
+
 ## 2026-06-09 — Fix link hư `#cau-hoi-goc` trong `axioms.html` + `what.html` · RCA 5.0/5
 
 **Symptom:** 8 internal links (`<a href="#cau-hoi-goc">`) trong `axioms.html` (4) và `what.html` (4) trỏ đến anchor không tồn tại. Không có element nào mang `id="cau-hoi-goc"` trong cả hai file.
