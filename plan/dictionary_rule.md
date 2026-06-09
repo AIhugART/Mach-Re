@@ -177,3 +177,69 @@ Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
 
 ### 7.5 Tầng trình bày — theo vế "đã xuất bản vẫn extend"
 - Câu manifesto ở **hero/mở đầu** (vd "Được sống... đặt tên 2026") và mô tả *ý định thiết kế* ("đủ chính xác để đối thoại", "giải quyết một hạn chế") — KHÔNG bị rebuild đụng; đây là tầng trình bày đã công bố, không phải nội dung tiên đề.
+
+---
+
+## 10. Trường ngữ nghĩa "nếp" — Từ vựng triết học thuần Việt (RCA 2026-06-09)
+
+> RCA finding: 3-round × 5-Why × scoring gate → **5.0/5.** Đây là proof-of-concept cho sứ mệnh Việt hóa của Mạch Rễ: xây dựng từ vựng triết học bằng tiếng Việt bản địa, không Hán-Việt, không dịch từ Anh/Pháp.
+
+### 10.1 Sứ mệnh
+
+Khung nền triết học Mạch Rễ cố gắng xây dựng một bộ từ vựng triết học **bằng tiếng Việt bản địa**. Đây là yêu cầu cấu trúc, không phải thẩm mỹ: nếu dùng từ Hán-Việt hoặc từ dịch, framework sẽ mượn luôn hệ quy chiếu triết học của ngôn ngữ nguồn và mất đi tính nguyên bản của góc nhìn.
+
+### 10.2 "Nếp" — khái niệm nguyên tử (atomic concept)
+
+**"Nếp"** là đơn vị cấu trúc sống cơ bản của toàn bộ Việt hóa Mạch Rễ. Nó thuộc phạm trù **cấu trúc sống** (living structure), phân biệt với phạm trù **quy ước xã hội** (social convention).
+
+| Phạm trù | Định nghĩa | Ví dụ | Mất đi thì |
+|---|---|---|---|
+| **Cấu trúc sống** (nếp) | Điều kiện cần cho tồn tại của hệ thống — structural necessity | nếp thờ tổ tiên, nếp vai vế trên-dưới | Hệ thống **sụp đổ** (mất bản sắc) |
+| **Quy ước xã hội** (tập quán, tập tục) | Thói quen tập thể có thể đàm phán, biến đổi — social convention | tập quán ăn trầu, tập tục cúng đình | Hệ thống thay đổi hình thức, không sụp |
+
+### 10.3 Bảng trường ngữ nghĩa "nếp" (canonical)
+
+| # | Thuật ngữ thuần Việt | EN mapping | Vị trí trong framework | Ghi chú |
+|---|---|---|---|---|
+| 1 | **nếp** (gốc) | living pattern (atomic) | Khái niệm nguyên tử | Không đứng một mình trong phát biểu — luôn đi với từ ghép |
+| 2 | **nếp tổ chức** | Configuration | Tiên Đề III — đơn vị được truyền qua mạch cội dọc | Thay cho "cấu hình" (quá kỹ thuật) và "thực thể" (quá vật lý) |
+| 3 | **nếp bản sắc** | Structural Invariant | Tiên Đề II — nếp không đổi xuyên thời gian | "Bản sắc" = cái riêng không thể trộn lẫn |
+| 4 | **nếp sống** | Living pattern | Mô tả thực hành hằng ngày | Biểu hiện quan sát được của nếp tổ chức |
+| 5 | **nề nếp** | Inherited Patterns | Tiên Đề III — nếp được kế thừa qua V | "Nề" = nếp đã thành khuôn phép, ổn định |
+| 6 | **Mạch Cội Nguồn** | Orthogonal Temporality | Tiên Đề III — bản chất | "Cội" (dọc) ⊥ "Nguồn" (ngang) — hai chiều trực giao |
+
+### 10.4 Quy tắc chọn từ canonical (thứ tự ưu tiên)
+
+| Ưu tiên | Loại từ | Hành động | Ví dụ |
+|---|---|---|---|
+| **1** | Thuần Việt có sẵn, đúng phạm trù | Chọn làm canonical | "nếp" cho structural pattern |
+| **2** | Thuần Việt chưa có, ghép được | Ghép từ gốc thuần Việt | "nếp tổ chức" = nếp + tổ chức |
+| **3** | Không có thuần Việt tương đương | Giữ EN, ghi rõ "chưa Việt hóa" | "autopoiesis" (tạm thời) |
+| **4** | Hán-Việt đã thành khẩu ngữ | Dùng kèm thuần Việt gloss | "bản thể học" — luôn kèm "mạch tồn tại" |
+
+### 10.5 Ranh giới phạm trù: "nếp" ≠ "tập quán" / "tập tục"
+
+Đây là kết quả RCA của câu hỏi: *có nên thay "nề nếp" bằng "tập tục" hoặc "tập quán" trong phát biểu chính thức Tiếng Việt không?*
+
+**Kết luận: KHÔNG. Điểm: 0.0/5 (scoring gate — giữ nguyên "nề nếp").**
+
+| ❌ Đề xuất bị bác | Lý do bác | Hệ quả nếu làm |
+|---|---|---|
+| "nề nếp" → "tập quán" | "tập quán" ∈ social convention, không phải structural pattern | Tiên Đề III từ ontological → sociological |
+| "nề nếp" → "tập tục" | "tập tục" còn hẹp hơn "tập quán" (nghiêng về lễ nghi cổ truyền) | Không phủ được "inherited patterns" (gồm cả nếp sống hằng ngày không mang tính nghi lễ) |
+| Giữ "nề nếp" nhưng xóa gloss | Gloss "tập quán" giúp người đọc định vị — không phải synonym | Giữ nguyên hiện trạng: canonical = "nề nếp", gloss = "tập quán văn hóa" (có ghi chú phân biệt) |
+
+**5-Why gốc rễ (tóm tắt):**
+
+1. Tại sao muốn thay? → "nề nếp" ít phổ biến hơn "tập quán" trong khẩu ngữ.
+2. Tại sao đó là vấn đề? → Framework nhắm đến accessibility (Việt hóa bản sắc).
+3. Tại sao không nên thay? → "Nếp" là atomic concept — "nếp tổ chức", "nếp bản sắc", "nếp sống", "nề nếp" cùng họ. Thay "nề nếp" → "tập quán" làm sụp toàn bộ trường ngữ nghĩa.
+4. Tại sao giữ trường ngữ nghĩa quan trọng hơn dùng từ phổ thông? → Vì Mạch Rễ đang **xây dựng** từ vựng triết học, không phải **mượn** từ vựng có sẵn. Nếu chỉ dùng từ phổ thông, framework không có gì mới về mặt khái niệm.
+5. **Root (1 câu):** "tập tục"/"tập quán" ∈ quy ước xã hội (có thể đàm phán); "nếp" ∈ cấu trúc sống (mất → sụp). Dùng sai phạm trù = kéo ontological claim xuống sociological description.
+
+### 10.6 Liên kết với các phần khác
+
+- **CLAUDE.md §Core Principles → Sứ mệnh Việt hóa:** quy tắc chọn từ canonical + bảng trường ngữ nghĩa "nếp" (bản rút gọn).
+- **`axiom_3.html` dòng 237:** canonical term "nề nếp" trong phát biểu chính thức Tiếng Việt.
+- **`axiom_3.html` dòng 1328:** glossary — "tập quán văn hóa" là explanatory gloss, không phải synonym. **Cần làm sắc nét ghi chú** (TODO: thêm câu phân biệt gloss ≠ canonical term).
+- **`axiom_spec.md`:** định nghĩa formal của "Inherited Patterns" — canonical EN term, mapping sang "nề nếp".

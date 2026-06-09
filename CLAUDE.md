@@ -120,6 +120,42 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 | VII | Derived | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới |
 | VIII | Meta | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ |
 
+### Sứ mệnh Việt hóa — Từ vựng triết học thuần Việt (RCA finding 2026-06-09)
+
+> Điểm RCA: 5.0/5 (3-round × 5-Why × scoring gate). Áp dụng bắt buộc khi chọn thuật ngữ canonical, viết phát biểu chính thức Tiếng Việt, hoặc quyết định giữa từ thuần Việt và từ Hán-Việt/dịch.
+
+**Sứ mệnh:** Khung nền triết học Mạch Rễ cố gắng xây dựng một bộ từ vựng triết học **bằng tiếng Việt bản địa** — không phải Hán-Việt, không phải dịch từ Anh/Pháp. Đây không phải là lựa chọn thẩm mỹ; đây là yêu cầu cấu trúc: nếu dùng từ Hán-Việt hoặc từ dịch, framework sẽ mượn luôn hệ quy chiếu triết học của ngôn ngữ nguồn và mất đi tính nguyên bản của góc nhìn.
+
+**Trường ngữ nghĩa "nếp" — ví dụ canonical (proof-of-concept):**
+
+> "Nếp" là khái niệm nguyên tử (atomic concept) của toàn bộ Việt hóa Mạch Rễ. Nó thuộc phạm trù **cấu trúc sống** (living structure — mất đi thì hệ thống sụp đổ), phân biệt với phạm trù **quy ước xã hội** (social convention — có thể thay đổi, đàm phán).
+
+| Thuật ngữ | EN mapping | Vai trò trong framework |
+|---|---|---|
+| **nếp** | living pattern (atomic) | Đơn vị cấu trúc sống cơ bản — không phải thói quen, không phải phong tục |
+| **nếp tổ chức** | Configuration | Cách một hệ thống tự tổ chức thành chỉnh thể tại một thời điểm |
+| **nếp bản sắc** | Structural Invariant (Tiên Đề II) | Nếp không đổi xuyên thời gian dù nội dung biểu hiện thay đổi |
+| **nếp sống** | Living pattern / way of living | Nếp đang được thực hành hằng ngày — biểu hiện của nếp tổ chức |
+| **nề nếp** | Inherited Patterns | Nếp được kế thừa qua mạch cội dọc từ nếp tổ chức quá khứ |
+| **Mạch Cội Nguồn** | Orthogonal Temporality (Tiên Đề III) | Bản chất: hai chiều thời gian trực giao — Cội (dọc/V) ⊥ Nguồn (ngang/H) |
+
+**Quy tắc chọn từ canonical (thứ tự ưu tiên):**
+
+1. **Thuần Việt có sẵn, đúng phạm trù** → chọn (vd: "nếp" cho structural pattern, "Mạch Cội Nguồn" cho Orthogonal Temporality).
+2. **Thuần Việt chưa có, ghép được từ các từ thuần Việt có sẵn** → ghép (vd: "nếp tổ chức" = nếp + tổ chức, "nếp bản sắc" = nếp + bản sắc).
+3. **Không có thuần Việt tương đương** → giữ English technical term và ghi rõ "đây là thuật ngữ kỹ thuật chưa Việt hóa."
+4. **Hán-Việt** → chỉ dùng khi từ đó đã thành khẩu ngữ Việt không thể thay thế (vd: "bản thể học" cho ontology — nhưng luôn kèm thuần Việt "mạch tồn tại" ở lần đầu xuất hiện).
+
+**Quy tắc phân biệt phạm trù (category boundary):**
+
+| ❌ Nhầm phạm trù | ✅ Đúng phạm trù | Lý do |
+|---|---|---|
+| "nếp" = "tập quán" (social convention) | "nếp" = cấu trúc sống (living structure) | Tập quán có thể mất mà hệ thống vẫn tồn tại; mất "nếp" → hệ thống sụp đổ |
+| "nề nếp" = "tập tục" (traditional custom) | "nề nếp" = nếp được kế thừa (inherited structural patterns) | Tập tục là biểu hiện bề mặt; nề nếp là kiến trúc nền |
+| Dùng "tập quán văn hóa" làm canonical term | Dùng "tập quán" làm explanatory gloss (từ phổ thông giúp định vị), canonical vẫn là "nề nếp" | Gloss ≠ synonym; gloss giúp người đọc tiếp cận, canonical giữ chính xác phạm trù |
+
+> **Neo quan trọng:** "tập tục" và "tập quán" thuộc phạm trù **quy ước xã hội** (có thể đàm phán, biến đổi, thích nghi); "nếp" thuộc phạm trù **cấu trúc sống** (mất đi thì hệ thống sụp đổ — điều kiện cần cho tồn tại). Dùng từ sai phạm trù sẽ kéo toàn bộ Tiên Đề III từ ontological claim xuống sociological description. Chi tiết RCA tại `plan/dictionary_rule.md §10`.
+
 ### Paper & Publication Rules (sourced from `papers/CLAUDE_REF.md`)
 
 > Áp dụng khi viết, sửa, hoặc review bất kỳ paper nào trong `papers/`.
@@ -188,7 +224,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **MACH_RE** (2530 symbols, 2719 relationships, 44 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **MACH_RE** (2823 symbols, 2960 relationships, 44 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 

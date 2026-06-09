@@ -1,5 +1,37 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A10: Trường ngữ nghĩa "nếp" — Sứ mệnh Việt hóa từ vựng triết học · RCA 5.0/5
+
+**Payload:** Thêm Core Principle mới vào CLAUDE.md: "Sứ mệnh Việt hóa — Từ vựng triết học thuần Việt". Thêm §10 vào `plan/dictionary_rule.md`: trường ngữ nghĩa "nếp" — bảng canonical 6 thuật ngữ, quy tắc chọn từ (4 mức ưu tiên), ranh giới phạm trù "nếp" ≠ "tập quán"/"tập tục".
+
+**RCA (3-round × 5-Why × scoring gate 5.0/5):**
+
+- **R1 Symptom:** Glossary `axiom_3.html:1328` ghi "nề nếp → truyền thống / tập quán văn hóa" — tạo lực căng: nếu gloss đã là "tập quán", tại sao canonical không phải "tập quán"?
+- **R2 Mechanism:** "tập quán" và "tập tục" thuộc phạm trù **quy ước xã hội** (social convention — có thể đàm phán, biến đổi). "nếp" thuộc phạm trù **cấu trúc sống** (living structure — mất đi thì hệ thống sụp đổ). Nếu thay "nề nếp" → "tập quán", toàn bộ Tiên Đề III từ ontological claim → sociological description.
+- **R3 Root:** Mạch Rễ đang **xây dựng** từ vựng triết học bằng tiếng Việt bản địa (không Hán-Việt, không dịch từ Anh/Pháp). "Nếp" là atomic concept — toàn bộ họ từ ("nếp tổ chức", "nếp bản sắc", "nếp sống", "nề nếp") chia sẻ gốc này. Đây là kiến trúc ngữ nghĩa có chủ đích, không phải ngẫu nhiên.
+
+**5-Why trace:**
+```
+Q: Có nên thay "nề nếp" bằng "tập tục" hoặc "tập quán"?
+  ↓ Why 1: "nề nếp" ít phổ biến hơn trong khẩu ngữ → muốn dùng từ dễ hiểu hơn.
+  ↓ Why 2: Framework nhắm accessibility → từ phổ thông có vẻ hợp lý.
+  ↓ Why 3: "Nếp" là atomic concept — thay "nề nếp" → "tập quán" làm sụp toàn bộ trường ngữ nghĩa.
+  ↓ Why 4: Mạch Rễ đang xây dựng từ vựng, không mượn từ vựng có sẵn.
+  ↓ Root: "tập tục"/"tập quán" ∈ quy ước xã hội; "nếp" ∈ cấu trúc sống. Sai phạm trù = ontological → sociological.
+```
+**Kết luận:** Giữ "nề nếp" canonical. "tập quán" giữ làm explanatory gloss (có ghi chú phân biệt). "tập tục" không dùng.
+
+**Scoring (proposal rubric — 5 tiêu chí):**
+
+| Criterion | Score | Reason |
+|---|---|---|
+| Correct | 1 | "nề nếp" thực sự thuộc structural pattern, "tập quán" thực sự thuộc social convention |
+| Deep | 1 | Chạm internal consistency: trường ngữ nghĩa "nếp" là kiến trúc backbone của Việt hóa |
+| Feasible | 1 | Sửa bằng cách thêm rule vào CLAUDE.md + dictionary_rule.md — không phá gì |
+| Conflict-risk | 1 | Không tạo mâu thuẫn mới — tất cả "nếp" đã dùng nhất quán xuyên framework |
+| Preservation | 1 | Giữ nguyên sức mạnh cốt lõi: "nếp" family là điểm mạnh nhất của Việt hóa |
+| **Average** | **5.0/5** | **→ FIX: thêm rule, giữ canonical, làm sắc nét glossary** |
+
 ## 2026-06-09 — A07: Operational Definition cho Tiên Đề IV (Định nghĩa vận hành) · RCA 4.8/5
 
 **Payload:** Thêm Định nghĩa Vận hành (Operational Definition) cho Tiên Đề IV — đóng GAP_03 (CHECK_07: "tái tổ chức theo logic pattern nội tại" là tautology). Bổ sung gồm 4 phần: O-1 (chỉ báo quan sát được cho 3 cơ chế con: pattern recognition, selective integration, pattern update — mỗi cơ chế có 3 indicators + điều kiện phản chứng riêng); O-2 (tích hợp mẫu hình "vượt gộp" 3 giai đoạn của Phan Ngọc như empirical hypothesis, không phải universal rule); O-3 (định nghĩa ngưỡng tái cấu trúc — kết nối với F-C của Mệnh Đề F); O-4 (phân biệt yêu cầu chức năng vs. cơ chế vận hành — tách hai tầng phân tích độc lập). Điều kiện phản chứng được mở rộng từ 2 cực (tường kín / mở toang) thành 3 điều kiện bổ sung phủ vùng xám thực tế.
