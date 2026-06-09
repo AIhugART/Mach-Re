@@ -166,7 +166,9 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 | Framework | File | Khi nào |
 |---|---|---|
 | **Zhang-Spielberg Hybrid** | `publish/movie_script/Zhang_Yimou_Spielberg_Hybrid_Screenplay.md` | **Bắt buộc đọc.** 5 core principles (beauty as argument, silence over dialogue, individual small / weight enormous, loss without villain, acceptance as bravery), story architecture (3-act structure with precise emotional markers), character construction (3-layer: surface → personal wound → generational wound), scene-level guidelines (dialogue 3-pass reduction, silence as content, color as emotional score, objects as emotional proxies), tonal calibration, 5 output formats, 12-item checklist. |
-| **Canonical 10 Slate** | `publish/movie_script/ideas/canonical_10_slate_v1.md` | 10 kịch bản đã RCA-gated (tất cả 5.0/5) — tham khảo ví dụ về cách Tiên Đề III vận hành như cấu trúc drama (không phải theme). Mỗi entry gồm: 3-round RCA, scoring rubric, cinematic mechanism, world & characters, central image, present-day problem. |
+| **Canonical 10 Slate v1** | `publish/movie_script/ideas/canonical_10_slate_v1.md` | 10 kịch bản đã RCA-gated (tất cả 5.0/5) — D1–D5, D9–D13: acute fractures. |
+| **Canonical 10 Slate v2** | `publish/movie_script/ideas/canonical_10_slate_v2.md` | 10 kịch bản bổ sung (tất cả 5.0/5) — D6–D8, D14–D20: filling taxonomy gaps. |
+| **Canonical 5 Erosion Slate** | `publish/movie_script/ideas/canonical_5_erosion_slate_v1.md` | 5 kịch bản V hao mòn (tất cả 5.0/5) — E1–E5: chronic erosion (không phải acute fracture). **Trục V vô danh bắt buộc.** Xem khi cần ý tưởng về sự biến mất chậm, không được để ý của V-axis. |
 
 **Tier 2 — Quy tắc bắt buộc:**
 
