@@ -21,7 +21,7 @@
 Re-derivation = liệt kê **điều kiện cần** để một hệ S trả lời R, rồi lọc bằng independence test.
 
 ### 0.1 Ba hệ neo (triangulation — `dictionary §7.1`)
-- **A — Phan Ngọc** (*Bản sắc văn hóa Việt Nam*): bản sắc = "kiểu lựa chọn / kiểu quan hệ" bền dưới nội dung đổi.
+- **A — Phan Ngọc** (*Bản sắc văn hóa Việt Nam*, 1998, NXB Văn hóa - Thông tin): bản sắc = "kiểu lựa chọn / kiểu quan hệ" bền dưới nội dung đổi. (Phần I, Chương I, mục 1, tr.17-20 — định nghĩa văn hóa như "kiểu lựa chọn" và "mối quan hệ giữa thế giới biểu tượng với thế giới thực tại"; Chương II — bốn yêu cầu bất biến của tâm thức Việt Nam.)
 - **B — Ashby** (*Requisite Variety*) **+ Weick** (organizing / sensemaking / enactment / retrospect).
 - **C — Anattā / Pratītyasamutpāda / Śūnyatā** (nhận thức luận Phật giáo).
 
@@ -77,7 +77,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 - **Triangulation:** **A** (kiểu quan hệ = invariant — neo mạnh nhất) · B (Ashby: invariant under transformation; essential variables) · C-có-điều-kiện (Śūnyatā: pattern cũng trống) — **~2.5/3**.
 - **5 tiêu chí:** Độc lập 5 · Nhất quán 5 · Phủ đầy 5 · Tối giản 5 · Ontological 4 → **4.8**.
 - **Điều kiện phản chứng:** SAI nếu một bản sắc sống sót mà KHÔNG có bất kỳ pattern bất biến nào (thuần biến động nhưng vẫn nhận diện được qua thời gian).
-- **Prior-art:** Phan Ngọc, Lévi-Strauss (deep structure), Group Theory. *Phân biệt:* Phan Ngọc mô tả hiện tượng (Việt); Tiên Đề II phát biểu thành nguyên lý cho mọi hệ bản sắc.
+- **Prior-art:** Phan Ngọc (1998, Phần I, Chương I, tr.17-20 — "kiểu quan hệ" / "kiểu lựa chọn" như bất biến), Lévi-Strauss (deep structure), Group Theory. *Phân biệt:* Phan Ngọc mô tả hiện tượng (Việt); Tiên Đề II phát biểu thành nguyên lý cho mọi hệ bản sắc.
 - **Đóng góp:** Synthesis / Extension.
 
 ---
