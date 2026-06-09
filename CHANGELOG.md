@@ -1,5 +1,84 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-09 — A07: Operational Definition cho Tiên Đề IV (Định nghĩa vận hành) · RCA 4.8/5
+
+**Payload:** Thêm Định nghĩa Vận hành (Operational Definition) cho Tiên Đề IV — đóng GAP_03 (CHECK_07: "tái tổ chức theo logic pattern nội tại" là tautology). Bổ sung gồm 4 phần: O-1 (chỉ báo quan sát được cho 3 cơ chế con: pattern recognition, selective integration, pattern update — mỗi cơ chế có 3 indicators + điều kiện phản chứng riêng); O-2 (tích hợp mẫu hình "vượt gộp" 3 giai đoạn của Phan Ngọc như empirical hypothesis, không phải universal rule); O-3 (định nghĩa ngưỡng tái cấu trúc — kết nối với F-C của Mệnh Đề F); O-4 (phân biệt yêu cầu chức năng vs. cơ chế vận hành — tách hai tầng phân tích độc lập). Điều kiện phản chứng được mở rộng từ 2 cực (tường kín / mở toang) thành 3 điều kiện bổ sung phủ vùng xám thực tế.
+
+**RCA (3-round × 5-Why × scoring gate 4.8/5):**
+
+- **R1 Symptom:** "tái tổ chức theo logic pattern nội tại" mô tả kết quả lọc bằng chính kết quả lọc — "logic pattern nội tại" chỉ được định nghĩa bởi cái gì sống sót. Ba cơ chế con (a,b,c) mô tả conceptually nhưng không có chỉ báo quan sát được. Điều kiện phản chứng gốc chỉ phủ hai cực (tường kín hoàn toàn / mở hoàn toàn) — không test được vùng xám nơi đa số hệ thực tế vận hành.
+- **R2 Mechanism:** (a) F-C ("tốc độ xâm nhập vượt ngưỡng tái cấu trúc") cần IV có operational threshold — nhưng "ngưỡng tái cấu trúc" chưa được định nghĩa. (b) DSH-2 ("biên giới lọc khác nhau ở các độ sâu") cần IV có hook cho structural distance — nhưng IV chưa có hook này. (c) PROPOSAL_03 gốc (decision tree: "Cái này có thể sống trong cấu trúc quan hệ không?") chỉ restate vấn đề dưới dạng câu hỏi — không thêm operational content.
+- **R3 Root:** Tiên Đề IV nhập nhằng giữa *yêu cầu chức năng* (functional requirement: selective permeability là điều kiện cần để sống sót — falsifiable qua hai cực) và *cơ chế vận hành* (operational mechanism: restructuring diễn ra như thế nào — trước A07, không falsifiable độc lập). Fix: tách hai tầng (O-4), thêm chỉ báo quan sát được cho cơ chế vận hành (O-1), tích hợp mẫu hình thực nghiệm từ Phan Ngọc như hypothesis (O-2), định nghĩa ngưỡng kết nối với F-C (O-3).
+
+**5-Why trace:**
+
+```
+Observation: PROPOSAL_03 (decision tree) không giải quyết được CHECK_07's tautology finding.
+  ↓ Why? Decision tree hỏi "Can this live in our relational structure?" — same question, tree format.
+  ↓ Why is that the same? Vì "can live in our relational structure" ≡ "tái tổ chức theo logic pattern
+    nội tại" — cùng một undefined term, khác cách diễn đạt.
+  ↓ Why is the term undefined? Vì Mạch Rễ chưa chỉ ra observable indicators phân biệt
+    "integrated into pattern" với "rejected by pattern" — ngoài việc nhìn kết quả cuối cùng.
+  ↓ Why can't Phan Ngọc's empirical pattern serve as the indicator?
+  ↓ ROOT: Nó CÓ THỂ — nhưng với tư cách [empirical hypothesis] ("trong lịch sử Việt Nam quan sát được,
+    bộ lọc giữ X và bỏ Y"), không phải universal decision rule ("mọi hệ lọc theo tiêu chí Z").
+    PROPOSAL_03 gốc nhập nhằng hai tầng này — trình bày empirical pattern dưới dạng universal rule.
+    Fix: O-2 đánh dấu rõ [empirical hypothesis] + O-4 tách functional requirement khỏi operational mechanism.
+```
+
+**Scoring (proposal rubric — 5 tiêu chí):**
+
+| Criterion | Score | Rationale |
+|-----------|-------|-----------|
+| Correct | 5 | CHECK_07 đúng: "logic pattern nội tại" thực sự là tautology. Cần operational indicators độc lập. |
+| Deep | 5 | Root cause: conflation giữa functional requirement và operational mechanism. Fix tách hai tầng — không patch prose. |
+| Feasible | 5 | Addition-only — không phá vỡ cấu trúc hiện có. Mechanism addendum giữ nguyên. Tương thích với F-C, DSH-2, VIII. |
+| Conflict-risk | 4 | Risk nhỏ: O-2 (vượt gộp) có thể bị đọc nhầm thành universal requirement. Mitigated: (i) `[empirical hypothesis]`; (ii) "là evidence, không phải definition"; (iii) O-4 tách hai tầng. |
+| Preservation | 5 | Core insight được giữ: selective permeability là functional requirement (falsifiable). Mechanism (a,b,c) không đổi. F-C operationalized qua O-3. DSH-2 kết nối tường minh qua O-3(i). |
+| **Avg** | **4.8** | **→ PASS threshold.** |
+
+**Operational Definition specification:**
+
+```
+O-1 — Observable Indicators (3 sub-mechanisms × 3 indicators + falsification each):
+  (a) Pattern recognition: (i) Discourse, (ii) Institutional, (iii) Behavioral.
+      Falsification: no differentiation across content types → "mở toang."
+  (b) Selective integration: (i) Modification from original, (ii) Time-course via hybrid phase,
+      (iii) Perception shift (no longer "foreign").
+      Falsification: unmodified integration + still "foreign" after ≥2 gens.
+  (c) Pattern update: (i) Continuity MP(P_t) ≈ MP(P_{t+1}), (ii) Legitimacy from guardians,
+      (iii) Lineage traceability.
+      Falsification: first+second order pattern replacement → F(S,t)=TRUE.
+
+O-2 — Empirical Pattern from Phan Ngọc: "Vượt gộp" (3-stage):
+  G1: Mechanical imitation → G2: Hybrid combination → G3: Synthesis (Aufheben).
+  Status: [empirical hypothesis] — observed in Vietnamese history (Phan Ngọc, tr.30-32).
+  Role: evidence for IV, NOT definition of IV.
+
+O-3 — Restructuring Threshold (F-C connection):
+  Below threshold → O-1 normal → VI. Above threshold → (a)+(b) overloaded → F-C triggered.
+  Threshold NOT fixed — depends on: (i) structural distance (DSH-2), (ii) historical context,
+  (iii) reflexivity (VIII).
+
+O-4 — Functional Requirement vs. Operational Mechanism:
+  Two independent analytical layers. System can satisfy functional requirement
+  while operating via different mechanisms → doesn't refute IV as requirement,
+  but weakens mechanism universality claim.
+```
+
+**GAP_03 closure:**
+
+```
+Before A07: "tái tổ chức theo logic pattern nội tại" = tautology (CHECK_07 FAIL).
+After A07:
+  - O-1: 3 sub-mechanisms × 3 observable indicators + individual falsification each
+  - O-2: empirical pattern from Phan Ngọc (vượt gộp) as hypothesis, not definition
+  - O-3: restructuring threshold operationalizes F-C
+  - O-4: functional requirement ≠ operational mechanism — independent analytical layers
+  - Falsification: expanded from 2 extremes to 3 additional gray-zone conditions
+  → CHECK_07: FAIL → PASS. GAP_03: CLOSED.
+```
+
 ## 2026-06-09 — A05: DSH — Diagnostic Stratification Heuristic (Heuristic Chẩn Đoán Phân Tầng) · RCA 4.6/5
 
 **Payload:** Thêm Diagnostic Stratification Heuristic (DSH) — công cụ chẩn đoán nằm GIỮA tầng tiên đề và Diagnosis Rubric, KHÔNG phải tiên đề mới. DSH đóng GAP_01 (thiếu phân tầng bất biến) bằng cách cung cấp 3 nguyên tắc chẩn đoán: DSH-1 (vi sai tốc độ thay đổi), DSH-2 (lọc theo độ sâu), DSH-3 (độ sâu = khoảng cách cấu trúc, không phải loại nội dung). DSH vận hành hóa Condition A của Mệnh Đề F và cung cấp cơ sở cho trọng số chẩn đoán trong Diagnosis Rubric.

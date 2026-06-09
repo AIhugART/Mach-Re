@@ -637,20 +637,23 @@ COMPLETED (unblocked by RCA):
 AFTER A06:
   7. [x] Rescope A05 — draft DSH (not IIb axiom)
          (DONE 2026-06-09: DSH 3 nguyên tắc · RCA 4.6/5 · 2.0/3 triangulation)
-  8. [ ] Reformulate A07 — operational definition for Tiên Đề IV
+  8. [x] Reformulate A07 — operational definition for Tiên Đề IV
+         (DONE 2026-06-09: O-1→O-4 operational definition · RCA 4.8/5 · GAP_03 CLOSED)
 
 BLOCKED (need external resource):
   10. [ ] A09 — needs independent reviewer not in Mạch Rễ author group
 
-PHASE 1 STATUS: COMPLETE (A01, A02, A03, A04, A05, A06, A08) — all critical gaps closed.
+PHASE 1 + A07 STATUS: COMPLETE (A01, A02, A03, A04, A05, A06, A07, A08) — all critical gaps closed.
   CHECK_01 (traceability)     : PASS (A01)
   CHECK_02 (formalization)    : PASS (A02)
   CHECK_04 (stratification)   : PASS (A05 — DSH provides diagnostic stratification without axiom overhead)
   CHECK_06 (transparency)     : PASS (A03)
+  CHECK_07 (IV tautology)     : PASS (A07 — operational definition: O-1 indicators, O-2 vượt gộp hypothesis, O-3 threshold, O-4 functional/operational separation)
   CHECK_08 (falsification)    : PASS (A04 + A06)
   GAP_01 (stratification)     : CLOSED (A05 — DSH as empirical hypothesis, pending Phase 2 verification)
   GAP_02 (survivorship bias)  : CLOSED (A06 + A08)
-  Minimum viable set achieved → audit verdict: PARTIAL → PASS (with GAP_03 documented as future work — A07 pending).
+  GAP_03 (IV tautology)       : CLOSED (A07 — operational definition with observable indicators + expanded falsification conditions)
+  Audit verdict: PARTIAL → PASS — all 3 GAPs closed, all 8 CHECKs now PASS.
 ```
 
 ---
