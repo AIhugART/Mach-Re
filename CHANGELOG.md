@@ -1,5 +1,15 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: Thêm rule Citation Table vào CLAUDE.md · RCA 4.8/5
+
+**Symptom:** Các tài liệu (plan docs, HTML nodes, papers) trích dẫn nghiên cứu bên ngoài nhưng không có bảng nguồn chuẩn hóa ở cuối tài liệu → người đọc không thể verify claim, vi phạm traceability.
+
+**Root (Round 3):** Framework tuyên bố "Citation traceability — mọi claim phải trace về nguồn" (Paper Rules Tier 3 Rule #7) nhưng chỉ áp dụng ở semantic level (mark `[established]`/`[hypothesis]`). Không có enforcement mechanism nào bắt buộc *bảng nguồn vật lý* xuất hiện ở cuối tài liệu. Framework không obey its own traceability standard ở output/format level.
+
+**Fix:** Thêm Paper Rule #12 (Citation table) vào `§Paper & Publication Rules > Tier 3` và bullet enforcement vào `§Document contract rules` trong `CLAUDE.md`. Format canonical APA + DOI, áp dụng cho tài liệu mới tạo/được sửa.
+
+**RCA score:** 4.8/5 (Correct: 5, Deep: 5, Feasible: 5, Conflict-risk: 4, Preservation: 5).
+
 ## 2026-06-10 — RCA: Tạo ubuntu.html — trang nghiên cứu đối tác Ubuntu · RCA 5.0/5
 
 **Symptom:** Hệ thống Mạch Rễ so sánh với Ubuntu trong nhiều trang (`mach_re_homologous.html`, `axiom_3_cultural_comparison.html`, `axiom_3.html`) nhưng không có trang standalone trình bày Ubuntu đủ sâu với nguồn học thuật. Người đọc phân tích homologous không có base knowledge để đánh giá các tuyên bố so sánh.

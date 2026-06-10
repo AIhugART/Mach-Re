@@ -206,6 +206,11 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 9. **Bilingual** — thuật ngữ kỹ thuật giữ English; giải thích bằng Vietnamese khi cần. Formal claims bằng English.
 10. **Avoid negatively evaluative wording** — không dùng "logical fallacy", "mistake", "wrong" khi nói về hệ khác. Dùng "scope boundary", "category boundary", "not implied by this framework".
 11. **Author metadata** — file trong `papers/` (không nằm trong `public_documents/`) thêm dòng đầu: `Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/`
+12. **Citation table — Bảng Nguồn Trích Dẫn** (RCA finding 2026-06-10, score 4.8/5) — Mọi tài liệu (paper, plan doc, HTML node, mapping doc) có ≥ 1 trích dẫn nghiên cứu bên ngoài **PHẢI** kết thúc bằng một bảng "Nguồn Trích Dẫn" ở cuối tài liệu. Không có bảng nguồn = tài liệu chưa hoàn chỉnh (không publish, không merge). Format canonical APA + DOI:
+    > **Nguồn:** Tác giả, A., & Tác giả, B. (năm). Tên bài báo. *Tên tạp chí*, vol(issue), pp. x–y. https://doi.org/xxxxx
+    - Áp dụng cho tài liệu **mới tạo hoặc được sửa** (không retroactive với tài liệu cũ chưa chỉnh).
+    - Nếu tài liệu không có trích dẫn ngoài → ghi rõ "Tài liệu này không có trích dẫn nghiên cứu từ bên ngoài."
+    - Phân biệt với Rule #7 (citation traceability = semantic level — mark `[established]`/`[hypothesis]`/…); Rule #12 là *output format* — bảng hiện diện ở cuối trang.
 
 ### Screenplay & Creative Writing Rules (RCA finding 2026-06-09)
 
@@ -232,13 +237,15 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 ### Document contract rules
 
+- **Bảng Nguồn Trích Dẫn bắt buộc** (RCA finding 2026-06-10, score 4.8/5) — Mọi tài liệu có ≥ 1 trích dẫn nghiên cứu bên ngoài phải kết thúc bằng bảng "Nguồn Trích Dẫn" APA-formatted (xem Paper & Publication Rules Tier 3 Rule #12). Áp dụng cho tất cả file loại: `.html`, `.md`, paper manuscript, plan doc. Format ví dụ:
+  > Udah, H., Tusasiirwe, S., Mugumbate, R., & Gatwiri, K. (2025). Ubuntu philosophy, values, and principles: An opportunity to do social work differently. *Journal of Social Work*, pp. 1–19. https://doi.org/10.1177/14680173241312749
 - Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
 - Apply the mandatory principle "rebuild with carry-forward" (replaces the former "extend, not overwrite" rule; RCA finding 2026-06-06, score ≥ 4/5). For **unpublished / still-being-derived** content (the axiom system, internal mappings), clean overwrite and from-scratch re-derivation are **permitted** — preserving the old structure is not required. Binding condition: **before deleting or overwriting, declare an explicit "Carry-Forward Set"** — a named list of the assets (claims, definitions, falsification conditions, methodological compass) eligible to be carried over. Every item in the set is a *candidate that must survive re-validation through the RCA gate*, not an automatic keep; anything not in the set defaults to dropped (reference-only). For **published / externally-depended-upon** content, still prefer extend, and overwrite only when the user explicitly requests it. The default Carry-Forward Set lives in `plan/dictionary_rule.md §7`.
 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **MACH_RE** (3125 symbols, 3211 relationships, 44 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **MACH_RE** (3146 symbols, 3232 relationships, 44 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
