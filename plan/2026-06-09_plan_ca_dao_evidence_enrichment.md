@@ -3,7 +3,7 @@
 > **Ngày:** 2026-06-09 · **Cập nhật:** 2026-06-10  
 > **Nguồn gốc:** [RCA Ca Dao Tục Ngữ Coverage](file:///C:/Users/PC/.gemini/antigravity-ide/brain/2d7cc985-3474-4277-8e16-b61033391131/rca_ca_dao_tuc_ngu_coverage.md) (cùng ngày)  
 > **Nguyên tắc:** KHÔNG mở rộng hệ tiên đề — chỉ làm giàu bằng chứng thực nghiệm (evidence enrichment).  
-> **Trạng thái:** ĐÃ DUYỆT — thêm H6 (2026-06-10, RCA 4.6/5), sẵn sàng thực hiện.
+> **Trạng thái:** ĐÃ DUYỆT — thêm H6 (2026-06-10, RCA 4.6/5) · thêm nguồn học thuật S1–S3 (2026-06-10, S1=5.0/5 ✅ S2=4.6/5 ✅ S3=3.0/5 ❌), sẵn sàng thực hiện.
 
 ---
 
@@ -107,6 +107,7 @@
 - [x] **H3.1** Kiểm tra sự tồn tại của file Q2 và Q3 trong kho tài liệu → **ĐÃ DONE**: Q2 txt ✅ · Q3 md ✅
 - [ ] **H3.2** Đọc mục lục Q2 đầy đủ, lập bảng ánh xạ chủ đề → tiên đề (giống §3 trong RCA)
   > **[SHARPEN — 2026-06-10, RCA gap III orthogonality]** Khi đọc Q2, chủ động tìm ca dao nơi V-axis (hiếu đạo, tổ tiên, hậu thế) và H-axis (láng giềng, thời thế, xã hội đương thời) hoạt động **đối lập hoặc độc lập** — ví dụ: "Bán anh em xa, mua láng giềng gần." Đây là bằng chứng cho **tính trực giao V ⊥ H** (Tiên Đề III), phân biệt III với Halbwachs "ký ức trong hiện tại." Đặt tên nhóm ca dao này: `[III-orthogonality evidence]`.
+  > **[Academic anchor — S1 Assmann 2026-06-10]** Jan Assmann (2011) phân biệt "cultural memory" (~V-axis, span 3,000 năm) vs "communicative memory" (~H-axis, 80–100 năm living memory) — đây là academic vocabulary chính xác cho V⊥H; xem Appendix S1.
 - [ ] **H3.3** Đọc mục lục Q3 đầy đủ, lập bảng ánh xạ tương tự
   > **[SHARPEN — 2026-06-10, RCA gap III orthogonality]** Tương tự H3.2 — tìm ca dao về đấu tranh dân tộc, bảo vệ phong tục, phản ứng với đồng hóa (IV), và tìm bất kỳ ca dao nào cho thấy V-axis hoạt động độc lập với H-axis.
   > **[VI addendum — 2026-06-10, RCA score 4.0/5]** Nếu tìm được ≥3 câu thể hiện đồng thời ba thành phần: (IV) biên giới chọn lọc + (II) pattern tái tổ chức + (III) truyền qua chiều dọc → ghi vào output file với label `[VI addendum — Chuyển Hóa Nhiễu Loạn]`. Đây là bằng chứng bổ sung cho Mệnh Đề VI, không tạo hạng mục riêng.
@@ -321,3 +322,6 @@ Tuần 3+: H3 (T.bình, 4.6/5)
 | RCA gốc | [rca_ca_dao_tuc_ngu_coverage.md](file:///C:/Users/PC/.gemini/antigravity-ide/brain/2d7cc985-3474-4277-8e16-b61033391131/rca_ca_dao_tuc_ngu_coverage.md) | Tham chiếu ánh xạ gốc |
 | Review Phan Ngọc | [rca_phan_ngoc_trong_mach_re.md](file:///c:/Stable_Diffusion/MACH_RE/review/rca_phan_ngoc_trong_mach_re.md) | H2, H6 |
 | Paper 005 | [paper_005.md](file:///c:/Stable_Diffusion/MACH_RE/papers/paper_005/paper_005.md) | H2 |
+| **[S1] Jan Assmann** — *Cultural Memory and Early Civilization* (Cambridge UP, 2011) · `[academic source — RCA 5.0/5 ✅]` | [Assmann_Cultural_Memory_Early_Civilization.md](file:///c:/Stable_Diffusion/MACH_RE/documents/public_documents/Assmann_Cultural_Memory_Early_Civilization.md) | **H3** (III Prior-art anchor: "cultural memory" = V-axis 3,000yr · "communicative memory" = H-axis 80–100yr → academic vocabulary cho V⊥H) · **H1** (VIII: cultures "respond creatively" = reflexivity) · **H7** (V: memory as "interhuman interaction" = distributed, không tập trung) |
+| **[S2] Wetzel, D.J.** — *Halbwachs: Collective Memory and Forgetting* (2020, review article) · `[secondary review source — RCA 4.6/5 ✅ — cite primary Halbwachs cho formal paper citation]` | [Maurice_Halbwachs_Collective_Memory_and_Forgetting.md](file:///c:/Stable_Diffusion/MACH_RE/documents/public_documents/Maurice_Halbwachs_Collective_Memory_and_Forgetting.md) | **H3** (III contrast: Halbwachs "present-centered reconstruction" ≠ V-axis · cung cấp Assmann–Halbwachs critique vocabulary · canonical statement cho lý do III ≠ Halbwachs) |
+| **[S3] Jordan-Baker, C.** — *On Cliché: Expression, Cognition and Understanding* · `[background reference — RCA 3.0/5 ❌ — DƯỚI threshold — KHÔNG dùng làm evidence source]` | [On_Cliche_Expression_Cognition_and_Understanding.md](file:///c:/Stable_Diffusion/MACH_RE/documents/public_documents/On_Cliche_Expression_Cognition_and_Understanding.md) | Chỉ tham khảo nếu cần phân biệt proverb (ca dao — informationally rich) ≠ cliché (stored unit — informationally impoverished theo Jordan-Baker). Gap filled: không có. Không gán evidence label cho bất kỳ tiên đề nào. |
