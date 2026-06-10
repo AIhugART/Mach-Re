@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mạch Rễ — Tổng quan</title>
   <meta name="description" content="Mạch Rễ — Framework Bản Sắc Sinh Tồn của dân tộc Việt Nam" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet" />
   <style>
     :root {
-      --green-deep:  #1a3a2a;
-      --green-mid:   #2d6a4f;
+      --green-deep: #1a3a2a;
+      --green-mid: #2d6a4f;
       --green-light: #52b788;
-      --green-pale:  #b7e4c7;
-      --gold:        #d4a843;
-      --gold-light:  #f0c96a;
-      --cream:       #faf7f0;
-      --text-dark:   #1c1c1c;
-      --text-muted:  #5a5a5a;
-      --border:      #d8e8d8;
+      --green-pale: #b7e4c7;
+      --gold: #d4a843;
+      --gold-light: #f0c96a;
+      --cream: #faf7f0;
+      --text-dark: #1c1c1c;
+      --text-muted: #5a5a5a;
+      --border: #d8e8d8;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Be Vietnam Pro', sans-serif;
@@ -39,12 +46,19 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero::before {
       content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 70% 20%, rgba(82,183,136,.18) 0%, transparent 60%);
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 20%, rgba(82, 183, 136, .18) 0%, transparent 60%);
     }
-    .hero-icon { font-size: 3.5rem; margin-bottom: 16px; }
+
+    .hero-icon {
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+    }
+
     .hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(2.4rem, 6vw, 4rem);
@@ -52,12 +66,14 @@
       letter-spacing: 0.04em;
       margin-bottom: 8px;
     }
+
     .hero .sub {
       font-size: 1.05rem;
       color: var(--green-pale);
       font-weight: 300;
       margin-bottom: 20px;
     }
+
     .hero-quote {
       max-width: 640px;
       margin: 0 auto;
@@ -77,9 +93,10 @@
       flex-wrap: wrap;
       padding: 20px 24px 0;
     }
+
     .badge {
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.25);
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .25);
       color: #fff;
       border-radius: 20px;
       padding: 4px 14px;
@@ -93,24 +110,31 @@
       margin: 48px auto 0;
       padding: 0 24px;
     }
+
     .what-box .card {
       background: #fff;
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 32px;
-      box-shadow: 0 4px 24px rgba(0,0,0,.06);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .06);
     }
+
     .what-box h2 {
       font-size: 1.3rem;
       color: var(--green-mid);
       margin-bottom: 12px;
       font-weight: 600;
     }
+
     .what-box p {
       line-height: 1.8;
       color: var(--text-muted);
     }
-    .what-box strong { color: var(--text-dark); }
+
+    .what-box strong {
+      color: var(--text-dark);
+    }
+
     .central-question {
       background: var(--green-deep);
       color: #fff;
@@ -128,22 +152,26 @@
       margin: 48px auto 60px;
       padding: 0 24px;
     }
+
     .nav-section h2 {
       font-size: 1.4rem;
       font-weight: 600;
       color: var(--green-deep);
       margin-bottom: 6px;
     }
+
     .nav-section .hint {
       color: var(--text-muted);
       font-size: .9rem;
       margin-bottom: 28px;
     }
+
     .nav-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
     }
+
     .nav-card {
       background: #fff;
       border: 1px solid var(--border);
@@ -158,18 +186,23 @@
       position: relative;
       overflow: hidden;
     }
+
     .nav-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 4px;
       border-radius: 16px 16px 0 0;
     }
+
     .nav-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 36px rgba(0,0,0,.1);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, .1);
       border-color: var(--green-light);
     }
+
     .nav-card .tag {
       font-size: .75rem;
       font-weight: 700;
@@ -179,27 +212,101 @@
       border-radius: 20px;
       width: fit-content;
     }
-    .nav-card .emoji { font-size: 2.2rem; }
-    .nav-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--green-deep); }
-    .nav-card p { font-size: .88rem; color: var(--text-muted); line-height: 1.6; }
-    .nav-card .arrow { color: var(--green-light); font-size: 1.1rem; margin-top: auto; }
+
+    .nav-card .emoji {
+      font-size: 2.2rem;
+    }
+
+    .nav-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--green-deep);
+    }
+
+    .nav-card p {
+      font-size: .88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .nav-card .arrow {
+      color: var(--green-light);
+      font-size: 1.1rem;
+      margin-top: auto;
+    }
 
     /* card color accents */
-    .c-what::before  { background: #52b788; }
-    .c-why::before   { background: #d4a843; }
-    .c-who::before   { background: #7c6fc9; }
-    .c-when::before  { background: #e07a5f; }
-    .c-how::before     { background: #2d9596; }
-    .c-upgrade::before { background: #7c6fc9; }
-    .c-papers::before  { background: var(--green-mid); }
+    .c-what::before {
+      background: #52b788;
+    }
 
-    .c-what    .tag { background: #e8f5ee; color: #2d6a4f; }
-    .c-why     .tag { background: #fdf3dc; color: #a07830; }
-    .c-who     .tag { background: #ede8f7; color: #5a4fa0; }
-    .c-when    .tag { background: #fdecea; color: #b05040; }
-    .c-how     .tag { background: #e0f4f4; color: #1a7070; }
-    .c-upgrade .tag { background: #ede8f7; color: #5a4fa0; }
-    .c-papers  .tag { background: var(--green-pale); color: var(--green-deep); }
+    .c-why::before {
+      background: #d4a843;
+    }
+
+    .c-who::before {
+      background: #7c6fc9;
+    }
+
+    .c-when::before {
+      background: #e07a5f;
+    }
+
+    .c-how::before {
+      background: #2d9596;
+    }
+
+    .c-upgrade::before {
+      background: #7c6fc9;
+    }
+
+    .c-papers::before {
+      background: var(--green-mid);
+    }
+
+    .c-what .tag {
+      background: #e8f5ee;
+      color: #2d6a4f;
+    }
+
+    .c-why .tag {
+      background: #fdf3dc;
+      color: #a07830;
+    }
+
+    .c-who .tag {
+      background: #ede8f7;
+      color: #5a4fa0;
+    }
+
+    .c-when .tag {
+      background: #fdecea;
+      color: #b05040;
+    }
+
+    .c-how .tag {
+      background: #e0f4f4;
+      color: #1a7070;
+    }
+
+    .c-upgrade .tag {
+      background: #ede8f7;
+      color: #5a4fa0;
+    }
+
+    .c-papers .tag {
+      background: var(--green-pale);
+      color: var(--green-deep);
+    }
+
+    .c-axioms::before {
+      background: #c47f0a;
+    }
+
+    .c-axioms .tag {
+      background: #fdf0d0;
+      color: #8a5800;
+    }
 
     /* ── TIMELINE STRIP ── */
     .timeline-strip {
@@ -208,7 +315,15 @@
       padding: 40px 24px;
       text-align: center;
     }
-    .timeline-strip h3 { font-size: 1rem; letter-spacing: .1em; text-transform: uppercase; color: var(--green-pale); margin-bottom: 24px; }
+
+    .timeline-strip h3 {
+      font-size: 1rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--green-pale);
+      margin-bottom: 24px;
+    }
+
     .tl-row {
       display: flex;
       justify-content: center;
@@ -217,291 +332,477 @@
       max-width: 860px;
       margin: 0 auto;
     }
+
     .tl-item {
       flex: 1;
       min-width: 140px;
       padding: 0 12px;
-      border-right: 1px solid rgba(255,255,255,.15);
+      border-right: 1px solid rgba(255, 255, 255, .15);
       position: relative;
     }
-    .tl-item:last-child { border-right: none; }
-    .tl-year { font-size: 1.3rem; font-weight: 700; color: var(--gold-light); }
-    .tl-label { font-size: .78rem; color: rgba(255,255,255,.7); margin-top: 4px; line-height: 1.5; }
+
+    .tl-item:last-child {
+      border-right: none;
+    }
+
+    .tl-year {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+
+    .tl-label {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .7);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
 
     /* ── FOOTER ── */
     footer {
       background: var(--green-deep);
-      color: rgba(255,255,255,.6);
+      color: rgba(255, 255, 255, .6);
       text-align: center;
       padding: 24px;
       font-size: .82rem;
     }
-    footer a { color: var(--green-pale); text-decoration: none; }
+
+    footer a {
+      color: var(--green-pale);
+      text-decoration: none;
+    }
+
+    .step-num {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--border);
+      color: var(--text-muted);
+      font-size: .7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   </style>
 </head>
+
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-icon">🌿</div>
-  <h1>MẠCH RỄ</h1>
-  <p class="sub">Khung nền Bản Sắc Sinh Tồn (Framework) · Phiên bản 2.0</p>
-  <div class="badges">
-    <span class="badge">CC BY 4.0</span>
-    <span class="badge">Đang phát triển</span>
-    <span class="badge">Việt | English</span>
-    <span class="badge">Phi chính trị · Phi tôn giáo</span>
-  </div>
-  <div style="height:32px"></div>
-  <div class="hero-quote">
-    "Được sống: từ khi có dân tộc Việt. Được đặt tên: 2026."
-  </div>
-</div>
-
-<!-- WHAT IS -->
-<div class="what-box">
-  <div class="card">
-    <h2>🌱 Mạch Rễ là gì?</h2>
-    <p>
-      <strong>Mạch Rễ</strong> là khung nền nhận dạng (qua suy luận — anumāna — không phải trực giác — pratyakṣa) và thực hành bản sắc sinh tồn — được xây dựng để
-      <strong>đặt tên và hệ thống hóa</strong> — làm hiển lộ cấu trúc vốn đã tồn tại trong thực hành, không phải áp đặt từ bên ngoài — triết lý sinh tồn được dân tộc Việt Nam thể hiện qua hành vi tập thể trong lịch sử, thứ đã
-      được <em>sống</em> và liên tục thích nghi qua 4.000 năm nhưng chưa từng được <em>hệ thống hóa</em> thành một khung nền hoàn chỉnh.
-      Có thể áp dụng cho cá nhân, cộng đồng, và tổ chức đang đối mặt với áp lực đồng hóa trong thời đại biến động.
-    </p>
-    <div class="central-question">
-      ❓ "Làm sao giữ được mình khi mọi thứ xung quanh muốn thay đổi mình?"
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-icon">🌿</div>
+    <h1>MẠCH RỄ</h1>
+    <p class="sub">Khung nền Bản Sắc Sinh Tồn (Framework) · Phiên bản 2.0</p>
+    <div class="badges">
+      <span class="badge">CC BY 4.0</span>
+      <span class="badge">Đang phát triển</span>
+      <span class="badge">Việt | English</span>
+      <span class="badge">Phi chính trị · Phi tôn giáo</span>
     </div>
-    <p style="font-size:.9rem;color:var(--text-muted);line-height:1.7;margin-top:12px">
-      Khung nền không đảm bảo giữ được bản sắc trong mọi điều kiện — nó cung cấp công cụ nhận dạng và thực hành, và hiệu quả phụ thuộc vào mức độ đa dạng của áp lực đồng hóa mà nó có thể điều tiết. Một số yếu tố phải giữ chặt (ngôn ngữ, cấu trúc quan hệ), số khác có thể lỏng (hình thức, công cụ) — cốt lõi của khung nền là phân biệt được đâu là gốc rễ, đâu là cành lá. Nói cách khác: Mạch Rễ không phải là một vật cố định để dán nhãn — nó là một quá trình: bản sắc sinh tồn <strong>diễn ra khi</strong> một cộng đồng vừa giữ được cấu trúc quan hệ cốt lõi, vừa thích nghi được với áp lực bên ngoài. Câu hỏi không chỉ là phòng thủ — mà còn là: giữ gì, đổi gì, và lớn lên từ đâu.
-    </p>
-    <p style="font-size:.85rem;color:var(--text-muted);line-height:1.7;margin-top:8px">
-      Về nhận thức luận Phật giáo (pramāṇa) — một trong 3 hệ độc lập mà Mạch Rễ neo vào: đối tượng nhận thức (prameya) = bản sắc sinh tồn; phương tiện (pramāṇa) = suy từ câu hỏi gốc + kiểm chứng chéo; nhận thức đúng (pramā) = chẩn đoán rễ sâu / rễ nông; kết quả (phala) = thực hành. Chẩn đoán song song với lộ trình từ vô minh (avidyā) đến trí tuệ (prajñā), nhưng là công cụ quy ước (saṃvṛti-sat), không tuyên bố giải thoát (nirvāṇa). Bản sắc được nhận dạng ở tầng đặc tính chung (sāmānyalakṣaṇa), không phải tầng cá biệt bất khả diễn đạt (svalakṣaṇa). Việc đặt tên vận hành theo cơ chế loại trừ (apoha). Mỗi tiên đề kèm điều kiện bác bỏ (Mệnh đề F — xem Hệ Tiên Đề). Tiên Đề I ("Sống Trong Quan Hệ") tương đương cấu trúc với Duyên Khởi (pratītyasamutpāda).
-    </p>
-  </div>
-</div>
-
-<!-- NAV GRID -->
-<div class="nav-section">
-  <h2>📂 Tài liệu theo cấu trúc 4W1H</h2>
-  <p class="hint">Chọn một góc nhìn để khám phá Mạch Rễ</p>
-  <div class="nav-grid">
-
-    <a href="what.html" class="nav-card c-what">
-      <span class="tag">WHAT</span>
-      <span class="emoji">🌿</span>
-      <h3>Là Gì?</h3>
-      <p>Định nghĩa, bốn thành phần khung nền (framework), RCA tên gọi, Đồng cấu (Isomorphism) 3 hệ thống, và vị trí toàn cầu.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="axioms.html" class="nav-card c-how">
-      <span class="tag">HỆ TIÊN ĐỀ</span>
-      <span class="emoji">📐</span>
-      <h3>Hệ Tiên Đề</h3>
-      <p>Bản tái dựng (rebuild 2026) suy từ câu hỏi gốc (derivation — theo nghĩa điều kiện cần: lời giải thích khả dĩ nhất trong phạm vi khảo sát) và kiểm chứng chéo qua 3 hệ độc lập (triangulation): <strong>4 Tiên Đề Cốt Lõi (I–IV) + 4 Mệnh Đề Dẫn Xuất (V–VII, F) + 1 Meta-Tiên Đề (VIII)</strong>. Render từ <code><a href="axiom_spec.md">axiom_spec.md</a></code> (file neo canonical của framework).</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="why.html" class="nav-card c-why">
-      <span class="tag">WHY</span>
-      <span class="emoji">💡</span>
-      <h3>Tại Sao?</h3>
-      <p>Ba biến động, Phân tích nguyên nhân gốc rễ (RCA) 5 Tại Sao (5 Whys), năm hạn chế cấu trúc, năm Mô-đun Nâng cấp (Module Upgrade) v2.0, Prajñā &amp; Upāya.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="who.html" class="nav-card c-who">
-      <span class="tag">WHO</span>
-      <span class="emoji">👥</span>
-      <h3>Cho Ai?</h3>
-      <p>Các thế hệ, tôn giáo, so sánh VN × Ubuntu × Yoruba (9 chiều), Nga, Georgia, Sami, Baltic.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="when.html" class="nav-card c-when">
-      <span class="tag">WHEN</span>
-      <span class="emoji">🕰️</span>
-      <h3>Khi Nào?</h3>
-      <p>Dòng chảy 4.000 năm, ba anomaly, Hòa giải Việt-Mỹ, 500kV attractor basin, lộ trình 2026–2040+.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="how.html" class="nav-card c-how">
-      <span class="tag">HOW</span>
-      <span class="emoji">🛠️</span>
-      <h3>Áp Dụng Ra Sao?</h3>
-      <p>Ba thực hành, Chẩn đoán Bảng điểm (Diagnosis Rubric), Tiên đề cốt lõi (Core Axioms), triển khai 10 tầng, 4 điều kiện, Tiên Đề III vs triết học thế giới.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="upgrade.html" class="nav-card c-upgrade">
-      <span class="tag">UPGRADE</span>
-      <span class="emoji">🔄</span>
-      <h3>Mạch Rễ Upgraded</h3>
-      <p>Tiên Đề VIII — Tự Nhìn Thấy Mình — Soi Mình Mà Không Vỡ (Nhận Thức Phản Tư), bốn tiên đề mở rộng qua Phật giáo, Module 5 — Xung Đột Lõi (xử lý bất đồng nội bộ), kiến trúc sau nâng cấp (upgrade), và 4 điều kiện triển khai.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="papers/index.html" class="nav-card c-papers">
-      <span class="tag">BÀI BÁO</span>
-      <span class="emoji">📄</span>
-      <h3>Bài Báo Nghiên Cứu</h3>
-      <p>Các bài báo nghiên cứu khoa học, tài liệu phân tích chuyên sâu giải mã hệ tiên đề Mạch Rễ trên nhiều khía cạnh văn hóa, ngoại giao và xã hội.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-    <a href="luu_tru.html" class="nav-card c-when">
-      <span class="tag">CƠ CHẾ</span>
-      <span class="emoji">🗄️</span>
-      <h3>Cơ Chế Lưu Trữ</h3>
-      <p>Mạch Rễ lưu trữ data ở đâu, theo cơ chế nào? Phân tích kiến trúc lưu trữ qua hệ tiên đề I–VIII: lưu pattern (không nội dung), phân tán (không tập trung), xuyên thế hệ (trục V), hấp thụ có định hướng (biên giới động), và chuyển hóa nhiễu.</p>
-      <span class="arrow">→ Đọc tiếp</span>
-    </a>
-
-  </div>
-</div>
-
-<!-- TIMELINE STRIP -->
-<div class="timeline-strip">
-  <h3>Hành trình của triết lý sinh tồn mà Mạch Rễ đặt tên (các mốc biểu hiện trong lịch sử — không phải các mốc phát triển của khung nền, được xây dựng năm 2026)</h3>
-  <div class="tl-row">
-    <div class="tl-item">
-      <div class="tl-year">Tiền sử</div>
-      <div class="tl-label">Tín ngưỡng thờ Mẫu, thờ tổ tiên — rễ trước khi có tên</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-year">~179 TCN</div>
-      <div class="tl-label">Bắt đầu 1.000 năm Bắc thuộc — tiếng Việt không mất</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-year">TK 13</div>
-      <div class="tl-label">Trúc Lâm Thiền — Mạch Rễ mặc áo Phật giáo nhập thế</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-year">1994</div>
-      <div class="tl-label">Đường dây 500kV — Mạch Rễ trong hành động hiện đại</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-year">1997</div>
-      <div class="tl-label">Bình thường hóa Việt–Mỹ chính thức — hòa giải không quên</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-year">2026</div>
-      <div class="tl-label">Mạch Rễ được đặt tên — Khung nền v2.0 (Framework v2.0)</div>
+    <div style="height:32px"></div>
+    <div class="hero-quote">
+      "Được sống: từ khi có dân tộc Việt. Được đặt tên: 2026."
     </div>
   </div>
-</div>
 
-<!-- DISCLAIMER -->
-<div class="disclaimer-section" style="max-width:960px;margin:48px auto 0;padding:0 24px 48px">
-  <h2 style="font-size:1.4rem;font-weight:600;color:var(--green-deep);margin-bottom:6px">⚠️ Tuyên Bố Miễn Trừ Trách Nhiệm / Disclaimer</h2>
-  <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:28px">🇻🇳 Tiếng Việt &nbsp;|&nbsp; 🇬🇧 English</p>
-
-  <!-- VIETNAMESE -->
-  <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,.04)">
-    <h3 style="font-size:1.1rem;font-weight:700;color:var(--green-deep);margin-bottom:16px">🇻🇳 Tiếng Việt</h3>
-    <p style="line-height:1.8;color:var(--text-muted);margin-bottom:12px">
-      <strong style="color:var(--text-dark)">Mạch Rễ là khung nền (framework) triết học và nhân học mở, thuộc loại hình triết học tương quan-phân tán (Relational and Distributed Philosophy) — không phải triết học hệ thống-siêu hình (Systematic Metaphysics).</strong>
-    </p>
-    <p style="line-height:1.8;color:var(--text-muted);margin-bottom:16px">
-      Tài liệu này được soạn thảo và chia sẻ với tinh thần học thuật mở, nhằm mục đích <strong style="color:var(--text-dark)">ghi chép, lý thuyết hóa, và cung cấp công cụ thực hành</strong> cho triết lý sinh tồn của dân tộc Việt Nam — thứ đã tồn tại trong hành vi tập thể của người Việt qua hàng nghìn năm lịch sử, và ngày càng cấp thiết trong thời đại biến động toàn cầu.
-    </p>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
-      <div style="background:#fef9f0;border:1px solid #f0ddb8;border-radius:10px;padding:16px">
-        <div style="font-weight:700;color:#b07820;font-size:.85rem;margin-bottom:6px">🏛️ Về chính trị</div>
-        <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
-          Tài liệu này không đại diện, không liên kết, và không phục vụ bất kỳ đảng phái, tổ chức chính trị, hay chính phủ nào. Mạch Rễ tồn tại trước mọi nhà nước Việt Nam hiện đại và thuộc về toàn thể dân tộc — bao gồm người Việt trong nước, người Việt hải ngoại, và tất cả những ai mang trong mình dòng chảy văn hóa Việt — <strong style="color:var(--text-dark)">không phân biệt chính kiến</strong>.
-        </p>
+  <!-- WHAT IS -->
+  <div class="what-box">
+    <div class="card">
+      <h2>🌱 Mạch Rễ là gì?</h2>
+      <p>
+        <strong>Mạch Rễ</strong> là khung nền nhận dạng (qua suy luận — không phải trực giác) và thực hành bản sắc sinh
+        tồn — được xây dựng để
+        <strong>đặt tên và hệ thống hóa</strong> — làm hiển lộ cấu trúc vốn đã tồn tại trong thực hành, không phải áp
+        đặt từ bên ngoài — triết lý sinh tồn được dân tộc Việt Nam thể hiện qua hành vi tập thể trong lịch sử, thứ đã
+        được <em>sống</em> và liên tục thích nghi qua 4.000 năm nhưng chưa từng được <em>hệ thống hóa</em> thành một
+        khung nền hoàn chỉnh.
+        Có thể áp dụng cho cá nhân, cộng đồng, và tổ chức đang đối mặt với áp lực đồng hóa trong thời đại biến động.
+      </p>
+      <div class="central-question">
+        ❓ "Làm sao giữ được mình khi mọi thứ xung quanh muốn thay đổi mình?"
       </div>
-      <div style="background:#f0f7f0;border:1px solid #c8e4c8;border-radius:10px;padding:16px">
-        <div style="font-weight:700;color:#2d6a4f;font-size:.85rem;margin-bottom:6px">🙏 Về tôn giáo</div>
-        <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
-          Tài liệu này không phải tôn giáo mới, không phải giáo phái, không phải tín ngưỡng có tổ chức. Mạch Rễ không cạnh tranh, không thay thế, và không phán xét bất kỳ tôn giáo hay tín ngưỡng nào. Người theo bất kỳ tôn giáo nào, hoặc không theo tôn giáo nào, đều có thể <strong style="color:var(--text-dark)">tự do đọc, sử dụng và phát triển</strong> tài liệu này.
-        </p>
-      </div>
-      <div style="background:#f0f3fa;border:1px solid #c8d4ec;border-radius:10px;padding:16px">
-        <div style="font-weight:700;color:#4a5fa0;font-size:.85rem;margin-bottom:6px">📜 Về bản quyền</div>
-        <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
-          Không cá nhân, tổ chức, hay thể chế nào sở hữu Mạch Rễ. Phát hành theo <strong style="color:var(--text-dark)">CC BY 4.0</strong> — tự do chia sẻ, dịch thuật, và phát triển với điều kiện ghi nguồn.
-        </p>
-      </div>
+      <p style="font-size:.9rem;color:var(--text-muted);line-height:1.7;margin-top:12px">
+        Khung nền không đảm bảo giữ được bản sắc trong mọi điều kiện — nó cung cấp công cụ nhận dạng và thực hành, và
+        hiệu quả phụ thuộc vào mức độ đa dạng của áp lực đồng hóa mà nó có thể điều tiết. Một số yếu tố phải giữ chặt
+        (ngôn ngữ, cấu trúc quan hệ), số khác có thể lỏng (hình thức, công cụ) — cốt lõi của khung nền là phân biệt được
+        đâu là gốc rễ, đâu là cành lá. Nói cách khác: Mạch Rễ không phải là một vật cố định để dán nhãn — nó là một quá
+        trình: bản sắc sinh tồn <strong>diễn ra khi</strong> một cộng đồng vừa giữ được cấu trúc quan hệ cốt lõi, vừa
+        thích nghi được với áp lực bên ngoài. Câu hỏi không chỉ là phòng thủ — mà còn là: giữ gì, đổi gì, và lớn lên từ
+        đâu.
+      </p>
+      <p style="font-size:.85rem;color:var(--text-muted);line-height:1.7;margin-top:8px">
+        Về nhận thức luận Phật giáo (pramāṇa) — một trong 3 hệ độc lập mà Mạch Rễ neo vào: đối tượng nhận thức (prameya)
+        = bản sắc sinh tồn; phương tiện (pramāṇa) = suy từ câu hỏi gốc + kiểm chứng chéo; nhận thức đúng (pramā) = chẩn
+        đoán rễ sâu / rễ nông; kết quả (phala) = thực hành. Chẩn đoán song song với lộ trình từ vô minh (avidyā) đến trí
+        tuệ (prajñā), nhưng là công cụ quy ước (saṃvṛti-sat), không tuyên bố giải thoát (nirvāṇa). Bản sắc được nhận
+        dạng ở tầng đặc tính chung (sāmānyalakṣaṇa), không phải tầng cá biệt bất khả diễn đạt (svalakṣaṇa). Việc đặt tên
+        vận hành theo cơ chế loại trừ (apoha). Mỗi tiên đề kèm điều kiện bác bỏ (Mệnh đề F — xem Hệ Tiên Đề). Tiên Đề I
+        ("Sống Trong Quan Hệ") tương đương cấu trúc với Duyên Khởi (pratītyasamutpāda). <a href="#nguon-2">[2]</a>
+      </p>
     </div>
   </div>
 
-  <!-- ENGLISH -->
-  <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,.04)">
-    <h3 style="font-size:1.1rem;font-weight:700;color:var(--green-deep);margin-bottom:16px">🇬🇧 English</h3>
-    <p style="line-height:1.8;color:var(--text-muted);margin-bottom:12px">
-      <strong style="color:var(--text-dark)">Mạch Rễ ("Root Flow") is an open philosophical and anthropological framework belonging to the Relational and Distributed Philosophy type — not Systematic Metaphysics.</strong>
-    </p>
-    <p style="line-height:1.8;color:var(--text-muted);margin-bottom:16px">
-      This document is authored and shared in the spirit of open scholarship, with the purpose of <strong style="color:var(--text-dark)">documenting, theorizing, and providing practical tools</strong> for the survival philosophy of the Vietnamese people — something that has existed in collective behavior for thousands of years, and grows increasingly urgent in an age of global disruption.
-    </p>
+  <!-- NAV GRID -->
+  <div class="nav-section" id="nav-grid">
+    <h2>📂 Khám Phá: Cấu Trúc 4W1H</h2>
+    <p class="hint">Lần đầu tiếp cận? Đọc theo thứ tự 1 → 5</p>
+    <div class="nav-grid">
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
-      <div style="background:#fef9f0;border:1px solid #f0ddb8;border-radius:10px;padding:16px">
-        <div style="font-weight:700;color:#b07820;font-size:.85rem;margin-bottom:6px">🏛️ On politics</div>
-        <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
-          This document does not represent, affiliate with, or serve any political party, organization, or government. Mạch Rễ predates all modern Vietnamese states and belongs to the entire Vietnamese people — including Vietnamese in Vietnam, the diaspora, and all who carry Vietnamese cultural heritage — <strong style="color:var(--text-dark)">regardless of political affiliation</strong>.
-        </p>
+      <a href="what.html" class="nav-card c-what">
+        <span class="step-num">1</span>
+        <span class="tag">WHAT</span>
+        <span class="emoji">🌿</span>
+        <h3>Là Gì?</h3>
+        <p>Định nghĩa, bốn thành phần khung nền (framework), RCA tên gọi, Đồng cấu (Isomorphism) 3 hệ thống, và vị trí
+          toàn cầu.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="why.html" class="nav-card c-why">
+        <span class="step-num">2</span>
+        <span class="tag">WHY</span>
+        <span class="emoji">💡</span>
+        <h3>Tại Sao?</h3>
+        <p>Ba biến động, Phân tích nguyên nhân gốc rễ (RCA) 5 Tại Sao (5 Whys), năm hạn chế cấu trúc, năm Mô-đun Nâng
+          cấp (Module Upgrade) v2.0, Prajñā &amp; Upāya.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="who.html" class="nav-card c-who">
+        <span class="step-num">3</span>
+        <span class="tag">WHO</span>
+        <span class="emoji">👥</span>
+        <h3>Cho Ai?</h3>
+        <p>Các thế hệ, tôn giáo, so sánh VN × Ubuntu × Yoruba (9 chiều), Nga, Georgia, Sami, Baltic.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="when.html" class="nav-card c-when">
+        <span class="step-num">4</span>
+        <span class="tag">WHEN</span>
+        <span class="emoji">🕰️</span>
+        <h3>Khi Nào?</h3>
+        <p>Dòng chảy 4.000 năm, ba anomaly, Hòa giải Việt-Mỹ, 500kV attractor basin, lộ trình 2026–2040+.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="how.html" class="nav-card c-how">
+        <span class="step-num">5</span>
+        <span class="tag">HOW</span>
+        <span class="emoji">🛠️</span>
+        <h3>Áp Dụng Ra Sao?</h3>
+        <p>Ba thực hành, Chẩn đoán Bảng điểm (Diagnosis Rubric), Tiên đề cốt lõi (Core Axioms), triển khai 10 tầng, 4
+          điều kiện, Tiên Đề III vs triết học thế giới.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+    </div>
+
+    <h2 style="margin-top:40px">🔬 Tài Liệu Chuyên Sâu</h2>
+    <p class="hint">Dành cho người đã đọc qua 4W1H hoặc muốn tìm hiểu kiến trúc kỹ thuật của framework</p>
+    <div class="nav-grid">
+
+      <a href="axioms.html" class="nav-card c-axioms">
+        <span class="tag">HỆ TIÊN ĐỀ</span>
+        <span class="emoji">📐</span>
+        <h3>Hệ Tiên Đề</h3>
+        <p>Bản tái dựng (rebuild 2026) suy từ câu hỏi gốc (derivation — theo nghĩa điều kiện cần: lời giải thích khả dĩ
+          nhất trong phạm vi khảo sát) và kiểm chứng chéo qua 3 hệ độc lập (triangulation): <strong>4 Tiên Đề Cốt Lõi
+            (I–IV) + 4 Mệnh Đề Dẫn Xuất (V–VII, F) + 1 Meta-Tiên Đề (VIII)</strong>. Render từ
+          <code>axiom_spec.md</code> (file neo canonical của framework).</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="upgrade.html" class="nav-card c-upgrade">
+        <span class="tag">UPGRADE</span>
+        <span class="emoji">🔄</span>
+        <h3>Mạch Rễ Upgraded</h3>
+        <p>Tiên Đề VIII — Tự Nhìn Thấy Mình — Soi Mình Mà Không Vỡ (Nhận Thức Phản Tư), bốn tiên đề mở rộng qua Phật
+          giáo, Module 5 — Xung Đột Lõi (xử lý bất đồng nội bộ), kiến trúc sau nâng cấp (upgrade), và 4 điều kiện triển
+          khai.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="papers/index.html" class="nav-card c-papers">
+        <span class="tag">BÀI BÁO</span>
+        <span class="emoji">📄</span>
+        <h3>Bài Báo Nghiên Cứu</h3>
+        <p>Các bài báo nghiên cứu khoa học, tài liệu phân tích chuyên sâu giải mã hệ tiên đề Mạch Rễ trên nhiều khía
+          cạnh văn hóa, ngoại giao và xã hội.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+      <a href="luu_tru.html" class="nav-card c-when">
+        <span class="tag">CƠ CHẾ</span>
+        <span class="emoji">🗄️</span>
+        <h3>Cơ Chế Lưu Trữ</h3>
+        <p>Mạch Rễ lưu trữ data ở đâu, theo cơ chế nào? Phân tích kiến trúc lưu trữ qua hệ tiên đề I–VIII: lưu pattern
+          (không nội dung), phân tán (không tập trung), xuyên thế hệ (trục V), hấp thụ có định hướng (biên giới động),
+          và chuyển hóa nhiễu.</p>
+        <span class="arrow">→ Đọc tiếp</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- TIMELINE STRIP -->
+  <div class="timeline-strip">
+    <h3>Hành trình của triết lý sinh tồn mà Mạch Rễ đặt tên (các mốc biểu hiện trong lịch sử — không phải các mốc phát
+      triển của khung nền, được xây dựng năm 2026)</h3>
+    <div class="tl-row">
+      <div class="tl-item">
+        <div class="tl-year">Tiền sử</div>
+        <div class="tl-label">Tín ngưỡng thờ Mẫu, thờ tổ tiên — rễ trước khi có tên</div>
       </div>
-      <div style="background:#f0f7f0;border:1px solid #c8e4c8;border-radius:10px;padding:16px">
-        <div style="font-weight:700;color:#2d6a4f;font-size:.85rem;margin-bottom:6px">🙏 On religion</div>
-        <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
-          This document is not a new religion, sect, or organized belief system. Mạch Rễ does not compete with, replace, or judge any religion or spiritual tradition. People of any faith — or of no faith — are <strong style="color:var(--text-dark)">free to read, use, and build upon</strong> this document.
-        </p>
+      <div class="tl-item">
+        <div class="tl-year">~179 TCN</div>
+        <div class="tl-label">Bắt đầu 1.000 năm Bắc thuộc — tiếng Việt không mất</div>
       </div>
-      <div style="background:#f0f3fa;border:1px solid #c8d4ec;border-radius:10px;padding:16px">
-        <div style="font-weight:700;color:#4a5fa0;font-size:.85rem;margin-bottom:6px">📜 On ownership</div>
-        <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
-          No individual, organization, or institution owns Mạch Rễ. Released under <strong style="color:var(--text-dark)">CC BY 4.0</strong> — free to share, translate, and develop with attribution.
-        </p>
+      <div class="tl-item">
+        <div class="tl-year">TK 13</div>
+        <div class="tl-label">Trúc Lâm Thiền — Mạch Rễ mặc áo Phật giáo nhập thế</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">1994</div>
+        <div class="tl-label">Đường dây 500kV — Mạch Rễ trong hành động hiện đại</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">1997</div>
+        <div class="tl-label">Bình thường hóa Việt–Mỹ chính thức — hòa giải không quên</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2026</div>
+        <div class="tl-label">Mạch Rễ được đặt tên — Khung nền v2.0 (Framework v2.0)</div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- BILINGUAL GLOSSARY -->
-<div style="max-width:960px;margin:0 auto;padding:0 24px 48px">
-  <h2 style="font-size:1.3rem;font-weight:600;color:#2d6a4f;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #d8e8d8">📖 Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary</h2>
-  <p style="color:#5a5a5a;font-size:.9rem;margin-bottom:14px">Các thuật ngữ chuyên ngành được dùng trong bộ tài liệu Mạch Rễ, kèm bản dịch song ngữ Việt–Anh.</p>
-  <div style="overflow-x:auto">
-    <table style="width:100%;border-collapse:collapse;font-size:.85rem">
-      <thead><tr style="background:#2d6a4f;color:#fff"><th style="padding:10px 14px;text-align:left">Tiếng Anh (EN)</th><th style="padding:10px 14px;text-align:left">Tiếng Việt (VI)</th><th style="padding:10px 14px;text-align:left">Ghi chú / Note</th></tr></thead>
-      <tbody>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Framework</td><td style="padding:9px 14px;font-weight:600">Khung nền</td><td style="padding:9px 14px;color:#5a5a5a">Hệ thống công cụ nhận dạng và thực hành bản sắc sinh tồn — không phải vật cố định, mà là quá trình: bản sắc sinh tồn diễn ra khi một cộng đồng vừa giữ được cấu trúc quan hệ cốt lõi, vừa thích nghi được với áp lực bên ngoài</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Upgrade</td><td style="padding:9px 14px;font-weight:600">Nâng cấp</td><td style="padding:9px 14px;color:#5a5a5a">Mở rộng hệ thống để giải quyết hạn chế cấu trúc, không thay thế nền tảng</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Module</td><td style="padding:9px 14px;font-weight:600">Mô-đun</td><td style="padding:9px 14px;color:#5a5a5a">Đơn vị bổ sung độc lập, mỗi mô-đun giải quyết một hạn chế cấu trúc</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">RCA (Root Cause Analysis)</td><td style="padding:9px 14px;font-weight:600">Phân tích nguyên nhân gốc rễ</td><td style="padding:9px 14px;color:#5a5a5a">Phương pháp truy tìm nguyên nhân sâu xa nhất của vấn đề</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">5 Whys</td><td style="padding:9px 14px;font-weight:600">5 Tại Sao</td><td style="padding:9px 14px;color:#5a5a5a">Kỹ thuật đặt câu hỏi "tại sao?" 5 lần để tìm gốc rễ</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Homomorphism (Isomorphism là trường hợp đặc biệt one-one)</td><td style="padding:9px 14px;font-weight:600">Đồng cấu rút gọn</td><td style="padding:9px 14px;color:#5a5a5a">Quan hệ many-one: hệ đơn giản hơn bảo toàn pattern cấu trúc được chọn nhưng mất chi tiết. Mạch Rễ dùng homomorphism: 3 hệ thống được đơn giản hóa đến khi pattern chung hiện ra (Ashby S.6/13: "Knowledge can certainly be partial and yet complete in itself")</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Invariant</td><td style="padding:9px 14px;font-weight:600">Bất biến</td><td style="padding:9px 14px;color:#5a5a5a">Thuộc tính hay quan hệ vẫn giữ nguyên qua một chuỗi biến đổi — cốt lõi bản sắc</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Pattern</td><td style="padding:9px 14px;font-weight:600">Khuôn mẫu</td><td style="padding:9px 14px;color:#5a5a5a">Cấu trúc quan hệ lặp lại — thượng là tiên đề II và V</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Diagnosis</td><td style="padding:9px 14px;font-weight:600">Chẩn đoán</td><td style="padding:9px 14px;color:#5a5a5a">Đánh giá trạng thái rễ sâu / rễ nông của cộng đồng</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Rubric</td><td style="padding:9px 14px;font-weight:600">Bảng chấm điểm</td><td style="padding:9px 14px;color:#5a5a5a">Tiêu chí đánh giá có thang điểm rõ ràng</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Core Axiom</td><td style="padding:9px 14px;font-weight:600">Tiên đề cốt lõi</td><td style="padding:9px 14px;color:#5a5a5a">Nguyên lý nền tảng không thể suy ra từ nguyên lý khác</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Civic Trust</td><td style="padding:9px 14px;font-weight:600">Niềm tin công dân</td><td style="padding:9px 14px;color:#5a5a5a">Tin cậy vào thiết chế và người lạ, ngoài quan hệ cá nhân</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Self-Criticism</td><td style="padding:9px 14px;font-weight:600">Tự phê bình</td><td style="padding:9px 14px;color:#5a5a5a">Cơ chế tập thể tự đặt câu hỏi về tính đúng sai của mình</td></tr>
-        <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Public Goods</td><td style="padding:9px 14px;font-weight:600">Hàng hóa công cộng</td><td style="padding:9px 14px;color:#5a5a5a">Tài sản thuộc về và phục vụ toàn cộng đồng</td></tr>
-        <tr style="background:#f5faf6"><td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Attractor basin</td><td style="padding:9px 14px;font-weight:600">Vùng hút ổn định</td><td style="padding:9px 14px;color:#5a5a5a">Vùng mà hệ thống luôn tự động quay về sau các biến động trong phạm vi (basin) của nó</td></tr>
-      </tbody>
-    </table>
+  <!-- DISCLAIMER -->
+  <div class="disclaimer-section" style="max-width:960px;margin:48px auto 0;padding:0 24px 48px">
+    <h2 style="font-size:1.4rem;font-weight:600;color:var(--green-deep);margin-bottom:6px">⚠️ Tuyên Bố Miễn Trừ Trách
+      Nhiệm / Disclaimer</h2>
+    <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:28px">🇻🇳 Tiếng Việt &nbsp;|&nbsp; 🇬🇧 English</p>
+
+    <!-- VIETNAMESE -->
+    <div
+      style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,.04)">
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--green-deep);margin-bottom:16px">🇻🇳 Tiếng Việt</h3>
+      <p style="line-height:1.8;color:var(--text-muted);margin-bottom:12px">
+        <strong style="color:var(--text-dark)">Mạch Rễ là khung nền (framework) triết học và nhân học mở, thuộc loại
+          hình triết học tương quan-phân tán (Relational and Distributed Philosophy) — không phải triết học hệ
+          thống-siêu hình (Systematic Metaphysics).</strong>
+      </p>
+      <p style="line-height:1.8;color:var(--text-muted);margin-bottom:16px">
+        Tài liệu này được soạn thảo và chia sẻ với tinh thần học thuật mở, nhằm mục đích <strong
+          style="color:var(--text-dark)">ghi chép, lý thuyết hóa, và cung cấp công cụ thực hành</strong> cho triết lý
+        sinh tồn của dân tộc Việt Nam — thứ đã tồn tại trong hành vi tập thể của người Việt qua hàng nghìn năm lịch sử,
+        và ngày càng cấp thiết trong thời đại biến động toàn cầu.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
+        <div style="background:#fef9f0;border:1px solid #f0ddb8;border-radius:10px;padding:16px">
+          <div style="font-weight:700;color:#b07820;font-size:.85rem;margin-bottom:6px">🏛️ Về chính trị</div>
+          <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
+            Tài liệu này không đại diện, không liên kết, và không phục vụ bất kỳ đảng phái, tổ chức chính trị, hay chính
+            phủ nào. Mạch Rễ tồn tại trước mọi nhà nước Việt Nam hiện đại và thuộc về toàn thể dân tộc — bao gồm người
+            Việt trong nước, người Việt hải ngoại, và tất cả những ai mang trong mình dòng chảy văn hóa Việt — <strong
+              style="color:var(--text-dark)">không phân biệt chính kiến</strong>.
+          </p>
+        </div>
+        <div style="background:#f0f7f0;border:1px solid #c8e4c8;border-radius:10px;padding:16px">
+          <div style="font-weight:700;color:#2d6a4f;font-size:.85rem;margin-bottom:6px">🙏 Về tôn giáo</div>
+          <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
+            Tài liệu này không phải tôn giáo mới, không phải giáo phái, không phải tín ngưỡng có tổ chức. Mạch Rễ không
+            cạnh tranh, không thay thế, và không phán xét bất kỳ tôn giáo hay tín ngưỡng nào. Người theo bất kỳ tôn giáo
+            nào, hoặc không theo tôn giáo nào, đều có thể <strong style="color:var(--text-dark)">tự do đọc, sử dụng và
+              phát triển</strong> tài liệu này.
+          </p>
+        </div>
+        <div style="background:#f0f3fa;border:1px solid #c8d4ec;border-radius:10px;padding:16px">
+          <div style="font-weight:700;color:#4a5fa0;font-size:.85rem;margin-bottom:6px">📜 Về bản quyền</div>
+          <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
+            Không cá nhân, tổ chức, hay thể chế nào sở hữu Mạch Rễ. Phát hành theo <strong
+              style="color:var(--text-dark)">CC BY 4.0</strong> — tự do chia sẻ, dịch thuật, và phát triển với điều kiện
+            ghi nguồn.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div
+      style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,.04)">
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--green-deep);margin-bottom:16px">🇬🇧 English</h3>
+      <p style="line-height:1.8;color:var(--text-muted);margin-bottom:12px">
+        <strong style="color:var(--text-dark)">Mạch Rễ ("Root Flow") is an open philosophical and anthropological
+          framework belonging to the Relational and Distributed Philosophy type — not Systematic Metaphysics.</strong>
+      </p>
+      <p style="line-height:1.8;color:var(--text-muted);margin-bottom:16px">
+        This document is authored and shared in the spirit of open scholarship, with the purpose of <strong
+          style="color:var(--text-dark)">documenting, theorizing, and providing practical tools</strong> for the
+        survival philosophy of the Vietnamese people — something that has existed in collective behavior for thousands
+        of years, and grows increasingly urgent in an age of global disruption.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
+        <div style="background:#fef9f0;border:1px solid #f0ddb8;border-radius:10px;padding:16px">
+          <div style="font-weight:700;color:#b07820;font-size:.85rem;margin-bottom:6px">🏛️ On politics</div>
+          <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
+            This document does not represent, affiliate with, or serve any political party, organization, or government.
+            Mạch Rễ predates all modern Vietnamese states and belongs to the entire Vietnamese people — including
+            Vietnamese in Vietnam, the diaspora, and all who carry Vietnamese cultural heritage — <strong
+              style="color:var(--text-dark)">regardless of political affiliation</strong>.
+          </p>
+        </div>
+        <div style="background:#f0f7f0;border:1px solid #c8e4c8;border-radius:10px;padding:16px">
+          <div style="font-weight:700;color:#2d6a4f;font-size:.85rem;margin-bottom:6px">🙏 On religion</div>
+          <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
+            This document is not a new religion, sect, or organized belief system. Mạch Rễ does not compete with,
+            replace, or judge any religion or spiritual tradition. People of any faith — or of no faith — are <strong
+              style="color:var(--text-dark)">free to read, use, and build upon</strong> this document.
+          </p>
+        </div>
+        <div style="background:#f0f3fa;border:1px solid #c8d4ec;border-radius:10px;padding:16px">
+          <div style="font-weight:700;color:#4a5fa0;font-size:.85rem;margin-bottom:6px">📜 On ownership</div>
+          <p style="font-size:.85rem;line-height:1.7;color:var(--text-muted);margin:0">
+            No individual, organization, or institution owns Mạch Rễ. Released under <strong
+              style="color:var(--text-dark)">CC BY 4.0</strong> — free to share, translate, and develop with
+            attribution.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- NGUỒN TRÍCH DẪN -->
-<section style="max-width:960px;margin:32px auto 0;padding:0 24px 24px">
-  <h2 style="font-size:1.2rem;font-weight:600;color:var(--green-deep);margin-bottom:10px">Nguồn Trích Dẫn</h2>
-  <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 20px;font-size:.85rem;color:var(--text-muted);line-height:1.7">
-    <p id="nguon-1">[1] Ashby, W. R. (1956). <em>An Introduction to Cybernetics</em>. Chapman &amp; Hall, London.</p>
+  <!-- BILINGUAL GLOSSARY -->
+  <div style="max-width:960px;margin:0 auto;padding:0 24px 48px">
+    <h2
+      style="font-size:1.3rem;font-weight:600;color:#2d6a4f;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #d8e8d8">
+      📖 Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary</h2>
+    <p style="color:#5a5a5a;font-size:.9rem;margin-bottom:14px">Các thuật ngữ chuyên ngành được dùng trong bộ tài liệu
+      Mạch Rễ, kèm bản dịch song ngữ Việt–Anh.</p>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+        <thead>
+          <tr style="background:#2d6a4f;color:#fff">
+            <th style="padding:10px 14px;text-align:left">Tiếng Anh (EN)</th>
+            <th style="padding:10px 14px;text-align:left">Tiếng Việt (VI)</th>
+            <th style="padding:10px 14px;text-align:left">Ghi chú / Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Framework</td>
+            <td style="padding:9px 14px;font-weight:600">Khung nền</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Hệ thống công cụ nhận dạng và thực hành bản sắc sinh tồn — không
+              phải vật cố định, mà là quá trình: bản sắc sinh tồn diễn ra khi một cộng đồng vừa giữ được cấu trúc quan
+              hệ cốt lõi, vừa thích nghi được với áp lực bên ngoài</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Upgrade</td>
+            <td style="padding:9px 14px;font-weight:600">Nâng cấp</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Mở rộng hệ thống để giải quyết hạn chế cấu trúc, không thay thế
+              nền tảng</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Module</td>
+            <td style="padding:9px 14px;font-weight:600">Mô-đun</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Đơn vị bổ sung độc lập, mỗi mô-đun giải quyết một hạn chế cấu
+              trúc</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">RCA (Root Cause Analysis)</td>
+            <td style="padding:9px 14px;font-weight:600">Phân tích nguyên nhân gốc rễ</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Phương pháp truy tìm nguyên nhân sâu xa nhất của vấn đề</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">5 Whys</td>
+            <td style="padding:9px 14px;font-weight:600">5 Tại Sao</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Kỹ thuật đặt câu hỏi "tại sao?" 5 lần để tìm gốc rễ</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Homomorphism (Isomorphism là trường hợp đặc biệt
+              one-one)</td>
+            <td style="padding:9px 14px;font-weight:600">Đồng cấu rút gọn</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Quan hệ many-one: hệ đơn giản hơn bảo toàn pattern cấu trúc được
+              chọn nhưng mất chi tiết. Mạch Rễ dùng homomorphism: 3 hệ thống được đơn giản hóa đến khi pattern chung
+              hiện ra (Ashby S.6/13: "Knowledge can certainly be partial and yet complete in itself") <a
+                href="#nguon-1">[1]</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Invariant</td>
+            <td style="padding:9px 14px;font-weight:600">Bất biến</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Thuộc tính hay quan hệ vẫn giữ nguyên qua một chuỗi biến đổi —
+              cốt lõi bản sắc</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Pattern</td>
+            <td style="padding:9px 14px;font-weight:600">Khuôn mẫu</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Cấu trúc quan hệ lặp lại — thượng là tiên đề II và V</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Diagnosis</td>
+            <td style="padding:9px 14px;font-weight:600">Chẩn đoán</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Đánh giá trạng thái rễ sâu / rễ nông của cộng đồng</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Rubric</td>
+            <td style="padding:9px 14px;font-weight:600">Bảng chấm điểm</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Tiêu chí đánh giá có thang điểm rõ ràng</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Core Axiom</td>
+            <td style="padding:9px 14px;font-weight:600">Tiên đề cốt lõi</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Nguyên lý nền tảng không thể suy ra từ nguyên lý khác</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Civic Trust</td>
+            <td style="padding:9px 14px;font-weight:600">Niềm tin công dân</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Tin cậy vào thiết chế và người lạ, ngoài quan hệ cá nhân</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Self-Criticism</td>
+            <td style="padding:9px 14px;font-weight:600">Tự phê bình</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Cơ chế tập thể tự đặt câu hỏi về tính đúng sai của mình</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d8e8d8;background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Public Goods</td>
+            <td style="padding:9px 14px;font-weight:600">Hàng hóa công cộng</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Tài sản thuộc về và phục vụ toàn cộng đồng</td>
+          </tr>
+          <tr style="background:#f5faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Attractor basin</td>
+            <td style="padding:9px 14px;font-weight:600">Vùng hút ổn định</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Vùng mà hệ thống luôn tự động quay về sau các biến động trong
+              phạm vi (basin) của nó</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-</section>
 
-<footer>
-  <p>🌿 Mạch Rễ · Phát hành theo <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Không thuộc về cá nhân hay tổ chức nào</p>
-  <p style="margin-top:6px">Phi chính trị · Phi tôn giáo · Dành cho toàn thể dân tộc Việt Nam</p>
-</footer>
+  <!-- NGUỒN TRÍCH DẪN -->
+  <section style="max-width:960px;margin:32px auto 0;padding:0 24px 24px">
+    <h2 style="font-size:1.2rem;font-weight:600;color:var(--green-deep);margin-bottom:10px">Nguồn Trích Dẫn</h2>
+    <div
+      style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 20px;font-size:.85rem;color:var(--text-muted);line-height:1.7">
+      <p id="nguon-1">[1] Ashby, W. R. (1956). <em>An Introduction to Cybernetics</em>. Chapman &amp; Hall, London.</p>
+      <p id="nguon-2">[2] Prasad, H. S. (2023). The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference
+        to Vasubandhu, Dignāga, and Dharmakīrti. <em>Studia Humana</em>, 12(1-2), pp. 21–52.
+        https://doi.org/10.2478/sh-2023-0004</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌿 Mạch Rễ · Phát hành theo <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Không thuộc về
+      cá nhân hay tổ chức nào</p>
+    <p style="margin-top:6px">Phi chính trị · Phi tôn giáo · Dành cho toàn thể dân tộc Việt Nam</p>
+  </footer>
 
 </body>
+
 </html>
