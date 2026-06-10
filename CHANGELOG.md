@@ -1,5 +1,44 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — R-4: what.html — EAP Cross-Cultural Calibration (Joseon Buddhism + Meiji Japan) · RCA 4.6/5
+
+**Symptom:** Khung EAP trong `what.html` có duy nhất một neo hiệu chuẩn (Bắc thuộc) — được xây dựng từ trường hợp Việt Nam. EAP chưa có out-of-sample test: falsification condition vận hành được về nguyên tắc nhưng chưa được kiểm tra thực tế.
+
+**Root (Round 3):** EAP được xây dựng inductively từ trường hợp Bắc thuộc, chưa bao giờ được áp dụng deductively cho trường hợp ngoài nguồn. Audit plan đã cung cấp scoring Joseon Buddhism (D1–D5) nhưng không được back-propagate vào `what.html`.
+
+**Fix:** Thêm section "Hiệu chuẩn bổ sung" với hai trường hợp:
+- Joseon Buddhism: 5/5 dimensions ≥ anchor → V-axis qua institutional carrier (monk lineage, không phải nuclear family)
+- Meiji Japan: 4/5 (D1 Medium < Long, 1 mức — đủ điều kiện biên) → V-axis hai tầng (State Shinto + butsudan)
+- Summary: carrier unit của V-axis có thể biến đổi nhưng cấu trúc V ≠ ∅ được bảo toàn ở cả ba trường hợp
+
+**RCA score:** 4.6/5 (Correct: 0.9, Deep: 1.0, Feasible: 1.0, Conflict-risk: 0.7, Preservation: 1.0). Từ `review/2026-06-10-mach_re_audit_plan.md` §R-4.
+
+---
+
+## 2026-06-10 — R-1: axiom_3.html — Định nghĩa V_min (Điều kiện tối giản V ≠ ∅) · RCA 4.9/5
+
+**Symptom:** `axiom_3.html` §1 formal notation dùng `V = ∅` như điều kiện sụp đổ nhưng không định nghĩa tường minh khi nào V đạt ∅ — falsification condition §1 referencing `V = ∅` là inoperable.
+
+**Root (Round 3):** Axiom file viết trước cross-cultural comparison (`mach_re_homologous.html`) sản sinh ra evidence V_min (nuclear family + portable altar = minimum). Evidence không được back-propagate vào axiom. V_min có hai thành phần cần đồng thời bảo toàn: Physical (V_min-1: ≥1 relational-acknowledgment practice, portable) và Semantic (V_min-2: ≥1 member có thể giải thích *tại sao*). Collapse-2 (semantic thất bại khi physical còn) là dạng nguy hiểm hơn vì khó phát hiện.
+
+**Fix:** Thêm `def-box` "Điều kiện tối giản V (V_min)" sau formal notation box (line 288), trước Bản chất/Biểu hiện box. Derive từ `mach_re_homologous.html` phân kỳ 3 (carrier unit = nuclear family) và phân kỳ 5 (modernization: portable altar sufficient).
+
+**RCA score:** 4.9/5 (Correct: 1.0, Deep: 1.0, Feasible: 1.0, Conflict-risk: 0.9, Preservation: 1.0). Từ `review/2026-06-10-mach_re_audit_plan.md` §R-1.
+
+---
+
+## 2026-06-10 — R-3: how.html — Axiom Derivation table (6 indicators → Core Axioms I–IV) · RCA 4.8/5
+
+**Fix:** Thêm Axiom Derivation table vào how.html sau F-link note, trước score-bands. 6 chỉ báo Rubric bây giờ trace về Core Axioms I–IV. Tính đầy đủ: I ✅ II ✅ III ✅✅ IV ✅✅. Từ §R-3.
+
+---
+
+## 2026-06-10 — R-5: axioms.html — Axiom VIII ≈ precision (MP(Pt) ≈ MP(Pt+1)) · RCA 4.8/5
+
+**Fix:** Thêm `Điều kiện xấp xỉ (≈)` entry vào dl Axiom VIII với 3 binary conditions (MP-1, MP-2, MP-3). Citations [8][9] Kant/Pereboom added. Từ §R-5.
+
+---
+
 ## 2026-06-10 — RCA: mach_re_homologous.html — Yoruba claims thiếu citation · [5][6][7] added
 
 **Claims Yoruba không có nguồn (đã xác định qua RCA):**

@@ -524,6 +524,65 @@ This audit plan should be read AFTER steps 1–4 and BEFORE steps 5–8.
 
 ---
 
+## PART 10 — POST-IMPLEMENTATION REVIEW (PIR) · 2026-06-10
+
+> Applies §RULE ZERO step 5 (Verify) to the full recommendation set: root causes removed, not just symptoms patched.
+
+### 10.1 Implementation Status
+
+| Rec | Score | File edited | RCA score | Status |
+|-----|-------|-------------|-----------|--------|
+| **R-5** | 4.8/5 | `axioms.html` | 4.8/5 | ✅ COMPLETE |
+| **R-3** | 4.4/5 | `how.html` | 4.8/5 | ✅ COMPLETE |
+| **R-1** | 4.6/5 | `axiom_3.html` | 4.9/5 | ✅ COMPLETE |
+| **R-4** | 4.0/5 | `what.html` | 4.6/5 | ✅ COMPLETE |
+| **R-2** | 3.6/5 | — | N/A | ❌ DEFERRED v3.0 (below 4/5 threshold) |
+
+Implementation sequence: **R-5 → R-3 → R-1 → R-4** (per §6.3 dependency map).
+
+### 10.2 Verification — Root Causes Removed
+
+**R-5 (Axiom VIII ≈):** Root was `≈` as undefined escape hatch. Fix: 3 binary conditions (MP-1: revision self-driven; MP-2: I–IV still applied post-revision; MP-3: first/second-order boundary intact). Verified: operationally testable, any one failing = identity discontinuity.
+
+**R-3 (Theory–Practice derivation):** Root was Diagnosis Rubric appearing arbitrary. Fix: Axiom Derivation table in `how.html` — each of 6 indicators traces to specific Core Axiom. Completeness: I ✅ II ✅ III ✅✅ IV ✅✅. Verified: every rubric indicator traceable.
+
+**R-1 (V boundary conditions / V_min):** Root was `V = ∅` cited in falsification condition but never operationalized. Fix: `axiom_3.html` §1 now defines:
+- **V_min-1 (Physical):** ≥1 nuclear family + ≥1 periodic relational-acknowledgment practice. NOT requiring: land, clan, specialist, institution.
+- **V_min-2 (Semantic):** ≥1 member able to articulate *why* practice instantiates V (ancestors = relational pattern, not empty ritual).
+- **Collapse-2 (new finding):** V_min-2 fails while V_min-1 persists as social convention = silent V collapse — harder to detect than Collapse-1.
+Appendix D check: `mach_re_homologous.html` had partial evidence (small altar, nuclear family) but no formal V_min spec with two components. R-1 was genuine new work, not documentation cleanup. ✅ Appendix D self-falsification condition NOT triggered.
+
+**R-4 (EAP cross-cultural calibration):** Root was EAP never tested outside its source case. Fix: two out-of-sample calibration cases added to `what.html`:
+- **Joseon Buddhism (5/5 ≥ anchor):** V-axis via institutional monk lineage (not nuclear family). V ≠ ∅ preserved through different carrier unit.
+- **Meiji Japan (4/5, borderline):** D5 Systematic > Partial compensates D1 Medium < Long. V-axis: State Shinto (national) + butsudan (household) = two-tier.
+Appendix D check: Bắc thuộc anchor was inductively circular (built from source anomaly). Two out-of-sample tests were genuinely needed. ✅ Appendix D self-falsification condition NOT triggered.
+
+### 10.3 New Findings From Implementation
+
+1. **V-axis carrier unit diversity:** Vietnam = nuclear family; Joseon Korea = institutional monastery lineage; Meiji Japan = state + household dual-layer. Not in original plan — emerged from R-4. Implication: Axiom III universality claim now supported by three structurally different carrier types. **Suggested follow-up:** carrier unit taxonomy in `mach_re_homologous.html`.
+
+2. **Collapse-2 (semantic silent collapse):** Gen Z risk is not abandoning physical practice but performing it without understanding why — converting V-axis from ontological operation to H-axis social convention. **Suggested follow-up:** add Collapse-2 as Indicator 7 in `how.html` Diagnosis Rubric.
+
+3. **EAP boundary case (Meiji D1=Medium):** A stress test of the 4/5 rule. **Suggested follow-up:** add calibration confidence tier (5/5 = strong comparator, 4/5 = borderline) to EAP usage note in `what.html`.
+
+### 10.4 Document Contract Compliance
+
+All 18 HTML files updated with Nguồn Trích Dẫn tables + inline `<a href="#nguon-N">[N]</a>` hyperlinks per Rule #12. Completed in same session as R-5/R-3. ✅ COMPLETE.
+
+### 10.5 Remaining Open Questions
+
+| OQ | Status |
+|---|---|
+| OQ-1 (Axiom I known-network scope) | OPEN — deferred with R-2 to v3.0 |
+| OQ-2 (anonymous relational fields) | OPEN — deferred with R-2 to v3.0 |
+| OQ-3 (V-axis non-human extension) | PARTIALLY ADDRESSED — Nam An corpus evidence in `axiom_3.html` |
+| OQ-4 (H-axis deep time) | OPEN |
+| OQ-5 (Donghak Innaecheon parallel) | OPEN — priority MEDIUM-HIGH per §9.1 M-5 |
+| OQ-6 (EAP Meiji calibration) | ✅ ADDRESSED — R-4 Case 2 |
+
+---
+
 *Mạch Rễ Audit Plan v1.1 — Released under CC BY 4.0 consistent with source framework license*  
 *This document is a third-party audit, not an official framework document*  
-*v1.1 additions: RCA meta-review applied 2026-06-10; 5 issues scored ≥ 4/5; Part 9 and Appendix D added*
+*v1.1 additions: RCA meta-review applied 2026-06-10; 5 issues scored ≥ 4/5; Part 9 and Appendix D added*  
+*v1.2 additions: Part 10 PIR added 2026-06-10 after implementation R-5 → R-3 → R-1 → R-4*
