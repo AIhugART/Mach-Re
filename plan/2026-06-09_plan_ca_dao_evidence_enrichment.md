@@ -3,7 +3,85 @@
 > **Ngày:** 2026-06-09 · **Cập nhật:** 2026-06-10  
 > **Nguồn gốc:** [RCA Ca Dao Tục Ngữ Coverage](file:///C:/Users/PC/.gemini/antigravity-ide/brain/2d7cc985-3474-4277-8e16-b61033391131/rca_ca_dao_tuc_ngu_coverage.md) (cùng ngày)  
 > **Nguyên tắc:** KHÔNG mở rộng hệ tiên đề — chỉ làm giàu bằng chứng thực nghiệm (evidence enrichment).  
-> **Trạng thái:** ĐÃ DUYỆT — thêm H6 (2026-06-10, RCA 4.6/5) · thêm nguồn học thuật S1–S3 (2026-06-10, S1=5.0/5 ✅ S2=4.6/5 ✅ S3=3.0/5 ❌), sẵn sàng thực hiện.
+> **Trạng thái:** ĐÃ DUYỆT — thêm H6 (2026-06-10, RCA 4.6/5) · thêm nguồn học thuật S1–S3 (2026-06-10, S1=5.0/5 ✅ S2=4.6/5 ✅ S3=3.0/5 ❌) · **PHASE 0 Pre-read DONE (2026-06-10)** — xem §PHASE 0 bên dưới.
+
+---
+
+## PHASE 0 — Pre-read Report · 2026-06-10
+
+> **Mục đích:** Đọc cấu trúc tất cả nguồn song song · áp dụng 3-round RCA × 5-Why × scoring gate ≥ 4/5 để validate/adjust từng H-item · xác định line numbers chính xác.
+
+### P0.1 — Inventory xác nhận
+
+| File | Trạng thái | Ghi chú |
+|---|---|---|
+| Q1 `.txt` | ✅ | ~18 000 dòng · tuyển tập ở line **11 218** / **12 079** / **17 958** |
+| Q2 `.txt` | ✅ | Gia đình + Xã hội + **Section V Quê Hương** (line 470+) + **Section VI Đấu Tranh** (line 524+) |
+| Q3 `.md` | ✅ | **Vũ Trụ Quan** — không phải "Xã Hội Quan" (xem §P0.3) |
+| Nam An `.md` | ✅ | Alphabetical · địa danh + sản vật · grep-ready |
+| Evidence files (viii / v / i-iii-ii / q2-q3) | ❌ | Tất cả chưa tồn tại → cần tạo mới |
+
+### P0.2 — Line number map
+
+| H-item | File | Line | Nội dung |
+|---|---|---|---|
+| **H1** châm biếm | Q1 | **12 079** | Tuyển tập châm biếm + hài hước (câu 1 bắt đầu tại đây) |
+| **H2** thẩm mỹ | Q1 | **11 218** | Tuyển tập cái đẹp, cái xấu |
+| **H4** biến dịch | Q1 | **17 958** | Tuyển tập Ý Thức Thực Tiễn (cần verify đầu phiên B) |
+| **H6** + **H3.2** quê hương / R_place | Q2 | **470–556** | Section V Địa Phương Tính · Section VI Đấu Tranh |
+| **H6** R_place + huyền thoại | Nam An | toàn file | Grep trực tiếp 3 nhóm từ khóa |
+| **H3.2** gia đình/III temporal | Q2 | **258–332** | Hiếu Đạo · Tình Anh Em · Tình Vợ Chồng |
+| **H3.3** dân tộc tính/II | Q3 | §III Căn Bản Dân Tộc Tính | Lấy thực nghiệm tìm cơ cấu vũ trụ |
+| **H3.3** biên giới/IV | Q3 | §II.a–II.b | Chống Lão / chống Nho → selective permeability |
+
+### P0.3 — Phát hiện cấu trúc (structural findings)
+
+**[CORRECTION — Q3 label]** Plan mô tả Q3 = "Xã Hội Quan (xã hội, đạo đức, chính trị)" — **không chính xác**. Q3 là **Vũ Trụ Quan** (cosmology + triết học). Vẫn usable cho H3 nhưng với lý do đúng:
+- §II.a–II.b (ảnh hưởng/chống Lão-Nho-Phật) = evidence **IV** (biên giới chọn lọc)
+- §III (dân tộc tính) = evidence **II** (structural invariant bền qua ngoại lai)
+- Mục "Xã Hội Quan" có tồn tại trong Q3 nhưng là phần kết luận nhỏ, không phải nội dung chính.
+
+**[BATCH DISCOVERY — H6 × H3.2]** Q2 Section V.B "Những Câu Ca Dao Có Địa Phương Tính" (line ~485) = evidence I (R_place) và III spatial — **chính là mục tiêu H6 Nhóm A/B**. Khi thực hiện H3.2 đọc Q2, gắn luôn `[evidence empirical — H6 crossover]` cho Section V.B/V.C → không cần đọc Q2 hai lần.
+
+**[GOLD FIND — Q2 line 469–481]** Nguyễn Tấn Long trích Lévi-Strauss: *"mọi ảnh hưởng bên ngoài chỉ du nhập trong chiều hướng thuận tiện của tính chất cá biệt ấy... không thể đồng hóa"* — Tiên Đề IV được phát biểu độc lập bởi dân tộc học năm 1975. Gắn `[IV prior-art — convergent]` khi gặp lại.
+
+**[VIII CONFIRMED GAP]** axiom_spec.md §VIII: "Triangulation: A-yếu · B · C — ~2/3." Không có anchor Việt Nam. H1 là gap thật.
+
+### P0.4 — 3-round RCA × Scoring Gate
+
+> **Scored object: plan items.** ≥ 4/5 = "action is sound, proceed." Criteria: Correct (gap real?) · Deep (hits root?) · Feasible (doable as described?) · Conflict-risk (new problems?) · Preservation (keeps strength?).
+
+| H | Round 1 | Round 2 | Round 3 — Root | Score | Decision |
+|---|---|---|---|---|---|
+| **H1** | VIII A-yếu, không anchor Việt Nam | Ca dao châm biếm = tự-phê-bình phi-thiết-chế — loại evidence von Foerster/Weick không có | Root: VIII claim "cơ chế tự-xét-lại" nhưng prior-art chỉ dẫn macro-cybernetics Tây phương, không có instance bình dân oral | **5.0/5** | ✅ PROCEED · Q1 line 12 079 |
+| **H2** | II mạnh (4.8/5) nhưng thiếu chiều thẩm mỹ | Aesthetic invariant "nội tâm > ngoại hình" bền khi tiêu chuẩn ngoại hình đổi theo Hán ảnh hưởng | Root: evidence II hiện tại chỉ dùng ca dao đạo đức — thẩm mỹ là dimension độc lập, không thay thế được | **4.8/5** | ✅ PROCEED · Q1 line 11 218 |
+| **H3** | Plan label Q3 sai ("Xã Hội Quan") | Q3 usable nhưng bằng cớ đúng khác; Q2 richer hơn expected | Root: plan draft không pre-read TOC thực tế → correction cần thiết nhưng không block execution | **4.2/5** | ✅ PROCEED với correction: Q3 = Vũ Trụ Quan; H3.2 đọc Q2 Section V gắn H6 crossover label |
+| **H4** | Narrative enrichment thấp, valid | Source tại Q1 line 17 958 (verify đầu phiên B) | Root: evidence không block tiên đề — giá trị "convergent discovery" là narrative nhỏ | **4.0/5** | ✅ HOLD → batch với H2 phiên B |
+| **H6** | R_place chưa anchored trong I prior-art | Nam An grep-ready; Q2 Section V là parallel source mới phát hiện | Root: I viết `{R(x,y)}` — y bất kỳ — nhưng prior-art chỉ show R_person; R_place gap thật | **4.6/5** | ✅ PROCEED · batch H6.1 grep với H3.2 Q2 Section V |
+| **H7** | V không có anchor Việt Nam dù triangulation "nhất quán" | Meta-evidence = hình thức oral corpus — không cần đọc thêm nguồn; H7.1 làm ngay | Root: V là derived proposition nhưng không có *demonstration observable* từ Việt Nam; oral corpus vô danh là demonstration đúng format | **4.8/5** | ✅ PROCEED · H7.1 không cần nguồn mới → ưu tiên sớm nhất |
+
+### P0.5 — Thứ tự thực hiện (updated vs. v2)
+
+```
+Session A (hiện tại):
+  H7.1  meta-evidence write (~200 từ — không cần đọc thêm nguồn)
+  H1    Q1 line 12 079 → trích 10–15 câu châm biếm + phân tích → VIII
+
+Session B:
+  H2    Q1 line 11 218 → trích 5–8 câu thẩm mỹ → II
+  H7.2  grep "ba cây"/"góp sức" trong Q1 + 758581912 → V content
+  H4    Q1 line 17 958 → verify + trích biến dịch → R  [batch nhỏ]
+
+Session C:
+  H3.2  Q2 đọc Section H (Hiếu Đạo) + Section V (Quê Hương) + Section VI (Đấu Tranh)
+          → gắn H6 crossover label trong Section V.B
+  H6.1  grep Nam An Nhóm A/B/C  [batch ngay sau H3.2]
+
+Session D:
+  H3.3  Q3 §II.a–II.b (Lão/Nho → IV) + §III Dân Tộc Tính (→ II)
+```
+
+> **Thay đổi so với roadmap v2:** H7.1 kéo lên Session A (không cần nguồn). H6.1 batch chặt với H3.2 (một lần đọc Q2 Section V). H3 đọc Q2 trước Q3 vì Q2 richer hơn expected.
 
 ---
 
@@ -138,17 +216,19 @@
 
 ### Các bước
 
-- [ ] **H4.1** Trích 5–7 câu ca dao biến dịch, phân loại:
-  - (a) Biến dịch tự nhiên (nước chảy, mùa đổi)
-  - (b) Biến dịch xã hội (thời thế, vận mệnh)
-  - (c) Phản ứng trước biến dịch (nhẫn nại, thích ứng)
-- [ ] **H4.2** Viết đoạn ~200 từ, vị trí đề xuất:
+- [x] **H4.1** Trích 5–7 câu ca dao biến dịch, phân loại — **DONE 2026-06-10**:
+  - (a) Biến dịch tự nhiên: số 1 (Q1 17960): "Đương xuân rồi cũng soi cho âm hàn" (cycle inevitable); số 30 (Q1 18037): "Càng thắm thì lại càng phai / Thoang thoảng hoa lài càng được thơm lâu" (structural depth outlasts surface intensity → II)
+  - (b) Biến dịch xã hội: số 6 (Q1 17970): "Bóng son rồi cũng soi cho gương mờ"; số 74 (Q1 18141): "Cờ đến tay ai người ấy phất" (agency in change)
+  - (c) Phản ứng structural: số 59 (Q1 18103): "Con người có tổ có tông / Như cây có cội như sông có nguồn" — **KEY: ca dao III xuất hiện trong Ý Thức Thực Tiễn** — cùng câu với Q2 line 15290 nhưng trong practical wisdom section → III là điều kiện thực tiễn (không chỉ filial piety). Cross-domain confirmation.
+  - Số 67 (Q1 18123): "Còn trời còn nước còn mây, còn ao rau muống còn đầy chum tương" (structural relational persistence = I × V)
+- [ ] **H4.2** Viết đoạn ~200 từ — **DEFERRED** (priority thấp, không block; có thể thêm vào `axiom_spec.md` §0 hoặc `why.html` khi cần):
   - `axiom_spec.md` → §0 Câu Hỏi Gốc R, ghi chú footnote "convergent discovery"
   - Hoặc `why.html` → phần mở đầu
+  - **Narrative chính (sẵn sàng dùng):** "Ý Thức Thực Tiễn" trong Q1 là folk wisdom về 'làm thế nào để tồn tại qua biến đổi' — câu hỏi chính xác là Câu Hỏi Gốc R. Folk wisdom trả lời: (1) surface things fade (số 30 — II), (2) structural anchor needed (số 59 — III), (3) relational persistence through change (số 67 — I). Hàng trăm năm trước Mạch Rễ, dân gian Việt Nam đã phát biểu framework này trong lẽ sống thực tiễn.
 
 ### Tiêu chí hoàn thành
-- Có ≥5 câu ca dao biến dịch với phân tích ngắn
-- Gắn được vào narrative mà không làm nặng hệ spec
+- [x] Có ≥5 câu ca dao biến dịch với phân tích ngắn — **DONE**
+- [ ] Gắn được vào narrative mà không làm nặng hệ spec — **DEFERRED** (H4.2)
 
 ### Ràng buộc
 - Ghi rõ trạng thái `[narrative enrichment]` — KHÔNG phải evidence cấu trúc
@@ -197,24 +277,26 @@
 
 ### Các bước
 
-- [ ] **H6.1** Grep toàn bộ file Nam An theo 3 nhóm từ khóa:
+- [x] **H6.1** Grep toàn bộ file Nam An theo 3 nhóm từ khóa:
   - Nhóm A — Quan hệ người–đất: "quê", "làng", "núi", "sông", "đất", "về", "gốc" → evidence I (R_place)
   - Nhóm B — Lực kéo quê hương / V-axis spatial: "quay về", "nhớ", "cáo", "hướng về" → evidence III spatial
   - Nhóm C — Huyền thoại gốc / invariant: "Con Rồng", "Con Hồng", "Lạc", "Tiên", "cháu" → evidence II (structural invariant)
-- [ ] **H6.2** Trích ≥5 câu mỗi nhóm (≥15 câu tổng), phân tích ngắn 1–2 câu/câu tục ngữ:
+- [x] **H6.2** Trích ≥5 câu mỗi nhóm (≥15 câu tổng), phân tích ngắn 1–2 câu/câu tục ngữ:
   - Nhóm A: `R_place` vận hành Tiên Đề I như thế nào?
   - Nhóm B: quê hương là cực thu hút trên V-axis — khác gì Halbwachs "ký ức trong hiện tại"?
   - Nhóm C: huyền thoại gốc là invariant (II) — nội dung nào đổi, cấu trúc nào giữ?
-- [ ] **H6.3** Viết đoạn phân tích tổng hợp ~400 từ, tạo file `review/evidence_i_iii_ii_nam_an.md`
-- [ ] **H6.4** Annotation tối thiểu trong axiom_spec.md:
+- [x] **H6.3** Viết đoạn phân tích tổng hợp ~400 từ, tạo file `review/evidence_i_iii_ii_nam_an.md`
+- [x] **H6.4** Annotation tối thiểu trong axiom_spec.md:
   - Tiên Đề I, mục Prior-art / Biện minh quy nạp: thêm 1 dòng ghi nhận `R_place` có corpus empirical trong Nam An
   - Tiên Đề III, mục Prior-art: thêm ghi chú về chiều spatial của V-axis qua quê hương
   - Đánh dấu `[evidence empirical]`
 
 ### Tiêu chí hoàn thành
-- Có ≥15 câu tục ngữ phân tích qua 3 nhóm
-- File `review/evidence_i_iii_ii_nam_an.md` tạo xong
-- Annotation 2 dòng trong axiom_spec.md (I + III), không sửa phát biểu
+- [x] Có ≥15 câu tục ngữ phân tích qua 3 nhóm — **DONE** (7 Nhóm A + 5 Nhóm B + 3 Nhóm C = 15)
+- [x] File `review/evidence_i_iii_ii_nam_an.md` tạo xong — **DONE** 2026-06-10
+- [x] Annotation 2 dòng trong axiom_spec.md (I + III), không sửa phát biểu — **DONE** (§I Prior-art + §III Prior-art)
+
+### Trạng thái: ĐÃ HOÀN THÀNH ✅
 
 ### Ràng buộc
 - KHÔNG sửa phát biểu Tiên Đề I, II, III

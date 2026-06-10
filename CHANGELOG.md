@@ -1,5 +1,27 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — Ca Dao Evidence Enrichment: Sessions A–E · Thêm 10 annotations vào axiom_spec.md · RCA 4.6–5.0/5
+
+**Symptom:** `axiom_spec.md` §I, §II, §III, §IV, §V, §VIII Prior-art chỉ có Western theory anchors (Luhmann, Ashby, Lévi-Strauss, von Foerster…) và lý thuyết Phật giáo. Không có Vietnamese empirical instances — instances quan sát được trong thực tiễn dân gian Việt Nam cho từng tiên đề.
+
+**Root (Round 3):** Framework tự nhận là "Triết học Tương quan-Phân tán" grounded trong văn hóa Việt Nam (Tiên Đề I, III) nhưng Prior-art của từng tiên đề không có bằng chứng inductive từ corpus ca dao Việt Nam — tức là framework claim Vietnamese cultural grounding nhưng không show the work. Đây là gap traceability: claim không trace về Vietnamese empirical sources (Paper Rules Tier 3 Rule #7).
+
+**Fix — 6 evidence files + 10 annotations (plan `2026-06-09_plan_ca_dao_evidence_enrichment.md`):**
+
+*Session A (VIII):* Tạo `review/evidence_viii_ca_dao_cham_biem.md` (H1, RCA 4.8/5) — 11 ca dao châm biếm Q1, cơ chế vô danh + phi-thiết-chế + embedded = VIII instance. `axiom_spec.md` §VIII Triangulation: A-yếu (~2/3) → **A-trung bình (~2.5/3)**. §VIII Prior-art: thêm bullet Vietnamese prior-art.
+
+*Session B (II):* Tạo `review/evidence_ii_tham_my.md` (H2, RCA 4.8/5) — 6 ca dao "Ý Thức Cái Đẹp Cái Xấu" Q1. "Nết" = structural behavioral invariant (test = adversity persistence) ≠ "đức hạnh Nho giáo" (test = conformity). `axiom_spec.md` §II Prior-art: thêm annotation.
+
+*Session C (III + I + IV):* Tạo `review/evidence_q2_mapping.md` (H3.2 + H6 + IV gold find, RCA 4.6–5.0/5) — Q2 ca dao "cây có cội sông có nguồn" = III existence condition; địa danh ca dao = I R_place; Lévi-Strauss via Nguyễn Tấn Long (Q2 line 479) = IV convergent prior-art. `axiom_spec.md` §I + §III + §IV Prior-art: thêm 3 annotations.
+
+*Session D (V + Q3 II/IV):* Tạo `review/evidence_v_phan_tan.md` (H7, RCA 4.8–5.0/5) — hình thức oral corpus vô danh/phi-tập-trung/dị-bản IS V mechanism (Part I meta-evidence, 5.0/5). `axiom_spec.md` §V Prior-art: thêm bullet mới (§V trước đó không có Prior-art Việt Nam). Tạo `review/evidence_q3_mapping.md` (H3.3, RCA 4.8–5.0/5) — Q3 §III "nếp sống" + "di lưu qua thời gian" = II mechanism; tương đồng/dị biệt Khổng/Lão = IV operational instances với criterion rõ ràng. `axiom_spec.md` §II + §IV Prior-art: thêm 2 annotations Q3.
+
+**Ràng buộc đã giữ:** KHÔNG sửa phát biểu bất kỳ tiên đề nào. KHÔNG nâng mệnh đề dẫn xuất lên Core Axiom. Chỉ thêm Prior-art annotations. §VIII Triangulation score 4.8/5 qua RCA gate.
+
+*Session E (Nam An I+III+II):* Tạo `review/evidence_i_iii_ii_nam_an.md` (H6, RCA I=4.8/5 III=4.8/5 II=4.8/5) — corpus Nam An: (a) I R_place ở tầng epistemic architecture — toàn bộ corpus tổ chức theo nguyên lý người-đất; (b) III non-human V-axis pull — "Cáo chết ba năm quay đầu về núi" + "Lô Đà Tam Đảo cũng quay đầu về" = cosmic structure, không phải social norm; (c) II origin myth — "Con Rồng cháu Tiên" / "Con Hồng cháu Lạc" = structural invariant ở tầng mythological foundation. `axiom_spec.md` §I Prior-art: thêm annotation Nam An.
+
+**RCA scores:** H1 4.8/5 · H2 4.8/5 · H3.2 4.8/5 · H6 4.6/5 (planning) · H6 I 4.8/5 · H6 III 4.8/5 · H6 II 4.8/5 · IV convergent 5.0/5 · H7.1 5.0/5 · H7.2 4.8/5 · H3.3 II 4.8/5 · H3.3 IV 5.0/5.
+
 ## 2026-06-10 — RCA: Thêm rule Citation Table vào CLAUDE.md · RCA 4.8/5
 
 **Symptom:** Các tài liệu (plan docs, HTML nodes, papers) trích dẫn nghiên cứu bên ngoài nhưng không có bảng nguồn chuẩn hóa ở cuối tài liệu → người đọc không thể verify claim, vi phạm traceability.
