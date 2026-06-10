@@ -41,13 +41,14 @@ jobs:
             *.svg
             LICENSE
             publish/
+            papers/
           sparse-checkout-cone-mode: false
 
       - name: Remove non-site files
         run: |
           # Keep only files needed for the website
           # Remove any directories that leaked through sparse checkout
-          rm -rf documents/ archives/ raw/ scratch/ papers/ review/ plan/ .claude/ .gitnexus/ .tmp.drivedownload/ .tmp.driveupload/ 2>/dev/null || true
+          rm -rf documents/ archives/ raw/ scratch/ review/ plan/ .claude/ .gitnexus/ .tmp.drivedownload/ .tmp.driveupload/ 2>/dev/null || true
           rm -f *.py *.md *.workspace *.txt 2>/dev/null || true
           echo "=== Files to deploy ==="
           find . -not -path './.git/*' -not -path './.github/*' -not -name '.git' -not -name '.github' -type f | sort
