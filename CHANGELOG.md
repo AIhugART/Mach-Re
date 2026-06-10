@@ -1,5 +1,17 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: Thêm link mach_re_homologous.html vào axiom_3.html · RCA 5.0/5
+
+**Symptom:** `axiom_3.html` — trang canonical về Tiên Đề III — không có link ngữ cảnh nào đến `mach_re_homologous.html` trong nội dung thân bài. Link duy nhất nằm ở footer (không ngữ cảnh). Trang homologous chứa cross-cultural validation evidence mạnh nhất cho Tiên Đề III (so sánh với Ubuntu Bantu và Yoruba Nigeria — hai nền văn hóa sống duy nhất khác cũng thực hành Vertical Temporality), nhưng evidence này vô hình với người đọc axiom_3.html.
+
+**Root:** Trang homologous được tạo sau axiom_3.html; chỉ thêm footer link như afterthought. §5-6 (Comparative Philosophy + Summary Matrix) so sánh với 11 truyền thống triết học nhưng không so sánh với văn hóa sống — tức taxonomy so sánh chưa hoàn chỉnh (triết-học-vs-triết-học được cover, văn-hóa-sống-vs-văn-hóa-sống thì không). Vi phạm nguyên tắc traceability: supporting evidence phải reachable từ claim nó hỗ trợ (Paper Rules Tier 3 Rule 3 — falsification condition).
+
+**Fix:**
+1. **Thân bài (§6 → §7):** Thêm callout box (purple, matching homologous page theme) sau Summary Matrix, trước §7. Nội dung: phân biệt "so sánh triết học" vs "so sánh văn hóa sống", link đến homologous page, tóm tắt phát hiện chính (three independent cultures evidence Tiên Đề III; 5 divergence points traced to eco-economic roots and Mother Goddess worship).
+2. **Bottom nav:** Thêm link `mach_re_homologous.html` giữa "WHAT" và "So sánh Văn hóa", label "🔬 Homologous (Ubuntu & Yoruba)".
+
+**RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1). Link hai chiều đã hoàn chỉnh: `mach_re_homologous.html` → `axiom_3.html` (có sẵn) + `axiom_3.html` → `mach_re_homologous.html` (mới thêm).
+
 ## 2026-06-10 — RCA: Thêm tự phân loại Mạch Rễ vào Paper 005 · RCA 5.0/5
 
 **Symptom:** Paper 005 dùng Mạch Rễ để chẩn đoán "lỗi phạm trù" (đánh giá triết học tương quan-phân tán bằng thước đo hệ thống-siêu hình) nhưng không tự tuyên bố Mạch Rễ thuộc loại hình triết học nào. Paper phân loại *đối tượng được phân tích* (triết học Việt Nam) nhưng không tự phân loại *công cụ phân tích* (Mạch Rễ).
