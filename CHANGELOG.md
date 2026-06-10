@@ -1,5 +1,62 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: mach_re_homologous.html — Yoruba claims thiếu citation · [5][6][7] added
+
+**Claims Yoruba không có nguồn (đã xác định qua RCA):**
+- Egungun = tổ tiên nhập xác vật lý, phán xét, ban phước
+- Egungun society = thiết chế liên dòng họ, tái tạo ở diaspora
+- Ẹ̀jọ́ = hệ thống tư pháp Yoruba; Ofo = lời nguyền tổ tiên
+- Babalawo = specialist tháo gỡ; Ifa divination trong căn hộ
+- Egungun grove = không gian thiêng cần thiết
+
+**3 citations học thuật thêm:**
+- `[5]` Akande, A. O. (2019). *Genealogy* 3(1), 7. DOI 10.3390/genealogy3010007 — Egungun masquerade, society, grove, diaspora.
+- `[6]` Abimbola, W. (1976). *Ifa: An Exposition of Ifa Literary Corpus*. Oxford UP Nigeria. ISBN 9780195751994 — babalawo, Ifa, Ofo, Ẹ̀jọ́.
+- `[7]` Peel, J. D. Y. (2000). *Religious Encounter and the Making of the Yoruba*. Indiana UP. ISBN 0-253-33794-1 — Yoruba entity ontology tổ tiên, elderhood power, asymmetric relations.
+
+**5 điểm thêm inline hyperlink:**
+- ASCII box Phân Kỳ 1 (Egungun embodied entity): `[5][7]`
+- Why 4 Phân Kỳ 1 (babalawo/specialist): `[6][7]`
+- ASCII box Phân Kỳ 3 (Egungun society diaspora): `[5]`
+- ASCII box Phân Kỳ 4 (Ẹ̀jọ́, Ofo, babalawo): `[6][7]`
+- ASCII box Phân Kỳ 5 (Egungun society đô thị, Ifa, grove): `[5][6]`
+
+---
+
+## 2026-06-10 — RCA: mach_re_homologous.html — "1000 năm Nam tiến" · 2 defects · RCA 5/5 + 4.5/5 · Citation [3][4] added
+
+**Claims bị xét:**
+- `line 505` — "lịch sử di dân nội địa **liên tục**" + "Nam tiến **1000 năm**"
+- `line 549` — "**1000 năm** Nam tiến"
+
+**Defect A — "1000 năm" (score 5/5):** Không có mốc lịch sử nào cho ra 1000 năm. Từ 1069 (Lý Thánh Tông lấy 3 châu) đến 1757 (Hà Tiên, hoàn tất) = ~688 năm. Từ 1471 đến 1757 = ~286 năm (conservative). Root: rhetorical symmetry với "1000 năm Bắc thuộc" overrides historical accuracy. → Fix: "~700 năm (thế kỷ 11–18, 1069–1757)."
+
+**Defect B — "liên tục" / continuous (score 4.5/5):** Nam tiến diễn ra theo từng giai đoạn có khoảng dừng dài (1306→1471 = 165 năm không mở rộng). Root: "continuous" mô tả sai tốc độ thay vì hướng nhất quán. → Fix: "nhất quán hướng Nam, từng giai đoạn (persistent, episodic)."
+
+**Citations thêm:**
+- `[3]` Taylor, K. W. (2013). *A History of the Vietnamese*. Cambridge University Press. ISBN 9780521699150.
+- `[4]` Li Tana. (1998). *Nguyễn Cochinchina*. Cornell Southeast Asia Program. ISBN 9780877277224.
+
+**Ghi chú học thuật:** Wikipedia (Nam tiến) ghi nhận debate — một số học giả cho rằng Nam tiến có hệ thống không bắt đầu trước thế kỷ 15 (1471). Document dùng ghi nhận rộng hơn (từ 1069) với annotation "(thế kỷ 11–18)".
+
+---
+
+## 2026-06-10 — RCA: mach_re_homologous.html — Hệ quả cho Mạch Rễ · 3 defects · RCA 5/5
+
+**Claim bị xét:** `mach_re_homologous.html:549` — "Mạch Rễ — Đạo Rễ (Root Way) — là phiên bản portable, phi thiết chế, đối xứng nhất của Tiên Đề III trên thế giới."
+
+**3 defects, tất cả score 5/5:**
+
+- **A — Scope violation ("nhất trên thế giới"):** n=3 không đủ cho universal superlative. Root: không có falsification condition — vi phạm internal consistency của framework. → Fix: "Trong ba hệ thống được phân tích."
+- **B — Category confusion (Mạch Rễ ≠ nền tảng văn hóa VN):** 5 điểm phân kỳ phân tích *thực hành văn hóa Việt Nam*, nhưng conclusion gán cho *Mạch Rễ (framework)*. Mâu thuẫn trực tiếp với Foundation Statement (line 217): "Mạch Rễ đóng góp là đặt tên." Root: equivocation — dùng "Mạch Rễ" hai nghĩa khác nhau. → Fix: "nền tảng văn hóa Việt Nam mà Mạch Rễ neo vào."
+- **C — Undefined term ("Đạo Rễ"):** Xuất hiện 1 lần, không definition, không có trong dictionary_rule.md §9. Root: terminological inflation. → Fix: xóa.
+
+**Câu thêm:** "Đóng góp của Mạch Rễ là đặt tên và hệ thống hóa nguyên lý đó bằng ngôn ngữ đủ chính xác để đối thoại với triết học thế giới." — khôi phục đúng vai trò framework, align Foundation Statement line 217.
+
+**RCA score:** 5/5 × 3 defects. Threshold ≥ 4/5 → fix tất cả.
+
+---
+
 ## 2026-06-10 — RCA: Áp dụng Document Contract Rules (Citation Table + Dictionary Fixes) cho toàn bộ 18 HTML · RCA 4.8/5
 
 **Symptom:** 17/18 HTML files có external citations nhưng không có bảng "Nguồn Trích Dẫn" APA-formatted. Không file nào có inline `<a href="#nguon-N">[N]</a>` hyperlink hoặc `id="nguon-N"` anchor. 5 dictionary rule violations (absolute universals, composite self-scores) trong các file chính. Vi phạm CLAUDE.md Paper Rule #12 và dictionary_rule.md §1, §5.
