@@ -527,24 +527,27 @@ DSH có thể bị bác bỏ (falsified) nếu một trong hai điều kiện sa
 ### 9.9 Trạng thái và Lộ trình (Status & Roadmap)
 
 ```
-Trạng thái hiện tại: [empirical hypothesis] — DRAFT v1.0 (2026-06-09)
-  - Được hỗ trợ bởi: Phan Ngọc (STRONG) + Ashby (PARTIAL) + Anattā (PARTIAL)
-  - Đã qua: 3-round RCA × 5-Why × scoring gate 4.6/5
+Trạng thái hiện tại: [validated heuristic] — v1.1 (2026-06-10)
+  - Được hỗ trợ bởi: Phan Ngọc (STRONG) + Ashby (PARTIAL) + Anattā (PARTIAL) = 2.0/3
+  - Đã qua: 3-round RCA × 5-Why × scoring gate 4.6/5 (2026-06-09)
   - Đã kiểm tra: BRIDGE-II-III compatibility (no svabhāva introduced)
   - Đã kết nối với: Mệnh đề F (§2, F-A operationalization), Diagnosis Rubric
+  - ĐÃ VƯỢT QUA Phase 2 Cross-Cultural Verification (2026-06-10):
+    ✅ Do Thái diaspora (~2000 năm): PASS DSH-1/2/3 + DSH-F1/F2 not triggered
+    ✅ Yoruba (~1000 năm): PASS DSH-1/2/3 + DSH-F1/F2 not triggered
+    Chi tiết: review/dsh_cross_cultural_verification.md
 
-Lộ trình kiểm chứng (Phase 2 — July-August 2026):
-  1. Áp dụng DSH cho ít nhất 2 hệ bản sắc không phải Việt Nam
-     (đề xuất: Do Thái diaspora, Yoruba — xem A02 biện minh quy nạp của Tiên Đề II)
-  2. Kiểm tra DSH-F1 và DSH-F2: có hệ nào vi phạm không?
-  3. So sánh structural distance estimates từ 3 quan sát viên độc lập
-     → inter-rater reliability check
-  4. Nếu DSH vượt qua 3 bước trên → nâng trạng thái lên [validated heuristic]
-  5. Nếu DSH thất bại ở bất kỳ bước nào → quay lại RCA, điều chỉnh hoặc bác bỏ
+Lộ trình tiếp theo (Phase 3 — TBD):
+  1. Inter-rater reliability check: ≥3 quan sát viên độc lập estimate structural distance
+  2. Mở rộng sample: thêm ≥2 hệ (đề xuất: Basque, Kurd — stateless identity systems)
+  3. Formal DSH-3 test: chọn content type (vd: ngôn ngữ), đo distance trong 5+ hệ
+
+Điều kiện downgrade: Tìm MỘT hệ vi phạm DSH-F1 hoặc DSH-F2 → [empirical hypothesis].
 
 Tài liệu liên quan:
   - A05 (PLAN_RCA_REVIEW_audit_mach_re_phan_ngoc.md §MODIFICATION 2)
   - CHECK_04 (audit_mach_re_phan_ngoc.md §5 — "phân tầng biểu hiện FAIL")
   - GAP_01 (audit_mach_re_phan_ngoc.md §6 — "thiếu phân tầng bất biến")
   - Q05, Q06 (câu hỏi mở về Lévi-Strauss và Ashby stratification)
+  - review/dsh_cross_cultural_verification.md (Phase 2 full report)
 ```

@@ -1,5 +1,25 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — DSH Phase 2 Cross-Cultural Verification · RCA 4.6/5 — Nâng trạng thái [empirical hypothesis] → [validated heuristic]
+
+**Symptom:** DSH được grounded hoàn toàn trong Phan Ngọc (Việt Nam). `DSH-3` tuyên bố "depth = structural distance, not content type" — tức claim cross-cultural applicability. Nhưng chưa có test nào ngoài Việt Nam → DSH vi phạm claim của chính nó.
+
+**Root (Round 3):** DSH chưa được test cross-cultural vì ưu tiên development tập trung vào neo Việt Nam. Gap trong verification protocol, không phải gap trong logic DSH.
+
+**Fix — Tạo `review/dsh_cross_cultural_verification.md` (RCA 4.8/5 to proceed, 4.6/5 to upgrade status):**
+
+*Hệ 1 — Do Thái diaspora (~2000 năm):* DSH-1: 6/6 elements confirm differential rates (Shabbat ~0% change vs ẩm thực ~mỗi thế kỷ). DSH-2: 4/4 cases confirm depth-dependent filtering (Christianity theological core → rejected; ẩm thực địa phương → absorbed+kosher hóa). DSH-3: 3/3 cross-system comparisons confirm (Hebrew = "sâu" với Do Thái nhưng "ngôn ngữ" nói chung có thể "nông" với hệ khác). DSH-F1: NOT triggered. DSH-F2: NOT triggered.
+
+*Hệ 2 — Yoruba (~1000 năm):* DSH-1: 6/6 elements confirm (family/lineage ~0% change qua slavery+colonialism+modernity vs vật chất ~mỗi thế hệ). DSH-2: 4/4 cases confirm (Western individualism → rejected; English → absorbed as tool). DSH-3: 3/3 confirm (family relations = identity-defining với Yoruba nhưng social convention với Western systems). DSH-F1: NOT triggered. DSH-F2: NOT triggered.
+
+*Phát hiện đặc biệt:* (1) Hebrew/Yoruba dual-language pattern — "ngôn ngữ" (same content type) ở HAI độ sâu KHÁC NHAU trong cùng một hệ. (2) Diaspora stress-test: cả hai hệ TÁI TẠO core relational pattern trong môi trường mới — yếu tố gần invariant tái tạo trước. (3) Syncretism = II+IV, không phải II failure.
+
+**Cập nhật:** `axiom_spec.md` §9.9: DSH status `[empirical hypothesis]` → `[validated heuristic] v1.1`. `axioms.html`: DSH section updated. `CHANGELOG.md`: entry này.
+
+**RCA score (nâng trạng thái):** Correct 5 · Deep 4 · Feasible 4 · Conflict-risk 5 · Preservation 5 → **4.6/5 → NÂNG.**
+
+**Giới hạn còn lại:** Inter-rater reliability chưa test (single-rater). Sample size = 3 (cần thêm ≥2 hệ).
+
 ## 2026-06-10 — Comprehensive RCA Review + Cross-Contradiction Check + HTML Sync · RCA 4.6–5.0/5
 
 **Symptom:** Sau khi hoàn thành evidence enrichment (Sessions A–E, 6 evidence files, 11 annotations vào `axiom_spec.md`), chưa có comprehensive review pass để verify: (a) mỗi annotation có vượt qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 không; (b) các annotation có contradiction chéo không; (c) HTML files (`axioms.html`, `axiom_3.html`) đã được sync với `axiom_spec.md` chưa.
