@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoruba — Triết lý Bản thể và Số mệnh Tây Phi | Mạch Rễ Comparative Framework</title>
+  <meta name="description" content="Phân tích triết học Yoruba (Tây Phi): Ìwà (Phẩm chất), Orí (Số mệnh), Aṣẹ (Lực sống) và hệ tri thức Ifá [2]. Nguồn đối chiếu cho Tiên Đề III — Mạch Cội Nguồn." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Royal Yoruba palette — marking comparative partner page, not Mạch Rễ primary */
+      --indigo:       #121e3d;     /* Deep Indigo - spiritual depth, Yemoja */
+      --ochre:        #c89e32;     /* Ochre Gold - Osun, royalty, wealth */
+      --coral:        #d94e34;     /* Coral Red - Shango, vitality, action */
+      --cream:        #faf8f5;     /* Ivory Cream - Obatala, purity, background */
+      --bronze:       #8a5e38;     /* Bronze/Brown - Earth, ancestors */
+      --teal:         #2a6f6d;     /* Teal Green - Ogun, forests, medicine */
+      --indigo-pale:  #eef2f8;     /* Light Indigo - subtle background blocks */
+      
+      /* Project standard variables */
+      --green:        #2d6a4f;
+      --green-pale:   #d8f3dc;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #e6dfd5;
+      --accent:       #d94e34;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav {
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--indigo) 0%, #1e2e5c 55%, var(--teal) 100%);
+      color: var(--cream);
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+      color: var(--cream);
+    }
+    .hero h1 span { color: var(--ochre); }
+    .hero p { color: rgba(250,248,245,.8); font-size: 1rem; max-width: 680px; margin: 0 auto; font-style: italic; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.45rem;
+      color: var(--coral);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f9deda;
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── CORE CIRCLE ── */
+    .core-wrap { display: flex; justify-content: center; margin: 0 0 32px; }
+    .core-circle {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, var(--ochre), var(--coral));
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      box-shadow: 0 0 0 14px rgba(217,78,52,.15), 0 0 0 30px rgba(217,78,52,.07);
+      text-align: center; padding: 1rem;
+      animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 14px rgba(217,78,52,.15), 0 0 0 30px rgba(217,78,52,.07); }
+      50%      { box-shadow: 0 0 0 18px rgba(217,78,52,.2),  0 0 0 38px rgba(217,78,52,.05); }
+    }
+    .core-circle .yoruba-term {
+      font-family: 'Playfair Display', serif;
+      font-size: .78rem; font-style: italic;
+      color: var(--cream); line-height: 1.3; margin-bottom: .25rem;
+    }
+    .core-circle .word {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; font-weight: 900;
+      color: var(--cream);
+    }
+
+    /* ── DEF BOX ── */
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--coral);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .def-box .label {
+      font-size: .7rem; font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--coral); margin-bottom: 8px;
+    }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+
+    /* ── GRID CARDS ── */
+    .roots-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px; margin: 20px 0;
+    }
+    @media (max-width: 640px) {
+      .roots-grid { grid-template-columns: 1fr; }
+    }
+    .root-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .root-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+    .root-card .icon { font-size: 1.6rem; margin-bottom: .5rem; }
+    .root-card .rc-title {
+      font-size: .82rem; font-weight: 700;
+      color: var(--coral); margin-bottom: .3rem;
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .root-card p { font-size: .82rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+
+    /* ── COMPONENT BOX ── */
+    .comp-box {
+      background: var(--indigo-pale);
+      border: 1px solid #dbe2ef;
+      border-radius: 12px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+    .comp-box h4 { font-size: .95rem; color: var(--indigo); margin-bottom: 8px; }
+    .comp-box ul { padding-left: 20px; color: var(--text-muted); font-size: .88rem; line-height: 1.7; }
+    .comp-box li { margin-bottom: 4px; }
+
+    /* ── ASCII ── */
+    .ascii-box {
+      background: #18233c;
+      color: #b3c2e6;
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: .82rem;
+      white-space: pre;
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid #2c3e6b;
+    }
+
+    /* ── TABLE ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .85rem;
+      margin: 20px 0;
+    }
+    .compare-table th {
+      background: var(--indigo);
+      color: var(--cream);
+      padding: 12px 14px;
+      text-align: left;
+      font-weight: 600;
+      border: 1px solid #23345c;
+    }
+    .compare-table td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    .compare-table tr:nth-child(even) td { background: #fafbfc; }
+    .compare-table td strong { color: var(--indigo); }
+
+    /* ── RESONANCE GRID ── */
+    .resonance-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px; margin: 20px 0;
+    }
+    @media (max-width: 640px) {
+      .resonance-grid { grid-template-columns: 1fr; }
+    }
+    .res-card {
+      border-radius: 12px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+    .res-card.agree { border-left: 5px solid var(--green); }
+    .res-card.differ { border-left: 5px solid var(--coral); }
+    .res-card .r-label {
+      font-size: .65rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .res-card.agree .r-label { color: var(--green); }
+    .res-card.differ .r-label { color: var(--coral); }
+    .res-card .r-title { font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px; }
+    .res-card .r-desc { font-size: .84rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ── BOUNDARY ── */
+    .boundary {
+      background: #fdf6f5;
+      border: 1px solid #f5dbd6;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .boundary .b-label {
+      color: var(--coral); font-weight: 700; font-size: .85rem;
+      margin-bottom: 8px; text-transform: uppercase; letter-spacing: .05em;
+    }
+    .boundary ul { padding-left: 20px; font-size: .88rem; color: var(--text-muted); line-height: 1.7; }
+    .boundary li { margin-bottom: 6px; }
+
+    /* ── CONNECT BOX ── */
+    .connect-box {
+      background: #faf7f2;
+      border: 1px solid #eadecd;
+      border-left: 5px solid var(--ochre);
+      border-radius: 12px;
+      padding: 24px; margin: 24px 0;
+    }
+    .connect-box .label {
+      font-size: .72rem; font-weight: 700;
+      color: var(--ochre); text-transform: uppercase;
+      letter-spacing: .1em; margin-bottom: 10px;
+    }
+    .connect-box p { font-size: .88rem; color: var(--text-dark); margin-bottom: 10px; }
+    .connect-box a { color: var(--coral); font-weight: 600; text-decoration: none; }
+    .connect-box a:hover { text-decoration: underline; }
+
+    /* ── BIBLIOGRAPHY ── */
+    .cite-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      font-size: .84rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+    }
+    .cite-box p { margin-bottom: 12px; border-bottom: 1px solid #f5f0e8; padding-bottom: 10px; }
+    .cite-box p:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+    .cite-box em { color: var(--text-dark); }
+    .cite-box a { color: var(--teal); text-decoration: none; }
+    .cite-box a:hover { text-decoration: underline; }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .bottom-nav a {
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: background .2s;
+    }
+    .bottom-nav a:hover { background: #1a3a2a; }
+    .bottom-nav a.secondary {
+      background: transparent;
+      border: 2px solid var(--green);
+      color: var(--green);
+    }
+
+    footer { background: #121e3d; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
+    footer a { color: #d4a373; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <a href="what.html">WHAT</a>
+  <span class="sep">/</span>
+  <a href="axiom_3.html">Tiên Đề III</a>
+  <span class="sep">/</span>
+  <span class="current">Yoruba</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">AFRICAN PHILOSOPHY · TRIẾT HỌC YORUBA</div>
+  <h1>Triết Học Yoruba: <span>Ìwà, Orí, và Aṣẹ</span></h1>
+  <p>Hệ tư tưởng vũ trụ và nhân sinh Tây Phi: Sự tự định hình số mệnh, lực sống tối thượng và hệ thống minh triết Ifá</p>
+</div>
+
+<div class="content">
+
+  <!-- §0 ── CORE CIRCLE -->
+  <div class="core-wrap">
+    <div class="core-circle">
+      <div class="yoruba-term">Yoruba Concept</div>
+      <div class="word">ÌWÀ</div>
+    </div>
+  </div>
+
+  <!-- §0 ── CORE DEFINITION -->
+  <section>
+    <div class="def-box">
+      <div class="label">Định nghĩa cốt lõi</div>
+      <blockquote>
+        <strong>Triết học Yoruba</strong> là hệ thống tư tưởng truyền thống của dân tộc Yoruba tại Tây Phi (phát triển rực rỡ tại Nigeria, Benin, Togo và vùng Caribe/Nam Mỹ thông qua di dân), vận hành trên ba trục chính luận: (1) <strong>Ìwà (Character/Existence)</strong>: Phẩm chất đạo đức chính là điều kiện tiên quyết và vẻ đẹp của sự tồn tại; (2) <strong>Orí (Destiny/Inner Head)</strong>: Ý thức độc lập tự lựa chọn số mệnh cá nhân từ trước khi sinh ra; (3) <strong>Aṣẹ (Vital Force)</strong>: Năng lượng vũ trụ cho phép hiện thực hóa ý chí và lời nói. Hệ tri thức này được lưu trữ và truyền thừa phi tập trung qua **Ifá** <a href="#nguon-2">[2]</a> — hệ thống 256 Odù (chương thơ).
+      </blockquote>
+    </div>
+    <p>Đối chiếu với các hệ thống siêu hình học phương Tây, triết học Yoruba là một minh chứng độc lập cho loại hình **Triết học Tương quan-Phân tán (Relational and Distributed Philosophy)**. Ở đó, tri thức sinh tồn không bị cô đặc trong hệ kinh điển cá nhân triết gia, mà được phân tán trong mạng lưới nghi lễ, thực hành đời sống gia đình và các specialist trung gian (Babalawo) <a href="#nguon-2">[2]</a>.</p>
+  </section>
+
+  <!-- §1 ── BẢN THỂ HỌC IWA & ORI -->
+  <section>
+    <h2>§1 — Bản thể học Ìwà &amp; Số mệnh cá nhân Orí</h2>
+    <p>Trong tiếng Yoruba, từ <strong>Ìwà</strong> đồng thời mang hai nghĩa: "tồn tại" (being) và "phẩm chất đạo đức" (character). Triết gia Rowland Abiodun <a href="#nguon-7">[7]</a> và các nhà nghiên cứu Tây Phi chỉ ra mệnh đề nổi tiếng: <em>"Ìwà l'ẹwà"</em> — Phẩm chất đạo đức chính là vẻ đẹp thực sự của con người. Con người không tồn tại một cách cô lập; sự tồn tại của họ chỉ được hoàn thiện và có ý nghĩa thông qua việc rèn luyện Ìwà trong mối quan hệ với cộng đồng và thế giới tự nhiên <a href="#nguon-6">[6]</a>.</p>
+    
+    <p>Mặt khác, bản sắc cá nhân lại được định hình bởi <strong>Orí</strong> (nghĩa đen là đầu vật lý, nghĩa siêu hình là đầu tâm linh / Orí Inú) <a href="#nguon-4">[4]</a>. Theo thần thoại Yoruba, mỗi cá nhân trước khi bước vào thế giới vật chất (Ayé) đều tự mình lựa chọn một chiếc đầu tâm linh Orí từ kho chứa của vị thần sáng thế Ajala. Lựa chọn này chứa đựng số mệnh độc lập (destiny) của người đó:</p>
+
+    <div class="ascii-box">
+Lựa chọn Orí Inú (Spiritual Head)   ──(Bản mệnh tiền kiếp)
+               │
+               ▼
+   Bước vào cõi Ayé (Vật chất)      ──(Hiện thực hóa qua Ìwà)
+               │
+               ▼
+   Đỉnh cao: Ìwà l'ẹwà (Đạo đức)    ──(Cân bằng vũ trụ/xã hội)
+    </div>
+
+    <p>Khái niệm Orí xác lập một nhận thức luận độc đáo: con người tự lựa chọn và chịu trách nhiệm tối hậu về số mệnh của mình, nhưng sự thành bại của số mệnh đó lại phụ thuộc vào cách họ rèn luyện phẩm chất Ìwà để chung sống hài hòa với xung quanh <a href="#nguon-4">[4]</a>.</p>
+  </section>
+
+  <!-- §2 ── ASE: LỰC SỐNG VŨ TRỤ -->
+  <section>
+    <h2>§2 — Aṣẹ: Dòng chảy lực sống vũ trụ (The Vital Force)</h2>
+    <p>Nếu Ìwà là phẩm chất và Orí là số mệnh, thì <strong>Aṣẹ</strong> chính là động cơ vận hành của toàn bộ vũ trụ. Aṣẹ là năng lượng sống tối thượng được ban phát từ đấng tối cao Olodumare <a href="#nguon-5">[5]</a>, chảy tràn qua mọi thực thể: thần linh (Òrìṣà), tổ tiên (Ara Òrun), con người, động vật, cây cỏ, và thậm chí là đất đá.</p>
+    
+    <p>Aṣẹ có các đặc tính cấu trúc sau:</p>
+    <div class="comp-box">
+      <h4>Đặc tính vận hành của Aṣẹ:</h4>
+      <ul>
+        <li><strong>Năng lượng thực thi (Performative Power)</strong>: Aṣẹ cho phép lời nói và suy nghĩ của con người biến thành hiện thực vật lý. Lời chúc phúc hay lời nguyền (Ofo) chỉ linh nghiệm khi người nói tích lũy đủ Aṣẹ.</li>
+        <li><strong>Tính bảo toàn và chuyển dịch</strong>: Aṣẹ không tự sinh ra hay mất đi, nó chuyển dịch từ cõi linh thiêng sang cõi phàm trần qua các nghi lễ hiến tế và thực hành tâm linh.</li>
+        <li><strong>Tính đa hướng</strong>: Aṣẹ kết nối trục dọc tâm linh (thần linh ↕ người sống) và trục ngang vật chất (người ↔ người ↔ thiên nhiên).</li>
+      </ul>
+    </div>
+    <p>Sự sở hữu Aṣẹ đòi hỏi một trạng thái cân bằng. Người có nhiều Aṣẹ (như các hiền nhân, Babalawo, đức vua) phải duy trì Ìwà cực kỳ nghiêm ngặt, nếu không lực sống này sẽ quay lại hủy hoại chính họ và cộng đồng <a href="#nguon-2">[2]</a>.</p>
+  </section>
+
+  <!-- §3 ── NHẬN THỨC LUẬN IFA -->
+  <section>
+    <h2>§3 — Nhận thức luận Ifá: 256 Odù làm thư viện phi tập trung</h2>
+    <p>Làm thế nào một hệ thống siêu hình học phức tạp như trên có thể lưu truyền hơn 1000 năm mà không bị biến dạng? Hệ thống bói toán và minh triết <strong>Ifá</strong> chính là công cụ lưu trữ của dân tộc Yoruba <a href="#nguon-2">[2]</a>.</p>
+    <p>Ifá không chỉ là một công cụ bói toán đơn thuần, mà là một hệ nhận thức luận khổng lồ được chia thành <strong>256 Odù (chương)</strong>:</p>
+    
+    <div class="ascii-box">
+Hệ thống Nhận thức Ifá (256 Odù):
+┌───────────────────────────┬───────────────────────────┐
+│  16 Odù chính (Mẹ)        │  240 Odù phụ (Con)        │
+│  (Oju Odù - Cấu trúc gốc) │  (Amulu Odù - Phối tổ hợp)│
+└───────────────────────────┴───────────────────────────┘
+               │
+               ▼
+Truyền miệng qua các Babalawo (Father of Secrets)
+(Mỗi Babalawo thuộc lòng hàng ngàn câu thơ của các Odù)
+    </div>
+
+    <p>Mỗi Odù chứa đựng hàng trưng bài thơ, thần thoại, sự kiện lịch sử và các nguyên tắc đạo đức. Khi một cá nhân đối mặt với các xung đột nhận thức hoặc khủng hoảng đời sống, họ sẽ đến gặp **Babalawo** (Chuyên gia giải mã / Cha của những bí mật). Babalawo thông qua các công cụ như chuỗi hạt Opele hoặc hạt cọ Ikin để xác định Odù tương ứng, từ đó "truy xuất dữ liệu" từ thư viện Ifá để đưa ra giải pháp thực hành cụ thể <a href="#nguon-2">[2]</a>.</p>
+  </section>
+
+  <!-- §4 ── TRỤC DỌC EGUNGUN -->
+  <section>
+    <h2>§4 — Trục dọc Egungun &amp; Bản thể học tổ tiên độc lập</h2>
+    <p>Tương tự như Mạch Rễ Việt Nam và Ubuntu, triết học Yoruba rất chú trọng đến mối quan hệ với tổ tiên. Tuy nhiên, Yoruba phát triển một **Bản thể học thực thể (Entity Ontology)** về tổ tiên ở mức độ rất mạnh mẽ <a href="#nguon-3">[3]</a>.</p>
+    <p>Tổ tiên của người Yoruba (Ara Òrun - Người của cõi trời) được coi là những thực thể độc lập, tồn tại khách quan và sở hữu quyền năng bất đối xứng so với người sống. Họ giao tiếp và can thiệp trực tiếp vào đời sống thông qua nghi lễ hóa trang **Egúngún** <a href="#nguon-1">[1]</a>:</p>
+    
+    <p>Trong các lễ hội Egungun, những người hóa trang (masqueraders) mặc các bộ y phục làm bằng nhiều lớp vải quý tế lễ, che kín từ đầu đến chân. Khi họ bước ra từ rừng thiêng, họ không còn được xem là con người đang đóng kịch, mà chính là **sự nhập thế vật lý (embodiment)** của vong hồn tổ tiên quay trở lại nhân gian để phán xét, ban phước lành và tái lập trật tự xã hội <a href="#nguon-1">[1]</a>. Sự tôn kính tổ tiên ở đây không chỉ là tưởng nhớ mối quan hệ dòng họ (như Việt Nam), mà là sự tuân phục một thiết chế siêu hình có thật.</p>
+  </section>
+
+  <!-- §5 ── DIASPORA ADAPTATION -->
+  <section>
+    <h2>§5 — Sự thích ứng phi thường của di dân (Diaspora Adaptation)</h2>
+    <p>Thử thách lớn nhất đối với bản sắc Yoruba là thảm kịch buôn bán nô lệ Đại Tây Dương (Transatlantic slave trade), khi hàng triệu người Yoruba bị bắt cóc và đưa sang châu Mỹ (Cuba, Brazil, Haiti). Trong cảnh ngục tù và bị cấm đoán tôn giáo truyền thống, bản sắc Yoruba đã sống sót một cách kỳ diệu bằng cơ chế **đồng cấu cấu trúc (structural isomorphism)**.</p>
+
+    <p>Họ đã thực hiện một chiến lược ngụy trang cấu trúc tinh vi:</p>
+    <div class="comp-box">
+      <h4>Mô hình đồng cấu ngụy trang:</h4>
+      <ul>
+        <li><strong>Òrìṣà và Các vị Thánh Catholic</strong>: Người Yoruba ngụy trang các vị thần (Òrìṣà) của họ dưới hình ảnh các vị thánh Công giáo. Thần sét Shango được thờ dưới danh nghĩa Thánh Barbara; thần chiến tranh Ogun được ngụy trang thành Thánh James.</li>
+        <li><strong>Fictive Kinship (Quan hệ dòng họ giả định)</strong>: Khi gia đình và dòng họ sinh học bị xé nát bởi chế độ nô lệ, họ tái tạo cấu trúc quan hệ thông qua các "nhà nghi lễ" (Ìlé Òrìṣà), nơi người đứng đầu (Iyálórìṣà / Babálórìṣà) đóng vai trò cha mẹ tinh thần, nuôi dưỡng các "con nuôi" trong lưới quan hệ tương trợ vững chắc.</li>
+      </ul>
+    </div>
+    
+    <p>Sự chuyển hóa này hình thành nên các hệ thống tín ngưỡng lớn ngày nay như **Santería** tại Cuba và **Candomblé** tại Brazil. Bản chất cốt lõi của thế giới quan Yoruba — từ việc thờ cúng tổ tiên, tôn kính Òrìṣà, rèn luyện Ìwà cho đến việc sử dụng ngôn ngữ Yoruba trong nghi lễ — vẫn được bảo tồn gần như nguyên vẹn sau nhiều thế kỷ bị ly tán địa lý <a href="#nguon-1">[1]</a>.</p>
+  </section>
+
+  <!-- §6 ── COMPARATIVE MATRIX -->
+  <section>
+    <h2>§6 — So sánh Triết học (Comparative Matrix)</h2>
+    <p>Bảng đối chiếu vị trí triết học Yoruba trong tương quan với các hệ thống tư tưởng lớn:</p>
+
+    <div style="overflow-x:auto">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Chiều kích</th>
+            <th>Yoruba 🧩</th>
+            <th>Ubuntu 🌍</th>
+            <th>Phương Tây 🏛️</th>
+            <th>Mạch Rễ 🇻🇳</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Điểm xuất phát</strong></td>
+            <td>Trục vũ trụ &amp; Số mệnh (Orí) <a href="#nguon-4">[4]</a></td>
+            <td>Cộng đồng ngang (Bantu) <a href="#nguon-1">[1]</a></td>
+            <td>Cá nhân lý trí (Cogito)</td>
+            <td>Quan hệ tương thuộc dọc-ngang</td>
+          </tr>
+          <tr>
+            <td><strong>Bản thể học tổ tiên</strong></td>
+            <td>Thực thể độc lập (Entity) <a href="#nguon-7">[7]</a></td>
+            <td>Thực thể độc lập (Entity)</td>
+            <td>Không tồn tại / Ký ức cá nhân</td>
+            <td><strong>Mẫu quan hệ (Relational pattern)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Công cụ giải quyết xung đột</strong></td>
+            <td>Nghi lễ &amp; Babalawo (Ifá) <a href="#nguon-2">[2]</a></td>
+            <td>Thiết chế hòa giải tập thể (TRC)</td>
+            <td>Luật pháp và Tòa án</td>
+            <td>Phi thiết chế tự hòa giải trực tiếp</td>
+          </tr>
+          <tr>
+            <td><strong>Cơ chế lưu truyền</strong></td>
+            <td>Ifá (256 Odù) truyền khẩu <a href="#nguon-2">[2]</a></td>
+            <td>Orature (Kể chuyện cộng đồng)</td>
+            <td>Văn bản học thuật kinh viện</td>
+            <td>Ca dao, tục ngữ, nếp ứng xử đời sống</td>
+          </tr>
+          <tr>
+            <td><strong>Đơn vị mang bản sắc</strong></td>
+            <td>Dòng họ + Thiết chế Egúngún <a href="#nguon-1">[1]</a></td>
+            <td>Dòng họ lớn (Clan)</td>
+            <td>Cá nhân nguyên tử</td>
+            <td>Gia đình hạt nhân phi địa lý (Di động)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- §7 ── KẾT NỐI MẠCH RỄ -->
+  <section>
+    <h2>§7 — Kết nối với Mạch Rễ: Tương đồng &amp; Phân kỳ</h2>
+    
+    <div class="boundary">
+      <div class="b-label">Boundary Statement — Phạm vi tuyên bố</div>
+      <ul>
+        <li><strong>Trang này KHÔNG tuyên bố:</strong> Triết học Yoruba và Mạch Rễ là hai biến thể của cùng một hệ tư tưởng.</li>
+        <li><strong>Trang này tuyên bố:</strong> Yoruba và Mạch Rễ là hai giải pháp thích nghi độc lập thuộc loại hình Triết học Tương quan-Phân tán, cùng chứng minh rằng bản sắc văn hóa có thể sống sót bền bỉ qua các áp lực đồng hóa cực hạn nhờ vào bảo tồn cấu trúc invariant.</li>
+      </ul>
+    </div>
+
+    <h3>Tương đồng cấu trúc</h3>
+    <div class="resonance-grid">
+      <div class="res-card agree">
+        <div class="r-label">Tương đồng — Tiên đề V</div>
+        <div class="r-title">Distributed Wisdom</div>
+        <div class="r-desc">Yoruba phân tán tri thức vào 256 Odù Ifá và phân nhiệm lưu trữ cho mạng lưới Babalawo toàn dân tộc. Mạch Rễ sử dụng Tiên Đề V (Giữ mà không gom), phân tán invariant bản sắc vào ca dao, nếp sống của từng gia đình hạt nhân. Cả hai đều tránh được sự sụp đổ khi trung tâm quyền lực bị đốt phá.</div>
+      </div>
+      <div class="res-card agree">
+        <div class="r-label">Tương đồng — Tính Đồng Cấu</div>
+        <div class="r-title">Structural Isomorphism</div>
+        <div class="r-desc">Yoruba di dân sang châu Mỹ bảo tồn bản sắc bằng cách ánh xạ Òrìṣà vào các vị thánh Công giáo. Việt Nam Nam tiến bảo tồn cội nguồn bằng cách chuyển hóa bàn thờ tổ tiên cố định thành bàn thờ di động. Cả hai đều giữ vững cấu trúc quan hệ bên trong dù biểu hiện bên ngoài thay đổi.</div>
+      </div>
+    </div>
+
+    <h3>Phân kỳ gốc rễ</h3>
+    <div class="resonance-grid">
+      <div class="res-card differ">
+        <div class="r-label">Phân kỳ — Trục Tổ Tiên</div>
+        <div class="r-title">Entity vs. Relation</div>
+        <div class="r-desc">Người Yoruba coi tổ tiên là các thực thể (Entity) độc lập có thật ở cõi Orun, can thiệp bất đối xứng và cần chuyên gia hóa trang Egúngún để giao tiếp <a href="#nguon-3">[3]</a>. Người Việt coi tổ tiên là một mẫu quan hệ (Relational) bất biến, tiếp nối trực tiếp qua dòng máu và nếp sống gia đình, không cần hóa trang hay trung gian.</div>
+      </div>
+      <div class="res-card differ">
+        <div class="r-label">Phân kỳ — Thiết Chế</div>
+        <div class="r-title">Institutional vs. Portable</div>
+        <div class="r-desc">Yoruba cần hệ thống Babalawo được đào tạo nghiêm ngặt và hội kín Egungun để vận hành bản sắc. Mạch Rễ Việt Nam loại bỏ hoàn toàn tầng lớp trung gian này; bất kỳ ai cũng có thể là chủ tế trước bàn thờ gia đình mình. Sự phi thiết chế này giúp Mạch Rễ có độ di động (portability) và khả năng sinh tồn cực cao trước các biến cố lịch sử.</div>
+      </div>
+    </div>
+
+    <div class="connect-box">
+      <div class="label">Đọc thêm — Phân tích đối chiếu chuyên sâu</div>
+      <p>→ <a href="mach_re_homologous.html">🔬 RCA Homologous: Mạch Rễ 🇻🇳 vs Ubuntu 🇿🇦 vs Yoruba 🇳🇬 — 5 Điểm Phân Kỳ Gốc Rễ</a></p>
+      <p>Phân tích sâu tại sao ba hệ thống cùng thực hành tôn kính tổ tiên lại phát triển theo ba hướng bản thể học khác nhau, ảnh hưởng trực tiếp đến khả năng thích nghi với xã hội hiện đại.</p>
+      <p style="margin-top:8px">→ <a href="ubuntu.html">🌍 Ubuntu — Triết học Nhân tính của người Bantu</a> — Hệ thống triết học châu Phi nhấn mạnh trục quan hệ ngang đồng đại.</p>
+    </div>
+  </section>
+
+  <!-- NGUỒN TRÍCH DẪN -->
+  <section style="margin-bottom:24px">
+    <h2>Nguồn Trích Dẫn</h2>
+    <div class="cite-box">
+      <p id="nguon-1">[1] Akande, A. O. (2019). Ará Òrun Kìn-ìn Kin-in: Òyó-Yòrùbá Egúngún Masquerade in Communion and Maintenance of Ontological Balance. <em>Genealogy</em>, <em>3</em>(1), 7. <a href="https://doi.org/10.3390/genealogy3010007" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/genealogy3010007</a></p>
+      <p id="nguon-2">[2] Abimbola, W. (1976). <em>Ifa: An Exposition of Ifa Literary Corpus</em>. Oxford University Press Nigeria. ISBN 9780195751994.</p>
+      <p id="nguon-3">[3] Peel, J. D. Y. (2000). <em>Religious Encounter and the Making of the Yoruba</em>. Indiana University Press. ISBN 0-253-33794-1.</p>
+      <p id="nguon-4">[4] Bewaji, J. A. I. (2004). The Yoruba Concept of Ori. In K. Wiredu (Ed.), <em>A Companion to African Philosophy</em> (pp. 381–390). Blackwell Publishing.</p>
+      <p id="nguon-5">[5] Idowu, E. B. (1962). <em>Olódùmarè: God in Yoruba Belief</em>. Longmans.</p>
+      <p id="nguon-6">[6] Gbadegesin, S. (1991). <em>African Philosophy: Traditional Yoruba Philosophy and Contemporary African Realities</em>. Peter Lang. ISBN 9780820410470.</p>
+      <p id="nguon-7">[7] Rowland Abiodun. (2014). <em>Yoruba Art and Language: Seeking the African in African Art</em>. Cambridge University Press. ISBN 9781107047440.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ── BOTTOM NAV ── -->
+<div class="bottom-nav">
+  <a href="axiom_3.html" class="secondary">← Tiên Đề III</a>
+  <a href="ubuntu.html" class="secondary">🌍 Ubuntu →</a>
+  <a href="mach_re_homologous.html">RCA Homologous →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="axiom_3.html">Tiên Đề III</a> · <a href="mach_re_homologous.html">Homologous</a> · <a href="what.html">Là gì</a></p>
+  <p style="margin-top:8px;font-size:.65rem;color:#aaa">Nguồn: <a href="#nguon-1">[1]</a> Akande (2019) · <a href="#nguon-2">[2]</a> Abimbola (1976) · <a href="#nguon-3">[3]</a> Peel (2000) · <a href="#nguon-4">[4]</a> Bewaji (2004)</p>
+</footer>
+
+</body>
+</html>
