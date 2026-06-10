@@ -1,6 +1,6 @@
 # Changelog — Papers (Mạch Rễ)
 
-> **Phạm vi:** Chỉ ghi nhận thay đổi cho các file trong `papers/`.
+> **Phạm vi:** Nơi **duy nhất** ghi nhận thay đổi cho các file trong `papers/`. Không ghi paper changes vào `CHANGELOG.md` gốc.
 > **Liên kết:** Lịch sử toàn bộ dự án (axiom, HTML nodes, audit, evidence) → xem [`CHANGELOG.md`](../CHANGELOG.md) tại thư mục gốc.
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
@@ -59,4 +59,15 @@
 
 ---
 
-> **Ghi chú:** File này bootstrap từ các entry paper-related trong [`CHANGELOG.md`](../CHANGELOG.md) (2026-06-07 đến 2026-06-10). Từ nay, mọi thay đổi cho `papers/` được ghi song song: entry đầy đủ trong `CHANGELOG.md` (lịch sử toàn dự án) + entry tóm tắt trong `CHANGELOG_papers.md` (lịch sử riêng papers).
+## 2026-06-07 — paper_005 — Bổ sung bảng giải thích nhãn phân loại học thuật (RCA) · RCA 5/5
+
+**Symptom:** Paper 005 dùng các nhãn `[established scholarship]`, `[contested scholarship]`, `[project interpretation]`, `[analogy]`, `[hypothesis]` nhưng chưa có bảng giải thích ý nghĩa cho người đọc.
+
+**Fix:** Thêm chương "Ý NGHĨA CÁC NHÃN PHÂN LOẠI HỌC THUẬT (RCA)" cuối paper, kèm bảng 5 nhãn với giải thích học thuật + trực quan (trình độ học sinh cấp 3) + ví dụ cụ thể trong bài.
+
+**Files:** `papers/paper_005/paper_005.md`, `papers/paper_005/paper_005.html`, `papers/paper_005/paper_005.pdf`
+**RCA:** 5/5
+
+---
+
+> **Ghi chú:** Toàn bộ paper entries đã được di chuyển từ [`CHANGELOG.md`](../CHANGELOG.md) sang đây (2026-06-10). Từ nay, mọi thay đổi cho `papers/` **chỉ** ghi vào file này — không ghi song song vào `CHANGELOG.md` gốc.

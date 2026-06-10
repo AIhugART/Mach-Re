@@ -1,24 +1,7 @@
 # Changelog — Mạch Rễ
 
-## 2026-06-10 — RCA: paper_005.md + paper_005.html — Sync với codebase mới + Bảng Nguồn Trích Dẫn · RCA 4.8/5
-
-**Symptom:** `paper_005.md` và `paper_005.html` thiếu ba evidence mới từ codebase (Yoruba *ìwà* [13], ca dao biến dịch [14], Mệnh Đề F [12]), chưa có inline `[N]` citation markers, và TÀI LIỆU THAM KHẢO chưa được chuyển thành bảng Nguồn Trích Dẫn đánh số APA — vi phạm CLAUDE.md Document Contract Rules.
-
-**Root (Round 3):** Paper được viết trước khi (a) Yoruba evidence được thêm vào `axiom_spec.md` §II, (b) ca dao biến dịch convergent discovery (§0.0) được thêm, (c) Mệnh Đề F được derive, và (d) Rule #12 (Citation Table) được ban hành trong CLAUDE.md (2026-06-10). Paper không được retroactively sync với codebase evolution.
-
-**Fix — 5 nhóm thay đổi (tất cả ≥ 4/5 qua RCA gate):**
-
-1. **§4.1 — Yoruba *ìwà* [13] + Ubuntu [15]:** Thêm một câu về triết học Yoruba (Peel 2000) như hội tụ độc lập cho relational ontology. Thêm `[15]` marker cho Ubuntu (Udah et al. 2025). RCA 5.0/5.
-
-2. **§4.2 — Ca dao biến dịch [14] + Phan Ngọc [3]:** Thêm convergent evidence từ ca dao biến dịch Q1: "Càng thắm thì lại càng phai / Thoang thoảng hoa lài càng được thơm lâu" = phát biểu phi-hình-thức của II. Thêm `[3]` marker cho Phan Ngọc. RCA 4.8/5.
-
-3. **§4.3 — Mệnh Đề F [12]:** Thêm giải thích cấu trúc: tại sao bản sắc Việt Nam không tan rã — dù A và C nhiều lần đạt ngưỡng cao, điều kiện B (mạch cội dọc qua gia đình/dòng họ/thực hành dân gian) không bao giờ bị phá vỡ hoàn toàn → ba điều kiện F không đồng thời. RCA 4.8/5.
-
-4. **Inline `[N]` markers (12 vị trí):** Abstract [12], Cadière [1], Đào Duy Anh [2], Ashby [4], Hountondji [6], Oruka [9], Wiredu [7], Matilal [8], Phan Ngọc [3], Yoruba [13], ca dao [14], Ubuntu [15], Mệnh Đề F [12], Tiên Đề VIII [12]. RCA 4.8/5.
-
-5. **Bảng Nguồn Trích Dẫn [1]–[15]:** APA-formatted numbered table thay thế TÀI LIỆU THAM KHẢO cũ. Mỗi entry có số duy nhất. HTML: `<a href="#nguon-N">[N]</a>` inline hyperlinks + `<td id="nguon-N">` anchors. Ghi chú về văn bản nguồn anonymous. RCA 5.0/5.
-
-**RCA score:** Correct 5 · Deep 5 · Feasible 4 · Conflict-risk 5 · Preservation 5 → **4.8/5.**
+> **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
+> **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
 ## 2026-06-10 — R-4: what.html — EAP Cross-Cultural Calibration (Joseon Buddhism + Meiji Japan) · RCA 4.6/5
 
@@ -241,18 +224,6 @@
 2. **Bottom nav:** Thêm link `mach_re_homologous.html` giữa "WHAT" và "So sánh Văn hóa", label "🔬 Homologous (Ubuntu & Yoruba)".
 
 **RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1). Link hai chiều đã hoàn chỉnh: `mach_re_homologous.html` → `axiom_3.html` (có sẵn) + `axiom_3.html` → `mach_re_homologous.html` (mới thêm).
-
-## 2026-06-10 — RCA: Thêm tự phân loại Mạch Rễ vào Paper 005 · RCA 5.0/5
-
-**Symptom:** Paper 005 dùng Mạch Rễ để chẩn đoán "lỗi phạm trù" (đánh giá triết học tương quan-phân tán bằng thước đo hệ thống-siêu hình) nhưng không tự tuyên bố Mạch Rễ thuộc loại hình triết học nào. Paper phân loại *đối tượng được phân tích* (triết học Việt Nam) nhưng không tự phân loại *công cụ phân tích* (Mạch Rễ).
-
-**Root:** Paper áp dụng phân loại phản tư lên đối tượng nghiên cứu nhưng không lên chính nó — vi phạm Tiên Đề VIII (Reflexive Cognition): "hệ áp chính Tiên Đề I–IV lên bản thân nó." Framework phải tuân theo chính tiêu chuẩn nó áp đặt lên đối tượng khác.
-
-**Fix:** Thêm tuyên bố tự phân loại tại hai vị trí trong `paper_005.html` (và đồng bộ sang `paper_005.md`, `paper_005_for_pdf.md`):
-1. **Abstract** (sau Từ khóa): "Mạch Rễ tự phân loại là một khung nền triết học thuần túy thuộc loại hình triết học tương quan-phân tán (Relational and Distributed Philosophy). Nó không phải là triết học hệ thống-siêu hình (Systematic Metaphysics)."
-2. **§2.1** (trước bảng đối chiếu): Phiên bản đầy đủ — neo vào Tiên Đề I (`Being(x) ≡ {R(x,y)}`) và Tiên Đề VIII (self-application requirement).
-
-**RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1). Plan chi tiết tại `plan/paper_005_self_classification_plan.md`.
 
 ## 2026-06-10 — RCA: Lan tỏa tự phân loại sang CLAUDE.md + index.html + what.html · RCA 4.8–5.0/5
 
@@ -857,20 +828,6 @@ Falsification: SAI nếu tồn tại cộng đồng trải qua A∧B∧C mà pat
 
 ---
 
-## 2026-06-08 — `paper_005` Tiên Đề III: sync theo `axiom_spec.md` · RCA 5/5
-
-**Hành động:** Đồng bộ `paper_005.md` + `paper_005.html` theo nguồn chân lý `axiom_spec.md`.
-
-**RCA findings (3-round × 5-Why × scoring 5/5 → FIX):**
-
-- **Abstract** (5/5 → FIX): "Mạch Cội Dọc" → "Mạch Cội Nguồn" trong danh sách 4 tiên đề cốt lõi. Root: abstract liệt kê tên tiên đề theo nguyên lý bản thể học → dùng bản chất (essence).
-- **§4.3 header** (5/5 → FIX): "Mạch Cội Dọc:" → "Mạch Cội Nguồn (Orthogonal Temporality):" — nhất quán với canonical header `axiom_spec.md §2`.
-- **§4.3 phát biểu** (5/5 → FIX): cập nhật tên + nội dung thêm "mạch tồn tại / ontological dimension, không phải ẩn dụ". Root: phát biểu cũ thiếu claim bản thể học cốt lõi được chốt trong `axiom_spec.md` (sync từ `axiom_3.html` session trước).
-
-**Files changed:** `papers/paper_005/paper_005.md`, `papers/paper_005/paper_005.html`.
-
----
-
 ## 2026-06-08 — `axiom_spec.md` Tiên Đề III: đồng bộ theo `axiom_3.html` · RCA sync (single source of truth)
 
 **Hành động:** Cập nhật spec canonical Tiên Đề III theo `axiom_3.html` — nguồn chân lý phát triển đầy đủ nhất.
@@ -1229,21 +1186,6 @@ Ba tên cùng dùng tiền tố "Mạch", nhất quán với tên dự án "Mạ
 
 ---
 
-## 2026-06-07 — `papers/paper_003/paper_003_draft.md`: Thêm Bảng Giải Thích Thuật Ngữ Cấp Học Sinh (Glossary)
-
-**Cổng RCA (claim, 5/5 → FIX).**
-
-**Root cause:** Bài viết sử dụng nhiều thuật ngữ chuyên môn phức tạp (Bản thể học liên chủ thể, Mạch cội nguồn, Bất biến cấu trúc, Ranh giới thấm hút...) nhưng chưa có định nghĩa đơn giản hóa, làm hạn chế khả năng tiếp cận đối với đối tượng độc giả phổ thông (học sinh trung học phổ thông - high school level) và dễ dẫn đến hiểu nhầm hoặc lạm dụng thuật ngữ.
-
-**Sửa:**
-1. Thêm mục `## Bảng giải thích thuật ngữ (Glossary)` vào cuối bài viết, trước phần tài liệu tham khảo.
-2. Giải thích 9 khái niệm then chốt bằng ngôn ngữ phổ thông giản dị kết hợp với các ẩn dụ trực quan (ví dụ: viên bi, ngôi nhà, sợi chỉ) và các ví dụ điện ảnh Việt Nam quen thuộc (*Bố Già*, *Nhà Bà Nữ*, *Mai*, *Móng Vuốt*).
-3. Cập nhật đồng bộ các khái niệm ở phần kết luận khớp với từ điển thuật ngữ mới.
-
-**Bảo tồn:** Giữ nguyên các lập luận học thuật và bố cục nguyên bản của bài viết.
-
----
-
 ## 2026-06-06 — `when.html` Section 3: Mở rộng bảng so sánh + fix "Trí tuệ sâu nhất"
 
 **RCA gate (4.8/5 → FIX).** 3-round RCA × 5-Why.
@@ -1565,14 +1507,4 @@ Ba tên cùng dùng tiền tố "Mạch", nhất quán với tên dự án "Mạ
 ### mach_re_homologous.html
 - Remap toàn bộ các tham chiếu "Tiên Đề IV" sang "Tiên Đề III".
 - Gỡ bỏ banner cảnh báo di trú trung gian.
-
-## 2026-06-07 — Bổ sung phần giải thích các nhãn phân loại học thuật (RCA) cho Paper 005
-
-**Lý do:** Bổ sung bảng giải thích ý nghĩa của các nhãn phân loại học thuật/RCA (`[established scholarship]`, `[contested scholarship]`, `[project interpretation]`, `[analogy]`, `[hypothesis]`) vào phần cuối của Paper 005 nhằm tăng tính tự giải thích và minh bạch học thuật cho người đọc.
-
-### paper_005.md
-- Bổ sung chương "## Ý NGHĨA CÁC NHÃN PHÂN LOẠI HỌC THUẬT (RCA)" ở cuối tệp.
-
-### paper_005.html & paper_005.pdf
-- Biên dịch lại từ tệp Markdown để cập nhật nội dung đồng bộ.
 
