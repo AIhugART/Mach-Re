@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mệnh Đề Dẫn Xuất & Meta-Tiên Đề & DSH | Mạch Rễ</title>
+  <meta name="description" content="Mệnh Đề Dẫn Xuất (V–VII, F) + Tiên Đề VIII (Phản Tư) + Heuristic Chẩn Đoán (DSH). Phân tán, chuyển hóa nhiễu loạn, nổi lên có hướng, điều kiện đứt gãy, tự nhìn thấy mình, phân tầng chẩn đoán." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root { --accent: #5a4fa0; --accent-light: #7f77dd; --accent-pale: #ede9fe; --cream: #faf7f0; --text-dark: #1c1c1c; --text-muted: #5a5a5a; --border: #d8d5e8; --green: #2d6a4f; --rose: #b05040; --gold: #a07830; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+    .topnav { background: var(--green); display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; } .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); } .topnav .current { color: #fff; font-weight: 600; }
+    .hero { background: linear-gradient(135deg, #2a1850 0%, #5a4fa0 60%, #7f77dd 100%); color: #fff; padding: 60px 24px 48px; text-align: center; }
+    .hero .tag { display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); border-radius: 24px; padding: 4px 16px; font-size: .8rem; font-weight: 700; letter-spacing: .14em; margin-bottom: 16px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 12px; }
+    .hero p { color: #d0c8f0; font-size: 1rem; max-width: 650px; margin: 0 auto; }
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; } section { margin-bottom: 48px; }
+    h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale); }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; } strong { color: var(--text-dark); }
+    .def-box { background: #fff; border: 1px solid var(--border); border-left: 5px solid var(--accent-light); border-radius: 12px; padding: 24px; margin: 20px 0; }
+    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+    .ascii-box { background: #f5f3fc; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; font-family: 'Courier New', monospace; font-size: .85rem; white-space: pre; overflow-x: auto; color: #2a1850; margin: 16px 0; }
+    .concept-list { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .concept-item { display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .concept-item .pill { background: var(--accent-pale); color: var(--accent); border-radius: 8px; padding: 6px 14px; font-weight: 700; font-size: .85rem; white-space: nowrap; flex-shrink: 0; }
+    .concept-item p { margin: 0; font-size: .88rem; }
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
+    .styled-table th { background: var(--accent); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
+    .styled-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .styled-table tr:nth-child(even) td { background: #f5f3fc; } .styled-table td strong { color: var(--text-dark); }
+    .note { background: #fff8e8; border: 1px solid #ead9a8; border-radius: 10px; padding: 16px 18px; font-size: .9rem; margin: 14px 0; } .note b { color: var(--gold); }
+    .disclaimer { font-size: .82rem; color: var(--text-muted); font-style: italic; }
+    .tier-divider { text-align: center; margin: 40px 0 30px; color: var(--text-muted); font-weight: 600; letter-spacing: .08em; font-size: .85rem; }
+    footer { background: #1c3a2e; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; } footer a { color: #b7e4c7; text-decoration: none; }
+    .bottom-nav { max-width: 820px; margin: 0 auto; padding: 0 24px 60px; display: flex; justify-content: space-between; gap: 12px; }
+    .bottom-nav a { background: var(--accent); color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: .9rem; font-weight: 600; }
+    .bottom-nav a:hover { background: #2a1850; } .bottom-nav a.secondary { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a><span class="sep">/</span>
+  <a href="what.html">WHAT</a><span class="sep">/</span>
+  <a href="axioms.html">Hệ Tiên Đề</a><span class="sep">/</span>
+  <span class="current">Dẫn Xuất & Meta</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">DERIVED · META · HEURISTIC</div>
+  <h1>Dẫn Xuất & Phản Tư<br/><span style="font-size:.6em;font-weight:400;opacity:.85">V–VII, F + VIII + DSH</span></h1>
+  <p>4 Mệnh Đề Dẫn Xuất suy từ Core Axioms + 1 Meta-Tiên Đề đứng ngoài hệ + 1 Heuristic Chẩn Đoán. Tất cả không thêm primitive concepts — chúng là hệ quả logic của I–IV.</p>
+</div>
+
+<div class="content">
+
+<section>
+  <h2>📐 Tầng Dẫn Xuất — 4 Mệnh Đề</h2>
+  <p>Derived từ các Core Axioms (I–IV). Không thêm primitive concepts — chỉ unpack logical consequences. Bar bằng chứng khác với Core: không cần independent triangulation, cần cho thấy <strong>derivation observable</strong> trong thực tế.</p>
+</section>
+
+<section>
+  <h3>Mệnh Đề V — Phân Tán Bản Thể · "Giữ Mà Không Gom" <span class="disclaimer">— [từ I + II]</span></h3>
+  <div class="def-box"><blockquote><strong>Pattern (II) của mạng quan hệ (I) là thuộc tính toàn mạng → không lưu được tại node đơn → tập trung hóa invariant = single point of failure.</strong></blockquote></div>
+  <p><strong>Hàm ý:</strong> phân tán ↔ bền; KHÔNG chống mọi thiết chế tập trung.</p>
+  <div class="def-box" style="border-left-color:var(--gold)"><div class="label" style="color:var(--gold)">Meta-evidence — Kho ca dao oral Việt Nam</div><blockquote>Kho ca dao Việt Nam — vô danh, phi-tập-trung, có dị bản — <strong>là demonstration structural của V</strong>: pattern không lưu được tại node đơn, tồn tại như thuộc tính toàn mạng. Tính vô danh là điều kiện cần: mất vô danh → mất distributed holding → mất resilience. "Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao" là canonical content statement. <span class="disclaimer">Chi tiết: <code>review/evidence_v_phan_tan.md</code> · RCA 4.8/5</span></blockquote></div>
+</section>
+
+<section>
+  <h3>Mệnh Đề VI — Chuyển Hóa Nhiễu Loạn · "Hóa Nhiễu Thành Sức" <span class="disclaimer">— [từ II + III + IV]</span></h3>
+  <div class="def-box"><blockquote><strong>Nhiễu vào qua biên giới (IV) → pattern tái tổ chức (II) → trong chiều mạch cội dọc (III) → ΔVariety > 0. Bao gồm cơ chế "hấp thụ có định hướng" = chữ ký II×IV (không phải tiên đề riêng).</strong></blockquote></div>
+  <p><strong>Phân biệt:</strong> VI không nói "đau khổ là tốt"; nói đau khổ <em>có thể</em> chuyển hóa nếu đủ biên giới + chiều dọc. Thiếu IV+III, nhiễu = phá hủy.</p>
+</section>
+
+<section>
+  <h3>Mệnh Đề VII — Nổi Lên Có Hướng · "Hợp Lại Thành Cái Mới" <span class="disclaimer">— [từ I + II + III + IV]</span></h3>
+  <div class="def-box"><blockquote><strong>Khi cả 4 Core vận hành, trật tự nổi lên <em>có hướng</em> = gradient trường F do toàn mạng tạo ra, không áp từ trung tâm. Tổng hợp, không thêm giả định.</strong></blockquote></div>
+  <p><strong>Ký hiệu:</strong> "Gradient trường F" = structural analogy. Formal rendering: attractor dynamics A(S) — quyết định cục bộ tiến về trạng thái tương thích với pattern toàn cục (II), không cần điều phối trung tâm.</p>
+</section>
+
+<section>
+  <h3>Mệnh Đề F — Điều Kiện Đứt Gãy · "Đứt Khi Hết Cội" <span class="disclaimer">— [từ II + III + IV] · RCA 5.0/5</span></h3>
+  <div class="def-box"><blockquote><strong>F(S,t) ≡ A(S,t) ∧ B(S,t) ∧ C(S,t)</strong> — Bất biến cấu trúc bị phá vỡ không thể phục hồi khi và chỉ khi đồng thời: <strong>(A)</strong> Pattern quan hệ cốt lõi (II) bị tấn công trực tiếp; <strong>(B)</strong> Mạch cội dọc (III) bị cắt đứt vật lý; <strong>(C)</strong> Tốc độ xâm nhập vượt ngưỡng tái cấu trúc của biên giới (IV).</blockquote></div>
+  <table class="styled-table">
+    <thead><tr><th>Điều kiện</th><th>Kết quả</th><th>Ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Chỉ C</strong> (A=F, B=F, C=T)</td><td><strong>Biến đổi thích nghi</strong> — pattern tái tạo được</td><td>VN hấp thụ Internet</td></tr>
+      <tr><td><strong>A+C, không B</strong> (A=T, B=F, C=T)</td><td><strong>Khủng hoảng có thể phục hồi</strong></td><td>Nhà Hồ → Lê Lợi</td></tr>
+      <tr><td><strong>Cả A+B+C</strong></td><td><strong>Đứt gãy thực sự</strong> — pattern không tái tạo</td><td>Tộc người mất diện mạo (Phan Ngọc tr.145)</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Đối xứng với VI:</strong> VI = chuyển hóa thành công; F = chuyển hóa thất bại. Cùng đầu vào, hai kết quả đối xứng.</p>
+</section>
+
+<div class="tier-divider">────────── ⬆ DERIVED &nbsp;│&nbsp; META ⬇ ──────────</div>
+
+<section>
+  <h2>🪞 Tầng Phản Tư — Tiên Đề VIII · "Soi Mình Mà Không Vỡ" <span class="disclaimer">— Reflexive Cognition · Meta-Axiom</span></h2>
+  <div class="def-box"><blockquote><strong>Hệ áp chính Tiên Đề I–IV lên <em>bản thân nó</em> → tự quan sát, tự phê bình, tự cập nhật invariant. Đứng <em>trên</em> và <em>ngoài</em> hệ đối tượng.</strong></blockquote></div>
+  <p><strong>Tính cần thiết (scope-conditional → IN):</strong> Với scope áp lực <em>tiến hóa</em>, invariant cố định không tự-xét-lại sẽ giòn → VIII cần thiết.</p>
+  <div class="def-box"><div class="label">Ràng buộc liên tục</div><blockquote>Revision R bảo toàn bản sắc ⇔ <code>MP(P_t) ≈ MP(P_{t+1})</code>. Thay thế toàn bộ cả first-order lẫn second-order pattern = identity discontinuity. <em>Kantian analogy (SOT-K):</em> MP ≈ transcendental unity of apperception.</blockquote></div>
+  <div class="def-box" style="border-left-color:var(--gold)"><div class="label" style="color:var(--gold)">Bằng chứng — Ca dao châm biếm (Q1, 1975)</div><blockquote>11 ca dao châm biếm: cộng đồng tự phát hiện vi phạm pattern và tự phát tín hiệu sửa, không qua thiết chế. Ba đặc điểm: <strong>vô danh</strong> (không cá nhân đứng ngoài), <strong>phi-thiết-chế</strong> (không cơ quan kiểm duyệt), <strong>embedded</strong> (cùng cộng đồng vừa là đối tượng vừa là tác giả). Triangulation: A-yếu → <strong>A-trung bình</strong>. <span class="disclaimer"><code>review/evidence_viii_ca_dao_cham_biem.md</code> · RCA 4.8/5</span></blockquote></div>
+</section>
+
+<div class="tier-divider">────────── ⬆ META &nbsp;│&nbsp; HEURISTIC ⬇ ──────────</div>
+
+<section>
+  <h2>🔧 Heuristic Chẩn Đoán — Phân Tầng (DSH) <span class="disclaimer">— NOT an axiom · RCA 4.6/5</span></h2>
+  <div class="note"><b>Trạng thái:</b> <code>[empirical hypothesis]</code> — pending cross-cultural verification. Công cụ chẩn đoán, không phải tiên đề.</div>
+  <div class="concept-list">
+    <div class="concept-item"><span class="pill">DSH-1</span><p><strong>Vi sai tốc độ:</strong> Yếu tố có coupling strength với invariant pattern (II) càng cao → thay đổi càng chậm. (Phan Ngọc: văn hóa ≠ văn minh)</p></div>
+    <div class="concept-item"><span class="pill">DSH-2</span><p><strong>Lọc theo độ sâu:</strong> Biên giới (IV) lọc nghiêm ngặt hơn với yếu tố gần invariant. (Phan Ngọc: Việt hóa Phật ≠ Nho)</p></div>
+    <div class="concept-item"><span class="pill">DSH-3</span><p><strong>Độ sâu = khoảng cách cấu trúc:</strong> Không xác định bởi loại nội dung, mà bởi structural distance từ invariant pattern.</p></div>
+  </div>
+  <h4>Trọng số chẩn đoán (minh họa hệ Việt Nam)</h4>
+  <table class="styled-table">
+    <thead><tr><th>Indicator</th><th>Structural Distance</th><th>Trọng số</th></tr></thead>
+    <tbody>
+      <tr><td>Quan hệ tổ tiên / liên thế hệ</td><td>Cực ngắn</td><td><strong>CAO NHẤT</strong></td></tr>
+      <tr><td>Cấu trúc thân tộc</td><td>Rất ngắn</td><td><strong>CAO</strong></td></tr>
+      <tr><td>Nghi lễ / thực hành</td><td>Ngắn-TB</td><td><strong>TB-CAO</strong></td></tr>
+      <tr><td>Ngôn ngữ / biểu tượng</td><td>Trung bình</td><td><strong>TB</strong></td></tr>
+      <tr><td>Thẩm mỹ / nghệ thuật</td><td>TB-Dài</td><td><strong>TB-THẤP</strong></td></tr>
+      <tr><td>Công nghệ / vật chất</td><td>Dài</td><td><strong>THẤP NHẤT</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="note"><b>⚠️ DSH-3:</b> Bảng trên minh họa cho hệ Việt Nam. <b>Không áp dụng máy móc</b> cho hệ khác.</div>
+  <p><strong>Điều kiện phản chứng:</strong> DSH-F1: mọi yếu tố thay đổi cùng tốc độ → SAI. DSH-F2: biên giới lọc mọi nội dung cùng mức → SAI.</p>
+</section>
+
+</div>
+
+<div class="bottom-nav">
+  <a href="axiom_4.html" class="secondary">← Tiên Đề IV</a>
+  <a href="axioms.html">Hệ Tiên Đề →</a>
+</div>
+
+<footer>Render từ <a href="axiom_spec.md">axiom_spec.md</a> · Mạch Rễ · V–VII+F: Derived · VIII: Meta · DSH: Heuristic · <a href="axioms.html">Hệ Tiên Đề</a></footer>
+</body>
+</html>

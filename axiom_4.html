@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiên Đề IV — Biên Giới Động (Dynamic Boundary) | Mạch Rễ</title>
+  <meta name="description" content="Phân tích sâu Tiên Đề IV — Biên Giới Động: hệ sống sót nhờ biên giới thấm chọn lọc, tái tổ chức nội dung theo pattern nội tại. Cơ chế 3 tầng, Vượt Gộp, Ngưỡng Tái Cấu Trúc. So sánh với Ashby, membrane biology. Bằng chứng Lévi-Strauss convergent + Q3 lịch sử Việt hóa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root { --accent: #1a7070; --accent-light: #2a9090; --accent-pale: #d0f0f0; --cream: #faf7f0; --text-dark: #1c1c1c; --text-muted: #5a5a5a; --border: #c8e0e0; --green: #2d6a4f; --rose: #b05040; --gold: #a07830; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+    .topnav { background: var(--green); display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; } .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); } .topnav .current { color: #fff; font-weight: 600; }
+    .hero { background: linear-gradient(135deg, #0a3a3a 0%, #1a7070 60%, #2a9090 100%); color: #fff; padding: 60px 24px 48px; text-align: center; }
+    .hero .tag { display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); border-radius: 24px; padding: 4px 16px; font-size: .8rem; font-weight: 700; letter-spacing: .14em; margin-bottom: 16px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 12px; }
+    .hero p { color: #b0e8e8; font-size: 1rem; max-width: 650px; margin: 0 auto; }
+    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; } section { margin-bottom: 56px; }
+    h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale); }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; } strong { color: var(--text-dark); }
+    .def-box { background: #fff; border: 1px solid var(--border); border-left: 5px solid var(--accent-light); border-radius: 12px; padding: 24px; margin: 20px 0; }
+    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+    .ascii-box { background: #f0fafa; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; font-family: 'Courier New', monospace; font-size: .85rem; white-space: pre; overflow-x: auto; color: #0a3a3a; margin: 16px 0; }
+    .concept-list { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .concept-item { display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .concept-item .pill { background: var(--accent-pale); color: var(--accent); border-radius: 8px; padding: 6px 14px; font-weight: 700; font-size: .85rem; white-space: nowrap; flex-shrink: 0; }
+    .concept-item p { margin: 0; font-size: .88rem; }
+    .compare-card { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--accent-light); border-radius: 0 14px 14px 0; padding: 20px 24px; margin: 20px 0; }
+    .compare-card h3 { margin-top: 0; color: var(--accent); } .compare-card .domain-tag { display: inline-block; background: var(--accent-pale); color: var(--accent); border-radius: 6px; padding: 2px 10px; font-size: .75rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 8px; }
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
+    .styled-table th { background: var(--accent); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
+    .styled-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .styled-table tr:nth-child(even) td { background: #f0fafa; } .styled-table td strong { color: var(--text-dark); }
+    .note { background: #fff8e8; border: 1px solid #ead9a8; border-radius: 10px; padding: 16px 18px; font-size: .9rem; margin: 14px 0; } .note b { color: var(--gold); }
+    .disclaimer { font-size: .82rem; color: var(--text-muted); font-style: italic; }
+    footer { background: #1c3a2e; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; } footer a { color: #b7e4c7; text-decoration: none; }
+    .bottom-nav { max-width: 820px; margin: 0 auto; padding: 0 24px 60px; display: flex; justify-content: space-between; gap: 12px; }
+    .bottom-nav a { background: var(--accent); color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: .9rem; font-weight: 600; }
+    .bottom-nav a:hover { background: #0a3a3a; } .bottom-nav a.secondary { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a><span class="sep">/</span>
+  <a href="what.html">WHAT</a><span class="sep">/</span>
+  <a href="axioms.html">Hệ Tiên Đề</a><span class="sep">/</span>
+  <span class="current">Tiên Đề IV</span>
+</nav>
+
+<div class="hero">
+  <div class="tag">TIÊN ĐỀ IV · CORE AXIOM</div>
+  <h1>Biên Giới Động<br/><span style="font-size:.6em;font-weight:400;opacity:.85">Dynamic Boundary — Ranh Giới Mềm · Đóng Mở Có Chọn</span></h1>
+  <p>Không tường kín (→ giòn), không mở toang (→ tan). Hệ sống sót nhờ biên giới thấm chọn lọc — nội dung đến được tái tổ chức theo logic pattern nội tại.</p>
+</div>
+
+<div class="content">
+
+<section>
+  <h2>📜 1. Phát biểu chính thức</h2>
+  <h3>Tiếng Việt</h3>
+  <div class="def-box">
+    <div class="label">Tiên Đề IV — Biên Giới Động (Dynamic Boundary)</div>
+    <blockquote><strong>Hệ sống sót nhờ biên giới <em>thấm chọn lọc</em> (selective permeability): không tường kín (→ giòn), không mở toang (→ bị đồng hóa). Nội dung đến được <em>tái tổ chức</em> theo logic pattern nội tại (Tiên Đề II), không theo logic nội dung đến.</strong></blockquote>
+  </div>
+  <h3>English</h3>
+  <div class="def-box" style="border-left-color:#0a3a3a"><div class="label" style="color:#0a3a3a">Axiom IV — Dynamic Boundary</div><blockquote><strong>A system survives through a <em>selectively permeable</em> boundary: neither a sealed wall (→ brittleness) nor fully open (→ assimilation). Incoming content is <em>restructured</em> according to the internal pattern logic (Axiom II), not the logic of the incoming content.</strong></blockquote></div>
+</section>
+
+<section>
+  <h2>🔍 2. RCA — Cơ chế ba tầng</h2>
+  <div class="def-box"><div class="label">(a) Pattern Recognition</div><blockquote>Tác nhân biên giới đối chiếu nội dung đến với mẫu pattern hiện có (từ II). <strong>Chỉ báo:</strong> thảo luận cộng đồng về tính tương thích ("cái này hợp/không hợp với cách của mình"); phán quyết của thiết chế canh giữ biên giới; tốc độ chấp nhận khác biệt giữa các nội dung.</blockquote></div>
+  <div class="def-box"><div class="label">(b) Selective Integration</div><blockquote>Nội dung được nạp nếu tương thích với pattern; không thì bị từ chối hoặc cách ly. <strong>Chỉ báo:</strong> nội dung tích hợp bị biến đổi — phiên bản gốc và phiên bản tích hợp phân biệt được; sau tích hợp, cộng đồng không còn coi là "ngoại lai."</blockquote></div>
+  <div class="def-box"><div class="label">(c) Pattern Update</div><blockquote>Nếu nội dung nạp tích lũy làm dịch chuyển pattern, Tiên Đề VIII (phản tư) kích hoạt tái đánh giá invariant. <strong>Ràng buộc:</strong> <code>MP(P_t) ≈ MP(P_{t+1})</code>. Cơ chế (c) liên kết IV → VIII, ngăn IV thành bảo thủ thuần túy.</blockquote></div>
+</section>
+
+<section>
+  <h2>📐 3. "Vượt Gộp" — Mẫu hình thực nghiệm từ Phan Ngọc</h2>
+  <p>Phan Ngọc quan sát quá trình 3 giai đoạn trong lịch sử Việt hóa (Nho giáo, Phật giáo, thơ mới, áo dài, sơn mài, âm nhạc):</p>
+  <div class="concept-list">
+    <div class="concept-item"><span class="pill">G1 — Bắt chước</span><p>Nội dung ngoại lai được sao chép nguyên dạng — biên giới mở cho nội dung đó.</p></div>
+    <div class="concept-item"><span class="pill">G2 — Lai căng</span><p>Yếu tố ngoại lai + bản địa kết hợp vụng về — selective integration đang vận hành nhưng chưa hoàn tất.</p></div>
+    <div class="concept-item"><span class="pill">G3 — Vượt gộp</span><p>Nội dung được biến đổi thành hình thức vừa mới vừa phù hợp với tâm thức bản địa — selective integration hoàn tất. Ví dụ: áo dài nữ = áo Tàu + yếm Việt + váy Tây → sản phẩm hoàn toàn mới.</p></div>
+  </div>
+  <div class="note"><b>Trạng thái:</b> <code>[empirical hypothesis]</code> — tính phổ quát ngoài Việt Nam là câu hỏi mở.</div>
+</section>
+
+<section>
+  <h2>🌍 4. So sánh</h2>
+  <div class="compare-card">
+    <span class="domain-tag">LÝ THUYẾT HỆ THỐNG — Neo mạnh nhất</span>
+    <h3>Ashby — Requisite Variety (1956)</h3>
+    <p>Hệ thống điều khiển phải có variety ≥ variety của nhiễu. Biên giới = regulator — chặn nhiễu vượt ngưỡng, cho qua nhiễu trong ngưỡng.</p>
+    <div class="ascii-box">Ashby:       variety engineering tổng quát
+IV:          restructuring theo pattern
+             nội tại — không chỉ lọc,
+             mà tái tổ chức
+→ Ashby = formal foundation
+→ IV = Ashby + cultural logic</div>
+  </div>
+  <div class="compare-card">
+    <span class="domain-tag">SINH HỌC</span>
+    <h3>Màng tế bào — Selective Permeability</h3>
+    <p>Màng tế bào cho phép một số phân tử đi qua, chặn phân tử khác, chủ động vận chuyển phân tử cần thiết — selective permeability = điều kiện sống.</p>
+    <div class="ascii-box">Màng tế bào:  selective permeability
+               cho phân tử vật lý
+IV:           selective permeability
+              cho nội dung văn hóa
+→ Cùng nguyên lý, khác domain</div>
+  </div>
+</section>
+
+<section>
+  <h2>📋 5. Bằng chứng thực nghiệm — Hội tụ độc lập</h2>
+  <h3>Lévi-Strauss convergent (via Nguyễn Tấn Long, 1975, Q2 line 479)</h3>
+  <div class="def-box" style="border-left-color:var(--accent-light)"><div class="label" style="color:var(--accent)">IV được phát biểu độc lập bởi dân tộc học</div><blockquote><strong>"mọi ảnh hưởng bên ngoài chỉ du nhập trong chiều hướng thuận tiện của tính chất cá biệt ấy... không thể đồng hóa"</strong> — structural anthropology phát biểu IV từ dữ liệu cross-cultural, độc lập với Mạch Rễ.</blockquote></div>
+  <h3>Q3 historical instances — Nho giáo & Lão giáo (Nguyễn Tấn Long, 1975)</h3>
+  <div class="def-box" style="border-left-color:var(--accent-light)"><div class="label" style="color:var(--accent)">IV vận hành trong lịch sử</div><blockquote>Nho giáo: hấp thụ ở tầng hành chính/giáo dục (tương đồng), từ chối tôn ti cứng nhắc (dị biệt). Lão giáo: hấp thụ ở tầng triết học tự nhiên (tương đồng với tín ngưỡng bản địa), biến đổi mạnh. Q3 mở rộng Lévi-Strauss abstract → concrete historical mechanism.</blockquote></div>
+  <div class="note"><b>🔗</b> <code>review/evidence_q2_mapping.md</code> · <code>review/evidence_q3_mapping.md</code> · RCA: A7=5.0/5 · A8=5.0/5</div>
+</section>
+
+<section>
+  <h2>⚡ 6. Ngưỡng Tái Cấu Trúc — Kết nối với F</h2>
+  <div class="ascii-box">Tốc độ xâm nhập < ngưỡng:
+  → Pattern recognition + Selective
+    integration vận hành bình thường
+  → VI: ΔVariety > 0 (Chuyển Hóa)
+
+Tốc độ xâm nhập > ngưỡng:
+  → Cơ chế (a)(b) quá tải
+  → Nội dung vào không đối chiếu
+  → F-C kích hoạt: F(S,t) có thể TRUE</div>
+  <p><strong>Ngưỡng không cố định:</strong> phụ thuộc (i) structural distance — nội dung gần invariant bị lọc nghiêm hơn; (ii) historical context — thời chiến → ngưỡng giảm; (iii) reflexivity (VIII) — hệ tự-xét-lại mạnh → ngưỡng cao hơn.</p>
+</section>
+
+<section>
+  <h2>💡 7. Giải thích dễ hiểu</h2>
+  <div class="concept-list">
+    <div class="concept-item"><span class="pill">Ngôi nhà</span><p>Bạn mở cửa đón gió, đón bạn, nhận bưu kiện — nhưng khóa khi giông bão hoặc có trộm. Không cửa → ngạt; dỡ hết tường → không còn là nhà.</p></div>
+    <div class="concept-item"><span class="pill">Hệ miễn dịch</span><p>Vắc-xin = vi-rút yếu (nhiễu) vào cơ thể → cơ thể học cách tạo kháng thể → mạnh hơn. IV cho nhiễu vào; II+III chuyển hóa nhiễu thành sức mạnh (VI).</p></div>
+    <div class="concept-item"><span class="pill">Áo dài</span><p>Áo dài = áo Tàu (ngoại lai) + yếm Việt (bản địa) + váy Tây (hiện đại). Không "mặc áo Tàu" — cũng không "từ chối." Là "vượt gộp": tạo thứ hoàn toàn mới, không còn ngoại lai.</p></div>
+    <div class="concept-item"><span class="pill">Bếp Việt</span><p>Khoai tây chiên = Pháp; phở = nấu xương bò + bánh cuốn + rau thơm Việt. Không từ chối thịt bò (ngoại lai), không nấu nguyên kiểu Tây — "Việt hóa" thành phở. IV = cơ chế của Việt hóa.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>🎯 8. Điều kiện phản chứng</h2>
+  <div class="def-box" style="border-left-color:var(--rose)"><div class="label" style="color:var(--rose)">Falsification</div><blockquote><strong>IV SAI</strong> nếu bản sắc sống sót bằng <strong>tường kín hoàn toàn</strong> hoặc <strong>mở hoàn toàn</strong>.<br/><br/><strong>IV suy yếu</strong> nếu (i) hệ hấp thụ nội dung không tương thích với II mà không tái tổ chức, VÀ pattern bị disrupted, VÀ vẫn sống sót ≥2 thế hệ; (ii) quá trình "vượt gộp" không quan sát được; (iii) quyết định lọc không phân biệt được tương thích/không tương thích.</blockquote></div>
+</section>
+
+<section>
+  <h2>🔗 9. Kết nối</h2>
+  <div class="concept-list">
+    <div class="concept-item"><span class="pill">II → IV</span><p>Pattern (II) là template cho biên giới. IV lọc theo logic của invariant pattern — không lọc ngẫu nhiên.</p></div>
+    <div class="concept-item"><span class="pill">IV → VI</span><p>Nhiễu vào qua IV → pattern tái tổ chức (II) → ΔVariety > 0. VI = IV+II+III vận hành thành công.</p></div>
+    <div class="concept-item"><span class="pill">IV → F</span><p>Khi tốc độ > ngưỡng → F-C kích hoạt. IV là điều kiện cần của F, nhưng F cần cả A+B+C đồng thời.</p></div>
+  </div>
+</section>
+
+</div>
+
+<div class="bottom-nav">
+  <a href="axiom_3.html" class="secondary">← Tiên Đề III</a>
+  <a href="axioms.html">Hệ Tiên Đề →</a>
+</div>
+
+<footer>Render từ <a href="axiom_spec.md">axiom_spec.md</a> · Mạch Rễ · Neo 2.5/3: Phan Ngọc · Ashby · Anattā · Convergent: Lévi-Strauss (Q2) + Q3 historical · <a href="axioms.html">Hệ Tiên Đề</a></footer>
+</body>
+</html>
