@@ -20,7 +20,8 @@
 
 *Session E (Nam An I+III+II):* Tạo `review/evidence_i_iii_ii_nam_an.md` (H6, RCA I=4.8/5 III=4.8/5 II=4.8/5) — corpus Nam An: (a) I R_place ở tầng epistemic architecture — toàn bộ corpus tổ chức theo nguyên lý người-đất; (b) III non-human V-axis pull — "Cáo chết ba năm quay đầu về núi" + "Lô Đà Tam Đảo cũng quay đầu về" = cosmic structure, không phải social norm; (c) II origin myth — "Con Rồng cháu Tiên" / "Con Hồng cháu Lạc" = structural invariant ở tầng mythological foundation. `axiom_spec.md` §I Prior-art: thêm annotation Nam An.
 
-**RCA scores:** H1 4.8/5 · H2 4.8/5 · H3.2 4.8/5 · H6 4.6/5 (planning) · H6 I 4.8/5 · H6 III 4.8/5 · H6 II 4.8/5 · IV convergent 5.0/5 · H7.1 5.0/5 · H7.2 4.8/5 · H3.3 II 4.8/5 · H3.3 IV 5.0/5.
+**RCA scores:** H1 4.8/5 · H2 4.8/5 · H3.2 4.8/5 · H6 4.6/5 (planning) · H6 I 4.8/5 · H6 III 4.8/5 · H6 II 4.8/5 · IV convergent 5.0/5 · H7.1 5.0/5 · H7.2 4.8/5 · H3.3 II 4.8/5 · H3.3 IV 5.0/5 · H4.2 5.0/5.
+- H4.2 (convergent discovery narrative): thêm `axiom_spec.md` §0.0 — ca dao biến dịch Việt Nam phát biểu phi-hình-thức 3 điều kiện cần của R hàng trăm năm trước Mạch Rễ. RCA placement 5.0/5.
 
 ## 2026-06-10 — RCA: Thêm rule Citation Table vào CLAUDE.md · RCA 4.8/5
 

@@ -221,14 +221,11 @@ Session D:
   - (b) Biến dịch xã hội: số 6 (Q1 17970): "Bóng son rồi cũng soi cho gương mờ"; số 74 (Q1 18141): "Cờ đến tay ai người ấy phất" (agency in change)
   - (c) Phản ứng structural: số 59 (Q1 18103): "Con người có tổ có tông / Như cây có cội như sông có nguồn" — **KEY: ca dao III xuất hiện trong Ý Thức Thực Tiễn** — cùng câu với Q2 line 15290 nhưng trong practical wisdom section → III là điều kiện thực tiễn (không chỉ filial piety). Cross-domain confirmation.
   - Số 67 (Q1 18123): "Còn trời còn nước còn mây, còn ao rau muống còn đầy chum tương" (structural relational persistence = I × V)
-- [ ] **H4.2** Viết đoạn ~200 từ — **DEFERRED** (priority thấp, không block; có thể thêm vào `axiom_spec.md` §0 hoặc `why.html` khi cần):
-  - `axiom_spec.md` → §0 Câu Hỏi Gốc R, ghi chú footnote "convergent discovery"
-  - Hoặc `why.html` → phần mở đầu
-  - **Narrative chính (sẵn sàng dùng):** "Ý Thức Thực Tiễn" trong Q1 là folk wisdom về 'làm thế nào để tồn tại qua biến đổi' — câu hỏi chính xác là Câu Hỏi Gốc R. Folk wisdom trả lời: (1) surface things fade (số 30 — II), (2) structural anchor needed (số 59 — III), (3) relational persistence through change (số 67 — I). Hàng trăm năm trước Mạch Rễ, dân gian Việt Nam đã phát biểu framework này trong lẽ sống thực tiễn.
+- [x] **H4.2** Viết đoạn ~200 từ — **DONE 2026-06-10**: đã thêm vào `axiom_spec.md` §0.0 "Hội tụ độc lập — Ca dao biến dịch Việt Nam" — convergent discovery: folk epistemology Việt Nam phát biểu phi-hình-thức 3 điều kiện cần của R (II surface fades/structural persists, III existence condition, I×V relational persistence) hàng trăm năm trước Mạch Rễ.
 
 ### Tiêu chí hoàn thành
 - [x] Có ≥5 câu ca dao biến dịch với phân tích ngắn — **DONE**
-- [ ] Gắn được vào narrative mà không làm nặng hệ spec — **DEFERRED** (H4.2)
+- [x] Gắn được vào narrative mà không làm nặng hệ spec — **DONE** (H4.2, `axiom_spec.md` §0.0)
 
 ### Ràng buộc
 - Ghi rõ trạng thái `[narrative enrichment]` — KHÔNG phải evidence cấu trúc

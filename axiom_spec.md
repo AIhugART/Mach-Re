@@ -21,6 +21,20 @@
 
 Re-derivation = liệt kê **điều kiện cần** để một hệ S trả lời R, rồi lọc bằng independence test.
 
+### 0.0 Hội tụ độc lập — Ca dao biến dịch Việt Nam (2026-06-10)
+
+> **`[narrative enrichment — convergent discovery]`** — không phải evidence cấu trúc, không sửa phát biểu tiên đề.
+
+Trước khi Mạch Rễ hình thức hóa Câu Hỏi Gốc R, kho tàng ca dao Việt Nam (Q1, Nguyễn Tấn Long & Phan Canh, 1969) đã chứa một tập hợp câu trong mục "Ý Thức Thực Tiễn Trong Lẽ Sống" phát biểu **cùng một câu hỏi bằng ngôn ngữ dân gian**: "làm thế nào để tồn tại qua biến đổi?" Ba mẫu hình phản ứng được ghi nhận trong ca dao:
+
+1. **Bề mặt phai, chiều sâu cấu trúc bền:** "Càng thắm thì lại càng phai / Thoang thoảng hoa lài càng được thơm lâu" (Q1 số 30, line 18037) — surface intensity fades; structural depth persists. Tương ứng với Tiên Đề II (pattern invariant).
+2. **Neo cấu trúc là điều kiện thực tiễn:** "Con người có tổ có tông / Như cây có cội như sông có nguồn" (Q1 số 59, line 18103) — III không phải filial piety mà là existence condition xuất hiện trong practical wisdom, không phải trong mục Hiếu Đạo.
+3. **Bền vững qua mạng quan hệ:** "Còn trời còn nước còn mây, còn ao rau muống còn đầy chum tương" (Q1 số 67, line 18123) — structural persistence = tất cả node trong mạng quan hệ cùng tồn tại (I × V).
+
+Hàng trăm năm trước khi Mạch Rễ ra đời, dân gian Việt Nam đã phát biểu phi-hình-thức ba điều kiện cần của Câu Hỏi Gốc R: pattern bền hơn nội dung (II), neo cội nguồn là điều kiện tồn tại (III), và bền vững là thuộc tính toàn mạng (I × V). Đây là **hội tụ độc lập** (convergent discovery) — folk epistemology và triết học hình thức cùng đến một insight từ hai con đường khác nhau. Nó không chứng minh Mạch Rễ đúng; nó cho thấy câu hỏi R không tùy tiện — nó đã được hỏi từ lâu, bằng một ngôn ngữ khác.
+
+Chi tiết các câu ca dao biến dịch: `plan/2026-06-09_plan_ca_dao_evidence_enrichment.md` §H4.1.
+
 ### 0.1 Ba hệ neo (triangulation — `dictionary §7.1`)
 - **A — Phan Ngọc** (*Bản sắc văn hóa Việt Nam*, 1998, NXB Văn hóa - Thông tin): bản sắc = "kiểu lựa chọn / kiểu quan hệ" bền dưới nội dung đổi. (Phần I, Chương I, mục 1, tr.17-20 — định nghĩa văn hóa như "kiểu lựa chọn" và "mối quan hệ giữa thế giới biểu tượng với thế giới thực tại"; Chương II — bốn yêu cầu bất biến của tâm thức Việt Nam.)
 - **B — Ashby** (*Requisite Variety*) **+ Weick** (organizing / sensemaking / enactment / retrospect).
