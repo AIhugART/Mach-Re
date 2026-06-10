@@ -3,6 +3,22 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-10 — Infrastructure: Tách paper changelog + fix deploy-pages.yml · RCA 5.0/5
+
+**Symptom:** Paper changes ghi vào `CHANGELOG.md` gốc (mixed với axiom/HTML/audit entries); `deploy-pages.yml` không trigger khi push papers.
+
+**Root:** Không có separation of concerns cho changelog; paths trigger filter thiếu `papers/**`.
+
+**Fix:**
+- Tạo `papers/CHANGELOG_papers.md` — exclusive changelog cho papers
+- Di chuyển 5 paper entries từ `CHANGELOG.md` → `CHANGELOG_papers.md`
+- `CLAUDE.md`: thêm Document Contract Rule — paper changes → chỉ `CHANGELOG_papers.md`
+- `deploy-pages.yml`: thêm `papers/**` vào `on.push.paths`
+- Xóa `papers/CLAUDE_REF.md` (CLAUDE.md của dự án VVV-QMRF, không liên quan)
+- `papers/index.html`: link footer → `CHANGELOG_papers.md`
+
+**RCA score:** 5.0/5 · Xem chi tiết paper_005 changes tại [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
+
 ## 2026-06-10 — R-4: what.html — EAP Cross-Cultural Calibration (Joseon Buddhism + Meiji Japan) · RCA 4.6/5
 
 **Symptom:** Khung EAP trong `what.html` có duy nhất một neo hiệu chuẩn (Bắc thuộc) — được xây dựng từ trường hợp Việt Nam. EAP chưa có out-of-sample test: falsification condition vận hành được về nguyên tắc nhưng chưa được kiểm tra thực tế.

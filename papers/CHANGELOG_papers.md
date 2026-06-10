@@ -6,6 +6,55 @@
 
 ---
 
+## 2026-06-10 — TỔNG KẾT: Đại tu paper_005 + Hạ tầng papers/ · RCA 4.9/5 (session)
+
+**Phạm vi:** 6 commits, 10 files changed.
+
+### A. paper_005 — Sync codebase mới (3 evidence + citation system)
+
+| # | Thay đổi | § | RCA |
+|---|----------|---|-----|
+| A1 | Yoruba *ìwà* [13] + Ubuntu [15] — hội tụ độc lập relational ontology | §4.1 | 5.0 |
+| A2 | Ca dao biến dịch [14] + Phan Ngọc [3] — convergent evidence "Càng thắm thì lại càng phai" | §4.2 | 4.8 |
+| A3 | Mệnh Đề F [12] — giải thích cấu trúc vì sao bản sắc Việt không tan rã (A∧B∧C chưa đồng thời) | §4.3 | 4.8 |
+| A4 | 12 inline `[N]` citation markers toàn bài — [1]–[15] | all | 4.8 |
+| A5 | Bảng Nguồn Trích Dẫn APA [1]–[15] thay TÀI LIỆU THAM KHẢO | footer | 5.0 |
+| A6 | HTML: `<a href="#nguon-N">[N]</a>` hyperlinks + `id="nguon-N"` anchors | all | 5.0 |
+| A7 | Fix nguồn văn bản: Wikipedia → "tổng hợp anonymous" | footer | 5.0 |
+
+### B. Hạ tầng papers/
+
+| # | Thay đổi | RCA |
+|---|----------|-----|
+| B1 | Tạo `CHANGELOG_papers.md` — changelog riêng cho papers | 4.8 |
+| B2 | Di chuyển 5 paper entries từ `CHANGELOG.md` → `CHANGELOG_papers.md` (exclusive) | 5.0 |
+| B3 | Cập nhật `CLAUDE.md` Document Contract Rules: paper changes → chỉ `CHANGELOG_papers.md` | 5.0 |
+| B4 | Link `CHANGELOG_papers.md` từ `papers/index.html` footer | — |
+| B5 | Xóa `papers/CLAUDE_REF.md` — file CLAUDE.md của dự án VVV-QMRF (không liên quan) | 5.0 |
+| B6 | Fix `deploy-pages.yml` — thêm `papers/**` vào paths trigger | 5.0 |
+
+### Citation table [1]–[15] (final)
+
+| # | Nguồn | Mới? |
+|---|-------|------|
+| [1] | Cadière (1958) | |
+| [2] | Đào Duy Anh (1938) | |
+| [3] | Phan Ngọc (2000) | |
+| [4] | Ashby (1956) | |
+| [5] | Weick (1995) | |
+| [6]–[9] | Hountondji, Wiredu, Matilal, Oruka | |
+| [10]–[11] | Trần Văn Giàu, Nguyễn Tài Thư | |
+| [12] | Mạch Rễ `axiom_spec.md` | |
+| [13] | Peel (2000) — Yoruba | ✅ |
+| [14] | Nguyễn Tấn Long & Phan Canh (1969) — Ca dao | ✅ |
+| [15] | Udah et al. (2025) — Ubuntu | ✅ |
+
+### Files changed (10)
+
+`papers/paper_005/paper_005.md`, `papers/paper_005/paper_005.html`, `papers/CHANGELOG_papers.md`, `papers/index.html`, `CHANGELOG.md`, `CLAUDE.md`, `.github/workflows/deploy-pages.yml` (+ `papers/CLAUDE_REF.md` deleted)
+
+---
+
 ## 2026-06-10 — paper_005.md + paper_005.html — Sync codebase mới + Bảng Nguồn Trích Dẫn [1]–[15] · RCA 4.8/5
 
 **Symptom:** Paper 005 thiếu ba evidence mới từ codebase (Yoruba *ìwà* [13], ca dao biến dịch [14], Mệnh Đề F [12]), chưa có inline `[N]` citation markers, và TÀI LIỆU THAM KHẢO chưa có bảng Nguồn Trích Dẫn đánh số APA.
