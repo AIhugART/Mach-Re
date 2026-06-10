@@ -115,6 +115,8 @@ Phân tích kỹ các nhận định ở §1, một tiêu chuẩn ẩn xuất hi
 
 Thước đo này thuộc về một truyền thống triết học đặc thù mà chúng tôi gọi là **triết học hệ thống-siêu hình (systematic metaphysics)**: triết học vận hành qua hệ thống mệnh đề được văn bản hóa, được tổ chức logic, và được truyền qua đào tạo kinh viện (`[project interpretation]`). Đây là mô hình tiêu biểu của truyền thống Hy Lạp (Platon, Aristoteles), Ấn Độ cổ diễn (Nyāya, Vaiśeṣika), và Tống Nho Trung Quốc (Chu Hi).
 
+**Tự phân loại của Mạch Rễ.** Mạch Rễ (Root-Circuit) --- khung nền được sử dụng trong bài viết này --- tự phân loại thuộc cột phải của bảng dưới đây: nó là một **khung nền triết học thuần túy thuộc loại hình Tương quan-Phân tán** (a pure philosophical framework of the Relational and Distributed type). Các tiên đề của Mạch Rễ không phải là mệnh đề siêu hình về bản chất tối hậu; chúng là mô tả cấu trúc (structural descriptions) về cách hệ thống tồn tại, bền vững, và tự nhận thức thông qua các mẫu hình quan hệ (relational patterns) phân tán trong mạng. Tiên Đề I --- Sống Trong Quan Hệ --- Có Nhau Mới Có Mình (Relational Ontology) là tuyên bố nền tảng xác lập điều này: `Being(x) ≡ {R(x,y)}` --- bản sắc được cấu thành bởi quan hệ, không phải bởi bản thể độc lập. Việc framework tự phân loại chính mình là yêu cầu của Tiên Đề VIII --- Tự Nhìn Thấy Mình: một khung nền dùng thước đo "tương quan-phân tán vs. hệ thống-siêu hình" để phân tích đối tượng khác phải áp dụng được chính thước đo đó lên bản thân nó (`[project interpretation]`).
+
 Bảng đối chiếu dưới đây tóm tắt đặc trưng của hai loại hình (`[project interpretation]`):
 
 | Đặc trưng | Triết học Hệ thống-Siêu hình | Triết học Tương quan-Phân tán |

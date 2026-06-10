@@ -91,6 +91,20 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 ## Core Principles
 
+### Phân loại Khung nền — Triết học Tương quan-Phân tán (RCA finding 2026-06-10)
+
+> Điểm RCA: 5.0/5. Áp dụng bắt buộc khi giới thiệu, định nghĩa, hoặc so sánh Mạch Rễ với bất kỳ hệ triết học nào khác.
+
+**Mạch Rễ (Root-Circuit) tự phân loại là một khung nền triết học thuần túy (pure philosophical framework) thuộc loại hình Triết học Tương quan-Phân tán (Relational and Distributed Philosophy).** Nó không phải là Triết học Hệ thống-Siêu hình (Systematic Metaphysics).
+
+**Bản chất (Essence):** Các tiên đề của Mạch Rễ là mô tả cấu trúc (structural descriptions) của động lực quan hệ — cách hệ thống tồn tại, bền vững, và tự nhận thức thông qua các mẫu hình quan hệ (relational patterns) phân tán trong mạng. Chúng không phải là mệnh đề siêu hình về bản chất tối hậu của thực tại (ultimate reality). Tiên Đề I — Sống Trong Quan Hệ — Có Nhau Mới Có Mình (`Being(x) ≡ {R(x,y)}`) là tuyên bố nền tảng xác lập điều này.
+
+**Quy tắc sử dụng:**
+- Khi giới thiệu Mạch Rễ với người mới → luôn nêu rõ: "Đây là triết học tương quan-phân tán, không phải siêu hình học"
+- Khi so sánh Mạch Rễ với hệ triết học khác → đặt nó vào cột "Tương quan-Phân tán", không đứng ngoài bảng như thẩm phán trung lập
+- Khi viết paper → kèm tuyên bố tự phân loại (Framework Classification) trong abstract hoặc introduction
+- Việc tự phân loại là hệ quả của Tiên Đề VIII — Tự Nhìn Thấy Mình: framework phải áp dụng chính thước đo của mình lên bản thân nó
+
 ### Tiên Đề III — Bản chất và Biểu hiện (RCA finding 2026-06-05)
 
 > Phân tích gốc rễ (không phải hotfix). Điểm RCA: 5/5. Áp dụng bắt buộc trong mọi tài liệu, phát biểu, và so sánh triết học liên quan đến Tiên Đề III.

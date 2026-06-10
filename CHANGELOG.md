@@ -1,5 +1,30 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: Thêm tự phân loại Mạch Rễ vào Paper 005 · RCA 5.0/5
+
+**Symptom:** Paper 005 dùng Mạch Rễ để chẩn đoán "lỗi phạm trù" (đánh giá triết học tương quan-phân tán bằng thước đo hệ thống-siêu hình) nhưng không tự tuyên bố Mạch Rễ thuộc loại hình triết học nào. Paper phân loại *đối tượng được phân tích* (triết học Việt Nam) nhưng không tự phân loại *công cụ phân tích* (Mạch Rễ).
+
+**Root:** Paper áp dụng phân loại phản tư lên đối tượng nghiên cứu nhưng không lên chính nó — vi phạm Tiên Đề VIII (Reflexive Cognition): "hệ áp chính Tiên Đề I–IV lên bản thân nó." Framework phải tuân theo chính tiêu chuẩn nó áp đặt lên đối tượng khác.
+
+**Fix:** Thêm tuyên bố tự phân loại tại hai vị trí trong `paper_005.html` (và đồng bộ sang `paper_005.md`, `paper_005_for_pdf.md`):
+1. **Abstract** (sau Từ khóa): "Mạch Rễ tự phân loại là một khung nền triết học thuần túy thuộc loại hình triết học tương quan-phân tán (Relational and Distributed Philosophy). Nó không phải là triết học hệ thống-siêu hình (Systematic Metaphysics)."
+2. **§2.1** (trước bảng đối chiếu): Phiên bản đầy đủ — neo vào Tiên Đề I (`Being(x) ≡ {R(x,y)}`) và Tiên Đề VIII (self-application requirement).
+
+**RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1). Plan chi tiết tại `plan/paper_005_self_classification_plan.md`.
+
+## 2026-06-10 — RCA: Lan tỏa tự phân loại sang CLAUDE.md + index.html + what.html · RCA 4.8–5.0/5
+
+**Symptom:** Tuyên bố tự phân loại Mạch Rễ (Relational and Distributed Philosophy, không phải Systematic Metaphysics) đã có trong Paper 005 nhưng chưa có trong các file định nghĩa công khai và file hướng dẫn agent.
+
+**Root:** Paper 005 là nơi RCA gate được thực hiện đầu tiên; các file khác chưa được đồng bộ. CLAUDE.md — file chi phối toàn bộ hành vi agent — cần tuyên bố này để đảm bảo agent nhất quán khi giới thiệu/phân loại Mạch Rễ.
+
+**Fix:**
+1. **CLAUDE.md** — Thêm section "Phân loại Khung nền — Triết học Tương quan-Phân tán" vào Core Principles (RCA 5.0/5), kèm quy tắc sử dụng bắt buộc cho agent.
+2. **index.html** — Mở rộng định nghĩa trong Disclaimer (VN + EN): "khung nền triết học và nhân học mở, thuộc loại hình triết học tương quan-phân tán... không phải triết học hệ thống-siêu hình" (RCA 4.8/5).
+3. **what.html** — Thêm paragraph "Về loại hình triết học" vào §6 "Vị trí trong bản đồ triết học toàn cầu", neo vào Ubuntu và Tiên Đề VIII, kèm link đến Paper 005 (RCA 4.8/5).
+
+**RCA scores:** CLAUDE.md: 5.0/5; index.html: 4.8/5; what.html: 4.8/5.
+
 ## 2026-06-09 — RCA: Sắp xếp lại `axiom_3.html` theo thứ tự khoa học + tách §7B thành trang riêng · RCA 4.8/5
 
 **Symptom:** 13 section trong `axiom_3.html` được sắp xếp theo thứ tự **viết** (accretion pattern: 1→1A→1B→1C→2→3→4→5→6→7→7B→8→9), không theo thứ tự **đọc khoa học** (dependency graph). Hậu quả: giải thích cấp-3 (§1A) và từ nguyên (§1B) nằm trước phân tích bản thể học (§1C); tiêu chí tiên đề (§2) nằm sau 350 dòng giải thích; so sánh văn hóa 7 quốc gia (§7B, ~200 dòng) chen giữa RCA gap analysis và Limitations.
