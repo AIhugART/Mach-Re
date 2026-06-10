@@ -109,14 +109,15 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 > Phân tích gốc rễ (không phải hotfix). Điểm RCA: 5/5. Áp dụng bắt buộc trong mọi tài liệu, phát biểu, và so sánh triết học liên quan đến Tiên Đề III.
 
-**Bản chất (Essence):** Thời gian trực giao (Orthogonal Temporality) — trục V và trục H là hai chiều kích thời gian **trực giao** (mathematically independent, irreducible to each other): `V ⊥ H`. Tính trực giao này là tính chất cấu trúc (structural property) nền tảng của Tiên Đề III — lý do duy nhất để phân biệt Tiên Đề III với "ký ức là một phần của hiện tại" (Halbwachs, Luhmann).
+**Bản chất (Essence) — Mạch Cội Nguồn (Orthogonal Temporality):** Trục V và trục H là hai chiều kích thời gian **trực giao** (mathematically independent, irreducible to each other): `V ⊥ H`. Tính trực giao này là tính chất cấu trúc (structural property) nền tảng của Tiên Đề III — lý do duy nhất để phân biệt Tiên Đề III với "ký ức là một phần của hiện tại" (Halbwachs, Luhmann). Tên canonical tiếng Việt: **Mạch Cội Nguồn** — "Cội" (dọc/V) ⊥ "Nguồn" (ngang/H), hai chiều trực giao không rút gọn về nhau.
 
-**Biểu hiện (Manifestation):** mạch cội dọc (Vertical Temporality) — hình thức mà tính trực giao hiện ra trong đời sống văn hóa xã hội: trục quan hệ tổ tiên ↕ hiện tại ↕ hậu thế. "Dọc" là cách đặt tên trực quan cho chiều trực giao đó, không phải định nghĩa cấu trúc.
+**Biểu hiện (Manifestation) — Mạch Cội Dọc (Vertical Temporality):** Hình thức mà tính trực giao hiện ra trong đời sống văn hóa xã hội: trục quan hệ tổ tiên ↕ hiện tại ↕ hậu thế. "Dọc" là cách đặt tên trực quan cho chiều trực giao đó, không phải định nghĩa cấu trúc. Tên canonical tiếng Việt: **Mạch Cội Dọc**.
 
 **Quy tắc sử dụng thuật ngữ:**
-- Khi phát biểu nguyên lý bản thể học → dùng **Orthogonal Temporality** (bản chất)
-- Khi mô tả thực hành văn hóa / sơ đồ trực quan / so sánh đa văn hóa → dùng **Vertical Temporality** (biểu hiện)
+- Khi phát biểu nguyên lý bản thể học → dùng **Orthogonal Temporality** / **Mạch Cội Nguồn** (bản chất)
+- Khi mô tả thực hành văn hóa / sơ đồ trực quan / so sánh đa văn hóa → dùng **Vertical Temporality** / **Mạch Cội Dọc** (biểu hiện)
 - Hai thuật ngữ **không** thay thế nhau: chúng khác tầng (essence ≠ manifestation), không phải đồng nghĩa
+- **Mạch Cội Nguồn** ≠ **Mạch Cội Dọc**: "Cội Nguồn" = cả hai trục (V ⊥ H) = bản chất; "Cội Dọc" = trục dọc (V) = biểu hiện
 
 ### Tên thuần Việt các Tiên Đề (RCA finding 2026-06-05)
 

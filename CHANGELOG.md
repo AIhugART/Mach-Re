@@ -3,6 +3,22 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-10 — CLAUDE.md: Chuẩn hóa canonical terms Tiên Đề III (Mạch Cội Nguồn / Mạch Cội Dọc) · RCA 5.0/5
+
+**Symptom:** CLAUDE.md §Tiên Đề III dùng "Thời gian trực giao" (literal translation) cho Orthogonal Temporality thay vì canonical term "Mạch Cội Nguồn"; "mạch cội dọc" viết thường thiếu canonical capitalization.
+
+**Root (Round 3):** Section được viết trước khi canonical Vietnamese terms được finalize (RCA finding 2026-06-05 vs 2026-06-09 Việt hóa). English mapping đã đúng nhưng Vietnamese canonical terms chưa được back-propagate vào prose.
+
+**Fix:**
+- Line 112: "Thời gian trực giao (Orthogonal Temporality)" → "**Mạch Cội Nguồn (Orthogonal Temporality)**" + thêm canonical definition ("Cội" ⊥ "Nguồn")
+- Line 114: "mạch cội dọc (Vertical Temporality)" → "**Mạch Cội Dọc (Vertical Temporality)**" + canonical term
+- Lines 117-118: Thêm Vietnamese canonical terms vào quy tắc sử dụng
+- Line 120 (mới): Thêm quy tắc phân biệt rõ ràng: Mạch Cội Nguồn ≠ Mạch Cội Dọc
+
+**Carry-Forward Set:** Toàn bộ English mapping giữ nguyên; chỉ thêm Vietnamese canonical layer. Bảng §Tên thuần Việt (line 130) không đổi. `dictionary_rule.md` không đổi.
+
+**RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1)
+
 ## 2026-06-10 — Infrastructure: Tách paper changelog + fix deploy-pages.yml · RCA 5.0/5
 
 **Symptom:** Paper changes ghi vào `CHANGELOG.md` gốc (mixed với axiom/HTML/audit entries); `deploy-pages.yml` không trigger khi push papers.
