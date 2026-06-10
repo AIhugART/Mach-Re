@@ -170,6 +170,16 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 > **Neo quan trọng:** "tập tục" và "tập quán" thuộc phạm trù **quy ước xã hội** (có thể đàm phán, biến đổi, thích nghi); "nếp" thuộc phạm trù **cấu trúc sống** (mất đi thì hệ thống sụp đổ — điều kiện cần cho tồn tại). Dùng từ sai phạm trù sẽ kéo toàn bộ Tiên Đề III từ ontological claim xuống sociological description. Chi tiết RCA tại `plan/dictionary_rule.md §10`.
 
+### Document contract rules
+
+- **Bảng Nguồn Trích Dẫn bắt buộc** (RCA finding 2026-06-10, score 4.8/5) — Mọi tài liệu có ≥ 1 trích dẫn nghiên cứu bên ngoài phải kết thúc bằng bảng "Nguồn Trích Dẫn" APA-formatted (xem Paper & Publication Rules Tier 3 Rule #12). Áp dụng cho tất cả file loại: `.html`, `.md`, paper manuscript, plan doc. Format ví dụ:
+  > Udah, H., Tusasiirwe, S., Mugumbate, R., & Gatwiri, K. (2025). Ubuntu philosophy, values, and principles: An opportunity to do social work differently. *Journal of Social Work*, pp. 1–19. https://doi.org/10.1177/14680173241312749
+- **Liên kết trích dẫn theo định dạng tài liệu (citation linking by format)** (RCA finding 2026-06-10, score 4.8/5):
+  - **HTML:** mỗi trích dẫn inline phải là hyperlink `<a href="#nguon-N">[N]</a>` trỏ đến entry tương ứng trong bảng "Nguồn Trích Dẫn". Entry trong bảng phải có `id="nguon-N"` (N = số thứ tự nguồn). Không có hyperlink = tài liệu HTML chưa hoàn chỉnh.
+  - **Mọi định dạng khác** (`.md`, `.tex`, manuscript, plan doc): dùng số thứ tự `[N]` inline trong văn bản; N tương ứng với thứ tự entry trong bảng "Nguồn Trích Dẫn".
+- Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
+- Apply the mandatory principle "rebuild with carry-forward" (replaces the former "extend, not overwrite" rule; RCA finding 2026-06-06, score ≥ 4/5). For **unpublished / still-being-derived** content (the axiom system, internal mappings), clean overwrite and from-scratch re-derivation are **permitted** — preserving the old structure is not required. Binding condition: **before deleting or overwriting, declare an explicit "Carry-Forward Set"** — a named list of the assets (claims, definitions, falsification conditions, methodological compass) eligible to be carried over. Every item in the set is a *candidate that must survive re-validation through the RCA gate*, not an automatic keep; anything not in the set defaults to dropped (reference-only). For **published / externally-depended-upon** content, still prefer extend, and overwrite only when the user explicitly requests it. The default Carry-Forward Set lives in `plan/dictionary_rule.md §7`.
+
 ### Paper & Publication Rules (sourced from `papers/CLAUDE_REF.md`)
 
 > Áp dụng khi viết, sửa, hoặc review bất kỳ paper nào trong `papers/`.
@@ -234,13 +244,6 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 5. **Constraint set** — Không chính trị · Không tôn giáo · UK/US cinematic language · Bối cảnh Việt Nam · Tiên Đề III là cấu trúc (không phải chủ đề).
 6. **RCA traceability** — mọi screenplay entry phải ghi rõ 3-round RCA trace và điểm scoring, theo format chuẩn trong canonical slate.
 7. **Falsification condition** — mỗi idea phải có điều kiện bác bỏ rõ ràng (khi nào idea fail).
-
-### Document contract rules
-
-- **Bảng Nguồn Trích Dẫn bắt buộc** (RCA finding 2026-06-10, score 4.8/5) — Mọi tài liệu có ≥ 1 trích dẫn nghiên cứu bên ngoài phải kết thúc bằng bảng "Nguồn Trích Dẫn" APA-formatted (xem Paper & Publication Rules Tier 3 Rule #12). Áp dụng cho tất cả file loại: `.html`, `.md`, paper manuscript, plan doc. Format ví dụ:
-  > Udah, H., Tusasiirwe, S., Mugumbate, R., & Gatwiri, K. (2025). Ubuntu philosophy, values, and principles: An opportunity to do social work differently. *Journal of Social Work*, pp. 1–19. https://doi.org/10.1177/14680173241312749
-- Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
-- Apply the mandatory principle "rebuild with carry-forward" (replaces the former "extend, not overwrite" rule; RCA finding 2026-06-06, score ≥ 4/5). For **unpublished / still-being-derived** content (the axiom system, internal mappings), clean overwrite and from-scratch re-derivation are **permitted** — preserving the old structure is not required. Binding condition: **before deleting or overwriting, declare an explicit "Carry-Forward Set"** — a named list of the assets (claims, definitions, falsification conditions, methodological compass) eligible to be carried over. Every item in the set is a *candidate that must survive re-validation through the RCA gate*, not an automatic keep; anything not in the set defaults to dropped (reference-only). For **published / externally-depended-upon** content, still prefer extend, and overwrite only when the user explicitly requests it. The default Carry-Forward Set lives in `plan/dictionary_rule.md §7`.
 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
