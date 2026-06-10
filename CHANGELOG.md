@@ -1,5 +1,23 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: Tạo ubuntu.html — trang nghiên cứu đối tác Ubuntu · RCA 5.0/5
+
+**Symptom:** Hệ thống Mạch Rễ so sánh với Ubuntu trong nhiều trang (`mach_re_homologous.html`, `axiom_3_cultural_comparison.html`, `axiom_3.html`) nhưng không có trang standalone trình bày Ubuntu đủ sâu với nguồn học thuật. Người đọc phân tích homologous không có base knowledge để đánh giá các tuyên bố so sánh.
+
+**Root:** Vi phạm nguyên tắc traceability (CLAUDE.md Paper Rules Tier 3 Rule 7): mọi claim phải trace về nguồn. Mạch Rễ claim Ubuntu là bằng chứng độc lập cho Tiên Đề III — nhưng nguồn học thuật về Ubuntu (Udah et al. 2025, Lefa 2015) không được tích hợp vào network trang.
+
+**Fix:** Tạo `ubuntu.html` (7 section, ~550 dòng HTML):
+- §1: Định nghĩa, ngữ nguyên, nguồn gốc lịch sử, bảng 27 quốc gia (từ Udah et al. 2025)
+- §2: 5 tầng triết học (Ontology → Epistemology → Ethics → Socio-Politics → Spirituality)
+- §3: 5 giá trị cốt lõi + Ba Trụ cột Samkange (1980)
+- §4: Ubuntu trong giáo dục Nam Phi (Lefa, 2015)
+- §5: Ubuntu trong công tác xã hội toàn cầu — 4 nguyên lý: Relationality, Collective Responsibility, Social Justice, Recognition & Reciprocity (Udah et al. 2025)
+- §6: Bảng so sánh Ubuntu vs Phương Tây vs Nho giáo vs Mạch Rễ
+- §7: Kết nối Mạch Rễ — Boundary Statement + 4 tương đồng (Tiên Đề I/III/V/VII) + 2 phân kỳ quan trọng
+- Link bổ sung vào: `axiom_3.html`, `axiom_3_cultural_comparison.html`, `mach_re_homologous.html`
+
+**RCA score:** 5.0/5 (Correct: 1, Deep: 1, Feasible: 1, Conflict-risk: 1, Preservation: 1). Design palette: African earth tones (intentional — marks comparative partner page). Boundary Statement rõ ràng: "Ubuntu và Mạch Rễ là hai hệ thống độc lập — không phải hai tên cùng một hệ thống."
+
 ## 2026-06-10 — RCA: Thêm link mach_re_homologous.html vào axiom_3.html · RCA 5.0/5
 
 **Symptom:** `axiom_3.html` — trang canonical về Tiên Đề III — không có link ngữ cảnh nào đến `mach_re_homologous.html` trong nội dung thân bài. Link duy nhất nằm ở footer (không ngữ cảnh). Trang homologous chứa cross-cultural validation evidence mạnh nhất cho Tiên Đề III (so sánh với Ubuntu Bantu và Yoruba Nigeria — hai nền văn hóa sống duy nhất khác cũng thực hành Vertical Temporality), nhưng evidence này vô hình với người đọc axiom_3.html.

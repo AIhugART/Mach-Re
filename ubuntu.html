@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubuntu — Triết học Nhân tính Châu Phi | Mạch Rễ Comparative Framework</title>
+  <meta name="description" content="Phân tích triết học Ubuntu (Bantu): 5 tầng triết học, 5 giá trị cốt lõi, Ubuntu trong giáo dục (Lefa 2015) và công tác xã hội toàn cầu (Udah et al. 2025). Nguồn đối chiếu cho Tiên Đề III — Mạch Cội Nguồn." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* African earth palette — intentional: marks comparative partner page, not Mạch Rễ primary */
+      --earth:        #2C1810;
+      --terracotta:   #C4622D;
+      --amber:        #E8955A;
+      --gold:         #F2C04A;
+      --cream:        #FAF3E8;
+      --sage:         #6B8F71;
+      --sky:          #4A7FA5;
+      --muted:        #8A7968;
+      /* Project standard */
+      --green:        #2d6a4f;
+      --green-pale:   #d8f3dc;
+      --text-dark:    #1c1c1c;
+      --text-muted:   #5a5a5a;
+      --border:       #e8d8d5;
+      --accent:       #b05040;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
+
+    /* ── NAV ── */
+    .topnav {
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,.3); }
+    .topnav .current { color: #fff; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--earth) 0%, var(--terracotta) 55%, var(--amber) 100%);
+      color: var(--cream);
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+      color: var(--cream);
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p { color: rgba(250,243,232,.8); font-size: 1rem; max-width: 680px; margin: 0 auto; font-style: italic; }
+
+    /* ── CONTENT ── */
+    .content { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.45rem;
+      color: var(--terracotta);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f4ddd0;
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
+    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
+    strong { color: var(--text-dark); }
+
+    /* ── CORE CIRCLE ── */
+    .core-wrap { display: flex; justify-content: center; margin: 0 0 32px; }
+    .core-circle {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, var(--amber), var(--terracotta));
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      box-shadow: 0 0 0 14px rgba(196,98,45,.15), 0 0 0 30px rgba(196,98,45,.07);
+      text-align: center; padding: 1rem;
+      animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 14px rgba(196,98,45,.15), 0 0 0 30px rgba(196,98,45,.07); }
+      50%      { box-shadow: 0 0 0 18px rgba(196,98,45,.2),  0 0 0 38px rgba(196,98,45,.05); }
+    }
+    .core-circle .zulu {
+      font-family: 'Playfair Display', serif;
+      font-size: .78rem; font-style: italic;
+      color: var(--cream); line-height: 1.3; margin-bottom: .25rem;
+    }
+    .core-circle .word {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; font-weight: 900;
+      color: var(--cream);
+    }
+
+    /* ── DEF BOX ── */
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--terracotta);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .def-box .label {
+      font-size: .7rem; font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--terracotta); margin-bottom: 8px;
+    }
+    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
+
+    /* ── GRID CARDS ── */
+    .roots-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px; margin: 20px 0;
+    }
+    .root-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .root-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+    .root-card .icon { font-size: 1.6rem; margin-bottom: .5rem; }
+    .root-card .rc-title {
+      font-size: .82rem; font-weight: 700;
+      color: var(--terracotta); margin-bottom: .3rem;
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .root-card .rc-desc { font-size: .75rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* ── VALUES GRID ── */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px; margin: 20px 0;
+    }
+    .val-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 12px;
+      text-align: center;
+      transition: transform .25s;
+    }
+    .val-card:hover { transform: translateY(-4px); }
+    .val-card.c1 { border-top: 4px solid var(--terracotta); }
+    .val-card.c2 { border-top: 4px solid var(--sage); }
+    .val-card.c3 { border-top: 4px solid var(--sky); }
+    .val-card.c4 { border-top: 4px solid var(--gold); }
+    .val-card.c5 { border-top: 4px solid var(--amber); }
+    .val-card .v-icon { font-size: 1.5rem; margin-bottom: .4rem; }
+    .val-card .v-name {
+      font-size: .75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .06em;
+      margin-bottom: .3rem;
+    }
+    .val-card.c1 .v-name { color: var(--terracotta); }
+    .val-card.c2 .v-name { color: var(--sage); }
+    .val-card.c3 .v-name { color: var(--sky); }
+    .val-card.c4 .v-name { color: #b8903a; }
+    .val-card.c5 .v-name { color: var(--amber); }
+    .val-card .v-desc { font-size: .7rem; color: var(--text-muted); line-height: 1.45; }
+
+    /* ── STRATA ── */
+    .strata-wrap { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+    .stratum {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform .25s;
+    }
+    .stratum:hover { transform: translateX(4px); }
+    .stratum-label {
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      padding: 1rem .5rem; text-align: center;
+      font-size: .65rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+    }
+    .stratum-label .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 900;
+      display: block; margin-bottom: .1rem;
+    }
+    .stratum-body { padding: 14px 18px; background: #fff; }
+    .stratum-body .s-title { font-size: .85rem; font-weight: 700; color: var(--text-dark); margin-bottom: .2rem; }
+    .stratum-body .s-quote { font-style: italic; font-size: .78rem; color: var(--text-muted); margin-bottom: .4rem; }
+    .stratum-body .s-desc { font-size: .75rem; color: var(--text-muted); line-height: 1.5; }
+    .stratum.s1 .stratum-label { background: rgba(196,98,45,.15); color: var(--terracotta); }
+    .stratum.s2 .stratum-label { background: rgba(107,143,113,.15); color: var(--sage); }
+    .stratum.s3 .stratum-label { background: rgba(74,127,165,.15); color: var(--sky); }
+    .stratum.s4 .stratum-label { background: rgba(242,192,74,.15); color: #9a7a20; }
+    .stratum.s5 .stratum-label { background: rgba(138,121,104,.15); color: var(--muted); }
+
+    /* ── PILLAR CARDS ── */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px; margin: 20px 0;
+    }
+    .pillar-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 16px;
+    }
+    .pillar-card .p-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem; font-weight: 900;
+      color: rgba(196,98,45,.2); line-height: 1;
+      margin-bottom: .4rem;
+    }
+    .pillar-card .p-title { font-size: .85rem; font-weight: 700; color: var(--terracotta); margin-bottom: .5rem; }
+    .pillar-card .p-desc { font-size: .75rem; color: var(--text-muted); line-height: 1.55; }
+
+    /* ── COUNTRY TABLE ── */
+    .styled-table { width: 100%; border-collapse: collapse; font-size: .84rem; margin-top: 16px; }
+    .styled-table th {
+      background: var(--terracotta);
+      color: #fff; padding: 10px 14px;
+      text-align: left; font-weight: 600;
+    }
+    .styled-table td {
+      padding: 8px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted); vertical-align: top;
+    }
+    .styled-table tr:nth-child(even) td { background: #fdf5f0; }
+    .styled-table td strong { color: var(--text-dark); }
+
+    /* ── PRAXIS CARDS ── */
+    .praxis-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px; margin: 20px 0;
+    }
+    .praxis-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 18px;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .praxis-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+    .praxis-card .pc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .praxis-card .pc-icon { font-size: 1.3rem; }
+    .praxis-card .pc-title { font-size: .8rem; font-weight: 700; color: var(--terracotta); text-transform: uppercase; letter-spacing: .05em; }
+    .praxis-card .pc-desc { font-size: .75rem; color: var(--text-muted); line-height: 1.55; }
+    .praxis-card .pc-source { font-size: .65rem; color: rgba(138,121,104,.7); margin-top: 8px; font-style: italic; }
+
+    /* ── VALUE PRINCIPLES ── */
+    .vp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px; margin: 20px 0;
+    }
+    .vp-card {
+      background: #fff; border: 1px solid var(--border);
+      border-left: 4px solid var(--amber);
+      border-radius: 0 12px 12px 0;
+      padding: 18px;
+    }
+    .vp-card .vp-title { font-size: .8rem; font-weight: 700; color: var(--terracotta); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+    .vp-card .vp-example { font-size: .7rem; color: var(--sage); font-style: italic; margin-bottom: 6px; }
+    .vp-card .vp-desc { font-size: .75rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table { width: 100%; border-collapse: collapse; font-size: .84rem; margin-top: 16px; }
+    .compare-table th {
+      padding: 10px 14px; text-align: left; font-weight: 600;
+      border-bottom: 2px solid var(--border);
+    }
+    .compare-table th:nth-child(1) { color: var(--text-muted); }
+    .compare-table th:nth-child(2) { color: var(--terracotta); }
+    .compare-table th:nth-child(3) { color: var(--sky); }
+    .compare-table th:nth-child(4) { color: var(--sage); }
+    .compare-table th:nth-child(5) { color: #6c5ce7; }
+    .compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .compare-table td:nth-child(1) { font-weight: 700; color: var(--text-dark); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; }
+    .compare-table td:nth-child(2) { color: var(--text-dark); font-weight: 500; }
+    .compare-table tr:hover td { background: #fdf5f0; }
+
+    /* ── CONNECT BOX ── */
+    .connect-box {
+      background: linear-gradient(135deg, #f0e8ff 0%, #e8f3fd 100%);
+      border: 1px solid #d0c8f0;
+      border-left: 5px solid #6c5ce7;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .connect-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #6c5ce7; margin-bottom: 12px; }
+    .connect-box p { color: var(--text-muted); margin-bottom: 10px; }
+    .connect-box a { color: #6c5ce7; font-weight: 600; text-decoration: none; }
+    .connect-box a:hover { text-decoration: underline; }
+
+    /* ── RESONANCE GRID ── */
+    .resonance-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px; margin: 20px 0;
+    }
+    .res-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 12px; padding: 18px;
+    }
+    .res-card.agree { border-top: 4px solid var(--sage); }
+    .res-card.differ { border-top: 4px solid var(--terracotta); }
+    .res-card .r-label {
+      font-size: .65rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+    .res-card.agree .r-label { color: var(--sage); }
+    .res-card.differ .r-label { color: var(--terracotta); }
+    .res-card .r-title { font-size: .85rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px; }
+    .res-card .r-desc { font-size: .75rem; color: var(--text-muted); line-height: 1.55; }
+
+    /* ── BOUNDARY STATEMENT ── */
+    .boundary {
+      background: #fffbf0;
+      border: 1px solid #e8d58a;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .boundary .b-label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #9a7a20; margin-bottom: 10px; }
+    .boundary ul { padding-left: 20px; }
+    .boundary li { font-size: .82rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 4px; }
+
+    /* ── CITATION BOX ── */
+    .cite-box {
+      background: #f9f6f2;
+      border: 1px solid #e8d8c8;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 8px;
+    }
+    .cite-box p { font-size: .72rem; color: var(--muted); margin-bottom: 4px; line-height: 1.6; }
+    .cite-box p:last-child { margin-bottom: 0; }
+
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      display: flex; justify-content: center;
+      gap: 16px; padding: 32px 24px;
+      background: var(--green-pale);
+      flex-wrap: wrap;
+    }
+    .bottom-nav a {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: .85rem;
+      font-weight: 600;
+      transition: background .2s;
+    }
+    .bottom-nav a:hover { background: #1a3a2a; }
+    .bottom-nav a.secondary {
+      background: #fff;
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+    .bottom-nav a.secondary:hover { background: var(--green-pale); }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: .75rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--terracotta); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      .roots-grid    { grid-template-columns: repeat(2, 1fr); }
+      .values-grid   { grid-template-columns: repeat(3, 1fr); }
+      .pillars-grid  { grid-template-columns: 1fr; }
+      .praxis-grid   { grid-template-columns: 1fr; }
+      .vp-grid       { grid-template-columns: 1fr; }
+      .resonance-grid { grid-template-columns: 1fr; }
+      .stratum       { grid-template-columns: 90px 1fr; }
+    }
+    @media (max-width: 400px) {
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav class="topnav">
+  <a href="index.html">🌿 Mạch Rễ</a>
+  <span class="sep">/</span>
+  <a href="axiom_3.html">Tiên Đề III</a>
+  <span class="sep">/</span>
+  <a href="axiom_3_cultural_comparison.html">So sánh Đa văn hóa</a>
+  <span class="sep">/</span>
+  <span class="current">Ubuntu — Triết học Châu Phi</span>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <div class="tag">Comparative Framework · Ubuntu Philosophy</div>
+  <h1>Ubuntu — <span>Triết học Nhân tính Châu Phi</span></h1>
+  <p>"Umuntu ngumuntu ngabantu" — Tôi là người vì người khác tồn tại · Nguồn gốc Bantu, Châu Phi</p>
+</div>
+
+<!-- ── CONTENT ── -->
+<div class="content">
+
+  <!-- §1 ─ ĐỊNH NGHĨA & NGUỒN GỐC -->
+  <section>
+    <h2>§1 — Định nghĩa &amp; Nguồn gốc (Definition &amp; Origins)</h2>
+
+    <div class="core-wrap">
+      <div class="core-circle">
+        <span class="zulu">umuntu ngumuntu</span>
+        <span class="word">Ubuntu</span>
+        <span class="zulu" style="font-size:.65rem;margin-top:.2rem">ngabantu</span>
+      </div>
+    </div>
+
+    <div class="def-box">
+      <div class="label">Định nghĩa cốt lõi</div>
+      <blockquote>Ubuntu là triết học Châu Phi có nguồn gốc từ các dân tộc Bantu, tóm gọn trong câu: <em>"Umuntu ngumuntu ngabantu"</em> — <strong>"Tôi là người vì người khác tồn tại"</strong>. Hay: <em>"I am because of who we all are."</em></blockquote>
+    </div>
+
+    <p>Thuật ngữ <em>ubuntu</em> được dẫn xuất từ ngôn ngữ Nguni của miền Nam Châu Phi, bắt nguồn từ gốc từ <em>tu</em> trong các ngôn ngữ Bantu trải rộng khắp Châu Phi. Nó dịch lỏng thành <strong>nhân tính chung (shared humanity)</strong> hay niềm tin vào <em>utu</em> (tính thiêng liêng của nhân tính). Ubuntu tồn tại ở bốn mức độ rộng: <strong>gia đình → cộng đồng-xã hội → môi trường → tâm linh</strong>.</p>
+
+    <h3>Nguồn gốc lịch sử</h3>
+    <div class="roots-grid">
+      <div class="root-card">
+        <div class="icon">🌍</div>
+        <div class="rc-title">Văn hóa Bantu</div>
+        <div class="rc-desc">Truyền miệng hàng nghìn năm từ Nam &amp; Đông Phi — không phải học thuyết viết sẵn mà là hệ thống sống (living system)</div>
+      </div>
+      <div class="root-card">
+        <div class="icon">✊</div>
+        <div class="rc-title">Chống Apartheid</div>
+        <div class="rc-desc">Mandela &amp; Desmond Tutu phổ biến ra thế giới qua phong trào đấu tranh và hòa giải dân tộc Nam Phi</div>
+      </div>
+      <div class="root-card">
+        <div class="icon">🕊️</div>
+        <div class="rc-title">Hòa giải Sự thật (TRC)</div>
+        <div class="rc-desc">Ủy ban Sự thật &amp; Hòa giải (1995–2002): nguyên tắc Ubuntu làm nền tảng cho tha thứ thay vì trừng phạt</div>
+      </div>
+    </div>
+
+    <h3>Ubuntu qua 27 quốc gia Châu Phi <span style="font-size:.75rem;font-weight:400;color:var(--text-muted)">(Udah et al., 2025)</span></h3>
+    <p>Ubuntu không phải là khái niệm của một quốc gia — nó hiện diện trong ngôn ngữ bản địa của hầu hết Châu Phi:</p>
+    <div style="overflow-x:auto">
+    <table class="styled-table">
+      <thead><tr><th>Quốc gia</th><th>Thuật ngữ bản địa</th><th>Quốc gia</th><th>Thuật ngữ bản địa</th></tr></thead>
+      <tbody>
+        <tr><td>Angola</td><td>gimuntu</td><td>Kenya</td><td>utu / munto / mondo</td></tr>
+        <tr><td>Botswana</td><td>muthu</td><td>Malawi</td><td>umunthu</td></tr>
+        <tr><td>Burundi</td><td>ubuntu</td><td>Mozambique</td><td>vumuntu</td></tr>
+        <tr><td>Cameroon</td><td>bato</td><td>Namibia</td><td>omundu</td></tr>
+        <tr><td>Congo DRC</td><td>bomoto / bantu</td><td>Nigeria</td><td>mutunchi / iwa / agwa</td></tr>
+        <tr><td>Cote d'Ivoire</td><td>maaya</td><td>Rwanda</td><td>bantu</td></tr>
+        <tr><td>Ghana</td><td>biako ye</td><td>South Africa</td><td><strong>ubuntu / botho</strong></td></tr>
+        <tr><td>Uganda</td><td>obuntu</td><td>Tanzania</td><td>utu / obuntu / bumuntu</td></tr>
+        <tr><td>Zambia</td><td>umunthu / ubuntu</td><td>Zimbabwe</td><td>hunhu / unhu / botho</td></tr>
+        <tr><td colspan="2"><em>Burkina Faso, Mali, Guinea, Gambia, Liberia, Sierra Leone, Equatorial Guinea</em></td><td colspan="2">maaya / hadama de ya</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="cite-box" style="margin-top:12px">
+      <p><strong>Nguồn:</strong> Udah, H., Tusasiirwe, S., Mugumbate, R., &amp; Gatwiri, K. (2025). Ubuntu philosophy, values, and principles: An opportunity to do social work differently. <em>Journal of Social Work</em>, pp. 1–19. DOI: 10.1177/14680173241312749</p>
+    </div>
+  </section>
+
+  <!-- §2 ─ CẤU TRÚC TRIẾT HỌC 5 TẦNG -->
+  <section>
+    <h2>§2 — Cấu trúc Triết học: 5 Tầng (Philosophical Strata)</h2>
+
+    <p>Ubuntu không phải là một luận điểm duy nhất — đó là hệ thống tư tưởng đa tầng, từ bản thể học đến tâm linh:</p>
+
+    <div class="strata-wrap">
+      <div class="stratum s1">
+        <div class="stratum-label">
+          <span class="num">1</span>Bản thể
+        </div>
+        <div class="stratum-body">
+          <div class="s-title">Ontology — Bản thể học</div>
+          <div class="s-quote">"Tôi tồn tại vì ta tồn tại cùng nhau" · "I am because we are"</div>
+          <div class="s-desc">Không có "cái tôi" độc lập. Bản thể là quan hệ, không phải thực thể đơn lẻ. Ngược với Descartes: <em>"Cogito ergo sum"</em> — Ubuntu nói: sự tồn tại được định nghĩa qua tương quan với người khác, không phải qua lý trí tự tham chiếu.</div>
+        </div>
+      </div>
+
+      <div class="stratum s2">
+        <div class="stratum-label">
+          <span class="num">2</span>Nhận thức
+        </div>
+        <div class="stratum-body">
+          <div class="s-title">Epistemology — Nhận thức luận</div>
+          <div class="s-quote">"Tri thức là sản phẩm tập thể"</div>
+          <div class="s-desc">Học qua kể chuyện (<em>orature</em>), quan sát cộng đồng và thực hành chung — không phải cá nhân nghiên cứu đơn độc. Người kể chuyện (storyteller) là trung tâm nhận thức. Nguyên tắc: <em>recognition</em> — nhận ra các nhận thức luận khác, không coi Tây phương là phổ quát.</div>
+        </div>
+      </div>
+
+      <div class="stratum s3">
+        <div class="stratum-label">
+          <span class="num">3</span>Đạo đức
+        </div>
+        <div class="stratum-body">
+          <div class="s-title">Ethics — Đạo đức học</div>
+          <div class="s-quote">"Điều tốt = điều tăng cường sự kết nối và nhân tính"</div>
+          <div class="s-desc">Hành động được đánh giá qua tác động đến cộng đồng, không phải lợi ích cá nhân. Tha thứ (<em>forgiveness</em>) không phải là sự nhân nhượng — đó là điều kiện để cộng đồng tiếp tục tồn tại.</div>
+        </div>
+      </div>
+
+      <div class="stratum s4">
+        <div class="stratum-label">
+          <span class="num">4</span>Chính trị
+        </div>
+        <div class="stratum-body">
+          <div class="s-title">Socio-Politics — Xã hội Chính trị</div>
+          <div class="s-quote">"Lãnh đạo là phục vụ, không phải thống trị" · <em>Indaba</em></div>
+          <div class="s-desc"><em>Indaba</em> (đối thoại tập thể), <em>Ujamaa</em> (tinh thần cộng đồng Tanzania), <em>Harambee</em> (góp sức chung Kenya). Kinh tế chia sẻ (<em>stokvel / mukando</em>). Tư pháp phục hồi thay cho trừng phạt — mô hình TRC Nam Phi.</div>
+        </div>
+      </div>
+
+      <div class="stratum s5">
+        <div class="stratum-label">
+          <span class="num">5</span>Tâm linh
+        </div>
+        <div class="stratum-body">
+          <div class="s-title">Spirituality — Chiều sâu Tâm linh</div>
+          <div class="s-quote">"Kết nối với tổ tiên và thế hệ tương lai"</div>
+          <div class="s-desc">Trách nhiệm không chỉ với người sống — mà cả người đã mất và thế hệ chưa sinh ra. Hệ thống totem — mỗi tộc có trách nhiệm bảo vệ một loài — thể hiện quan hệ con người với môi trường phi nhân học (non-anthropocentric).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- §3 ─ GIÁ TRỊ CỐT LÕI -->
+  <section>
+    <h2>§3 — Giá trị Cốt lõi &amp; Ba Trụ cột (Core Values &amp; Three Pillars)</h2>
+
+    <h3>Năm giá trị nền tảng</h3>
+    <div class="values-grid">
+      <div class="val-card c1">
+        <div class="v-icon">🤝</div>
+        <div class="v-name">Cộng đồng</div>
+        <div class="v-desc">Cá nhân tồn tại qua quan hệ với người khác — không phải trước quan hệ</div>
+      </div>
+      <div class="val-card c2">
+        <div class="v-icon">💚</div>
+        <div class="v-name">Nhân từ</div>
+        <div class="v-desc">Con người — nhân tính — đặt trên vật chất và lợi ích</div>
+      </div>
+      <div class="val-card c3">
+        <div class="v-icon">🌊</div>
+        <div class="v-name">Chia sẻ</div>
+        <div class="v-desc">Tài nguyên và trách nhiệm thuộc về tập thể, không phải cá nhân tích lũy</div>
+      </div>
+      <div class="val-card c4">
+        <div class="v-icon">⭐</div>
+        <div class="v-name">Tôn trọng</div>
+        <div class="v-desc">Phẩm giá (<em>dignity</em>) vốn có — mọi người đều có, không thể bị tước đoạt</div>
+      </div>
+      <div class="val-card c5">
+        <div class="v-icon">🗣️</div>
+        <div class="v-name">Đồng thuận</div>
+        <div class="v-desc">Quyết định qua lắng nghe và thống nhất tập thể — không áp đặt từ trên</div>
+      </div>
+    </div>
+
+    <h3>Ba Trụ cột của Samkange (1980)</h3>
+    <p>Học giả Zimbabwe Stanlake Samkange hệ thống hóa Ubuntu qua ba trụ cột nền tảng:</p>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="p-num">I</div>
+        <div class="p-title">Human Relations — Quan hệ Nhân sinh</div>
+        <div class="p-desc">Tất cả quan hệ con người đặt trên nền tảng nhận thức lẫn nhau là người (<em>recognition of humanity</em>). Lời chào <em>salibonani</em> (Zimbabwe): "Chúng ta đã thấy nhau" — nhìn nhận sự tồn tại của người kia trước khi bắt đầu bất kỳ giao tiếp nào.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="p-num">II</div>
+        <div class="p-title">Sanctity of Life — Tính thiêng liêng của Sự sống</div>
+        <div class="p-desc">Sự sống — mọi sự sống — có giá trị vốn có. Từ đó: không loại trừ (exclusion), không phân tầng nhân tính. Liên kết với <em>utu</em> (tính thiêng liêng của nhân tính) trong ngôn ngữ Swahili.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="p-num">III</div>
+        <div class="p-title">People-Centeredness — Lấy Con người làm Trung tâm</div>
+        <div class="p-desc">Mọi quyết định — kinh tế, chính trị, giáo dục — đặt con người vào trung tâm, không phải hệ thống, không phải lợi nhuận. Lãnh đạo là phục vụ con người, không phải dẫn dắt hệ thống.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- §4 ─ UBUNTU TRONG GIÁO DỤC -->
+  <section>
+    <h2>§4 — Ubuntu trong Giáo dục Nam Phi <span style="font-size:.8rem;font-weight:400;color:var(--text-muted)">(Lefa, 2015)</span></h2>
+
+    <p>Ubuntu không chỉ là triết học trừu tượng — nó hiện thân trực tiếp trong môi trường giáo dục. Nghiên cứu của Baken Johannes Lefa (Cape Peninsula University of Technology, 2015) phân tích Ubuntu như nguyên tắc vận hành của trường học Nam Phi.</p>
+
+    <div class="def-box">
+      <div class="label">Định nghĩa Ubuntu trong giáo dục (Letseka, 2011)</div>
+      <blockquote>Ubuntu là "hình thức gắn kết nhân sinh cho phép tư duy phản biện, không thống trị và phát triển tối ưu các quan hệ con người." Trong giáo dục: cá nhân hoàn thành nhân tính của mình qua quan hệ với người khác — không phải trong sự tách biệt.</blockquote>
+    </div>
+
+    <div class="praxis-grid">
+      <div class="praxis-card">
+        <div class="pc-header">
+          <span class="pc-icon">👩‍🏫</span>
+          <span class="pc-title">Lãnh đạo tập thể</span>
+        </div>
+        <div class="pc-desc">Lãnh đạo Ubuntu là <em>collective agency</em> — hiệu trưởng, giáo viên, phụ huynh, học sinh và cộng đồng cùng tham gia định hình chương trình học. Trường học có kỷ luật tốt nhất là trường thực hành Ubuntu nhất.</div>
+        <div class="pc-source">Letseka, 2011; Msila, 2008</div>
+      </div>
+      <div class="praxis-card">
+        <div class="pc-header">
+          <span class="pc-icon">📖</span>
+          <span class="pc-title">Học tập hợp tác</span>
+        </div>
+        <div class="pc-desc">Học sinh được khuyến khích làm việc cùng nhau qua chia sẻ và gắn kết — không cạnh tranh để loại trừ. Đánh giá qua đóng góp tập thể, không chỉ thành tích cá nhân.</div>
+        <div class="pc-source">Broodryk, 2006; Lefa, 2015</div>
+      </div>
+      <div class="praxis-card">
+        <div class="pc-header">
+          <span class="pc-icon">🤲</span>
+          <span class="pc-title">Hòa giải &amp; Tha thứ</span>
+        </div>
+        <div class="pc-desc">"No Future Without Forgiveness" (TRC) — tha thứ là điều kiện để cộng đồng học đường tiếp tục vận hành. Kỷ luật không phải trừng phạt mà là phục hồi quan hệ (<em>restorative justice</em>).</div>
+        <div class="pc-source">Lefa, 2015; TRC South Africa</div>
+      </div>
+      <div class="praxis-card">
+        <div class="pc-header">
+          <span class="pc-icon">⚖️</span>
+          <span class="pc-title">Công bằng &amp; Bao gồm</span>
+        </div>
+        <div class="pc-desc">Hiến pháp Nam Phi (1996) và CAPS/NCS nhúng các giá trị Ubuntu vào mục tiêu giáo dục: bình đẳng, phẩm giá, bao gồm (inclusivity) bất kể sắc tộc, giới tính, tôn giáo, khả năng.</div>
+        <div class="pc-source">Government Gazette No.20844; Broodryk, 2006</div>
+      </div>
+    </div>
+
+    <div class="cite-box">
+      <p><strong>Nguồn:</strong> Lefa, B. J. (2015). <em>Ubuntu in South African Education</em>. Faculty of Education and Social Sciences, Cape Peninsula University of Technology, Mowbray Campus, South Africa.</p>
+    </div>
+  </section>
+
+  <!-- §5 ─ UBUNTU TRONG CÔNG TÁC XÃ HỘI TOÀN CẦU -->
+  <section>
+    <h2>§5 — Ubuntu trong Công tác Xã hội Toàn cầu <span style="font-size:.8rem;font-weight:400;color:var(--text-muted)">(Udah et al., 2025)</span></h2>
+
+    <p>Udah et al. (2025) lập luận Ubuntu là <strong>khung phi thuộc địa hóa (decolonizing framework)</strong> cho công tác xã hội toàn cầu — thay thế cho sự thống trị của nhận thức luận Tây phương. Bốn giá trị/nguyên lý Ubuntu được khai thác qua kinh nghiệm sống từ Uganda, Kenya, Nigeria và Zimbabwe:</p>
+
+    <div class="vp-grid">
+      <div class="vp-card">
+        <div class="vp-title">Tương quan (Relationality)</div>
+        <div class="vp-example">Uganda: hệ thống totem — mỗi tộc chăm sóc một loài</div>
+        <div class="vp-desc">Tương quan ở ba mức: huyết thống → cộng đồng → xã hội. "Tất cả mọi thứ tồn tại trong tương quan — không thể hình dung một thực thể tồn tại bên ngoài mạng lưới này." (Tynan, 2021). Trong Uganda: <em>Abangana tibakanya</em> — "Những người ghét nhau không thể thịnh vượng." Phạt nặng nhất: bị cộng đồng cô lập — trong đau thương không ai đến giúp.</div>
+      </div>
+      <div class="vp-card">
+        <div class="vp-title">Trách nhiệm Tập thể (Collective Responsibility)</div>
+        <div class="vp-example">Kenya: Harambee — "góp mỗi người một ít, đủ cái lớn chung"</div>
+        <div class="vp-desc"><em>Ujamaa</em> (Tanzania — Nyerere, 1968): xã hội chủ nghĩa Châu Phi theo mô hình gia đình. <em>Harambee</em> (Kenya): cộng đồng đóng học phí cho trẻ nghèo. "Tôi là con người vì tôi thuộc về, tôi tham gia, tôi chia sẻ." (Tutu, 2000). Người nhận ân huệ không chỉ trả lại người cho — mà trả tiếp cho người khác trong mạng.</div>
+      </div>
+      <div class="vp-card">
+        <div class="vp-title">Công bằng Xã hội (Social Justice)</div>
+        <div class="vp-example">Nigeria (Igbo): ibuanyindanda — kiến Danda hợp lực vượt tải nặng</div>
+        <div class="vp-desc"><em>Eziokwu bu ndu</em> — "Sự thật là sự sống." <em>Ibuanyindanda</em> — bổ sung lẫn nhau, không ai đứng một mình. Công bằng Ubuntu: <em>aka nkwumoto</em> (tay sạch), <em>ikpe ziri ezi</em> (phán quyết đúng đắn) — bảo vệ người yếu khỏi người mạnh. Igbo proverb: "Kite đậu để Đại bàng đậu; kẻ nào không cho kẻ kia đậu, hãy gãy cánh đi."</div>
+      </div>
+      <div class="vp-card">
+        <div class="vp-title">Nhận diện &amp; Đáp lại (Recognition &amp; Reciprocity)</div>
+        <div class="vp-example">Zimbabwe: salibonani — "Chúng ta đã thấy nhau"</div>
+        <div class="vp-desc"><em>Nhimbe / Majana</em> (Shona) — luân phiên làm đồng nhau. <em>Mukando / Stokvel</em> — tiết kiệm luân phiên cộng đồng. <em>Chirere chichazokurerawo</em> — "Đứa trẻ sẽ chăm sóc lại bạn ngày mai." Lời chào Zimbabwe: <em>Ndinofara kana muchifarawo</em> — "Tôi khỏe khi bạn khỏe" — có thể là cửa mở cho buổi tham vấn xã hội.</div>
+      </div>
+    </div>
+
+    <div class="cite-box">
+      <p><strong>Nguồn:</strong> Udah, H., Tusasiirwe, S., Mugumbate, R., &amp; Gatwiri, K. (2025). Ubuntu philosophy, values, and principles: An opportunity to do social work differently. <em>Journal of Social Work</em>, pp. 1–19. https://doi.org/10.1177/14680173241312749</p>
+    </div>
+  </section>
+
+  <!-- §6 ─ SO SÁNH TRIẾT HỌC -->
+  <section>
+    <h2>§6 — So sánh Triết học (Comparative Matrix)</h2>
+
+    <p>Ubuntu đặt trong tương quan với các truyền thống triết học lớn — không phải để xếp hạng mà để nhận ra điểm xuất phát khác nhau:</p>
+
+    <div style="overflow-x:auto">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Chiều kích</th>
+          <th>Ubuntu 🌍</th>
+          <th>Phương Tây 🏛️</th>
+          <th>Nho giáo 🎋</th>
+          <th>Mạch Rễ 🇻🇳</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Điểm xuất phát</td>
+          <td>Cộng đồng ngang (<em>community</em>)</td>
+          <td>Cá nhân (Descartes, Locke)</td>
+          <td>Gia đình + Vai trò xã hội</td>
+          <td>Quan hệ <em>và</em> thời gian dọc</td>
+        </tr>
+        <tr>
+          <td>Bản sắc (<em>identity</em>)</td>
+          <td>Quan hệ ngang — "Ai tôi trong mạng người?"</td>
+          <td>Lý trí cá nhân tự tham chiếu</td>
+          <td>Thực thi vai trò (lễ nghĩa)</td>
+          <td>Mẫu quan hệ bền vững qua thời gian (nếp bản sắc)</td>
+        </tr>
+        <tr>
+          <td>Đạo đức nền</td>
+          <td>Chia sẻ — tăng cường kết nối</td>
+          <td>Quyền cá nhân (rights-based)</td>
+          <td>Lễ nghĩa, thứ bậc</td>
+          <td>Bảo tồn mạch quan hệ xuyên thế hệ</td>
+        </tr>
+        <tr>
+          <td>Quyền lực</td>
+          <td>Phục vụ — <em>servant leadership</em></td>
+          <td>Hợp đồng xã hội (Rousseau)</td>
+          <td>Thiên mệnh, thứ bậc Nho</td>
+          <td>Trách nhiệm với thế hệ (V) và hiện tại (H)</td>
+        </tr>
+        <tr>
+          <td>Tri thức</td>
+          <td>Tập thể — <em>orature</em>, kể chuyện</td>
+          <td>Cá nhân lý trí (<em>cogito</em>)</td>
+          <td>Truyền thừa từ thánh hiền</td>
+          <td>Mẫu hình tích lũy qua mạch cội dọc</td>
+        </tr>
+        <tr>
+          <td>Chiều thời gian</td>
+          <td>Tổ tiên → Hiện tại → Hậu thế (dọc) <em>nhưng</em> chủ yếu ngang đồng đại</td>
+          <td>Tuyến tính tiến bộ</td>
+          <td>Chu kỳ + phân cấp thế hệ</td>
+          <td>V ⊥ H — hai chiều trực giao, cùng cấu thành sự tồn tại</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- §7 ─ KẾT NỐI MẠCH RỄ -->
+  <section>
+    <h2>§7 — Kết nối với Mạch Rễ: Tương đồng &amp; Phân kỳ</h2>
+
+    <div class="boundary">
+      <div class="b-label">Boundary Statement — Phạm vi tuyên bố</div>
+      <ul>
+        <li><strong>Trang này KHÔNG tuyên bố:</strong> Ubuntu và Mạch Rễ là hai tên cho cùng một hệ thống.</li>
+        <li><strong>Trang này tuyên bố:</strong> Ubuntu và Mạch Rễ là hai hệ thống độc lập cùng thuộc loại hình Triết học Tương quan-Phân tán (Relational and Distributed Philosophy), với những điểm tương đồng có cơ sở (<em>structural homologies</em>) và những điểm phân kỳ quan trọng.</li>
+        <li><strong>Phân tích RCA 5 điểm phân kỳ chi tiết:</strong> xem <a href="mach_re_homologous.html" style="color:var(--terracotta)">trang Homologous Analysis</a>.</li>
+      </ul>
+    </div>
+
+    <h3>Tương đồng có cơ sở</h3>
+    <div class="resonance-grid">
+      <div class="res-card agree">
+        <div class="r-label">Tương đồng — Tiên Đề I</div>
+        <div class="r-title">Relational Ontology</div>
+        <div class="r-desc">Ubuntu: <em>"I am because we are."</em> — Mạch Rễ Tiên Đề I: <em>"Being(x) ≡ {R(x,y)}"</em> (Có Nhau Mới Có Mình). Cả hai đặt quan hệ làm điều kiện tồn tại — không phải thuộc tính phụ thêm vào một thực thể đã có sẵn.</div>
+      </div>
+      <div class="res-card agree">
+        <div class="r-label">Tương đồng — Tiên Đề III</div>
+        <div class="r-title">Ancestral-Descendant Axis</div>
+        <div class="r-desc">Ubuntu Tầng 5 (Tâm linh): trách nhiệm với tổ tiên và hậu thế. Mạch Rễ Tiên Đề III — Mạch Cội Dọc: trục V tổ tiên ↕ hiện tại ↕ hậu thế là chiều kích thời gian thứ hai (V ⊥ H). Cả hai đều thực hành Tiên Đề III — qua hai hình thức khác nhau.</div>
+      </div>
+      <div class="res-card agree">
+        <div class="r-label">Tương đồng — Tiên Đề V</div>
+        <div class="r-title">Distributed Memory</div>
+        <div class="r-desc">Ubuntu: tri thức và ký ức được lưu giữ qua <em>orature</em> (kể chuyện tập thể), không tập trung ở một cá nhân. Mạch Rễ Tiên Đề V — Giữ Mà Không Gom: mỗi nút lưu giữ một phần của mẫu — không cần trung tâm.</div>
+      </div>
+      <div class="res-card agree">
+        <div class="r-label">Tương đồng — Tiên Đề VII</div>
+        <div class="r-title">Emergent Collective</div>
+        <div class="r-desc">Ubuntu <em>ibuanyindanda</em> (Nigeria): kiến Danda hợp lực vượt tải nặng — điều không ai làm được một mình. Mạch Rễ Tiên Đề VII — Nổi Lên Có Hướng: hợp lại thành cái mới vượt trội tổng các phần.</div>
+      </div>
+    </div>
+
+    <h3>Phân kỳ quan trọng</h3>
+    <div class="resonance-grid">
+      <div class="res-card differ">
+        <div class="r-label">Phân kỳ — Chiều Thời gian</div>
+        <div class="r-title">Ngang vs Trực giao</div>
+        <div class="r-desc">Ubuntu chủ yếu là triết học quan hệ <em>ngang đồng đại</em> (horizontal synchronic) — "tôi và cộng đồng hiện tại." Chiều tổ tiên có, nhưng không được hệ thống hóa thành trục độc lập (V ⊥ H). Mạch Rễ đặt tính trực giao (orthogonality) làm điều kiện cấu trúc tồn tại.</div>
+      </div>
+      <div class="res-card differ">
+        <div class="r-label">Phân kỳ — Đơn vị mang</div>
+        <div class="r-title">Cộng đồng vs Mẫu quan hệ</div>
+        <div class="r-desc">Ubuntu: đơn vị mang bản sắc là <em>cộng đồng</em> (community) — thực thể tập thể. Mạch Rễ: đơn vị mang là <em>mẫu quan hệ</em> (relational pattern) — không phải nhóm người mà là cấu trúc kết nối, có thể tồn tại ngay cả khi cộng đồng tán mạn.</div>
+      </div>
+    </div>
+
+    <div class="connect-box">
+      <div class="label">Đọc thêm — RCA Sâu hơn</div>
+      <p>→ <a href="mach_re_homologous.html">🔬 RCA Homologous: Mạch Rễ 🇻🇳 vs Ubuntu 🇿🇦 vs Yoruba 🇳🇬 — 5 Điểm Phân Kỳ Gốc Rễ</a></p>
+      <p>Phân tích nguyên nhân gốc rễ (Root Cause Analysis) tại sao ba nền văn hóa cùng thực hành Tiên Đề III lại implement theo ba cách khác nhau: Entity Ontology vs Relational Ontology của tổ tiên, hướng mạch cội dọc, phản ứng với hiện đại hóa.</p>
+      <p style="margin-top:8px">→ <a href="axiom_3.html">Tiên Đề III — Mạch Cội Nguồn (Orthogonal Temporality)</a> — Cấu trúc triết học nền tảng của Mạch Rễ mà Ubuntu là một bằng chứng độc lập.</p>
+      <p>→ <a href="axiom_3_cultural_comparison.html">So sánh Đa văn hóa — 7 Quốc gia</a> — Việt Nam, Nhật Bản, Do Thái, Kurd, Zulu/Bantu, Ấn Độ, Ba Lan qua 6 chiều kích Mạch Cội Dọc.</p>
+    </div>
+  </section>
+
+  <!-- CITATIONS -->
+  <section style="margin-bottom:24px">
+    <h2>Tài liệu tham khảo (References)</h2>
+    <div class="cite-box">
+      <p>Lefa, B. J. (2015). <em>Ubuntu in South African Education</em>. Cape Peninsula University of Technology, Mowbray Campus, South Africa.</p>
+      <p>Udah, H., Tusasiirwe, S., Mugumbate, R., &amp; Gatwiri, K. (2025). Ubuntu philosophy, values, and principles: An opportunity to do social work differently. <em>Journal of Social Work</em>, pp. 1–19. https://doi.org/10.1177/14680173241312749</p>
+      <p>Mbigi, L. (1997). <em>Ubuntu: The African Dream in Management</em>. Knowledge Resources.</p>
+      <p>Samkange, S., &amp; Samkange, T. M. (1980). <em>Hunhuism or Ubuntuism: A Zimbabwe Indigenous Political Philosophy</em>. Graham Publishing.</p>
+      <p>Tutu, D. (2000). <em>No Future Without Forgiveness</em>. Doubleday.</p>
+      <p>Ramose, M. B. (2002). The philosophy of Ubuntu and Ubuntu as a philosophy. In P. H. Coetzee &amp; A. P. J. Roux (Eds.), <em>Philosophy from Africa</em> (2nd ed., pp. 230–238). Oxford University Press.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ── BOTTOM NAV ── -->
+<div class="bottom-nav">
+  <a href="axiom_3.html" class="secondary">← Tiên Đề III</a>
+  <a href="axiom_3_cultural_comparison.html" class="secondary">← So sánh Đa văn hóa</a>
+  <a href="mach_re_homologous.html">RCA Homologous (Ubuntu &amp; Yoruba) →</a>
+</div>
+
+<footer>
+  <p>🌿 Mạch Rễ · <a href="index.html">Tổng quan</a> · <a href="axiom_3.html">Tiên Đề III</a> · <a href="axiom_3_cultural_comparison.html">So sánh Đa văn hóa</a> · <a href="mach_re_homologous.html">Homologous</a> · <a href="what.html">Là gì</a></p>
+  <p style="margin-top:8px;font-size:.65rem;color:#aaa">Nguồn: Udah et al. (2025) DOI:10.1177/14680173241312749 · Lefa (2015) CPUT · Mbigi (1997) · Samkange (1980)</p>
+</footer>
+
+</body>
+</html>
