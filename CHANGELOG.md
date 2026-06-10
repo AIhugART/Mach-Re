@@ -1,5 +1,23 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — Comprehensive RCA Review + Cross-Contradiction Check + HTML Sync · RCA 4.6–5.0/5
+
+**Symptom:** Sau khi hoàn thành evidence enrichment (Sessions A–E, 6 evidence files, 11 annotations vào `axiom_spec.md`), chưa có comprehensive review pass để verify: (a) mỗi annotation có vượt qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 không; (b) các annotation có contradiction chéo không; (c) HTML files (`axioms.html`, `axiom_3.html`) đã được sync với `axiom_spec.md` chưa.
+
+**Root (Round 3):** Framework claim "mọi claim phải qua RCA gate" nhưng bản thân các annotation — là claim về mối quan hệ giữa ca dao corpus và tiên đề — chưa được audit tập trung sau khi tạo. Đây là gap trong quy trình: tạo annotation → verify ngay lúc tạo (đã làm) nhưng chưa verify toàn bộ annotation set như một tập hợp (cross-contradiction, drift with HTML).
+
+**Fix — 3-phase comprehensive review (plan `2026-06-09_plan_ca_dao_evidence_enrichment.md` §PIR):**
+
+*Phase 1 — RCA từng annotation:* Tất cả 11 annotations (5 nguồn: Q1/Q2/Q3/Nam An/ca dao biến dịch) được áp dụng 3-round RCA × 5-Why × scoring gate. Kết quả: tất cả ≥ 4.6/5, trên threshold 4/5. Không annotation nào cần sửa. Scores: A1=5.0, A2=4.8, A3=5.0, A4=4.6, A5=5.0, A6=4.6, A7=5.0, A8=5.0, A9=4.6, A10=5.0, A11=5.0.
+
+*Phase 2 — Cross-contradiction check:* Within-axiom (I/II/III/IV pairs) + cross-axiom (V↔I, VIII↔III, II↔IV) + BRIDGE-II-III check. Kết quả: 0 contradictions found. All annotations complementary.
+
+*Phase 3 — HTML sync:* `axioms.html` (7 edits): +§0.0 "Hội tụ độc lập", +Vietnamese prior-art I/II/III/IV, +V meta-evidence, VIII Neo A-yếu→A-trung bình. `axiom_3.html` (1 edit): +Bằng chứng thực nghiệm III (Q2 + Nam An). `axiom_spec.md`: NO CHANGES (all annotations pass RCA gate). `axiom_conflict.md`: NO CHANGES (no new contradictions). `plan/2026-06-09_plan_ca_dao_evidence_enrichment.md`: +Post-Implementation Review (§PIR) documenting full RCA results.
+
+**RCA scores (Phase 1 annotation audit):** Range 4.6–5.0/5 · Mean 4.87/5 · All ≥ threshold 4/5.
+
+**Lesson learned:** HTML drift risk — `axioms.html` was missing all 11 Vietnamese annotations despite them being in `axiom_spec.md` since Sessions A–E. Future process should include HTML sync as part of evidence enrichment workflow, not as separate phase.
+
 ## 2026-06-10 — Ca Dao Evidence Enrichment: Sessions A–E · Thêm 10 annotations vào axiom_spec.md · RCA 4.6–5.0/5
 
 **Symptom:** `axiom_spec.md` §I, §II, §III, §IV, §V, §VIII Prior-art chỉ có Western theory anchors (Luhmann, Ashby, Lévi-Strauss, von Foerster…) và lý thuyết Phật giáo. Không có Vietnamese empirical instances — instances quan sát được trong thực tiễn dân gian Việt Nam cho từng tiên đề.

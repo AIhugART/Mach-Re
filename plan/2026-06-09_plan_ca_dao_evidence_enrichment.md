@@ -3,7 +3,7 @@
 > **Ngày:** 2026-06-09 · **Cập nhật:** 2026-06-10  
 > **Nguồn gốc:** [RCA Ca Dao Tục Ngữ Coverage](file:///C:/Users/PC/.gemini/antigravity-ide/brain/2d7cc985-3474-4277-8e16-b61033391131/rca_ca_dao_tuc_ngu_coverage.md) (cùng ngày)  
 > **Nguyên tắc:** KHÔNG mở rộng hệ tiên đề — chỉ làm giàu bằng chứng thực nghiệm (evidence enrichment).  
-> **Trạng thái:** ĐÃ DUYỆT — thêm H6 (2026-06-10, RCA 4.6/5) · thêm nguồn học thuật S1–S3 (2026-06-10, S1=5.0/5 ✅ S2=4.6/5 ✅ S3=3.0/5 ❌) · **PHASE 0 Pre-read DONE (2026-06-10)** — xem §PHASE 0 bên dưới.
+> **Trạng thái:** **HOÀN THÀNH TOÀN BỘ ✅** — tất cả 7 hạng mục (H1–H7) + 6 evidence files + 11 annotations + comprehensive RCA review + cross-contradiction check + HTML sync. **Ngày đóng:** 2026-06-10.
 
 ---
 
@@ -404,3 +404,58 @@ Tuần 3+: H3 (T.bình, 4.6/5)
 | **[S1] Jan Assmann** — *Cultural Memory and Early Civilization* (Cambridge UP, 2011) · `[academic source — RCA 5.0/5 ✅]` | [Assmann_Cultural_Memory_Early_Civilization.md](file:///c:/Stable_Diffusion/MACH_RE/documents/public_documents/Assmann_Cultural_Memory_Early_Civilization.md) | **H3** (III Prior-art anchor: "cultural memory" = V-axis 3,000yr · "communicative memory" = H-axis 80–100yr → academic vocabulary cho V⊥H) · **H1** (VIII: cultures "respond creatively" = reflexivity) · **H7** (V: memory as "interhuman interaction" = distributed, không tập trung) |
 | **[S2] Wetzel, D.J.** — *Halbwachs: Collective Memory and Forgetting* (2020, review article) · `[secondary review source — RCA 4.6/5 ✅ — cite primary Halbwachs cho formal paper citation]` | [Maurice_Halbwachs_Collective_Memory_and_Forgetting.md](file:///c:/Stable_Diffusion/MACH_RE/documents/public_documents/Maurice_Halbwachs_Collective_Memory_and_Forgetting.md) | **H3** (III contrast: Halbwachs "present-centered reconstruction" ≠ V-axis · cung cấp Assmann–Halbwachs critique vocabulary · canonical statement cho lý do III ≠ Halbwachs) |
 | **[S3] Jordan-Baker, C.** — *On Cliché: Expression, Cognition and Understanding* · `[background reference — RCA 3.0/5 ❌ — DƯỚI threshold — KHÔNG dùng làm evidence source]` | [On_Cliche_Expression_Cognition_and_Understanding.md](file:///c:/Stable_Diffusion/MACH_RE/documents/public_documents/On_Cliche_Expression_Cognition_and_Understanding.md) | Chỉ tham khảo nếu cần phân biệt proverb (ca dao — informationally rich) ≠ cliché (stored unit — informationally impoverished theo Jordan-Baker). Gap filled: không có. Không gán evidence label cho bất kỳ tiên đề nào. |
+
+---
+
+## Post-Implementation Review — Comprehensive RCA · 2026-06-10
+
+> **Mục đích:** Áp dụng 3-round RCA × 5-Why × scoring gate ≥ 4/5 cho toàn bộ 11 annotations trong `axiom_spec.md`, kiểm tra contradiction chéo, và đồng bộ HTML.
+
+### PIR.1 — Annotation Inventory & RCA Scores
+
+| # | Axiom | Source | Annotation Key | RCA Score | Decision |
+|---|---|---|---|---|---|
+| A1 | I | Q2 §B | R_place: R(người, tiếng chuông/địa danh) ∈ RP(S) | **5.0/5** | ✅ KEEP |
+| A2 | I | Nam An | Corpus architecture = R_place principle; "Thân em như chẹn lúa đòng đòng" | **4.8/5** | ✅ KEEP |
+| A3 | II | Q1 (thẩm mỹ) | "nết" = behavioral structural invariant; "Cái nết đánh chết cái đẹp" | **5.0/5** | ✅ KEEP |
+| A4 | II | Q3 §III | "Dân tộc tính" = structural source; "nếp sống" = living structural pattern | **4.6/5** | ✅ KEEP |
+| A5 | III | Q2 | "Cây có cội sông có nguồn" = existence condition; NTL corroborates | **5.0/5** | ✅ KEEP |
+| A6 | III | Nam An | Non-human V-axis: "Cáo chết ba năm quay đầu về núi"; cosmic structure | **4.6/5** | ✅ KEEP (minor scope note) |
+| A7 | IV | Q2 | Lévi-Strauss convergent: "mọi ảnh hưởng... không thể đồng hóa" | **5.0/5** | ✅ KEEP |
+| A8 | IV | Q3 | Operational instances: Lão/Nho absorbed↔compatible, rejected↔incompatible | **5.0/5** | ✅ KEEP |
+| A9 | V | Oral corpus | Meta-evidence: vô danh, phi-tập-trung, dị bản = distributed holding | **4.6/5** | ✅ KEEP (minor scope note) |
+| A10 | VIII | Q1 (châm biếm) | 11 ca dao châm biếm vô danh = VIII mechanism; A-yếu → A-trung bình | **5.0/5** | ✅ KEEP |
+| A11 | R | Q1 (biến dịch) | §0.0: Convergent discovery — folk epistemology asks R independently | **5.0/5** | ✅ KEEP |
+
+> **Tất cả 11 annotations ≥ 4.6/5 — trên threshold 4/5. Không annotation nào cần sửa.**
+
+### PIR.2 — Cross-Contradiction Check Results
+
+| Check Type | Pairs | Result |
+|---|---|---|
+| **Within-axiom** | A1↔A2 (I), A3↔A4 (II), A5↔A6 (III), A7↔A8 (IV) | ✅ ALL COMPLEMENTARY |
+| **Cross-axiom** | A9↔A1/A2 (V distributed vs I R_place), A10↔A5/A6 (VIII self-criticism vs III V-axis), A4↔A8 (II invariant vs IV permeability) | ✅ NO CONTRADICTIONS |
+| **Bridge check** | All annotations vs BRIDGE-II-III (saṃvṛtisat + transcendental condition) | ✅ ALL PASS |
+
+> **Không phát hiện contradiction chéo nào. Tất cả annotation tương hỗ (complementary), không annotation nào mâu thuẫn với phát biểu tiên đề hoặc annotation khác.**
+
+### PIR.3 — HTML Synchronization
+
+| File | Edits | Details |
+|---|---|---|
+| `axioms.html` | 7 edits | +§0.0 "Hội tụ độc lập" section · +Vietnamese prior-art I/II/III/IV · +V meta-evidence · VIII Neo A-yếu→A-trung bình |
+| `axiom_3.html` | 1 edit | +Bằng chứng thực nghiệm từ corpus ca dao (Q2 + Nam An) trong Section 8 |
+
+### PIR.4 — Files NOT Modified
+
+- `axiom_spec.md` — NO CHANGES (all annotations ≥ 4.6/5, no contradictions, no scope violations requiring fix)
+- `axiom_conflict.md` — NO CHANGES (no new contradictions found)
+- All 6 `review/evidence_*.md` files — NO CHANGES (already verified in prior sessions)
+- Other HTML files (`what.html`, `index.html`, etc.) — NO CHANGES (no III-specific evidence to add)
+
+### PIR.5 — Lessons Learned
+
+1. **Annotation quality is high:** All 11 annotations from 5 independent sources (Q1/Q2/Q3/Nam An/ca dao biến dịch) score ≥ 4.6/5 — evidence that the 3-round RCA × 5-Why filter applied during creation was effective.
+2. **Complementarity is strong:** Within-axiom annotation pairs (I: individual poems + corpus architecture; II: folk aesthetics + scholarly corroboration; III: human existence condition + non-human cosmic structure; IV: abstract convergent + concrete historical) show deliberate complementary design, not accidental overlap.
+3. **BRIDGE-II-III holds:** No annotation crosses the saṃvṛtisat/transcendental condition boundary — the bridge design is robust against empirical enrichment.
+4. **HTML drift risk:** `axioms.html` was significantly behind `axiom_spec.md` (missing all 11 Vietnamese annotations). Future process should include HTML sync as part of the evidence enrichment workflow, not as a separate phase.
