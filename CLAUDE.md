@@ -181,7 +181,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
 - Apply the mandatory principle "rebuild with carry-forward" (replaces the former "extend, not overwrite" rule; RCA finding 2026-06-06, score ≥ 4/5). For **unpublished / still-being-derived** content (the axiom system, internal mappings), clean overwrite and from-scratch re-derivation are **permitted** — preserving the old structure is not required. Binding condition: **before deleting or overwriting, declare an explicit "Carry-Forward Set"** — a named list of the assets (claims, definitions, falsification conditions, methodological compass) eligible to be carried over. Every item in the set is a *candidate that must survive re-validation through the RCA gate*, not an automatic keep; anything not in the set defaults to dropped (reference-only). For **published / externally-depended-upon** content, still prefer extend, and overwrite only when the user explicitly requests it. The default Carry-Forward Set lives in `plan/dictionary_rule.md §7`.
 
-### Paper & Publication Rules (sourced from `papers/CLAUDE_REF.md`)
+### Paper & Publication Rules
 
 > Áp dụng khi viết, sửa, hoặc review bất kỳ paper nào trong `papers/`.
 
@@ -204,7 +204,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 | Literature lookup | `literature-search-arxiv`, `literature-search-europepmc`, `literature-search-openalex` | Tìm paper theo keyword, DOI, author |
 | Deep research | `deep-research` | Autonomous research tasks: plan → search → read → synthesize |
 
-**Tier 3 — Quy tắc bắt buộc (carry-forward từ `papers/CLAUDE_REF.md`):**
+**Tier 3 — Quy tắc bắt buộc:**
 
 1. **ESP trước khi viết** — mọi paper phải qua Layer E (RCA Stack + Claim Ladder + Boundary Statement) TRƯỚC KHI viết prose. Không skip.
 2. **RCA trước khi sửa claim** — mọi claim trong paper phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (cùng rubric §RULE ZERO ở trên).
