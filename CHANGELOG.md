@@ -1,5 +1,25 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: paper_005.md + paper_005.html — Sync với codebase mới + Bảng Nguồn Trích Dẫn · RCA 4.8/5
+
+**Symptom:** `paper_005.md` và `paper_005.html` thiếu ba evidence mới từ codebase (Yoruba *ìwà* [13], ca dao biến dịch [14], Mệnh Đề F [12]), chưa có inline `[N]` citation markers, và TÀI LIỆU THAM KHẢO chưa được chuyển thành bảng Nguồn Trích Dẫn đánh số APA — vi phạm CLAUDE.md Document Contract Rules.
+
+**Root (Round 3):** Paper được viết trước khi (a) Yoruba evidence được thêm vào `axiom_spec.md` §II, (b) ca dao biến dịch convergent discovery (§0.0) được thêm, (c) Mệnh Đề F được derive, và (d) Rule #12 (Citation Table) được ban hành trong CLAUDE.md (2026-06-10). Paper không được retroactively sync với codebase evolution.
+
+**Fix — 5 nhóm thay đổi (tất cả ≥ 4/5 qua RCA gate):**
+
+1. **§4.1 — Yoruba *ìwà* [13] + Ubuntu [15]:** Thêm một câu về triết học Yoruba (Peel 2000) như hội tụ độc lập cho relational ontology. Thêm `[15]` marker cho Ubuntu (Udah et al. 2025). RCA 5.0/5.
+
+2. **§4.2 — Ca dao biến dịch [14] + Phan Ngọc [3]:** Thêm convergent evidence từ ca dao biến dịch Q1: "Càng thắm thì lại càng phai / Thoang thoảng hoa lài càng được thơm lâu" = phát biểu phi-hình-thức của II. Thêm `[3]` marker cho Phan Ngọc. RCA 4.8/5.
+
+3. **§4.3 — Mệnh Đề F [12]:** Thêm giải thích cấu trúc: tại sao bản sắc Việt Nam không tan rã — dù A và C nhiều lần đạt ngưỡng cao, điều kiện B (mạch cội dọc qua gia đình/dòng họ/thực hành dân gian) không bao giờ bị phá vỡ hoàn toàn → ba điều kiện F không đồng thời. RCA 4.8/5.
+
+4. **Inline `[N]` markers (12 vị trí):** Abstract [12], Cadière [1], Đào Duy Anh [2], Ashby [4], Hountondji [6], Oruka [9], Wiredu [7], Matilal [8], Phan Ngọc [3], Yoruba [13], ca dao [14], Ubuntu [15], Mệnh Đề F [12], Tiên Đề VIII [12]. RCA 4.8/5.
+
+5. **Bảng Nguồn Trích Dẫn [1]–[15]:** APA-formatted numbered table thay thế TÀI LIỆU THAM KHẢO cũ. Mỗi entry có số duy nhất. HTML: `<a href="#nguon-N">[N]</a>` inline hyperlinks + `<td id="nguon-N">` anchors. Ghi chú về văn bản nguồn anonymous. RCA 5.0/5.
+
+**RCA score:** Correct 5 · Deep 5 · Feasible 4 · Conflict-risk 5 · Preservation 5 → **4.8/5.**
+
 ## 2026-06-10 — R-4: what.html — EAP Cross-Cultural Calibration (Joseon Buddhism + Meiji Japan) · RCA 4.6/5
 
 **Symptom:** Khung EAP trong `what.html` có duy nhất một neo hiệu chuẩn (Bắc thuộc) — được xây dựng từ trường hợp Việt Nam. EAP chưa có out-of-sample test: falsification condition vận hành được về nguyên tắc nhưng chưa được kiểm tra thực tế.
