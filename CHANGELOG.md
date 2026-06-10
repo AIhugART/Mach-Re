@@ -1,5 +1,30 @@
 # Changelog — Mạch Rễ
 
+## 2026-06-10 — RCA: Áp dụng Document Contract Rules (Citation Table + Dictionary Fixes) cho toàn bộ 18 HTML · RCA 4.8/5
+
+**Symptom:** 17/18 HTML files có external citations nhưng không có bảng "Nguồn Trích Dẫn" APA-formatted. Không file nào có inline `<a href="#nguon-N">[N]</a>` hyperlink hoặc `id="nguon-N"` anchor. 5 dictionary rule violations (absolute universals, composite self-scores) trong các file chính. Vi phạm CLAUDE.md Paper Rule #12 và dictionary_rule.md §1, §5.
+
+**Root (Round 3):** Rule #12 mới được thêm vào CLAUDE.md (2026-06-10) nhưng chưa retroactive cho HTML files hiện có. Framework claim "mọi claim phải trace về nguồn" nhưng HTML output không có enforcement mechanism.
+
+**Fix — 2-phase audit:**
+
+*Phase 1 — Citation Tables (18/18 files):* Section "Nguồn Trích Dẫn" + `id="nguon-N"` APA entries. `when.html`: "không có trích dẫn" statement. `ubuntu.html`: full inline `[N]` hyperlinks (model). Top citation files: `axiom_3.html` (10), `axioms.html` (7), `luu_tru.html` (5). Cũng fix "nguồn chân lý duy nhất" → neutral wording tại footer `axioms.html`, `axiom_1.html`. Master registry: `plan/add_citation_tables.py`.
+
+*Phase 2 — Dictionary Violations (5/5 fixed, all ≥4/5):*
+| # | File | Fix | RCA |
+|---|---|---|---|
+| 2.1 | `what.html:451` | "Điểm Yếu Duy Nhất" → "Điểm Yếu Chính" | 4.6 |
+| 2.2 | `why.html:300` | "Không có tiền lệ" → "Ít có tiền lệ so sánh trực tiếp" | 4.8 |
+| 2.3 | `index.html:301` | "lời giải thích khả dĩ duy nhất" → scoped + "nguồn chân lý" → neutral | 4.6 |
+| 2.4 | `how.html:310` | "Tổng điểm (trên 12)" → disclaimer định tính | 4.4 |
+| 2.5 | `axiom_conflict.html:242` | "Trung bình = 4.6/5" → qualitative | 4.6 |
+
+**RCA score:** Correct 5 · Deep 5 · Feasible 4 · Conflict-risk 5 · Preservation 5 → **4.8/5.**
+
+**Lesson:** HTML drift from rule changes unless automated. Future: khi thêm rule trong CLAUDE.md, kèm checklist "scan all HTML."
+
+---
+
 ## 2026-06-10 — DSH Phase 2 Cross-Cultural Verification · RCA 4.6/5 — Nâng trạng thái [empirical hypothesis] → [validated heuristic]
 
 **Symptom:** DSH được grounded hoàn toàn trong Phan Ngọc (Việt Nam). `DSH-3` tuyên bố "depth = structural distance, not content type" — tức claim cross-cultural applicability. Nhưng chưa có test nào ngoài Việt Nam → DSH vi phạm claim của chính nó.
