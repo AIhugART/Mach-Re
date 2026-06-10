@@ -13,6 +13,7 @@ on:
       - 'publish/**/*.html'
       - 'publish/**/*.css'
       - 'publish/**/*.js'
+      - 'papers/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
