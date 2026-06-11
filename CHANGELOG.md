@@ -3,6 +3,24 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 6: `who.html` + `when.html` — IX awareness labels · RCA 4.8/5
+
+**Symptom / gap:** `who.html` so sánh 9 chiều VN × Ubuntu × Yoruba mà không nhắc đến tầng tiếp xúc giữa các hệ (IX territory). `when.html` có Hòa Giải Việt-Mỹ = VVC canonical C1-min nhưng không labeled.
+
+**3-round RCA:**
+- Round 1: Hai trang không đề cập IX.
+- Round 2: who.html = ngữ cảnh inter-system (so sánh các hệ gặp nhau). when.html = empirical anchor của IX đang ẩn (unlabeled).
+- Round 3 (root): Empirical evidence cho IX ở when.html không có link traceability về axiom_9.html. Fix nhỏ: minimal mentions + links, không overwrite nội dung hiện có.
+- **Scoring gate: 4.8/5.**
+
+**Fix — 2 targeted edits (minimal):**
+- `who.html`: thêm callout box sau VIII paragraph — IX xuất hiện khi hai hệ đã-VIII gặp nhau; bảng so sánh = từng hệ đơn lẻ, tiếp xúc = tầng Interface
+- `when.html`: thêm câu label Hòa Giải Việt-Mỹ là VVC canonical C1-min — Việt Nam VIII, Mỹ chưa đủ VIII → P* hình thành asymmetric. Link → axiom_9.html
+
+**RCA score: 4.8/5.** Phase 6 → COMPLETE. Cổng Phase 7 (paper_009.html) mở.
+
+---
+
 ## 2026-06-11 — Phase 5: `axiom_spec.md` — SSOT tích hợp Tiên Đề IX · RCA 5/5
 
 **Symptom / gap:** `axiom_spec.md` là Single Source Of Truth. Hiện tại chỉ có I–VIII (3 tầng). IX đã tồn tại trong HTML nhưng không có trong SSOT → HTML không có căn cứ canonical.
