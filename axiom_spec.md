@@ -39,7 +39,7 @@ Chi tiết các câu ca dao biến dịch: `plan/2026-06-09_plan_ca_dao_evidence
 ### 0.1 Ba hệ neo (triangulation — `dictionary §7.1`)
 - **A — Phan Ngọc** (*Bản sắc văn hóa Việt Nam*, 1998, NXB Văn hóa - Thông tin): bản sắc = "kiểu lựa chọn / kiểu quan hệ" bền dưới nội dung đổi. (Phần I, Chương I, mục 1, tr.17-20 — định nghĩa văn hóa như "kiểu lựa chọn" và "mối quan hệ giữa thế giới biểu tượng với thế giới thực tại"; Chương II — bốn yêu cầu bất biến của tâm thức Việt Nam.)
 - **B — Ashby** (*Requisite Variety*) **+ Weick** (organizing / sensemaking / enactment / retrospect).
-- **C — Anattā / Pratītyasamutpāda / Śūnyatā** (nhận thức luận Phật giáo).
+- **C — Anattā / Pratītyasamutpāda / Śūnyatā** (nhận thức luận [mạch biết] Phật giáo).
 
 > Quy ước đọc: `[A·B·C]` = candidate hiện ra (gần khớp *cấu trúc*, không đồng nhất — §2 dictionary) ở hệ nào. ≥2/3 = mạnh. **Hội tụ là phép chống tùy tiện, KHÔNG phải bằng chứng.**
 

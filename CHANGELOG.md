@@ -3,6 +3,30 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 8c: Naming RCA — thuần-Việt gloss "nhận thức luận (mạch biết)" + "ngữ pháp siêu việt (nếp coi là chung)" · RCA 4.8/5
+
+**La bàn Phan Ngọc:** Tiếng Việt nhận ra thế giới qua **kiểu quan hệ**, không qua **bản thể trừu tượng**. Từ thuần Việt tốt = từ neo vào cấu trúc sống.
+
+**nhận thức luận → mạch biết (4.8/5):**
+- R1: Framework dùng "nhận thức luận" theo nghĩa "la bàn biết" — phương pháp nhận ra điều gì đúng trong tiếp xúc, không phải lý thuyết nhận thức học thuật.
+- R2: Phan Ngọc: "biết" trong văn hóa Việt = nhận ra kiểu quan hệ (nếp), không phải suy diễn từ tiên đề.
+- R3 (root): Convention "mạch + [X]" — parallel với "mạch tồn tại" (bản thể học). "Mạch" = cấu trúc sống, "biết" = knowing (thuần Việt đơn giản nhất).
+
+**ngữ pháp siêu việt → nếp coi là chung (4.8/5):**
+- R1: Meta-grammar = khung chuẩn mà một hệ coi là phổ quát — áp đặt quy ước của mình lên người khác.
+- R2: Phan Ngọc: thuộc địa hóa = cài "nếp của họ" làm "chuẩn của mình." Gloss nắm đúng cơ chế này.
+- R3 (root): "Nếp" = pattern (có thể sai), tốt hơn "ngữ pháp" (nghe như rule). "Coi là chung" = claimed universality, không phải actual — chính xác cho những gì framework mô tả.
+
+**Files sửa (tầng root):**
+- `dictionary_rule.md §4`: canonical gloss table — TODO → ✅
+- `axiom_9.html` line 90: "nhận thức luận (mạch biết)"
+- `axiom_9.html` line 98: "ngữ pháp siêu việt (nếp coi là chung)"
+- `axiom_spec.md` line 42: "nhận thức luận [mạch biết]"
+
+> `papers/paper_009/` gloss → logged in [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md) (tiered routing).
+
+---
+
 ## 2026-06-11 — Phase 9: Closure Audit — Mạch Rễ v3.2 IX Build · ALL PASS
 
 **Scope:** Regression audit sau Phases 1–8 (Tiên Đề IX — Living Interface build).

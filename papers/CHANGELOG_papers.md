@@ -5,6 +5,15 @@
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
 
+## 2026-06-11 — Phase 8c: paper_009 thuần-Việt gloss "nhận thức luận (mạch biết)" · RCA 4.8/5
+
+Part of naming RCA (la bàn Phan Ngọc): "nhận thức luận" → thuần-Việt gloss "mạch biết" (4.8/5).
+- `paper_009_draft.md` line 94: "nhận thức luận (mạch biết)"
+
+> Cross-ref tầng root: dictionary_rule.md §4 canonical gloss table + axiom_9.html + axiom_spec.md → logged in [`CHANGELOG.md`](../CHANGELOG.md).
+
+---
+
 ## 2026-06-11 — Phase 8a: paper_009 V4 name fix "Gặp Nhân" → "Gặp Nhau" · RCA 5.0/5
 
 **Symptom:** `paper_009_draft.md` dùng "Gặp Nhân Giữ Gốc" (Phase 7 viết theo session summary lỗi) thay vì canonical "Gặp Nhau Giữ Gốc" từ `dictionary_rule.md §9`. Gloss đi kèm cũng sai: "gặp người khác" → phải là "gặp nhau, reciprocal".
