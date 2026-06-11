@@ -4,6 +4,28 @@
 > **Liên kết:** Lịch sử toàn bộ papers → xem [`CHANGELOG_papers.md`](../CHANGELOG_papers.md); lịch sử toàn bộ dự án → xem [`CHANGELOG.md`](../../CHANGELOG.md) tại thư mục gốc.
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
+## 2026-06-11 — paper_005_v2: Thêm "Triết học" vào title tiếng Việt để xóa category ambiguity · RCA 5.0/5
+
+**Symptom (Round 1):** Title tiếng Việt ghi "truyền thống Tương quan-Phân tán" — thiếu từ phân loại "Triết học". Body dùng nhất quán "Triết học Tương quan-Phân tán" (17+ instances: dòng 14, 22, 26, 84, 98, 130…). Intra-document inconsistency ở vị trí dễ thấy nhất.
+
+**Mechanism (Round 2):** Paper lập luận rằng Cadière et al. mắc lỗi phạm trù vì dùng sai thước đo (Systematic Metaphysics để đo Relational-Distributed Philosophy). Nếu title paper cũng bỏ sót từ phân loại "Triết học", chính title mirror cái imprecision mà paper phê phán — một phiên bản thu nhỏ của lỗi phạm trù. "Tương quan-Phân tán" không có "Triết học" có thể bị đọc thành mô tả nhân học/xã hội học, không phải triết học.
+
+**Root (Round 3):** Vi phạm CLAUDE.md §Phân loại Khung nền — quy tắc mandatory: "Khi giới thiệu Mạch Rễ với người mới → luôn nêu rõ: Đây là triết học tương quan-phân tán." Title là lần giới thiệu đầu tiên → phải mang đầy đủ phân loại. Root cause: title kế thừa shorthand nội bộ ("Tương quan-Phân tán" ngầm hiểu là "Triết học Tương quan-Phân tán"), nhưng public-facing boundary không áp dụng shorthand nội bộ.
+
+**Fix (3 files + 1 changelog):**
+- `papers/paper_005/paper_005_v2.md`: Dòng 6 — thêm "Triết học" → "truyền thống Triết học Tương quan-Phân tán có nguồn gốc lâu đời"
+- `papers/paper_005/paper_005_v2.html`: Dòng 186 — đồng bộ với .md
+- `papers/paper_005/plan/paper_005_v2_plan.md`: Dòng 213 — đồng bộ title reference trong plan
+- `papers/paper_005/CHANGELOG_paper_005.md`: Entry này.
+
+**RCA score:** 5.0/5 (Correct 5 — real intra-document inconsistency, Deep 5 — touches mandatory self-classification rule, Feasible 5 — one-word addition, Conflict-risk 5 — removes existing contradiction, Preservation 5 — title gains precision, keeps natural flow).
+
+**Compass:** A (Phan Ngọc: "kiểu quan hệ" là structural invariant → "Triết học" đặt title đúng tầng cấu trúc) · B (Ashby/Weick: Requisite Variety mô tả bất kỳ hệ thích nghi → "Triết học" xác định loại hệ: vận hành ở tầng nhận thức luận) · C (Buddhist Epistemology: Pratītyasamutpāda/Anattā là tuyên bố triết học minh bạch → truyền thống được nhận diện phải mang epistemic weight tương đương).
+
+**Flag:** English title (dòng 8) "Ancient Relational-Distributed Tradition" cũng thiếu "Philosophical" — để dành cho RCA pass sau.
+
+---
+
 ## 2026-06-11 — paper_005_v2: Việt hóa toàn diện từ EN sang thuần Việt · RCA 5.0/5
 
 **Symptom (Round 1):** Bài báo viết bằng tiếng Việt về triết học Việt Nam nhưng chứa ~120 instances từ tiếng Anh phổ thông/học thuật chung (`proof-of-concept`, `peer-review`, `markers`, `pattern`, `framework`, `Reader`, `consensus`, `precedent`, `vocabulary`, `discourse`, `Section`, `substance`, `interlocutors`, `checkpoint`, `systemize`, `longevity`, `elaboration`, `hypothesis`, `scope`, `operationalizing`, `identity`, `institutions`, `node`, `context`, `network`, `consistency`, `completeness`, `memory`, `WHAT`/`WHY`, `canonical text`, `Dimension`, `Pattern`, `Consistency + Completeness`, `Survival + Adaptation under pressure`, `selection pressure`, `evolutionary pressure`, `distributed form`, `selection mechanism`, `Causal chain`, `conceptual framework`, `Research Questions`, `founding systematic text`, `WHY mechanism`, `relational-practical logic`, `systematic-metaphysical logic`, `document`, `documentation`, `corpus`, `Inter-system patterns`, `recurrent philosophical ritual`) — thay vì dùng từ thuần Việt đã có sẵn.

@@ -210,7 +210,7 @@ Facebook: https://www.facebook.com/xuanviet
 
 **Tiêu đề chính thức:**
 
-**Tiếng Việt:** Triết học Việt Nam qua góc nhìn lăng kính lỗi phạm trù: Từ nhận định "rỗng triết học" đến chứng minh một truyền thống Tương quan-Phân tán có nguồn gốc lâu đời
+**Tiếng Việt:** Triết học Việt Nam qua góc nhìn lăng kính lỗi phạm trù: Từ nhận định "rỗng triết học" đến chứng minh một truyền thống Triết học Tương quan-Phân tán có nguồn gốc lâu đời
 
 **Tiếng Anh:** Vietnamese Philosophy Through the Lens of Category Error: From the "Philosophically Empty" Claim to Evidence for an Ancient Relational-Distributed Tradition
 
