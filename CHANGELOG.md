@@ -3,6 +3,43 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — CLAUDE.md: Thêm rule "CHANGELOG phân tầng" (tiered changelogs) · RCA 4.8/5
+
+**Symptom:** Rule changelog trong CLAUDE.md là danh sách trường hợp riêng lẻ (enumerated case: papers/). `CHANGELOG_mv_002.md` tồn tại ngoài vùng phủ rule; tầng mới tạo ra trong tương lai sẽ không có quy tắc nào để theo.
+
+**Root (Round 3):** Thiếu thuật toán routing tổng quát (naming + vị trí + tầng gần nhất). Quy tắc dạng enumeration không scale và vi phạm traceability — lịch sử thay đổi phải tìm được một cách tất định, không phụ thuộc người ghi nhớ bullet nào.
+
+**5-Why (root một câu):** Quy tắc là danh sách case riêng lẻ thay vì thuật toán routing tổng quát, nên mỗi tầng mới đều nằm ngoài vùng phủ rule.
+
+**Fix (3 files):**
+- `CLAUDE.md §Document contract rules`: Thay bullet "Changelog cho papers/" bằng rule tổng quát "CHANGELOG phân tầng" — gồm naming convention, vị trí, routing "phải và chỉ được", quy trình tạo tầng mới, bảng instances hiện có.
+- `publish/movie_script/mv_002/CHANGELOG_mv_002.md`: Cập nhật header → trỏ về rule tổng quát trong CLAUDE.md, kèm liên kết về root CHANGELOG.
+- `CHANGELOG.md` (file này): ghi entry infrastructure.
+
+**Scoring gate:**
+
+| Tiêu chí | Điểm | Ghi chú |
+|---|---|---|
+| Correct | 5 | Defect thật: mv_002 hoạt động ngoài rule |
+| Deep | 5 | Fix chạm root — thay enumeration bằng routing algorithm |
+| Feasible | 5 | 3 file documentation, không chạm code/symbol |
+| Conflict-risk | 4 | Gộp papers/ instance vào rule tổng quát, giữ nguyên hiệu lực |
+| Preservation | 5 | Toàn bộ papers/ rule được giữ như một instance |
+
+**RCA score: 4.8/5 → FIX.**
+
+## 2026-06-11 — Review plan v3.1 Axiom IX → plan v3.2 (8 findings F1–F8, 7 fixed / 1 kept) · RCA trung bình 4.6/5
+
+**Symptom:** Plan v3.1 (`plan/2026-06-11-mach-re-v3.1-axiom-ix-build-plan.md`) chứa mâu thuẫn nội tại về điều kiện C1: Part 5 yêu cầu "cả hai hệ chạy Tiên Đề VIII", Part 7 ghi "ít nhất một hệ", trong khi bằng chứng chủ lực (Việt Nam, Part 6) chỉ đúng theo cách đọc "ít nhất một" — VVC chính sẽ *bác bỏ* chính tiên đề nó kiểm chứng. Kèm 7 defect khác: thiếu Bảng Nguồn Trích Dẫn, tiếng Việt mất dấu, thiếu tên thuần Việt canonical cho Tiên Đề IX, 4 claim tuyệt đối không nguồn, chẩn đoán Mỹ–Trung không mark `[interpretation]` dưới footer "Non-political", roadmap thiếu governance rules 2026-06-10.
+
+**Root (Round 3):** v3.1 tuyên bố "nothing in v3.0 retracted" → điều kiện kích hoạt C1 bị đóng băng ngay khi primary case mới (C1 bất đối xứng) đòi hỏi re-derive nó; checklist Phase 0 kế thừa từ template v3.0 có trước các document contract rules 2026-06-10.
+
+**Fix:** Tạo `plan/2026-06-11-mach-re-v3.2-axiom-ix-build-plan.md` — review record + amendments V1–V6: C1 phân bậc (C1-full/C1-min/C1-zero, có neo Ashby Requisite Variety; thu hẹp Open Question 1), scoped 4 claim theo `dictionary_rule.md` §1/§3, khôi phục dấu tiếng Việt (quy tắc ràng buộc), demote "Giao Diện Sống" xuống gloss + Phase 1b naming RCA cho cặp tên thuần Việt, quy tắc register chẩn đoán (structural diagnostic ≠ political evaluation), disclaimer §5 cho bảng triangulation. Roadmap 8 phase → 10 phase (+1b naming/§9, +9 closure audit) kèm cross-phase governance checklist. F8 (điểm triangulation dạng số) KEPT 3.2/5 — giữ nhất quán với protocol Tiên Đề III, flag review cấp framework.
+
+**Carry-Forward Set:** EAP + usage rules, kiến trúc Vietnamese-first, tách Source/Model, formal statement Tiên Đề IX (kèm scope note V1), C2–C4, falsification condition, triangulation, Open Questions 2–5, Appendices A–B. Overridden: strict-C1, 4 absolute claims, ASCII Vietnamese, naming cũ, register Part 6, checklist Phase 0 cũ.
+
+**RCA score:** F1 4.6 · F2 5.0 · F3 4.8 · F4 4.6 · F5 4.4 · F6 4.2 · F7 4.8 → FIX; F8 3.2 → KEEP. La bàn: A — Phan Ngọc (F3, F4), B — Ashby/Weick (F1, risk model), C — Pramāṇa/Nhị đế (F2, F5, F6).
+
 ## 2026-06-10 — CLAUDE.md: Chuẩn hóa canonical terms Tiên Đề III (Mạch Cội Nguồn / Mạch Cội Dọc) · RCA 5.0/5
 
 **Symptom:** CLAUDE.md §Tiên Đề III dùng "Thời gian trực giao" (literal translation) cho Orthogonal Temporality thay vì canonical term "Mạch Cội Nguồn"; "mạch cội dọc" viết thường thiếu canonical capitalization.
