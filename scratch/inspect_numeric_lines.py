@@ -27,15 +27,17 @@ def find_numeric_lines(file_path):
                 next_lines = [lines[i].strip() for i in range(idx+1, min(len(lines), idx+3))]
                 matches.append((line_num, val_int, line.strip(), prev_lines, next_lines))
                 
-    print(f"Found {len(matches)} lines containing only a printed page number:")
-    for lm, val, content, prev_l, next_l in matches[:15]:
-        print(f"--- Line {lm} (Value: {val}) ---")
-        print(f"Before: {prev_l}")
-        print(f"Line:   '{content}'")
-        print(f"After:  {next_l}")
-    if len(matches) > 15:
-        print(f"\n... and {len(matches) - 15} more.")
-
+    out_file = 'scratch/all_numeric_lines.txt'
+    with open(out_file, 'w', encoding='utf-8') as out_f:
+        out_f.write(f"Total lines in source: {len(lines)}\n")
+        out_f.write(f"Found {len(matches)} lines containing only a printed page number:\n\n")
+        for lm, val, content, prev_l, next_l in matches:
+            out_f.write(f"--- Line {lm} (Value: {val}) ---\n")
+            out_f.write(f"Before: {prev_l}\n")
+            out_f.write(f"Line:   '{content}'\n")
+            out_f.write(f"After:  {next_l}\n\n")
+            
+    print(f"Audit completed. Results written to {out_file}")
 
 if __name__ == '__main__':
     find_numeric_lines('documents/public_documents/BanSacVanHoaVietNam_Phan_Ngoc.md')

@@ -1,3 +1,42 @@
+## 2026-06-12 — RCA Cross-Link `relational_and_distributed_philosophy.html` ↔ `what.html` ✅
+
+**Trigger:** User request: "RCA link trang này `relational_and_distributed_philosophy.html` với `what.html`"
+**Triple compass:** A (Phan Ngọc — tiếp biến, bản sắc quan hệ) · B (Ashby/Weick — Requisite Variety, sensemaking) · C (Buddhist Epistemology — Pratītyasamutpāda: nodes exist only through relations)
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4/5 on each link insertion
+
+**Root cause:** The HTML documentation violated Tiên Đề I (Relational Ontology) applied reflexively — knowledge nodes (`what.html`, `relational_and_distributed_philosophy.html`) existed as isolated entities connected only by peripheral navigation chrome, not by explicit content-level hyperlinks. The authoring workflow treated each `.html` page as a self-contained document rather than a node in a distributed knowledge graph.
+
+### RCA scores per link insertion
+
+| # | Link inserted | File | RCA Score | Root cause addressed |
+|---|---|---|---|---|
+| L1 | "văn hóa lúa nước Việt Nam" → `what.html` | `relational_and_distributed_philosophy.html` L214 | 5.0/5 | First Vietnam reference in taxonomy argument — reader had no clickable path to learn what Mạch Rễ is |
+| L2 | "Mạch Rễ" + "Tiên Đề V — Tự Nhìn Thấy Mình" → `what.html` | `relational_and_distributed_philosophy.html` L323 | 5.0/5 | Direct framework invocation in concluding section — highest-priority content link gap |
+| L3 | "Mệnh Đề 1: Giữ mà không gom" → `what.html` | `relational_and_distributed_philosophy.html` L240 | 5.0/5 | Technical axiom reference in concept card — reader had no path to axiom definition |
+
+### 5-Why Trace (L2 — highest-priority gap)
+
+- **Why 1:** No content-level links from `relational_and_distributed_philosophy.html` prose to `what.html` → Prose references to "Mạch Rễ" are plain `<p>` text.
+- **Why 2:** Plain text references → Page authored with "textbook chapter" mental model (sequential reading: index → what → relational).
+- **Why 3:** Sequential assumption → Navigation breadcrumb treated as sufficient cross-reference.
+- **Why 4:** Nav chrome substituting for content links → HTML knowledge graph not designed with framework's own relational ontology principle.
+- **Why 5 (root):** **Tiên Đề I violated reflexively: knowledge nodes existed as isolated entities rather than a connected network where each node defines the other through explicit content-level hyperlinks.**
+
+### Files changed
+
+| File | Changes |
+|---|---|
+| `relational_and_distributed_philosophy.html` | +3 content-level hyperlinks → `what.html` (L214, L240, L323) |
+
+### Existing links (reverse direction, verified unchanged)
+
+| From | To | Type |
+|---|---|---|
+| `what.html` §6 | `relational_and_distributed_philosophy.html` | 2× content-level links (philosophical category paragraph) |
+| `relational_and_distributed_philosophy.html` nav/footer | `what.html` | 3× structural chrome links |
+
+**Verification:** `what.html` already had adequate reverse links in §6 "Vị trí trong bản đồ triết học toàn cầu" — no changes needed.
+
 ## 2026-06-11 — Refactor Ky Phap Phan Tang Theo `raw/axiom-chart.html` (Quyet Dinh 4) ✅
 
 **Trigger:** Nguoi dung chot: so La Ma CHI danh cho Tien De; Menh De Dan Xuat danh so La tinh 1–4; cap duoi nua khong danh so phan cap.

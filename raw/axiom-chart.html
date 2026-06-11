@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quan hệ các khái niệm Tiên đề</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --border: #1e1e2e;
+    --axiom: #c8a96e;
+    --axiom-glow: rgba(200,169,110,0.25);
+    --theorem: #7eb8d4;
+    --theorem-glow: rgba(126,184,212,0.2);
+    --lemma: #8fd4a8;
+    --lemma-glow: rgba(143,212,168,0.2);
+    --corollary: #d4a0c8;
+    --corollary-glow: rgba(212,160,200,0.2);
+    --proposition: #d4c87e;
+    --proposition-glow: rgba(212,200,126,0.2);
+    --system: #e05555;
+    --system-glow: rgba(224,85,85,0.2);
+    --text: #e8e8f0;
+    --muted: #888899;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.6;
+  }
+
+  header {
+    padding: 40px 48px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: var(--axiom);
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+  }
+
+  header p {
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 0;
+    min-height: calc(100vh - 97px);
+  }
+
+  /* ── SVG Canvas ── */
+  .canvas-wrap {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg#graph {
+    width: 100%;
+    max-width: 720px;
+    height: 560px;
+    overflow: visible;
+  }
+
+  /* Edges */
+  .edge {
+    stroke-width: 1.5;
+    fill: none;
+    opacity: 0.45;
+    transition: opacity 0.3s, stroke-width 0.3s;
+  }
+  .edge.derives   { stroke: var(--theorem);     stroke-dasharray: none; }
+  .edge.supports  { stroke: var(--lemma);       stroke-dasharray: 4 3; }
+  .edge.implies   { stroke: var(--corollary);   stroke-dasharray: 2 4; }
+  .edge.redundant { stroke: var(--system);      stroke-dasharray: 6 3; stroke-width: 1; }
+  .edge.system    { stroke: var(--axiom);       stroke-dasharray: none; stroke-width: 2; }
+
+  .edge.highlight { opacity: 1; stroke-width: 2.5; }
+
+  /* Arrow markers */
+  marker path { }
+
+  /* Nodes */
+  .node { cursor: pointer; }
+
+  .node circle, .node rect {
+    transition: filter 0.25s, transform 0.25s;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .node:hover circle, .node:hover rect { transform: scale(1.08); }
+  .node.active circle, .node.active rect { transform: scale(1.12); }
+
+  .node text {
+    font-family: 'IBM Plex Mono', monospace;
+    pointer-events: none;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+
+  .node .label-vi {
+    font-size: 11px;
+    font-weight: 500;
+    fill: #fff;
+  }
+  .node .label-en {
+    font-size: 9px;
+    fill: rgba(255,255,255,0.5);
+    font-style: italic;
+  }
+  .node .badge {
+    font-size: 15px;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    border-left: 1px solid var(--border);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--surface);
+  }
+
+  .detail-box {
+    min-height: 220px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+    transition: border-color 0.3s;
+  }
+  .detail-box.active { border-color: var(--axiom); }
+
+  .detail-box .d-badge {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .detail-box .d-name-vi {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--axiom);
+    margin-bottom: 2px;
+  }
+  .detail-box .d-name-en {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+  }
+  .detail-box .d-desc {
+    font-size: 0.73rem;
+    line-height: 1.7;
+    color: #ccc;
+  }
+  .detail-box .d-props {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .detail-box .d-prop {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    background: var(--border);
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+  .detail-box .d-default {
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  /* Legend */
+  .legend { }
+  .legend h3 {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.68rem;
+    color: #aaa;
+  }
+  .legend-line {
+    width: 32px;
+    height: 2px;
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+  .legend-line.dashed { background: linear-gradient(90deg, currentColor 40%, transparent 40%); background-size: 6px 2px; }
+  .legend-line.dotted { background: linear-gradient(90deg, currentColor 25%, transparent 25%); background-size: 5px 2px; }
+
+  .note-box {
+    background: rgba(224,85,85,0.06);
+    border: 1px solid rgba(224,85,85,0.2);
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 0.68rem;
+    line-height: 1.7;
+    color: #bbb;
+  }
+  .note-box strong { color: var(--system); }
+
+  /* Pulse animation for axiom nodes */
+  @keyframes pulse-ring {
+    0%   { r: 34; opacity: 0.6; }
+    100% { r: 50; opacity: 0; }
+  }
+  .pulse-ring { animation: pulse-ring 2s ease-out infinite; }
+
+  @keyframes fadeIn { from { opacity:0; transform:translateY(4px);} to { opacity:1; transform:none; } }
+  .detail-box { animation: fadeIn 0.3s ease; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hệ thống khái niệm Tiên đề — Axiom</h1>
+  <p>Click vào nút để xem chi tiết · Toán học nền tảng</p>
+</header>
+
+<div class="main">
+  <div class="canvas-wrap">
+    <svg id="graph" viewBox="0 0 720 560">
+      <defs>
+        <!-- Arrow markers -->
+        <marker id="arr-theorem" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#7eb8d4" opacity="0.7"/>
+        </marker>
+        <marker id="arr-lemma" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#8fd4a8" opacity="0.7"/>
+        </marker>
+        <marker id="arr-corollary" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#d4a0c8" opacity="0.7"/>
+        </marker>
+        <marker id="arr-redundant" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#e05555" opacity="0.7"/>
+        </marker>
+        <marker id="arr-system" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#c8a96e" opacity="0.7"/>
+        </marker>
+
+        <!-- Glow filters -->
+        <filter id="glow-axiom">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="glow-soft">
+          <feGaussianBlur stdDeviation="2.5" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- ════ EDGES ════ -->
+
+      <!-- Hệ TĐ → Tiên đề A, B, C (system membership) -->
+      <path class="edge system" d="M360,90 L180,210" marker-end="url(#arr-system)"/>
+      <path class="edge system" d="M360,90 L360,210" marker-end="url(#arr-system)"/>
+      <path class="edge system" d="M360,90 L540,210" marker-end="url(#arr-system)"/>
+
+      <!-- Tiên đề → Định lý (derives) -->
+      <path class="edge derives" id="e-ax-th" d="M210,260 Q310,300 330,330" marker-end="url(#arr-theorem)"/>
+      <path class="edge derives" d="M360,260 L360,330" marker-end="url(#arr-theorem)"/>
+      <path class="edge derives" d="M510,260 Q420,295 390,330" marker-end="url(#arr-theorem)"/>
+
+      <!-- Định lý → Bổ đề (supports, ngược: bổ đề hỗ trợ định lý) -->
+      <path class="edge supports" d="M280,355 Q200,380 180,420" marker-end="url(#arr-lemma)"/>
+
+      <!-- Định lý → Hệ quả -->
+      <path class="edge implies" d="M400,355 Q480,380 500,420" marker-end="url(#arr-corollary)"/>
+
+      <!-- Định lý → Mệnh đề -->
+      <path class="edge implies" d="M360,395 L360,440" marker-end="url(#arr-corollary)" stroke="var(--proposition)" />
+
+      <!-- Bổ đề → Định lý (support arrow, ngược chiều) -->
+      <path class="edge supports" d="M155,418 Q130,340 260,350" marker-end="url(#arr-lemma)" stroke-dasharray="3 5"/>
+
+      <!-- Tiên đề dư thừa (redundant axiom) -->
+      <path class="edge redundant" d="M540,240 Q640,290 620,400" marker-end="url(#arr-redundant)"/>
+      <!-- Dư thừa → bị hạ cấp thành Định lý -->
+      <path class="edge redundant" d="M606,430 Q520,460 420,390" marker-end="url(#arr-redundant)" stroke-dasharray="5 4"/>
+
+      <!-- ════ NODES ════ -->
+
+      <!-- HỆ TIÊN ĐỀ (top center) -->
+      <g class="node" id="n-system" onclick="showDetail('system')">
+        <ellipse cx="360" cy="60" rx="90" ry="28" fill="#1a0f0f" stroke="var(--system)" stroke-width="1.5" filter="url(#glow-soft)"/>
+        <text x="360" y="55" class="label-vi" fill="var(--system)">Hệ Tiên đề</text>
+        <text x="360" y="70" class="label-en">Axiomatic System</text>
+      </g>
+
+      <!-- TIÊN ĐỀ A -->
+      <g class="node" id="n-axiomA" onclick="showDetail('axiomA')">
+        <circle cx="180" cy="235" r="36" fill="#1a1408" stroke="var(--axiom)" stroke-width="2" filter="url(#glow-axiom)"/>
+        <circle cx="180" cy="235" r="36" class="pulse-ring" fill="none" stroke="var(--axiom)" stroke-width="1" opacity="0"/>
+        <text x="180" y="228" class="badge">⬡</text>
+        <text x="180" y="242" class="label-vi" fill="var(--axiom)" font-size="10">Tiên đề A</text>
+      </g>
+
+      <!-- TIÊN ĐỀ B -->
+      <g class="node" id="n-axiomB" onclick="showDetail('axiomB')">
+        <circle cx="360" cy="235" r="36" fill="#1a1408" stroke="var(--axiom)" stroke-width="2" filter="url(#glow-axiom)"/>
+        <circle cx="360" cy="235" r="36" class="pulse-ring" fill="none" stroke="var(--axiom)" stroke-width="1" opacity="0" style="animation-delay:0.7s"/>
+        <text x="360" y="228" class="badge">⬡</text>
+        <text x="360" y="242" class="label-vi" fill="var(--axiom)" font-size="10">Tiên đề B</text>
+      </g>
+
+      <!-- TIÊN ĐỀ C -->
+      <g class="node" id="n-axiomC" onclick="showDetail('axiomC')">
+        <circle cx="540" cy="235" r="36" fill="#1a1408" stroke="var(--axiom)" stroke-width="2" filter="url(#glow-axiom)"/>
+        <circle cx="540" cy="235" r="36" class="pulse-ring" fill="none" stroke="var(--axiom)" stroke-width="1" opacity="0" style="animation-delay:1.4s"/>
+        <text x="540" y="228" class="badge">⬡</text>
+        <text x="540" y="242" class="label-vi" fill="var(--axiom)" font-size="10">Tiên đề C</text>
+      </g>
+
+      <!-- ĐỊNH LÝ (center) -->
+      <g class="node" id="n-theorem" onclick="showDetail('theorem')">
+        <rect x="310" y="330" width="100" height="50" rx="6" fill="#0d1820" stroke="var(--theorem)" stroke-width="1.8" filter="url(#glow-soft)"/>
+        <text x="360" y="350" class="label-vi" fill="var(--theorem)">Định lý</text>
+        <text x="360" y="368" class="label-en">Theorem</text>
+      </g>
+
+      <!-- BỔ ĐỀ -->
+      <g class="node" id="n-lemma" onclick="showDetail('lemma')">
+        <rect x="120" y="420" width="96" height="46" rx="6" fill="#0d1a11" stroke="var(--lemma)" stroke-width="1.5" filter="url(#glow-soft)"/>
+        <text x="168" y="438" class="label-vi" fill="var(--lemma)">Bổ đề</text>
+        <text x="168" y="454" class="label-en">Lemma</text>
+      </g>
+
+      <!-- HỆ QUẢ -->
+      <g class="node" id="n-corollary" onclick="showDetail('corollary')">
+        <rect x="450" y="420" width="106" height="46" rx="6" fill="#180d18" stroke="var(--corollary)" stroke-width="1.5" filter="url(#glow-soft)"/>
+        <text x="503" y="438" class="label-vi" fill="var(--corollary)">Hệ quả</text>
+        <text x="503" y="454" class="label-en">Corollary</text>
+      </g>
+
+      <!-- MỆNH ĐỀ -->
+      <g class="node" id="n-proposition" onclick="showDetail('proposition')">
+        <rect x="302" y="440" width="116" height="46" rx="6" fill="#1a1800" stroke="var(--proposition)" stroke-width="1.5" filter="url(#glow-soft)"/>
+        <text x="360" y="458" class="label-vi" fill="var(--proposition)">Mệnh đề</text>
+        <text x="360" y="474" class="label-en">Proposition</text>
+      </g>
+
+      <!-- TIÊN ĐỀ DƯ THỪA (bên phải, nét đứt) -->
+      <g class="node" id="n-redundant" onclick="showDetail('redundant')">
+        <rect x="568" y="370" width="106" height="50" rx="6" fill="#1a0808" stroke="var(--system)" stroke-width="1.5" stroke-dasharray="5 3" filter="url(#glow-soft)"/>
+        <text x="621" y="390" class="label-vi" fill="var(--system)" font-size="9.5">Tiên đề</text>
+        <text x="621" y="404" class="label-vi" fill="var(--system)" font-size="9.5">dư thừa</text>
+      </g>
+
+      <!-- Labels on edges -->
+      <text x="258" y="286" fill="var(--theorem)" font-size="9" font-family="IBM Plex Mono" opacity="0.7">chứng minh từ</text>
+      <text x="90" y="395" fill="var(--lemma)" font-size="8.5" font-family="IBM Plex Mono" opacity="0.7">hỗ trợ ↑</text>
+      <text x="560" y="320" fill="var(--system)" font-size="8.5" font-family="IBM Plex Mono" opacity="0.7">suy ra được</text>
+      <text x="470" y="475" fill="var(--system)" font-size="8" font-family="IBM Plex Mono" opacity="0.6">→ hạ cấp</text>
+    </svg>
+  </div>
+
+  <!-- ── SIDEBAR ── -->
+  <div class="sidebar">
+    <div class="detail-box" id="detail-box">
+      <div class="d-default">
+        ← Click vào bất kỳ nút nào trên sơ đồ để xem chi tiết khái niệm.
+        <br><br>
+        Sơ đồ mô tả quan hệ phân cấp và logic giữa các khái niệm nền tảng trong hệ thống toán học tiên đề.
+      </div>
+    </div>
+
+    <div class="legend">
+      <h3>Chú giải đường nối</h3>
+      <div class="legend-item">
+        <div class="legend-line" style="background:var(--axiom);height:2px;"></div>
+        Thuộc về hệ tiên đề
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:var(--theorem);height:1.5px;"></div>
+        Chứng minh / Suy ra
+      </div>
+      <div class="legend-item">
+        <div class="legend-line dashed" style="color:var(--lemma);height:1.5px;"></div>
+        Hỗ trợ chứng minh
+      </div>
+      <div class="legend-item">
+        <div class="legend-line dotted" style="color:var(--corollary);height:1.5px;"></div>
+        Kéo theo / Hệ quả
+      </div>
+      <div class="legend-item">
+        <div class="legend-line dashed" style="color:var(--system);height:1.5px;"></div>
+        Dư thừa / Hạ cấp
+      </div>
+    </div>
+
+    <div class="note-box">
+      <strong>⚠ Nguyên tắc cốt lõi:</strong><br>
+      Nếu một "tiên đề" có thể được suy ra từ các tiên đề khác trong cùng hệ — nó <strong>không còn là tiên đề</strong>. Nó bị hạ cấp thành <strong>Định lý</strong>, và hệ bị gọi là <em>dư thừa (redundant)</em>.
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = {
+  system: {
+    badge: '⬡⬡⬡',
+    nameVi: 'Hệ Tiên đề',
+    nameEn: 'Axiomatic System',
+    color: '#e05555',
+    desc: 'Tập hợp các tiên đề được chọn lọc để làm nền tảng cho một lý thuyết. Một hệ tiên đề tốt phải thỏa mãn 3 tính chất cơ bản.',
+    props: ['Nhất quán (Consistent)', 'Độc lập (Independent)', 'Đầy đủ (Complete)']
+  },
+  axiomA: {
+    badge: '⬡',
+    nameVi: 'Tiên đề',
+    nameEn: 'Axiom / Postulate',
+    color: '#c8a96e',
+    desc: 'Mệnh đề được chấp nhận là đúng mà không cần chứng minh. Là điểm khởi đầu của mọi suy luận trong hệ. Phải độc lập — không thể suy ra từ các tiên đề khác trong cùng hệ.',
+    props: ['Không cần chứng minh', 'Độc lập', 'Không thể bác bỏ trong hệ', 'Nền tảng suy luận']
+  },
+  axiomB: {
+    badge: '⬡',
+    nameVi: 'Tiên đề',
+    nameEn: 'Axiom / Postulate',
+    color: '#c8a96e',
+    desc: 'Một tiên đề khác trong cùng hệ. Cùng với Tiên đề A và C, chúng tạo nên nền tảng logic để từ đó chứng minh mọi định lý trong lý thuyết.',
+    props: ['Không cần chứng minh', 'Độc lập', 'Không thể bác bỏ trong hệ']
+  },
+  axiomC: {
+    badge: '⬡',
+    nameVi: 'Tiên đề',
+    nameEn: 'Axiom / Postulate',
+    color: '#c8a96e',
+    desc: 'Tiên đề thứ ba trong hệ. Ví dụ kinh điển: Tiên đề thứ 5 của Euclid (tiên đề song song) — bị nghi là suy ra được, nhưng thực ra hoàn toàn độc lập và phủ nhận nó tạo ra hình học phi-Euclid.',
+    props: ['Độc lập (nếu hợp lệ)', 'Có thể phủ nhận', 'Sinh ra hệ hình học khác']
+  },
+  theorem: {
+    badge: '▦',
+    nameVi: 'Định lý',
+    nameEn: 'Theorem',
+    color: '#7eb8d4',
+    desc: 'Mệnh đề được chứng minh là đúng bằng cách suy luận logic từ các tiên đề và các định lý đã được chứng minh trước đó. Đây là "con" chính thức của tiên đề.',
+    props: ['Cần chứng minh', 'Suy ra từ tiên đề', 'Có thể dùng để suy tiếp', 'Quan trọng, trọng tâm']
+  },
+  lemma: {
+    badge: '◈',
+    nameVi: 'Bổ đề',
+    nameEn: 'Lemma',
+    color: '#8fd4a8',
+    desc: 'Định lý phụ, được chứng minh với mục đích chính là hỗ trợ cho việc chứng minh một định lý lớn hơn. Bổ đề không có giá trị độc lập cao, vai trò của nó là "dọn đường".',
+    props: ['Định lý phụ trợ', 'Phục vụ định lý lớn hơn', 'Giá trị độc lập thấp']
+  },
+  corollary: {
+    badge: '◇',
+    nameVi: 'Hệ quả',
+    nameEn: 'Corollary',
+    color: '#d4a0c8',
+    desc: 'Kết quả rút ra trực tiếp và gần như tức thời từ một định lý. Việc chứng minh hệ quả thường rất ngắn gọn vì nó chỉ là áp dụng trực tiếp của định lý trước đó.',
+    props: ['Rút ra từ định lý', 'Chứng minh ngắn gọn', 'Áp dụng trực tiếp']
+  },
+  proposition: {
+    badge: '▷',
+    nameVi: 'Mệnh đề',
+    nameEn: 'Proposition',
+    color: '#d4c87e',
+    desc: 'Kết quả đúng, nhỏ hơn và ít quan trọng hơn Định lý, nhưng cần chứng minh. Không cần Bổ đề để chứng minh. Thường là bước trung gian hoặc kết quả ứng dụng.',
+    props: ['Nhỏ hơn Định lý', 'Cần chứng minh', 'Không cần bổ đề', 'Kết quả trung gian']
+  },
+  redundant: {
+    badge: '✕',
+    nameVi: 'Tiên đề dư thừa',
+    nameEn: 'Redundant Axiom',
+    color: '#e05555',
+    desc: 'Một "tiên đề" có thể suy ra được từ các tiên đề khác trong cùng hệ. Khi phát hiện điều này, nó bị loại khỏi danh sách tiên đề và hạ cấp xuống thành Định lý. Hệ chứa nó gọi là "dư thừa".',
+    props: ['Có thể suy ra được', 'Bị hạ cấp → Định lý', 'Hệ trở nên dư thừa', 'Không độc lập']
+  }
+};
+
+function showDetail(id) {
+  const d = DATA[id];
+  if (!d) return;
+
+  // Remove active from all nodes
+  document.querySelectorAll('.node').forEach(n => n.classList.remove('active'));
+  const node = document.getElementById('n-' + id);
+  if (node) node.classList.add('active');
+
+  const box = document.getElementById('detail-box');
+  box.classList.add('active');
+  box.innerHTML = `
+    <div class="d-badge">${d.badge}</div>
+    <div class="d-name-vi" style="color:${d.color}">${d.nameVi}</div>
+    <div class="d-name-en">${d.nameEn}</div>
+    <div class="d-desc">${d.desc}</div>
+    <div class="d-props">
+      ${d.props.map(p => `<span class="d-prop">${p}</span>`).join('')}
+    </div>
+  `;
+}
+</script>
+</body>
+</html>

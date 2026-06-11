@@ -1,0 +1,43 @@
+Total lines in source: 7658
+Found 10 lines ending with an inline page number:
+
+--- Line 4 (Value: 585) ---
+Line:   '- **Tổng số trang:** 585'
+Prefix: '- **Tổng số trang:**'
+
+--- Line 3503 (Value: 283) ---
+Line:   'Tôi có nói nhà Nho Việt Nam trước hết là con người ở làng, trong lòng anh ta trước hết tồn tại tư duy công xã, rồi các cách nhận thức khác là xây dựng trên cái tư duy này do đó mà bị khúc xạ. Trong bộ Thư mục trước hết có 205 quyển thuộc mục tục lệ địa phương bao gồm các hương ước, khoán lệ. Cái này không có ở Trung Quốc. Điều này chúng tỏa không phải ai mà chính các nhà Nho xây dựng các khoản ước, quy định các tục lệ. Bộ phận thứ hai cũng gắn liền với tâm thức công xã là các sử liệu, gồm 519 quyển thuật lại các thần tích là bộ phận gắn liền với tâm thức làng xã, các tiểu sử, phần này chỉ có một phần gắn liền khi nhân vật là của làng còn một bộ phận không chỉ thuộc làng xã, khi nhân vật là của nước. Bộ phận thứ ba là các gia phả, gồm 283'
+Prefix: 'Tôi có nói nhà Nho Việt Nam trước hết là con người ở làng, trong lòng anh ta trước hết tồn tại tư duy công xã, rồi các cách nhận thức khác là xây dựng trên cái tư duy này do đó mà bị khúc xạ. Trong bộ Thư mục trước hết có 205 quyển thuộc mục tục lệ địa phương bao gồm các hương ước, khoán lệ. Cái này không có ở Trung Quốc. Điều này chúng tỏa không phải ai mà chính các nhà Nho xây dựng các khoản ước, quy định các tục lệ. Bộ phận thứ hai cũng gắn liền với tâm thức công xã là các sử liệu, gồm 519 quyển thuật lại các thần tích là bộ phận gắn liền với tâm thức làng xã, các tiểu sử, phần này chỉ có một phần gắn liền khi nhân vật là của làng còn một bộ phận không chỉ thuộc làng xã, khi nhân vật là của nước. Bộ phận thứ ba là các gia phả, gồm'
+
+--- Line 3568 (Value: 4) ---
+Line:   'Cách xem khí tượng, thiên văn : 447, 4'
+Prefix: 'Cách xem khí tượng, thiên văn : 447,'
+
+--- Line 5148 (Value: 47) ---
+Line:   'thất lục bát. Trong số 54 bài của Ngô Đức Thinh có 47'
+Prefix: 'thất lục bát. Trong số 54 bài của Ngô Đức Thinh có'
+
+--- Line 7571 (Value: 342) ---
+Line:   'Chương XI. Tín ngưỡng Việt Nam qua tiếp xúc với đạo giáo Trung Hoa 342'
+Prefix: 'Chương XI. Tín ngưỡng Việt Nam qua tiếp xúc với đạo giáo Trung Hoa'
+
+--- Line 7573 (Value: 405) ---
+Line:   'Chương XII. Truyền thống quân sự Việt Nam nền tảng của mọi thắng lợi quân sự 405'
+Prefix: 'Chương XII. Truyền thống quân sự Việt Nam nền tảng của mọi thắng lợi quân sự'
+
+--- Line 7575 (Value: 438) ---
+Line:   'Chương XIII. Tư tưởng Hồ Chí Minh, đỉnh cao của văn hóa Việt Nam 438'
+Prefix: 'Chương XIII. Tư tưởng Hồ Chí Minh, đỉnh cao của văn hóa Việt Nam'
+
+--- Line 7577 (Value: 479) ---
+Line:   'Chương XIV. Tiếp xúc văn hóa Việt - Pháp 479'
+Prefix: 'Chương XIV. Tiếp xúc văn hóa Việt - Pháp'
+
+--- Line 7581 (Value: 530) ---
+Line:   'Chương XV. Cách phát huy văn hóa trong cuộc tiếp xúc văn hóa hiện nay 530'
+Prefix: 'Chương XV. Cách phát huy văn hóa trong cuộc tiếp xúc văn hóa hiện nay'
+
+--- Line 7583 (Value: 562) ---
+Line:   'Chương XVI. Ưu thế văn hóa Việt Nam trong giai đoạn kinh tế thị trường 562'
+Prefix: 'Chương XVI. Ưu thế văn hóa Việt Nam trong giai đoạn kinh tế thị trường'
+
