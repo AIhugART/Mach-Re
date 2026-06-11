@@ -3,6 +3,120 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — who.html: Trích dẫn mô hình Ngoại giao Cây Tre · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu về mô hình *"Ngoại giao Cây Tre"* trong `who.html` (dòng 274) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu/phát biểu chính thức tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Dòng giới thiệu mô hình "Ngoại giao Cây Tre" ở `who.html` không chứa liên kết trích dẫn `[5]` trỏ tới nguồn tham khảo tương ứng; danh sách tham khảo cuối trang thiếu tác phẩm của Nguyễn Phú Trọng.
+- Round 2 — Mechanism: Việc thiếu nguồn trích dẫn chính thức cho một học thuyết đối ngoại cấp quốc gia làm giảm tính thuyết phục của sự so sánh tương đồng cấu trúc (structural analogy) giữa Ngoại giao Cây Tre và Mạch Rễ, làm nó giống một sự gán ghép ngôn từ tự do hơn là một đối chiếu khoa học nghiêm túc.
+- Round 3 — Root: Dòng này được soạn thảo như một ví dụ minh họa chính trị học vĩ mô mà không được ánh xạ và bổ sung tài liệu phát biểu chính thức của Tổng Bí thư vào thư mục tham khảo cuối trang theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Nguyễn Phú Trọng, 2021 <a href="#nguon-5">[5]</a>)` vào đoạn dẫn nhập Ngoại giao Cây Tre (dòng 274) và bổ sung nguồn `[5] Nguyễn Phú Trọng. (2021)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `npt_2021`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — Phase 8a: V4 name fix "Gặp Nhân" → "Gặp Nhau" (5 files) · RCA 5.0/5
+
+**Symptom:** axiom_spec.md, index.html, paper_009_draft.md, và CHANGELOG.md (Phase 5 entry) dùng "Gặp Nhân Giữ Gốc" (Nhân = người) thay vì canonical "Gặp Nhau Giữ Gốc" (Nhau = lẫn nhau, reciprocal). Vi phạm V4 naming rule — canonical SSOT là `dictionary_rule.md §9` và `axiom_ix_spec.md`.
+
+**3-round RCA:**
+- R1: axiom_spec.md Phase 5 viết "Gặp Nhân" không khớp với `dictionary_rule.md §9` (canonical).
+- R2: Phase 5 lấy tên từ session summary có lỗi thay vì đọc trực tiếp canonical §9. "Nhân" (người/person) sai ngữ nghĩa IX — IX là về hai hệ gặp *lẫn nhau* (inter-system reciprocal), không gặp "người".
+- R3 (root): V4 rule ("dùng §9 canonical, không tự ghép") không được kiểm tra đủ tại thời điểm Phase 5 viết axiom_spec.md. Fix: đọc §9 trực tiếp, sửa tất cả các file ảnh hưởng.
+
+**Scoring (claim = "sửa Nhân→Nhau"):** Correct 1 + Deep 1 + Feasible 1 + Conflict-risk 1 + Preservation 1 = **5.0/5** → fix.
+
+**Files sửa tầng root (5 instances):**
+1. `axiom_spec.md` line 231: heading IX
+2. `axiom_spec.md` line 351: §5.1 map table IX row
+3. `index.html` line 533: upgrade nav card description
+4. `index.html` line 802: glossary table IX row
+5. `CHANGELOG.md` (Phase 5 entry) line 111: bản ghi lịch sử
+
+**Root unaffected:** axiom_9.html ✅ upgrade.html ✅ axiom_ix_spec.md ✅ (đã dùng "Nhau" từ đầu).
+
+> `papers/paper_009/paper_009_draft.md` (2 instances) → logged in [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md) (tiered routing).
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn áp lực mô hình quản lý trong doanh nghiệp · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu *"Doanh nghiệp Việt Nam đang đối mặt với áp lực copy mô hình quản lý nước ngoài"* trong `who.html` (dòng 270) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học cụ thể tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Luận điểm về việc sao chép mô hình quản lý ngoại của doanh nghiệp Việt Nam trong `who.html` không chứa liên kết trích dẫn `[4]` trỏ tới nguồn tham khảo tương ứng; danh sách tham khảo cuối trang thiếu tác phẩm của Quang & Vuong.
+- Round 2 — Mechanism: Việc thiếu nguồn trích dẫn nghiên cứu quản trị doanh nghiệp làm giảm tính thuyết phục của tiền đề thực tiễn (why Mạch Rễ is needed in business), khiến lập luận này giống như một đánh giá chủ quan thay vì một thực tế đã được khảo sát thực nghiệm trong quản trị học.
+- Round 3 — Root: Dòng này được viết như phần dẫn nhập bối cảnh thực hành doanh nghiệp mà không được ánh xạ và bổ sung tài liệu nghiên cứu quản trị học (Management Styles) vào thư mục tham khảo cuối trang theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Quang & Vuong, 2002 <a href="#nguon-4">[4]</a>)` vào đoạn dẫn nhập doanh nghiệp (dòng 270) và bổ sung nguồn `[4] Quang, T., & Vuong, N. T. (2002)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `quang_2002`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn luận điểm Công giáo Việt Nam · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu *"Người Công giáo Việt đã sống Mạch Rễ 400 năm mà không mâu thuẫn"* trong `who.html` (dòng 247) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học cụ thể tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Ô Công giáo trong bảng so sánh tôn giáo của `who.html` không chứa liên kết trích dẫn `[3]` trỏ tới nguồn tham khảo tương ứng; danh sách tham khảo cuối trang thiếu tác phẩm của Peter C. Phan.
+- Round 2 — Mechanism: Vấn đề hòa hợp đức tin Công giáo với văn hóa truyền thống (thờ cúng tổ tiên) là chủ đề lịch sử phức tạp (từng gây ra Tranh luận Lễ nghi). Khẳng định "không mâu thuẫn" mà không trích dẫn nghiên cứu thần học hoặc lịch sử sẽ làm luận điểm bị xem là võ đoán hoặc thiếu cơ sở khoa học.
+- Round 3 — Root: Dòng này được viết như một tóm tắt nhanh trong ô bảng so sánh mà không được ánh xạ và bổ sung tác phẩm nghiên cứu thần học/nhân học hội nhập văn hóa (inculturation) vào thư mục tham khảo cuối trang theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Phan, 2003 <a href="#nguon-3">[3]</a>)` vào ô so sánh tôn giáo (dòng 247) và bổ sung nguồn `[3] Phan, P. C. (2003)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `phan_2003`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn luận điểm Phật giáo Việt Nam · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu *"Phật giáo Việt Nam đã vận hành Mạch Rễ suốt 1.800 năm"* trong `who.html` (dòng 243) thiếu liên kết trích dẫn inline trỏ tới nguồn Phan Ngọc (1998) vốn đã được định nghĩa ở cuối trang.
+
+**3-round RCA:**
+- Round 1 — Symptom: Dòng Phật giáo trong bảng so sánh tôn giáo của `who.html` không chứa liên kết trích dẫn `[1]` trỏ tới nguồn Phan Ngọc.
+- Round 2 — Mechanism: Việc không có liên kết trích dẫn làm giảm tính thuyết phục của con số lịch sử cụ thể "1.800 năm" và làm mất liên kết ngữ nghĩa giữa luận điểm thực chứng này với cơ sở phân tích giao lưu văn hóa Việt-Ấn của Phan Ngọc trong thư mục tham khảo.
+- Round 3 — Root: Dòng này được soạn thảo như một câu tóm tắt nhanh trong bảng mà không được rà soát lại để ánh xạ thủ công với danh mục tài liệu tham khảo theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 1 targeted edit:**
+- `who.html`: Thêm liên kết trích dẫn inline `(Phan Ngọc <a href="#nguon-1">[1]</a>)` vào ô chứa luận điểm Phật giáo Việt Nam (dòng 243).
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html & when.html: Trích dẫn thế hệ thứ ba hải ngoại · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu về thế hệ thứ ba của người Việt hải ngoại ("Người Việt hải ngoại thế hệ thứ ba... vẫn có những phản xạ hành vi và hệ giá trị") trong `who.html` (dòng 224) và `when.html` (dòng 380) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học cụ thể tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Không có liên kết trích dẫn `[2]` trong `who.html` và `[1]` trong `when.html` cho luận điểm thế hệ thứ ba hải ngoại; mục Nguồn Trích Dẫn ở `when.html` báo trống.
+- Round 2 — Mechanism: Việc thiếu nguồn trích dẫn học thuật làm suy yếu tính xác thực và khả năng phản chứng của luận điểm "thế hệ thứ ba vẫn có phản xạ hành vi và hệ giá trị", khiến nó trông giống như một nhận xét cảm tính thay vì một quan sát thực chứng.
+- Round 3 — Root: Phát biểu được viết trong giai đoạn phác thảo mô tả đối tượng trước khi các quy tắc liên kết nguồn gốc và ma trận traceability của dự án (Rule #12) được áp đặt đầy đủ.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 4 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Trang Bùi <a href="#nguon-2">[2]</a>)` và bổ sung nguồn `[2] Trang Bui (2023)` ở mục Nguồn Trích Dẫn.
+- `when.html`: Thêm liên kết inline `(Trang Bùi <a href="#nguon-1">[1]</a>)` và thay đổi mục Nguồn Trích Dẫn trống bằng tham chiếu `[1] Trang Bui (2023)`.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `bui_2023`.
+
+**RCA score: 5.0/5.**
+
+---
+
 ## 2026-06-11 — Phase 6: `who.html` + `when.html` — IX awareness labels · RCA 4.8/5
 
 **Symptom / gap:** `who.html` so sánh 9 chiều VN × Ubuntu × Yoruba mà không nhắc đến tầng tiếp xúc giữa các hệ (IX territory). `when.html` có Hòa Giải Việt-Mỹ = VVC canonical C1-min nhưng không labeled.
@@ -36,7 +150,7 @@
 2. §1 derivation log: thêm K-IX row (independence test: I–VIII của singleton → không kéo theo IX; dyad required)
 3. §2: thêm `### TẦNG INTERFACE` header + full Tiên Đề IX entry: formal statement, C1-full/min/zero, P* + Pratītyasamutpāda, VVCs, triangulation A/B/C (score 2.0/3), EAP, V6 disclaimer, falsification conditions
 4. §3 diagram: thêm TẦNG INTERFACE block trên TẦNG PHẢN TƯ (IX = inter-system, VIII = within-system)
-5. §5.1 map table: thêm IX row (`(mới — v3.2)` → Interface → Gặp Nhân Giữ Gốc)
+5. §5.1 map table: thêm IX row (`(mới — v3.2)` → Interface → Gặp Nhau Giữ Gốc)
 6. §8 YAML: thêm `IX: {type: interface, depends_on: [VIII], subject: dyad, ...}`
 7. NGUỒN TRÍCH DẪN: thêm bảng APA [1]–[5] (Phan Ngọc 1998, Ashby 1956, Weick 1976, Nāgārjuna/Garfield 1995, Dharmakīrti/Dunne 2004)
 

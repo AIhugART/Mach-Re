@@ -75,7 +75,7 @@ Mạch Rễ (Root-Circuit) là một khung nền triết học tương quan-phâ
   → ∃ P*: [P* ≠ nếp(S1) ∧ P* ≠ nếp(S2) ∧ ¬∃S_single: possible(P*, S_single)]
 ```
 
-**Tên canonical:** Biểu hiện (saṃvṛti): *"Gặp Nhân Giữ Gốc"* — gặp người khác mà giữ được gốc rễ. Bản chất (paramārtha): *"Không Của Ai, Nhờ Cả Hai"* — P* không tồn tại tự thân, phụ thuộc vào cả hai hệ. `[4][5]`
+**Tên canonical:** Biểu hiện (saṃvṛti): *"Gặp Nhau Giữ Gốc"* — gặp nhau mà giữ được gốc rễ (hai hệ, reciprocal). Bản chất (paramārtha): *"Không Của Ai, Nhờ Cả Hai"* — P* không tồn tại tự thân, phụ thuộc vào cả hai hệ. `[4][5]`
 
 ### 3.3 Điều kiện C1 — Ba trường hợp (graded)
 
@@ -197,7 +197,7 @@ Bài báo này đề xuất rằng Ngoại Giao Cây Tre của Việt Nam, và c
 
 Đây là diễn giải ở tầng Interpretive Mapping `[interpretation]` — không phải bằng chứng nhân quả, không phải mô hình dự đoán. Nó có thể bị bác bỏ theo ba điều kiện falsification được nêu trong §5.3.
 
-Nếu diễn giải có giá trị phân tích, nó gợi ý rằng nguồn gốc cấu trúc của Ngoại Giao Cây Tre không nằm ở "linh hoạt" hay "thực dụng" như các tài khoản hiện có mô tả — mà nằm ở VIII-capacity: khả năng của Việt Nam tự-xét-lại invariant của mình mà không mất bản sắc lõi, tạo ra điều kiện cần thiết cho Living Interface. Trong ngôn ngữ của Tiên Đề IX: *Gặp Nhân Giữ Gốc — không phải vì Việt Nam không thay đổi, mà vì Việt Nam biết cái gì không được phép thay đổi.*
+Nếu diễn giải có giá trị phân tích, nó gợi ý rằng nguồn gốc cấu trúc của Ngoại Giao Cây Tre không nằm ở "linh hoạt" hay "thực dụng" như các tài khoản hiện có mô tả — mà nằm ở VIII-capacity: khả năng của Việt Nam tự-xét-lại invariant của mình mà không mất bản sắc lõi, tạo ra điều kiện cần thiết cho Living Interface. Trong ngôn ngữ của Tiên Đề IX: *Gặp Nhau Giữ Gốc — không phải vì Việt Nam không thay đổi, mà vì Việt Nam biết cái gì không được phép thay đổi.*
 
 ---
 

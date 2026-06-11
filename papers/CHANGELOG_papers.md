@@ -5,6 +5,22 @@
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
 
+## 2026-06-11 — Phase 8a: paper_009 V4 name fix "Gặp Nhân" → "Gặp Nhau" · RCA 5.0/5
+
+**Symptom:** `paper_009_draft.md` dùng "Gặp Nhân Giữ Gốc" (Phase 7 viết theo session summary lỗi) thay vì canonical "Gặp Nhau Giữ Gốc" từ `dictionary_rule.md §9`. Gloss đi kèm cũng sai: "gặp người khác" → phải là "gặp nhau, reciprocal".
+
+**RCA R3 (root):** V4 rule không được kiểm tra tại Phase 7. "Nhau" = hai hệ gặp lẫn nhau (inter-system reciprocal) — đúng ngữ nghĩa IX; "Nhân" = người — sai phạm trù.
+
+**Scoring: 5.0/5** → fix.
+
+**Files sửa:**
+- `papers/paper_009/paper_009_draft.md` line 78: `"Gặp Nhân Giữ Gốc"` → `"Gặp Nhau Giữ Gốc"` + gloss "gặp người khác" → "gặp nhau, reciprocal"
+- `papers/paper_009/paper_009_draft.md` line 200: `Gặp Nhân Giữ Gốc` → `Gặp Nhau Giữ Gốc`
+
+> Cross-ref tầng root: `axiom_spec.md` + `index.html` + CHANGELOG entry → logged in [`CHANGELOG.md`](../CHANGELOG.md) (Phase 8a).
+
+---
+
 ## 2026-06-11 — paper_009 (TẠO MỚI): "Ngoại Giao Cây Tre như Giao Diện Sống" · ESP E 4.8/5 + RCA 4.8/5
 
 **ESP Layer E (bắt buộc trước prose — Tier 3 Rule #1):**
