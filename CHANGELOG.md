@@ -3,6 +3,31 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 3: `upgrade.html` — Tích hợp Tiên Đề IX vào trang upgrade · RCA 5/5
+
+**Symptom / gap:** `upgrade.html` không đề cập Tiên Đề IX. Architecture diagram chỉ hiển thị 8 tiên đề. `cons-grid` thiếu IX. Không có navigation link đến `axiom_9.html`.
+
+**Structural decision (3-round RCA — Buddhist epistemology compass):**
+- Round 1: Thêm IX như "Module 6" vào Section 2 (cùng hàng với Upgrade I–IV + Module 5) sẽ đặt IX cùng category với within-system features.
+- Round 2: IX không phải hệ quả của VIII; IX là điều VIII làm khả thi (inter-system prerequisite). Flatten IX = vi phạm Two Truths (C2): category error giữa within-system và inter-system.
+- Round 3 (root): IX đòi hỏi chủ thể mới (dyad không phải singleton) — cấu trúc khác hoàn toàn. Fix: IX vào section riêng sau Section 3 (VIII), với tag "TẦNG INTERFACE MỚI", giải thích VIII là điều kiện cần không phải nguồn sinh ra IX.
+- **Scoring gate: 5/5 → distinct section CONFIRMED.**
+
+**Fix:** 7 targeted edits:
+- CSS `.u5` rule: top border purple `#5a3070` cho IX card
+- Title + meta description: cập nhật → "v3.2, Tiên Đề VIII, IX & Bốn Mở Rộng"
+- Header subtitle: thêm "· Tiên Đề IX — Tầng Interface Mới (v3.2)"
+- New Section IX: "Tầng IX — Giao Diện Sống" với `.upgrade-card.u5` — C1-full/min/zero, P* definition, VVC canonical (Trúc Lâm + Ngoại Giao Cây Tre), link → `axiom_9.html`
+- Architecture ASCII box: cập nhật → 4 tầng, IX là Interface tier, phân biệt within-system (VIII hệ quả) vs inter-system (IX)
+- `cons-grid`: thêm item "Tầng IX (mới)" spanning full width, link → axiom_9.html
+- Glossary: thêm 3 rows — Living Interface, P*, C1-full/C1-min
+- Bottom-nav: thêm "Tiên Đề IX →" button (purple)
+- Footer: thêm link Tiên Đề IX, label "Mạch Rễ v3.2"
+
+**RCA score: 5/5.** La bàn: C — Buddhist epistemology (Two Truths → category boundary between within-system/inter-system). Phase 3 → COMPLETE. Cổng Phase 4 (index.html) mở.
+
+---
+
 ## 2026-06-11 — Phase 2: `axiom_9.html` — Trang HTML công khai Tiên Đề IX · RCA 4.8/5
 
 **Symptom / gap:** Tiên Đề IX không có trang HTML công khai. `upgrade.html` (Phase 3), `index.html` (Phase 4), `axioms.html` không thể liên kết đến IX khi file chưa tồn tại.
