@@ -3,6 +3,51 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — v3.3 Naming De-Enclosure — Epistemic Humility Alignment ✅
+
+**Trigger:** Cultural researcher critique: "Văn hóa VN thực ra nó đề cao sự khiêm nhường, kể cả có nghĩ ra cũng không ai muốn đứng lên trên cả dân tộc mà đặt tên."  
+**Triple compass:** A (Phan Ngọc — tiếp biến văn hóa) · B (Ashby/Weick — Requisite Variety + sensemaking) · C (Buddhist Epistemology — Apoha, Upāya, Two Truths, Anattā)  
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4/5 on all claims  
+**Meta-review:** `plan/2026_06_11_audit_dat_ten_mach_re_REVIEWED.md` — original plan scored 3/5, enhanced to 5/5
+
+### RCA scores per changed claim
+
+| # | Claim changed | File(s) | RCA Score | Root cause |
+|---|---|---|---|---|
+| C1 | Tagline "Được đặt tên: 2026" → "Được mô hình hóa: 2026" | index.html, when.html | 4.8/5 | Epistemic enclosure: naming act implied ownership of commons (C: Anattā violation) |
+| C2 | "đặt tên và hệ thống hóa" → "mô tả cấu trúc và hệ thống hóa" | index.html | 4.6/5 | Category error: model vs. entity conflation (C: saṃvṛti/paramārtha distinction) |
+| C3 | Timeline "Mạch Rễ được đặt tên" → "Mô hình Mạch Rễ được hệ thống hóa" | index.html, when.html | 4.4/5 | Historical anchoring implied singular authority (A: tiếp biến framing) |
+| C4 | Definition "Mạch Rễ — Triết lý sinh tồn" → "mô hình phân tích mô tả" | what.html | 4.8/5 | Direct identity claim between framework and national philosophy (B: Ashby Variety Test) |
+| C5 | "Tại sao phải đặt tên" → "Tại sao phải hệ thống hóa" | why.html | 4.2/5 | Section header presupposed naming as the only valid response |
+| C6 | Added reflexive paradox statement (Upāya + Apoha) | what.html §4 | 5.0/5 | Tiên Đề VIII operational: framework sees its own limit |
+| C7 | Added "Mạch Rễ như Tiếp Biến" framing | what.html §4 | 4.8/5 | Positive Vietnamese-grounded justification (A: Phan Ngọc) |
+| C8 | Strengthened three compass anchors with Apoha/Variety/Tiếp Biến | axiom_spec.md §0.1 | 4.6/5 | Compass under-specification (A+B+C) |
+| C9 | Added "Khiêm nhường/Ẩn mình" operational notes | axiom_spec.md §2 | 4.4/5 | Mechanism unstated: humility as structural shield, not passivity |
+| C10 | CC BY 4.0 → CC0 1.0 Universal | LICENSE, index.html | 5.0/5 | Attribution requirement contradicted Tiên Đề I+V (Anattā + Distributed) |
+
+### Files changed (6 files, +85/−25 lines)
+
+| File | Changes |
+|---|---|
+| index.html | Tagline, definition, timeline, license badge, footer |
+| when.html | Timeline tagline |
+| what.html | Definition, "gọi tên chung", reflexive paradox blockquote, Tiếp Biến section |
+| why.html | Section header, urgency text |
+| axiom_spec.md | Three anchors strengthened, operational notes for I+II+V |
+| LICENSE | CC BY 4.0 → CC0 1.0 Universal |
+
+### Definition of Done — ALL PASS ✅
+
+1. ✅ Zero "đặt tên" ownership language in production files
+2. ✅ Consistent model-not-entity framing across all pages
+3. ✅ Self-reflective paradox statement embedded in what.html §4
+4. ✅ CC0 legal release with explicit no-attribution statement
+5. ✅ Ashby Variety Test: ≥ 3 self-description pathways remain open post-fix
+6. ✅ CHANGELOG recorded with per-claim RCA scores
+7. ✅ Cross-file consistency verified (grep: only raw/ archive retains old text)
+
+---
+
 ## 2026-06-11 — Phase 9: Closure Audit — Mạch Rễ v3.2 IX Build · ALL PASS ✅
 
 **Triple compass:** A (Phan Ngọc) — framework's "kiểu lựa chọn" preserved: canonical names Vietnamese-first, diacritics intact, no foreign frame imports. B (Ashby/Weick) — loose coupling verified: each page fails independently; P1 sweep confirms no cross-page inconsistency. C (Buddhist epistemology) — Pramāṇa satisfied: all claims scoped, sourced, marked; Two Truths respected: no conventional claim elevated to ultimate.
