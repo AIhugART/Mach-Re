@@ -45,6 +45,29 @@
 
 ---
 
+## 2026-06-11 — paper_005_v2: Thêm Bảng Giải Thích Thuật Ngữ + Bảng Nhãn Phân Loại Học Thuật (RCA) · RCA 5.0/5
+
+**Symptom (Round 1):** paper_005_v2.md dùng ~50 nhãn `[established]`, `[contested]`, `[interpretation]`, `[analogy]`, `[hypothesis]` và 6 khái niệm triết học phức tạp (Relational Ontology, Structural Invariance, Orthogonal Temporality, Dynamic Boundary, Distributed Storage, Category Error) nhưng không có bảng giải thích cho độc giả phổ thông. paper_005.md (v1) đã có cả hai bảng này — v2 bỏ sót trong quá trình rebuild.
+
+**Mechanism (Round 2):** Carry-forward set của v2 (plan/paper_005_v2_plan.md §CARRY-FORWARD SET) tập trung vào core claims và methodology, bỏ qua auxiliary explanatory content. Hậu quả: độc giả không quen với hệ nhãn RCA của dự án không thể decode được epistemic stance của tác giả; học sinh cấp 3 không có lối vào các khái niệm cốt lõi.
+
+**Root (Round 3):** Vi phạm nguyên tắc self-containedness — paper dùng hệ nhãn và thuật ngữ riêng mà không giải thích. CLAUDE.md Tier 3 Rule #7 (citation traceability) không chỉ đòi hỏi liên kết nguồn mà còn đòi hỏi người đọc HIỂU được các nhãn phân loại.
+
+**Fix (2 files + 1 changelog):**
+- `papers/paper_005/paper_005_v2.md`: Thêm 2 section mới trước Nguồn Trích Dẫn: (a) BẢNG GIẢI THÍCH THUẬT NGỮ — 6 thuật ngữ cốt lõi với giải thích trực quan cấp 3 + ví dụ từ bài viết; (b) Ý NGHĨA CÁC NHÃN PHÂN LOẠI HỌC THUẬT (RCA) — 5 nhãn với ý nghĩa học thuật + giải thích trực quan + ví dụ.
+- `papers/paper_005/paper_005_v2.html`: Tương tự — 2 bảng HTML đồng bộ.
+- `papers/paper_005/CHANGELOG_paper_005.md`: Entry này.
+
+**Bảng thuật ngữ đã thích ứng cho v2:**
+- Đánh số 1–6 (không phải 1–8 như v1 — bỏ các tiên đề không xuất hiện chính trong v2)
+- Thêm entry "Category Error — Lỗi phạm trù" (không có trong v1, là core của v2)
+- Dùng thuần Việt theo chuẩn v2 (nếp, kiểu, thực thể, văn bản kinh viện...)
+- Ví dụ lấy TRỰC TIẾP từ nội dung v2 (không dùng ví dụ từ v1)
+
+**RCA score:** 5.0/5 (Correct 5, Deep 5, Feasible 5, Conflict-risk 5, Preservation 5).
+
+---
+
 ## 2026-06-11 — paper_005_v2: Thêm hyperlink từ trích dẫn [N] → bảng Nguồn Trích Dẫn · RCA 5.0/5
 
 **Symptom (Round 1):** File .md dùng `[N]` dạng plain text cho trích dẫn inline — không có hyperlink đến entry tương ứng trong bảng Nguồn Trích Dẫn. Người đọc phải cuộn thủ công 200+ dòng để tra cứu nguồn.
