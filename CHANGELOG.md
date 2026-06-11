@@ -3,6 +3,41 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 1: `axiom_ix_spec.md` — Canonical specification Tiên Đề IX · Born-consistent v3.2
+
+**Symptom / gap:** Axiom IX chưa có file spec canonical. Các phase HTML (2–6) không thể ship nếu chưa có nguồn duy nhất chứa tên §9, điều kiện C1 phân bậc (V1), VVCs đúng thứ tự EAP, và các amendment V1–V6 đã áp dụng từ đầu.
+
+**Fix:** Tạo `axiom_ix_spec.md` tại root. Cấu trúc được rút ra từ EAP document-order + Buddhist epistemology compass (Pramāṇa: từ tri giác trực tiếp VVCs → suy luận formal statement) — không kế thừa nguyên xi v3.1 structure. Gồm 8 sections: EAP statement · VVCs (3 cases) · Derivation · Formal statement + diagram · Conditions C1–C4 (V1 applied) · Falsification · Triangulation (V6) · Case studies (V5) · Architecture integration · NGUỒN TRÍCH DẪN (5 nguồn). Phase 1b canonical names từ §9 applied. La bàn C (Buddhist epistemology) as compass cho structural decisions.
+
+**Carry-forward applied:** EAP statement + usage rules; Vietnamese-first architecture; Source/Model separation; formal statement (V1 applied); C2–C4 + Vietnamese verifications; falsification condition; triangulation (+ V6); Open Questions 2–5.
+
+**Phase 1 → COMPLETE.** Cổng Phase 5 (axiom_spec.md) đòi hỏi Phase 1 finalized — met.
+La bàn: C — Phật giáo nhận thức luận (EAP order = Pramāṇa order: VVCs trước formal).
+
+---
+
+## 2026-06-11 — Phase 1b: Naming RCA Tiên Đề IX → `dictionary_rule.md` §9 row · RCA 4.8/5
+
+**Symptom:** Tiên Đề IX không có tên canonical thuần Việt (Biểu hiện / Bản chất) sau review v3.2 (F4). Hai ứng viên Biểu hiện gốc (Gốc Vững Cành Mềm, Bạn Khắp Mà Không Theo Phe) chưa qua RCA; điểm chưa được chấm. Cổng Phases 2–6 bị khóa.
+
+**Root (Round 3):** La bàn C (Phật giáo nhận thức luận). Nhị Đế ánh xạ trực tiếp lên cặp Biểu hiện/Bản chất: Biểu hiện = saṃvṛti (quy ước — cái thấy được trong thực hành); Bản chất = paramārtha (chân lý tối hậu — cấu trúc nền). Cả hai ứng viên Biểu hiện gốc đặt tên thuộc tính *một hệ* (Gốc Vững Cành Mềm = độ bền của một cây tre) hoặc chiến lược *một tác nhân* (Bạn Khắp Mà Không Theo Phe = lập trường ngoại giao) — không phải vùng tiếp xúc liên hệ thống. Apoha (Dignāga): tên phải loại trừ đúng VÀ có nội dung xác định; tên thuần phủ định không đủ cho Biểu hiện.
+
+**Fix:** Ứng viên mới "Gặp Nhau Giữ Gốc" (4.8/5) được đề xuất dưới la bàn C (saṃvṛti level: tiếp xúc + giữ gốc rễ I–VIII = C1 visible in practice). "Không Của Ai, Nhờ Cả Hai" (4.8/5) thắng Bản chất (pratītyasamutpāda + anattā của P*). Cặp tiếng Anh gợi hình (P2): "Mine, Yours, and the Space Between" / "Owned by Neither, Born of Both". Hàng IX ghi vào `dictionary_rule.md` §9 (nguồn chân lý duy nhất). Phase 1b trong v3.2 roadmap đánh dấu COMPLETE. Cổng Phases 2–6 mở.
+
+**Scoring gate (Biểu hiện winner "Gặp Nhau Giữ Gốc"):**
+
+| Tiêu chí | Điểm | Ghi chú |
+|---|---|---|
+| Correct | 5 | Biểu diễn đúng IX ở tầng saṃvṛti: tiếp xúc + giữ gốc (C1 visible) |
+| Deep | 4 | Chạm điều kiện C1 + cấu trúc contact zone |
+| Feasible | 5 | Thuần Việt, không Hán-Việt |
+| Conflict-risk | 5 | Kiểm tra va chạm I–VIII: không có va chạm ngữ nghĩa trực tiếp |
+| Preservation | 5 | Tách biệt rõ I–VIII; tầng mới "Interface" |
+
+**RCA score: 4.8/5 → CHỐT.** La bàn: C — Phật giáo nhận thức luận (Nhị Đế · Pramāṇa · Pratītyasamutpāda · Apoha).
+
+---
+
 ## 2026-06-11 — CLAUDE.md: Thêm rule "CHANGELOG phân tầng" (tiered changelogs) · RCA 4.8/5
 
 **Symptom:** Rule changelog trong CLAUDE.md là danh sách trường hợp riêng lẻ (enumerated case: papers/). `CHANGELOG_mv_002.md` tồn tại ngoài vùng phủ rule; tầng mới tạo ra trong tương lai sẽ không có quy tắc nào để theo.

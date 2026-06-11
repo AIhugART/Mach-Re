@@ -130,12 +130,15 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 | VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 | Derived |
 | VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 | Derived |
 | VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 | Meta |
+| IX | Gặp Nhau Giữ Gốc | Không Của Ai, Nhờ Cả Hai | Living Interface | 4.8 | Interface |
 
 **Neo quan trọng (I):** Với Tiên Đề I, Biểu hiện ("Sống Trong Quan Hệ") và Bản chất ("Có Nhau Mới Có Mình") gần nghĩa một cách có chủ đích — không phải lỗi thiết kế. Bản thân nội dung ontological của Tiên Đề I (identity IS relations) làm collapse khoảng cách essence-manifestation: nếu bản sắc được cấu thành bởi quan hệ, thì "sống trong quan hệ" (cách nó hiện ra trong đời sống) và "có nhau mới có mình" (cấu trúc nền) là hai mặt của cùng một thực tại. Phân biệt gắt gao Biểu hiện/Bản chất là thiết yếu cho Tiên Đề III (ngăn category collapse với Halbwachs/Luhmann), nhưng với Tiên Đề I, sự gần nghĩa là hệ quả logic của chính nội dung tiên đề, không phải khiếm khuyết cần sửa. RCA 2026-06-09 — xem CHANGELOG.md A12.
 
 **Neo quan trọng (III):** "Cội Nguồn" = tên thuần Việt cho bản chất *cảm xúc-bản sắc* của Tiên Đề III.
 KHÔNG đồng nghĩa với "Orthogonal/trực giao" (thuật ngữ cấu trúc). Hai tầng khác nhau: essence ≠ manifestation.
 Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
+
+**Neo quan trọng (IX):** Biểu hiện "Gặp Nhau Giữ Gốc" = tầng saṃvṛti (quy ước): cái thấy được khi IX vận hành — hai hệ tiếp xúc, mỗi hệ giữ nguyên gốc rễ I–VIII (điều kiện C1). Bản chất "Không Của Ai, Nhờ Cả Hai" = tầng paramārtha (chân lý tối hậu): cấu trúc P* — đồng sinh (pratītyasamutpāda) từ cả hai, không quy thuộc về ai (anattā của P*). Tương phản có chủ đích với V: "Ai Cũng Giữ Một Phần" (phân tán quyền sở hữu *trong* hệ) ↔ "Không Của Ai" (không quyền sở hữu P* *giữa* hai hệ). Tầng "Interface" = tầng thứ tư mới — đòi hỏi hai hệ hoàn chỉnh I–VIII mỗi bên. Cặp tiếng Anh gợi hình (rule P2 — bilingual symmetry): Manifestation "Mine, Yours, and the Space Between"; Essence "Owned by Neither, Born of Both". Phase 1b · RCA 4.8/5 · La bàn C (Phật giáo nhận thức luận) · 2026-06-11.
 
 ---
 
