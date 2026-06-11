@@ -1,0 +1,19 @@
+```markdown
+Hiếu Kinh: 1373 (giải), 1374 (giải), 1375 (n), 1376 (giải),
+Bắc Sử: 3742 (lược).
+Tính Lý: 3762 (lược), 3765 (vs), 3766 (giải), 3767 (lược),
+Mạnh Tử: 2050 (vs).
+
+Sách cha ông ta viết ra chủ yếu để luyện thi. Vô số các nhà tư tưởng Trung Quốc, chẳng được ai chú ý đến, dù đó là những người lỗi lạc như Lão Tử, Mặc Tử, Tuân Tử, Hàn Phi Tử, Dương Hùng, Vương Sung, Vương Thông, Vương Dương Minh. Cái học chỉ nhằm một mục đích gần gũi: thi đỗ làm quan. Lớp trí thức yêu nước hiện nay cần rút kinh nghiệm ở đây.
+
+Ngoài các sách đi thi có những tập văn mẫu. Loại này rất được ưa chuộng bởi vì nó trực tiếp liên quan tới thi cử:
+Phú: 212, 3754, 3943.
+Văn sách: 213, 2050, 2939, 2940, 2941, 4034.
+Chiếu biểu: 235, 236. 296, 470, 492, 601, 602, 610.
+Đối sách thi đình: 414.
+Câu đối: 967,
+Thơ: 529, 1320.
+
+---
+295
+```

@@ -256,7 +256,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **MACH_RE** (3397 symbols, 3176 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **Mach-Re** (3507 symbols, 3287 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -279,10 +279,10 @@ This project is indexed by GitNexus as **MACH_RE** (3397 symbols, 3176 relations
 
 | Resource | Use for |
 |----------|---------|
-| `gitnexus://repo/MACH_RE/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/MACH_RE/clusters` | All functional areas |
-| `gitnexus://repo/MACH_RE/processes` | All execution flows |
-| `gitnexus://repo/MACH_RE/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/Mach-Re/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/Mach-Re/clusters` | All functional areas |
+| `gitnexus://repo/Mach-Re/processes` | All execution flows |
+| `gitnexus://repo/Mach-Re/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 
