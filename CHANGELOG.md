@@ -3,6 +3,24 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 2: `axiom_9.html` — Trang HTML công khai Tiên Đề IX · RCA 4.8/5
+
+**Symptom / gap:** Tiên Đề IX không có trang HTML công khai. `upgrade.html` (Phase 3), `index.html` (Phase 4), `axioms.html` không thể liên kết đến IX khi file chưa tồn tại.
+
+**Structural decision (3-round RCA):**
+- Round 1: Nếu copy section order từ axiom_4.html (formal statement trước VVCs), HTML sẽ đảo ngược hướng nhận thức luận của EAP.
+- Round 2: HTML là bản render công khai của spec — spec khai "VVC trước" (EAP); HTML vi phạm EAP = Pramāṇa bị vi phạm ở layer presentational.
+- Round 3 (root): EAP là Tiên Đề VIII áp dụng lên Mạch Rễ chính nó; HTML theo axiom_4.html order sẽ vi phạm Tiên Đề VIII tự phản chiếu của framework.
+- **Scoring gate: 5/5 → VVC-first order CONFIRMED.**
+
+**Fix:** Tạo `axiom_9.html` tại root. EAP note → VVCs (3 cases) → Derivation → Formal statement bilingual + ASCII diagram → C1–C4 (V1: C1-full/min/zero badges) → Falsification → Triangulation (V6 + styled-table) → Case studies (V5 boundary + Vietnam primary + US-China stress test) → Architecture stack + OQ table → footer → NGUỒN TRÍCH DẪN (5 nguồn). CSS reuses axiom_4.html pattern + `--interface`/`--interface-pale` vars. Hero gradient: deep purple (`#1a0838 → #5a30a0`) phân biệt tầng Interface với tầng Core (teal). Inline `<a href="#nguon-N">[N]</a>`; `id="nguon-N"` trong bảng. Bottom-nav: `← Hệ Tiên Đề` (axioms.html) | `Mạch Rễ 3.2 →` (upgrade.html).
+
+**Amendments applied from birth:** V1 (C1 graded), V2 (scoped claims), V3 (diacritics), V4 (canonical §9 names), V5 (`[interpretation]` marks + boundary statement), V6 (triangulation disclaimer).
+
+**RCA score: 4.8/5.** La bàn: C — Phật giáo nhận thức luận. Phase 2 → COMPLETE. Cổng Phase 3 (upgrade.html) mở.
+
+---
+
 ## 2026-06-11 — Phase 1: `axiom_ix_spec.md` — Canonical specification Tiên Đề IX · Born-consistent v3.2
 
 **Symptom / gap:** Axiom IX chưa có file spec canonical. Các phase HTML (2–6) không thể ship nếu chưa có nguồn duy nhất chứa tên §9, điều kiện C1 phân bậc (V1), VVCs đúng thứ tự EAP, và các amendment V1–V6 đã áp dụng từ đầu.
