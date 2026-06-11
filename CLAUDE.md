@@ -182,12 +182,12 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
   - **HTML:** mỗi trích dẫn inline phải là hyperlink `<a href="#nguon-N">[N]</a>` trỏ đến entry tương ứng trong bảng "Nguồn Trích Dẫn". Entry trong bảng phải có `id="nguon-N"` (N = số thứ tự nguồn). Không có hyperlink = tài liệu HTML chưa hoàn chỉnh.
   - **Mọi định dạng khác** (`.md`, `.tex`, manuscript, plan doc): dùng số thứ tự `[N]` inline trong văn bản; N tương ứng với thứ tự entry trong bảng "Nguồn Trích Dẫn".
 - **CHANGELOG phân tầng — tiered changelogs** (RCA finding 2026-06-11, score 4.8/5; kế thừa papers/ instance từ RCA 2026-06-10, score 5.0/5):
-  - **Quy tắc đặt tên:** `CHANGELOG_<tên-folder-chứa>.md` — ví dụ folder `mv_002` → `CHANGELOG_mv_002.md`; folder `papers` → `CHANGELOG_papers.md`. Ngoại lệ duy nhất: tầng root dùng `CHANGELOG.md` (không hậu tố).
+  - **Quy tắc đặt tên:** `CHANGELOG_<tên-folder-chứa>.md` — ví dụ folder `mv_002` → `CHANGELOG_mv_002.md`; folder `papers` → `CHANGELOG_papers.md`; folder `paper_005` → `CHANGELOG_paper_005.md`. Ngoại lệ duy nhất: tầng root dùng `CHANGELOG.md` (không hậu tố).
   - **Vị trí:** file changelog nằm **trong chính folder đó**, không nằm nơi khác.
   - **Routing "phải và chỉ được":** mỗi thay đổi ghi vào changelog của **tầng gần nhất chứa file bị sửa** (nearest ancestor folder có file changelog), và **chỉ** vào đó — không ghi trùng lên tầng cha, không ghi vào root nếu đã thuộc tầng con nào. Root `CHANGELOG.md` là fallback cho mọi file không thuộc tầng con (axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure).
   - **Tạo tầng mới:** khi một folder cần lịch sử riêng, tạo file theo quy tắc đặt tên trên; header phải khai phạm vi + liên kết về `CHANGELOG.md` gốc (theo mẫu của `papers/CHANGELOG_papers.md`).
   - **Mỗi entry vẫn phải qua** 3-round RCA × 5-Why × scoring gate ≥ 4/5 (không đổi).
-  - **Tầng hiện có (instances):** root → `CHANGELOG.md`; `papers/` → `papers/CHANGELOG_papers.md`; `publish/movie_script/mv_002/` → `publish/movie_script/mv_002/CHANGELOG_mv_002.md`.
+  - **Tầng hiện có (instances):** root → `CHANGELOG.md`; `papers/` → `papers/CHANGELOG_papers.md`; `papers/paper_005/` → `papers/paper_005/CHANGELOG_paper_005.md`; `publish/movie_script/mv_002/` → `publish/movie_script/mv_002/CHANGELOG_mv_002.md`.
 - Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
 - Apply the mandatory principle "rebuild with carry-forward" (replaces the former "extend, not overwrite" rule; RCA finding 2026-06-06, score ≥ 4/5). For **unpublished / still-being-derived** content (the axiom system, internal mappings), clean overwrite and from-scratch re-derivation are **permitted** — preserving the old structure is not required. Binding condition: **before deleting or overwriting, declare an explicit "Carry-Forward Set"** — a named list of the assets (claims, definitions, falsification conditions, methodological compass) eligible to be carried over. Every item in the set is a *candidate that must survive re-validation through the RCA gate*, not an automatic keep; anything not in the set defaults to dropped (reference-only). For **published / externally-depended-upon** content, still prefer extend, and overwrite only when the user explicitly requests it. The default Carry-Forward Set lives in `plan/dictionary_rule.md §7`.
 
@@ -259,7 +259,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **Mach-Re** (3507 symbols, 3287 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **Mach-Re** (3886 symbols, 3683 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
