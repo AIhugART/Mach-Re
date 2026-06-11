@@ -1,9 +1,9 @@
-# Tiên Đề IX — Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai
-## Axiom IX Canonical Specification — Living Interface
+# Tiên Đề VI — Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai
+## Axiom VI Canonical Specification — Living Interface
 
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 License: CC BY 4.0 — no individual or organization owns Mạch Rễ
-Status: Draft — pending Phase 2 (axiom_9.html) integration
+Status: Draft — pending Phase 2 (axiom_6.html) integration
 Version: Mạch Rễ 3.2 — born consistent with amendments V1–V6
 Date: 2026-06-11
 
@@ -11,7 +11,7 @@ Date: 2026-06-11
 
 ## Document note
 
-This is the canonical source specification for Axiom IX. Written after Phase 1b
+This is the canonical source specification for Axiom VI. Written after Phase 1b
 (naming RCA, 2026-06-11) completed — carries the §9 canonical names from birth;
 no post-hoc renaming. Amendments V1–V6 from
 `plan/2026-06-11-mach-re-v3.2-axiom-ix-build-plan.md` are applied throughout.
@@ -34,7 +34,7 @@ triangulation (+ V6 disclaimer); Open Questions 2–5.
 > document order, not follow it. The formal statement is the formalization of
 > the VVC, not the VVC's validation.
 
-**EAP does not restrict application.** Axiom IX applies to US–China, East–West,
+**EAP does not restrict application.** Axiom VI applies to US–China, East–West,
 Ubuntu–Confucian contact, and any other pair of rooted identity systems. The
 EAP only requires that the derivation path runs through Vietnamese practice —
 because that is where the generative question originates.
@@ -71,7 +71,7 @@ expressing Vietnamese relational ontology through Buddhist epistemological tools
 Pattern P*: owned by neither S1 nor S2, made possible by both.
 
 Architect: Trần Nhân Tông — a king who abdicated to become a monk while leading
-spiritual resistance against the Mongol invasions. He was running Axiom VIII
+spiritual resistance against the Mongol invasions. He was running Axiom V
 (questioning the invariant of his own kingship). Because of this reflexive
 capacity, he could participate in P* without being absorbed by either system.
 Both S1 and S2 were running VIII at this moment — canonical case of C1-full
@@ -109,7 +109,7 @@ engagement), or 20 years from 1975.
 Mechanism: Vietnamese identity did not require American enmity to sustain
 itself. When the war ended, the contact zone between Vietnam (S1) and the US
 (S2) could be restructured without either system losing its pattern. This is C1
-and C2 operating: Vietnam was running Axiom VIII (able to question its own
+and C2 operating: Vietnam was running Axiom V (able to question its own
 patterns about the US), and treated the US as a system with its own valid
 conventional truth (Two Truths operating) — not as an enemy whose meta-grammar
 needed to be defeated.
@@ -123,10 +123,10 @@ All three VVCs share one structural signature:
 1. Two systems, both rooted (both have functioning Axiom II)
 2. Contact without absorption (Axiom IV operating in both)
 3. Emergence of P* — a pattern owned by neither, made possible by both
-4. Requisite condition (V1, graded): at least one system running Axiom VIII —
+4. Requisite condition (V1, graded): at least one system running Axiom V —
    reflexive cognition about its own invariant (C1-min as minimum)
 
-This structural signature is what Axiom IX formalizes. The formalization comes
+This structural signature is what Axiom VI formalizes. The formalization comes
 after the practice. The practice is epistemically prior.
 
 ---
@@ -153,7 +153,7 @@ Literal gloss:  Giao Diện Sống — gloss of the English term only;
 
 ### Formal statement
 
-When two or more identity systems are each operating Axioms I–VIII, the contact
+When two or more identity systems are each operating the full axiom stack (Axioms I–V; Derived Propositions 1–4 follow from I–IV), the contact
 zone between them has no absolute coordinate origin — because no system has
 inherent existence independent of conditions (Śūnyatā). This does not produce
 chaos. It produces a Living Interface: a structured interaction space where each
@@ -166,7 +166,7 @@ neither system owns.
 ### Structural diagram
 
 ```
-S1 [Axioms I–VIII]  <-------- Living Interface -------->  S2 [Axioms I–VIII]
+S1 [Axioms I–V]  <---- Living Interface ---->  S2 [Axioms I–V]
         |                             |                            |
   invariant-1                Upāya + Pramāṇa               invariant-2
   (Axiom II)             (no inherent existence              (Axiom II)
@@ -189,20 +189,20 @@ S1 [Axioms I–VIII]  <-------- Living Interface -------->  S2 [Axioms I–VIII]
 
 ## Section 4 — Operating Conditions (C1–C4)
 
-Axiom IX activates only when all four conditions are met. If any one fails,
+Axiom VI activates only when all four conditions are met. If any one fails,
 the contact zone defaults to:
 - **Battleground:** one system absorbs or defeats the other
 - **Neutralization:** both systems dissolve their patterns in the contact zone
 
 ### C1 — Reflexive Cognition in the Contact Zone (graded, V1)
 
-**C1-full (symmetric mode).** Both S1 and S2 are running Axiom VIII. The
+**C1-full (symmetric mode).** Both S1 and S2 are running Axiom V. The
 Living Interface is stable; P* is co-maintained. This is the mode the formal
-statement describes ("each operating Axioms I–VIII").
+statement describes ("each operating the full axiom stack, Axioms I–V").
 Canonical VVC: Trúc Lâm — both Trần Nhân Tông's tradition and the incoming
 Buddhist tradition were operating reflexive cognition about their own patterns.
 
-**C1-min (asymmetric mode).** At least one system runs Axiom VIII consistently
+**C1-min (asymmetric mode).** At least one system runs Axiom V consistently
 and with sufficient strength to hold the contact zone open while partner VIII
 is intermittent or constrained. The Living Interface exists but is degraded:
 maintenance cost concentrates on the stronger-VIII system; P* stability depends
@@ -215,7 +215,7 @@ partners whose VIII is intermittent or constrained.
 **C1-zero.** No system runs VIII. No Living Interface. Contact zone defaults to
 battleground or neutralization.
 
-**Boundary against Axiom IV.** C1-min is Axiom IX — not "Axiom IV with a
+**Boundary against Axiom IV.** C1-min is Axiom VI — not "Axiom IV with a
 strong absorber" — if and only if the weaker-VIII system retains its own
 invariant pattern (Axiom II keeps functioning; it is not being restructured by
 the stronger system's pattern logic). If the weaker system's invariant is being
@@ -267,15 +267,15 @@ Korea — each governed by its own form, none by a single template.
 
 ## Section 5 — Falsification Condition
 
-Axiom IX is falsified if there exist two identity systems, both fully operating
-Axioms I–VIII, whose contact zone naturally converges on a shared meta-grammar
+Axiom VI is falsified if there exist two identity systems, both fully operating
+the full axiom stack (Axioms I–V), whose contact zone naturally converges on a shared meta-grammar
 that neither system had to modify its invariant pattern to accept — that is, a
 genuinely neutral common ground requiring no Upāya selection and no Pramāṇa
 evaluation exists.
 
 This would also falsify the Buddhist epistemological compass reading: it would
 demonstrate that two systems can have inherent shared existence without dependent
-co-arising. The falsification condition is jointly a test of Axiom IX and of
+co-arising. The falsification condition is jointly a test of Axiom VI and of
 Pratītyasamutpāda as applied to inter-system contact.
 
 ---
@@ -369,7 +369,7 @@ Finding (one reading): US–China Living Interface difficulty, under this
 structural reading, is not caused by excessive difference but by symmetric C2
 constraints combined with C1 constraints in both systems. The path does not
 begin with bilateral negotiation — it begins with each system independently
-restoring its own Axiom VIII. Vietnam's structural position is the operational
+restoring its own Axiom V. Vietnam's structural position is the operational
 model. `[interpretation]`
 
 ---
@@ -380,12 +380,12 @@ model. `[interpretation]`
 
 ```
 INTER-SYSTEM LAYER (added v3.1/3.2)
-  Tiên Đề IX  — Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai
+  Tiên Đề VI  — Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai
                ("Living Interface" · "Mine, Yours, and the Space Between")
                VVC name: Ngoại Giao Cây Tre
                Buddhist label: Pratītyasamutpāda Đối Xứng
                Tầng: Interface (4th tier)
-               Scope: ≥ 2 systems each running Axioms I–VIII
+               Scope: ≥ 2 systems each running Axioms I–V
                Tools: Nhị Đế, Tứ Cú (Catuṣkoṭi), Pramāṇa, Upāya
                Conditions: C1–C4 (all required; C1 load-bearing, graded)
                C1-min: ≥ 1 system running VIII (minimum prerequisite)
@@ -394,12 +394,13 @@ INTER-SYSTEM LAYER (added v3.1/3.2)
                      · Normalization 1975–1997 (C1-min + C2 + C3)
 
 REFLEXIVE LAYER
-  Tiên Đề VIII — Tự Nhìn Thấy Mình — Soi Mình Mà Không Vỡ
+  Tiên Đề V — Tự Nhìn Thấy Mình — Soi Mình Mà Không Vỡ
 
-DERIVED LAYER
-  Tiên Đề VII  — Nổi Lên Có Hướng — Hợp Lại Thành Cái Mới
-  Tiên Đề VI   — Hóa Nhiễu Thành Sức — Đau Được Xử Là Đau Lành
-  Tiên Đề V    — Giữ Mà Không Gom — Ai Cũng Giữ Một Phần
+DERIVED LAYER (Mệnh Đề — Arabic numerals; Decision 4, 2026-06-11)
+  Mệnh Đề 4    — Điều Kiện Đứt Gãy — Đứt Khi Hết Cội (structural symbol F)
+  Mệnh Đề 3    — Nổi Lên Có Hướng — Hợp Lại Thành Cái Mới
+  Mệnh Đề 2    — Hóa Nhiễu Thành Sức — Đau Được Xử Là Đau Lành
+  Mệnh Đề 1    — Giữ Mà Không Gom — Ai Cũng Giữ Một Phần
 
 CORE LAYER
   Tiên Đề IV   — Ranh Giới Mềm — Đóng Mở Có Chọn
@@ -410,7 +411,7 @@ CORE LAYER
 
 ### Derivation note
 
-Axiom IX is not derivable from Axioms I–VIII: it requires a new subject
+Axiom VI is not derivable from the full single-system stack (Axioms I–V): it requires a new subject
 (the dyad, not the singleton). The formal prerequisite is C1-min.
 
 ### Open Questions

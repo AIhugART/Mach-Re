@@ -1,7 +1,18 @@
-# Changelog — Mạch Rễ
+## 2026-06-11 — Refactor Ky Phap Phan Tang Theo `raw/axiom-chart.html` (Quyet Dinh 4) ✅
 
-> **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
-> **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
+**Trigger:** Nguoi dung chot: so La Ma CHI danh cho Tien De; Menh De Dan Xuat danh so La tinh 1–4; cap duoi nua khong danh so phan cap.
+**Triple compass:** A (Phan Ngoc) · B (Ashby/Weick) · C (Buddhist Epistemology: Apoha, Nhi de).
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4/5 trên 6 quyết định. Chi tiết: `plan/2026-06-11_refactor-danh-so-tien-de-menh-de.md`.
+**User override (2026-06-11):** Dồn số Tiên Đề: VIII → V, IX → VI. Dãy liên tục I–VI: I–IV Core · V Meta · VI Interface. A-B-C compass: upāya tốt hơn cho người mới tiếp cận; dãy liên tục giảm variety đọc nhầm (Ashby).
+**File rename (RCA D7, 4.4/5):** `axiom_9.html` → `axiom_6.html`, `axiom_ix_spec.md` → `axiom_6_spec.md`. Internal links updated across all living files (who, when, index, upgrade, axiom_spec, axiom_6, axiom_6_spec). CSS class `c-axiom9` → `c-axiom6`.
+
+**6 quyet dinh:** D1 Menh De V/VI/VII/F → La tinh 1/2/3/4 (4.8 → FIX) · D2 Tien De VIII/IX giu so (4.8 → GIU) · D3 Sai tang "Tien De V/VI/VII" → "Menh De 1/2/3" (5.0 → FIX) · D4 UPGRADE I–IV → Upgrade 1–4 (4.6 → FIX) · D5 Dai "I–VIII" → "I–IV + VIII" / `Full(S)` (4.4 → FIX) · D6 Giu ky hieu cau truc cap duoi (F(S,t), DSH-n, …) (GIU).
+
+**SSOT:** `axiom_spec.md` — Header; derivation log; headings; schema; Quyet Dinh 4 + mapping table §5.2; YAML split axioms/propositions.
+**Canonical:** `plan/dictionary_rule.md` §9 tach bang Tien De / Menh De; `CLAUDE.md` cap nhat.
+**Refactor 15 file song** (axioms, axiom_derived, what, how, index, axiom_1, axiom_9, axiom_ix_spec, luu_tru, upgrade, axiom_conflict, ubuntu, yoruba, relational_and_distributed_philosophy).
+**Anchor/ID** giu nguyen (#F, id="...") — khong gay link.
+**Tang khong sua** (lich su): CHANGELOG* cu, plan/* co ngay, review/*, raw/*, papers/*, publish/movie_script/*.
 
 ## 2026-06-11 — Paper 005 v2 RCA Audit · 4.88/5 · 1 fix · PASS ✅
 

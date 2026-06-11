@@ -103,7 +103,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Khi giới thiệu Mạch Rễ với người mới → luôn nêu rõ: "Đây là triết học tương quan-phân tán, không phải siêu hình học"
 - Khi so sánh Mạch Rễ với hệ triết học khác → đặt nó vào cột "Tương quan-Phân tán", không đứng ngoài bảng như thẩm phán trung lập
 - Khi viết paper → kèm tuyên bố tự phân loại (Framework Classification) trong abstract hoặc introduction
-- Việc tự phân loại là hệ quả của Tiên Đề VIII — Tự Nhìn Thấy Mình: framework phải áp dụng chính thước đo của mình lên bản thân nó
+- Việc tự phân loại là hệ quả của Tiên Đề V — Tự Nhìn Thấy Mình: framework phải áp dụng chính thước đo của mình lên bản thân nó
 
 ### Tiên Đề III — Bản chất và Biểu hiện (RCA finding 2026-06-05)
 
@@ -119,21 +119,24 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Hai thuật ngữ **không** thay thế nhau: chúng khác tầng (essence ≠ manifestation), không phải đồng nghĩa
 - **Mạch Cội Nguồn** ≠ **Mạch Cội Dọc**: "Cội Nguồn" = cả hai trục (V ⊥ H) = bản chất; "Cội Dọc" = trục dọc (V) = biểu hiện
 
-### Tên thuần Việt các Tiên Đề (RCA finding 2026-06-05)
+### Tên thuần Việt các Tiên Đề & Mệnh Đề (RCA finding 2026-06-05; ký pháp cập nhật 2026-06-11)
 
-> Điểm RCA: 8/8 tiên đề đạt ≥ 4/5. Bảng canonical (nguồn chân lý duy nhất) tại `plan/dictionary_rule.md §9`.
-> Format đầy đủ: `Tiên Đề [số] — [Biểu hiện thuần Việt] — [Bản chất thuần Việt] ("EN")`.
+> Điểm RCA: 8/8 đơn vị đạt ≥ 4/5. Bảng canonical (nguồn chân lý duy nhất) tại `plan/dictionary_rule.md §9`.
+> **Quy tắc ký pháp phân tầng (Quyết định 4, 2026-06-11 — theo `raw/axiom-chart.html`):** số La Mã CHỈ dành cho **Tiên Đề** (đơn vị độc lập, không suy ra được); **Mệnh Đề Dẫn Xuất** đánh số La tinh 1–4 (trước: V, VI, VII, F); cấp dưới nữa không đánh số phân cấp. Số La Mã đã hạ tầng (V–VII) không tái sử dụng — dãy tiên đề I–IV, VIII, IX có khoảng trống chủ đích.
+> Format đầy đủ: `Tiên Đề [La Mã] — [Biểu hiện thuần Việt] — [Bản chất thuần Việt] ("EN")` · `Mệnh Đề [1–4] — [Biểu hiện] — [Bản chất] ("EN")`.
 
 | # | Tầng | Biểu hiện | Bản chất |
 |---|---|---|---|
-| I | Core | Sống Trong Quan Hệ | Có Nhau Mới Có Mình |
-| II | Core | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình |
-| III | Core | Mạch Cội Dọc | Mạch Cội Nguồn |
-| IV | Core | Ranh Giới Mềm | Đóng Mở Có Chọn |
-| V | Derived | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần |
-| VI | Derived | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành |
-| VII | Derived | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới |
-| VIII | Meta | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ |
+| Tiên Đề I | Core | Sống Trong Quan Hệ | Có Nhau Mới Có Mình |
+| Tiên Đề II | Core | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình |
+| Tiên Đề III | Core | Mạch Cội Dọc | Mạch Cội Nguồn |
+| Tiên Đề IV | Core | Ranh Giới Mềm | Đóng Mở Có Chọn |
+| Mệnh Đề 1 *(trước: V)* | Derived | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần |
+| Mệnh Đề 2 *(trước: VI)* | Derived | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành |
+| Mệnh Đề 3 *(trước: VII)* | Derived | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới |
+| Mệnh Đề 4 *(trước: F)* | Derived | Đứt Khi Hết Cội | — (ký hiệu cấu trúc `F` giữ nguyên) |
+| Tiên Đề V | Meta | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ |
+| Tiên Đề VI | Interface | Gặp Nhau Giữ Gốc | Không Của Ai, Nhờ Cả Hai |
 
 ### Sứ mệnh Việt hóa — Từ vựng triết học thuần Việt (RCA finding 2026-06-09)
 
@@ -238,7 +241,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 | Framework | File | Khi nào |
 |---|---|---|
-| **Zhang-Spielberg Hybrid v3** | `publish/movie_script/Zhang_Yimou_Spielberg_Hybrid_Screenplay_v3.md` | **Bắt buộc đọc. Luôn kích hoạt khi tạo kịch bản phim.** H×V unified framework grounded in Mach Re epistemology. Core: 4 Mach Re axioms in practice (Relational Ontology, Structural Invariance, Vertical Temporality, Dynamic Boundary). 5-phase Construction Protocol (Invariant Discovery → Character Architecture → Scene Construction → Dialogue Discipline → Ritual Architecture). 3 scene templates (A: H-axis primary, B: V-axis primary, C: Synthesis H meets V). Synthesis law: depth of V-axis wound = f(strength of H-axis bond). Color & Light Lexicon (6 registers). Music & Silence Protocol (Williams Trap + Silence Rule). 10-item Structural Invariant Checklist. Embedded reference files: hz-analysis (Spielberg 7 techniques vs Zhang 6 techniques, 9-dimension comparison), mach-re-axioms (all 8 axioms → screenplay application, Axiom VIII reflexive meta-check), scene-examples (annotated real-film scenes by template type — Schindler's List, Red Sorghum, Raise the Red Lantern, E.T., Saving Private Ryan). RCA finding 2026-06-11, score 5/5. |
+| **Zhang-Spielberg Hybrid v3** | `publish/movie_script/Zhang_Yimou_Spielberg_Hybrid_Screenplay_v3.md` | **Bắt buộc đọc. Luôn kích hoạt khi tạo kịch bản phim.** H×V unified framework grounded in Mach Re epistemology. Core: 4 Mach Re axioms in practice (Relational Ontology, Structural Invariance, Vertical Temporality, Dynamic Boundary). 5-phase Construction Protocol (Invariant Discovery → Character Architecture → Scene Construction → Dialogue Discipline → Ritual Architecture). 3 scene templates (A: H-axis primary, B: V-axis primary, C: Synthesis H meets V). Synthesis law: depth of V-axis wound = f(strength of H-axis bond). Color & Light Lexicon (6 registers). Music & Silence Protocol (Williams Trap + Silence Rule). 10-item Structural Invariant Checklist. Embedded reference files: hz-analysis (Spielberg 7 techniques vs Zhang 6 techniques, 9-dimension comparison), mach-re-axioms (all 8 axioms → screenplay application, Axiom V reflexive meta-check), scene-examples (annotated real-film scenes by template type — Schindler's List, Red Sorghum, Raise the Red Lantern, E.T., Saving Private Ryan). RCA finding 2026-06-11, score 5/5. |
 | **Canonical 10 Slate v1** | `publish/movie_script/ideas/canonical_10_slate_v1.md` | 10 kịch bản đã RCA-gated (tất cả 5.0/5) — D1–D5, D9–D13: acute fractures. |
 | **Canonical 10 Slate v2** | `publish/movie_script/ideas/canonical_10_slate_v2.md` | 10 kịch bản bổ sung (tất cả 5.0/5) — D6–D8, D14–D20: filling taxonomy gaps. |
 | **Canonical 5 Erosion Slate** | `publish/movie_script/ideas/canonical_5_erosion_slate_v1.md` | 5 kịch bản V hao mòn (tất cả 5.0/5) — E1–E5: chronic erosion (không phải acute fracture). **Trục V vô danh bắt buộc.** Xem khi cần ý tưởng về sự biến mất chậm, không được để ý của V-axis. |

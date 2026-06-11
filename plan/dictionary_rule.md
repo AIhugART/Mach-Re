@@ -114,11 +114,13 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 
 ---
 
-## 9. Bảng Tên Canonical — Tên Thuần Việt Các Tiên Đề
+## 9. Bảng Tên Canonical — Tên Thuần Việt Các Tiên Đề & Mệnh Đề
 
-> **[CHỐT CANONICAL 2026-06-06 · P6 Renumber]** Đã đồng bộ hoàn toàn với `axiom_spec.md`. Số La Mã đã đếm lại từ đầu theo tầng (I–IV Core, V–VII Derived, VIII Meta).
-> Quy tắc dùng: format đầy đủ = `Tiên Đề [số] — [Biểu hiện] — [Bản chất] ("EN")`.
-> Khi không gian hạn chế (menu, breadcrumb) → chỉ dùng `Tiên Đề [số] — [Biểu hiện]`.
+> **[CHỐT CANONICAL 2026-06-11 · Quyết định 4 — ký pháp phân tầng theo `raw/axiom-chart.html`]** (thay chốt 2026-06-06 "La Mã đếm liên tục theo tầng"). Đã đồng bộ với `axiom_spec.md` §5.2. Quy tắc: **số La Mã CHỈ dành cho Tiên Đề** (đơn vị độc lập, không suy ra được); **Mệnh Đề Dẫn Xuất đánh số La tinh 1–4**; cấp dưới nữa không đánh số phân cấp. **Dãy tiên đề I–VI liên tục:** I–IV (Core) → V = Meta (trước: VIII) → VI = Interface (trước: IX). Số La Mã cũ của Mệnh Đề (V/VI/VII) **đã được dồn lại** — đây là upāya tốt hơn cho người mới tiếp cận.
+> Quy tắc dùng: format đầy đủ = `Tiên Đề [La Mã] — [Biểu hiện] — [Bản chất] ("EN")` · `Mệnh Đề [1–4] — [Biểu hiện] — [Bản chất] ("EN")`.
+> Khi không gian hạn chế (menu, breadcrumb) → chỉ dùng `Tiên Đề [số] — [Biểu hiện]` / `Mệnh Đề [số] — [Biểu hiện]`.
+
+**Tiên Đề (Axioms — số La Mã):**
 
 | # | Biểu hiện (thuần Việt) | Bản chất (thuần Việt) | Thuật ngữ kỹ thuật (EN) | Điểm | Tầng |
 |---|---|---|---|---|---|
@@ -126,11 +128,17 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 | II | Nếp Bản Sắc | Đổi Mà Vẫn Là Mình | Structural Invariant | 4.8 | Core |
 | III | Mạch Cội Dọc | Mạch Cội Nguồn | Vertical / Orthogonal Temporality | 4.8 | Core |
 | IV | Ranh Giới Mềm | Đóng Mở Có Chọn | Dynamic Boundaries | 5.0 | Core |
-| V | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 | Derived |
-| VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 | Derived |
-| VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 | Derived |
-| VIII | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 | Meta |
-| IX | Gặp Nhau Giữ Gốc | Không Của Ai, Nhờ Cả Hai | Living Interface | 4.8 | Interface |
+| V | Tự Nhìn Thấy Mình | Soi Mình Mà Không Vỡ | Reflexive Cognition (Meta-Axiom) | 5.0 | Meta |
+| VI | Gặp Nhau Giữ Gốc | Không Của Ai, Nhờ Cả Hai | Living Interface | 4.8 | Interface |
+
+**Mệnh Đề Dẫn Xuất (Derived Propositions — số La tinh; suy ra từ các Tiên Đề Core):**
+
+| # | (trước 2026-06-11) | Biểu hiện (thuần Việt) | Bản chất (thuần Việt) | Thuật ngữ kỹ thuật (EN) | Điểm | Suy từ |
+|---|---|---|---|---|---|---|
+| 1 | Mệnh Đề V | Giữ Mà Không Gom | Ai Cũng Giữ Một Phần | Distributed Storage | 5.0 | I+II |
+| 2 | Mệnh Đề VI | Hóa Nhiễu Thành Sức | Đau Được Xử Là Đau Lành | Perturbation Transformation | 4.8 | II+III+IV |
+| 3 | Mệnh Đề VII | Nổi Lên Có Hướng | Hợp Lại Thành Cái Mới | Directed Emergence | 5.0 | I+II+III+IV |
+| 4 | Mệnh Đề F | Đứt Khi Hết Cội | — (ký hiệu cấu trúc `F` giữ nguyên) | Failure Conditions | 5.0 | II+III+IV |
 
 **Neo quan trọng (I):** Với Tiên Đề I, Biểu hiện ("Sống Trong Quan Hệ") và Bản chất ("Có Nhau Mới Có Mình") gần nghĩa một cách có chủ đích — không phải lỗi thiết kế. Bản thân nội dung ontological của Tiên Đề I (identity IS relations) làm collapse khoảng cách essence-manifestation: nếu bản sắc được cấu thành bởi quan hệ, thì "sống trong quan hệ" (cách nó hiện ra trong đời sống) và "có nhau mới có mình" (cấu trúc nền) là hai mặt của cùng một thực tại. Phân biệt gắt gao Biểu hiện/Bản chất là thiết yếu cho Tiên Đề III (ngăn category collapse với Halbwachs/Luhmann), nhưng với Tiên Đề I, sự gần nghĩa là hệ quả logic của chính nội dung tiên đề, không phải khiếm khuyết cần sửa. RCA 2026-06-09 — xem CHANGELOG.md A12.
 
@@ -138,7 +146,7 @@ Tối đa **1–2 sơ đồ/tiên đề**. Không bao giờ trình bày ô ASCII
 KHÔNG đồng nghĩa với "Orthogonal/trực giao" (thuật ngữ cấu trúc). Hai tầng khác nhau: essence ≠ manifestation.
 Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
 
-**Neo quan trọng (IX):** Biểu hiện "Gặp Nhau Giữ Gốc" = tầng saṃvṛti (quy ước): cái thấy được khi IX vận hành — hai hệ tiếp xúc, mỗi hệ giữ nguyên gốc rễ I–VIII (điều kiện C1). Bản chất "Không Của Ai, Nhờ Cả Hai" = tầng paramārtha (chân lý tối hậu): cấu trúc P* — đồng sinh (pratītyasamutpāda) từ cả hai, không quy thuộc về ai (anattā của P*). Tương phản có chủ đích với V: "Ai Cũng Giữ Một Phần" (phân tán quyền sở hữu *trong* hệ) ↔ "Không Của Ai" (không quyền sở hữu P* *giữa* hai hệ). Tầng "Interface" = tầng thứ tư mới — đòi hỏi hai hệ hoàn chỉnh I–VIII mỗi bên. Cặp tiếng Anh gợi hình (rule P2 — bilingual symmetry): Manifestation "Mine, Yours, and the Space Between"; Essence "Owned by Neither, Born of Both". Phase 1b · RCA 4.8/5 · La bàn C (Phật giáo nhận thức luận) · 2026-06-11.
+**Neo quan trọng (IX):** Biểu hiện "Gặp Nhau Giữ Gốc" = tầng saṃvṛti (quy ước): cái thấy được khi IX vận hành — hai hệ tiếp xúc, mỗi hệ giữ nguyên gốc rễ hệ đơn đầy đủ I–V (điều kiện C1). Bản chất "Không Của Ai, Nhờ Cả Hai" = tầng paramārtha (chân lý tối hậu): cấu trúc P* — đồng sinh (pratītyasamutpāda) từ cả hai, không quy thuộc về ai (anattā của P*). Tương phản có chủ đích với Mệnh Đề 1: "Ai Cũng Giữ Một Phần" (phân tán quyền sở hữu *trong* hệ) ↔ "Không Của Ai" (không quyền sở hữu P* *giữa* hai hệ). Tầng "Interface" = tầng thứ tư mới — đòi hỏi hai hệ hoàn chỉnh (I–V) mỗi bên. Cặp tiếng Anh gợi hình (rule P2 — bilingual symmetry): Manifestation "Mine, Yours, and the Space Between"; Essence "Owned by Neither, Born of Both". Phase 1b · RCA 4.8/5 · La bàn C (Phật giáo nhận thức luận) · 2026-06-11.
 
 ---
 
@@ -176,7 +184,7 @@ Xem chi tiết: §8 của file này và CLAUDE.md §Core Principles.
 | Prior-art catalog (Whitehead, Heidegger, Gadamer, Lévi-Strauss…) | Gắn vào tiên đề mới ở P3 (bổ sung ngoài 3 hệ neo) |
 
 ### 7.4 BỎ → reference-only (KHÔNG carry-forward)
-- Tập 7/8 tiên đề + **số La Mã I–VIII** như định danh ràng buộc.
+- Tập 7/8 tiên đề + **số La Mã I–V** như định danh ràng buộc.
 - Nhãn "4 Core + 3 Derived" + đoạn tự-mổ-xẻ "7 thực ra cần 4" (chỉ còn là provenance lịch sử).
 - Bảng tên canonical §9 như *ràng buộc* (xem trạng thái mới ở §9).
 
