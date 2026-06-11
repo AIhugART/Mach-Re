@@ -4,6 +4,22 @@
 > **Liên kết:** Lịch sử toàn bộ dự án (axiom, HTML nodes, audit, evidence) → xem [`CHANGELOG.md`](../CHANGELOG.md) tại thư mục gốc.
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
+## 2026-06-11 — Phase 7 completion: paper_009 title V4 fix · RCA 4.4/5
+
+**Triple compass:** A (Phan Ngọc) — title is the paper's public face; "Giao Diện Sống" imports computer-interface frame, failing Việt hóa rule 1. B (Ashby) — Requisite Variety: body already uses canonical names, title was the single stale artifact. C (Buddhist epistemology) — Pramāṇa: a title that doesn't match the framework's own naming standard is deceptive at the point of first contact.
+
+**RCA R3 (root):** Title was set before Phase 1b naming RCA completed (2026-06-11). Body text (written after Phase 1b) already uses "Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai" in §3.2 — title was the lone stale artifact.
+
+**Scoring: 4.4/5** → fix (Correct 4, Deep 4, Feasible 5, Conflict-risk 4 [papers/index.html sync], Preservation 5).
+
+**Files sửa:**
+- `papers/paper_009/paper_009_draft.md` line 5: `"Giao Diện Sống"` → `"Gặp Nhau Giữ Gốc (Living Interface)"`
+- `papers/index.html` line 267: same title fix (tiered routing exception — this is a papers-scope change affecting the papers index, recorded here)
+
+**Phase 7 deliverable status:** paper_009_draft.md is fully v3.2-compliant — ESP Layer E ✓, Boundary Statement ✓, graded C1 ✓, canonical names in body ✓, epistemic marks ✓, falsification conditions ✓, APA citation table ✓, author metadata ✓. No further Phase 7 work required.
+
+---
+
 
 ## 2026-06-11 — Phase 8c: paper_009 thuần-Việt gloss "nhận thức luận (mạch biết)" · RCA 4.8/5
 

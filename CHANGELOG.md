@@ -3,6 +3,135 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 9: Closure Audit — Mạch Rễ v3.2 IX Build · ALL PASS ✅
+
+**Triple compass:** A (Phan Ngọc) — framework's "kiểu lựa chọn" preserved: canonical names Vietnamese-first, diacritics intact, no foreign frame imports. B (Ashby/Weick) — loose coupling verified: each page fails independently; P1 sweep confirms no cross-page inconsistency. C (Buddhist epistemology) — Pramāṇa satisfied: all claims scoped, sourced, marked; Two Truths respected: no conventional claim elevated to ultimate.
+
+### F1–F8 Regression Suite
+
+| # | Check | Result |
+|---|---|---|
+| F1 | C1 graded (full/min/zero) — no strict symmetric-only | ✅ All pages use graded C1 |
+| F2 | Nguồn Trích Dẫn on all pages with citations | ✅ 22/22 pages |
+| F3 | Vietnamese diacritics — "Dĩ bất biến, ứng vạn biến" comma | ✅ Active pages correct |
+| F4 | Axiom IX canonical names: "Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai" | ✅ All labels use canonical |
+| F5 | No absolute/"4.000 năm as fact"/"nhanh hơn bất kỳ" | ✅ Zero in active HTML |
+| F6 | V5 register rule: diagnostics marked `[interpretation]` | ✅ All pages marked |
+| F7 | Changelog routing: root → CHANGELOG.md, papers → CHANGELOG_papers.md | ✅ Tiered routing correct |
+| F8 | V6 triangulation disclaimer | ✅ Present in axiom_9.html §6 |
+
+### Files changed today (14 files, +120/−31 lines)
+
+| Tier | Files | Phases |
+|---|---|---|
+| Root HTML | when.html, who.html, why.html, how.html, index.html, upgrade.html, axiom_9.html | 2–6 |
+| Spec | axiom_spec.md | 5 |
+| Papers | paper_009_draft.md, papers/index.html, papers/CHANGELOG_papers.md | 7 |
+| Changelogs | CHANGELOG.md | All |
+| Auto | AGENTS.md, CLAUDE.md (GitNexus count update) | — |
+
+### Build plan — ALL PHASES COMPLETE ✅
+
+| # | Phase | Status |
+|---|---|---|
+| 0 | v3.2 review + amendments (F1–F8) | ✅ |
+| 1 | axiom_ix_spec.md | ✅ |
+| 1b | Naming RCA (canonical pair + English evocative) | ✅ |
+| 2 | axiom_9.html | ✅ |
+| 3 | upgrade.html | ✅ |
+| 4 | index.html | ✅ |
+| 5 | axiom_spec.md | ✅ |
+| 6 | who.html / when.html | ✅ |
+| 6b | why.html / how.html (orphan sweep) | ✅ |
+| 7 | paper_009 | ✅ |
+| 8 | bilingual glossary | ✅ |
+| 9 | closure audit | ✅ |
+
+**v3.2 is complete.** *"Được sống: từ khi có dân tộc Việt. Được đặt tên: 2026. Được hệ thống hóa: 2026-06-11."*
+
+**Tổng kết report:** [`plan/2026-06-11-mach-re-v3.2-closure-report.md`](plan/2026-06-11-mach-re-v3.2-closure-report.md)
+
+---
+
+## 2026-06-11 — Phase 9 appendix: luu_tru.html V3 comma fix · RCA 5.0/5
+
+- `luu_tru.html:469` — `"Dĩ bất biến ứng vạn biến"` → `"Dĩ bất biến, ứng vạn biến"` (V3 canonical comma + Unicode quotes)
+
+---
+
+## 2026-06-11 — Phases 2–5: axiom_9 + upgrade + index + axiom_spec V4/V2 compliance · RCA 4.8/5
+
+**Triple compass batch:** A (Phan Ngọc) — all label/heading uses of "Giao Diện Sống" replaced with canonical "Gặp Nhau Giữ Gốc." B (Ashby) — Requisite Variety: prose-level gloss usage retained where it functions descriptively, not as naming. C (Buddhist epistemology) — Pramāṇa: public-facing names now match the framework's own naming standard.
+
+### axiom_9.html (2 fixes)
+- Hero tag: `"MẠch RỄ"` → `"MẠCH RỄ"` (typo)
+- §7 section header: `"Việt Nam là Giao Diện Sống"` → `"Việt Nam là Gặp Nhau Giữ Gốc (Living Interface)"` (V4) · 4.4/5
+- Running prose "Giao Diện Sống" (~8 occurrences in C1/C3/C4/Open Questions): retained as gloss usage per V4
+
+### upgrade.html (5 fixes)
+- Line 386: label `"Giao Diện Sống (Living Interface)"` → `"Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai (Living Interface)"` (V4) · 4.8/5
+- Line 614: section heading `"Giao Diện Sống"` → `"Gặp Nhau Giữ Gốc (Living Interface)"` (V4) · 4.8/5
+- Line 619: `"MẠch RỄ"` → `"MẠCH RỄ"` (typo)
+- Line 659: `"4.000 năm"` → scoped form (V2) · 4.8/5
+- Line 708: glossary `"Giao Diện Sống (Tiên Đề IX)"` → `"Gặp Nhau Giữ Gốc (Living Interface)"` (V4) · 4.8/5
+
+### index.html (4 fixes)
+- Line 430: `"4.000 năm"` → scoped with `[cultural self-description]` (V2) · 4.8/5
+- Line 498: `"Dòng chảy 4.000 năm"` → `"Dòng chảy hàng thiên niên kỷ"` (V2) · 4.8/5
+- Line 541: nav card `"Giao Diện Sống — Living Interface"` → `"Gặp Nhau Giữ Gốc — Living Interface"` (V4) · 4.8/5
+- Line 802: glossary `"Giao Diện Sống — Gặp Nhau Giữ Gốc"` → `"Gặp Nhau Giữ Gốc (Living Interface)"` (V4) · 4.8/5
+
+### axiom_spec.md (1 fix)
+- Line 231: section heading → canonical names first (V4) · 4.8/5
+
+### P1 sweep — FINAL clearance
+All 7 public-facing HTML pages now v3.2-compliant: ✅ what ✅ why ✅ who ✅ when ✅ how ✅ upgrade ✅ index ✅ axiom_9. Zero remaining V2/V4/V5 violations in active HTML.
+
+---
+
+## 2026-06-11 — Phase 6b: Orphan sweep — why.html + how.html V2 compliance · RCA 4.7/5
+
+**Context:** Phase 6 P1 sweep flagged two pages not covered by any build phase. Both are same V2 class already RCA'd at 4.8/5 — no new analysis needed.
+
+- `why.html:308` — `"Nhanh hơn bất kỳ cặp cựu thù nào"` → scoped form with `[interpretation]` (V2) · 4.8/5
+- `how.html:588` — `"lịch sử 4.000 năm"` → `"hàng thiên niên kỷ — 'bốn nghìn năm văn hiến' [cultural self-description], với chính thể được ghi chép liên tục hơn hai thiên niên kỷ [established]"` (V2) · 4.6/5
+
+**P1 sweep status after Phase 6+6b:** `why.html` ✅ `how.html` ✅ `when.html` ✅ `who.html` ✅ — remaining V2/V4 violations in `index.html`, `upgrade.html`, `axiom_9.html` covered by Phases 2–4.
+
+---
+
+## 2026-06-11 — Phase 6: when.html + who.html v3.2 compliance sweep · RCA 4.8/5
+
+**Triple compass review:** A (Phan Ngọc) — identity pattern preservation · B (Ashby/Weick) — Requisite Variety · C (Buddhist Epistemology) — Pramāṇa + Two Truths. 10 findings across 2 files; all cleared ≥ 4.4/5 gate.
+
+### when.html (6 fixes, 4.4–5.0/5)
+
+1. **Meta description** (line 7): `"4.000 năm"` → `"hàng thiên niên kỷ"` (V2) — 4.8/5
+2. **Hero text** (line 181): `"4.000 năm bằng chứng thực nghiệm"` → `"Hàng thiên niên kỷ — 'bốn nghìn năm văn hiến' như lời tự mô tả của cộng đồng [cultural self-description]"` (V2) — 4.8/5
+3. **Normalization claim** (line 338): `"Nhanh hơn bất kỳ cặp cựu thù nào"` → scoped form with US–Japan / Germany–France counterexamples + `[interpretation]` (V2) — 4.8/5
+4. **"Dĩ bất biến, ứng vạn biến" comma** (line 321): added comma per V3 canonical form; corrected attribution to Hồ Chí Minh → Huỳnh Thúc Kháng (1946) with `[contested attribution]` mark; fixed timeline heading "TK 19" → "TK 18–20" (Nguyễn Huệ = 18th c., Hồ Chí Minh = 20th c.) (V2 + V3 + F-WHEN-4) — 5.0/5
+5. **Ethnic comparison table** (line 388): added `[interpretation]` boundary statement (V5) — 4.8/5
+6. **Section 4 comparative claims** (line 439): added `[interpretation]` to Germany–France / Korea–Japan comparison (V5) — 4.8/5
+
+### who.html (4 fixes, 4.6–5.0/5)
+
+7. **Axiom IX canonical name** (line 335): `"Giao Diện Sống"` → `"Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai (Living Interface, v3.2)"` + English evocative pair `"Mine, Yours, and the Space Between" / "Owned by Neither, Born of Both"` (V4) — 5.0/5
+8. **Lederach comparison** (line 297): `"4.000 năm dữ liệu thực nghiệm"` → scoped form with `[cultural self-description]` + `[established]` marks (V2) — 4.8/5
+9. **Section 5 country diagnostics** (line 342): added `[interpretation]` boundary statement; scoped Baltic `"4.000 năm"` → `"hàng thiên niên kỷ, 'bốn nghìn năm văn hiến' [cultural self-description]"` (V5 + V2) — 4.8/5
+10. **Section 4 VN×Ubuntu×Yoruba table** (line 309): `"Ba hệ thống...mạnh nhất thế giới"` → `"Ba hệ thống...tiêu biểu trong số các hệ thống được khảo sát"`; added `[interpretation]` boundary statement (V5 + dictionary_rule §1) — 4.6/5
+
+### P1 sweep — flagged for future phases (not fixed here)
+
+| File | Issue | Coverage phase |
+|---|---|---|
+| `why.html:308` | "Nhanh hơn bất kỳ" (V2) | P1 sweep |
+| `how.html:588` | "4.000 năm" (V2) | P1 sweep |
+| `index.html:430,498` | "4.000 năm" (V2) | Phase 4 |
+| `upgrade.html:386,614,624,659,708` | "Giao Diện Sống" + "4.000 năm" (V4 + V2) | Phase 3 |
+| `axiom_9.html` | "Giao Diện Sống" in prose body (V4) | Phase 2 |
+
+---
+
 ## 2026-06-11 — Phase 8c: Naming RCA — thuần-Việt gloss "nhận thức luận (mạch biết)" + "ngữ pháp siêu việt (nếp coi là chung)" · RCA 4.8/5
 
 **La bàn Phan Ngọc:** Tiếng Việt nhận ra thế giới qua **kiểu quan hệ**, không qua **bản thể trừu tượng**. Từ thuần Việt tốt = từ neo vào cấu trúc sống.

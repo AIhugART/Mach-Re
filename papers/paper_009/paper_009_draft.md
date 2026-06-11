@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 
 ---
 
-# Ngoại Giao Cây Tre như Giao Diện Sống: Tiên Đề IX của Mạch Rễ và Trường hợp Việt Nam–Hoa Kỳ 1975–1997
+# Ngoại Giao Cây Tre như Gặp Nhau Giữ Gốc (Living Interface): Tiên Đề IX của Mạch Rễ và Trường hợp Việt Nam–Hoa Kỳ 1975–1997
 
 *Bamboo Diplomacy as Living Interface: Axiom IX of the Mạch Rễ Framework and the Vietnam–United States Case 1975–1997*
 

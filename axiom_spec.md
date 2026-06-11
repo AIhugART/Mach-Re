@@ -228,7 +228,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ### TẦNG INTERFACE — 1 Tiên Đề Interface (Interface Axiom): IX
 
-#### Tiên Đề IX — Giao Diện Sống (Living Interface) · *"Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai"*
+#### Tiên Đề IX — Gặp Nhau Giữ Gốc — Không Của Ai, Nhờ Cả Hai (Living Interface)
 - **Loại:** **Interface Axiom** (tầng thứ tư — inter-system; chủ thể: dyad (S1, S2), không phải singleton). Khác VIII (within-system, singleton): IX yêu cầu hai hệ độc lập đã chạy I–VIII.
 - **Phát biểu (VI):** Khi hai hệ S1 và S2 — mỗi hệ đã vận hành Tiên Đề I–VIII — gặp nhau với điều kiện C1, sinh ra mẫu hình P* không thuộc về S1 hay S2, và không thể tồn tại nếu thiếu một trong hai hệ.
 - **Phát biểu (EN — formal):** `∀ S1, S2: [I–VIII(S1) ∧ I–VIII(S2) ∧ C1(S1,S2)] → ∃ P*: [P* ≠ nếp(S1) ∧ P* ≠ nếp(S2) ∧ ¬∃S_single: possible(P*, S_single)]`
