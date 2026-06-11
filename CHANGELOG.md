@@ -27,6 +27,42 @@
 
 ---
 
+## 2026-06-11 — who.html: Trích dẫn đối thoại khoa học hòa giải (Lederach, 1997) · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối thoại với khoa học hòa giải ("Với khoa học hòa giải") trong `who.html` (dòng 296-297) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Ô đối thoại với khoa học hòa giải ở `who.html` không chứa liên kết trích dẫn `[8]` trỏ tới tác phẩm của John Paul Lederach; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc đưa ra khẳng định về "mô hình hòa giải không dựa trên thiết chế mà dựa trên kiến trúc văn hóa" mà không dẫn chiếu đến tác phẩm lý thuyết thiết lập hòa giải và chuyển hóa xung đột kinh điển (như của John Paul Lederach) làm giảm độ tin cậy khoa học và khả năng kiểm chứng độc lập của luận điểm đối thoại quốc tế.
+- Round 3 — Root: Dòng này được viết trong phần tóm tắt đối thoại tri thức mà không được ánh xạ và bổ sung tác phẩm nghiên cứu về kiến trúc hòa bình (Lederach, 1997) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Lederach, 1997 <a href="#nguon-8">[8]</a>)` vào ô đối thoại khoa học hòa giải (dòng 296) và bổ sung nguồn `[8] Lederach, J. P. (1997)` ở mục Nguồn Trích Dẫn, đồng thời dịch chuyển các nguồn sau đó (Assmann, Berdyaev, Nodia, Valkonen, Šmidchens) lùi xuống 1 bậc.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `lederach_1997` ở đúng vị trí thứ tự.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn đối chiếu bản sắc Baltic (Šmidchens, 2014) · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối chiếu mô hình bản sắc Baltic (Latvia, Lithuania, Estonia) trong `who.html` (dòng 351) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Dòng giới thiệu Baltic trong bảng so sánh mở rộng của `who.html` không chứa liên kết trích dẫn `[12]` trỏ tới tác phẩm của Guntis Šmidchens; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc đưa ra khẳng định về mô hình bản sắc Baltic dựa trên ngôn ngữ và lễ hội dân gian sau Liên Xô ("Lễ cách mạng ca hát") mà không dẫn chiếu đến nghiên cứu khoa học chính thức về sức mạnh của bài ca và phi bạo lực của Šmidchens làm giảm tính học thuật và khả năng tự kiểm chứng của bảng so sánh mở rộng.
+- Round 3 — Root: Điểm này được viết trong phần so sánh mở rộng mà không được ánh xạ và bổ sung tác phẩm nghiên cứu về Cách mạng ca hát Baltic (Šmidchens, 2014) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Šmidchens, 2014 <a href="#nguon-12">[12]</a>)` vào ô Baltic (dòng 351) và bổ sung nguồn `[12] Šmidchens, G. (2014)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `smidchens_2014`.
+
+**RCA score: 5.0/5.**
+
+---
+
 ## 2026-06-11 — who.html: Trích dẫn đối chiếu bản sắc Sami (Bắc Âu) · RCA 5.0/5
 
 **Symptom / gap:** Phát biểu đối chiếu mô hình bản sắc Sami (Bắc Âu) trong `who.html` (dòng 350) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
