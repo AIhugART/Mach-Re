@@ -3,6 +3,28 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 4: `index.html` — Architecture map cập nhật v3.2 + Tiên Đề IX · RCA 5/5
+
+**Symptom / gap:** `index.html` là entry point duy nhất. Navigation map cho thấy 8 tiên đề (I–VIII), 3 tầng; không có nav card cho `axiom_9.html`; glossary thiếu Living Interface; timeline label ghi "v2.0".
+
+**3-round RCA (Buddhist epistemology — Two Truths compass):**
+- Round 1: Architecture map trên index.html không phản ánh framework v3.2 (9 tiên đề, 4 tầng).
+- Round 2: Người đọc lần đầu tiếp cận từ index.html sẽ không biết tầng Interface tồn tại; missing path → axiom_9.html.
+- Round 3 (root): index.html là bản đồ kiến trúc (saṃvṛti-level map) của framework. Bản đồ sai = mọi người dùng đi sai đường. Fix: cập nhật map cho đúng v3.2.
+- **Scoring gate: 5/5 → tất cả 6 edits được xác nhận.**
+
+**Fix — 6 targeted edits:**
+1. CSS: thêm `.c-axiom9` purple (`#5a3070`) — màu Interface tier
+2. Axioms nav card: cập nhật description → 9 tiên đề, 4 tầng (Core · Derived · Meta · Interface)
+3. Upgrade nav card: cập nhật description → v3.2 + IX + P*
+4. Nav grid: thêm nav card `axiom_9.html` → `.c-axiom9`, emoji 🌐, VVCs (Trúc Lâm + Ngoại Giao Cây Tre)
+5. Timeline 2026: cập nhật "v2.0" → "v3.2: 9 tiên đề, 4 tầng"
+6. Glossary: thêm row "Living Interface / Giao Diện Sống" với link → axiom_9.html
+
+**RCA score: 5/5.** Phase 4 → COMPLETE. Cổng Phase 5 (axiom_spec.md) mở.
+
+---
+
 ## 2026-06-11 — Phase 3: `upgrade.html` — Tích hợp Tiên Đề IX vào trang upgrade · RCA 5/5
 
 **Symptom / gap:** `upgrade.html` không đề cập Tiên Đề IX. Architecture diagram chỉ hiển thị 8 tiên đề. `cons-grid` thiếu IX. Không có navigation link đến `axiom_9.html`.
