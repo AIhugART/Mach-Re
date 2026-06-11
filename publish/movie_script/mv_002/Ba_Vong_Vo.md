@@ -36,18 +36,63 @@ Invariant test: Linh mang gì không thể đặt xuống?
 
 ---
 
+**BÀ NHƯ — 78 tuổi, bà nội của Linh, người nắm giữ truyền thống**
+
+H-relations:
+- LINH (Cháu nội): Yêu thương sâu sắc nhưng nghiêm khắc; truyền dạy nếp nhà qua hành động cơ thể chứ không dùng lời giải thích để giữ gìn gốc rễ của cháu.
+- MẸ (HƯƠNG, 54 tuổi): Khoảng cách thế hệ thầm lặng; sự tiếc nuối vì đứt gãy truyền thống (bà lâm bệnh nặng lúc Hương kết hôn nên không dạy được).
+
+V-relations:
+- Ancestor: Người kế thừa và bảo vệ ngọn lửa sinh tồn qua nạn đói năm 1945 của dòng họ từ thế hệ trước.
+- Future: Linh và thế hệ sau Linh.
+- Historical force: Dòng chảy thời gian tàn nhẫn, sự phai nhạt dần của các giá trị truyền khẩu dưới tác động của lối sống đô thị.
+
+Invariant test: Bà mang gì không thể đặt xuống?
+→ Gánh nặng truyền thừa thầm lặng; chấp nhận biến mất khi nếp nhà đã được cấy vào tay thế hệ kế tiếp.
+
+---
+
+**MẸ HƯƠNG — 54 tuổi, con dâu bà Như, mẹ Linh**
+
+H-relations:
+- LINH (Con gái): Muốn chuẩn bị đám cưới hiện đại, thực tế cho con, nhưng bất lực trước sợi dây tinh thần giữa Linh và bà.
+- BÀ (NHƯ, 78 tuổi): Kính trọng nhưng mang mặc cảm đứt gãy; đại diện tiêu biểu cho sự lãng quên vô ý của một thế hệ.
+
+V-relations:
+- Ancestor: Bị ngắt kết nối trực tiếp với công thức của tổ tiên do hoàn cảnh lịch sử (mẹ chồng bệnh lúc cưới).
+- Future: Linh và con cháu sau này.
+- Historical force: Thời kỳ chuyển dịch kinh tế xã hội, nơi sự tiện dụng công nghiệp lấn lướt các nghi lễ tỉ mỉ của gia đình.
+
+Invariant test: Mẹ mang gì không thể đặt xuống?
+→ Nỗi cô đơn của thế hệ trung gian bị đứt gãy — đứng ở ngưỡng cửa nhìn vào truyền thống mà không thể chạm vào.
+
+---
+
 ## SCREENPLAY
 
 ---
 
 ### CẢNH 1 — BẾP NHÀ BÀ. SÁNG SỚM. (Ngày 1/7)
 
-*Template A — H-Axis Primary. Thiết lập H-bond.*
+*Template A — H-Axis Primary (Audience Guidance Scene)*
+
+**Scene Construction Questions:**
+- **H-axis (Spielberg)**:
+  - *Audience feeling*: Linh cảm thấy lạc lõng, như một vị khách xa lạ trong chính căn bếp tổ tiên. Khán giả đồng cảm với khao khát kết nối của cô.
+  - *Suspense*: Liệu bà có nhận ra sự xa cách của Linh và từ chối truyền dạy?
+  - *Spielberg Face*: Ánh mắt Linh dán chặt vào đôi bàn tay vo gạo của bà, cố gắng đọc hiểu di sản vô ngôn.
+- **V-axis (Zhang Yimou)**:
+  - *V-anchor*: Hành động vo gạo — ba vòng tròn đều đặn, không thừa không thiếu.
+  - *Color/Light*: Ánh sáng tự nhiên (Natural light) buổi sớm chiếu xiên lọt qua ô cửa thấp, phơi bày lớp tro bụi và khói lò cũ kỹ — không gian của thời gian sâu thẳm.
+  - *Silence*: Im lặng sống ở chỗ bà không trả lời câu "Bao nhiêu vòng ạ?" — câu hỏi được trả lại bằng một câu hỏi, rồi bằng chính động tác vo lại từ đầu. Điều không thể nói (tri thức nằm trong tay, không nằm trong lời) được giữ trong hình ảnh: "Camera giữ ở đôi tay. Không zoom. Không nhạc."
+- **Synthesis/Fulcrum**:
+  - Khoảnh khắc Linh ngồi xuống chiếc ghế nhỏ hơn, nhận lấy chậu gạo nhôm từ bà. Trọng lượng của chậu nhôm và nước gạo lạnh buốt kết nối cái hiện tại (H) với cái vĩnh cửu (V).
 
     INT. BẾP NHÀ BÀ — SÁNG SỚM
 
-    Căn bếp nhỏ phía sau nhà ngói. Ánh sáng vào từ ô cửa
-    thấp, vàng nhạt. Mùi gỗ cũ, mùi tro.
+    Căn bếp nhỏ phía sau nhà ngói. Ánh sáng tự nhiên buổi sớm
+    chi chiếu xiên lọt qua ô cửa thấp, rọi lên nền đất nện.
+    Mùi gỗ cũ, mùi tro.
 
     BÀ NHƯ (78 tuổi) ngồi trên chiếc ghế gỗ thấp, chậu nhôm
     trên lòng. Bà vo gạo.
@@ -93,14 +138,23 @@ Invariant test: Linh mang gì không thể đặt xuống?
 
     FADE.
 
-*[H-axis: Spielberg Face — Linh nhìn tay bà, không nhìn gạo. Khán giả đọc cái Linh chưa hiểu qua cách cô nhìn.]*
-*[V-anchor planted: ba vòng vo — không giải thích, không bình luận.]*
-
 ---
 
 ### CẢNH 2 — BẾP NHÀ BÀ. CHIỀU. (Ngày 4/7)
 
-*Template C — Synthesis H meets V. Fulcrum scene.*
+*Template C — Synthesis Scene (H meets V)*
+
+**Scene Construction Questions:**
+- **H-axis (Spielberg)**:
+  - *Audience feeling*: Linh cố tìm kiếm sự xác thực rằng cô đã "đủ tư cách làm người nhà" bằng cách thực hiện đúng kỹ thuật vo gạo.
+  - *Spielberg Face*: Sự bàng hoàng trên gương mặt Linh khi nghe mẹ thú nhận mình không biết công thức.
+- **V-axis (Zhang Yimou)**:
+  - *V-anchor*: Sự lặp lại của nghi lễ vo gạo đúng ba vòng nhưng không có sự thừa nhận chính thức từ bà.
+  - *Color/Light*: Ánh chiều đỏ (Red light) sẫm dần, biểu đạt sinh lực đang phai của bà và khoảnh khắc trước sự lựa chọn truyền thừa không thể đảo ngược.
+  - *Compositional Law*: Ba người phụ nữ bị cô lập trong ba ranh giới không gian vật lý riêng biệt (bếp, ngưỡng cửa, ghế tường) dù chung một khung hình.
+  - *Silence*: Im lặng sống ở nhịp "Im lặng." trước lời thú nhận của mẹ, và ở điều không ai gọi tên sau đó — vết đứt thế hệ không được bàn tới, bà chỉ nói "Tiếp đi." Điều không thể nói (thứ mẹ Hương đã mất mà chính mẹ không biết mình từng mất) được giữ trong bố cục: ba người, ba khoảng không, không chạm nhau.
+- **Synthesis/Fulcrum**:
+  - Sự va chạm giữa mong muốn kết nối thế hệ của Linh (H) và sự thật lịch sử nghiệt ngã rằng chuỗi truyền thừa đã bị đứt gãy ở thế hệ mẹ cô (V) ("Mẹ không biết cách này").
 
     INT. BẾP NHÀ BÀ — CHIỀU
 
@@ -167,14 +221,22 @@ Invariant test: Linh mang gì không thể đặt xuống?
 
     FADE.
 
-*[Synthesis: H-axis — "Mẹ không biết cách này" — câu nhỏ nhưng đau vì khán giả đã ở bếp với Linh và bà 3 ngày. V-axis — khoảng cách ba người phụ nữ là kiến trúc luận điểm: một thế hệ đã bị cắt đứt, không ai dùng từ đó. Fulcrum: "Tiếp đi" là di chúc.]*
-*[V-anchor returns: ba vòng — lần này Linh làm đúng, không ai xác nhận.]*
-
 ---
 
 ### CẢNH 3 — BẾP NHÀ LINH. 3 NĂM SAU. (Ngày không xác định)
 
-*Template B — V-Axis Primary. V-axis descends fully.*
+*Template B — V-Axis Primary (Deep Time Scene)*
+
+**Scene Construction Questions:**
+- **H-axis (Spielberg)**:
+  - *Audience feeling*: Nỗi buồn lắng đọng sau sự ra đi của người bà; sự đồng cảm thầm lặng của khán giả với Linh.
+  - *Spielberg Face*: Gương mặt đứa trẻ chăm chú quan sát tay mẹ, chuyển giao điểm nhìn của khán giả sang thế hệ tương lai.
+- **V-axis (Zhang Yimou)**:
+  - *V-anchor*: Nghi lễ vo gạo cuối cùng, được thực hiện hoàn toàn vô thức theo trí nhớ cơ thể.
+  - *Color/Light*: Ánh đèn neon trắng trên nền gạch men trắng (White light) thể hiện sự thật trần trụi của cuộc sống hiện đại và di chứng của sự mất mát.
+  - *Silence*: Im lặng tuyệt đối. Không lời thoại, không âm nhạc. Chỉ có âm thanh cơ học thô ráp của nước và kim loại.
+- **Synthesis/Fulcrum**:
+  - Lực lịch sử (V) giáng xuống trọn vẹn: mối liên kết cá nhân (H) với người bà đã mất, nhưng bất biến cấu trúc (vòng vo gạo) vẫn sống sót thầm lặng và bắt đầu cấy vào thế hệ kế cận.
 
     INT. BẾP NHÀ LINH Ở HÀ NỘI — SÁNG SỚM
 
@@ -203,9 +265,6 @@ Invariant test: Linh mang gì không thể đặt xuống?
     Camera giữ ở đứa bé đang nhìn tay mẹ.
 
     FADE TO BLACK.
-
-*[V-axis: bà đã mất — không cần nói. Công thức đã được truyền không bằng lời, bằng tay. Đứa bé đang quan sát: vòng truyền tiếp tục. Invariant hiện ra đầy đủ mà không được phát biểu.]*
-*[V-anchor final: ba vòng — không ai dạy, không ai xem. Nó tự xảy ra.]*
 
 ---
 
