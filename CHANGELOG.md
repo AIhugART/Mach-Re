@@ -3,6 +3,16 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Paper 005 v2 RCA Audit · 4.88/5 · 1 fix · PASS ✅
+
+**3-round RCA × 5-Why × scoring gate on paper_005_v2.md.** 11 audit items scored. 1 finding fixed: F1 — "Dĩ bất biến ứng vạn biến" from "là một tuyên bố triết học rõ ràng" → "có thể được đọc như một tuyên bố triết học" (conservative form, 4.72/5). 1 observation kept: O1 — compound label `[established theory, applied interpretation]` (adds precision, 4.52/5). Cross-cutting: D1-D4 all 5.00/5, zero forbidden language, 36 labels correct, 26/26 citations resolve. 0 blocking issues.
+
+**Files:**
+- `review/2026-06-11_05_paper_005_v2_rca_audit.md` (tạo mới — audit report)
+- `papers/paper_005/paper_005_v2.md` (sửa — F1 fix)
+
+> Cross-ref: Paper 005 v2 manuscript → [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
+
 ## 2026-06-11 — v3.3 Naming De-Enclosure — Epistemic Humility Alignment ✅
 
 **Trigger:** Cultural researcher critique: "Văn hóa VN thực ra nó đề cao sự khiêm nhường, kể cả có nghĩ ra cũng không ai muốn đứng lên trên cả dân tộc mà đặt tên."  

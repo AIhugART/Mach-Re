@@ -4,6 +4,27 @@
 > **Liên kết:** Lịch sử toàn bộ dự án (axiom, HTML nodes, audit, evidence) → xem [`CHANGELOG.md`](../CHANGELOG.md) tại thư mục gốc.
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
+## 2026-06-11 — Paper 005 v2 Plan · Sync Mạch Rễ v3.2 (v2.1)
+
+**RCA plan level:** 0.0 → 4.86/5 (correct 5.0, deep 4.9, feasible 4.7, conflict-risk 4.7, preservation 5.0). 4 decisions scored: D1 (4.98, circular argument fix), D2 (4.76, Ubuntu proof-of-concept), D3 (4.98, distributed storage WHY), D4 (5.0, open questions). Compass A/B/C. Chuyển từ v1 (Mạch Rễ làm thẩm quyền) sang v2 (chứng minh độc lập loại hình qua Ubuntu). v2.1 sync Mạch Rễ v3.2 — thêm ghi chú Tiên Đề IX, cập nhật Literature Plan §4.3 với nguồn nội bộ mới. Cấu trúc paper S1→S7 không đổi.
+
+**Files:**
+- `papers/paper_005/plan/paper_005_v2_plan.md` (tạo mới v2.0, cập nhật v2.1)
+
+> Cross-ref: Mạch Rễ v3.2 → axiom_spec.md, axiom_9.html, who.html/when.html/why.html/what.html/how.html → logged in [`CHANGELOG.md`](../CHANGELOG.md).
+
+## 2026-06-11 — Paper 005 v2 Manuscript Created · RCA 4.86/5
+
+**Execution of v2 plan.** Full manuscript created per ESP Framework (E→S→P). 7 sections: S1-S3 carry-forward from v1 (Cadière→Đào Duy Anh, Hidden Measure, Category Error Diagnosis), S4-S7 newly written (Relational-Distributed Philosophy definition, Ubuntu proof-of-concept, 4 markers in Vietnamese folk philosophy, WHY mechanism via 6-channel distributed storage under historical pressure, 3 open questions). All 4 RCA decisions operationalized: D1 (Mạch Rễ as context, not authority), D2 (Ubuntu ≠ Vietnamese philosophy — type match, not system equivalence), D3 (Ashby Requisite Variety confirms evolutionary selection mechanism), D4 (Section 7 = open questions, not closed recommendations). Compass A/B/C used as independent anchors throughout. Boundary Statement, Claim Ladder at Interpretive Mapping level, full citation table (26 sources APA+DOI). Conservative hedging per CLAUDE.md Tier 3 Rule 8.
+
+**Files:**
+- `papers/paper_005/paper_005_v2.md` (tạo mới — manuscript 7 sections + abstract + 26-source citation table)
+- `papers/paper_005/plan/paper_005_v2_plan.md` (cập nhật — Phase 0-2 marked complete)
+
+> Cross-ref: Plan v2.1 RCA 4.86/5 · 4 decisions ≥ 4/5 → logged above.
+
+---
+
 ## 2026-06-11 — Phase 7 completion: paper_009 title V4 fix · RCA 4.4/5
 
 **Triple compass:** A (Phan Ngọc) — title is the paper's public face; "Giao Diện Sống" imports computer-interface frame, failing Việt hóa rule 1. B (Ashby) — Requisite Variety: body already uses canonical names, title was the single stale artifact. C (Buddhist epistemology) — Pramāṇa: a title that doesn't match the framework's own naming standard is deceptive at the point of first contact.
