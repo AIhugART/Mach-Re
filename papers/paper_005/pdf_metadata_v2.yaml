@@ -1,0 +1,59 @@
+---
+title: |
+  Triết học Việt Nam qua góc nhìn lăng kính lỗi phạm trù:
+  Từ nhận định "rỗng triết học" đến chứng minh một truyền thống
+  Tương quan-Phân tán có nguồn gốc lâu đời
+author: "Nguyễn Xuân Việt (VietVunVut)"
+date: "2026"
+lang: vi
+documentclass: article
+papersize: a4
+fontsize: 12pt
+mainfont: "Times New Roman"
+sansfont: "Arial"
+monofont: "Consolas"
+geometry:
+  - top=25mm
+  - bottom=25mm
+  - left=30mm
+  - right=25mm
+linestretch: 1.5
+numbersections: true
+toc: true
+toc-depth: 3
+header-includes:
+  - |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\small\itshape Triết học Việt Nam qua lăng kính lỗi phạm trù — Paper 005 v2}
+    \fancyhead[R]{\small\thepage}
+    \fancyfoot[C]{\small Paper 005 v2 — Mạch Rễ Project}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+  - |
+    \usepackage{titlesec}
+    \titleformat{\section}{\Large\bfseries}{\thesection.}{0.5em}{}
+    \titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.5em}{}
+    \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
+  - |
+    \usepackage{hyperref}
+    \hypersetup{colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black,citecolor=blue!60!black}
+  - |
+    \usepackage{abstract}
+    \renewcommand{\abstractnamefont}{\normalfont\bfseries}
+    \renewcommand{\abstracttextfont}{\normalfont\itshape}
+  - |
+    \usepackage{booktabs}
+    \usepackage{longtable}
+  - |
+    \usepackage{enumitem}
+    \setlist{nosep}
+  - |
+    \usepackage{unicode-math}
+    \setmathfont{Latin Modern Math}
+  - |
+    \usepackage{newunicodechar}
+    \newunicodechar{⊥}{\ensuremath{\bot}}
+    \newunicodechar{≡}{\ensuremath{\equiv}}
+---

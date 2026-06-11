@@ -18,7 +18,10 @@
 **Execution of v2 plan.** Full manuscript created per ESP Framework (E→S→P). 7 sections: S1-S3 carry-forward from v1 (Cadière→Đào Duy Anh, Hidden Measure, Category Error Diagnosis), S4-S7 newly written (Relational-Distributed Philosophy definition, Ubuntu proof-of-concept, 4 markers in Vietnamese folk philosophy, WHY mechanism via 6-channel distributed storage under historical pressure, 3 open questions). All 4 RCA decisions operationalized: D1 (Mạch Rễ as context, not authority), D2 (Ubuntu ≠ Vietnamese philosophy — type match, not system equivalence), D3 (Ashby Requisite Variety confirms evolutionary selection mechanism), D4 (Section 7 = open questions, not closed recommendations). Compass A/B/C used as independent anchors throughout. Boundary Statement, Claim Ladder at Interpretive Mapping level, full citation table (26 sources APA+DOI). Conservative hedging per CLAUDE.md Tier 3 Rule 8.
 
 **Files:**
-- `papers/paper_005/paper_005_v2.md` (tạo mới — manuscript 7 sections + abstract + 26-source citation table)
+- `papers/paper_005/paper_005_v2.md` (tạo mới — manuscript 7 sections + 26-source citation table)
+- `papers/paper_005/paper_005_v2.html` (tạo mới — Pandoc HTML5 export, 52 KB)
+- `papers/paper_005/paper_005_v2.pdf` (tạo mới — Pandoc + xelatex PDF, 204 KB, A4, Times New Roman 12pt)
+- `papers/paper_005/pdf_metadata_v2.yaml` (tạo mới — Pandoc YAML metadata with unicode-math)
 - `papers/paper_005/plan/paper_005_v2_plan.md` (cập nhật — Phase 0-2 marked complete)
 
 > Cross-ref: Plan v2.1 RCA 4.86/5 · 4 decisions ≥ 4/5 → logged above.
