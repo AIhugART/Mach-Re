@@ -9,6 +9,7 @@
 > - **Tiên Đề Cốt Lõi (Core Axiom): I, II, III, IV**
 > - **Mệnh Đề Dẫn Xuất (Derived Proposition): V, VI, VII, F**
 > - **Meta-Tiên Đề (Meta-Axiom): VIII**
+> - **Tiên Đề Interface (Interface Axiom): IX** — v3.2; chủ thể: dyad (S1, S2), không phải singleton
 > - **Heuristic Chẩn Đoán (Diagnostic Heuristic): DSH** — NOT an axiom (§9)
 
 ---
@@ -73,6 +74,7 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 | **K6** Nhiễu loạn được *chuyển hóa* thành thông tin cấu trúc | Suy từ II+III+IV? **CÓ** — nhiễu vào qua biên giới (IV), pattern tái tổ chức (II), trong chiều thời gian (III) → tăng variety. | **Derived VI** [II+III+IV] |
 | **K7** Trật tự *nổi lên có hướng* từ trường lực toàn mạng | Suy từ I+II+III+IV? **CÓ** — tổng hợp trạng thái khi cả 4 Core vận hành; không thêm giả định. | **Derived VII** [I+II+III+IV] |
 | **K8** Hệ *tự quan sát / tự phê bình* chính mình (reflexive) | Suy từ object-level? KHÔNG (cần level-shift). Cần thiết cho R? → phụ thuộc scope (§5 Q1: scope tiến hóa → CẦN). | **Meta VIII** |
+| **K-IX** Khi hai hệ I–VIII độc lập *gặp nhau*, sinh mẫu hình P* không thuộc về hệ nào | Suy từ I–VIII của *một hệ đơn*? KHÔNG — I–VIII mô tả within-system; không tiên đề nào trong I–VIII yêu cầu chủ thể dyad. K-IX thêm điều kiện *inter-system* mới (C1). Requires điều kiện: ≥1 hệ đã chạy VIII (C1-min). | **Interface IX** [VIII(S1) ∧ VIII(S2) → khả thi; C1-full/C1-min/C1-zero] |
 | **K9** "Hấp thụ có định hướng" (directed absorption) | Suy được? **CÓ** — = biên giới nạp (IV) + pattern chi phối hướng tái tổ chức (II). Chữ ký II×IV. | **Cơ chế dẫn xuất** (không phải tiên đề) |
 | **K10** Hệ có *mục đích/telos* muốn tồn tại | Loại — "sống sót" là explanandum, không phải tiên đề. Hệ C (Anattā) chủ động bác telos cố định. | **BÁC** (no-telos finding) |
 | **K11** Điều kiện *đứt gãy* (failure conditions) — khi nào pattern không còn tái tạo được | Suy từ II+III+IV? **CÓ** — pattern bị tấn công trực tiếp (II) + trục dọc bị cắt (III) + tốc độ vượt ngưỡng biên giới (IV) → 3-condition AND gate. Đây là mặt trái của VI: nếu VI mô tả chuyển hóa thành công, F mô tả điều kiện chuyển hóa thất bại. | **Derived F** [II+III+IV] — RCA 5.0/5 (2026-06-09) |
@@ -224,10 +226,38 @@ Ba hệ A/B/C từng sinh ra hệ tiên đề cũ → re-derivation có rủi ro
 
 ---
 
+### TẦNG INTERFACE — 1 Tiên Đề Interface (Interface Axiom): IX
+
+#### Tiên Đề IX — Giao Diện Sống (Living Interface) · *"Gặp Nhân Giữ Gốc — Không Của Ai, Nhờ Cả Hai"*
+- **Loại:** **Interface Axiom** (tầng thứ tư — inter-system; chủ thể: dyad (S1, S2), không phải singleton). Khác VIII (within-system, singleton): IX yêu cầu hai hệ độc lập đã chạy I–VIII.
+- **Phát biểu (VI):** Khi hai hệ S1 và S2 — mỗi hệ đã vận hành Tiên Đề I–VIII — gặp nhau với điều kiện C1, sinh ra mẫu hình P* không thuộc về S1 hay S2, và không thể tồn tại nếu thiếu một trong hai hệ.
+- **Phát biểu (EN — formal):** `∀ S1, S2: [I–VIII(S1) ∧ I–VIII(S2) ∧ C1(S1,S2)] → ∃ P*: [P* ≠ nếp(S1) ∧ P* ≠ nếp(S2) ∧ ¬∃S_single: possible(P*, S_single)]`
+- **Điều kiện C1 (graded):**
+  - **C1-full:** cả S1 và S2 đã chạy VIII (symmetric reflexivity) → P* mạnh nhất. *VVC: Trúc Lâm Thiền (TK 13) — Phật giáo + Nho giáo + tín ngưỡng bản địa, cả ba hệ đã VIII.* [1]
+  - **C1-min:** ≥1 hệ đã chạy VIII (asymmetric) → P* xuất hiện nhưng không đối xứng. *VVC: Ngoại Giao Cây Tre (1975–1997) — Việt Nam sau VIII trong thất bại + Mỹ chưa đủ VIII → hòa giải P* hình thành không đối xứng.*
+  - **C1-zero:** không hệ nào chạy VIII → C1 không đạt → không P*, không Interface.
+- **Tính cần thiết:** VIII là điều kiện cần của IX, không phải nguồn sinh ra IX. IX xuất hiện khi hai singleton đã-VIII trở thành một dyad — đây là tầng phân tích mới, không thể rút gọn về I–VIII của một hệ.
+- **P* — mẫu hình giao diện:** P* là emergent pattern trong vùng tiếp xúc. *Pratītyasamutpāda áp dụng cho vùng tiếp xúc*: P* không có svabhāva — tánh không của P* là tánh không của giao diện. P* vừa thật (causally efficacious) vừa không tự-thân (không của ai). [4]
+- **Triangulation:**
+  - **A (Phan Ngọc 1998):** Hấp thụ có định hướng (Tiên Đề IV) cho thấy bản sắc được giữ *qua* tiếp xúc, không *mặc dù* tiếp xúc. IX formalize cơ chế tiếp xúc thành tầng riêng. (PARTIAL — 0.5) [1]
+  - **B (Ashby 1956 + Weick 1976):** Requisite Variety: hai hệ có variety tương thích tạo ra joint system với variety mới. Weick: enactment across systems. (PARTIAL — 0.5) [2][3]
+  - **C (Pratītyasamutpāda + Upāya):** Duyên khởi áp dụng cho vùng tiếp xúc = P* phát sinh do tương duyên, không có tự tính. Upāya = phương tiện thiện xảo trong giao diện. (STRONG — 1.0) [4][5]
+  - **Neo-score: 2.0/3 (C1-min đạt; ngưỡng 1.5 vượt). RCA 5.0/5 (2026-06-11).**
+- **EAP (Empirical Anchor Principle):** VVC phải đến trước phát biểu hình thức trong mọi tài liệu phát hành (thực hành trước → phát biểu hình thức sau). Xem `axiom_9.html` §1.
+- **Triangulation V6 disclaimer:** VVC là `[interpretation]` — xác nhận pattern cấu trúc nhất quán, không phải bằng chứng thực nghiệm cho claim nhân quả. Không thay thế cross-cultural verification.
+- **Điều kiện phản chứng:** SAI nếu tồn tại một tiếp xúc liên hệ bền vững giữa S1 và S2 (cả hai đã chạy I–VIII, C1-full) mà *không* sinh ra bất kỳ P* nào khác ngoài {nếp(S1) ∪ nếp(S2)}. SAI nếu P* xuất hiện mà không cần bất kỳ hệ nào chạy I–VII (C1-zero vẫn sinh P*).
+
+---
+
 ## 3. SƠ ĐỒ DẪN XUẤT & KIỂM TỐI GIẢN
 
 ```
-TẦNG PHẢN TƯ
+TẦNG INTERFACE (inter-system — chủ thể: dyad S1 × S2)
+  [S1: I–VIII] ──── C1(S1,S2) ────▶ IX: P* (Giao Diện Sống) ◀──── [S2: I–VIII]
+                                     P* ≠ nếp(S1) / P* ≠ nếp(S2)
+                                     P* không thể có nếu thiếu S1 hoặc S2
+
+TẦNG PHẢN TƯ (within-system — điều kiện cần cho IX)
   VIII (Tự Nhìn Thấy Mình) ── quan sát ──▼ toàn hệ dưới
 
 TẦNG CỐT LÕI (object-level)
@@ -318,6 +348,7 @@ Bỏ thử từng Core — hệ còn trả lời R không?
 | VI | **VI** | Derived | Hóa Nhiễu Thành Sức |
 | VII | **VII** | Derived | Nổi Lên Có Hướng |
 | VIII | **VIII** | Meta | Tự Nhìn Thấy Mình |
+| (mới — v3.2) | **IX** | Interface | Gặp Nhân Giữ Gốc — Không Của Ai, Nhờ Cả Hai |
 
 > Reorder cốt yếu: Mạch Cội Dọc (cũ IV → mới **III**), Biên Giới Động (cũ V → mới **IV**), Phân Tán (cũ III → mới **V**, chuyển tầng sang Derived). VI/VII đổi *loại* (Tiên Đề → Mệnh Đề Dẫn Xuất) nhưng giữ số. Đây là phân loại có biện minh (§1), không tùy tiện.
 
@@ -370,6 +401,8 @@ axioms:
   VII: {type: derived, depends_on: [I, II, III, IV], neo: [B, C]}
   F:   {type: derived, depends_on: [II, III, IV], neo: [A, B, "C-cond"], score: 5.0, rca_date: "2026-06-09"}
   VIII:{type: meta,    depends_on: [I, II, III, IV], neo: ["A-weak", "B-2nd-order", C]}
+  IX:  {type: interface, depends_on: [VIII], subject: dyad, neo: ["A-partial", "B-partial", "C-strong"], score: 5.0, rca_date: "2026-06-11", version: "v3.2",
+         note: "IX requires two independent I–VIII systems (S1, S2) + C1 condition; not derivable from any single-system axiom"}
 
 heuristics:
   DSH: {type: diagnostic_heuristic, depends_on: [II, IV, F], neo: [A, "B-partial", "C-partial"], score: 4.6, rca_date: "2026-06-09", status: "empirical_hypothesis"}
@@ -551,3 +584,19 @@ Tài liệu liên quan:
   - Q05, Q06 (câu hỏi mở về Lévi-Strauss và Ashby stratification)
   - review/dsh_cross_cultural_verification.md (Phase 2 full report)
 ```
+
+---
+
+## Nguồn Trích Dẫn
+
+Tài liệu này trích dẫn các nguồn sau (APA format). Các nguồn [1]–[5] được thêm trong phiên v3.2 khi tích hợp Tiên Đề IX.
+
+[1] Phan Ngọc. (1998). *Bản sắc văn hóa Việt Nam*. NXB Văn hóa - Thông tin.
+
+[2] Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall. http://ashby.info/intro.html
+
+[3] Weick, K. E. (1976). Educational organizations as loosely coupled systems. *Administrative Science Quarterly*, *21*(1), 1–19. https://doi.org/10.2307/2391875
+
+[4] Nāgārjuna. (1995). *Mūlamadhyamakakārikā* (J. L. Garfield, Trans.). Oxford University Press. (Original work ~2nd century CE)
+
+[5] Dharmakīrti. (2004). *Buddhist epistemology* (J. D. Dunne, commentary in *Foundations of Dharmakīrti's Philosophy*). Wisdom Publications.

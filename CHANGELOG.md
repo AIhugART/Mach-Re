@@ -3,6 +3,29 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 5: `axiom_spec.md` — SSOT tích hợp Tiên Đề IX · RCA 5/5
+
+**Symptom / gap:** `axiom_spec.md` là Single Source Of Truth. Hiện tại chỉ có I–VIII (3 tầng). IX đã tồn tại trong HTML nhưng không có trong SSOT → HTML không có căn cứ canonical.
+
+**3-round RCA (Buddhist epistemology + Tiên Đề VIII compass):**
+- Round 1: SSOT mô tả 8 tiên đề; framework v3.2 có 9.
+- Round 2: axioms.html "renders from axiom_spec.md" — thiếu IX trong SSOT = toàn bộ render thiếu căn cứ.
+- Round 3 (root): SSOT vi phạm Tiên Đề VIII tự-phản-tư của chính nó: framework không áp tiêu chuẩn traceability lên bản thân nó. Fix: IX vào SSOT với đầy đủ độc lập test (K-IX), C1-graded conditions, falsification, triangulation.
+- **Scoring gate: 5/5.**
+
+**Fix — 7 targeted edits:**
+1. Header tier schema: thêm `Tiên Đề Interface (IX) — v3.2; dyad subject`
+2. §1 derivation log: thêm K-IX row (independence test: I–VIII của singleton → không kéo theo IX; dyad required)
+3. §2: thêm `### TẦNG INTERFACE` header + full Tiên Đề IX entry: formal statement, C1-full/min/zero, P* + Pratītyasamutpāda, VVCs, triangulation A/B/C (score 2.0/3), EAP, V6 disclaimer, falsification conditions
+4. §3 diagram: thêm TẦNG INTERFACE block trên TẦNG PHẢN TƯ (IX = inter-system, VIII = within-system)
+5. §5.1 map table: thêm IX row (`(mới — v3.2)` → Interface → Gặp Nhân Giữ Gốc)
+6. §8 YAML: thêm `IX: {type: interface, depends_on: [VIII], subject: dyad, ...}`
+7. NGUỒN TRÍCH DẪN: thêm bảng APA [1]–[5] (Phan Ngọc 1998, Ashby 1956, Weick 1976, Nāgārjuna/Garfield 1995, Dharmakīrti/Dunne 2004)
+
+**RCA score: 5/5.** Phase 5 → COMPLETE. Cổng Phase 6 (who.html / when.html) mở.
+
+---
+
 ## 2026-06-11 — Phase 4: `index.html` — Architecture map cập nhật v3.2 + Tiên Đề IX · RCA 5/5
 
 **Symptom / gap:** `index.html` là entry point duy nhất. Navigation map cho thấy 8 tiên đề (I–VIII), 3 tầng; không có nav card cho `axiom_9.html`; glossary thiếu Living Interface; timeline label ghi "v2.0".
