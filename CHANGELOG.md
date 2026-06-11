@@ -3,6 +3,138 @@
 > **📋 Papers:** Lịch sử thay đổi riêng cho `papers/` → xem [`papers/CHANGELOG_papers.md`](papers/CHANGELOG_papers.md).
 > **Phạm vi file này:** Axiom system, HTML nodes, audit plans, review documents, evidence enrichment, và infrastructure (CLAUDE.md, settings). Không bao gồm papers.
 
+## 2026-06-11 — Phase 9: Closure Audit — Mạch Rễ v3.2 IX Build · ALL PASS
+
+**Scope:** Regression audit sau Phases 1–8 (Tiên Đề IX — Living Interface build).
+
+**F1–F8 Regression Results:**
+| Finding | Kiểm tra | Kết quả |
+|---|---|---|
+| F1 | C1 absolute wording ("both must run VIII") | ✅ PASS — chỉ còn "C1-full/min/zero" graded form |
+| F2 | NGUỒN TRÍCH DẪN table trong mọi IX file | ✅ PASS — axiom_9.html (5), upgrade.html (10), axiom_spec.md (1), paper_009 (1) |
+| F3 | Full diacritics — không ASCII-stripped Vietnamese | ✅ PASS — toàn bộ IX content có dấu đầy đủ |
+| F4 | V4 canonical name "Gặp Nhau" (không "Gặp Nhân") | ✅ PASS — "Gặp Nhân" chỉ còn trong CHANGELOG Phase 8a description |
+| F5 | V2 banned wordings ("faster than", "4,000 years"…) | ✅ PASS — không tìm thấy banned form nào |
+| F6 | §2 Boundary Statement + `[interpretation]` marks | ✅ PASS — paper_009 §2 đúng vị trí, 10× `[interpretation]` |
+| F7 | HTML citation hyperlinks + changelog routing | ✅ PASS — axiom_9.html: 7 inline → 5 anchors; routing root/papers tách biệt |
+| F8 | Triangulation 2.0/3 (kept, per gate 3.2/5) | ✅ PASS — 2.0/3 preserved, không bị sửa |
+
+**Verification:** `npx gitnexus analyze` → 3,386 nodes / 3,168 edges. Index current.
+
+**Phase 8 remaining TODO (không block v3.2):** `nhận thức luận` + `ngữ pháp siêu việt` → thuần-Việt gloss pending naming RCA, logged in `dictionary_rule.md §4`.
+
+**Mạch Rễ v3.2 — IX Build: COMPLETE.** Commits: dc46069 (P2) → 05f88de (P3) → 40746a0 (P4) → f363c27 (P5) → 6a24e50 (P6) → 78f2c45 (P7) → aadff41 (P8a) → eea655d (P8b).
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn đối chiếu bản sắc Sami (Bắc Âu) · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối chiếu mô hình bản sắc Sami (Bắc Âu) trong `who.html` (dòng 350) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Dòng giới thiệu Sami trong bảng so sánh mở rộng của `who.html` không chứa liên kết trích dẫn `[11]` trỏ tới tác phẩm của Valkonen & Valkonen; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc đưa ra nhận định về mối liên kết bản sắc với môi trường vật lý tự nhiên ("khi môi trường mất, rễ mất") và tác động của đô thị hóa mà không có nguồn khảo cứu nhân học cụ thể làm giảm tính khoa học của bảng đối chiếu bản sắc và mất khả năng kiểm chứng học thuật.
+- Round 3 — Root: Điểm này được viết trong phần so sánh mở rộng mà không được ánh xạ và bổ sung tác phẩm nghiên cứu sinh thái văn hóa Sami (Valkonen & Valkonen, 2014) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Valkonen & Valkonen, 2014 <a href="#nguon-11">[11]</a>)` vào ô Sami (dòng 350) và bổ sung nguồn `[11] Valkonen, S., & Valkonen, J. (2014)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `valkonen_2014`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn đối chiếu bản sắc Georgia (Kartveloba) · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối chiếu mô hình bản sắc Georgia ("Kartveloba") trong `who.html` (dòng 349) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Dòng giới thiệu Kartveloba trong bảng so sánh mở rộng của `who.html` không chứa liên kết trích dẫn `[10]` trỏ tới tác phẩm của Ghia Nodia; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc đưa ra khẳng định về mô hình bản sắc dựa trên ngôn ngữ độc nhất và chính thống giáo như một "single point of failure" mà không dẫn nguồn cụ thể làm giảm tính học thuật và khả năng kiểm chứng của bảng so sánh mở rộng.
+- Round 3 — Root: Điểm này được viết trong phần so sánh mở rộng mà không được ánh xạ và bổ sung tác phẩm nghiên cứu về bản sắc Georgia (Nodia, 2009) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Nodia, 2009 <a href="#nguon-10">[10]</a>)` vào ô Georgia (Kartveloba) (dòng 349) và bổ sung nguồn `[10] Nodia, G. (2009)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `nodia_2009`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn đối chiếu bản sắc Nga (Russkaya Dusha) · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối chiếu mô hình bản sắc Nga ("Russkaya Dusha") trong `who.html` (dòng 348) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Dòng giới thiệu Russkaya Dusha trong bảng so sánh mở rộng của `who.html` không chứa liên kết trích dẫn `[9]` trỏ tới tác phẩm của Nikolai Berdyaev; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc nhắc đến một khái niệm bản sắc dân tộc sâu sắc của Nga ("Linh hồn Nga") mà không dẫn nguồn cụ thể làm giảm tính khoa học của bảng so sánh mở rộng, có nguy cơ bị coi là sự khái quát hóa sáo rỗng hơn là phép so sánh triết học nghiêm túc.
+- Round 3 — Root: Điểm này được viết trong phần so sánh mở rộng mà không được ánh xạ và bổ sung tác phẩm nghiên cứu kinh điển về bản sắc Nga (Berdyaev, 1947) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Berdyaev, 1947 <a href="#nguon-9">[9]</a>)` vào ô Nga (Russkaya Dusha) (dòng 348) và bổ sung nguồn `[9] Berdyaev, N. (1947)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `berdyaev_1947`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn đối thoại truyền dẫn tri thức · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối thoại với truyền dẫn tri thức ("Với truyền dẫn tri thức") trong `who.html` (dòng 300-301) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu khoa học tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Ô đối thoại với truyền dẫn tri thức ở `who.html` không chứa liên kết trích dẫn `[8]` trỏ tới tác phẩm của Jan Assmann; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc khẳng định về "giao thức tối thiểu cho truyền dẫn tri thức phi thiết chế" mà không dẫn chiếu đến lý thuyết ký ức văn hóa và truyền tải tri thức tập thể chính thức (như tác phẩm của Jan Assmann) làm giảm tính thuyết phục học thuật và biến nó thành một khẳng định mang tính cảm tính.
+- Round 3 — Root: Dòng này được viết trong phần tóm tắt đối thoại tri thức mà không được ánh xạ và bổ sung tác phẩm nghiên cứu ký ức văn hóa (Assmann, 1992) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Assmann, 1992 <a href="#nguon-8">[8]</a>)` vào ô đối thoại truyền dẫn tri thức (dòng 300) và bổ sung nguồn `[8] Assmann, J. (1992)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` để tích hợp `assmann`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn đối thoại triết học bản sắc · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu đối thoại với triết học bản sắc ("Với triết học bản sắc") trong `who.html` (dòng 292-293) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu học thuật tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Ô đối thoại với triết học bản sắc ở `who.html` không chứa liên kết trích dẫn `[7]` trỏ tới tác phẩm của Kwasi Wiredu; danh sách tham khảo cuối trang thiếu tác phẩm này.
+- Round 2 — Mechanism: Việc đưa ra khẳng định về "con đường thứ ba giữa bản sắc cứng và hòa tan" mà không dẫn chiếu đến nghiên cứu triết học so sánh bản sắc chính thức (chẳng hạn như công trình nổi bật của Kwasi Wiredu) làm giảm chiều sâu lý luận và tính khoa học của cuộc đối chiếu bản sắc.
+- Round 3 — Root: Dòng này được viết trong phần tóm tắt đối thoại triết học mà không được ánh xạ và bổ sung tác phẩm nghiên cứu bản sắc so sánh (Wiredu, 1996) vào mục Nguồn Trích Dẫn theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Wiredu, 1996 <a href="#nguon-7">[7]</a>)` vào ô đối thoại triết học bản sắc (dòng 292) và bổ sung nguồn `[7] Wiredu, K. (1996)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `wiredu_1996`.
+
+**RCA score: 5.0/5.**
+
+---
+
+## 2026-06-11 — who.html: Trích dẫn lý thuyết tổ chức tự quản (Holacracy) · RCA 5.0/5
+
+**Symptom / gap:** Phát biểu về lý thuyết tổ chức tự quản (Holacracy) trong `who.html` (dòng 288-289) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu/sách sáng lập tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
+
+**3-round RCA:**
+- Round 1 — Symptom: Ô so sánh tự quản (Holacracy) trong phần đối thoại thế giới của `who.html` không chứa liên kết trích dẫn `[6]` trỏ tới tác phẩm sáng lập của Brian Robertson; danh sách tham khảo cuối trang thiếu cuốn sách này.
+- Round 2 — Mechanism: Việc nhắc đến một lý thuyết quản trị hiện đại cụ thể (Holacracy) mà không dẫn nguồn làm suy giảm tính học thuật và sự thuyết phục của nhận định đối chiếu cấu trúc tự quản Làng Việt Nam với mô hình phi tập trung hiện đại, làm mất khả năng đối chiếu khoa học.
+- Round 3 — Root: Điểm này được viết như phần thảo luận tự quản phi tập trung mở rộng mà không được ánh xạ và bổ sung tài liệu sáng lập (Robertson, 2015) vào thư mục tham khảo cuối trang theo **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)**.
+- **Scoring gate: 5.0/5.**
+
+**Fix — 3 targeted edits:**
+- `who.html`: Thêm liên kết inline `(Robertson, 2015 <a href="#nguon-6">[6]</a>)` vào ô thảo luận Holacracy (dòng 288) và bổ sung nguồn `[6] Robertson, B. J. (2015)` ở mục Nguồn Trích Dẫn.
+- `scratch/check_author_links.py` và `scratch/find_missing_links.py`: Cập nhật cấu hình `FILE_SOURCES` và `KEYWORDS` để tích hợp `robertson_2015`.
+
+**RCA score: 5.0/5.**
+
+---
+
 ## 2026-06-11 — who.html: Trích dẫn mô hình Ngoại giao Cây Tre · RCA 5.0/5
 
 **Symptom / gap:** Phát biểu về mô hình *"Ngoại giao Cây Tre"* trong `who.html` (dòng 274) thiếu liên kết trích dẫn inline và nguồn trích dẫn nghiên cứu/phát biểu chính thức tại cuối trang, vi phạm **Quy tắc Bảng Nguồn Trích Dẫn (Rule #12)** của dự án.
