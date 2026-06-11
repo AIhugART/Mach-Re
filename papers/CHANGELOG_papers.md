@@ -5,6 +5,24 @@
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
 
+## 2026-06-11 — paper_009 (TẠO MỚI): "Ngoại Giao Cây Tre như Giao Diện Sống" · ESP E 4.8/5 + RCA 4.8/5
+
+**ESP Layer E (bắt buộc trước prose — Tier 3 Rule #1):**
+- L1–L4 RCA Stack: Bamboo Diplomacy thiếu formal structural account → Việt Nam-VIII + US-chưa-VIII → C1-min → P* = identity-preserving inter-system encounter. IX formalize gap này.
+- Claim Ladder: **Interpretive Mapping [interpretation]** — an toàn, rõ ràng definitions.
+- Boundary Statement in §2: NOT-claim / CLAIM list explicit.
+- Score E: 4.8/5 → proceed to prose.
+
+**Files tạo:**
+- `papers/paper_009/paper_009_draft.md` — full prose paper (bilingual VI/EN)
+- `papers/index.html` — Paper 009 card added (purple #5a3070)
+
+**Routing tiered changelog:** ONLY `papers/CHANGELOG_papers.md`. Root `CHANGELOG.md` không nhận entry này.
+
+**RCA score: 4.8/5.** Phase 7 → COMPLETE.
+
+---
+
 ## 2026-06-11 — paper_005: Dời đoạn "Tự phân loại của Mạch Rễ" từ §2.1 xuống §4 — §2.1 chỉ nói về Việt Nam · RCA 5.0/5
 
 **Symptom:** §2.1 "Thước đo ngầm là gì?" — vốn có nhiệm vụ vạch trần thước đo ẩn được dùng để đánh giá tư duy Việt Nam — chứa một đoạn dài về tự phân loại của Mạch Rễ (Tiên Đề I, Tiên Đề VIII, công thức `Being(x) ≡ {R(x,y)}`). Đoạn này khiến §2.1 nhảy từ chẩn đoán lịch sử sang giới thiệu framework trước khi lập luận về lỗi phạm trù được hoàn tất, làm yếu sức thuyết phục của paper (trông giống special pleading).
