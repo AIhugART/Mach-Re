@@ -8,6 +8,39 @@
 
 ---
 
+## 2026-06-12 — A·B·C System Mapping + TRITHUC Gap Index ✅
+
+**Trigger:** Plan `plan/2026-06-12_plan_a_b_c_mapping.md` — RCA mapping 3 compass systems (A: Phan Ngọc · B: Ashby/Weick · C: Buddhist Epistemology) against MACH RE axioms.
+**Triple compass/lens:** A·B·C = thấu kính (lens), không phải mirror hay reference beam (`axiom_spec.md §0.4`).
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4/5 cho mọi mapping decision. Map ở axiom-level.
+
+### Output files
+
+| File | Type | Description |
+|---|---|---|
+| `documents/mapping/a_b_c_system_mapping.md` | mapping | 6 Parts: Node/Edge Reference, 10 axiom units × 3 compasses with RCA-gated evidence rows, Structural Summary, Boundary, Validation, Nguồn Trích Dẫn |
+| `documents/gap/TRITHUC_index.md` | index | 10 TRITHUC gap labels; namespace `TRITHUC-` distinct from `BIAN-` (BE↔QM) |
+| `plan/2026-06-12_plan_a_b_c_mapping.md` | plan | 6-phase implementation plan with RCA gate, carry-forward set |
+
+### Key RCA decisions
+
+| # | Decision | RCA score | Description |
+|---|---|---|---|
+| D1 | Namespace `TRITHUC-` | 4.8/5 | Tránh overlap BIAN-1–20 của BE↔QM mapping |
+| D2 | Map at axiom-level | 5.0/5 | 250+ nodes × 10 axioms → axiom-level constraint |
+| D3 | Carry-forward triplet scores | 4.8/5 | Baseline confirmed + enriched with node/edge evidence |
+| D4 | III-orthogonality = `[proposed]` | 4.8/5 | V ⊥ H partially supported by all 3, fully captured by none |
+| D5 | A-Phần 3 excluded | 4.8/5 | Per `axiom_spec.md §0.1.1` — register mismatch |
+
+### Structural findings
+
+- **Strongest convergence:** "Identity = relations" (I) — all 3 compasses: 3.0/3
+- **Strongest MACH RE novelty:** V ⊥ H (III) + C1-graded reflexivity (VI) + F-AND-gate (MĐ 4)
+- **Gap count:** 10 TRITHUC labels — 3 `[proposed]` (intrinsic), 7 compass-unique, 2 scope boundaries
+- **Coverage:** All 10 axiom units ≥ 2.0/3; 7/10 ≥ 2.5/3; 4/10 = 3.0/3
+
+---
+
 ## 2026-06-12 — v3.4 · Provenance Retraction F9 + Provenance Gate (RULE ZERO Criterion 6) ✅
 
 **Trigger:** Kiểm chứng ngoài (con người) xác nhận tên phạm trù "Triết học Tương quan-Phân tán / Relational and Distributed Philosophy" là AI coinage — không tồn tại trong văn liệu học thuật độc lập với tư cách taxonomy đã công nhận.
