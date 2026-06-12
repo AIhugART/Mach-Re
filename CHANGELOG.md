@@ -1,3 +1,42 @@
+## 2026-06-12 — AHP Installation: Anti-Hallucination Pipeline for MACH RE ✅
+
+**Trigger:** Plan `plan/2026-06-12_plan_ahp_installation.md` — RCA 5.8/6 (4.83/5) → PROCEED.
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4/5. 6-phase installation.
+**Template:** AHP v3.1 Template v1.0, exported from `anti_hallucinations/template/`.
+
+### Output (17 files)
+
+| File | Type |
+|---|---|
+| `anti_hallucinations/README.md` | meta |
+| `anti_hallucinations/index.md` | index — 3-layer: RULE ZERO → AHP → labels.md |
+| `anti_hallucinations/00_top_risk_record.md` | pipeline — Risk Score H×W×(1+A), TTL |
+| `anti_hallucinations/01_early_warning.md` | pipeline — 20 signals |
+| `anti_hallucinations/02_detection.md` | pipeline — 14 components, 4-group classification |
+| `anti_hallucinations/03_sot_traceability.md` | pipeline — 8 SOTs, N=8 |
+| `anti_hallucinations/04_analysis.md` | pipeline — 6 root cause types, FSR |
+| `anti_hallucinations/05_scoring.md` | pipeline — 5-band calibration |
+| `anti_hallucinations/06_solution.md` | pipeline — P0-P4 + P-DEFER |
+| `anti_hallucinations/label_system.md` | pipeline — 25 labels, labels.md canonical |
+| `anti_hallucinations/stakes_assessment.md` | BDS |
+| `anti_hallucinations/vyapti_registry.md` | BDS — 9 VYR entries |
+| `anti_hallucinations/integration_spec.md` | BDS — 4 critical rules |
+| `anti_hallucinations/system_registry.md` | multi-system — 4 systems |
+| `anti_hallucinations/mapping_registry.md` | multi-system — 26 links, 5 NAC |
+| `anti_hallucinations/plan/2026-06-12_ahp_instantiation_log.md` | plan |
+
+### Key decisions
+
+- **D1** (4.83/5): Install AHP — fills middle layer between RULE ZERO (process) and labels.md (verdict)
+- **D2** (4.8/5): labels.md = canonical confirmation SOT; AHP labels = encoding
+- **D3** (4.8/5): `[AH-NAJ]` added — derived from labels.md #3
+- **D4** (4.8/5): NAC table from TRITHUC gaps (5 entries)
+- **D5** (4.8/5): Dual scoring: RCA gate = change decision; AHP score = risk tracking
+
+### Modified: `CLAUDE.md` — added §Anti-Hallucination Pipeline
+
+---
+
 ## 2026-06-12 — A_SYSTEM_Phan_Ngoc: Node-Edge system from Bản Sắc Văn Hóa Việt Nam ✅
 
 **Trigger:** RCA chuyển source document Phan Ngọc (585 trang) thành bảng Node (N_PN_00000) + Edge (ED_PN_00000) theo schema Buddhist Epistemology.

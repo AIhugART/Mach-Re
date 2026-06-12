@@ -302,7 +302,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **Mach-Re** (4063 symbols, 3860 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **Mach-Re** (4326 symbols, 4123 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -320,6 +320,33 @@ This project is indexed by GitNexus as **Mach-Re** (4063 symbols, 3860 relations
 - NEVER ignore HIGH or CRITICAL risk warnings from impact analysis.
 - NEVER rename symbols with find-and-replace — use `gitnexus_rename` which understands the call graph.
 - NEVER commit changes without running `gitnexus_detect_changes()` to check affected scope.
+
+## Anti-Hallucination Pipeline (AHP)
+
+MACH RE uses an Anti-Hallucination Pipeline (AHP v3.1) installed at `anti_hallucinations/`. The pipeline provides a standardized middle layer connecting RULE ZERO (process) → labels.md (verdict).
+
+**Architecture:** `RULE ZERO → AHP (01→02→03→04→05→label→06) → labels.md`
+
+**Entry point:** `anti_hallucinations/index.md`
+
+### Quick Reference
+
+| Situation | Start from |
+|-----------|-----------|
+| Claim seems ungrounded / suspicious | `anti_hallucinations/01_early_warning.md` — 20 detection signals |
+| Need to classify a claim's epistemic source | `anti_hallucinations/label_system.md` §1.4 — ES tags (Pratyakṣa/Anumāna/Smṛti/Vikalpa) |
+| Before writing a new cross-system mapping claim | `anti_hallucinations/mapping_registry.md` — check existing links + NAC table |
+| Before claiming a TRITHUC gap is resolved | `anti_hallucinations/vyapti_registry.md` — verify VYR entry |
+| Scoring a claim via RULE ZERO | Also assign ES tag per `anti_hallucinations/label_system.md` §1.4 |
+| Need a confirmation verdict | `labels.md` is the canonical SOT. Use `[AH-HCNF]` (#1), `[AH-AIHL]` (#2), or `[AH-NAJ]` (#3) |
+| "I cannot judge this claim" | `[AH-NAJ]` (labels.md #3) — DEFER with unlock condition. Valid epistemic state per Tiên Đề V. |
+
+### Critical Integration Rule
+
+RCA gate (≥ 4/5) and AHP score (0-10) are **complementary, not redundant:**
+- **RCA gate:** "Should this claim be changed?"
+- **AHP score:** "How risky is this claim right now?"
+- **F9 pattern:** RCA ≥ 4/5 + AHP ≥ 7 + labels.md unjudged → **flag for provenance review before claiming `[established]`.**
 
 ## Resources
 
