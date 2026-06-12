@@ -4,6 +4,23 @@
 > **Liên kết:** Lịch sử toàn bộ papers → xem [`CHANGELOG_papers.md`](../CHANGELOG_papers.md); lịch sử toàn bộ dự án → xem [`CHANGELOG.md`](../../CHANGELOG.md) tại thư mục gốc.
 > **Quy tắc:** Mỗi entry phải qua 3-round RCA × 5-Why × scoring gate ≥ 4/5 (theo `CLAUDE.md` §RULE ZERO).
 
+## 2026-06-12 — paper_005_v2.1: Thêm F2 (model-of) + F9 ([proposed-by-this-project] provenance) · RCA 4.8/6
+
+**Symptom (Round 1):** "Ghi chú về Mạch Rễ" (Introduction) không khai báo quan hệ chính xác giữa Mạch Rễ và triết học dân tộc Việt (F2). §4 header dùng tên loại hình "Triết học Tương quan-Phân tán" không kèm provenance tag dù tên compound là AI coinage (F9).
+
+**Mechanism (Round 2):** Paper trình bày Mạch Rễ như một hệ có quan hệ định danh/phân loại với triết học dân tộc Việt thay vì quan hệ model-of; và trình bày tên loại hình như nhãn học thuật established thay vì proposed — cả hai làm suy yếu tính trung thực nhận thức luận của paper.
+
+**Root (Round 3):** Gate thiếu tiêu chí Provenance (F9 — fixed in CLAUDE.md RULE ZERO 2026-06-12); quan hệ model-of (F2) chưa được phát biểu trong manuscript (chỉ có trong axiom_spec.md sau Phase 1 của Plan v4).
+
+**Fix (1 file + 1 changelog):**
+- `papers/paper_005/paper_005_v2.md`: (a) Cập nhật "Ghi chú về Mạch Rễ" — thêm blockquote F2 (model-of + bất đối xứng phụ thuộc) và blockquote F9 (provenance note cho tên loại hình); (b) Thêm `[proposed-by-this-project]` tag vào §4 header và provenance blockquote trước định nghĩa cốt lõi.
+- PDF chưa recompile — pending user review.
+- `papers/paper_005/CHANGELOG_paper_005.md`: Entry này.
+
+**RCA score (6 tiêu chí):** Correct 5 — lỗi provenance thật · Deep 5 — chạm root F9 gate + F2 model-of · Feasible 5 — surgical insert không vỡ cấu trúc · Conflict-risk 5 — không mâu thuẫn logic paper · Preservation 5 — nội dung phân tích giữ nguyên · **Provenance 5** — tag rõ, trace về [17][18] · **Tổng: 4.8/6 (≥4/6 threshold).**
+
+---
+
 ## 2026-06-12 — paper_005_v2: Làm rõ vị thế giả thuyết của khung phân loại 4 tiêu chí ở Mục 4 · RCA 5.0/5
 
 **Symptom (Round 1):** Câu chốt trong Mục 4 ghi "Bộ khung bốn tiêu chí này đóng vai trò là công cụ phân loại học thuyết" chưa phản ánh trung thực thực trạng rằng hiện giới học thuật triết học thế giới chưa có bất kỳ bộ tiêu chí hay sự đồng thuận nào để định nghĩa "Triết học Tương quan-Phân tán". Điều này dễ gây hiểu lầm rằng bộ khung này là một tiêu chuẩn đã được thừa nhận rộng rãi từ trước.

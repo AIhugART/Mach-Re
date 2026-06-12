@@ -44,6 +44,9 @@ means a strong case to edit.
 | Feasible | Can it be fixed without breaking core structure/meaning? | safe to do |
 | Conflict-risk | Will the fix avoid creating contradictions on other pages? | low new risk |
 | Preservation | Is the core strength kept after the fix? | strength kept |
+| **Provenance** | **Does every typology/history/comparison claim carry `[established]+source` or `[proposed-by-this-project]`?** | **no untagged claim** |
+
+> **Tiêu chí Provenance — bắt buộc (RCA finding 2026-06-12, F9, score 4.8/5):** Gate này được thêm vào sau khi kiểm chứng ngoài (con người) xác nhận tên phạm trù "Triết học Tương quan-Phân tán / Relational and Distributed Philosophy" là AI coinage trình bày sai tư cách `[established]` — đã tồn tại qua nhiều vòng RCA nội bộ vì không tiêu chí nào kiểm xuất xứ ngoài repo. Bước **Verify** (bước 5 RULE ZERO) được mở rộng: ngoài nguồn nội bộ, phải kiểm tra mọi claim loại hình/lịch sử có tồn tại trong văn liệu học thuật ngoài repo. Claim không có tag provenance = claim chưa hoàn chỉnh.
 
 **Threshold: average ≥ 4/5 → fix; below 4/5 → keep as-is.** Anchors from
 `CHANGELOG.md`: `upgrade.html:213` "describes *precisely*" scored 4.8 (the same
@@ -91,19 +94,59 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 ## Core Principles
 
-### Phân loại Khung nền — Triết học Tương quan-Phân tán (RCA finding 2026-06-10)
+### Phân loại Khung nền — Tuyên bố Vị thế `[proposed-by-this-project]` (RCA finding 2026-06-10; RETRACTED & REVISED 2026-06-12 — F9)
 
-> Điểm RCA: 5.0/5. Áp dụng bắt buộc khi giới thiệu, định nghĩa, hoặc so sánh Mạch Rễ với bất kỳ hệ triết học nào khác.
+> **⚠️ RETRACTION 2026-06-12 (F9, score 4.8/5):** Điểm RCA 5.0/5 cũ bị rút — chấm bằng rubric mù provenance (5 tiêu chí nội bộ, không có tiêu chí Provenance). Kiểm chứng ngoài (con người) xác nhận tên phạm trù "Triết học Tương quan-Phân tán / Relational and Distributed Philosophy" là AI coinage, không tồn tại trong văn liệu học thuật độc lập. Điểm chấm lại theo rubric 6 tiêu chí: **3.8/6** (Provenance = 0 → kéo xuống). Đây là retraction đầu tiên của dự án, do kiểm chứng ngoài. Root cause: gate thiếu tiêu chí Provenance — đã fix ở RULE ZERO ở trên.
+>
+> Áp dụng bắt buộc khi giới thiệu, định nghĩa, hoặc so sánh Mạch Rễ với bất kỳ hệ triết học nào khác.
 
-**Mạch Rễ (Root-Circuit) tự phân loại là một khung nền triết học thuần túy (pure philosophical framework) thuộc loại hình Triết học Tương quan-Phân tán (Relational and Distributed Philosophy).** Nó không phải là Triết học Hệ thống-Siêu hình (Systematic Metaphysics).
+**Mạch Rễ (Root-Circuit) tự phân loại là một khung nền triết học thuần túy (pure philosophical framework) đề xuất loại hình `[proposed-by-this-project]` là triết học tương quan-phân tán.** Nó không phải là Triết học Hệ thống-Siêu hình (Systematic Metaphysics).
 
-**Bản chất (Essence):** Các tiên đề của Mạch Rễ là mô tả cấu trúc (structural descriptions) của động lực quan hệ — cách hệ thống tồn tại, bền vững, và tự nhận thức thông qua các mẫu hình quan hệ (relational patterns) phân tán trong mạng. Chúng không phải là mệnh đề siêu hình về bản chất tối hậu của thực tại (ultimate reality). Tiên Đề I — Sống Trong Quan Hệ — Có Nhau Mới Có Mình (`Being(x) ≡ {R(x,y)}`) là tuyên bố nền tảng xác lập điều này.
+**Phân biệt tư cách (Provenance breakdown):**
+- `[established]` — **Relational ontology**: Whitehead (process philosophy), Emirbayer (relational sociology, 1997), Ramose / Ubuntu scholarship (Anattā, pratītyasamutpāda)
+- `[established]` — **Distributed cognition/memory**: Hutchins (1995), Weick (sensemaking)
+- `[proposed-by-this-project]` — **Tổ hợp hai thành phần trên thành một loại hình có tên "Tương quan-Phân tán" với tư cách thành viên**: đây là coinage của dự án, chưa được kiểm chứng ngoài. Đề xuất taxonomy mới là hành vi triết học hợp lệ — nhưng phải mang đúng tag.
+
+**Bản chất (Essence):** Các tiên đề của Mạch Rễ là mô tả cấu trúc (structural descriptions) của động lực quan hệ — cách hệ thống tồn tại, bền vững, và tự nhận thức thông qua các mẫu hình quan hệ (relational patterns) phân tán trong mạng. Chúng không phải là mệnh đề siêu hình về bản chất tối hậu của thực tại (ultimate reality).
+
+**Quy tắc sử dụng (cập nhật sau F9):**
+- Khi giới thiệu Mạch Rễ với người mới → nêu rõ: "Đây là framework đề xuất loại hình tương quan-phân tán `[proposed-by-this-project]`, không phải siêu hình học, chưa qua thẩm định học giới"
+- Khi so sánh với hệ triết học khác → đặt nó vào cột đề xuất, kèm tag status
+- Khi viết paper → Boundary Statement phải phân biệt `[established]` vs `[proposed-by-this-project]` cho từng thành phần
+- Việc tự phân loại là hệ quả của Tiên Đề V — Soi Mình Mà Không Vỡ: framework phải áp dụng chính thước đo của mình lên bản thân nó — bao gồm cả thước đo provenance
+
+### Quan hệ model-of — Bất đối xứng phụ thuộc (RCA findings F2+F3, 2026-06-12)
+
+> Điểm RCA: F2 = 4.8/5 · F3 = 4.8/5. Áp dụng bắt buộc khi mô tả quan hệ giữa Mạch Rễ và triết học dân tộc Việt; khi so sánh với Ubuntu, Tam giáo, hoặc bất kỳ hệ nào khác.
+
+**Quan hệ Mạch Rễ ↔ triết học dân tộc Việt là quan hệ model-of, không phải identity, không phải phái sinh.** Đối tượng là thực thể vô danh tiền-tồn — tồn tại trước model dưới dạng thực hành phân tán (ca dao, tục ngữ, hương ước). Model làm bằng A×B×C, như chữ Nôm làm bằng bộ chữ Hán để ghi âm tiếng Việt mà không biến tiếng Việt thành tiếng Hán.
+
+**Tiêu chí vận hành — bất đối xứng phụ thuộc (F3):**
+Để phân biệt model/entity: *Nếu hủy toàn bộ Mạch Rễ, đối tượng có tồn tại không?*
+- CÓ → quan hệ là model-of (đúng)
+- KHÔNG → framework đang tuyên bố identity → overclaim → phải sửa bằng 3-round RCA
 
 **Quy tắc sử dụng:**
-- Khi giới thiệu Mạch Rễ với người mới → luôn nêu rõ: "Đây là triết học tương quan-phân tán, không phải siêu hình học"
-- Khi so sánh Mạch Rễ với hệ triết học khác → đặt nó vào cột "Tương quan-Phân tán", không đứng ngoài bảng như thẩm phán trung lập
-- Khi viết paper → kèm tuyên bố tự phân loại (Framework Classification) trong abstract hoặc introduction
-- Việc tự phân loại là hệ quả của Tiên Đề V — Tự Nhìn Thấy Mình: framework phải áp dụng chính thước đo của mình lên bản thân nó
+- Dùng "Mạch Rễ mô tả / làm mô hình về triết học dân tộc Việt" — ✅
+- Không dùng "Mạch Rễ là triết học dân tộc Việt" hay "Mạch Rễ phái sinh từ Nho/Phật/Lão" — ❌
+- Chi tiết: `axiom_spec.md §0.3` · `plan/dictionary_rule.md §11.1`
+
+### Taxonomy 3 vai: Thấu kính / Gương soi / Tia chuẩn (RCA findings F5+F6, 2026-06-12)
+
+> Điểm RCA: F5 = 4.8/5 · F6 = 4.8/5. Áp dụng bắt buộc trước khi so sánh Mạch Rễ với bất kỳ hệ triết học nào, hoặc trả lời câu hỏi "tại sao không dùng X làm nền tảng?"
+
+**Ba vai không thể hoán đổi:**
+
+| Vai | Ứng viên | Chức năng | Điều kiện |
+|---|---|---|---|
+| **Thấu kính** (lens) | A (Phan Ngọc), B (Ashby/Weick), C (pramāṇa/apoha) | Nhìn *qua* — hình thức hóa, bác bỏ | Tháo → model sập. Giống đối tượng = khuyết điểm |
+| **Gương soi** (mirror) | Ubuntu, Yoruba | Soi *cạnh* — đo phân kỳ, xác nhận loại hình | Không cấu thành tiên đề — có thể thay |
+| **Tia chuẩn** (reference beam) | Nho/Phật/Lão dạng nguồn | Chiếu *vào* — đo delta khúc xạ của đối tượng | Output của bộ lọc → không thể là thấu kính |
+
+**Quy tắc:**
+- Ubuntu chia sẻ đặc trưng với đối tượng → đây là lý do *không* dùng làm thấu kính (F5): giống đối tượng = khuyết điểm của dụng cụ
+- Tam giáo đồng nguyên = cái-được-chọn, không phải cái-chọn → không thể dùng làm lens (F6): giải thích bộ lọc bằng sản phẩm của bộ lọc = vòng tròn
+- Chi tiết: `axiom_spec.md §0.4` · `plan/dictionary_rule.md §11.2–11.3`
 
 ### Tiên Đề III — Bản chất và Biểu hiện (RCA finding 2026-06-05)
 

@@ -1,3 +1,35 @@
+## 2026-06-12 — v3.4 · Provenance Retraction F9 + Provenance Gate (RULE ZERO Criterion 6) ✅
+
+**Trigger:** Kiểm chứng ngoài (con người) xác nhận tên phạm trù "Triết học Tương quan-Phân tán / Relational and Distributed Philosophy" là AI coinage — không tồn tại trong văn liệu học thuật độc lập với tư cách taxonomy đã công nhận.
+**Triple compass:** A (Phan Ngọc — tiếp biến) · B (Ashby/Weick — Variety, sensemaking) · C (Buddhist Epistemology — saṃvṛti/paramārtha, apoha)
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4.5/5 (ngưỡng cao hơn cho câu hỏi tồn tại)
+**RCA score F9:** 4.8/5 — root = gate thiếu tiêu chí Provenance → fix: thêm tiêu chí thứ 6
+
+### Retraction — đầu tiên của dự án
+
+| Claim bị rút | File(s) | Score cũ (rubric 5) | Score mới (rubric 6) | Root cause |
+|---|---|---|---|---|
+| "Tương quan-Phân tán" là `[established]` taxonomy | `CLAUDE.md` Core Principle | 5.0/5 (mù provenance) | 3.8/6 (Provenance=0) | AI coinage trình bày sai tư cách; gate 5 tiêu chí không bắt được |
+
+### Các thay đổi thực hiện
+
+| # | Thay đổi | File(s) | Loại |
+|---|---|---|---|
+| P1 | Thêm tiêu chí Provenance (gate thứ 6) vào bảng scoring RULE ZERO | `CLAUDE.md` | Fix gốc rễ |
+| P2 | Mở rộng bước Verify sang nguồn ngoài repo | `CLAUDE.md` | Fix gốc rễ |
+| P3 | Rút điểm 5.0/5 → re-mark `[proposed-by-this-project]` trong Core Principle | `CLAUDE.md` | Retraction |
+| P4 | Provenance Notice box + `[proposed-by-this-project]` tag | `relational_and_distributed_philosophy.html` | Re-mark |
+| P5 | Boundary Statement: "cùng thuộc" → "chia sẻ đặc trưng của loại hình đề xuất `[proposed-by-this-project]`" | `ubuntu.html` | Re-mark |
+| P6 | Self-classification: "thuộc loại hình" → "đề xuất loại hình `[proposed-by-this-project]`" | `index.html` | Re-mark |
+| P7 | Typology claim: "đều thuộc" → "chia sẻ đặc trưng của loại hình đề xuất `[proposed-by-this-project]`" | `what.html` | Re-mark |
+
+### Carry-forward (không bị xóa)
+`[established]`: relational ontology (Whitehead, Emirbayer 1997) + distributed cognition (Hutchins 1995). Nội dung phân tích so sánh — giữ nguyên, mang đúng tư cách. Hệ tiên đề I–VI không phụ thuộc tên phạm trù. Structural homologies (ubuntu.html, yoruba.html) — giữ, chỉ sửa claim tư cách.
+
+**Phán quyết tồn tại (F8, 4.8/5 ≥ 4.5):** Biện minh chuyển sang có điều kiện: VN 6.0/10 · TG 2.8/10. Bảng điểm đầy đủ tại `review/2026-06-12_tuyen_bo_rca_verdict.md`.
+
+---
+
 ## 2026-06-12 — RCA Cross-Link `relational_and_distributed_philosophy.html` ↔ `what.html` ✅
 
 **Trigger:** User request: "RCA link trang này `relational_and_distributed_philosophy.html` với `what.html`"
