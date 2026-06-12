@@ -1,3 +1,13 @@
+## 2026-06-12 — A_SYSTEM_Phan_Ngoc: Node-Edge system from Bản Sắc Văn Hóa Việt Nam ✅
+
+**Trigger:** RCA chuyển source document Phan Ngọc (585 trang) thành bảng Node (N_PN_00000) + Edge (ED_PN_00000) theo schema Buddhist Epistemology.
+**Files:** `documents/A_SYSTEM_Phan_Ngoc_BanSacVanHoaVietNam/a_system_phan_ngoc.md` (new)
+**Sources:** `BanSacVanHoaVietNam_Phan_Ngoc.md` (OCR source) + `BanSacVanHoaVietNam_Phan_Ngoc_RCA_Table.md` (30-concept reference)
+**Carry-forward:** 30 RCA concepts from reference table → core layer N_PN_00001–N_PN_00030
+**Output:** 68 nodes (30 core + 38 RCA expanded) × 124 edges — all source-traced to TRANG/LINE
+
+---
+
 ## 2026-06-12 — v3.4 · Provenance Retraction F9 + Provenance Gate (RULE ZERO Criterion 6) ✅
 
 **Trigger:** Kiểm chứng ngoài (con người) xác nhận tên phạm trù "Triết học Tương quan-Phân tán / Relational and Distributed Philosophy" là AI coinage — không tồn tại trong văn liệu học thuật độc lập với tư cách taxonomy đã công nhận.
