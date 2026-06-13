@@ -1,3 +1,48 @@
+## 2026-06-13 — Vai Trò & Vị Trí Tương Quan: Tổng hợp 9 RCA Findings (F1–F9) ✅
+
+**Trigger:** User request: RCA (A×B×C) → tạo HTML "Vai trò và Vị trí tương quan của Mạch Rễ trong triết học VN và thế giới" từ source `raw/vai_tro_mach_re.txt` → gắn link vào `index.html` + `what.html`.
+**Method:** 3-Round RCA × 5-Why × 6-criterion scoring gate (Correct, Deep, Feasible, Conflict-risk, Preservation, Provenance). 6 claims scored: C1 VN role (6/6), C2 TG role (6/6), C3 Taxonomy 3 vai (6/6), C4 Model-of (6/6), C5 Existential justification (5/6), C6 6-layer positionality (6/6). All PASS ≥ 5/6.
+
+### Page Structure (7 sections)
+
+| § | Nội dung | Neo RCA |
+|---|---------|---------|
+| §0 | Phán quyết Tồn tại — Tóm tắt (VN 6.0/10 · TG potential 6.0/10, actual 0/10) | F8 |
+| §1 | Tuyên bố Vị thế Nhận thức 6 lớp (L1–L6) | CLAUDE.md canonical |
+| §2 | Vai trò trong Triết học Việt Nam (model-of F2, bất đối xứng F3, scoring table) | F2+F3+F8 |
+| §3 | Vai trò trong Triết học Thế giới (2 trục: potential vs actual, 4 structural offers) | F8, RCA C2 |
+| §4 | Taxonomy 3 Vai: Thấu kính / Gương soi / Tia chuẩn (Ubuntu=F5, Tam giáo=F6) | F5+F6 |
+| §5 | Ba Hệ Neo A×B×C — Vai trò từng hệ + Bảng hội tụ 5 tiên đề | F1 |
+| §6 | Biện minh Tồn tại có điều kiện (3 gaps + 6 non-claims) | F8 post-F9 |
+| §7 | Điều kiện "Chết" (4 kill conditions, condition 4 = upāya = success condition) | F8 |
+
+### Scoring Gate Summary
+
+| Claim | Score | Verdict |
+|-------|-------|---------|
+| C1 — Vai trò Mạch Rễ trong triết học VN (6.0/10) | 6/6 | PASS |
+| C2 — Vai trò Mạch Rễ trong triết học TG (tách potential/actual) | 6/6 | PASS |
+| C3 — Taxonomy 3 vai `[proposed]` | 6/6 | PASS |
+| C4 — Model-of + bất đối xứng phụ thuộc | 6/6 | PASS |
+| C5 — Biện minh tồn tại có điều kiện | 5/6 | PASS (sửa cách trình bày TG) |
+| C6 — Tuyên bố vị thế nhận thức 6 lớp | 6/6 | PASS |
+
+### RCA C2 Insight — Tách Tiềm năng / Ảnh hưởng
+
+Root cause: "Vai trò TG 2.8/10" cũ lẫn lộn potential và actual → gây hiểu nhầm. Fix: tách thành 2 trục độc lập. TG potential = 6.0/10 (4 structural offers có thật). TG actual = 0/10 (trung thực: chưa có peer review, adoption, citation, dialogue, impact).
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `vai_tro_mach_re.html` | **CREATED** — 7 sections, ~950 lines, full provenance tagging, 11-source citation table |
+| `index.html` | CSS: +`.c-role` class (copper accent) · Nav: +"Vai Trò & Vị Trí Tương Quan" card |
+| `what.html` | §6: +cross-reference box linking to `vai_tro_mach_re.html` |
+
+**Provenance:** All typology/history/comparison claims tagged `[established]` (relational ontology, distributed cognition, Phan Ngọc 1998, Ashby 1956, Buddhist epistemology) or `[proposed-by-this-project]` (taxonomy 3 vai, 6-layer positionality, kill conditions, V⊥H, Mạch Rễ framework). No untagged claims.
+
+---
+
 ## 2026-06-13 — TRITHUC-1 Cross-Cultural Verification: RS 27.0→13.5 [RS-CRIT→RS-MED] ✅
 
 **Trigger:** TRITHUC-1 open — V⊥H Orthogonal Temporality `[proposed-by-this-project]`, no external verification. Root cause: V⊥H first observed in Vietnamese material only → cannot distinguish structural property from cultural artifact.
