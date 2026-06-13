@@ -1,3 +1,22 @@
+## 2026-06-13 — Bilingual Glossary for Tiên Đề II & Terminology Standardization ✅
+
+**Trigger:** User request to add Bilingual Glossary to `axiom_2.html` (matching schema of `axiom_1.html`) and standardize technical terms to bilingual VN (EN) format.
+**Method:** 3-round RCA × 5-Why × scoring gate ≥ 4/5.
+
+### Key Changes
+
+* **Bilingual Glossary Addition:** Added a comprehensive glossary section containing 26 philosophical and systems terms relevant to Tiên Đề II (`axiom_2.html`), matching the layout, typography, and gold/brown theme of the page.
+* **Standardized Terminology (VN (EN)):** Updated all occurrences of the word "pattern" in Vietnamese contexts to use bilingual terms (`nếp (pattern)` or `nếp bất biến (invariant pattern)`), translated `pattern bất biến` to `nếp bất biến (invariant pattern)`, converted Section 2 header in `axiom_2.html` to `Cấu trúc vs Bề mặt (Structural vs Surface): Tại sao "nếp (pattern)" chứ không phải "nội dung (content)"?`, standardized the relational invariant shorthand in the Why 1 box to `Nếp quan hệ (pattern of relations) = bất biến (invariant); nội dung (content) = khả biến (variable)`, updated the substance reference in the Why 2 box to `bản thể (substance)`, standardized the philosophical and framework terms (`svabhāva` -> `tự tính (svabhāva)`, `essentialism` -> `chủ nghĩa bản chất (essentialism)`, `Anattā` -> `Vô Ngã / Anattā`, `framework` -> `khung lý thuyết (framework)`) in the Why 3, 4 & 5 box, and updated the comparison cards (Phan Ngọc, Lévi-Strauss, Ashby) including their ASCII boxes to use bilingual formats (`quy ước thật (saṃvṛtisat)`, `cấu trúc sâu nhận thức (cognitive deep structures)`, `nếp quan hệ bất biến (relational invariant patterns)`, `biến cốt lõi (essential variables)`, `bất biến (invariant)`, `bất biến quan hệ (relational invariant)`, `chứng minh hình thức (formal proof of concept)`, and `miền (domain)`).
+* **Citation & Sources Enrichment:** Appended Nāgārjuna `[5]` (for *Anattā* & *Pratītyasamutpāda*) and Ramose `[6]` (for *Ubuntu*) to the references section at the bottom of `axiom_2.html`, and added citation hyperlinks `[1]`, `[2]`, `[3]`, and `[5]` directly to the official Vietnamese statement label for Tiên Đề II.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| [axiom_2.html](file:///c:/Stable_Diffusion/MACH_RE/axiom_2.html) | Added Bilingual Glossary, appended sources [5] and [6] to references list, and updated all Vietnamese-context occurrences of "pattern" to use the bilingual format. |
+
+---
+
 ## 2026-06-13 — AHP Audit & Corrective Actions: 4 findings fixed ✅
 
 **Trigger:** Audit plan `plan/2026-06-13_plan_ahp_audit.md` — re-run self-audit as filesystem measurements (3-round RCA × 5-Why × scoring gate ≥ 4/5, Buddhist Epistemology compass).

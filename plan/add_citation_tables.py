@@ -44,7 +44,10 @@ SOURCES = {
     "litana_1998": "[N] Li Tana. (1998). <em>Nguyễn Cochinchina: Southern Vietnam in the Seventeenth and Eighteenth Centuries</em>. Cornell Southeast Asia Program. ISBN 9780877277224. — Documents the final phases of Nam tiến (Mekong Delta, ~1620–1757) and the portable, nuclear-family structure of Vietnamese settlement under the Nguyễn lords.",
     "akande_2019": "[N] Akande, A. O. (2019). Ará Òrun Kìn-ìn Kin-in: Òyó-Yòrùbá Egúngún Masquerade in Communion and Maintenance of Ontological Balance. <em>Genealogy</em>, <em>3</em>(1), 7. <a href=\"https://doi.org/10.3390/genealogy3010007\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.3390/genealogy3010007</a> — Ethnographic study of Egungun as embodied ancestor (physical return, judgment, blessings); Egungun society as cross-lineage institution; sacred grove; diaspora continuity.",
     "abimbola_1976": "[N] Abimbola, W. (1976). <em>Ifa: An Exposition of Ifa Literary Corpus</em>. Oxford University Press Nigeria. ISBN 9780195751994. — Standard scholarly reference on Ifa divination system, role of babalawo (specialist priest), Ofo (ancestral curse/oath), and Ẹ̀jọ́ (traditional Yoruba justice) as mediated through ancestral authority.",
-    "peel_2000": "[N] Peel, J. D. Y. (2000). <em>Religious Encounter and the Making of the Yoruba</em>. Indiana University Press. ISBN 0-253-33794-1. — Authoritative account of Yoruba ancestral ontology: ancestors as independent entities (not relational patterns), elderhood power extending into death, asymmetric living–ancestor relations."
+    "peel_2000": "[N] Peel, J. D. Y. (2000). <em>Religious Encounter and the Making of the Yoruba</em>. Indiana University Press. ISBN 0-253-33794-1. — Authoritative account of Yoruba ancestral ontology: ancestors as independent entities (not relational patterns), elderhood power extending into death, asymmetric living–ancestor relations.",
+    "nvn_1928": "[N] Nguyễn Văn Ngọc. (1928). <em>Tục ngữ phong dao</em> (Q1–Q2). Vĩnh Hưng Long Thư Quán.",
+    "emirbayer_1997": "[N] Emirbayer, M. (1997). Manifesto for a relational sociology. <em>American Journal of Sociology</em>, <em>103</em>(2), 281–317. <a href=\"https://doi.org/10.1086/231211\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1086/231211</a>",
+    "dewey_bentley_1949": "[N] Dewey, J., &amp; Bentley, A. F. (1949). <em>Knowing and the Known</em>. Beacon Press."
 }
 
 # File to sources mapping
@@ -56,7 +59,7 @@ FILE_SOURCES = {
     "who.html": ["phan_ngoc"],
     "how.html": ["phan_ngoc", "ashby", "weick", "nagarjuna"],
     "axioms.html": ["phan_ngoc", "ashby", "weick", "nagarjuna", "ntl_1975", "udah_2025", "lefa_2015"],
-    "axiom_1.html": ["whitehead", "phan_ngoc", "ashby", "weick", "nagarjuna", "ntl_1975"],
+    "axiom_1.html": ["whitehead", "phan_ngoc", "ashby", "weick", "nagarjuna", "ntl_1975", "nvn_1928", "emirbayer_1997", "dewey_bentley_1949"],
     "axiom_2.html": ["phan_ngoc", "levi_strauss", "ashby", "ntl_1975"],
     "axiom_3.html": ["heidegger", "bergson", "assmann", "benjamin", "halbwachs", "luhmann", "barbour", "eliade", "udah_2025", "lefa_2015"],
     "axiom_4.html": ["ashby", "phan_ngoc", "ntl_1975"],

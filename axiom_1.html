@@ -1,342 +1,850 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tiên Đề I — Quan Hệ Bản Thể (Relational Ontology) | Mạch Rễ</title>
-  <meta name="description" content="Phân tích sâu Tiên Đề I — Quan Hệ Bản Thể: bản sắc được cấu thành bởi quan hệ, không phải bản thể cố định. So sánh với Whitehead, Anattā, Ubuntu. Bằng chứng thực nghiệm từ ca dao địa phương Việt Nam (R_place)." />
+  <meta name="description"
+    content="Phân tích sâu Tiên Đề I — Quan Hệ Bản Thể: bản sắc được cấu thành bởi quan hệ, không phải bản thể cố định. So sánh với Whitehead, Anattā, Ubuntu. Bằng chứng thực nghiệm từ ca dao địa phương Việt Nam (R_place)." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet" />
   <style>
     :root {
-      --accent:       #2d6a4f;
+      --accent: #2d6a4f;
       --accent-light: #3f8c68;
-      --accent-pale:  #d8f3dc;
-      --cream:        #faf7f0;
-      --text-dark:    #1c1c1c;
-      --text-muted:   #5a5a5a;
-      --border:       #d0e0d5;
-      --green:        #2d6a4f;
-      --green-pale:   #d8f3dc;
-      --gold:         #a07830;
-      --rose:         #b05040;
+      --accent-pale: #d8f3dc;
+      --cream: #faf7f0;
+      --text-dark: #1c1c1c;
+      --text-muted: #5a5a5a;
+      --border: #d0e0d5;
+      --green: #2d6a4f;
+      --green-pale: #d8f3dc;
+      --gold: #a07830;
+      --rose: #b05040;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text-dark); }
-    .topnav { background: var(--green); display: flex; align-items: center; padding: 12px 24px; gap: 12px; }
-    .topnav a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .85rem; }
-    .topnav a:hover { color: #fff; }
-    .topnav .sep { color: rgba(255,255,255,.3); }
-    .topnav .current { color: #fff; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, #1c3a2e 0%, #2d6a4f 60%, #3f8c68 100%); color: #fff; padding: 60px 24px 48px; text-align: center; }
-    .hero .tag { display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); border-radius: 24px; padding: 4px 16px; font-size: .8rem; font-weight: 700; letter-spacing: .14em; margin-bottom: 16px; }
-    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 12px; }
-    .hero p { color: #b7e4c7; font-size: 1rem; max-width: 650px; margin: 0 auto; }
-    .content { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
-    section { margin-bottom: 56px; }
-    h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale); }
-    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 20px 0 8px; }
-    p { line-height: 1.8; color: var(--text-muted); margin-bottom: 12px; }
-    strong { color: var(--text-dark); }
-    .def-box { background: #fff; border: 1px solid var(--border); border-left: 5px solid var(--accent-light); border-radius: 12px; padding: 24px; margin: 20px 0; }
-    .def-box .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
-    .def-box blockquote { font-style: italic; font-size: 1.05rem; line-height: 1.75; color: var(--text-dark); }
-    .ascii-box { background: #f0f7f2; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; font-family: 'Courier New', monospace; font-size: .85rem; white-space: pre; overflow-x: auto; color: #1b4d38; margin: 16px 0; }
-    .concept-list { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
-    .concept-item { display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
-    .concept-item .pill { background: var(--accent-pale); color: var(--accent); border-radius: 8px; padding: 6px 14px; font-weight: 700; font-size: .85rem; white-space: nowrap; flex-shrink: 0; }
-    .concept-item p { margin: 0; font-size: .88rem; }
-    .compare-card { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--accent-light); border-radius: 0 14px 14px 0; padding: 20px 24px; margin: 20px 0; }
-    .compare-card h3 { margin-top: 0; color: var(--accent); }
-    .compare-card .domain-tag { display: inline-block; background: var(--accent-pale); color: var(--accent); border-radius: 6px; padding: 2px 10px; font-size: .75rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 8px; }
-    .styled-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 16px; }
-    .styled-table th { background: var(--accent); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
-    .styled-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
-    .styled-table tr:nth-child(even) td { background: #f5faf6; }
-    .styled-table td strong { color: var(--text-dark); }
-    .note { background: #fff8e8; border: 1px solid #ead9a8; border-radius: 10px; padding: 16px 18px; font-size: .9rem; margin: 14px 0; }
-    .note b { color: var(--gold); }
-    .disclaimer { font-size: .82rem; color: var(--text-muted); font-style: italic; }
-    footer { background: #1c3a2e; color: rgba(255,255,255,.5); text-align: center; padding: 20px; font-size: .8rem; }
-    footer a { color: #b7e4c7; text-decoration: none; }
-    .bottom-nav { max-width: 820px; margin: 0 auto; padding: 0 24px 60px; display: flex; justify-content: space-between; gap: 12px; }
-    .bottom-nav a { background: var(--green); color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: .9rem; font-weight: 600; }
-    .bottom-nav a:hover { background: #1a3a2a; }
-    .bottom-nav a.secondary { background: transparent; border: 2px solid var(--green); color: var(--green); }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+    }
+
+    .topnav {
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      gap: 12px;
+    }
+
+    .topnav a {
+      color: rgba(255, 255, 255, .7);
+      text-decoration: none;
+      font-size: .85rem;
+    }
+
+    .topnav a:hover {
+      color: #fff;
+    }
+
+    .topnav .sep {
+      color: rgba(255, 255, 255, .3);
+    }
+
+    .topnav .current {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1c3a2e 0%, #2d6a4f 60%, #3f8c68 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .3);
+      border-radius: 24px;
+      padding: 4px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #b7e4c7;
+      font-size: 1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-pale);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin: 20px 0 8px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    strong {
+      color: var(--text-dark);
+    }
+
+    .def-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent-light);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+
+    .def-box .label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .def-box blockquote {
+      font-style: italic;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-dark);
+    }
+
+    .ascii-box {
+      background: #f0f7f2;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: .85rem;
+      white-space: pre;
+      overflow-x: auto;
+      color: #1b4d38;
+      margin: 16px 0;
+    }
+
+    .concept-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .concept-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .concept-item .pill {
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: .85rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .concept-item p {
+      margin: 0;
+      font-size: .88rem;
+    }
+
+    .compare-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-light);
+      border-radius: 0 14px 14px 0;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .compare-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .compare-card .domain-tag {
+      display: inline-block;
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .88rem;
+      margin-top: 16px;
+    }
+
+    .styled-table th {
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .styled-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    .styled-table tr:nth-child(even) td {
+      background: #f5faf6;
+    }
+
+    .styled-table td strong {
+      color: var(--text-dark);
+    }
+
+    .note {
+      background: #fff8e8;
+      border: 1px solid #ead9a8;
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: .9rem;
+      margin: 14px 0;
+    }
+
+    .note b {
+      color: var(--gold);
+    }
+
+    .disclaimer {
+      font-size: .82rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    footer {
+      background: #1c3a2e;
+      color: rgba(255, 255, 255, .5);
+      text-align: center;
+      padding: 20px;
+      font-size: .8rem;
+    }
+
+    footer a {
+      color: #b7e4c7;
+      text-decoration: none;
+    }
+
+    .bottom-nav {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .bottom-nav a {
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    .bottom-nav a:hover {
+      background: #1a3a2a;
+    }
+
+    .bottom-nav a.secondary {
+      background: transparent;
+      border: 2px solid var(--green);
+      color: var(--green);
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="topnav">
-  <a href="index.html">🌿 Mạch Rễ</a><span class="sep">/</span>
-  <a href="what.html">WHAT</a><span class="sep">/</span>
-  <a href="axioms.html">Hệ Tiên Đề</a><span class="sep">/</span>
-  <span class="current">Tiên Đề I</span>
-</nav>
+  <nav class="topnav">
+    <a href="index.html">🌿 Mạch Rễ</a><span class="sep">/</span>
+    <a href="what.html">WHAT</a><span class="sep">/</span>
+    <a href="axioms.html">Hệ Tiên Đề</a><span class="sep">/</span>
+    <span class="current">Tiên Đề I</span>
+  </nav>
 
-<div class="hero">
-  <div class="tag">TIÊN ĐỀ I · CORE AXIOM</div>
-  <h1>Quan Hệ Bản Thể<br/><span style="font-size:.6em;font-weight:400;opacity:.85">Relational Ontology — Sống Trong Quan Hệ · Có Nhau Mới Có Mình</span></h1>
-  <p>Bản sắc không nằm ở một bản thể cố định — nó được cấu thành bởi chính mạng lưới quan hệ. Đây là tiên đề nền tảng nhất của Mạch Rễ: tất cả tiên đề khác đều bắt đầu từ đây.</p>
-</div>
-
-<div class="content">
-
-<!-- SECTION 1: FORMAL STATEMENT -->
-<section>
-  <h2>📜 1. Phát biểu chính thức</h2>
-
-  <h3>Tiếng Việt</h3>
-  <div class="def-box">
-    <div class="label">Tiên Đề I — Quan Hệ Bản Thể (Relational Ontology)</div>
-    <blockquote>
-      <strong>Bản sắc của một hệ tập thể được cấu thành <em>bởi quan hệ</em>, không phải bởi một bản thể/cốt lõi định vị được độc lập với quan hệ.</strong>
-      <br/><br/>
-      <span style="font-weight:400;font-size:.9em">Nói cách khác: không có cái "chất Việt Nam" nào tồn tại trước và độc lập với các mối quan hệ giữa người Việt với nhau, với đất đai, với tổ tiên, với láng giềng. Chính những mối quan hệ đó <em>tạo ra</em> cái gọi là "bản sắc Việt Nam" — không phải ngược lại.</span>
-    </blockquote>
+  <div class="hero">
+    <div class="tag">TIÊN ĐỀ I · CORE AXIOM</div>
+    <h1>Quan Hệ Bản Thể<br /><span style="font-size:.6em;font-weight:400;opacity:.85">Relational Ontology — Sống Trong
+        Quan Hệ · Có Nhau Mới Có Mình</span></h1>
+    <p>Bản sắc không nằm ở một bản thể cố định — nó được cấu thành bởi chính mạng lưới quan hệ. Đây là tiên đề nền tảng
+      nhất của Mạch Rễ: tất cả tiên đề khác đều bắt đầu từ đây.</p>
   </div>
 
-  <h3>English</h3>
-  <div class="def-box" style="border-left-color:#1b4d38">
-    <div class="label" style="color:#1b4d38">Axiom I — Relational Ontology</div>
-    <blockquote>
-      <strong>The identity of a collective system is constituted <em>by relations</em>, not by any substance or fixed core identifiable independently of those relations.</strong>
-    </blockquote>
+  <div class="content">
+
+    <!-- SECTION 1: FORMAL STATEMENT -->
+    <section>
+      <h2>📜 1. Phát biểu chính thức</h2>
+
+      <h3>Tiếng Việt</h3>
+      <div class="def-box">
+        <div class="label">Tiên Đề I — Quan Hệ Bản Thể (Relational Ontology) <a href="#nguon-1">[1]</a><a
+            href="#nguon-8">[8]</a><a href="#nguon-9">[9]</a></div>
+        <blockquote>
+          <strong>Bản sắc của một hệ tập thể được cấu thành <em>bởi quan hệ</em>, không phải bởi một bản thể/cốt lõi
+            định vị được độc lập với quan hệ.</strong>
+          <br /><br />
+          <span style="font-weight:400;font-size:.9em">Nói cách khác: không có cái "chất Việt Nam" nào tồn tại trước và
+            độc lập với các mối quan hệ giữa người Việt với nhau, với đất đai, với tổ tiên, với láng giềng. Chính những
+            mối quan hệ đó <em>tạo ra</em> cái gọi là "bản sắc Việt Nam" — không phải ngược lại.</span>
+        </blockquote>
+      </div>
+
+      <h3>English</h3>
+      <div class="def-box" style="border-left-color:#1b4d38">
+        <div class="label" style="color:#1b4d38">Axiom I — Relational Ontology</div>
+        <blockquote>
+          <strong>The identity of a collective system is constituted <em>by relations</em>, not by any substance or
+            fixed core identifiable independently of those relations.</strong>
+        </blockquote>
+      </div>
+
+      <h3>Sơ đồ hình thức</h3>
+      <div class="ascii-box">[DEF-1] Relational profile of S:
+        RP(S) := {Rᵢ(S, yⱼ) | i ∈ Relations, j ∈ Environment}
+
+        [AX-I] Identity(S) is constituted by RP(S),
+        not by any substance independent of RP(S).
+
+        Ký hiệu pedagogical (shorthand):
+        Being(x) ≡ {R(x,y)}
+
+        → "x là gì" = "tập hợp tất cả quan hệ
+        giữa x và mọi thứ khác"</div>
+
+      <p>Đây là <strong>tiên đề nền tảng nhất</strong> của toàn bộ Mạch Rễ. Tất cả tiên đề khác (II–IV) đều phụ thuộc I
+        trong đồ thị phụ thuộc (dependency graph). Nếu I sai → toàn bộ khung lý thuyết sụp đổ. Neo kiểm
+        chứng chéo (triangulation): <strong>3/3</strong> (Phan Ngọc <a href="#nguon-2">[2]</a> · Ashby <a
+          href="#nguon-3">[3]</a> / Weick <a href="#nguon-4">[4]</a> · Anattā) — mạnh nhất trong toàn hệ tiên đề.</p>
+    </section>
+
+    <!-- SECTION 2: RCA -->
+    <section>
+      <h2>🔍 2. RCA — Tại sao Quan Hệ, không phải Bản Thể?</h2>
+
+      <div class="def-box">
+        <div class="label">Why 1 — Tại sao không thể định nghĩa bản sắc bằng "chất liệu cố định"?</div>
+        <blockquote>Vì lịch sử cho thấy mọi "chất liệu" được tuyên bố là bản sắc — ngôn ngữ, tôn giáo, lãnh thổ, chủng
+          tộc — đều thay đổi qua thời gian. Nếu bản sắc = chất liệu cố định, thì mọi dân tộc đều đã "mất bản sắc" từ
+          lâu. Nhưng thực tế: họ vẫn tồn tại và nhận diện được. Bản thể học thực thể (substance ontology) không giải thích được sức bền;
+          bản thể học quan hệ (relational ontology) giải thích được.</blockquote>
+      </div>
+
+      <div class="def-box">
+        <div class="label">Why 2 — Tại sao "quan hệ" giải thích được sức bền mà "bản thể" không giải thích được?</div>
+        <blockquote>Vì quan hệ có thể <em>tái tạo</em> ngay cả khi mọi thành phần cụ thể thay đổi. Một ngôi làng mất hết
+          cư dân cũ, người mới đến ở — nhưng nếu họ tiếp tục quan hệ với nhau theo cùng một <em>nếp</em> (cách cư xử,
+          giá trị, vai vế), bản sắc làng vẫn tồn tại. "Chất liệu" (con người cụ thể) đã đổi; "quan hệ" (nếp) vẫn còn.
+        </blockquote>
+      </div>
+
+      <div class="def-box" style="border-left-color:#1b4d38">
+        <div class="label" style="color:#1b4d38">Why 3, 4 & 5 — Gốc rễ</div>
+        <blockquote>Bản thể học thực thể (substance ontology) luôn gặp vấn đề: "cái gì giữ bản sắc khi mọi thứ thay đổi?" —
+          và luôn phải viện đến một thứ không thay đổi (linh hồn dân tộc, tinh thần dân tộc, máu và đất). Bản thể học quan hệ (relational ontology) không cần thứ đó: bản sắc không phải là <em>cái được giữ</em>, mà là <em>cách quan hệ được duy
+            trì</em>. Chính <em>nếp</em> của quan hệ — không phải <em>chất</em> của sự vật — mới là thứ bền vững.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- SECTION 3: COMPARATIVE PHILOSOPHY -->
+    <section>
+      <h2>🌍 3. So sánh với triết học thế giới</h2>
+
+      <div class="compare-card">
+        <span class="domain-tag">TRIẾT HỌC QUÁ TRÌNH — PROCESS PHILOSOPHY</span>
+        <h3>Whitehead <a href="#nguon-1">[1]</a> — Process and Reality (1929)</h3>
+        <p><strong>Whitehead:</strong> Thực tại không phải "vật" mà là "quá trình." Mọi thực thể đều là "dòng chảy" của
+          các sự kiện quan hệ — không có bản thể đứng sau các quá trình.</p>
+        <div class="ascii-box">So sánh:
+          Whitehead: ontology của vũ trụ — áp
+          cho mọi thực thể (electron,
+          con người, thiên hà)
+
+          Tiên Đề I: ontology của hệ bản sắc
+          tập thể xuyên thế hệ —
+          không claim universal
+          cosmology
+
+          → Cùng nguyên lý (relational ontology)
+          → Khác phạm vi (universal vs social-systemic)
+          → I = Whitehead áp vào identity systems</div>
+      </div>
+
+      <div class="compare-card">
+        <span class="domain-tag">XÃ HỘI HỌC VÀ LOGIC HỌC — RELATIONAL SOCIOLOGY &amp; LOGIC</span>
+        <h3>Emirbayer <a href="#nguon-8">[8]</a> &amp; Dewey-Bentley <a href="#nguon-9">[9]</a> — Relational Ontology
+        </h3>
+        <p><strong>Emirbayer (1997):</strong> Phân biệt đối kháng giữa "substantialist ontology" (bản thể học thực thể —
+          xem sự vật có trước quan hệ) và "relational ontology" (bản thể học quan hệ — xem quan hệ cấu thành nên sự
+          vật). <strong>Dewey &amp; Bentley (1949):</strong> Hệ thống hóa các mức độ tương tác từ "self-action" (tự vận
+          động), "inter-action" (tương tác lực cơ học), đến "trans-action" (tương giao cấu thành — nơi các tác nhân được
+          định nghĩa bởi chính quá trình tương tác).</p>
+        <div class="ascii-box">So sánh:
+          Emirbayer: "substantialist" vs "relational"
+          → cơ sở lý luận bác bỏ bản sắc
+          như một substance cố định.
+
+          Dewey-Bentley: "trans-action" (tương giao)
+          → Being(x) ≡ {R(x,y)}
+          x và y cấu thành lẫn nhau.
+
+          → Khung tham chiếu xã hội học và logic học
+          → Khẳng định tính "established" của thuật ngữ</div>
+      </div>
+
+      <div class="compare-card">
+        <span class="domain-tag">PHẬT GIÁO — BUDDHIST EPISTEMOLOGY</span>
+        <h3>Anattā (Vô Ngã) + Pratītyasamutpāda (Duyên Khởi)</h3>
+        <p><strong>Anattā:</strong> Không có "cái tôi" cố định đứng sau các cảm giác, suy nghĩ, hành động. Con người =
+          tập hợp ngũ uẩn trong quan hệ nhân quả. <strong>Duyên khởi:</strong> Mọi sự vật tồn tại nhờ quan hệ nhân duyên
+          (Nāgārjuna <a href="#nguon-5">[5]</a>) — không có svabhāva (tự tính / bản thể độc lập).</p>
+        <div class="ascii-box">So sánh:
+          Anattā: áp cho cá nhân (individual)
+          → không có "linh hồn"/"cái tôi"
+
+          Tiên Đề I: áp cho tập thể (collective)
+          → không có "bản sắc dân tộc"
+          như một substance độc lập
+
+          → Cùng cấu trúc (không substance)
+          → Khác đơn vị (cá nhân vs tập thể)
+          → I là "Anattā của hệ bản sắc tập thể"</div>
+      </div>
+
+      <div class="compare-card">
+        <span class="domain-tag">TRIẾT HỌC CHÂU PHI — AFRICAN PHILOSOPHY</span>
+        <h3>Ubuntu — "Umuntu ngumuntu ngabantu" <a href="#nguon-10">[10]</a></h3>
+        <p><strong>Ubuntu:</strong> Nhân tính của một người được xác nhận và cấu thành thông qua quan hệ với người khác.
+          "A person is a person through other persons." Không có "tôi" độc lập với "chúng ta."</p>
+        <div class="ascii-box">So sánh:
+          Ubuntu: "Tôi là vì chúng ta là"
+          → relational identity
+          của cá nhân
+
+          Tiên Đề I: "Bản sắc tập thể là vì
+          mạng quan hệ là"
+          → relational identity
+          của tập thể
+
+          → Cùng cấu trúc (identity = relations)
+          → Ubuntu: individual ← collective
+          → I: collective ← network of relations
+          → Hai chiều bổ sung của cùng nguyên lý</div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: VIETNAMESE EMPIRICAL EVIDENCE -->
+    <section>
+      <h2>📋 4. Bằng chứng thực nghiệm — Ca dao & Tục ngữ Việt Nam</h2>
+
+      <p>Hai nguồn độc lập trong kho tàng văn hóa dân gian Việt Nam cung cấp <strong>bằng chứng quy nạp</strong> rằng
+        nhận thức luận dân gian (folk epistemology) Việt Nam vận hành theo nguyên lý bản thể học quan hệ (relational ontology) — bản sắc (identity) được cấu thành bởi
+        R<sub>place</sub> (quan hệ người–đất), không chỉ R<sub>person</sub> (quan hệ người–người).</p>
+
+      <h3>Nguồn 1 — Ca dao địa phương (Q2 Section V.B, Nguyễn Tấn Long <a href="#nguon-6">[6]</a> & Phan Canh 1975)</h3>
+      <div class="def-box" style="border-left-color:var(--gold)">
+        <div class="label" style="color:var(--gold)">R(người, địa danh) ∈ RP(S) — bản sắc (identity) qua không gian sống</div>
+        <blockquote>
+          "Tiếng chuông Thiên Mụ, canh gà Thọ Xương" — người Huế không chỉ <em>sống ở</em> Huế; tiếng chuông chùa Thiên
+          Mụ là một <strong>phần của bản sắc</strong> họ. Mất tiếng chuông đó — mất một nút (node) trong mạng quan hệ cấu
+          thành bản sắc.
+          <br /><br />
+          Nguyễn Tấn Long (1975) giải thích (Q2 line 15882-15884): "niềm cảm mến của người dân đối với hình ảnh qua cuộc
+          sống hàng ngày" — R<sub>place</sub> là <strong>mối quan hệ trải nghiệm thực tế (lived relation) cấu thành bản sắc (identity)</strong>, không phải
+          mô tả địa lý thuần túy (geographic description).
+        </blockquote>
+      </div>
+
+      <h3>Nguồn 2 — Kho ngữ liệu Nam An (Corpus Nam An) (Ca Dao Tục Ngữ Thành Ngữ Việt Nam, Nguyễn Văn Ngọc <a href="#nguon-7">[7]</a>)</h3>
+      <div class="def-box" style="border-left-color:var(--gold)">
+        <div class="label" style="color:var(--gold)">Kiến trúc kho ngữ liệu (Corpus architecture) = chứng thực nhận thức luận (epistemic attestation) của I</div>
+        <blockquote>
+          <strong>"Thân em như chẹn lúa đòng đòng / Phất phơ dưới ngọn nắng hồng ban mai"</strong> (line 3470-3471) —
+          "thân em" (bản sắc / identity) được định nghĩa <em>qua</em> cánh đồng lúa, không phải được <em>so sánh với</em> nó. Đây
+          là R<sub>place</sub> cấu thành bản sắc (identity), không phải phép ẩn dụ (metaphor).
+          <br /><br />
+          Toàn bộ kho ngữ liệu Nam An (corpus Nam An) (A→Z) được tổ chức theo nguyên lý: mỗi entry = R<sub>place</sub> — sản vật + địa danh +
+          con người. Đây không phải ca dao riêng lẻ (individual ca dao) biểu hiện I; đây là <strong>nguyên lý tổ chức của kho ngữ liệu (corpus) = I ở
+            tầng kiến trúc nhận thức (epistemic architecture)</strong>. Cùng khuôn mẫu (pattern) với Q2 nhưng ở cấp độ hệ thống (systemic level).
+        </blockquote>
+      </div>
+
+      <div class="note">
+        <b>🔗 Chi tiết:</b> <code>review/evidence_q2_mapping.md</code> (Q2 R<sub>place</sub>) ·
+        <code>review/evidence_i_iii_ii_nam_an.md</code> (Nam An) · RCA annotation scores: A1=5.0/5 · A2=4.8/5
+      </div>
+    </section>
+
+    <!-- SECTION 5: KEY DISTINCTIONS -->
+    <section>
+      <h2>⚡ 5. Phân biệt cốt lõi — Bốn cách hiểu sai phổ biến</h2>
+
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>❌ Hiểu sai</th>
+            <th>✅ Tiên Đề I thực sự nói</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Quan hệ là <em>một phần</em> của bản sắc"</td>
+            <td>Quan hệ <strong>cấu thành</strong> (constitute) bản sắc — không có gì đứng sau quan hệ. Không phải "bản
+              sắc + quan hệ" mà là "bản sắc = quan hệ."</td>
+          </tr>
+          <tr>
+            <td>"Bản sắc = tổng của các quan hệ"</td>
+            <td>Bản sắc = <strong>nếp (pattern)</strong> của quan hệ, không phải danh sách. Hai hệ có cùng danh sách
+              quan hệ nhưng khác nếp → khác bản sắc.</td>
+          </tr>
+          <tr>
+            <td>"Không có bản sắc — chỉ có quan hệ" (nihilism)</td>
+            <td>Bản sắc <strong>có thật</strong> ở mức quy ước (saṃvṛtisat) — nó có causal efficacy (ảnh hưởng đến hành
+              động thực tế), nhưng không phải bản thể.</td>
+          </tr>
+          <tr>
+            <td>"Tất cả chỉ là mạng xã hội" (reductionism)</td>
+            <td>Quan hệ bao gồm R<sub>place</sub> (đất đai, sông núi), R<sub>time</sub> (tổ tiên, hậu thế),
+              R<sub>object</sub> (vật thể văn hóa) — không chỉ mạng lưới xã hội (social network).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 6: HIGH SCHOOL EXPLANATION -->
+    <section>
+      <h2>💡 6. Giải thích dễ hiểu</h2>
+
+      <div class="concept-list">
+        <div class="concept-item">
+          <span class="pill">Ý nghĩa</span>
+          <p>Bản sắc của một tập thể (gia đình, trường học, dân tộc) không nằm ở một vật phẩm hay con người cụ thể. Nó
+            được tạo nên từ chính <strong>các mối quan hệ qua lại</strong> giữa các thành viên — và giữa họ với đất đai,
+            tổ tiên, và tương lai.</p>
+        </div>
+        <div class="concept-item">
+          <span class="pill">Ví dụ 1</span>
+          <p><strong>Mạng xã hội:</strong> Một tài khoản Instagram chỉ có bản sắc và sự sống khi nó kết bạn, nhắn tin,
+            tương tác. Tạo tài khoản mà không kết nối với ai → chỉ là một cái tên trống rỗng. <em>Being(tài_khoản) ≡
+              {R(tài_khoản, followers), R(tài_khoản, posts), ...}</em></p>
+        </div>
+        <div class="concept-item">
+          <span class="pill">Ví dụ 2</span>
+          <p><strong>Ngôi làng Việt:</strong> Một ngôi làng không phải là "tập hợp nhà cửa và con người." Nó là: cách
+            hàng xóm gọi nhau, cách già làng quyết định, cách con cháu nhớ về ông bà, cách cây đa bến nước là nơi hẹn
+            hò. Dỡ hết nhà cũ xây nhà mới → làng vẫn là làng. Nhưng nếu <strong>mọi mối quan hệ đó</strong> biến mất —
+            làng chết, dù nhà cửa vẫn còn.</p>
+        </div>
+        <div class="concept-item">
+          <span class="pill">Ví dụ 3</span>
+          <p><strong>Bàn phím máy tính:</strong> Một bàn phím không phải là "tập hợp 104 phím nhựa." Nó là <strong>mối
+              quan hệ</strong>: khi tôi nhấn phím 'A' → chữ 'a' hiện ra màn hình. Nếu mối quan hệ này đứt — bàn phím vẫn
+            còn nguyên 104 phím, nhưng nó <strong>không còn là bàn phím</strong> nữa. Bản sắc = quan hệ giữa hành động
+            và kết quả.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FALSIFICATION + SCOPE -->
+    <section>
+      <h2>🎯 7. Điều kiện phản chứng & Phạm vi</h2>
+
+      <div class="def-box" style="border-left-color:var(--rose)">
+        <div class="label" style="color:var(--rose)">Điều kiện phản chứng (Falsification)</div>
+        <blockquote>
+          <strong>Tiên Đề I SAI</strong> nếu tồn tại một bản sắc tập thể sống sót lâu dài (qua ≥3 thế hệ, dưới áp lực
+          đồng hóa tiến hóa) nhờ một <strong>cốt lõi-bản-thể cố định, định vị được, độc lập với mọi quan hệ</strong> —
+          tức là: có một "chất X" không phụ thuộc vào bất kỳ quan hệ nào, và chính "chất X" đó — không phải mạng quan hệ
+          — giải thích sức bền của bản sắc.
+        </blockquote>
+      </div>
+
+      <h3>Phạm vi áp dụng</h3>
+      <div class="note">
+        <b>✅ Áp dụng cho:</b> Hệ bản sắc tập thể xuyên thế hệ dưới áp lực đồng hóa tiến hóa — |S| > một thế hệ, áp lực
+        mở & tiến hóa.<br /><br />
+        <b>❌ Không áp dụng cho:</b> (a) cá nhân đơn lẻ (dù bản thể học quan hệ (relational ontology) có thể đúng cho cá nhân, I không tuyên bố (claim) điều đó); (b) hệ không có tuyên bố (claim) về bản sắc tập thể (vd: đám đông ngẫu nhiên, thị trường chứng khoán).<br /><br />
+        <b>⚠️ Mở rộng tương tự (Analogical extension):</b> cho vi-tập-thể (gia đình, doanh nghiệp) là khả thể nhưng đòi hỏi thích ứng phạm vi (scope adaptation) tường minh.
+      </div>
+    </section>
+
+    <!-- SECTION 8: CONNECTIONS -->
+    <section>
+      <h2>🔗 8. Kết nối với các tiên đề khác</h2>
+
+      <div class="concept-list">
+        <div class="concept-item">
+          <span class="pill">I → II</span>
+          <p>Nếu bản sắc = quan hệ (I), cái gì bền vững? Không phải từng mối quan hệ — mà là <strong>nếp (pattern) của quan
+              hệ</strong>. I cho phép quan hệ chảy mãi; II thêm điều kiện "có nếp (pattern) bất biến" → phân biệt hệ sống sót
+            với hệ tan rã.</p>
+        </div>
+        <div class="concept-item">
+          <span class="pill">I → III</span>
+          <p>Nếu bản sắc = quan hệ (I), quan hệ với <strong>ai?</strong> Không chỉ người đương thời — mà cả tổ tiên (đã
+            khuất) và hậu thế (chưa sinh). Đây là Tiên Đề III: trục dọc V⊥H — quan hệ xuyên thời gian.</p>
+        </div>
+        <div class="concept-item">
+          <span class="pill">I → MĐ-1</span>
+          <p>Nếu bản sắc = mạng quan hệ (I), và cái bền là pattern của toàn mạng (II), thì pattern <strong>không thể lưu
+              tại một node đơn</strong>. Đây là Mệnh Đề 1 (Phân Tán, trước: Mệnh Đề V): không ai giữ tất cả, ai cũng giữ
+            một phần.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>📖 Xem tiếp:</b> <a href="axiom_2.html" style="color:var(--gold);font-weight:600">Tiên Đề II — Bất Biến Cấu
+          Trúc →</a>
+      </div>
+    </section>
+
   </div>
 
-  <h3>Sơ đồ hình thức</h3>
-  <div class="ascii-box">[DEF-1] Relational profile of S:
-    RP(S) := {Rᵢ(S, yⱼ) | i ∈ Relations, j ∈ Environment}
-
-[AX-I] Identity(S) is constituted by RP(S),
-       not by any substance independent of RP(S).
-
-Ký hiệu pedagogical (shorthand):
-    Being(x) ≡ {R(x,y)}
-
-→ "x là gì" = "tập hợp tất cả quan hệ
-   giữa x và mọi thứ khác"</div>
-
-  <p>Đây là <strong>tiên đề nền tảng nhất</strong> của toàn bộ Mạch Rễ. Tất cả tiên đề khác (II–IV) đều phụ thuộc I trong dependency graph. Nếu I sai → toàn bộ framework sụp đổ. Neo triangulation: <strong>3/3</strong> (Phan Ngọc <a href="#nguon-2">[2]</a> · Ashby <a href="#nguon-3">[3]</a> / Weick <a href="#nguon-4">[4]</a> · Anattā) — mạnh nhất trong toàn hệ tiên đề.</p>
-</section>
-
-<!-- SECTION 2: RCA -->
-<section>
-  <h2>🔍 2. RCA — Tại sao Quan Hệ, không phải Bản Thể?</h2>
-
-  <div class="def-box">
-    <div class="label">Why 1 — Tại sao không thể định nghĩa bản sắc bằng "chất liệu cố định"?</div>
-    <blockquote>Vì lịch sử cho thấy mọi "chất liệu" được claim là bản sắc — ngôn ngữ, tôn giáo, lãnh thổ, chủng tộc — đều thay đổi qua thời gian. Nếu bản sắc = chất liệu cố định, thì mọi dân tộc đều đã "mất bản sắc" từ lâu. Nhưng thực tế: họ vẫn tồn tại và nhận diện được. Substance ontology không giải thích được sức bền; relational ontology giải thích được.</blockquote>
-  </div>
-
-  <div class="def-box">
-    <div class="label">Why 2 — Tại sao "quan hệ" giải thích được sức bền mà "bản thể" không giải thích được?</div>
-    <blockquote>Vì quan hệ có thể <em>tái tạo</em> ngay cả khi mọi thành phần cụ thể thay đổi. Một ngôi làng mất hết cư dân cũ, người mới đến ở — nhưng nếu họ tiếp tục quan hệ với nhau theo cùng một <em>nếp</em> (cách cư xử, giá trị, vai vế), bản sắc làng vẫn tồn tại. "Chất liệu" (con người cụ thể) đã đổi; "quan hệ" (nếp) vẫn còn.</blockquote>
-  </div>
-
-  <div class="def-box" style="border-left-color:#1b4d38">
-    <div class="label" style="color:#1b4d38">Why 3, 4 & 5 — Gốc rễ</div>
-    <blockquote>Substance ontology (triết học bản thể) luôn gặp vấn đề: "cái gì giữ bản sắc khi mọi thứ thay đổi?" — và luôn phải viện đến một thứ không thay đổi (linh hồn dân tộc, tinh thần dân tộc, máu và đất). Relational ontology không cần thứ đó: bản sắc không phải là <em>cái được giữ</em>, mà là <em>cách quan hệ được duy trì</em>. Chính <em>nếp</em> của quan hệ — không phải <em>chất</em> của sự vật — mới là thứ bền vững.</blockquote>
-  </div>
-</section>
-
-<!-- SECTION 3: COMPARATIVE PHILOSOPHY -->
-<section>
-  <h2>🌍 3. So sánh với triết học thế giới</h2>
-
-  <div class="compare-card">
-    <span class="domain-tag">TRIẾT HỌC QUÁ TRÌNH — PROCESS PHILOSOPHY</span>
-    <h3>Whitehead <a href="#nguon-1">[1]</a> — Process and Reality (1929)</h3>
-    <p><strong>Whitehead:</strong> Thực tại không phải "vật" mà là "quá trình." Mọi thực thể đều là "dòng chảy" của các sự kiện quan hệ — không có substance đứng sau các quá trình.</p>
-    <div class="ascii-box">So sánh:
-Whitehead:   ontology của vũ trụ — áp
-             cho mọi thực thể (electron,
-             con người, thiên hà)
-
-Tiên Đề I:  ontology của hệ bản sắc
-            tập thể xuyên thế hệ —
-            không claim universal
-            cosmology
-
-→ Cùng nguyên lý (relational ontology)
-→ Khác phạm vi (universal vs social-systemic)
-→ I = Whitehead áp vào identity systems</div>
-  </div>
-
-  <div class="compare-card">
-    <span class="domain-tag">PHẬT GIÁO — BUDDHIST EPISTEMOLOGY</span>
-    <h3>Anattā (Vô Ngã) + Pratītyasamutpāda (Duyên Khởi)</h3>
-    <p><strong>Anattā:</strong> Không có "cái tôi" cố định đứng sau các cảm giác, suy nghĩ, hành động. Con người = tập hợp ngũ uẩn trong quan hệ nhân quả. <strong>Duyên khởi:</strong> Mọi sự vật tồn tại nhờ quan hệ nhân duyên (Nāgārjuna <a href="#nguon-5">[5]</a>) — không có svabhāva (tự tính / bản thể độc lập).</p>
-    <div class="ascii-box">So sánh:
-Anattā:      áp cho cá nhân (individual)
-             → không có "linh hồn"/"cái tôi"
-
-Tiên Đề I:  áp cho tập thể (collective)
-            → không có "bản sắc dân tộc"
-              như một substance độc lập
-
-→ Cùng cấu trúc (không substance)
-→ Khác đơn vị (cá nhân vs tập thể)
-→ I là "Anattā của hệ bản sắc tập thể"</div>
-  </div>
-
-  <div class="compare-card">
-    <span class="domain-tag">TRIẾT HỌC CHÂU PHI — AFRICAN PHILOSOPHY</span>
-    <h3>Ubuntu — "Umuntu ngumuntu ngabantu"</h3>
-    <p><strong>Ubuntu:</strong> Nhân tính của một người được xác nhận và cấu thành thông qua quan hệ với người khác. "A person is a person through other persons." Không có "tôi" độc lập với "chúng ta."</p>
-    <div class="ascii-box">So sánh:
-Ubuntu:      "Tôi là vì chúng ta là"
-             → relational identity
-             của cá nhân
-
-Tiên Đề I:  "Bản sắc tập thể là vì
-             mạng quan hệ là"
-             → relational identity
-             của tập thể
-
-→ Cùng cấu trúc (identity = relations)
-→ Ubuntu: individual ← collective
-→ I: collective ← network of relations
-→ Hai chiều bổ sung của cùng nguyên lý</div>
-  </div>
-</section>
-
-<!-- SECTION 4: VIETNAMESE EMPIRICAL EVIDENCE -->
-<section>
-  <h2>📋 4. Bằng chứng thực nghiệm — Ca dao & Tục ngữ Việt Nam</h2>
-
-  <p>Hai nguồn độc lập trong kho tàng văn hóa dân gian Việt Nam cung cấp <strong>bằng chứng quy nạp</strong> rằng folk epistemology Việt Nam vận hành theo nguyên lý relational ontology — identity được cấu thành bởi R<sub>place</sub> (quan hệ người–đất), không chỉ R<sub>person</sub> (quan hệ người–người).</p>
-
-  <h3>Nguồn 1 — Ca dao địa phương (Q2 Section V.B, Nguyễn Tấn Long <a href="#nguon-6">[6]</a> & Phan Canh 1975)</h3>
-  <div class="def-box" style="border-left-color:var(--gold)">
-    <div class="label" style="color:var(--gold)">R(người, địa danh) ∈ RP(S) — identity qua không gian sống</div>
-    <blockquote>
-      "Tiếng chuông Thiên Mụ, canh gà Thọ Xương" — người Huế không chỉ <em>sống ở</em> Huế; tiếng chuông chùa Thiên Mụ là một <strong>phần của identity</strong> họ. Mất tiếng chuông đó — mất một node trong mạng quan hệ cấu thành identity.
-      <br/><br/>
-      Nguyễn Tấn Long (1975) giải thích (Q2 line 15882-15884): "niềm cảm mến của người dân đối với hình ảnh qua cuộc sống hàng ngày" — R<sub>place</sub> là <strong>lived relation cấu thành identity</strong>, không phải geographic description.
-    </blockquote>
-  </div>
-
-  <h3>Nguồn 2 — Corpus Nam An (Ca Dao Tục Ngữ Thành Ngữ Việt Nam)</h3>
-  <div class="def-box" style="border-left-color:var(--gold)">
-    <div class="label" style="color:var(--gold)">Corpus architecture = epistemic attestation của I</div>
-    <blockquote>
-      <strong>"Thân em như chẹn lúa đòng đòng / Phất phơ dưới ngọn nắng hồng ban mai"</strong> (line 3470-3471) — "thân em" (identity) được định nghĩa <em>qua</em> cánh đồng lúa, không phải được <em>so sánh với</em> nó. Đây là R<sub>place</sub> cấu thành identity, không phải metaphor.
-      <br/><br/>
-      Toàn bộ corpus Nam An (A→Z) được tổ chức theo nguyên lý: mỗi entry = R<sub>place</sub> — sản vật + địa danh + con người. Đây không phải individual ca dao biểu hiện I; đây là <strong>nguyên lý tổ chức của corpus = I ở tầng epistemic architecture</strong>. Cùng pattern với Q2 nhưng ở systemic level.
-    </blockquote>
-  </div>
-
-  <div class="note">
-    <b>🔗 Chi tiết:</b> <code>review/evidence_q2_mapping.md</code> (Q2 R<sub>place</sub>) · <code>review/evidence_i_iii_ii_nam_an.md</code> (Nam An) · RCA annotation scores: A1=5.0/5 · A2=4.8/5
-  </div>
-</section>
-
-<!-- SECTION 5: KEY DISTINCTIONS -->
-<section>
-  <h2>⚡ 5. Phân biệt cốt lõi — Bốn cách hiểu sai phổ biến</h2>
-
-  <table class="styled-table">
-    <thead><tr><th>❌ Hiểu sai</th><th>✅ Tiên Đề I thực sự nói</th></tr></thead>
-    <tbody>
-      <tr><td>"Quan hệ là <em>một phần</em> của bản sắc"</td><td>Quan hệ <strong>cấu thành</strong> (constitute) bản sắc — không có gì đứng sau quan hệ. Không phải "bản sắc + quan hệ" mà là "bản sắc = quan hệ."</td></tr>
-      <tr><td>"Bản sắc = tổng của các quan hệ"</td><td>Bản sắc = <strong>nếp (pattern)</strong> của quan hệ, không phải danh sách. Hai hệ có cùng danh sách quan hệ nhưng khác nếp → khác bản sắc.</td></tr>
-      <tr><td>"Không có bản sắc — chỉ có quan hệ" (nihilism)</td><td>Bản sắc <strong>có thật</strong> ở mức quy ước (saṃvṛtisat) — nó có causal efficacy (ảnh hưởng đến hành động thực tế), nhưng không phải substance.</td></tr>
-      <tr><td>"Tất cả chỉ là mạng xã hội" (reductionism)</td><td>Quan hệ bao gồm R<sub>place</sub> (đất đai, sông núi), R<sub>time</sub> (tổ tiên, hậu thế), R<sub>object</sub> (vật thể văn hóa) — không chỉ social network.</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<!-- SECTION 6: HIGH SCHOOL EXPLANATION -->
-<section>
-  <h2>💡 6. Giải thích dễ hiểu</h2>
-
-  <div class="concept-list">
-    <div class="concept-item">
-      <span class="pill">Ý nghĩa</span>
-      <p>Bản sắc của một tập thể (gia đình, trường học, dân tộc) không nằm ở một vật phẩm hay con người cụ thể. Nó được tạo nên từ chính <strong>các mối quan hệ qua lại</strong> giữa các thành viên — và giữa họ với đất đai, tổ tiên, và tương lai.</p>
+  <!-- BILINGUAL GLOSSARY -->
+  <div style="max-width:820px;margin:0 auto;padding:0 24px 60px">
+    <h2 style="font-size:1.4rem;color:#2d6a4f;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #d0e8dc">📖
+      Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary</h2>
+    <p style="color:#5a5a5a;font-size:.9rem;margin-bottom:14px">Các thuật ngữ chuyên ngành được dùng trong tài liệu này,
+      kèm bản dịch song ngữ Việt–Anh.</p>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+        <thead>
+          <tr style="background:#2d6a4f;color:#fff">
+            <th style="padding:10px 14px;text-align:left">Tiếng Anh (EN)</th>
+            <th style="padding:10px 14px;text-align:left">Tiếng Việt (VI)</th>
+            <th style="padding:10px 14px;text-align:left">Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Relational Ontology</td>
+            <td style="padding:9px 14px;font-weight:600">Bản thể học quan hệ</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Bản sắc được cấu thành bởi quan hệ, không phải bản thể cố định —
+              nền tảng Tiên Đề I</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Substance Ontology</td>
+            <td style="padding:9px 14px;font-weight:600">Bản thể học thực thể</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Quan điểm đối lập: xem sự vật có trước quan hệ — bị Tiên Đề I bác
+              bỏ</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Process Philosophy</td>
+            <td style="padding:9px 14px;font-weight:600">Triết học quá trình</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Whitehead (1929): thực tại là quá trình, không phải vật thể cố
+              định</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Relational Profile — RP(S)</td>
+            <td style="padding:9px 14px;font-weight:600">Hồ sơ quan hệ</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Tập hợp tất cả quan hệ giữa hệ S và môi trường — định nghĩa hình
+              thức của Tiên Đề I</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Relational Sociology</td>
+            <td style="padding:9px 14px;font-weight:600">Xã hội học quan hệ</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Emirbayer (1997): phân biệt substantialist vs relational ontology
+              trong khoa học xã hội</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Trans-action</td>
+            <td style="padding:9px 14px;font-weight:600">Tương giao cấu thành</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Dewey–Bentley (1949): tác nhân được định nghĩa bởi chính quá
+              trình tương tác — Being(x) ≡ {R(x,y)}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Dependency graph</td>
+            <td style="padding:9px 14px;font-weight:600">Đồ thị phụ thuộc</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Sơ đồ thể hiện thứ tự phụ thuộc logic giữa các tiên đề: I → II →
+              III → IV</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Triangulation</td>
+            <td style="padding:9px 14px;font-weight:600">Kiểm chứng chéo</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Neo tiên đề vào ≥2/3 hệ độc lập (Phan Ngọc · Ashby/Weick ·
+              Anattā <a href="#nguon-5">[5]</a>) để tránh over-fitting</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Falsification</td>
+            <td style="padding:9px 14px;font-weight:600">Phản chứng</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Điều kiện mà nếu xảy ra, tiên đề bị coi là sai — tiêu chuẩn
+              Popper cho khoa học</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Causal efficacy</td>
+            <td style="padding:9px 14px;font-weight:600">Hiệu lực nhân quả</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Bản sắc ảnh hưởng đến hành động thực tế — có thật ở mức quy ước
+              dù không phải bản thể</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Pattern / Nếp</td>
+            <td style="padding:9px 14px;font-weight:600">Nếp · Khuôn mẫu</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Cấu trúc quan hệ lặp lại — bản sắc = nếp của quan hệ, không phải
+              danh sách quan hệ</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Folk epistemology</td>
+            <td style="padding:9px 14px;font-weight:600">Nhận thức luận dân gian</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Cách thức nhận biết thế giới được mã hóa trong ca dao, tục ngữ —
+              không qua triết học chính thức</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Epistemic architecture</td>
+            <td style="padding:9px 14px;font-weight:600">Kiến trúc nhận thức</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Nguyên lý tổ chức của một corpus ở tầng hệ thống — biểu hiện I ở
+              tầng cấu trúc, không chỉ nội dung</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">RCA (Root Cause Analysis)</td>
+            <td style="padding:9px 14px;font-weight:600">Phân tích nguyên nhân gốc rễ</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Phương pháp truy vấn "tại sao" liên tục để tìm nguyên nhân sâu
+              nhất</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Framework</td>
+            <td style="padding:9px 14px;font-weight:600">Khung lý thuyết</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Hệ thống công cụ nhận dạng, phân tích và thực hành — toàn bộ hệ
+              tiên đề Mạch Rễ</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Saṃvṛtisat</td>
+            <td style="padding:9px 14px;font-weight:600">Chân lý quy ước</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Phật giáo: sự vật có thật ở mức quy ước (conventional truth), dù
+              không phải bản thể</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Svabhāva</td>
+            <td style="padding:9px 14px;font-weight:600">Tự tính · Bản thể độc lập</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Nāgārjuna bác bỏ: không có tự tính nào tồn tại độc lập với quan
+              hệ nhân duyên</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc;background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Anattā (Vô Ngã) <a href="#nguon-5">[5]</a></td>
+            <td style="padding:9px 14px;font-weight:600">Vô Ngã</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Không có "cái tôi" cố định — Tiên Đề I áp cùng nguyên lý cho tập
+              thể</td>
+          </tr>
+          <tr style="border-bottom:1px solid #d0e8dc">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Pratītyasamutpāda <a href="#nguon-5">[5]</a></td>
+            <td style="padding:9px 14px;font-weight:600">Duyên Khởi</td>
+            <td style="padding:9px 14px;color:#5a5a5a">Mọi sự vật tồn tại nhờ quan hệ nhân duyên — nền tảng Phật giáo
+              cho Tiên Đề I</td>
+          </tr>
+          <tr style="background:#f2faf6">
+            <td style="padding:9px 14px;font-weight:600;color:#2d6a4f">Ubuntu <a href="#nguon-10">[10]</a></td>
+            <td style="padding:9px 14px;font-weight:600">Triết lý Ubuntu</td>
+            <td style="padding:9px 14px;color:#5a5a5a">"Tôi là vì chúng ta là" — relational identity của cá nhân qua tập
+              thể (Châu Phi)</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="concept-item">
-      <span class="pill">Ví dụ 1</span>
-      <p><strong>Mạng xã hội:</strong> Một tài khoản Instagram chỉ có bản sắc và sự sống khi nó kết bạn, nhắn tin, tương tác. Tạo tài khoản mà không kết nối với ai → chỉ là một cái tên trống rỗng. <em>Being(tài_khoản) ≡ {R(tài_khoản, followers), R(tài_khoản, posts), ...}</em></p>
-    </div>
-    <div class="concept-item">
-      <span class="pill">Ví dụ 2</span>
-      <p><strong>Ngôi làng Việt:</strong> Một ngôi làng không phải là "tập hợp nhà cửa và con người." Nó là: cách hàng xóm gọi nhau, cách già làng quyết định, cách con cháu nhớ về ông bà, cách cây đa bến nước là nơi hẹn hò. Dỡ hết nhà cũ xây nhà mới → làng vẫn là làng. Nhưng nếu <strong>mọi mối quan hệ đó</strong> biến mất — làng chết, dù nhà cửa vẫn còn.</p>
-    </div>
-    <div class="concept-item">
-      <span class="pill">Ví dụ 3</span>
-      <p><strong>Bàn phím máy tính:</strong> Một bàn phím không phải là "tập hợp 104 phím nhựa." Nó là <strong>mối quan hệ</strong>: khi tôi nhấn phím 'A' → chữ 'a' hiện ra màn hình. Nếu mối quan hệ này đứt — bàn phím vẫn còn nguyên 104 phím, nhưng nó <strong>không còn là bàn phím</strong> nữa. Bản sắc = quan hệ giữa hành động và kết quả.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 7: FALSIFICATION + SCOPE -->
-<section>
-  <h2>🎯 7. Điều kiện phản chứng & Phạm vi</h2>
-
-  <div class="def-box" style="border-left-color:var(--rose)">
-    <div class="label" style="color:var(--rose)">Điều kiện phản chứng (Falsification)</div>
-    <blockquote>
-      <strong>Tiên Đề I SAI</strong> nếu tồn tại một bản sắc tập thể sống sót lâu dài (qua ≥3 thế hệ, dưới áp lực đồng hóa tiến hóa) nhờ một <strong>cốt lõi-bản-thể cố định, định vị được, độc lập với mọi quan hệ</strong> — tức là: có một "chất X" không phụ thuộc vào bất kỳ quan hệ nào, và chính "chất X" đó — không phải mạng quan hệ — giải thích sức bền của bản sắc.
-    </blockquote>
   </div>
 
-  <h3>Phạm vi áp dụng</h3>
-  <div class="note">
-    <b>✅ Áp dụng cho:</b> Hệ bản sắc tập thể xuyên thế hệ dưới áp lực đồng hóa tiến hóa — |S| > một thế hệ, áp lực mở & tiến hóa.<br/><br/>
-    <b>❌ Không áp dụng cho:</b> (a) cá nhân đơn lẻ (dù relational ontology có thể đúng cho cá nhân, I không claim điều đó); (b) hệ không có claim bản sắc tập thể (vd: đám đông ngẫu nhiên, thị trường chứng khoán).<br/><br/>
-    <b>⚠️ Analogical extension:</b> cho vi-tập-thể (gia đình, doanh nghiệp) là khả thể nhưng đòi hỏi scope adaptation tường minh.
+  <div class="bottom-nav">
+    <a href="axioms.html" class="secondary">← Hệ Tiên Đề</a>
+    <a href="axiom_2.html">Tiên Đề II →</a>
   </div>
-</section>
 
-<!-- SECTION 8: CONNECTIONS -->
-<section>
-  <h2>🔗 8. Kết nối với các tiên đề khác</h2>
+  <footer>
+    Render từ <a href="axiom_spec.md">axiom_spec.md</a> · Mạch Rễ · Neo 3/3: Phan Ngọc · Ashby/Weick · Anattā ·
+    R<sub>place</sub> evidence: Q2 + Nam An · <a href="axioms.html">Hệ Tiên Đề</a>
+  </footer>
 
-  <div class="concept-list">
-    <div class="concept-item">
-      <span class="pill">I → II</span>
-      <p>Nếu bản sắc = quan hệ (I), cái gì bền vững? Không phải từng mối quan hệ — mà là <strong>pattern của quan hệ</strong>. I cho phép quan hệ chảy mãi; II thêm điều kiện "có pattern bất biến" → phân biệt hệ sống sót với hệ tan rã.</p>
+  <!-- NGUỒN TRÍCH DẪN -->
+  <section style="max-width:820px;margin:24px auto 0;padding:0 24px 24px">
+    <h2>Nguồn Trích Dẫn</h2>
+    <div class="def-box" style="font-size:.88rem;line-height:1.8;color:var(--text-muted)">
+      <p id="nguon-1">[1] Whitehead, A. N. (1929). <em>Process and Reality</em>. Macmillan.</p>
+      <p id="nguon-2">[2] Phan Ngọc. (1998). <em>Bản sắc văn hóa Việt Nam</em>. NXB Văn hóa - Thông tin.</p>
+      <p id="nguon-3">[3] Ashby, W. R. (1956). <em>An Introduction to Cybernetics</em>. Chapman &amp; Hall. <a
+          href="http://ashby.info/intro.html" target="_blank" rel="noopener noreferrer">http://ashby.info/intro.html</a>
+      </p>
+      <p id="nguon-4">[4] Orton, J. D., &amp; Weick, K. E. (1990). Loosely coupled systems: A reconceptualization.
+        <em>Academy of Management Review</em>, <em>15</em>(2), 203–223.
+      </p>
+      <p id="nguon-5">[5] Nāgārjuna (thế kỷ II–III). <em>Mūlamadhyamakakārikā</em> (Căn bản Trung quán luận tụng).</p>
+      <p id="nguon-6">[6] Nguyễn Tấn Long &amp; Phan Canh. (1975). <em>Thi ca bình dân Việt Nam</em> (Q1–Q3). NXB Khoa
+        học Xã hội.</p>
+      <p id="nguon-7">[7] Nguyễn Văn Ngọc. (1928). <em>Tục ngữ phong dao</em> (Q1–Q2). Vĩnh Hưng Long Thư Quán.</p>
+      <p id="nguon-8">[8] Emirbayer, M. (1997). Manifesto for a relational sociology. <em>American Journal of
+          Sociology</em>, <em>103</em>(2), 281–317. <a href="https://doi.org/10.1086/231211" target="_blank"
+          rel="noopener noreferrer">https://doi.org/10.1086/231211</a></p>
+      <p id="nguon-9">[9] Dewey, J., &amp; Bentley, A. F. (1949). <em>Knowing and the Known</em>. Beacon Press.</p>
+      <p id="nguon-10">[10] Ramose, M. B. (2002). The philosophy of Ubuntu and Ubuntu as a philosophy. In P. H. Coetzee &amp; A. P. J. Roux (Eds.), <em>Philosophy from Africa</em> (2nd ed., pp. 230–238). Oxford University Press.</p>
     </div>
-    <div class="concept-item">
-      <span class="pill">I → III</span>
-      <p>Nếu bản sắc = quan hệ (I), quan hệ với <strong>ai?</strong> Không chỉ người đương thời — mà cả tổ tiên (đã khuất) và hậu thế (chưa sinh). Đây là Tiên Đề III: trục dọc V⊥H — quan hệ xuyên thời gian.</p>
-    </div>
-    <div class="concept-item">
-      <span class="pill">I → MĐ-1</span>
-      <p>Nếu bản sắc = mạng quan hệ (I), và cái bền là pattern của toàn mạng (II), thì pattern <strong>không thể lưu tại một node đơn</strong>. Đây là Mệnh Đề 1 (Phân Tán, trước: Mệnh Đề V): không ai giữ tất cả, ai cũng giữ một phần.</p>
-    </div>
-  </div>
-
-  <div class="note">
-    <b>📖 Xem tiếp:</b> <a href="axiom_2.html" style="color:var(--gold);font-weight:600">Tiên Đề II — Bất Biến Cấu Trúc →</a>
-  </div>
-</section>
-
-</div>
-
-<div class="bottom-nav">
-  <a href="axioms.html" class="secondary">← Hệ Tiên Đề</a>
-  <a href="axiom_2.html">Tiên Đề II →</a>
-</div>
-
-<footer>
-  Render từ <a href="axiom_spec.md">axiom_spec.md</a> · Mạch Rễ · Neo 3/3: Phan Ngọc · Ashby/Weick · Anattā · R<sub>place</sub> evidence: Q2 + Nam An · <a href="axioms.html">Hệ Tiên Đề</a>
-</footer>
-
-<!-- NGUỒN TRÍCH DẪN -->
-<section style="max-width:820px;margin:24px auto 0;padding:0 24px 24px">
-  <h2>Nguồn Trích Dẫn</h2>
-  <div class="def-box" style="font-size:.88rem;line-height:1.8;color:var(--text-muted)">
-    <p id="nguon-1">[1] Whitehead, A. N. (1929). <em>Process and Reality</em>. Macmillan.</p>
-    <p id="nguon-2">[2] Phan Ngọc. (1998). <em>Bản sắc văn hóa Việt Nam</em>. NXB Văn hóa - Thông tin.</p>
-    <p id="nguon-3">[3] Ashby, W. R. (1956). <em>An Introduction to Cybernetics</em>. Chapman &amp; Hall. <a href="http://ashby.info/intro.html" target="_blank" rel="noopener noreferrer">http://ashby.info/intro.html</a></p>
-    <p id="nguon-4">[4] Orton, J. D., &amp; Weick, K. E. (1990). Loosely coupled systems: A reconceptualization. <em>Academy of Management Review</em>, <em>15</em>(2), 203–223.</p>
-    <p id="nguon-5">[5] Nāgārjuna (thế kỷ II–III). <em>Mūlamadhyamakakārikā</em> (Căn bản Trung quán luận tụng).</p>
-    <p id="nguon-6">[6] Nguyễn Tấn Long &amp; Phan Canh. (1975). <em>Thi ca bình dân Việt Nam</em> (Q1–Q3). NXB Khoa học Xã hội.</p>
-  </div>
-</section>
+  </section>
 
 </body>
+
 </html>
