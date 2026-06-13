@@ -1,3 +1,38 @@
+## 2026-06-13 — TRITHUC-1 Cross-Cultural Verification: RS 27.0→13.5 [RS-CRIT→RS-MED] ✅
+
+**Trigger:** TRITHUC-1 open — V⊥H Orthogonal Temporality `[proposed-by-this-project]`, no external verification. Root cause: V⊥H first observed in Vietnamese material only → cannot distinguish structural property from cultural artifact.
+**Method:** 3-Round RCA × 5-Why × ABC triangulation (A=Phan Ngọc, B=Ashby/Weick, C=Buddhist Epistemology) × scoring gate ≥ 4/5 (both cases: 6/6 = 5.0/5).
+**Cases:** Japan/Nakane (1970) — partial-close · Ubuntu/Mbiti (1969) — strong partial-close.
+**Commits:** `fcffb4d` Japan · `45c48b4` Ubuntu.
+**RCA summary:** `plan/2026-06-13_trithuc1_verification_rca_summary.md`
+
+### Verification Results
+
+| Case | Source | Key finding | Scoring gate | RS change |
+|------|--------|------------|-------------|----------|
+| Japan | Nakane (1970) *Japanese Society* | Operational V⊥H: ie (H→V: persists when all H members replaced) + Plath 1964 (V→H: dead do not determine living's present). Sociological level. | 6/6 = 5.0/5 ✅ | 27.0 [RS-CRIT] → 18.0 [RS-HIGH] |
+| Ubuntu | Mbiti (1969) *African Religions and Philosophy* | Sasa/zamani = explicit 2-temporal-dimension ontological claim (strongest single source). C-system negative evidence: no zamani equivalent in pratītyasamutpāda → V not derivable from H-axis relational ontology. | 6/6 = 5.0/5 ✅ | 18.0 [RS-HIGH] → 13.5 [RS-MED] |
+
+### ABC Triangulation Key Insight
+
+C (Buddhist Epistemology) models H-axis (pratītyasamutpāda, dependent origination) excellently but has **no zamani equivalent**. V is not derivable from H-axis relational ontology → two genuinely distinct dimensions, not a naming artifact. C's gap = structural impossibility evidence — a distinct class from positive corroboration.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `documents/public_documents/Nakane_Japanese_Society_RCA_Table.md` | **CREATED** — 12 concepts: tate, yoko, ie, ba, oyabun-kobun, seniority, uchi/soto |
+| `documents/gap/TRITHUC-1_japan_verification.md` | **CREATED** — R1–R3 RCA, bridge argument, verdict, full-close conditions |
+| `documents/public_documents/Ubuntu_Philosophy_RCA_Table.md` | **CREATED** — 12 concepts: sasa, zamani, ubuntu, ukama, living dead; ABC triangulation lens |
+| `documents/gap/TRITHUC-1_ubuntu_verification.md` | **CREATED** — R1–R3 + ABC triangulation, C-system negative evidence, strong partial-close |
+| `documents/gap/TRITHUC_index.md` | Part 2 TRITHUC-1: → `🔓 Open (strong partial)`, 3 SOT files, date 2026-06-13; Part 5: 2 correction entries |
+| `anti_hallucinations/00_top_risk_record.md` | TRITHUC-1: H 6→3, RS 27.0→13.5 [RS-CRIT→RS-MED]; re-audit monthly; versions v1.1+v1.2 |
+| `plan/2026-06-13_trithuc1_verification_rca_summary.md` | **CREATED** — RCA tổng kết: 5-Why root cause, F1–F4 findings, process insight, falsification conditions |
+
+**Status after session:** TRITHUC-1 RS 13.5 [RS-MED] · 3 convergent cases across 3 continents (Vietnam + Japan + Ubuntu) · Path A (cross-cultural verification) substantially met · Path B remaining (formal derivation I+II→V⊥H) · Monthly re-audit 2026-07-13.
+
+---
+
 ## 2026-06-13 — Bilingual Glossary for Tiên Đề II & Terminology Standardization ✅
 
 **Trigger:** User request to add Bilingual Glossary to `axiom_2.html` (matching schema of `axiom_1.html`) and standardize technical terms to bilingual VN (EN) format.
