@@ -11,7 +11,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Compass:** Buddhist Epistemology (Pratyakṣa / Anumāna / Smṛti / Vikalpa) — compass C of MACH RE
 **Method:** 3-Round RCA × 5-Why × scoring threshold 4/5
 **labels.md:** Canonical SOT for confirmation verdicts — `[AH-HCNF]` (#1), `[AH-AIHL]` (#2), `[AH-NAJ]` (#3)
-**Status:** ACTIVE — self-audit passed (2026-06-12)
+**Status:** ACTIVE — post-install audit passed (2026-06-13, 15/15 PASS)
 
 > **Purpose:** Middle layer connecting RULE ZERO (process) → labels.md (verdict). Standardized infrastructure for detecting, classifying, scoring, and tracking hallucination risk.
 
@@ -103,14 +103,16 @@ labels.md (verdict — canonical SOT)
 | `system_registry.md` | 4 systems (PN, AW, BE, MR) |
 | `mapping_registry.md` | Cross-system links + NAC (5 entries) |
 
-### 2D. Meta (4 files)
+### 2D. Meta (6 files)
 
 | File | Role |
 |------|------|
 | `README.md` | Instantiation guide + quick reference |
 | `index.md` | This file |
 | `plan/2026-06-12_ahp_instantiation_log.md` | Calibration decision log |
-| `../plan/2026-06-12_plan_ahp_installation.md` | Authorizing plan (ARCHIVED) |
+| `plan/2026-06-12_ahp_rca_summary.md` | RCA tổng kết — installation (2026-06-12) |
+| `plan/2026-06-13_ahp_audit_rca_summary.md` | RCA tổng kết — post-install audit (2026-06-13) |
+| `../plan/2026-06-12_plan_ahp_installation.md` | Authorizing plan (EXECUTED 2026-06-12) |
 
 ### 2E. External SOTs
 
@@ -168,6 +170,7 @@ labels.md (verdict — canonical SOT)
 |---------|------|---------|
 | v1.0 | 2026-06-12 | Initial instantiation from AHP Template v1.0 — MACH-RE. labels.md integrated as canonical confirmation SOT. `[AH-NAJ]` added. RCA 4.83/5. |
 | v1.1 | 2026-06-13 | Correction per audit AF-1 (`plan/2026-06-13_plan_ahp_audit.md`): self-audit 2026-06-12 khai PASS sai ở check #1 (file count). `00_top_risk_record.md` bị bỏ sót khỏi phân rã phase — tạo ngày 2026-06-13. Văn bản v1.0 giữ nguyên; entry này là correction note. |
+| v1.2 | 2026-06-13 | Post-install audit complete: 4 findings fixed (AF-1 CRITICAL → AF-4 MEDIUM), 15/15 PASS post-audit. Checks #12–15 added to `integration_spec.md §6` + template permanently. Status updated. §2D Meta expanded to 6 files. RCA tổng kết: `plan/2026-06-13_ahp_audit_rca_summary.md`. |
 
 ---
 
