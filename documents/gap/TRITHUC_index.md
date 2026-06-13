@@ -52,7 +52,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | TRITHUC | Status | Resolution method | SOT file | Date |
 |---|---|---|---|---|
-| TRITHUC-1 | 🔓 Open | Requires cross-cultural verification of V ⊥ H in at least one non-Vietnamese identity system | `axiom_spec.md` §III falsification condition | — |
+| TRITHUC-1 | 🔓 Open (partial) | Cross-cultural verification: Japan/Nakane (1970) — operational V⊥H confirmed both directions (ie case H→V; Plath 1964 V→H). Formal mathematical proof pending. Full-close: Path A (Ubuntu) or Path B (formal derivation) or Path C (established source). | `axiom_spec.md` §III · `documents/gap/TRITHUC-1_japan_verification.md` | 2026-06-13 |
 | TRITHUC-2 | 🔓 Open | Requires formalization of graded reflexivity across at least one dyadic case study | `axiom_spec.md` §VI C1 conditions | — |
 | TRITHUC-3 | 🔓 Open | Category boundary acknowledged; resolution not required — C's non-attachment ≠ IV's selective permeability | `a_b_c_system_mapping.md` IV-boundary row | 2026-06-12 |
 | TRITHUC-4 | 🔓 Open | AND-gate derived from II+III+IV; validation requires testing against historical identity failure cases | `axiom_spec.md` Mệnh Đề 4 falsification | — |
@@ -142,6 +142,7 @@ Phan Ngọc Phần 3 concepts excluded from direct absorption:
 | Date | TRITHUC | Change | Before | After | Evidence |
 |---|---|---|---|---|---|
 | 2026-06-12 | ALL | Initial creation | — | TRITHUC-1 through TRITHUC-10 defined | `a_b_c_system_mapping.md` Part II–III RCA-gated mapping rows |
+| 2026-06-13 | TRITHUC-1 | Partial-close: Japan/Nakane 1970 cross-cultural verification | Status: `🔓 Open` · SOT: `axiom_spec.md §III` only · Date: — | Status: `🔓 Open (partial)` · SOT: `axiom_spec.md §III` + `TRITHUC-1_japan_verification.md` · Date: 2026-06-13 | 3-Round RCA × scoring gate 6/6 = 5.0/5. Operational V⊥H confirmed both directions (ie case H→V; Plath 1964 V→H). |
 
 ---
 
