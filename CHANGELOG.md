@@ -1,3 +1,44 @@
+## 2026-06-13 — Pass sâu: migrate hoàn toàn ký pháp VIII→Tiên Đề V, IX→Tiên Đề VI trên upgrade.html + axiom_6.html (tất cả 5.0/5) ✅
+
+**Trigger:** Tiếp pass sâu cho 2 trang đã flag ở pass "đồng bộ vỏ" (VIII/IX là từ vựng cấu trúc xuyên thân bài + bẫy diễn giải range).
+**Root cause (3-round):** R1 — Meta-axiom (cũ VIII) và Interface-axiom (cũ IX) còn rải khắp thân bài/ASCII/glossary dù header đã migrate sang Tiên Đề V/VI. R2 — để lẫn lộn làm hỏng traceability + tạo "Tiên Đề VIII/IX" không còn tồn tại trong hệ canonical. R3 — gốc: Quyết định 4 không propagate hết; cùng class propagation gap, nhưng cần xử lý kèm **diễn giải range** nên tách pass riêng.
+**Phân giải bẫy range (điểm tinh tế nhất, RCA 5.0/5):** Dưới Quyết định 4, "hệ đơn đầy đủ **I–V**" = I,II,III,IV (Core) + V (Meta) → **đúng canonical, giữ nguyên** (Derived 1–4 là sub-số, không nằm trong dãy La Mã). Chỉ `I–VII` (object-level cũ) và `Derived (V–VII)` mới diễn giải lại → `I–IV và 1–4` / `Derived (1–4)`. Phân biệt **trục V (thời gian)**, **V (Module 5)**, **(V)⊥(H)** — KHÔNG đổi (không phải Tiên Đề V). "7 Tiên Đề gốc (I–VII)" → "8 mệnh đề gốc: 4 Tiên Đề Cốt Lõi (I–IV) + 4 Mệnh Đề Dẫn Xuất (1–4)".
+**Carry-forward:** Class CSS nội bộ (`.viii-label`, `.axiom-viii`) giữ nguyên làm id — không reader-facing, đổi = churn/risk. Chỉ sửa nội dung hiển thị + comment.
+**Verify:** grep `VIII|\bIX\b` → `axiom_6.html` 0 hit; `upgrade.html` 0 hit nội dung (chỉ còn class name lowercase + comment đã chú thích). Range/axis-V/Module-5 preserved đúng.
+
+### Files Changed
+
+| File | Change | Score |
+|------|--------|-------|
+| `axiom_6.html` | 10 ref Meta `VIII`→`Tiên Đề V` (C1 modes, case studies, ASCII, OQ1) + 1 `IX`→`Tiên Đề VI` (triangulation) | 5.0/5 |
+| `upgrade.html` | §3 + §Interface: VIII→Tiên Đề V, IX→Tiên Đề VI (label, ASCII kiến trúc, QUAN HỆ block, C1 conditions, glossary); range `I–VII`→`I–IV và 1–4`, `Derived (V–VII)`→`(1–4)`, `7 Tiên Đề`→`8 mệnh đề`; giữ trục-V/Module-5/I–V | 5.0/5 |
+
+---
+
+## 2026-06-13 — Refactor toàn site: đồng bộ vỏ ký pháp Quyết định 4 + chuẩn hóa la bàn A×B×C (8 trang, tất cả ≥ 4.5/5) ✅
+
+**Trigger:** Người dùng yêu cầu "refactor all trang, (A — Phan Ngọc · B — Ashby/Weick · C — Buddhist Epistemology) as compass", quyết định bằng 3-round RCA × 5-Why × gate ≥ 4/5. Phạm vi chốt qua AskUserQuestion: **đồng bộ vỏ** (surgical), không re-render.
+**Root cause (3-round):** R1 — nhiều dòng "vỏ" (count, ASCII, meta-description, hero tag, footer, pill, comment) còn ký pháp cũ (V–VII/F, VIII, IX) trong khi *card thân bài* đã đúng Quyết định 4 (Mệnh Đề 1–4, Tiên Đề V Meta, Tiên Đề VI Interface). R2 — tự-mâu-thuẫn trong cùng trang/cùng card (vd card "Tiên Đề V" lại tự gọi mình "VIII cần thiết") làm hỏng tính traceable của framework vốn đòi hỏi nghiêm scrutiny. R3 — gốc rễ: Quyết định 4 (2026-06-11) không propagate hết vào lớp vỏ — **cùng class D1/D2 propagation gap** đã ghi nhận cho `index.html`. Đây là mở rộng fix đó ra toàn site.
+**Compass cross-check:** A (Phan Ngọc — pattern bất biến phải hiện nhất quán ở mọi biểu hiện) · B (Ashby — ký pháp lẫn lộn = giảm variety đọc hiểu) · C (apoha — tên phải loại trừ nhầm lẫn, không tự mâu thuẫn) → cả ba hội tụ yêu cầu sửa.
+**Provenance:** Bổ sung neo C `[established]` đúng tư cách — thêm Prasad 2023 (pramāṇa/Dignāga/Dharmakīrti) vào `what.html` (trước chỉ có Nāgārjuna [6]); đổi nhãn neo "C — Anattā" → "C — Nhận thức luận Phật giáo" khớp la bàn canonical (`axiom_spec.md §0.1`).
+**Phạm vi loại trừ (gate < 4/5 hoặc tier khác):** thân bài `upgrade.html` (23 ref) + `axiom_6.html` (9 ref) dùng VIII/IX làm *từ vựng cấu trúc* kèm bẫy diễn giải range (I–V/I–VII) → sửa một phần tạo scheme lẫn lộn (Conflict-risk cao) → chỉ sửa chrome cô lập (title, hero tag), phần còn lại cần **pass migration sâu riêng**. `papers/*` (tier riêng, `CHANGELOG_papers.md`), `raw/*` + `documents/*` (lưu trữ/nguồn ngoài) — không đụng.
+**Verify:** grep `\bVIII\b|\bIX\b|V–VII, F` toàn site → 0 hit trên trang gốc sống đã sửa (trừ `axioms.html:373` giữ filename `evidence_viii_...md` nhưng prose đã chuyển sang "Tiên Đề V"); 2 trang flag còn ref đúng dự kiến.
+
+### Files Changed
+
+| File | Change | Score |
+|------|--------|-------|
+| `axioms.html` | count + meta + ASCII (V/VI/VII/F/VIII → Mệnh Đề 1–4 / Tiên Đề V) + link + 2× "IV→VIII"→"IV→V" + "VIII cần thiết"→"Tiên Đề V cần thiết" + evidence-prose | 5.0/5 |
+| `axiom_derived.html` | meta + hero subtitle + footer + "VIII cần thiết"→"Tiên Đề V" | 5.0/5 |
+| `what.html` | count + ký pháp note + ASCII + "IV→VIII"→"IV→V" + comment META + pill VIII→Tiên Đề V + "VIII cần thiết"; neo C +Prasad [10] +đổi nhãn; +note taxonomy-3-vai trước bảng toàn cầu | 4.8/5 |
+| `axiom_4.html` | `reflexivity (VIII)` → `(Tiên Đề V)` | 4.8/5 |
+| `axiom_conflict.html` | hero tag + ASCII `TIÊN ĐỀ VIII` → `TIÊN ĐỀ V (META)` | 5.0/5 |
+| `axiom_6.html` | hero tag `TIÊN ĐỀ IX` → `TIÊN ĐỀ VI` (khớp filename + body "Axiom VI"); thân bài flag pass sâu | 4.5/5 |
+| `upgrade.html` | `<title>` `IX` → `VI` (khớp link inbound canonical); thân bài flag pass sâu | 4.5/5 |
+| `when.html` | body `chạy VIII`/`đủ VIII` → `Tiên Đề V` | 4.8/5 |
+
+---
+
 ## 2026-06-13 — index.html: Thêm "tầng trệt" đoạn mở + gỡ tên loại hình AI-hallucinated (score 4.8/5) ✅
 
 **Trigger:** 3-round RCA × 5-Why × A·B·C compass áp lên phần mở "🌱 Mạch Rễ là gì?". Người đọc mới gặp ngay jargon dày đặc (`prameya/apoha/svalakṣaṇa/pratītyasamutpāda`) trước khi có điểm tựa hình dung framework là gì.
