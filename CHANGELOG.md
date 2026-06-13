@@ -1,3 +1,18 @@
+## 2026-06-13 — index.html hero badge + CLAUDE.md: Version propagation rule (score 5.0/5) ✅
+
+**Trigger:** RCA phát hiện hero badge `index.html:417` vẫn nói "Phiên bản 2.0" trong khi toàn bộ repo (axiom_spec.md, timeline, nav cards) nói v3.2 — propagation gap cùng class với D1/D2/D4.
+**Root cause:** Không có rule bắt buộc sync tất cả version references khi framework version thay đổi.
+**Fix:** (1) `index.html` hero badge: "Phiên bản 2.0" → "v3.2". (2) `CLAUDE.md` Document contract rules: thêm **Version propagation bắt buộc** với checklist grep.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `index.html` | Hero badge dòng 417: "Phiên bản 2.0" → "v3.2" |
+| `CLAUDE.md` | Document contract rules: thêm Version propagation rule (RCA 2026-06-13, 5.0/5) |
+
+---
+
 ## 2026-06-13 — index.html: Cập nhật theo 3-round RCA × A·B·C triangulation (6 defects, tất cả 5.0/5) ✅
 
 **Trigger:** 3-round RCA × 5-Why × scoring gate (≥ 4/5) áp dụng lên `index.html` theo góc nhìn A (Phan Ngọc) · B (Ashby/Weick) · C (pramāṇa Phật giáo). Root cause duy nhất cho D1/D2/D4: Quyết định 4 (2026-06-11) tái cấu trúc ký pháp không propagate vào `index.html`.
