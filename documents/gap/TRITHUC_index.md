@@ -52,7 +52,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | TRITHUC | Status | Resolution method | SOT file | Date |
 |---|---|---|---|---|
-| TRITHUC-1 | 🔓 Open (partial) | Cross-cultural verification: Japan/Nakane (1970) — operational V⊥H confirmed both directions (ie case H→V; Plath 1964 V→H). Formal mathematical proof pending. Full-close: Path A (Ubuntu) or Path B (formal derivation) or Path C (established source). | `axiom_spec.md` §III · `documents/gap/TRITHUC-1_japan_verification.md` | 2026-06-13 |
+| TRITHUC-1 | 🔓 Open (strong partial) | Cross-cultural verification: Japan/Nakane (1970) + Ubuntu/Mbiti (1969) — 3 convergent cases (Vietnam + Japan + Ubuntu, 3 continents). Operational V⊥H confirmed both directions. Mbiti sasa/zamani = ontological-level claim; C-system negative evidence (no zamani equivalent). Path A substantially met. Full-close: Path B (formal derivation I+II→V⊥H) or Path C (established source). | `axiom_spec.md` §III · `documents/gap/TRITHUC-1_japan_verification.md` · `documents/gap/TRITHUC-1_ubuntu_verification.md` | 2026-06-13 |
 | TRITHUC-2 | 🔓 Open | Requires formalization of graded reflexivity across at least one dyadic case study | `axiom_spec.md` §VI C1 conditions | — |
 | TRITHUC-3 | 🔓 Open | Category boundary acknowledged; resolution not required — C's non-attachment ≠ IV's selective permeability | `a_b_c_system_mapping.md` IV-boundary row | 2026-06-12 |
 | TRITHUC-4 | 🔓 Open | AND-gate derived from II+III+IV; validation requires testing against historical identity failure cases | `axiom_spec.md` Mệnh Đề 4 falsification | — |
@@ -142,7 +142,8 @@ Phan Ngọc Phần 3 concepts excluded from direct absorption:
 | Date | TRITHUC | Change | Before | After | Evidence |
 |---|---|---|---|---|---|
 | 2026-06-12 | ALL | Initial creation | — | TRITHUC-1 through TRITHUC-10 defined | `a_b_c_system_mapping.md` Part II–III RCA-gated mapping rows |
-| 2026-06-13 | TRITHUC-1 | Partial-close: Japan/Nakane 1970 cross-cultural verification | Status: `🔓 Open` · SOT: `axiom_spec.md §III` only · Date: — | Status: `🔓 Open (partial)` · SOT: `axiom_spec.md §III` + `TRITHUC-1_japan_verification.md` · Date: 2026-06-13 | 3-Round RCA × scoring gate 6/6 = 5.0/5. Operational V⊥H confirmed both directions (ie case H→V; Plath 1964 V→H). |
+| 2026-06-13 | TRITHUC-1 | Partial-close: Japan/Nakane 1970 cross-cultural verification | Status: `🔓 Open` · SOT: `axiom_spec.md §III` only · Date: — | Status: `🔓 Open (partial)` · SOT: + `TRITHUC-1_japan_verification.md` · Date: 2026-06-13 | 3-Round RCA × scoring gate 6/6 = 5.0/5. Operational V⊥H confirmed (ie case H→V; Plath 1964 V→H). |
+| 2026-06-13 | TRITHUC-1 | Strong partial-close: Ubuntu/Mbiti 1969 + ABC triangulation | Status: `🔓 Open (partial)` · SOT: Japan file only | Status: `🔓 Open (strong partial)` · SOT: + `TRITHUC-1_ubuntu_verification.md` · Date: 2026-06-13 | 3-Round RCA × ABC triangulation × scoring gate 6/6 = 5.0/5. 3 convergent cases (Vietnam+Japan+Ubuntu). Mbiti sasa/zamani ontological. C-system negative evidence. RS 18.0→13.5 [RS-HIGH→RS-MED]. |
 
 ---
 

@@ -26,7 +26,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | 1 | `AF-1` | Self-certified ACTIVE status (00_top_risk_record.md missing) | AHP/meta | 9 | 3 | 1.0 | **54.0** [RS-CRIT] | Current | `[AH-CRIT][RS-CRIT][ES-VIKALP]` | `[AH-AIHL]` labels.md #2 | Self-audit declared PASS without filesystem measurement. File #2 dropped from phase decomposition. S17+S18. Fixed: 2026-06-13 Phase A. |
 | 2 | `AF-2` | §AHP deleted from CLAUDE.md working tree (accident) | CLAUDE.md | 7 | 3 | 0.5 | **31.5** [RS-CRIT] | Current | `[AH-HIGH][RS-CRIT][ES-VIKALP]` | `[AH-HCNF]` labels.md #1 | 28 dòng xóa chưa commit; pipeline silently inert. Human confirmed accident (Q1, 2026-06-13). Fixed: Phase C. |
 | 3 | `AF-3` | SOT-8 (Compass C) untracked in git | SOT/git | 7 | 3 | 0.5 | **31.5** [RS-CRIT] | Current | `[AH-HIGH][RS-CRIT][ES-VIKALP]` | — | `documents/C_SYSTEM_Buddhist_Epistemology/` untracked. TTL tracking meaningless without VCS. Fixed: Phase D. |
-| 4 | `TRITHUC-1` | V ⊥ H Orthogonal Temporality | MR/III | 4 | 3 | 0.5 | **18.0** [RS-HIGH] | Current | `[AH-WARN][RS-HIGH][ES-ANUMA]` | — | Strong RCA. `[proposed-by-this-project]` + `[corroborated: Japan/Nakane 1970]`. Partial-close 2026-06-13: operational V⊥H confirmed both directions. `TRITHUC-1_japan_verification.md`. Re-audit: bi-weekly. |
+| 4 | `TRITHUC-1` | V ⊥ H Orthogonal Temporality | MR/III | 3 | 3 | 0.5 | **13.5** [RS-MED] | Current | `[AH-WARN][RS-MED][ES-ANUMA]` | — | Strong RCA. `[proposed-by-this-project]` + `[corroborated: Japan/Nakane 1970 + Ubuntu/Mbiti 1969]`. Strong partial-close 2026-06-13: 3 convergent cases (Vietnam+Japan+Ubuntu), Mbiti sasa/zamani ontological, C-system negative evidence. `TRITHUC-1_ubuntu_verification.md`. Re-audit: monthly. |
 | 5 | `TRITHUC-2` | C1-Graded Reflexivity (full/min/zero) | MR/VI | 6 | 3 | 0.5 | **27.0** [RS-CRIT] | Current | `[AH-WARN][RS-CRIT][ES-VIKALP]` | — | Strong RCA. `[proposed-by-this-project]`. Requires dyadic case study formalization. |
 | 6 | `TRITHUC-5` | V as Ontological Dimension | MR/III | 6 | 3 | 0.5 | **27.0** [RS-CRIT] | Current | `[AH-WARN][RS-CRIT][ES-VIKALP]` | — | Medium RCA. BRIDGE-II-III required (SOT-K). A=Gap, B=Weak. |
 | 7 | `TRITHUC-4` | F-AND-Gate (3-condition identity failure) | MR/Mệnh Đề 4 | 5 | 2 | 0.5 | **15.0** [RS-HIGH] | Current | `[AH-WARN][RS-HIGH][ES-VIKALP]` | — | Medium RCA. Derived from II+III+IV; validation requires historical identity failure cases. |
@@ -103,7 +103,7 @@ A component appearing in both Table 1 and Table 2 must be tracked in BOTH with c
 |--------------|-------|---------|
 | 2026-06-20 | AF-1→AF-4 — verify fixes applied (Phase A–E complete) | Weekly [RS-CRIT] |
 | 2026-06-26 | All 26 MAP_ links — audit mapping_type (RCA summary §7 P2) | Scheduled |
-| 2026-06-27 | TRITHUC-1 — bi-weekly [RS-HIGH] partial-close check; Path A/B/C progress | Bi-weekly [RS-HIGH] |
+| 2026-07-13 | TRITHUC-1 — monthly [RS-MED] strong partial-close; Path B progress (formal derivation I+II→V⊥H) | Monthly [RS-MED] |
 | 2026-07-13 | TRITHUC-2, TRITHUC-5 — open CRIT gaps | Bi-weekly [RS-CRIT] |
 | 2026-09-13 | Full TRITHUC quarterly re-audit (all 10 gaps) | Quarterly |
 
@@ -114,7 +114,8 @@ A component appearing in both Table 1 and Table 2 must be tracked in BOTH with c
 | Version | Date | Changes |
 |---------|------|---------|
 | v1.0 | 2026-06-13 | Initial instantiation — MACH-RE. File missing from 2026-06-12 installation (AF-1, audit plan `plan/2026-06-13_plan_ahp_audit.md`). 14 entries: 4 audit findings + 10 TRITHUC gaps. labels.md = canonical confirmation SOT. |
-| v1.1 | 2026-06-13 | TRITHUC-1 partial-close: Japan/Nakane 1970 cross-cultural verification. H 6→4, RS 27.0→18.0 [RS-CRIT→RS-HIGH], ES-VIKALP→ES-ANUMA. Operational V⊥H confirmed both directions. See `documents/gap/TRITHUC-1_japan_verification.md`. Re-audit cadence: weekly → bi-weekly. |
+| v1.1 | 2026-06-13 | TRITHUC-1 partial-close: Japan/Nakane 1970 cross-cultural verification. H 6→4, RS 27.0→18.0 [RS-CRIT→RS-HIGH], ES-VIKALP→ES-ANUMA. Operational V⊥H confirmed both directions. See `documents/gap/TRITHUC-1_japan_verification.md`. Re-audit: weekly → bi-weekly. |
+| v1.2 | 2026-06-13 | TRITHUC-1 strong partial-close: Ubuntu/Mbiti 1969 + ABC triangulation (3-round RCA × scoring gate 6/6=5.0/5). H 4→3, RS 18.0→13.5 [RS-HIGH→RS-MED]. 3 convergent cases (Vietnam+Japan+Ubuntu). Mbiti sasa/zamani = ontological-level claim; C-system negative evidence. Path A substantially met. See `documents/gap/TRITHUC-1_ubuntu_verification.md`. Re-audit: bi-weekly → monthly. |
 
 ---
 
