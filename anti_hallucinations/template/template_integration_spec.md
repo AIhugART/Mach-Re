@@ -162,4 +162,21 @@ label_system → [AH-XXX] [RS-XXX] [ES-XXX] labels
 
 ---
 
-*Epistemic Integration Spec — Layer mapping, ES Tags, TIP, TTL_CLASS, Pipeline Flow. Exported from AHP v3.1 bds_integration_spec.md. Calibrate all claim types, TTL examples, and layer names for {{PROJECT_NAME}}.*
+---
+
+## §6 — Post-Installation Verification Checklist `[GENERIC — run as measurements, not declarations]`
+
+> These checks must be run as **filesystem measurements** before declaring AHP ACTIVE. Added to template 2026-06-13 per MACH-RE audit findings AF-1/AF-3/AF-4.
+
+| # | Check | Method | Pass condition |
+|---|-------|--------|----------------|
+| 12 | File count matches inventory | `ls <ahp_folder>/*.md \| wc -l` | Count = expected (record output) |
+| 13 | All internal SOTs are git-tracked | `git ls-files --error-unmatch <SOT-path>` for each SOT | Exit 0 for all SOTs — no `??` status |
+| 14 | Authorizing plan closed | Read plan header `**Status:**` field | Must read "EXECUTED…" not "AWAITING" |
+| 15 | No lingering working-tree SOT changes | `git diff --name-only` + `git status --short` for SOT paths | No unstaged SOT modifications |
+
+**Rule:** Only after all 4 checks PASS by measurement (with recorded output) → declare ACTIVE in `index.md`.
+
+---
+
+*Epistemic Integration Spec — Layer mapping, ES Tags, TIP, TTL_CLASS, Pipeline Flow. §6 Post-Installation Verification added 2026-06-13. Exported from AHP v3.1. Calibrate all claim types, TTL examples, and layer names for {{PROJECT_NAME}}.*

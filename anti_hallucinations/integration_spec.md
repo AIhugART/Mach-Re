@@ -111,4 +111,21 @@ THEN → HIGH priority + mandatory TIP-1 BEFORE claiming [established]
 
 ---
 
-*Integration Spec v1.0 — 3 layers, 4 rules, TIP, TTL. Instantiated from AHP Template v1.0 (2026-06-12).*
+---
+
+## §6 — Post-Installation Verification Checklist
+
+> Added 2026-06-13 per audit AF-1/AF-3/AF-4 (`plan/2026-06-13_plan_ahp_audit.md`). These checks must be run as **filesystem measurements** (not declarations) before declaring any AHP instantiation ACTIVE.
+
+| # | Check | Method | Pass condition |
+|---|-------|--------|----------------|
+| 12 | File count matches inventory | `ls anti_hallucinations/*.md \| wc -l` | Count = expected (record output) |
+| 13 | All internal SOTs are git-tracked | `git ls-files --error-unmatch <SOT-path>` for each SOT | Exit 0 for all SOTs |
+| 14 | Authorizing plan closed (status + checklist ticked) | Read plan header `**Status:**` field | Must read "EXECUTED…" not "AWAITING" |
+| 15 | No lingering working-tree SOT changes | `git diff --name-only` + `git status --short` for SOT paths | No unstaged SOT modifications |
+
+**Rule:** Only after all 4 checks PASS by measurement (with recorded output) → update `index.md` Status to ACTIVE.
+
+---
+
+*Integration Spec v1.0 — 3 layers, 4 rules, TIP, TTL. §6 Post-Installation Verification added 2026-06-13. Instantiated from AHP Template v1.0 (2026-06-12).*

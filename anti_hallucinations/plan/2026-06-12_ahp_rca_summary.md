@@ -115,6 +115,8 @@ NOT failure — DEFER, not BLOCKING
 
 **Tổng:** 15 instantiated + 2 new + 1 RCA summary + 2 modified = **20 files touched**
 
+> **Correction 2026-06-13 (audit AF-1, `plan/2026-06-13_plan_ahp_audit.md`):** File inventory thực tế tại 2026-06-12 là **14 instantiated** (không phải 15) — `00_top_risk_record.md` bị bỏ sót khỏi phân rã phase trong installation plan. File được tạo ngày 2026-06-13 theo audit corrective Phase A. Văn bản gốc §4 giữ nguyên để bảo toàn lịch sử; entry này là correction note additive.
+
 ---
 
 ## 5. KEY NUMBERS

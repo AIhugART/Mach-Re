@@ -92,4 +92,28 @@ Score: 4.8/5 — Same pattern as Decision 5.
 
 ---
 
-*Instantiation Log v1.0 — 2026-06-12. Records every calibration decision with RCA trace.*
+---
+
+## Audit Corrections (2026-06-13)
+
+### Log Entry 7 — Phase A: Tạo 00_top_risk_record.md
+
+**Date:** 2026-06-13
+**Action:** Created `anti_hallucinations/00_top_risk_record.md` (instantiated from `template/template_00_top_risk_record.md`)
+**Reason:** File was missing from 2026-06-12 installation — AF-1 finding in audit `plan/2026-06-13_plan_ahp_audit.md` (score 5.0/5). File #2 was dropped from phase decomposition in installation plan Part 3.
+**Populated with:** 14 entries — 4 audit findings (AF-1→AF-4) + 10 TRITHUC gaps, ranked by Risk Score = H×W×(1+A).
+**Tiên Đề V note:** Pipeline opens its risk registry with its own risks — self-observation without self-destruction.
+
+### Log Entry 8 — Phase B: Đính chính hồ sơ
+
+**Date:** 2026-06-13
+**Action:** Additive correction notes added to:
+- `anti_hallucinations/index.md` §5 Version History: v1.1 correction entry
+- `anti_hallucinations/plan/2026-06-12_ahp_rca_summary.md` §4: correction note on file inventory (14 not 15)
+- This file: entries 7 + 8
+- `plan/2026-06-12_plan_ahp_installation.md`: Status → EXECUTED + Part 8 checklist ticked
+**Principle:** Correction by additive note — no silent rewrite, no deletion of 2026-06-12 records.
+
+---
+
+*Instantiation Log v1.0 — 2026-06-12. Records every calibration decision with RCA trace. Audit corrections added 2026-06-13 (entries 7–8).*

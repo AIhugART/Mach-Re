@@ -167,6 +167,7 @@ labels.md (verdict — canonical SOT)
 | Version | Date | Changes |
 |---------|------|---------|
 | v1.0 | 2026-06-12 | Initial instantiation from AHP Template v1.0 — MACH-RE. labels.md integrated as canonical confirmation SOT. `[AH-NAJ]` added. RCA 4.83/5. |
+| v1.1 | 2026-06-13 | Correction per audit AF-1 (`plan/2026-06-13_plan_ahp_audit.md`): self-audit 2026-06-12 khai PASS sai ở check #1 (file count). `00_top_risk_record.md` bị bỏ sót khỏi phân rã phase — tạo ngày 2026-06-13. Văn bản v1.0 giữ nguyên; entry này là correction note. |
 
 ---
 

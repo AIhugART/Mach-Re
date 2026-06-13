@@ -1,3 +1,47 @@
+## 2026-06-13 — AHP Audit & Corrective Actions: 4 findings fixed ✅
+
+**Trigger:** Audit plan `plan/2026-06-13_plan_ahp_audit.md` — re-run self-audit as filesystem measurements (3-round RCA × 5-Why × scoring gate ≥ 4/5, Buddhist Epistemology compass).
+**Pre-audit:** 9/15 PASS · 1 PARTIAL · 4 FAIL → corrective Phases A–E executed → **Post-audit: 15/15 PASS**.
+
+### Findings Fixed
+
+| Finding | Severity | Root cause (1 câu) | Fix |
+|---------|----------|-------------------|-----|
+| AF-1 | CRITICAL | Self-audit declared PASS without filesystem measurement; file #2 (`00_top_risk_record.md`) dropped from phase decomposition | Phase A: created `anti_hallucinations/00_top_risk_record.md`; Phase B: correction notes additive |
+| AF-2 | HIGH | §AHP deleted from CLAUDE.md working tree (accident — Q1 human confirmed) | Phase C: section restored from `git show HEAD:CLAUDE.md` lines 324–351 |
+| AF-3 | HIGH | SOT-8 (Compass C) untracked in git; self-audit had no VCS-coverage check | Phase D: `git add` 4 SOT items |
+| AF-4 | MEDIUM | Plan 2026-06-12 still "AWAITING APPROVAL" post-execution — user approval not recorded in repo | Phase B: Status updated + Part 8 checklist ticked |
+
+### Files Changed (Phases A–E)
+
+| File | Change |
+|------|--------|
+| `anti_hallucinations/00_top_risk_record.md` | **CREATED** Phase A — 14 entries: 4 audit findings + 10 TRITHUC gaps, RS = H×W×(1+A) |
+| `anti_hallucinations/index.md` | Phase B: Version History v1.1 correction note |
+| `anti_hallucinations/plan/2026-06-12_ahp_rca_summary.md` | Phase B: file inventory correction (14 not 15) |
+| `anti_hallucinations/plan/2026-06-12_ahp_instantiation_log.md` | Phase B: log entries 7 + 8 |
+| `plan/2026-06-12_plan_ahp_installation.md` | Phase B: Status → EXECUTED; Part 8 ticked |
+| `CLAUDE.md` | Phase C: §Anti-Hallucination Pipeline restored (28 lines) |
+| `documents/C_SYSTEM_Buddhist_Epistemology/c_system_buddhist_epistemology.md` | Phase D: staged (SOT-8) |
+| `documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` | Phase D: staged |
+| `documents/gap/BIAN_index_schema.md` | Phase D: staged |
+| `documents/archives/MACH_RE_AXIOMS_FRAMEWORK.md` | Phase D: staged |
+| `anti_hallucinations/integration_spec.md` | Phase E: §6 Post-Installation Verification Checklist (checks #12–15) |
+| `anti_hallucinations/template/template_integration_spec.md` | Phase E: §6 added to template |
+| `plan/2026-06-13_plan_ahp_audit.md` | Audit plan v1.1 |
+
+### Process Improvement Inherited by Template
+
+Checks #12–15 added permanently to `integration_spec.md` §6 + `template/template_integration_spec.md` §6:
+- #12 File count by `ls | wc -l` measurement (not declaration)
+- #13 All SOTs git-tracked via `git ls-files --error-unmatch`
+- #14 Authorizing plan status field reads "EXECUTED…"
+- #15 No lingering working-tree SOT changes
+
+**Root of each AF:** AF-1 = plan count ≠ filesystem count; AF-2 = SOT edit not committed same session; AF-3 = no VCS coverage check in self-audit; AF-4 = approval not ghi nhận repo.
+
+---
+
 ## 2026-06-12 — AHP Installation: Anti-Hallucination Pipeline for MACH RE ✅
 
 **Trigger:** Plan `plan/2026-06-12_plan_ahp_installation.md` — RCA 5.8/6 (4.83/5) → PROCEED.
