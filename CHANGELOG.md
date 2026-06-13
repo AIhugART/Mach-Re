@@ -1,3 +1,19 @@
+## 2026-06-13 — index.html: Thêm "tầng trệt" đoạn mở + gỡ tên loại hình AI-hallucinated (score 4.8/5) ✅
+
+**Trigger:** 3-round RCA × 5-Why × A·B·C compass áp lên phần mở "🌱 Mạch Rễ là gì?". Người đọc mới gặp ngay jargon dày đặc (`prameya/apoha/svalakṣaṇa/pratītyasamutpāda`) trước khi có điểm tựa hình dung framework là gì.
+**Root cause:** Đoạn mở thiếu một "tầng trệt" (ground floor) bằng ngôn ngữ đời thường — nhảy thẳng lên "tầng kỹ thuật" mà chưa xây tầng trệt. Vi phạm chính upāya (la bàn C — dạy theo căn cơ người đọc).
+**Compass cross-check:** A (Phan Ngọc — thao tác luận) ✗ · B (Ashby/Weick — sensemaking khởi từ khung quen, ít variety) ✗ · C (upāya) ✗ → cả ba hội tụ.
+**Fix:** (1) Chèn 2 đoạn "tầng trệt" ẩn dụ cây/rễ (đời thường, không jargon) làm lead trên cùng; (2) giữ nguyên toàn bộ nội dung kỹ thuật bên dưới ("giữ nguyên, chỉ đẩy xuống" — carry-forward). Đồng thời (commit trước fe83b93) gỡ tên loại hình AI-coinage "triết học tương quan-phân tán / Relational and Distributed Philosophy" khỏi disclaimer (CLAUDE.md F9).
+**Verify:** Tầng trệt dùng đúng ẩn dụ cái tên đã gợi (rễ) → không bootstrap framework mới bằng khái niệm mới; nội dung kỹ thuật bảo toàn nguyên vẹn.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `index.html` | Thêm 2 đoạn lead "tầng trệt" dưới h2 "Mạch Rễ là gì?"; disclaimer VI gỡ tên loại hình AI-hallucinated |
+
+---
+
 ## 2026-06-13 — index.html hero badge + CLAUDE.md: Version propagation rule (score 5.0/5) ✅
 
 **Trigger:** RCA phát hiện hero badge `index.html:417` vẫn nói "Phiên bản 2.0" trong khi toàn bộ repo (axiom_spec.md, timeline, nav cards) nói v3.2 — propagation gap cùng class với D1/D2/D4.
