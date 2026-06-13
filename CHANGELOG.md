@@ -1,3 +1,26 @@
+## 2026-06-13 — index.html: Cập nhật theo 3-round RCA × A·B·C triangulation (6 defects, tất cả 5.0/5) ✅
+
+**Trigger:** 3-round RCA × 5-Why × scoring gate (≥ 4/5) áp dụng lên `index.html` theo góc nhìn A (Phan Ngọc) · B (Ashby/Weick) · C (pramāṇa Phật giáo). Root cause duy nhất cho D1/D2/D4: Quyết định 4 (2026-06-11) tái cấu trúc ký pháp không propagate vào `index.html`.
+
+| Defect | Edit | Before | After | Score |
+|--------|------|--------|-------|-------|
+| D1 | axioms nav card — ký pháp | `3 Mệnh Đề (V–VII) + VIII + IX` | `4 Mệnh Đề (1–4) · Tiên Đề V (Meta) · Tiên Đề VI (Interface)` | 5.0/5 |
+| D2 | axiom_6.html card tag | `TIÊN ĐỀ IX` | `TIÊN ĐỀ VI` | 5.0/5 |
+| D3 | what.html nav card | `Đồng cấu (Isomorphism)` | `Đồng cấu rút gọn (Homomorphism)` | 5.0/5 |
+| D4 | Timeline 2026 | `9 tiên đề, 4 tầng` | `6 Tiên Đề · 4 Mệnh Đề · 4 tầng` | 5.0/5 |
+| D5 | pramāṇa paragraph | C-centric, A absent | Giới thiệu đầy đủ A · B · C với [1][2][3] | 5.0/5 |
+| D6 | Nguồn Trích Dẫn | [1] Ashby · [2] Prasad | + [3] Phan Ngọc (1998) | 5.0/5 |
+
+**Verify:** axioms card khớp `axiom_spec.md`; axiom_6 tag khớp upgrade card; glossary sync; D6 đủ Rule #12.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `index.html` | 6 edits: D1–D6 như bảng trên |
+
+---
+
 ## 2026-06-13 — Vai Trò & Vị Trí Tương Quan: Thêm Bảng Thuật Ngữ Song Ngữ ✅
 
 **Trigger:** Yêu cầu lập bảng Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary cho `vai_tro_mach_re.html` theo schema của `axiom_1.html`.
