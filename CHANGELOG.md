@@ -1,3 +1,75 @@
+## 2026-06-13 — Vai Trò & Vị Trí Tương Quan: Thêm Bảng Thuật Ngữ Song Ngữ ✅
+
+**Trigger:** Yêu cầu lập bảng Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary cho `vai_tro_mach_re.html` theo schema của `axiom_1.html`.
+**Method:** Thêm phần "Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary" ngay trước phần điều hướng bottom-nav, sử dụng chính các biến design token của tệp (`var(--accent)`, `var(--border)`, `var(--text-muted)`, `var(--accent-pale)`) để đảm bảo tính đồng nhất giao diện và màu sắc.
+- Bảng bao gồm 36 thuật ngữ chuyên ngành hệ thống hóa từ nội dung của `vai_tro_mach_re.html` (như *Epistemic Positionality, Relational Ontology, Substance Ontology, Primary/Secondary Lens, Reference Beam, Differentia specifica, Kill Condition, Existential justification, Overclaim, Model-of, Replacement, Ashby Variety Test, Independence Test, Falsification Condition, RCA, RCA gate, External validator, Upāya, Distributed Cognition, Process Philosophy, Pramāṇa, Apoha, Śūnyatā, Orthogonal Temporality, Structural Invariance, Dynamic Boundary, Reflexive Cognition, Adoption, Peer review, Requisite Variety, Sensemaking, Retrospect, Loosely coupled systems, Saṃvṛti-sat, Ubuntu*).
+- Sử dụng cấu trúc table đáp ứng chuẩn responsive (`overflow-x:auto`), xen kẽ màu nền dòng chẵn (`#f5faf6`) tương tự như style của `.styled-table` của trang.
+- Dịch cụm từ "1 Meta-Tiên Đề (V) + 1 Tiên Đề Interface (VI)" sang tiếng Việt thành "1 Siêu Tiên Đề (V) + 1 Tiên Đề Giao Diện (VI)".
+- Diễn giải và bổ sung ranh giới "Không tuyên bố giải thích vật lý" vào bảng giới hạn phòng thủ (§6.2) và khối diễn giải chi tiết trong `vai_tro_mach_re.html`.
+- Chuẩn hóa định dạng song ngữ cho các công cụ phương Tây thành VN (EN): "điều khiển học (cybernetics), phân tích nguyên nhân gốc rễ (RCA), tiên đề hóa (axiomatization)" ở mục §2.1.
+- Bổ sung liên kết nghiên cứu nội bộ dẫn đến `axiom_3.html` cho cụm từ "khác biệt đặc trưng (differentia specifica)" ở phần đề xuất §3.1.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `vai_tro_mach_re.html` | Bổ sung phần "Bảng Thuật Ngữ Song Ngữ / Bilingual Glossary" (36 thuật ngữ song ngữ Việt-Anh kèm giải thích chi tiết) ngay trước khối `.bottom-nav`; Dịch thuật ngữ "1 Meta-Tiên Đề (V) + 1 Tiên Đề Interface (VI)" sang tiếng Việt; Bổ sung diễn giải chi tiết về ranh giới "Không tuyên bố giải thích vật lý" tại §6.2; Chuẩn hóa định dạng song ngữ VN (EN) ở mục §2.1; Thêm liên kết nội bộ `axiom_3.html` cho cụm từ "khác biệt đặc trưng (differentia specifica)" tại §3.1. |
+
+---
+
+## 2026-06-13 — Vai Trò & Vị Trí Tương Quan: Việt hóa hoàn toàn thuật ngữ trong file `vai_tro_mach_re.html` ✅
+
+**Trigger:** Yêu cầu dịch sang tiếng Việt hoàn toàn các thuật ngữ tiếng Anh còn sót lại (Gap, offer, peer review, lens, template, publish, claim, tag, AI coinage, taxonomy, framework, identity, model-of, replacement, model, entity, file, code, rubric, proposed, differentia specifica...) trong file `vai_tro_mach_re.html`.
+**Method:** Việt hóa toàn bộ các thuật ngữ tiếng Anh sang tiếng Việt:
+- "Gap" -> "Khoảng trống"
+- "offer" -> "đề xuất/đóng góp"
+- "peer review" -> "phản biện/phản biện ngang hàng"
+- "lens" -> "thấu kính" (bao gồm thấu kính chính/bổ trợ cho "Primary/Secondary Lens")
+- "template" -> "khung mẫu"
+- "publish" -> "công bố/xuất bản" (bao gồm sửa "Chưa publish" thành "Chưa công bố" ở hàng C5)
+- "claim" -> "tuyên bố/khẳng định"
+- "tag" -> "nhãn"
+- "AI coinage" -> "thuật ngữ do AI tự tạo"
+- "taxonomy" -> "hệ phân loại"
+- "framework" -> "khung lý thuyết"
+- "identity" -> "sự đồng nhất"
+- "model-of" -> "mô hình"
+- "replacement" -> "sự thay thế"
+- "model" -> "mô hình"
+- "entity" -> "thực thể"
+- "file" -> "tệp"
+- "code" -> "mã nguồn"
+- "rubric" -> "bảng tiêu chí"
+- "proposed" -> "đề xuất"
+- "differentia specifica" -> "khác biệt đặc trưng"
+- "Adoption" -> "Sự tiếp nhận" (bao gồm sửa C5 và bảng thế giới)
+- "Dialogue" -> "Đối thoại"
+- "Citation" -> "Trích dẫn"
+- "Impact" -> "Tác động"
+- Ghi rõ "Tiên đề I" và mở rộng không viết tắt "Tiên đề II × Tiên đề IV" ở tiêu đề của "Đề xuất 3" (Cơ chế Hấp thụ có Định hướng).
+- Thêm liên kết so sánh và mã trích dẫn học thuật cho Ubuntu [10, 11], Yoruba [12], Nhật Bản (Nakane) [9], và Phật giáo Joseon Hàn Quốc [13] vào hàng C2 (Khả năng tổng quát) của bảng chấm điểm.
+- Bổ sung các nguồn trích dẫn học thuật [12] (cho Yoruba) và [13] (cho Phật giáo Joseon Hàn Quốc) vào phần Nguồn Trích Dẫn ở cuối tệp.
+- Việt hóa các thuật ngữ tiếng Anh còn lại ở hàng C3 (Tính vận hành) của bảng chấm điểm: thay thế "Có test được không?" -> "Có thể kiểm chứng được không?", "falsification condition" -> "điều kiện bác bỏ (falsification condition)", và "test định lượng" -> "kiểm chứng định lượng".
+- Việt hóa các thuật ngữ tiếng Anh ở hàng C5 (Tính tự sửa) của bảng chấm điểm: thay thế "RCA gate" -> "cổng kiểm soát RCA (RCA gate)", "CHANGELOG" -> "nhật ký thay đổi (CHANGELOG)", và "external validator" -> "bên kiểm chứng độc lập từ bên ngoài (external validator)".
+- Bổ sung mã trích dẫn liên kết cho các thấu kính A — Phan Ngọc [1], B — Ashby / Weick [2, 3], và C — Buddhist Epistemology [7, 8] tại bốn vị trí trong tệp (phần mô tả tầng L3, thẻ hệ phân loại thấu kính, tiêu đề mục 5.3, và tiêu đề bảng hội tụ).
+- Bổ sung mã trích dẫn liên kết cho các gương soi Ubuntu [10, 11], Yoruba [12], Nakane (Nhật Bản) [9], và Mbiti (Châu Phi) [10] trong thẻ Gương soi của hệ phân loại.
+- Bổ sung mã trích dẫn liên kết cho tia chuẩn Nho · Phật · Lão [1, 7, 8] trong thẻ Tia chuẩn của hệ phân loại.
+- Bổ sung mã trích dẫn liên kết [1] cho phần thảo luận về Tam giáo đồng nguyên ở mục 4.2 và việt hóa thuật ngữ "output" -> "đầu ra (output)".
+- Việt hóa các thuật ngữ tiếng Anh và bổ sung mã trích dẫn liên kết [1], [2], [3], [7], [8] cho các phát biểu độc lập (independence claims) của cả ba thấu kính A, B, và C ở các mục 5.1, 5.2, và 5.3.
+- Việt hóa các thuật ngữ chuyên ngành Phật học (pramāṇa, prameya, pramā, phala, apoha, nirvāṇa, saṃvṛti-sat...) trong mục 5.3.
+- Việt hóa "Buddhist Epistemology" thành "Nhận thức luận Phật giáo (Buddhist Epistemology)" và chuẩn hóa viết hoa "Tiên Đề" -> "Tiên đề" trong tiêu đề của bảng hội tụ (mục 5.4).
+- Việt hóa các thuật ngữ tiếng Anh trong hộp ghi chú ở §6 (Biện minh tồn tại): thay thế "claim" -> "tuyên bố (claim)", "tag" -> "nhãn (tag)", và "overclaim" -> "tuyên bố quá mức (overclaim)".
+- Bổ sung khối diễn giải chi tiết (Diễn giải về Lý do Phòng thủ) ngay dưới bảng giới hạn phòng thủ ở mục 6.2.
+- Cập nhật phát biểu về Điều kiện 4 (Upāya) trong hộp ghi chú ở cuối mục §7 từ "có thể nghỉ" thành "có thể biến mất trong dòng chảy lịch sử".
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `vai_tro_mach_re.html` | Việt hóa hoàn toàn các thuật ngữ tiếng Anh còn sót lại (bao gồm dịch 'output' -> 'đầu ra (output)'); bổ sung liên kết so sánh và mã trích dẫn học thuật [9, 10, 11, 12, 13] cho Ubuntu, Yoruba, Nhật Bản (Nakane), và Phật giáo Joseon Hàn Quốc ở hàng C2, việt hóa các thuật ngữ ở hàng C3 và C5, gắn mã trích dẫn liên kết [1], [2, 3], [7, 8] cho các thấu kính A, B, C (ở mô tả L3, thẻ hệ phân loại, tiêu đề mục 5.3, và tiêu đề bảng hội tụ), bổ sung mã trích dẫn liên kết [9, 10, 11, 12] cho các gương soi và [1, 7, 8] cho các tia chuẩn trong thẻ hệ phân loại, bổ sung mã trích dẫn [1] cho Tam giáo đồng nguyên, việt hóa và bổ sung trích dẫn cho các phát biểu độc lập ở mục 5.1, 5.2, 5.3, việt hóa các thuật ngữ chuyên ngành Phật giáo ở mục 5.3 và trong tiêu đề bảng hội tụ (5.4), việt hóa các thuật ngữ tiếng Anh trong hộp ghi chú ở §6, bổ sung khối diễn giải chi tiết cho Lý do Phòng thủ ở mục 6.2, cập nhật phát biểu Điều kiện 4 ở mục §7, đồng thời cập nhật phần Nguồn Trích Dẫn ở cuối tệp. |
+
+---
+
 ## 2026-06-13 — Vai Trò & Vị Trí Tương Quan: Tổng hợp 9 RCA Findings (F1–F9) ✅
 
 **Trigger:** User request: RCA (A×B×C) → tạo HTML "Vai trò và Vị trí tương quan của Mạch Rễ trong triết học VN và thế giới" từ source `raw/vai_tro_mach_re.txt` → gắn link vào `index.html` + `what.html`.
